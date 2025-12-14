@@ -1,3 +1,5 @@
+# 💫 BubbleStrap! 🫧
+
 > [!CAUTION]
 > The only official places to download BubbleStrap are this GitHub repository. (for now)
 
