@@ -25,7 +25,11 @@ Download the latest release [here][repo-latest]! 🔥
 - Much more (It just has been worked on)
 
 <div align="center">
-    <img src="<img width="1024" height="1024" src="https://github.com/user-attachments/assets/8ed82a50-0280-4035-be36-62fc80a6f6e8" />" width="420">
+  <img 
+    src="https://github.com/user-attachments/assets/8ed82a50-0280-4035-be36-62fc80a6f6e8"
+    width="420"
+    height="420"
+  />
 </div>
 
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
