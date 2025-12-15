@@ -19,7 +19,7 @@ Found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
 
 Download the latest release!
-👉 [here][repo-latest]! 🔥 
+👉 👉 **[Download the latest release here]([repo-latest])** 🔥! 🔥 
 
 ## Features
 - Detailed player logs
