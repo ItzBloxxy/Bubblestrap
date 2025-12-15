@@ -1,4 +1,5 @@
 # 🫧 BubbleStrap! 🫧
+**Expected release date: Between December 20, 2025, and January 2026**
 
 <div align="center">
   <img 
