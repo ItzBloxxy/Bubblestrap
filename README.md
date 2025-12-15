@@ -1,4 +1,4 @@
-# 💫 BubbleStrap! 🫧
+# 🫧 BubbleStrap! 🫧
 
 <div align="center">
   <img 
