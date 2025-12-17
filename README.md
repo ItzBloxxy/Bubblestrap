@@ -1,5 +1,3 @@
-# 🫧 BubbleStrap! 🫧
-
 <div align="center">
   <img 
     src="https://github.com/user-attachments/assets/ab9def97-3cdf-4739-936d-6672e2d4fc9c" 
