@@ -2,9 +2,10 @@
 
 <div align="center">
   <img 
-    src="[<img width="1640" height="664" alt="yesss" src="https://github.com/user-attachments/assets/ab9def97-3cdf-4739-936d-6672e2d4fc9c" />)"
-    width="1640"
-    height="664"
+    src="https://github.com/user-attachments/assets/ab9def97-3cdf-4739-936d-6672e2d4fc9c" 
+    width="1640" 
+    height="664" 
+    alt="yesss" 
   />
 </div>
 
