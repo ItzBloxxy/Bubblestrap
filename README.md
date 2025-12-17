@@ -6,7 +6,7 @@
     alt="yesss" 
   />
 </div>
-
+-----------------
 > [!CAUTION]
 > The only official places to download BubbleStrap is this GitHub repository. (for now)
 
