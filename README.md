@@ -7,7 +7,7 @@
 </div>
 
 > [!CAUTION]
-> The only official places to download BubbleStrap is this GitHub repository. (for now)
+> The only official place to download BubbleStrap is this GitHub repository. (for now)
 
 BubbleStrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
 - **BubbleStrap only supports Windows 10 and above.**
