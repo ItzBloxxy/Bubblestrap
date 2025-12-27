@@ -35,11 +35,11 @@ Found any bugs or issues?
 - Memory trim (Roblox will use 30mb-150mb ram usage)
 - Close RobloxCrashHandler (reduces 20mb+ ram usage)
 - Background updates - Update roblox in the background instead of waiting.
-- Cache cleaner
+- Cache, logs and Bubblestrap logs cleaner
 
 ### Mods
 - Use custom font
-- Custom Death Sound
+- Use custom death sound
 - Emulate old character sounds from 2014
 - Use old avatar editor bcakground
 - Custom Mouse Cursor
