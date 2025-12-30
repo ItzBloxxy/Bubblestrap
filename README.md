@@ -42,7 +42,6 @@ Found any bugs or issues?
 - Use custom death sound
 - Emulate old character sounds from 2014
 - Use old avatar editor bcakground
-- Custom Mouse Cursor
 
 ### Other
 - Channel changer
