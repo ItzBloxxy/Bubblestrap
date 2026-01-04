@@ -16,10 +16,10 @@ BubbleStrap is a fast and lightweight bootstrapper for Roblox that aims to provi
 ## Requires [NET 9.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.308-windows-x64-installer)
 
 Download the latest release [here][repo-latest]! 🔥
-  * Found any bugs or issues?
+Found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
 
-# ✨ Features
+## ✨ Features
 
 ### Integrations
 - Activity tracking
@@ -56,7 +56,7 @@ Download the latest release [here][repo-latest]! 🔥
   
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
 
-# ❓ FAQ:
+## ❓ FAQ:
 - **Is Bloxshade supported?** **No**, Bloxshade is not supported anymore and it is against their Terms of Service because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders (by renaming the client to another game like Euro Truck Simulator 2), Roblox patched this method = and it's now a violation and can lead to moderation. 
 
 - **Will you get banned for this?** *No*, it does not violate the Roblox TOS.
