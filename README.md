@@ -19,7 +19,7 @@ Download the latest release [here][repo-latest]! 🔥
   * Found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
 
-# Features
+# ✨ Features
 
 ### Integrations
 - Activity tracking
@@ -33,7 +33,7 @@ Download the latest release [here][repo-latest]! 🔥
 ### Bootstrapper
 - Prompt to confirm when launching another instance
 - Memory trim (Roblox will use 30mb-150mb ram usage)
-- Disable RobloxCrashHandler (reduces 20mb+ ram usage)
+- Disable RobloxCrashHandler (reduces oveer 20mb+ ram usage)
 - Background updates - Update roblox in the background instead of waiting.
 - Cache, logs and Bubblestrap logs cleaner
 
@@ -56,7 +56,7 @@ Download the latest release [here][repo-latest]! 🔥
   
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
 
-# FAQ:
+# ❓ FAQ:
 - **Is Bloxshade supported?** *No*, Bloxshade is no longer supported or functional due to recent, stricter security updates from Roblox that block the methods shaders like Bloxshade and NVIDIA Ansel rely on for injection, making them incompatible with new Roblox versions and risking moderation. While there were recent updates adding Bloxshade support, these changes have effectively broken the core functionality for most users. 
 
 - **Will you get banned for this?** *No*, it does not violate the Roblox TOS.
