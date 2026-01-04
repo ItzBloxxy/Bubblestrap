@@ -45,7 +45,7 @@ Found any bugs or issues?
 ### Mods
 - Use custom font
 - Use custom death sound
-- Emulate old character sounds from 2014
+- Old character sounds from 2014
 - Use old avatar editor bcakground
 
 ### Other
