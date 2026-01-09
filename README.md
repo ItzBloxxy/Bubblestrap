@@ -28,7 +28,7 @@ Found any bugs or issues?
 - Detailed server information (Thanks to [RoValra](https://www.rovalra.com/))
 - Don't exit to desktop app
 - Fully customizable Discord Rich Presence
-- Multi-instance launching
+- Multi-instance clients support
 - Set custom integrations (you can have other programs launch with Roblox automatically)
 
 ### Bootstrapper
