@@ -7,7 +7,7 @@
 </div>
 
 > [!CAUTION]
-> The only official place to download BubbleStrap is this GitHub repository. (for now)
+> The only official place to download Bubblestrap is this GitHub repository. (for now)
 
 Bubblestrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
 - **Bubblestrap only supports Windows 10 and above. (Best experience on Windows 11)**
@@ -28,14 +28,14 @@ Found any bugs or issues?
 - Detailed server information (Thanks to [RoValra](https://www.rovalra.com/))
 - Don't exit to desktop app
 - Fully customizable Discord Rich Presence
-- Multi-instance clients support
+- Multi-instance support
 - Set custom integrations (you can have other programs launch with Roblox automatically)
 
 ### Bootstrapper
 - Prompt to confirm when launching another instance
-- Memory trim (Roblox will use 30mb-150mb ram usage)
-- Disable RobloxCrashHandler (reduces over 20mb+ ram usage instead of 1gb+)
-- Background updates - Update roblox in the background instead of waiting.
+- Memory trim (Roblox will use 30mb-150mb-ish ram only instead of 1gb+)
+- Disable RobloxCrashHandler (reduces over 20mb+ ram usage)
+- Background updates - Update roblox in the background instead of waiting
 - Cache, logs and Bubblestrap logs cleaner
 
 ### Deployment
@@ -58,6 +58,6 @@ Found any bugs or issues?
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
 
 ## ❓ FAQ:
-- **Is Bloxshade supported?** **No**, Bloxshade is not supported anymore and it is against their TOS because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders by renaming the client to another game like Euro Truck Simulator 2. Roblox patched this method and it's now a violation and can lead to moderation. 
+- **Is Bloxshade supported?** **No**, Bloxshade is not supported anymore and it is against their TOS because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders by renaming the client to another game like Euro Truck Simulator 2. Roblox patched this method and it's now banable and can lead to moderation. 
 
-- **Will you get banned for this?** *No*, it does not violate the Roblox TOS.
+- **Will you get banned for this?** *No*, because it does not violate the Roblox TOS.
