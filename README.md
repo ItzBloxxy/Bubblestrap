@@ -34,13 +34,13 @@ Found any bugs or issues?
 ### Bootstrapper
 - Prompt to confirm when launching another instance
 - Memory trim (Roblox will use 30mb-150mb ram usage)
-- Disable RobloxCrashHandler (reduces over 20mb+ ram usage)
+- Disable RobloxCrashHandler (reduces over 20mb+ ram usage instead of 1gb+)
 - Background updates - Update roblox in the background instead of waiting.
 - Cache, logs and Bubblestrap logs cleaner
 
 ### Deployment
 - Channel changer
-- Force Roblox reinstallation - Roblox will be installed fresh on the next launch
+- Force Roblox reinstallation
 
 ### Mods
 - Use custom font
