@@ -10,7 +10,7 @@
 > The only official place to download Bubblestrap is this GitHub repository. (for now)
 
 Bubblestrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
-- **Bubblestrap only supports Windows 10 and above. (Best experience on Windows 11)**
+- **Bubblestrap only supports Windows 10 and 11. (Best experience on Windows 11)**
 - **We do not have any plans to port it to any other operating systems.**
 
 Download the latest release [here][repo-latest]! 🔥
