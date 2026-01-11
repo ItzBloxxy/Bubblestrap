@@ -18,6 +18,8 @@ Download the latest release [here][repo-latest]! 🔥
 Found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
 
+-----
+
 ## ✨ Features
 
 ### Integrations
