@@ -14,7 +14,7 @@
 
 Bubblestrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
 
-Download the latest release [here][repo-latest]! 🔥
+Download the latest release [here][repo-latest]
 
 Found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
