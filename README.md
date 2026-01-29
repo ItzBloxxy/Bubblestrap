@@ -12,7 +12,7 @@
   [![License][badge-repo-license]][repo-license] 
   [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
   [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
-</div>>
+</div>
 
 > [!CAUTION]
 > The only official place to download Bubblestrap is this GitHub repository. (for now)
