@@ -5,6 +5,8 @@
     height="664" 
   />
 </div>
+[![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
+[![Downloads (Latest)][badge-repo-downloads]][repo-releases]  
 
 > [!CAUTION]
 > The only official place to download Bubblestrap is this GitHub repository. (for now)
@@ -62,3 +64,7 @@ Found any bugs or issues?
 - **Is Bloxshade supported?** **No**, it's not supported anymore and it is against their TOS because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders by renaming the client to another game like Euro Truck Simulator 2. Roblox patched this method and it's now banable and can lead to moderation. 
 
 - **Will you get banned for this?** *No*, because it does not violate the Roblox TOS.
+
+[badge-repo-downloads-total]: https://img.shields.io/github/downloads/ItzBloxxy/Bubblestrap/total?style=for-the-badge&color=37add9
+[badge-repo-downloads]: https://img.shields.io/github/downloads/ItzBloxxy/Bubblestrap/latest/total?style=for-the-badge&color=37add9
+[repo-releases]: https://github.com/ItzBloxxy/Bubblestrap/releases
