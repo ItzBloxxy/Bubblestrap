@@ -4,7 +4,6 @@
     width="1640" 
     height="664" 
   />
-
   <br/><br/>
 
   [![Version][badge-repo-latest]][repo-latest] 
