@@ -5,14 +5,14 @@
     height="664" 
   />
 
-  <br/>
+  <br/><br/>
 
-  [![Version][badge-repo-latest]][repo-latest]  
-  [![Stars][badge-repo-stars]][repo-stargazer]  
-  [![License][badge-repo-license]][repo-license]  
-  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases]  
+  [![Version][badge-repo-latest]][repo-latest] 
+  [![Stars][badge-repo-stars]][repo-stargazer] 
+  [![License][badge-repo-license]][repo-license] 
+  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
   [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
-</div>
+</div>>
 
 > [!CAUTION]
 > The only official place to download Bubblestrap is this GitHub repository. (for now)
@@ -71,10 +71,13 @@ Found any bugs or issues?
 
 - **Will you get banned for this?** *No*, because it does not violate the Roblox TOS.
 
-[badge-repo-latest]: https://img.shields.io/github/v/release/ItzBloxxy/Bubblestrap?style=for-the-badge&color=37add9
-[badge-repo-stars]: https://img.shields.io/github/stars/ItzBloxxy/Bubblestrap?style=for-the-badge&color=37add9
-[badge-repo-license]: https://img.shields.io/github/license/ItzBloxxy/Bubblestrap?style=for-the-badge&color=37add9
+[badge-repo-latest]: https://img.shields.io/github/v/release/ItzBloxxy/Bubblestrap?style=for-the-badge&color=4caf50
+[badge-repo-stars]: https://img.shields.io/github/stars/ItzBloxxy/Bubblestrap?style=for-the-badge&color=ff9800
+[badge-repo-license]: https://img.shields.io/github/license/ItzBloxxy/Bubblestrap?style=for-the-badge&color=2196f3
+[badge-repo-downloads-latest]: https://img.shields.io/github/downloads/ItzBloxxy/Bubblestrap/latest/total?style=for-the-badge&color=e91e63
+[badge-repo-downloads-total]: https://img.shields.io/github/downloads/ItzBloxxy/Bubblestrap/total?style=for-the-badge&color=9c27b0
 
 [repo-latest]: https://github.com/ItzBloxxy/Bubblestrap/releases/latest
 [repo-stargazer]: https://github.com/ItzBloxxy/Bubblestrap/stargazers
 [repo-license]: https://github.com/ItzBloxxy/Bubblestrap/blob/master/LICENSE
+[repo-releases]: https://github.com/ItzBloxxy/Bubblestrap/releases
