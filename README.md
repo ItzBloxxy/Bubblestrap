@@ -4,10 +4,15 @@
     width="1640" 
     height="664" 
   />
-[![Version][badge-repo-latest]][repo-latest]  
-[![Stars][badge-repo-stars]][repo-stargazer]  
-[![License][badge-repo-license]][repo-license]  
-[![Discord][badge-discord]][discord-invite]  
+
+  <br/>
+
+  [![Version][badge-repo-latest]][repo-latest]  
+  [![Stars][badge-repo-stars]][repo-stargazer]  
+  [![License][badge-repo-license]][repo-license]  
+  [![Discord][badge-discord]][discord-invite]  
+  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases]  
+  [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
 </div>
 > [!CAUTION]
 > The only official place to download Bubblestrap is this GitHub repository. (for now)
