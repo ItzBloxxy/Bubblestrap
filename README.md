@@ -60,7 +60,7 @@ Found any bugs or issues?
 - FFlag editor
 - Global Settings page
 - Framerate cap unlocking
-- Custom BubbleStrap game invite links
+- Custom Bubblestrap game invite links (DEEPLINK)
 - Roblox Studio Support
   
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
