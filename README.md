@@ -66,7 +66,7 @@ Found any bugs or issues?
 [repo-latest]:   https://github.com/ItzBloxxy/BubbleStrap/releases/latest
 
 ## ❓ FAQ:
-- **Is Bloxshade supported?** **No**, it's not supported anymore and it is against their TOS because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders by renaming the client to another game like Euro Truck Simulator 2. Roblox patched this method and it's now banable and can lead to moderation. 
+- **Is Bloxshade supported?** **No**, it's not supported anymore and it is against their TOS because it modifies the game client using Nvidia Ansel, which Roblox has actively blocked in recent updates, making it bannable and risky to use, despite some older guides or community claims suggesting otherwise. While Bloxshade used to work by tricking Nvidia into applying shaders by renaming the client to another game like Euro Truck Simulator 2. Roblox patched this method and it's now bannable. 
 
 - **Will you get banned for this?** *No*, because it does not violate the Roblox TOS.
 
