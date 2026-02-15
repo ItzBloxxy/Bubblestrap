@@ -70,7 +70,7 @@ Found any bugs or issues?
 
 - **Will you get banned for this?** *No*, because it does not violate the Roblox TOS.
 
-[badge-repo-latest]: https://img.shields.io/github/v/release/ItzBloxxy/Bubblestrap?style=for-the-badge&color=4caf50
+[badge-repo-latest]: https://img.shields.io/github/v/release/ItzBloxxy/Bubblestrap?style=for-the-badge&color=4caf51
 [badge-repo-stars]: https://img.shields.io/github/stars/ItzBloxxy/Bubblestrap?style=for-the-badge&color=ff9800
 [badge-repo-license]: https://img.shields.io/github/license/ItzBloxxy/Bubblestrap?style=for-the-badge&color=2196f3
 [badge-repo-downloads-latest]: https://img.shields.io/github/downloads/ItzBloxxy/Bubblestrap/latest/total?style=for-the-badge&color=e91e63
