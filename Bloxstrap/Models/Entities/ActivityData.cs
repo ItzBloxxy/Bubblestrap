@@ -87,13 +87,10 @@ namespace Bloxstrap.Models.Entities
 
         public string GetInviteDeeplink(bool launchData = true, bool useRobloxUri = false)
         {
-            // if our data isnt loaded it uses dummy data
-            // we only wait for important data
+            string baseUrl = useRobloxUri ? "roblox://placeId=" : App.LocalData.Prop.DeeplinkUrl;
+            string deeplink = $"{baseUrl}?placeId={PlaceId}";
 
-            // we need useRobloxUri for rejoin feature
-            string deeplink = $"{(useRobloxUri ? "roblox://experiences/start" : App.RemoteData.Prop.DeeplinkUrl)}?placeId={PlaceId}";
-
-            if (ServerType == ServerType.Private) // that is not going to work
+            if (ServerType == ServerType.Private)
                 deeplink += "&accessCode=" + AccessCode;
             else
                 deeplink += "&gameInstanceId=" + JobId;
@@ -104,7 +101,7 @@ namespace Bloxstrap.Models.Entities
             return deeplink;
         }
 
-        // we use rovalra's apis in fishstrap.app/joingame
+        // we use rovalra's apis
         public void ProcessServerRoValra()
         {
             if (string.IsNullOrEmpty(JobId))

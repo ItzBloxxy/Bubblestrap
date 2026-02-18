@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -287,7 +228,6 @@
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>請先瀏覽[Bloxstrap Wiki]({0}) 來看此問題是否已解決。
-
 如果還沒解決的話，那請透過[GitHub 問題]({1}) 中報告此問題，並附上所建立的日誌檔案副本。</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
@@ -530,12 +470,8 @@
     <value>錯誤地使用此功能會導致不穩定/意料之外的事情發生。</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>小心使用。</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>有些你嘗試去匯入的 Flags 已經設定了值。請問你要不要用你導入的值來覆蓋目前的值？
-
 這裏有{0}個已衝突的 Flag 定義:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>您所輸入的JSON無效，請仔細檢查它並再試一次。
-
 更多資訊:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>你似乎正在匯入一個大型配置。你只可以導入你完全明白的配置。不要盲目貼上別人做的配置。如果你要繼續，你最終可能會面對穩定性的問題以及你想不到的變化。
-
 你是否肯定要繼續嗎？</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Fast Flag 編輯器</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>返回上一步</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>我知道我在做什麽</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>你知道你在做什麼嗎？</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flags 是非常強大的，因為它通常只給 Roblox 工程師使用的。雖然它們很有用，但是手動配置它們可以造成很嚴重的穩定性和功能性的問題。如果你不清楚你在做什麼，不要用此編輯器。
-
-不要用這它來匯入別人製作的大型「flag lists」，例如那些聲稱可以改善的 Fast Flags。它們受上述問題的影響，而它們會因為你不會完全意識到它們正在改變什麼而造成問題。如果你打算這樣做，那就返回吧。</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>控制如何配置 Roblox 特定引擎的引數和功能。</value>
@@ -630,10 +550,8 @@
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
     <value>你所選擇用來安裝 Bloxstrap 的資料夾已經存在而且不是空的。強烈建議你將 Bloxstrap 安裝到自己的獨立資料夾中。
-
 建議變更為以下路徑：
 {0}
-
 請問你是否變更為建議路徑？
 選擇「不」會無視此警告並繼續安裝。</value>
     <comment>{0} is a file path</comment>
@@ -876,9 +794,7 @@
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>感謝您下載 Bloxstrap。
-
 下載 Bloxstrap 的官方網站只會是 {0} 和 {1}，因此請你確保你是從官方來源下載 Bloxstrap 的。
-
 此安裝過程是快速和簡單的，而你可以在完成安裝後配置任何 Bloxstrap 的設定。</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -908,11 +824,8 @@
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
     <value>Bloxstrap 已成功安裝。
-
 Roblox 尚未安裝，這情況會在你第一次使用 Bloxstrap 來啓動 Roblox 時發生。但是，你在執行此操作之前，可能需要先配置 Bloxstrap 的設定。
-
 另外，請避免使用 「Roblox Player」 快捷方式來啟動 Roblox，因為 Bloxstrap 不會與 Roblox 一起啓動。如果你從網站啓動時沒有顯示 Bloxstrap，只需要在桌面使用 Bloxstrap 來啓動 Roblox 即可修復這個問題。
-
 請問你想怎麼做？</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
@@ -932,11 +845,8 @@ Roblox 尚未安裝，這情況會在你第一次使用 Bloxstrap 來啓動 Robl
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
     <value>解除安裝將從你的系統中刪除 Bloxstrap，並自動重新配置預設的 Roblox 啓動器，如果仍然安裝了的話。
-
 如果您因為使用 Roblox 時出現問題而要解除安裝或重新安裝，請先閱讀[此說明頁面]({0})。
-
 解除安裝過程可能無法完全刪除所有檔案，因此你可能需要手動刪除安裝 Bloxstrap 時的剩餘檔案。
-
 Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
@@ -968,7 +878,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>首先檢查 [Bloxstrap Wiki]({0}) 以查看此問題是否已被修復。
-
 如果沒有，請將此異常報告給這個版本 (fork) 的維護者。不要將此報告到 Bloxstrap 的 GitHub Issues (問題)，因為這是一個非官方的版本。</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
@@ -1028,7 +937,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>有關為什麼會發生這種情況以及如何解決此問題的信息，請閱讀[此幫助文章]({0})。
-
 檢查 Roblox 是否與[原始啓動器]({1})相容。如果不相容，那麼這不是 Bloxstrap 問題。如果相容，請參閱說明文章。</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
@@ -1036,13 +944,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>正在載入，請稍等...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>支持者</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>這些是使用 Ko-fi 來支持 Bloxstrap 的贊助者們。在此由衷感謝每一個協助 Bloxstrap 發展的贊助者們！
-（在此處的人都按其總捐款額來排名。）</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>無法載入你的設定。因爲它們已重置為預設配置。</value>
@@ -1076,7 +977,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
     <value>Bloxstrap 之前已安裝到此位置並且仍然存在，但安裝程式無法覆蓋舊的可執行檔。
-
 請從安裝路徑手動刪除 Bloxstrap.exe 或嘗試重新啓動系統，然後重試安裝。</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
@@ -1099,7 +999,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>無法載入所選的啓動載入器圖示。
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1111,15 +1010,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
     <value>Bloxstrap 無法寫入 Windows 註冊表 (regedit)。防毒軟體可能會干擾並導致問題。請檢查以確保沒有任何東西會限制 Bloxstrap 的操作。</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>每月</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>一次性</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>分析</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>將所有設定重設為預設值</value>
@@ -1133,9 +1023,7 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>測試模式可以更輕鬆地測試你的設定如何影響 Roblox。
-
 啓用後，Roblox 會在關閉 Bloxstrap 設定後自動啓動 ，並在關閉 Roblox 後重新開啓 Bloxstrap 設定，如此循環直至你停用它。
-
 請問你想啓用測試模式嗎？</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
@@ -1160,7 +1048,6 @@ Bloxstrap 已安裝在 "{1}"。</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
     <value>Bloxstrap 嘗試升級 Roblox，但無法升級因為 Roblox 的檔案仍在使用中。
-
 請關閉所有可能使用 Roblox 檔案的應用程式，然後重新啓動。</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1407,78 +1294,438 @@ Bloxstrap 已安裝在 "{1}"。</value>
   <data name="About.Title" xml:space="preserve">
     <value>關於 Bloxstrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>首選的ESC選單版本</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>正常運作時間</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>如果您想使用 Roblox 自帶的幀率解鎖器，請將數字設置為0以使用預設設定。</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>位置：{0}
+運行時間：{1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>幀率(FPS)上限</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>啟動時隱藏版本與生產資訊。</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>用[快捷鍵]({0}) 來切換。只會在加入了[Bloxstrap群組]({1}) 後生效。</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>隱藏版本與生產細節</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>啓用隱藏介面功能</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>啟動時自動關閉 RobloxCrashHandler.exe 以減少記憶體使用量。</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>此選擇會強制在全部遊戲使用。[小心，這可能會造成照明問題！]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>停用 Roblox 崩潰處理程式</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>首選的照明技術</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>啟用此功能，即可在應用程式開啟時於個人檔案上顯示自訂的 Bubblestrap Discord RPC。</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>停用後期處理效果</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>泡泡掛帶 RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>關閉全螢幕標題列</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>選擇聲音...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>關閉玩家陰影</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>移除自訂死亡音效</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>自訂死亡音效</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>將死亡音效更改為您選擇的任何音訊。</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>灰濛濛的天空</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>具有自訂天空的遊戲可能無法正常運作。</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>加入我們的Discord伺服器</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>火山</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>快速旗標編輯器</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>載入</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>取消 Roblox 升級。</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>頻道</value>
+  </data>
+  <data name="Menu.Channel.Description" xml:space="preserve">
+    <value>變更 Roblox 與 Bubblestrap 的部署與安裝設定。</value>
+  </data>
+  <data name="Common.Channel" xml:space="preserve">
+    <value>頻道</value>
+  </data>
+  <data name="Menu.ChannelChanger.Description" xml:space="preserve">
+    <value>選擇部署管道。除非您清楚自己在做什麼，否則請勿更改。</value>
+  </data>
+  <data name="Common.Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Common.VersionGuid" xml:space="preserve">
+    <value>版本識別碼</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>靜態目錄</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>從版本 xxx 切換至基於 BinaryType 的安裝目錄。</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>下載中</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>自舉程式下載狀態</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>變更下載字串。{0} 為套件名稱，{1} 為已下載套件大小，{2} 為所有套件總大小。</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>多實例啟動</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>多實例啟動</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>清除 FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>除錯</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox 選單</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>使用FFlags精簡Roblox選單</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>顯示玩家離開／加入您所在的伺服器。</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>類型</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>版本雜湊值</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>強制 Bubblestrap 從特定雜湊值下載版本。若您不了解此設定功能，請勿擅自更改。</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>儲存與啟動</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>因客戶端缺失，升級功能已停用。
+為避免問題發生，升級程序將繼續執行。</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>玩家日誌</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>玩家日誌</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>個人檔案</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>此頻道已過時，很可能不再更新。請改用其他頻道。</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>您目前所在的頻道（{0}）已過時，且似乎不再接收更新。
+是否要切換至預設頻道（{1}）？</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>自動頻道切換功能</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox 或 Bubblestrap 可能會嘗試更改您的首選頻道。</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Roblox 或 Bubblestrap 可能會嘗試更改您的首選頻道。</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>永遠及時</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>永不改變</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox 正嘗試將您的頻道設為 {0}，但您當前的首選頻道為 {1}。
+您是否要將首選頻道切換至 {0}？</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>您是否要包含預設的FFlags？</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>您目前所在的頻道（{0}）現已限制公眾使用。您將轉移至預設頻道（{1}）。</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>正在取得最新部署資訊，請稍候...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>指定的頻道不存在或為私人頻道</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>無法匯入 Bloxstrap 設定。
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>從 Bloxstrap 匯入設定</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>未找到 Bloxstrap 安裝程式。</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>收集可上傳至網路的資訊，以解決您遇到的問題。</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>氣泡束帶配置</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>所有泡泡陷阱日誌</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>清潔劑</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap 將清除舊資料以節省空間</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>永不</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>經過1天</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>一週後</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>一個月後</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>兩個月後</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>何時應刪除這些檔案？</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>超過設定天數的檔案將被刪除。</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>快取</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>舊下載檔案將被刪除。</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>日誌</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>日誌</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>舊日誌檔案將被刪除。</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap 日誌將被刪除。</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>快速標記功能已暫時停用</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>欲了解更多資訊，請加入 Bubblestrap Discord 伺服器</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>等待資料</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>幾何學</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>控制 Roblox 渲染 3D 幾何圖形的模式。</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>網狀細節</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>控制網格在遊戲中的顯示細節程度。</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>較低的品質可能導致網格消失。</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>最低品質</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>最高品質</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>未知狀態</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>幀率限制</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>解除 Roblox 的幀率限制。不建議超過 240 FPS。</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>全球設定</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>從泡泡陷阱選單設定遊戲內設定。</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>透明度</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>自訂 UI 元素的透明度。</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>減少動作</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>移除逃生選單上的動畫效果。</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>字體大小</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>預設值為1。可調整你使用中的自訂字體。</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>選擇字體應顯示的大小。</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>關閉地形材質</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>圖形品質</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache 授權條款 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>滑鼠靈敏度</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>調整遊戲中相機移動的速度。</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>支援虛擬實境</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>設定遊戲的圖形品質</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Title" xml:space="preserve">
-    <value>啓用分析傳送</value>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>設為唯讀</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Description" xml:space="preserve">
-    <value>這是匿名的，沒有什麼邪惡的，真的。如需深入了解我們收集的內容及其原因，請參閱我們的[隱私權政策]({0})。</value>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>防止 Roblox 覆寫全域設定。</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
-    <value>匯出診斷數據</value>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM 品質覆寫</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
-    <value>收集可在線上上傳的資訊以解決您遇到的問題。</value>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>選擇Roblox應採用的FRM品質。</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
-    <value>Bloxstrap 配置設定</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>允許 Bubblestrap 存取您的 Roblox 帳戶</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
-    <value>所有 Bloxstrap 日誌</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>使用您的驗證 Cookie 提供 Roblox API 存取權限。[Bubblestrap 將存取哪些內容？]({0})</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>記憶體修剪器</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>定期清除 Roblox 的記憶體使用量，以降低 RAM 消耗。</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>記憶體修剪間隔</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>每隔多少時間（以秒為單位）進行記憶體修剪。較低的數值會消耗更多 CPU 資源，並可能導致遊戲運行不穩定。</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>虛擬實境</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>還原 Roblox Studio 使用者介面</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>使用舊版 Roblox Studio 使用者介面，而非新版介面。</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>停用地形草地</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>選擇是否在地形上顯示或隱藏裝飾性草叢，以提升效能。</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>使用記憶體閾值</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>僅當 Roblox 超出特定記憶體使用量時才進行修剪。</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>限制（MB）</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>設定與 Bubblestrap 行為本身相關的選項。</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>全螢幕</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>開始畫面尺寸</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>設定遊戲視窗在啟動時的預設寬度與高度。</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>寬度（X）</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>高度（Y）</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>音訊</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>派對音量</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>調整您所在隊伍中的語音聊天音量。</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>主音量</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>調整所有遊戲內音效的主音量。</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>自動聊天翻譯</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>自動將聊天訊息翻譯成您偏好的語言。</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>觸覺回饋</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>啟用控制器震動功能，提供觸覺回饋。</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>輸入與控制</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR 短篇故事</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>套用虛擬實境暗角效果，使畫面邊緣變暗以減輕暈動感。</value>
   </data>
 </root>

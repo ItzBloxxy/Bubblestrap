@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>A BubbleStrap nem tudott automatikusan frissülni a {0} verzióra. Kérjük frissítse manuálisan úgy, hogy letölti és futtatja a webhelyről.</value>
+    <value>A Bubblestrap nem tudott automatikusan frissülni a {0} verzióra. Kérjük frissítse manuálisan úgy, hogy letölti és futtatja a webhelyről.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>A Roblox jelenleg fut, és egy másik példány elindítása bezárja azt. Biztos, hogy folytatni akarod az indítást?</value>
@@ -127,13 +68,13 @@
     <value>A Roblox jelenleg nem elérhető. További információkért lásd {0}.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Nem sikerült kapcsolatot létesíteni, ami valószínűleg rossz internetkapcsolatra vagy tűzfalblokkolásra utal. Ha a kapcsolat rendben van, kérjük, győződjön meg róla, hogy a vírusirtója nem blokkolja a BubbleStrap-et.</value>
+    <value>Nem sikerült kapcsolatot létesíteni, ami valószínűleg rossz internetkapcsolatra vagy tűzfalblokkolásra utal. Ha a kapcsolat rendben van, kérjük, győződjön meg róla, hogy a vírusirtója nem blokkolja a Bubblestrap-et.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Először telepítenie kell BubbleStrap-et az eltávolítás előtt.</value>
+    <value>Először telepítenie kell Bubblestrap-et az eltávolítás előtt.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>A BubbleStrap-nek nincsen elég tárhelye a Roblox telepítéséhez. Kérjük, szabadítson fel lemezterületet, és próbálja újra.</value>
+    <value>A Bubblestrap-nek nincsen elég tárhelye a Roblox telepítéséhez. Kérjük, szabadítson fel lemezterületet, és próbálja újra.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox módosítások alkalmazása...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>A BubbleStrap sikeresen eltávolításra került</value>
+    <value>A Bubblestrap sikeresen eltávolításra került</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>A Roblox jelenleg fut, de a BubbleStrap eltávolítása előtt be kell zárni. Szeretné bezárni a Robloxot most?</value>
+    <value>A Roblox jelenleg fut, de a Bubblestrap eltávolítása előtt be kell zárni. Szeretné bezárni a Robloxot most?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>A Roblox megköveteli a Windows Media Foundation komponensek használatát. Úgy tűnik, ezek hiányoznak, valószínűleg azért, mert a Windows N kiadását használja. Kérjük, először telepítse őket, majd indítsa el a Robloxot.</value>
@@ -276,22 +217,21 @@ Kattintson további információért</value>
     <value>Csatlakozási hiba</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>A BubbleStrap nem tudott kapcsolódni a {0}-hoz/hez/höz</value>
+    <value>A Bubblestrap nem tudott kapcsolódni a {0}-hoz/hez/höz</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Napló tartalmának másolása</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Kivétel lépett fel a BubbleStrap futtatása közben</value>
+    <value>Kivétel lépett fel a Bubblestrap futtatása közben</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Először nézze át a [Bloxstrap Wikit]({0}), mert lehet, hogy a problémáját már megválaszoltuk.
-
-Ha nem, kérjük, hogy jelentse ezt egy [GitHub problémaként]({1}) a BubbleStrap által készített naplófájllal együtt.</value>
+Ha nem, kérjük, hogy jelentse ezt egy [GitHub problémaként]({1}) a Bubblestrap által készített naplófájllal együtt.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>BubbleStrap kivétel</value>
+    <value>Bubblestrap kivétel</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Saját</value>
@@ -303,10 +243,10 @@ Ha nem, kérjük, hogy jelentse ezt egy [GitHub problémaként]({1}) a BubbleStr
     <value>Késő 2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Klasszikus)</value>
+    <value>Bubblestrap (Klasszikus)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Üveg)</value>
+    <value>Bubblestrap (Üveg)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Régi (2008 - 2011)</value>
@@ -384,10 +324,10 @@ Ha nem, kérjük, hogy jelentse ezt egy [GitHub problémaként]({1}) a BubbleStr
     <value>Világos</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>A BubbleStrap frissítve lett v{0}-ra/re</value>
+    <value>A Bubblestrap frissítve lett v{0}-ra/re</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>A BubbleStrap elindított verziója eltér a jelenleg telepített verziótól.
+    <value>A Bubblestrap elindított verziója eltér a jelenleg telepített verziótól.
 Szeretné frissíteni a jelenleg telepített verzióját?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -397,7 +337,7 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Programozók</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Ezek azok az emberek, akik jelentős mértékben hozzájárultak a BubbleStraphez, és segítettek abban, hogy azzá váljon, ami.</value>
+    <value>Ezek azok az emberek, akik jelentős mértékben hozzájárultak a Bubblestraphez, és segítettek abban, hogy azzá váljon, ami.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Funkció Ajánlók</value>
@@ -430,7 +370,7 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Hiba bejelentése</value>
   </data>
   <data name="Menu.About.Title" xml:space="preserve">
-    <value>BubbleStrap-ről</value>
+    <value>Bubblestrap-ről</value>
   </data>
   <data name="Menu.About.Version" xml:space="preserve">
     <value>Verzió {0}</value>
@@ -443,7 +383,7 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Vegye figyelembe, hogy nem minden módosítása fog érvényesülni, amíg nem zárja be Roblox összes feladatát.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>A BubbleStrap már fut</value>
+    <value>A Bubblestrap már fut</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>A kinézete lehet teljesen más, lehet retró, vagy csak normális Roblox kinézetű.</value>
@@ -470,7 +410,7 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Név</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Állítsa be a BubbleStrap kinézetét.</value>
+    <value>Állítsa be a Bubblestrap kinézetét.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Globális Téma</value>
@@ -494,10 +434,10 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Kinézet</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>A BubbleStrap automatikusan ellenőrzi és frissíti magát a Roblox indításakor.</value>
+    <value>A Bubblestrap automatikusan ellenőrzi és frissíti magát a Roblox indításakor.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>BubbleStrap automatikus frissítése</value>
+    <value>Bubblestrap automatikus frissítése</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Megakadályozza, hogy a meglévő játéka bezárjódjon, amikor véletlenül egy újat indít el.</value>
@@ -506,7 +446,7 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Kérdezzen rá, amikor egy másik Roblox feladatot indítok el</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Annak beállítása, hogy a BubbleStrap mit tegyen a Roblox indításakor.</value>
+    <value>Annak beállítása, hogy a Bubblestrap mit tegyen a Roblox indításakor.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>A Roblox a következő induláskor frissen lesz telepítve.</value>
@@ -530,12 +470,8 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
     <value>Ennek helytelen használata instabilitáshoz vagy váratlan dolgok bekövetkezéséhez vezethet.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Óvatosan használja.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Az importálni kívánt flag-ek némelyikének már vannak beállított értékei. Szeretné felülírni a jelenlegi értékeiket az importálás során meghatározottakkal?
-
 {0} ellentmondásos flag definíció van:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Szeretné frissíteni a jelenleg telepített verzióját?</value>
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>A JSON amit beillesztett nem érvényes. Nézze át még egyszer és próbálja újra.
-
 További információ:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ További információ:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Úgy tűnik, hogy egy nagyon nagy beállítást importálsz. Csak olyan beállítást importáljon, amit ön teljesen tudja, hogy mit csinál. NE importáljon be vakon az olyan beállításokat, amit mások készítettek. Ha továbblép, nagy eséllyel instabilitással és váratlan változásokkal fog szembesülni.
-
 Biztosan folytatja?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,18 +512,6 @@ Biztosan folytatja?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Fast Flag Szerkesztő</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Visszatérés</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Tudom, hogy mit csinálok</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Tudod, hogy mit csinálsz?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>A Fast Flag-ek rendkívül erősek, mivel csak a Roblox mérnökei használhatják őket. Bár nagyon hasznosak lehetnek, a kézi konfigurálásuk komoly stabilitási és funkcionalitási problémákat okozhat. NE használd a szerkesztőt, ha nem vagy biztos abban, hogy mit csinálsz.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Vezérelheti a Roblox motor egyes paramétereinek és funkcióinak konfigurálását.</value>
@@ -624,14 +546,12 @@ Biztosan folytatja?</value>
     <value>Ikon fájlok</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>A BubbleStrap nem telepíthető ide. Kérjük, válasszon másik helyet, vagy térjen vissza az alapértelmezett helyre a visszaállítás gombra kattintva.</value>
+    <value>A Bubblestrap nem telepíthető ide. Kérjük, válasszon másik helyet, vagy térjen vissza az alapértelmezett helyre a visszaállítás gombra kattintva.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>A mappa, amelybe a BubbleStrap telepítését választotta, már létezik, és NEM üres. Erősen ajánlott a BubbleStrap-et saját, független mappába telepíteni.
-
+    <value>A mappa, amelybe a Bubblestrap telepítését választotta, már létezik, és NEM üres. Erősen ajánlott a Bubblestrap-et saját, független mappába telepíteni.
 A következő helyre történő váltás javasolt:
 {0}
-
 Szeretne a javasolt helyre váltani?
 A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folytatja a telepítést.</value>
     <comment>{0} is a file path</comment>
@@ -640,7 +560,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Először be kell állítania egy telepítési helyet</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>A BubbleStrap nem rendelkezik írási hozzáféréssel a kiválasztott telepítési helyhez. Kérjük, válasszon másik helyet.</value>
+    <value>A Bubblestrap nem rendelkezik írási hozzáféréssel a kiválasztott telepítési helyhez. Kérjük, válasszon másik helyet.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Tevékenység nyomon követése</value>
@@ -691,7 +611,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Ne lépjen ki az asztali alkalmazásba</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Lehetővé teszi a BubbleStrap számára, hogy felismerje, milyen Roblox játékkal játszol. Bizonyos funkciók megkövetelhetik ezt.</value>
+    <value>Lehetővé teszi a Bubblestrap számára, hogy felismerje, milyen Roblox játékkal játszol. Bizonyos funkciók megkövetelhetik ezt.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Aktivitáskövetés engedélyezése</value>
@@ -782,7 +702,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Beállítások mentve!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>BubbleStrap beállítások</value>
+    <value>Bubblestrap beállítások</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Kívánt nyelv kiválasztása</value>
@@ -806,7 +726,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Felhasználói felület és Elrendezés</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Fast Flag kezelés engedélyezése a BubbleStrap-nek</value>
+    <value>Fast Flag kezelés engedélyezése a Bubblestrap-nek</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Ha ezt kikapcsolja, bármi, amit itt beállít, nem fog a Roblox-ra hatni.</value>
@@ -818,7 +738,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Nem fog megjelenni, ha az egerét a képernyő tetejére mozdítja.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>A BubbleStrap nem tudja letölteni a Roblox-ot</value>
+    <value>A Bubblestrap nem tudja letölteni a Roblox-ot</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>A Roblox-ot nem lehet most letölteni. Kérjük, olvassa el a sugóoldalt további információért: {0}</value>
@@ -839,7 +759,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>A(z) '{0}' nem érvényes, mivel az érték csak egy szám lehet</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Ehhez az indításhoz nem fog naplófájl íródni, mert a BubbleStrap nem tud írni a '{0}' mappába</value>
+    <value>Ehhez az indításhoz nem fog naplófájl íródni, mert a Bubblestrap nem tud írni a '{0}' mappába</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Alapértelmezett</value>
@@ -854,7 +774,7 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>A '{0}' sor érvénytelen, mivel a place filter nem megfelelően van formázva.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>BubbleStrap telepítő</value>
+    <value>Bubblestrap telepítő</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Üdvözöljük</value>
@@ -873,18 +793,16 @@ A 'Nem' választása figyelmen kívül hagyja ezt a figyelmeztetést, és folyta
     <value>Következő</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Köszönjük a BubbleStrap letöltését. 
-
-A BubbleStrap letöltéséhez csak a(z) {0} és a(z) {1} hivatalos oldal áll rendelkezésre, ezért kérjük ellenőrizd, hogy hivatalos forrásból származik-e a letöltés.
-
-A telepítési folyamat gyors és egyszerű lesz, és a telepítés után a BubbleStrap bármelyik beállítását konfigurálhatja.</value>
+    <value>Köszönjük a Bubblestrap letöltését. 
+A Bubblestrap letöltéséhez csak a(z) {0} és a(z) {1} hivatalos oldal áll rendelkezésre, ezért kérjük ellenőrizd, hogy hivatalos forrásból származik-e a letöltés.
+A telepítési folyamat gyors és egyszerű lesz, és a telepítés után a Bubblestrap bármelyik beállítását konfigurálhatja.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>A folytatáshoz kattintson a 'Tovább' gombra.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>A BubbleStrap {0} verzióját próbálja telepíteni, de a legújabb elérhető verzió {1}. Szeretné letölteni?</value>
+    <value>A Bubblestrap {0} verzióját próbálja telepíteni, de a legújabb elérhető verzió {1}. Szeretné letölteni?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Válassza ki, hogy hova telepítse</value>
@@ -905,16 +823,13 @@ A telepítési folyamat gyors és egyszerű lesz, és a telepítés után a Bubb
     <value>Start menü ikon</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>A BubbleStrap sikeresen telepítve.
-
-A Roblox még nem lett telepítve, ez akkor fog megtörténni, amikor először indítod el a BubbleStrap segítségével. Mielőtt azonban ezt megtennéd, érdemes először a BubbleStrap beállításait konfigurálni.
-
-Továbbá kerülje a „Roblox Player” parancsikon használatát a Roblox elindításához, mivel a BubbleStrap nem fog elindulni a Roblox-szal együtt. Ha a weboldalról való indításkor nem jelenik meg a BubbleStrap, egyszerűen indítsd el a Robloxot a BubbleStrap segítségével egyszer az asztalról, hogy a probléma megoldódjon.
-
+    <value>A Bubblestrap sikeresen telepítve.
+A Roblox még nem lett telepítve, ez akkor fog megtörténni, amikor először indítod el a Bubblestrap segítségével. Mielőtt azonban ezt megtennéd, érdemes először a Bubblestrap beállításait konfigurálni.
+Továbbá kerülje a „Roblox Player” parancsikon használatát a Roblox elindításához, mivel a Bubblestrap nem fog elindulni a Roblox-szal együtt. Ha a weboldalról való indításkor nem jelenik meg a Bubblestrap, egyszerűen indítsd el a Robloxot a Bubblestrap segítségével egyszer az asztalról, hogy a probléma megoldódjon.
 Mit szeretnél tenni?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>A BubbleStrap beállításainak konfigurálása</value>
+    <value>A Bubblestrap beállításainak konfigurálása</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Trükközzön az összes funkcióval, amit kínál</value>
@@ -926,22 +841,19 @@ Mit szeretnél tenni?</value>
     <value>Az asztali alkalmazásba kerülsz, amint minden készen van</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>BubbleStrap eltávolítása</value>
+    <value>Bubblestrap eltávolítása</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Az eltávolítás eltávolítja a BubbleStrap-et a rendszerből, és automatikusan átállítja az alapértelmezett Roblox indítóprogramot, ha az még telepítve van.
-
+    <value>Az eltávolítás eltávolítja a Bubblestrap-et a rendszerből, és automatikusan átállítja az alapértelmezett Roblox indítóprogramot, ha az még telepítve van.
 Ha azért távolítod el vagy telepíted újra, mert problémáid vannak a Roblox-al, először olvasd el [ezt a súgóoldalt]({0}).
-
-Előfordulhat, hogy az eltávolítási folyamat nem képes teljesen kitakarítani magát, ezért előfordulhat, hogy kézzel kell kitakarítani a megmaradt fájlokat, ahová a BubbleStrap telepítve volt.
-
-A BubbleStrap telepítése a „{1}” helyre történt.</value>
+Előfordulhat, hogy az eltávolítási folyamat nem képes teljesen kitakarítani magát, ezért előfordulhat, hogy kézzel kell kitakarítani a megmaradt fájlokat, ahová a Bubblestrap telepítve volt.
+A Bubblestrap telepítése a „{1}” helyre történt.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Tartsa meg a beállításaimat és modjaimat</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Ezek ott maradnak, ahová a BubbleStrap telepítve volt, és automatikusan visszaállnak egy újratelepítéskor.</value>
+    <value>Ezek ott maradnak, ahová a Bubblestrap telepítve volt, és automatikusan visszaállnak egy újratelepítéskor.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Eltávolítás</value>
@@ -962,19 +874,18 @@ A BubbleStrap telepítése a „{1}” helyre történt.</value>
     <value>Jelenleg nincs telepítve a WebView2 runtime. Egyes Roblox funkciók nem fognak megfelelően működni nélküle, például az asztali alkalmazás. Szeretnéd most letölteni?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>A BubbleStrap nem tudott parancsikonokat létrehozni az Asztal és a Start menü számára. Próbálja meg később létrehozni őket a beállításokon keresztül.</value>
+    <value>A Bubblestrap nem tudott parancsikonokat létrehozni az Asztal és a Start menü számára. Próbálja meg később létrehozni őket a beállításokon keresztül.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Nézd meg először a [Bloxstrap Wiki]({0}) oldalát, hátha már találtak megoldást erre a problémára.
-
-Ha nem, akkor kérjük, jelentse ezt a kivételt a fork karbantartóinak. NE jelentse ezt a BubbleStrap GitHub issue-jeiben, mivel ez egy nem hivatalos build.</value>
+Ha nem, akkor kérjük, jelentse ezt a kivételt a fork karbantartóinak. NE jelentse ezt a Bubblestrap GitHub issue-jeiben, mivel ez egy nem hivatalos build.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Ezek általános parancsikonok, amelyek egy több választási lehetőséget tartalmazó indítási menüt hoznak létre. Az egyes funkciókhoz tartozó parancsikonok később a beállításokban hozhatók létre.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Annak beállítása, hogy a BubbleStrap könnyen elindítható legyen.</value>
+    <value>Annak beállítása, hogy a Bubblestrap könnyen elindítható legyen.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Általános</value>
@@ -1014,7 +925,7 @@ Ha nem, akkor kérjük, jelentse ezt a kivételt a fork karbantartóinak. NE jel
     <value>El nem mentett módosításai vannak. Biztos, hogy mentés nélkül akarja bezárni?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>A BubbleStrap elindított verziója régebbi, mint a jelenleg telepített verzió.
+    <value>A Bubblestrap elindított verziója régebbi, mint a jelenleg telepített verzió.
 Problémák léphetnek fel, és a beállításai megváltozhatnak. Ajánlott az újratelepítés.
 Biztos, hogy folytatni szeretné?</value>
   </data>
@@ -1026,21 +937,13 @@ Biztos, hogy folytatni szeretné?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Arról, hogy ez miért fordulhat elő, és hogyan lehet megoldani, olvassa el [ezt a súgócikket]({0}).
-
-Ellenőrizd, hogy a Roblox működik-e az [eredeti indítóprogrammal]({1}). Ha nem, akkor ez nem a BubbleStrap problémája. Ha igen, akkor olvassa el a súgócikket.</value>
+Ellenőrizd, hogy a Roblox működik-e az [eredeti indítóprogrammal]({1}). Ha nem, akkor ez nem a Bubblestrap problémája. Ha igen, akkor olvassa el a súgócikket.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Hálózati hiba miatt nem sikerült betölteni az adatokat.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Betöltés, kis türelmet...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Támogatók</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Ezek azok az emberek, akik a Ko-fi révén támogatták a BubbleStrap-et. Hatalmas köszönet mindenkinek!
-Itt minden személyt a teljes felajánlásuk alapján rangsorolunk.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>A beállítások nem tölthetők be. Az alapértelmezett konfigurációra lettek visszaállítva.</value>
@@ -1070,12 +973,11 @@ Itt minden személyt a teljes felajánlásuk alapján rangsorolunk.</value>
     <value>A mostani induláskor a Roblox nem lesz ellenőrizve frissítések szempontjából, és a modok módosításai nem lesznek alkalmazva.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Mivel a Robloxot telepíteni vagy frissíteni kell, a BubbleStrap nem tud folytatódni.</value>
+    <value>Mivel a Robloxot telepíteni vagy frissíteni kell, a Bubblestrap nem tud folytatódni.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>A BubbleStrap már korábban is települt erre a helyre, és még mindig jelen van, azonban a telepítő nem tudja felülírni a régi futtatható fájlt. 
-
-Kérjük, manuálisan törölje a BubbleStrap.exe fájlt a telepítési helyről, vagy próbálja meg újraindítani a rendszert, majd ezt követően próbálja meg újra a telepítést.</value>
+    <value>A Bubblestrap már korábban is települt erre a helyre, és még mindig jelen van, azonban a telepítő nem tudja felülírni a régi futtatható fájlt. 
+Kérjük, manuálisan törölje a Bubblestrap.exe fájlt a telepítési helyről, vagy próbálja meg újraindítani a rendszert, majd ezt követően próbálja meg újra a telepítést.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nem elérhető</value>
@@ -1087,7 +989,7 @@ Kérjük, manuálisan törölje a BubbleStrap.exe fájlt a telepítési helyről
     <value>Az alkalmazás paramétereinek konfigurálása, például a DPI-skálázási viselkedés és a [teljes képernyős optimalizálás]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>A Roblox még nem lett telepítve. Kérjük, legalább egyszer indítsa el a Robloxot a BubbleStrap segítségével, mielőtt megpróbálná használni ezt az opciót.</value>
+    <value>A Roblox még nem lett telepítve. Kérjük, legalább egyszer indítsa el a Robloxot a Bubblestrap segítségével, mielőtt megpróbálná használni ezt az opciót.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Biztos, hogy le akarja állítani a telepítést?</value>
@@ -1097,7 +999,6 @@ Kérjük, manuálisan törölje a BubbleStrap.exe fájlt a telepítési helyről
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>A kiválasztott indító ikon nem tudott betöltődni.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1105,19 +1006,10 @@ Kérjük, manuálisan törölje a BubbleStrap.exe fájlt a telepítési helyről
     <value>Roblox ikonok átmásolása mappába</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Lehetővé teszi, hogy a BubbleStrap Roblox ikonok választékát használd a parancsikonokhoz. [Lásd hogyan.]({0})</value>
+    <value>Lehetővé teszi, hogy a Bubblestrap Roblox ikonok választékát használd a parancsikonokhoz. [Lásd hogyan.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>A BubbleStrap nem tud írni a Windows Registry-be. Valószínűleg egy vírusirtó zavarja és problémákat okoz. Kérjük, ellenőrizze, hogy nincs-e valami, ami korlátozná a BubbleStrap működését.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Havi</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Egyszeri</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analitika</value>
+    <value>A Bubblestrap nem tud írni a Windows Registry-be. Valószínűleg egy vírusirtó zavarja és problémákat okoz. Kérjük, ellenőrizze, hogy nincs-e valami, ami korlátozná a Bubblestrap működését.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Minden visszaállítása alapértelmezettbe</value>
@@ -1131,13 +1023,11 @@ Kérjük, manuálisan törölje a BubbleStrap.exe fájlt a telepítési helyről
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>A tesztmód megkönnyíti a beállítások Robloxra gyakorolt hatásának iteratív tesztelését. 
-
 Amíg engedélyezve van, a beállítások bezárása után automatikusan elindítja a Robloxot, és a Roblox bezárása után újra megnyitja a beállításokat, egy ciklusban, amíg le nem tiltod.
-
 Szeretné engedélyezni a teszt üzemmódot?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>A BubbleStrap összes fordítása a [Crowdin]({0}) segítségével készül. Mindenki, aki itt szerepel, olyan ember, aki nagylelkűen önkéntes munkát végzett, hogy segítsen a BubbleStrap lokalizálásában. Hatalmas köszönet mindenkinek!</value>
+    <value>A Bubblestrap összes fordítása a [Crowdin]({0}) segítségével készül. Mindenki, aki itt szerepel, olyan ember, aki nagylelkűen önkéntes munkát végzett, hogy segítsen a Bubblestrap lokalizálásában. Hatalmas köszönet mindenkinek!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Telepítés</value>
@@ -1157,8 +1047,7 @@ Szeretné engedélyezni a teszt üzemmódot?</value>
     <value>Egyéni</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>A BubbleStrap megpróbálta frissíteni a Robloxot, de nem tudja, mert a Roblox fájljai még mindig használatban vannak.
-
+    <value>A Bubblestrap megpróbálta frissíteni a Robloxot, de nem tudja, mert a Roblox fájljai még mindig használatban vannak.
 Kérjük, zárjon be minden olyan alkalmazást, amely a Roblox fájljait használja, és indítsa újra.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1168,47 +1057,35 @@ Kérjük, zárjon be minden olyan alkalmazást, amely a Roblox fájljait haszná
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Exportálás</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Valami valószínűleg megakadályozza, hogy a BubbleStrap csatlakozzon az internethez.</value>
+    <value>Valami valószínűleg megakadályozza, hogy a Bubblestrap csatlakozzon az internethez.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>A kapcsolat megszakadt, ami rossz internetkapcsolatra vagy tűzfalblokkolásra utalhat.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>A Roblox és a Bubblestrap telepítési és beállítási paramétereinek módosítása.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Csatorna</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Válassza ki a telepítési csatornát. Ne változtassa meg, ha nem tudja, mit csinál.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Verzió</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Verzióazonosító</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>A Roblox már nem támogatja a Windows 7 vagy 8.1 operációs rendszert. A Roblox játék folytatásához kérjük, frissítsen Windows 10-re vagy újabb verzióra.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>A legújabb BubbleStrap beszerzése...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>A BubbleStrap viselkedésével kapcsolatos beállítások konfigurálása.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Az analitika küldésének engedélyezése</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Névtelen és semmi rossz, ígérjük. Ha többet szeretne megtudni arról, hogy mit és miért gyűjtünk, olvassa el az [adatvédelmi szabályzatunkat]({0}).</value>
+    <value>A legújabb Bubblestrap beszerzése...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Üres</value>
@@ -1434,60 +1311,431 @@ Alapértelmezés szerint {1}.</value>
     <value>Módosítás</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>A BubbleStrapről</value>
+    <value>A Bubblestrapről</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Előnyben részesített játék menü verzió</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Üzemidő</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Állítsd 0-ra az alapértelmezettért, ha a Roblox saját FPS korlát eltörlőjét akarod használni.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Hely: {0}
+Üzemidő: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>FPS korlát</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Elrejti a verzió és a gyártási információkat az indítás során.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>A [billentyűparancsok]({0}) segítségével kapcsolható. Csak akkor működik, ha a [BubbleStrap Roblox csoportban]({1}) vagy.</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Verzió és gyártási adatok elrejtése</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>A GUI-k elrejtésének lehetővé tétele</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>A RobloxCrashHandler.exe programot indításkor automatikusan bezárja, hogy csökkentse a memóriahasználatot.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>A kiválasztott feltétlenül meg fog jelenni az összes játékban. [Vigyázz, ez el tudja rontani a játék kinézetét!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Roblox Crash Handler letiltása</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Előnyben részesített világítási technológia</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Engedélyezze ezt, hogy az alkalmazás megnyitásakor egy egyéni Bubblestrap Discord RPC jelenjen meg a profilján.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Utófeldolgozási effektusok letiltása</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>A teljesképernyős címsor letiltása</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Válasszon hangot...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Játékosok árnyékai letiltása</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Egyéni halálhang eltávolítása</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
-    <value>Betűtípus méret</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Egyéni halálhang</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Az alapértelmezett érték 1. Változtassa meg ezt, ha egy saját betűtípust használ.</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Változtassa meg a halál hangját bármelyik tetszőleges hangra.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Tereptextúrák kikapcsolása</value>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Szürke ég</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache License 2.0</value>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Az egyedi égbolttal rendelkező játékok nem biztos, hogy működnek.</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Csatlakozz a Discord szerverünkhöz</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkán</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Gyors zászlószerkesztő</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Terhelés</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Roblox frissítés törlése.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Csatorna</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statikus könyvtár</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Váltson a verzió-xxx-ről a BinaryType alapú telepítési könyvtárakra.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Letöltés</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Bootstrapper letöltési állapot</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Módosítsa a letöltési karakterláncot. {0} a csomag neve, {1} a letöltött csomagok mérete, {2} pedig a csomagok teljes mérete.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Több példány indítása</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Lehetővé teszi, hogy egyszerre több Roblox játék kliens példány legyen megnyitva. Problémákat okozhat az asztali alkalmazásban.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>FFlagek törlése</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Hibakeresés</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox menü</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>A Roblox menü egyszerűsítése FFlags segítségével</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Telepítés</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Stúdió</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Stúdió</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Megmutatja, hogy mely játékosok lépnek ki/csatlakoznak a szerverhez, amelyen te is vagy.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Típus</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Verzió hash</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>A Bubblestrap alkalmazásnak egy adott hash-értékből kell letöltenie a verziót. Kérjük, ne módosítsa ezt a beállítást, ha nem tudja, hogy ez mit jelent.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Mentés és indítás</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>A frissítések letiltásra kerültek az ügyfél hiánya miatt.
+A problémák elkerülése érdekében a frissítés folytatódik.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Játékos naplói</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Üzenet</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profilok</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Ez a csatorna elavult, és valószínűleg már nem frissül. Kérjük, használjon másik csatornát.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Az Ön által jelenleg használt csatorna ({0}) elavult, és úgy tűnik, hogy már nem kap frissítéseket.
+Szeretne átváltani az alapértelmezett csatornára ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automatikus csatornaváltás</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>A Roblox vagy a Bubblestrap megpróbálhatja megváltoztatni a preferált csatornádat.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Automatikus váltás</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Mindig gyors</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Soha ne változz!</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>A Roblox megpróbálja {0} csatornára állítani a csatornádat, azonban a jelenlegi preferált csatornád {1}.
+Szeretnéd {0} csatornára váltani a preferált csatornádat?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Szeretné beépíteni az előre beállított FFlags-eket?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>A jelenlegi csatorna ({0}) nyilvános használata korlátozva lett. Mostantól az alapértelmezett csatornán ({1}) tartózkodik.</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>A legfrissebb telepítési információk lekérése, kérlek várj...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>A megadott csatorna vagy nem létezik, vagy privát.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>A Bloxstrap beállítások importálása sikertelen.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Beállítások importálása a Bloxstrapból</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>A Bloxstrap telepítő nem található.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>A Bubblestrap viselkedésével kapcsolatos beállítások konfigurálása.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Gyűjtsön össze olyan információkat, amelyeket online feltölthet a problémája megoldása érdekében.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bubblestrap konfiguráció</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Minden Bubblestrap napló</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Tisztítószer</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>A Bubblestrap eltávolítja a régi adatokat, hogy helyet takarítson meg.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Soha</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>1 nap után</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>1 hét után</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>1 hónap után</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>2 hónap után</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Mikor kell törölni a fájlokat?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>A beállított időnél régebbi fájlok törlésre kerülnek.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>A régi letöltések törlésre kerülnek.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Naplók</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>A régi naplófájlok törlésre kerülnek.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Bubblestrap naplófájlok</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>A Bubblestrap naplófájlok törlésre kerülnek.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>A Bubblestrap viselkedésével kapcsolatos beállítások konfigurálása.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>A FastFlags funkció ideiglenesen letiltásra került.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>További információkért csatlakozz a Bubblestrap Discord szerverhez.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Adatokra várás</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometria</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Irányítsd, hogyan jeleníti meg a Roblox a 3D-s geometriát.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Háló részlet</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Szabályozza, hogy a hálók milyen részletességgel jelennek meg a játékban.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Az alacsonyabb minőségűek a hálók eltűnését okozhatják.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Legalacsonyabb minőség</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Legmagasabb minőség</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Ismeretlen állapot</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Ismeretlen</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Képkockasebesség-korlátozás</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>A Roblox képfrissítési sebességének korlátozásának feloldása. 240 FPS feletti értékek nem ajánlottak.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Globális beállítások</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>A játék beállításait a Bubblestrap menüből állíthatod be.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Átláthatóság</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Egyéni átlátszóság az UI elemekhez.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Csökkentett mozgás</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Eltávolítja az animációt a menekülési menüből.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
+    <value>Betűméret</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Válassza ki, hogy milyen nagynak jelenjen meg a betűméret.</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Grafikai minőség</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Egér érzékenység</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Módosítsd a kamera mozgásának sebességét a játékban.</value>
+  </data>
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR-kompatibilis</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Állítsd be a játék grafikai minőségét</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Csak olvashatóként beállítva</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Megakadályozza, hogy a Roblox felülírja a globális beállításokat.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM minőségi felülírás</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Válassza ki a Roblox által használni kívánt FRM minőséget.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Engedd meg a Bubblestrap alkalmazásnak, hogy hozzáférjen a Roblox-fiókodhoz.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Biztosíts hozzáférést a Roblox API-khoz a hitelesítési cookie-d segítségével. [Mire fog hozzáférni a Bubblestrap?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Memória-vágó</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Rendszeresen törli a Roblox memóriahasználatát, hogy csökkentse a RAM-fogyasztást.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Memória-trimmelési intervallum</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Milyen gyakran (másodpercben) kell a memóriát csökkenteni. Az alacsonyabb értékek több CPU-t használnak, és instabil játékmenetet eredményezhetnek.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtuális valóság</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Roblox Studio felhasználói felület visszaállítása</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>A régi Roblox Studio felhasználói felületet használja az új helyett.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Területi fű letiltása</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Válassza ki, hogy a teljesítmény javítása érdekében megjeleníti vagy elrejti-e a terepen található díszfűvet.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Memória küszöbérték használata</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Csak akkor csökkentse, ha a Roblox meghaladja a megadott RAM-használatot.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Korlát MB-ban</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Teljes képernyő</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Kezdőképernyő mérete</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Állítsa be a játékablak alapértelmezett szélességét és magasságát az indításkor.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Szélesség (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Magasság (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Parti hangerő</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Állítsd be a hangos csevegés hangerejét a csapatodban.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Fő hangerő</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Állítsa be a játék összes hangjának fő hangerőjét.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automatikus csevegésfordítás</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>A csevegésben szereplő üzeneteket automatikusan lefordítja a kívánt nyelvre.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Haptikus visszajelzés</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Lehetővé teszi a vezérlő rezgéseinek tapintható visszajelzésként való megjelenítését.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Bemenet és vezérlők</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR-vignette</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>VR-vignettát alkalmaz, amely elsötétíti a képernyő széleit, hogy csökkentse a mozgásbetegséget.</value>
   </data>
 </root>

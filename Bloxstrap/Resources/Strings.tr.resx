@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>BubbleStrap {0} sürümüne otomatik olarak güncellenemedi. Lütfen BubbleStrap'ı web sitesinden indirip çalıştırarak manuel olarak güncelleyin.</value>
+    <value>Bubblestrap {0} sürümüne otomatik olarak güncellenemedi. Lütfen Bubblestrap'ı web sitesinden indirip çalıştırarak manuel olarak güncelleyin.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox şu anda çalışıyor ve başka bir istemcinin başlatılması onu kapatacaktır. Başlatmak istediğinizden emin misiniz?</value>
@@ -127,13 +68,13 @@
     <value>Roblox'un sunucuları şu an çökmüş olabilir. Daha fazla bilgi için {0} göz atın.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Herhangi bir bağlantı sağlanılamadı, bu da zayıf bir internet bağlantısının veya bir güvenlik duvarı engelinin işareti olabilir. Eğer bağlantınızda bir sorun yoksa, lütfen antivirüs yazılımınızın BubbleStrap'ı engellemediğinden emin olun.</value>
+    <value>Herhangi bir bağlantı sağlanılamadı, bu da zayıf bir internet bağlantısının veya bir güvenlik duvarı engelinin işareti olabilir. Eğer bağlantınızda bir sorun yoksa, lütfen antivirüs yazılımınızın Bubblestrap'ı engellemediğinden emin olun.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>BubbleStrap'i silmek için ilk önce kurmalısınız.</value>
+    <value>Bubblestrap'i silmek için ilk önce kurmalısınız.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrap, Roblox'u indirmek ve kurmak için yeterli disk alanına sahip değil. Lütfen biraz disk alanı boşaltın ve tekrar deneyin.</value>
+    <value>Bubblestrap, Roblox'u indirmek ve kurmak için yeterli disk alanına sahip değil. Lütfen biraz disk alanı boşaltın ve tekrar deneyin.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox modifikasyonları uygulanıyor...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap başarıyla kaldırıldı</value>
+    <value>Bubblestrap başarıyla kaldırıldı</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox şu an çalışıyor, ancak BubbleStrap'ı kaldırmak için kapalı olması gerekiyor. Roblox'u şimdi kapatmak ister misiniz?</value>
+    <value>Roblox şu an çalışıyor, ancak Bubblestrap'ı kaldırmak için kapalı olması gerekiyor. Roblox'u şimdi kapatmak ister misiniz?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Büyük ihtimalle Windows'un N sürümünü kullandığınız için Windows Media Foundation bileşenleri eksik olabilir ve bu yüzden Roblox'u açamıyor olabilirsiniz. Lütfen bu bileşenleri kurun ve ardından Roblox'u tekrar başlatın.</value>
@@ -276,22 +217,21 @@ Daha fazla bilgi için tıklayınız</value>
     <value>Bağlantı hatası</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap {0} ile bağlantı kuramıyor</value>
+    <value>Bubblestrap {0} ile bağlantı kuramıyor</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kayıt içeriğini kopyala</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>BubbleStrap çalıştırılırken bir istisna oluştu</value>
+    <value>Bubblestrap çalıştırılırken bir istisna oluştu</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Bu sorunun halihazırda bir düzeltmeyle giderilip giderilmediğini görmek için önce [Bloxstrap Wiki]({0})'yi kontrol ediniz.
-
 Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla birlikte [GitHub sorunu]({1}) aracılığıyla bildirin.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>BubbleStrap Istisnası</value>
+    <value>Bubblestrap Istisnası</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Özel</value>
@@ -303,10 +243,10 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>2015'in Sonları</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Klasik)</value>
+    <value>Bubblestrap (Klasik)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Cam)</value>
+    <value>Bubblestrap (Cam)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Eski (2008-2011)</value>
@@ -384,10 +324,10 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Aydınlık</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>BubbleStrap v{0} sürümüne güncellendi</value>
+    <value>Bubblestrap v{0} sürümüne güncellendi</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Başlattığınız BubbleStrap sürümü, şuan ki güncel sürümden farklı. Yeni sürüme güncellemek ister misiniz?</value>
+    <value>Başlattığınız Bubblestrap sürümü, şuan ki güncel sürümden farklı. Yeni sürüme güncellemek ister misiniz?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
     <value>Katkıda Bulunanlar</value>
@@ -396,7 +336,7 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Kod</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Bu insanlar BubbleStrap'e kayda değer katkılarda bulunmuş ve onun bu hale gelmesine yardımcı olmuş kişilerdir.</value>
+    <value>Bu insanlar Bubblestrap'e kayda değer katkılarda bulunmuş ve onun bu hale gelmesine yardımcı olmuş kişilerdir.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Özellik Fikirleri</value>
@@ -442,7 +382,7 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Şu anda açık olan tüm Roblox istemcilerini kapatana kadar tüm değişikliklerinizin hemen uygulanmayacağını lütfen unutmayın.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>BubbleStrap zaten çalışıyor</value>
+    <value>Bubblestrap zaten çalışıyor</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Farklı, retro veya hatta sadece Roblox gibi görünmesini sağlayabilirsiniz.</value>
@@ -469,7 +409,7 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Başlık</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>BubbleStrap'in nasıl görünmesi gerektiğini yapılandırın.</value>
+    <value>Bubblestrap'in nasıl görünmesi gerektiğini yapılandırın.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Global Tema</value>
@@ -493,10 +433,10 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Görünüş</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>BubbleStrap, Roblox'u başlattığınızda kendini otomatik olarak kontrol edecek ve güncelleyecektir.</value>
+    <value>Bubblestrap, Roblox'u başlattığınızda kendini otomatik olarak kontrol edecek ve güncelleyecektir.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>BubbleStrap'i otomatik olarak güncelle</value>
+    <value>Bubblestrap'i otomatik olarak güncelle</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Mevcut oyununuzun kapanmasını önlemek için başka bir oyunun yanlışlıkla başlatılmasını engelleyin.</value>
@@ -505,7 +445,7 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Başka bir Roblox istemcisi başlatılırken onay iste</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>BubbleStrap'ın Roblox'u başlatınca yapması gerektiğini yapılandırın.</value>
+    <value>Bubblestrap'ın Roblox'u başlatınca yapması gerektiğini yapılandırın.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox, sonraki başlangıçta yeniden kurulacak.</value>
@@ -529,12 +469,8 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
     <value>Bunun yanlış kullanımı istikrarsızlığa veya beklenmedik şeylerin olmasına neden olabilir.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Dikkatle kullanın.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>İçe aktarmaya çalıştığınız bazı Flag'ların zaten ayarlanmış değerleri vardır. Bunların mevcut değerlerini içe aktarmada tanımlanan değerlerin üzerine yazmak ister misiniz?
-
 Çakışan {0} bayrak tanımı var:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -553,7 +489,6 @@ Değilse, lütfen bu sorunu oluşturulan kayıt dosyasının bir kopyasıyla bir
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Girdiğiniz JSON geçerli görünmüyor. Lütfen iki kez kontrol edin ve tekrar deneyin.
-
 Daha fazla bilgi:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -566,7 +501,6 @@ Daha fazla bilgi:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Çok büyük bir yapılandırmayı içe aktarıyor gibi görünüyorsunuz. Yalnızca tam olarak anladığınız yapılandırmaları içe aktarmalısınız. Başkaları tarafından yapılmış yapılandırmaları körü körüne YAPIŞTIRMAYIN. Devam ederseniz, büyük olasılıkla istikrarsızlıklarla ve beklenmedik değişikliklerle karşılaşacaksınız.
-
 Devam etmek istediğinizden emin misiniz?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -577,20 +511,6 @@ Devam etmek istediğinizden emin misiniz?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Fast Flag Editörü</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Geri dön</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Ne yaptığımı biliyorum</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Ne yaptığını biliyor musun?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flag'lar, yalnızca Roblox mühendisleri tarafından kullanılmak üzere tasarlandıkları için son derece güçlüdür. Çok faydalı olsalar da, bunları manuel olarak yapılandırmak kararlılık ve işlevsellik ile ilgili ciddi sorunlara neden olabilir. Ne yaptığınızdan emin değilseniz düzenleyiciyi KULLANMAYIN.
-
-Bunu, diğer insanlar tarafından yapılan ve performansı artırmayı vaat eden büyük "Flag listelerini" içe aktarmak için KULLANMAYIN. Bunlar yukarıda bahsedilen sorunlara tabidir ve neyi değiştirdiklerinin tam olarak farkında olmayacağınız için sizin için sorunlara neden olurlar. Eğer bunu yapmak üzereyseniz, GERİ DÖNÜN.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Belirli Roblox motor parametrelerinin ve özelliklerinin nasıl yapılandırıldığını yönetin.</value>
@@ -625,14 +545,12 @@ Bunu, diğer insanlar tarafından yapılan ve performansı artırmayı vaat eden
     <value>İkon Dosyaları</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>BubbleStrap buraya kurulamaz. Lütfen farklı bir konum seçin veya sıfırla düğmesine tıklayarak varsayılan konumu kullanmaya devam edin.</value>
+    <value>Bubblestrap buraya kurulamaz. Lütfen farklı bir konum seçin veya sıfırla düğmesine tıklayarak varsayılan konumu kullanmaya devam edin.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>BubbleStrap'i kurmak için seçtiğiniz klasör zaten var ve boş DEĞİL. BubbleStrap'in kendi bağımsız klasörüne kurulması şiddetle tavsiye edilir.
-
+    <value>Bubblestrap'i kurmak için seçtiğiniz klasör zaten var ve boş DEĞİL. Bubblestrap'in kendi bağımsız klasörüne kurulması şiddetle tavsiye edilir.
 Aşağıdaki konuma değiştirilmesi önerilir:
 {0}
-
 Önerilen konuma geçmek ister misiniz?
 'Hayır' seçeneğinin seçilmesi bu uyarıyı yok sayacak ve kuruluma devam edecektir.</value>
     <comment>{0} is a file path</comment>
@@ -641,7 +559,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Bir kurulum konumu seçmelisin</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>BubbleStrap'in seçtiğiniz kurulum konumuna yazma erişimi yok. Lütfen başka bir konum seçin.</value>
+    <value>Bubblestrap'in seçtiğiniz kurulum konumuna yazma erişimi yok. Lütfen başka bir konum seçin.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Etkinlik takibi</value>
@@ -692,7 +610,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Masaüstü uygulamasına çıkma</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>BubbleStrap'in hangi Roblox oyununu oynadığınızı algılamasını sağlar. Bazı özellikler bunu gerektirebilir.</value>
+    <value>Bubblestrap'in hangi Roblox oyununu oynadığınızı algılamasını sağlar. Bazı özellikler bunu gerektirebilir.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Etkinlik takibini etkinleştirin</value>
@@ -783,7 +701,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Ayarlar kaydedildi!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>BubbleStrap Ayarları</value>
+    <value>Bubblestrap Ayarları</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Tercih edilen dili seçiniz</value>
@@ -807,7 +725,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Kullanıcı Arayüzü ve Düzeni</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>BubbleStrap'in Fast Flag'ları yönetmesine izin verin</value>
+    <value>Bubblestrap'in Fast Flag'ları yönetmesine izin verin</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Bunun yetkisini almak burada ayarlanan herhangi birşeyin Roblox'a uygulamamasını sağlayacak.</value>
@@ -819,7 +737,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Farenizi ekranın üst kısmına getirdiğinizde görüntülenmesini engeller.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap Roblox'u indiremiyor</value>
+    <value>Bubblestrap Roblox'u indiremiyor</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox şu anda indirilemiyor. Daha fazla bilgi için lütfen yardım sayfasını okuyunuz: {0}</value>
@@ -840,7 +758,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Değerin bir sayı olması gerektiğinden '{0}' girişi geçerli değildir</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Bu başlatma için herhangi bir kayıt dosyası yazılmıyacak çünkü BubbleStrap '{0}' konumundaki klasöre yazamıyor</value>
+    <value>Bu başlatma için herhangi bir kayıt dosyası yazılmıyacak çünkü Bubblestrap '{0}' konumundaki klasöre yazamıyor</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Varsayılan</value>
@@ -855,7 +773,7 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>Yer filtresi doğru biçimlendirilmediği için '{0}' girişi geçerli değil.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>BubbleStrap Yükleyicisi</value>
+    <value>Bubblestrap Yükleyicisi</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Hoş geldiniz</value>
@@ -874,18 +792,16 @@ Aşağıdaki konuma değiştirilmesi önerilir:
     <value>İleri</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>BubbleStrap'ı indirdiğiniz için teşekkürler.
-
-BubbleStrap'ı indirebileceğiniz tek resmî web siteleri {0} ve {1}'dur, bu yüzden lütfen resmî bir kaynaktan indirdiğinizi doğrulayın.
-
-Bu yükleme işlemi hızlı ve basit olacaktır, ve yükleme işlemi bittikten sonra BubbleStrap'ın her ayarını yapılandırabileceksiniz.</value>
+    <value>Bubblestrap'ı indirdiğiniz için teşekkürler.
+Bubblestrap'ı indirebileceğiniz tek resmî web siteleri {0} ve {1}'dur, bu yüzden lütfen resmî bir kaynaktan indirdiğinizi doğrulayın.
+Bu yükleme işlemi hızlı ve basit olacaktır, ve yükleme işlemi bittikten sonra Bubblestrap'ın her ayarını yapılandırabileceksiniz.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Devam etmek için lütfen "İleri" butonuna tıklayın.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>BubbleStrap'ın {0} sürümünü yüklemeye çalışıyorsunuz, fakat mevcut olan en son sürüm {1}. En son sürümü yüklemek ister misiniz?</value>
+    <value>Bubblestrap'ın {0} sürümünü yüklemeye çalışıyorsunuz, fakat mevcut olan en son sürüm {1}. En son sürümü yüklemek ister misiniz?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Yüklenecek yeri seç</value>
@@ -906,16 +822,13 @@ Bu yükleme işlemi hızlı ve basit olacaktır, ve yükleme işlemi bittikten s
     <value>Başlat Menü simgesi</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>BubbleStrap başarıyla yüklendi.
-
-Roblox henüz yüklenmedi, BubbleStrap'ı ilk defa başlattığınızda yüklenecektir. Ancak, bunu yapmadan önce, BubbleStrap'ın ayarlarını yapılandırmak isteyebilirsiniz.
-
-Ayrıca, Roblox'u başlatmak için "Roblox Player" kısayolunu kullanmaktan sakının, yoksa BubbleStrap Roblox ile başlatılmayacaktır. Eğer siteden başlattığınızda BubbleStrap'ı göremezseniz, düzeltmek için Roblox'u BubbleStrap ile masaüstünden bir kez başlatmanız yeterlidir.
-
+    <value>Bubblestrap başarıyla yüklendi.
+Roblox henüz yüklenmedi, Bubblestrap'ı ilk defa başlattığınızda yüklenecektir. Ancak, bunu yapmadan önce, Bubblestrap'ın ayarlarını yapılandırmak isteyebilirsiniz.
+Ayrıca, Roblox'u başlatmak için "Roblox Player" kısayolunu kullanmaktan sakının, yoksa Bubblestrap Roblox ile başlatılmayacaktır. Eğer siteden başlattığınızda Bubblestrap'ı göremezseniz, düzeltmek için Roblox'u Bubblestrap ile masaüstünden bir kez başlatmanız yeterlidir.
 Ne yapmak istersiniz?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>BubbleStrap'ın ayarlarını yapılandır</value>
+    <value>Bubblestrap'ın ayarlarını yapılandır</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Sunduğu tüm özelliklerle ince ayar yapın</value>
@@ -927,22 +840,19 @@ Ne yapmak istersiniz?</value>
     <value>Her şey bittikten sonra masaüstü uygulamasına bırakılacaksınız</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>BubbleStrap'ı kaldır</value>
+    <value>Bubblestrap'ı kaldır</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Kaldırmak, BubbleStrap'ı sisteminizden kaldıracaktır, ve hâlâ yüklü ise varsayılan Roblox başlatıcısını otomatik olarak yeniden yapılandıracaktır.
-
+    <value>Kaldırmak, Bubblestrap'ı sisteminizden kaldıracaktır, ve hâlâ yüklü ise varsayılan Roblox başlatıcısını otomatik olarak yeniden yapılandıracaktır.
 Eğer Roblox ile bir sorun yaşadığınızdan dolayı kaldırıyorsanız veya yeniden yüklüyorsanız, ilk önce [bu yardım sayfasını]({0}) okuyun.
-
-Kaldırma işlemi kendisinin artıklarını tamamen temizleyemeyebilir, bu yüzden BubbleStrap'ın yüklü olduğu yerdeki artık dosyaları manuel olarak temizlemeniz gerekebilir.
-
-BubbleStrap "{1}" yerine yüklüydü.</value>
+Kaldırma işlemi kendisinin artıklarını tamamen temizleyemeyebilir, bu yüzden Bubblestrap'ın yüklü olduğu yerdeki artık dosyaları manuel olarak temizlemeniz gerekebilir.
+Bubblestrap "{1}" yerine yüklüydü.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Ayarlarımı ve modlarımı tut</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>BubbleStrap'ın yüklü olduğu yerde tutulacak, ve bir yeniden yükleme de otomatik olarak geri yüklenecektir.</value>
+    <value>Bubblestrap'ın yüklü olduğu yerde tutulacak, ve bir yeniden yükleme de otomatik olarak geri yüklenecektir.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Kaldır</value>
@@ -963,19 +873,18 @@ BubbleStrap "{1}" yerine yüklüydü.</value>
     <value>Şuan WebView2 runtime sizde yüklü değil. Masaüstü uygulaması gibi bazı Roblox özellikleri WebView2 runtime olmadan düzgün çalışmayacaktır. WebView2 runtime'yi şimdi indirmek ister misiniz?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>BubbleStrap Masaüstü ve Başlat menüsüne kısayollar oluşturamadı. Daha sonra ayarlardan oluşturmayı deneyin.</value>
+    <value>Bubblestrap Masaüstü ve Başlat menüsüne kısayollar oluşturamadı. Daha sonra ayarlardan oluşturmayı deneyin.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Bu sorunun daha önce bir düzeltme ile ele alınıp alınmadığını görmek için önce [Bloxstrap Wiki'yi]({0}) kontrol edin.
-
-Eğer sorun ele alınmadıysa, lütfen bu istisnayı bu versiyonun geliştiricilerine bildirin. Bu istisnayı SAKIN BubbleStrap'ın GitHub issues sayfasına bildirmeyin, çünkü bu bir resmî olmayan yapıdır.</value>
+Eğer sorun ele alınmadıysa, lütfen bu istisnayı bu versiyonun geliştiricilerine bildirin. Bu istisnayı SAKIN Bubblestrap'ın GitHub issues sayfasına bildirmeyin, çünkü bu bir resmî olmayan yapıdır.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Bunlar, çoktan seçmeli bir başlatma menüsü getiren genel kısayollardır. Belirli fonksiyonlar için kısayollar daha sonra ayarlardan oluşturulabilir.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>BubbleStrap'ın nasıl kolayca başlatılabileceğini yapılandırın.</value>
+    <value>Bubblestrap'ın nasıl kolayca başlatılabileceğini yapılandırın.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Genel</value>
@@ -1015,7 +924,7 @@ Eğer sorun ele alınmadıysa, lütfen bu istisnayı bu versiyonun geliştiricil
     <value>Kaydedilmemiş değişiklikleriniz var. Kaydetmeden kapatmak istediğinizden emin misiniz?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Başlattığınız BubbleStrap sürümü sizde şu an yüklü olan sürümden daha eski. Sorunlar ortaya çıkabilir ve ayarlarınız değişebilir. Bir yeniden yükleme önerilir. Devam etmek istediğinizden emin misiniz?</value>
+    <value>Başlattığınız Bubblestrap sürümü sizde şu an yüklü olan sürümden daha eski. Sorunlar ortaya çıkabilir ve ayarlarınız değişebilir. Bir yeniden yükleme önerilir. Devam etmek istediğinizden emin misiniz?</value>
   </data>
   <data name="Dialog.PlayerError.FailedLaunch" xml:space="preserve">
     <value>Roblox başlatılamadı.</value>
@@ -1025,21 +934,13 @@ Eğer sorun ele alınmadıysa, lütfen bu istisnayı bu versiyonun geliştiricil
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Bunun neden yaşandığı ve nasıl çözüleceğine dair bilgi için lütfen [bu yardım makalesini]({0}) okuyun.
-
-Roblox'un [varsayılan başlatıcı]({1}) ile çalışıp çalışmadığına göz atın. Eğer çalışmıyorsa, o zaman bu bir BubbleStrap sorunu değildir. Eğer çalışıyorsa, lütfen yardım makalesine göz atın.</value>
+Roblox'un [varsayılan başlatıcı]({1}) ile çalışıp çalışmadığına göz atın. Eğer çalışmıyorsa, o zaman bu bir Bubblestrap sorunu değildir. Eğer çalışıyorsa, lütfen yardım makalesine göz atın.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Bir bağlantı sorunu nedeniyle veri yüklenemedi.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Yükleniyor, lütfen bekleyin...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Destekçiler</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Bu kişiler, BubbleStrap'ı Ko-fi üzerinden desteklemiş kişilerdir. Burada ki herkese çok teşekkürler!
-Buradaki herkes genel vaatlerine göre sıralanmıştır.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Ayarlarınız yüklenemedi. Ayarlarınız varsayılan yapılandırmaya sıfırlandı.</value>
@@ -1069,12 +970,11 @@ Buradaki herkes genel vaatlerine göre sıralanmıştır.</value>
     <value>Bu başlatma için, Roblox güncellemeler için kontrol edilmeyecek, ve modlara değişiklikler uygulanmayacaktır.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Roblox'un yüklenmesi veya yükseltilmesi gerektiği için BubbleStrap devam edemiyor.</value>
+    <value>Roblox'un yüklenmesi veya yükseltilmesi gerektiği için Bubblestrap devam edemiyor.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>BubbleStrap önceden bu yola yüklendi ve hâlâ burada, fakat yükleyici eski çalıştırılabilirin üzerine yazamıyor.
-
-Lütfen manuel olarak yükleme yolundan BubbleStrap.exe'yi silin veya sisteminizi yeniden başlatmayı deneyin, ve sonra yüklemeyi yeniden deneyin.</value>
+    <value>Bubblestrap önceden bu yola yüklendi ve hâlâ burada, fakat yükleyici eski çalıştırılabilirin üzerine yazamıyor.
+Lütfen manuel olarak yükleme yolundan Bubblestrap.exe'yi silin veya sisteminizi yeniden başlatmayı deneyin, ve sonra yüklemeyi yeniden deneyin.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Mevcut değil</value>
@@ -1086,7 +986,7 @@ Lütfen manuel olarak yükleme yolundan BubbleStrap.exe'yi silin veya sisteminiz
     <value>DPI ölçeklendirme ve [tam ekran optimizasyonları]({0}) gibi uygulama parametrelerini yapılandırın.</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox henüz yüklenmedi. Bu seçeneği kullanmaya çalışmadan önce lütfen Roblox'u BubbleStrap'ı kullanarak en az bir kere başlatın.</value>
+    <value>Roblox henüz yüklenmedi. Bu seçeneği kullanmaya çalışmadan önce lütfen Roblox'u Bubblestrap'ı kullanarak en az bir kere başlatın.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Yüklemeyi iptal etmek istediğinizden emin misiniz?</value>
@@ -1096,7 +996,6 @@ Lütfen manuel olarak yükleme yolundan BubbleStrap.exe'yi silin veya sisteminiz
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Seçilen bootstrapper simgesi yüklenemedi.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1104,19 +1003,10 @@ Lütfen manuel olarak yükleme yolundan BubbleStrap.exe'yi silin veya sisteminiz
     <value>Roblox simgelerini klasöre çıkar</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Kısayollarınız için BubbleStrap'ın çeşitli Roblox simgelerini kullanmanızı sağlar. [Nasıl olduğunu görün.]({0})</value>
+    <value>Kısayollarınız için Bubblestrap'ın çeşitli Roblox simgelerini kullanmanızı sağlar. [Nasıl olduğunu görün.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap Windows Kayıt Defterine yazamıyor. Bir antivirüs yazılımı muhtemelen müdahale ediyor ve sorunlara neden oluyor. Lütfen BubbleStrap'ın operasyonunu sınırlayan bir şeyin olmadığını kontrol edin.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Aylık</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Tek sefer</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analitikler</value>
+    <value>Bubblestrap Windows Kayıt Defterine yazamıyor. Bir antivirüs yazılımı muhtemelen müdahale ediyor ve sorunlara neden oluyor. Lütfen Bubblestrap'ın operasyonunu sınırlayan bir şeyin olmadığını kontrol edin.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Her şeyi varsayılanlara sıfırla</value>
@@ -1130,13 +1020,11 @@ Lütfen manuel olarak yükleme yolundan BubbleStrap.exe'yi silin veya sisteminiz
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Test modu yinelemelik olarak ayarlarınızın Roblox'u nasıl etkilediğini test etmeyi kolaylaştırır.
-
 Etkinken, kapatana kadar bir döngü içerisinde Ayarları kapattıktan sonra otomatik olarak Roblox'u başlatacak, ve Roblox'u kapattıktan sonra Ayarları yeniden açacak.
-
 Test modu açmak ister misiniz?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>BubbleStrap'ın tüm çevirileri [Crowdin]({0}) üzerinden kitle kaynaklıdır. Burada listelenen herkes cömertce BubbleStrap'ı yerelleştirmek için zamanlarını ve çabalarını harcayan kişilerdir. Buradaki herkese çok teşekkürler!</value>
+    <value>Bubblestrap'ın tüm çevirileri [Crowdin]({0}) üzerinden kitle kaynaklıdır. Burada listelenen herkes cömertce Bubblestrap'ı yerelleştirmek için zamanlarını ve çabalarını harcayan kişilerdir. Buradaki herkese çok teşekkürler!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Yükle</value>
@@ -1156,8 +1044,7 @@ Test modu açmak ister misiniz?</value>
     <value>Özel</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>BubbleStrap Roblox'u yükseltmeye çalıştı ancak başaramadı çünkü Roblox'un dosyaları hâlâ kullanımda.
-
+    <value>Bubblestrap Roblox'u yükseltmeye çalıştı ancak başaramadı çünkü Roblox'un dosyaları hâlâ kullanımda.
 Lütfen Roblox'un dosyalarını kullanabiliyor olan uygulamaları kapatın, ve tekrar başlatın.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1167,47 +1054,35 @@ Lütfen Roblox'un dosyalarını kullanabiliyor olan uygulamaları kapatın, ve t
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Dışa aktar</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Muhtemelen bir şey BubbleStrap'ın internet'e bağlanmasına engel oluyor.</value>
+    <value>Muhtemelen bir şey Bubblestrap'ın internet'e bağlanmasına engel oluyor.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Bağlantı zaman aşımına uğradı, bu da zayıf bir internet bağlantısının veya bir güvenlik duvarı engelinin işareti olabilir.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Roblox ve Bubblestrap için dağıtım ve kurulum ayarlarını değiştirin.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Kanal</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Dağıtım kanalını seçin. Ne yaptığınızı bilmiyorsanız değiştirmeyin.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Sürüm</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>SürümKodu</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox artık Windows 7 ve 8,1. desteklemiyor. Roblox'u oynamaya devam etmek için Windows 10 veya daha üst versiyona geçiş yapınız.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>BubbleStrap'in en yeni sürümü indiriliyor...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>BubbleStrap'ın davranışı ile ilgili ayarları yapılandırın.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Analitikleri göndermeyi etkinleştir</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Hepsi anonim ve kötü bir şey değil, söz. Ne topladığımız ve neden topladığımız hakkında bilgi için [gizlilik politikamıza]({0}) bakın.</value>
+    <value>Bubblestrap'in en yeni sürümü indiriliyor...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Boş</value>
@@ -1433,60 +1308,434 @@ Otomatiklen {1}'e alınılıyor.</value>
     <value>Düzenle</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>BubbleStrap Hakkında</value>
+    <value>Bubblestrap Hakkında</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Tercih edilen ESC menüsü versiyonu</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Çalışma süresi</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Roblox'un kendi kare hızı açıcısını kullanmak için varsayılanı 0'a ayarlayın.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Konum: {0}
+Çalışma süresi: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Kare hızı limiti (FPS)</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Başlatma sırasında sürüm ve üretim bilgilerini gizler.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>[Klavye kısayolları]({0}) ile değiştirilir. Yalnızca [BubbleStrap grubu]({1}) içindeyseniz çalışır.</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Sürüm ve üretim ayrıntılarını gizle</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>GUI'leri gizleme özelliğini etkinleştir</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Bellek kullanımını azaltmak için başlatıldığında RobloxCrashHandler.exe dosyasını otomatik olarak kapatır.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Seçilmiş olan tüm oyunlarda zorla etkinleştirilecektir. [Dikkatli olun, aydınlatma sorunlarına neden olabilir!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Roblox Çökme İşleyicisini Devre Dışı Bırak</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Tercih edilen aydınlatma teknolojisi</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Uygulama açıkken profilinizde özel Bubblestrap Discord RPC'yi görüntülemek için bunu etkinleştirin.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>İşlem-sonrası efeklerini devre dışı bırak</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Tam ekran başlık çubuğunu kapat</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Ses seçin...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Oyuncu gölgelerini kapat</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Özel Ölüm Sesini Kaldır</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Özel Ölüm Sesi</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Ölüm sesini istediğiniz herhangi bir sesle değiştirin.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Gri Gökyüzü</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Özel gökyüzü içeren oyunlar çalışmayabilir.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Discord sunucumuza katılın</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Volcano</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Hızlı Bayrak Düzenleyici</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Yük</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Roblox yükseltmesini iptal ediyorum.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanal</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statik dizin</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Sürüm-xxx'ten BinaryType tabanlı kurulum dizinlerine geçin.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>İndirme</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Bootstrapper indirme durumu</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>İndirme dizesini değiştirin. {0} paket adı, {1} indirilen paketlerin boyutu ve {2} paketlerin toplam boyutudur.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Çoklu örnek başlatma</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Aynı anda birden fazla Roblox oyun istemcisi örneğinin açılmasına izin verir. Masaüstü uygulamasında sorunlara neden olabilir.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>FFlag'leri temizle</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Hata ayıklama</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox Menüsü</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>FFlags ile Roblox menüsünü sadeleştirin</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Dağıtım</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Stüdyo</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Stüdyosu</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Bulunduğunuz sunucudan ayrılan/katılan oyuncuları gösterir.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Sürüm karma değeri</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Bubblestrap'ı belirli bir hash'ten sürümü indirmeye zorlayın. Bunun ne işe yaradığını bilmiyorsanız lütfen değiştirmeyin.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Kaydet ve Başlat</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Eksik istemci nedeniyle yükseltmeler devre dışı bırakıldı.
+    Sorunların önlenmesi için yükseltme işlemi devam edecek.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Oyuncu günlükleri</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profiller</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Bu kanal güncel değildir ve muhtemelen artık güncellenmemektedir. Lütfen başka bir kanal kullanın.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Şu anda bulunduğunuz kanal ({0}) güncel değildir ve artık güncelleme almıyor gibi görünüyor.
+Varsayılan kanala ({1}) geçmek ister misiniz?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Otomatik kanal değiştirme işlemi</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox veya Bubblestrap, tercih ettiğiniz kanalı değiştirmeye çalışabilir.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Otomatik olarak değiştir</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Her zaman hızlı</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Asla değişme</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox, kanalınızı {0} olarak ayarlamaya çalışıyor, ancak şu anda tercih ettiğiniz kanal {1}'dir.
+Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Önceden ayarlanmış FFlag'leri dahil etmek ister misiniz?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Şu anda bulunduğunuz kanal ({0}) artık genel kullanıma kapalıdır. Artık varsayılan kanalda ({1}) olacaksınız.</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>En son dağıtım bilgilerini alınıyor, lütfen bekleyin...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Belirtilen kanal mevcut değil veya özel bir kanaldır.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Bloxstrap ayarları içe aktarılamadı.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Bloxstrap'tan ayarları içe aktar</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Bloxstrap kurulumu bulunamadı.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Bubblestrap'ın davranışıyla ilgili seçenekleri yapılandırın.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Karşılaştığınız sorunu gidermek için çevrimiçi olarak yüklenebilecek bilgileri toplayın.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bubblestrap yapılandırması</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Tüm Bubblestrap günlükleri</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Temizleyici</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap, yer kazanmak için eski verileri siler.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Asla</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>1 gün sonra</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>1 hafta sonra</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>1 ay sonra</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>2 ay sonra</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Dosyalar ne zaman silinmelidir?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Belirlenen süreden daha eski dosyalar silinecektir.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Önbellek</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Eski indirmeler silinecektir.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Kayıtlar</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Eski günlük dosyaları silinecektir.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Bubblestrap günlükleri</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap günlükleri silinecektir.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap'ın davranışıyla ilgili seçenekleri yapılandırın.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags geçici olarak devre dışı bırakılmıştır.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Daha fazla bilgi için Bubblestrap Discord sunucusuna katılın.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Verileri bekliyorum</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometri</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Roblox'un 3D geometriyi nasıl işlediğini kontrol edin.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Ağ detayı</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Oyun içinde ağların ne kadar ayrıntılı görüneceğini kontrol edin.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Düşük kalite, ağların kaybolmasına neden olabilir.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>En düşük kalite</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>En yüksek kalite</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Bilinmeyen durum</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Kare Hızı Sınırı</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Roblox için kare hızı sınırını kaldırın. 240 FPS'nin üzerine çıkılması önerilmez.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Genel Ayarlar</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Bubblestrap menüsünden oyun içi ayarları yapın.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Şeffaflık</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>UI öğeleri için özel şeffaflık.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Azaltılmış Hareket</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Kaçış menüsündeki animasyonu kaldırır.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Yazı tipi boyutu</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Varsayılan değer 1'dir. Özel bir yazı tipi kullanıyorsanız değiştirin.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Yazı tipinin ne kadar büyük görünmesini istediğinizi seçin.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Arazi dokularını devre dışı bırak</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Grafik Kalitesi</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache Lisans 2,0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Fare Hassasiyeti</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Oyun içinde kameranın hareket hızını değiştirin.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR Özelliği</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Oyununuzun grafik kalitesini ayarlayın</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Salt Okunur Olarak Ayarla</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Roblox'un genel ayarları geçersiz kılmasını önleyin.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM Kalite Geçersiz Kılma</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Roblox'un kullanması gereken FRM kalitesini seçin.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Bubblestrap'in Roblox hesabına erişmesine izin ver</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Kimlik doğrulama çerezini kullanarak Roblox API'lerine erişim sağlayın. [Bubblestrap neye erişecek?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Bellek Düzenleyici</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>RAM tüketimini azaltmak için Roblox'un bellek kullanımını düzenli olarak temizler.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Bellek Düzeltme Aralığı</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Belleği ne sıklıkla (saniye cinsinden) kırpacak. Düşük değerler daha fazla CPU kullanır ve oyun oynanışının kararsız olmasına neden olabilir.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Sanal Gerçeklik</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Roblox Studio kullanıcı arayüzünü geri yükle</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Yeni Roblox Studio kullanıcı arayüzü yerine eski Roblox Studio kullanıcı arayüzünü kullanır.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Arazi Çimini Devre Dışı Bırak</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Performansı artırmak için arazideki dekoratif çimleri gösterip göstermeyeceğinizi seçin.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Bellek Eşiği Kullan</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Roblox belirli bir RAM kullanım miktarını aştığında kırpın.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>MB cinsinden sınır</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Tam ekran</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Başlangıç Ekranı Boyutu</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Başlangıçta oyun penceresinin varsayılan genişliğini ve yüksekliğini ayarlayın.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Genişlik (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Yükseklik (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Ses</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Parti Hacmi</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Partinizdeki sesli sohbetin ses seviyesini ayarlayın.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Ana Ses Seviyesi</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Oyun içi tüm sesler için ana ses seviyesini ayarlayın.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Otomatik Sohbet Çevirisi</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Sohbet mesajlarını tercih ettiğiniz dile otomatik olarak çevirin.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Dokunsal Geri Bildirim</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Denetleyicinin titreşimleriyle dokunsal geri bildirim sağlar.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Giriş ve Kontroller</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR Vinyet</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Hareket hastalığını azaltmak için ekran kenarlarını karartan bir VR vinyet uygular.</value>
   </data>
 </root>

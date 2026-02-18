@@ -24,18 +24,18 @@
 
         <TextBlock Text="{x:Static resources:Strings.Menu_FastFlags_Presets_Categories_Rendering}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
 
-                <controls:OptionControl Margin="0,8,0,0" Header="{x:Static resources:Strings.Menu_GBSEditor_GraphicsQuality_Title}" Description="{x:Static resources:Strings.Menu_GBSEditor_GraphicsQuality_Description}">
-                    <Grid Width="256">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="1" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding GraphicsQuality, Mode=TwoWay}" />
-                        <Border Margin="0,-4,0,0" Grid.Column="1" Width="30" BorderBrush="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" BorderThickness="1" CornerRadius="4">
-                            <TextBlock HorizontalAlignment="Center" Padding="4" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding GraphicsQuality, Mode=TwoWay}" />
-                        </Border>
-                    </Grid>
-                </controls:OptionControl>
+        <controls:OptionControl Margin="0,8,0,0" Header="{x:Static resources:Strings.Menu_GBSEditor_GraphicsQuality_Title}" Description="{x:Static resources:Strings.Menu_GBSEditor_GraphicsQuality_Description}">
+            <Grid Width="256">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="1" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True" Value="{Binding GraphicsQuality, Mode=TwoWay}" />
+                <Border Margin="0,-4,0,0" Grid.Column="1" Width="30" BorderBrush="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" BorderThickness="1" CornerRadius="4">
+                    <TextBlock HorizontalAlignment="Center" Padding="4" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding GraphicsQuality, Mode=TwoWay}" />
+                </Border>
+            </Grid>
+        </controls:OptionControl>
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_GPSEditor_FramerateCap_Title}" 
@@ -43,25 +43,69 @@
             <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" Text="{Binding FramerateCap, Mode=TwoWay}" PreviewTextInput="ValidateUInt32" />
         </controls:OptionControl>
 
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GBSEditor_StartScreenSize_Title}"
+            Description="{x:Static resources:Strings.Menu_GBSEditor_StartScreenSize_Description}">
+            <Grid Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,0,5,0">
+                    <TextBlock Text="{x:Static resources:Strings.Menu_GBSEditor_StartScreenSize_X_Label}" Margin="0,0,0,4" />
+                    <ui:TextBox Text="{Binding StartScreenSizeX, Mode=TwoWay}" Width="120" Padding="5" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Vertical" Margin="5,0,0,0">
+                    <TextBlock Text="{x:Static resources:Strings.Menu_GBSEditor_StartScreenSize_Y_Label}" Margin="0,0,0,4" />
+                    <ui:TextBox Text="{Binding StartScreenSizeY, Mode=TwoWay}" Width="120" Padding="5" />
+                </StackPanel>
+            </Grid>
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GBSEditor_Fullscreen_Title}" Margin="0,0,0,4">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding Fullscreen}" />
+        </controls:OptionControl>
+
+        <TextBlock Text="{x:Static resources:Strings.Menu_GPSEditor_InputandControls_Title}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GBSEditor_MouseSensitivity_Title}" 
+            Description="{x:Static resources:Strings.Menu_GBSEditor_MouseSensitivity_Description}">
+            <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" Text="{Binding MouseSensitivity, Mode=TwoWay}" PreviewTextInput="ValidateFloat" />
+        </controls:OptionControl>
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Title}" 
+            Description="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Description}">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding HapticFeedback}" />
+        </controls:OptionControl>
+
         <TextBlock Text="{x:Static resources:Strings.Menu_FastFlags_Presets_Categories_UserInterface}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
         <controls:OptionControl Margin="0,8,0,0" Header="{x:Static resources:Strings.Menu_GBSEditor_UITransparency_Title}" Description="{x:Static resources:Strings.Menu_GBSEditor_UITransparency_Description}">
-                    <Grid Width="256">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="0" Maximum="3" TickFrequency="0.1" IsSnapToTickEnabled="True" Value="{Binding UITransparency, Mode=TwoWay}" />
-                        <Border Margin="0,-4,0,0" Grid.Column="1" Width="30" BorderBrush="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" BorderThickness="1" CornerRadius="4">
-                            <TextBlock HorizontalAlignment="Center" Padding="4" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding UITransparency, Mode=TwoWay}" />
-                        </Border>
-                    </Grid>
-                </controls:OptionControl>
+            <Grid Width="256">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="0" Maximum="3" TickFrequency="0.1" IsSnapToTickEnabled="True" Value="{Binding UITransparency, Mode=TwoWay}" />
+                <Border Margin="0,-4,0,0" Grid.Column="1" Width="30" BorderBrush="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" BorderThickness="1" CornerRadius="4">
+                    <TextBlock HorizontalAlignment="Center" Padding="4" VerticalAlignment="Center" TextAlignment="Center" Text="{Binding UITransparency, Mode=TwoWay}" />
+                </Border>
+            </Grid>
+        </controls:OptionControl>
 
-                <controls:OptionControl 
+        <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_GBSEditor_ReducedMotion_Title}" 
             Description="{x:Static resources:Strings.Menu_GBSEditor_ReducedMotion_Description}">
-                    <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding ReducedMotion}" />
-                </controls:OptionControl>
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding ReducedMotion}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GPSEditor_ChatTranslation_Title}"
+            Description="{x:Static resources:Strings.Menu_GPSEditor_ChatTranslation_Description}">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding ChatTranslationEnabled}" />
+        </controls:OptionControl>
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_GBSEditor_FontSize_Title}" 
@@ -75,16 +119,48 @@
             </ComboBox>
         </controls:OptionControl>
 
-        <TextBlock Text="{x:Static resources:Strings.Common_Other}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
-        <controls:OptionControl 
-            Header="{x:Static resources:Strings.Menu_GBSEditor_MouseSensitivity_Title}" 
-            Description="{x:Static resources:Strings.Menu_GBSEditor_MouseSensitivity_Description}">
-            <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" Text="{Binding MouseSensitivity, Mode=TwoWay}" PreviewTextInput="ValidateFloat" />
+        <TextBlock Text="{x:Static resources:Strings.Menu_GBSEditor_Audio_Title}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
+
+        <controls:OptionControl Header="{x:Static resources:Strings.Menu_GBSEditor_PartyVolume_Title}" Description="{x:Static resources:Strings.Menu_GBSEditor_PartyVolume_Description}">
+            <Grid Width="256">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="0" Maximum="1" TickFrequency="0.1" IsSnapToTickEnabled="True" Value="{Binding PartyVolume, Mode=TwoWay}" />
+
+                <Border Grid.Column="1" Width="35" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" CornerRadius="4">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding PartyVolume, StringFormat={}{0:0.#}}" />
+                </Border>
+            </Grid>
         </controls:OptionControl>
 
+        <controls:OptionControl Header="{x:Static resources:Strings.Menu_GBSEditor_MasterVolume_Title}" Description="{x:Static resources:Strings.Menu_GBSEditor_MasterVolume_Description}">
+            <Grid Width="256">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="0" Maximum="1" TickFrequency="0.1" IsSnapToTickEnabled="True" Value="{Binding MasterVolume, Mode=TwoWay}" />
+
+                <Border Grid.Column="1" Width="35" Background="{ui:ThemeResource SolidBackgroundFillColorSecondarybrush}" CornerRadius="4">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding MasterVolume, StringFormat={}{0:0.#}}" />
+                </Border>
+            </Grid>
+        </controls:OptionControl>
+
+        <TextBlock Text="{x:Static resources:Strings.Common_VirutalReality}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_GBSEditor_VREnabled_Title}">
             <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding VREnabled}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl
+            Header="{x:Static resources:Strings.Menu_GBSEditor_VRVignette_Title}"
+            Description="{x:Static resources:Strings.Menu_GBSEditor_VRVignette_Description}">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding VRVignette}" />
         </controls:OptionControl>
     </StackPanel>
 </ui:UiPage>

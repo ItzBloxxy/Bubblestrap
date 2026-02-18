@@ -42,7 +42,7 @@ namespace Bloxstrap.UI.Elements.ContextMenu
             if (_watcher.RichPresence is not null)
                 RichPresenceMenuItem.Visibility = Visibility.Visible;
 
-            VersionTextBlock.Text = $"{App.ProjectName} v{App.Version}";
+            VersionTextBlock.Text = $"{App.ProjectName} v{string.Join(".", App.Version.Split('.').Take(3))}";
         }
 
         public void ShowServerInformationWindow()

@@ -29,13 +29,18 @@ namespace Bloxstrap
             { "Rendering.Mode.D3D11", "FFlagDebugGraphicsPreferD3D11" },
             { "Rendering.Mode.Vulkan", "FFlagDebugGraphicsPreferVulkan" },
             { "Rendering.Mode.OpenGL", "FFlagDebugGraphicsPreferOpenGL" },
+            { "Rendering.Grass.Max", "FIntFRMMaxGrassDistance" },
+            { "Rendering.Grass.Min", "FIntFRMMinGrassDistance" },
 
             // Geometry
             { "Geometry.MeshLOD.Static", "DFIntCSGLevelOfDetailSwitchingDistanceStatic" }, // this isnt actually a flag, we use it to determine current value, not the best way of doing that
             { "Geometry.MeshLOD.L0", "DFIntCSGLevelOfDetailSwitchingDistance" },
             { "Geometry.MeshLOD.L12", "DFIntCSGLevelOfDetailSwitchingDistanceL12" },
             { "Geometry.MeshLOD.L23", "DFIntCSGLevelOfDetailSwitchingDistanceL23" },
-            { "Geometry.MeshLOD.L34", "DFIntCSGLevelOfDetailSwitchingDistanceL34" }
+            { "Geometry.MeshLOD.L34", "DFIntCSGLevelOfDetailSwitchingDistanceL34" },
+
+            // Roblox studio
+            { "RobloxStudio.FFlagEnableRibbonPlugin3", "FFlagEnableRibbonPlugin3" }
         };
 
         public static IReadOnlyDictionary<RenderingMode, string> RenderingModes => new Dictionary<RenderingMode, string>
@@ -142,15 +147,61 @@ namespace Bloxstrap
 
         public override void Save()
         {
-            // convert all flag values to strings before saving
+            const string LOG_IDENT = "FastFlagManager::Save";
 
-            foreach (var pair in Prop)
-                Prop[pair.Key] = pair.Value.ToString()!;
+            var studioFlagNames = PresetFlags
+                .Where(x => x.Key.StartsWith("RobloxStudio."))
+                .Select(x => x.Value)
+                .ToList();
+
+            var studioFlags = Prop
+                .Where(x => studioFlagNames.Contains(x.Key))
+                .ToDictionary(x => x.Key, x => x.Value.ToString()!);
+
+            var playerFlags = Prop
+                .Where(x => !studioFlagNames.Contains(x.Key))
+                .ToDictionary(x => x.Key, x => x.Value.ToString()!);
+
+            var allFlags = new Dictionary<string, object>(Prop);
+            Prop = playerFlags.ToDictionary(x => x.Key, x => (object)x.Value);
 
             base.Save();
 
-            // clone the dictionary
+            if (studioFlags.Any())
+            {
+                string studioPath = GetStudioSettingsPath();
+                if (!string.IsNullOrEmpty(studioPath))
+                {
+                    try
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(studioPath)!);
+                        string json = System.Text.Json.JsonSerializer.Serialize(studioFlags, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+                        File.WriteAllText(studioPath, json);
+                    }
+                    catch (Exception ex)
+                    {
+                        App.Logger.WriteLine(LOG_IDENT, $"Failed to save Studio flags: {ex.Message}");
+                    }
+                }
+            }
+
+            Prop = allFlags;
             OriginalProp = new(Prop);
+        }
+
+        private string GetStudioSettingsPath()
+        {
+            string versionsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Roblox", "Versions");
+
+            if (Directory.Exists(versionsPath))
+            {
+                var studioFolder = Directory.GetDirectories(versionsPath)
+                    .FirstOrDefault(dir => File.Exists(Path.Combine(dir, "RobloxStudioBeta.exe")));
+
+                if (studioFolder != null)
+                    return Path.Combine(studioFolder, "ClientSettings", "ClientAppSettings.json");
+            }
+            return string.Empty;
         }
 
         public override void Load(bool alertFailure = true)

@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -133,7 +74,7 @@
     <value>برای حذف نصب، ابتدا باید بلاکسترپ را نصب کنید.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrap فضای کافی برای دانلود و نصب Roblox ندارد. لطفاً مقداری حافظه را آزاد کنید و دوباره تلاش کنید.</value>
+    <value>Bubblestrap فضای کافی برای دانلود و نصب Roblox ندارد. لطفاً مقداری حافظه را آزاد کنید و دوباره تلاش کنید.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>در حال اعمال کردن تغییرات روبلاکس...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap با موفقیت حذف شد</value>
+    <value>Bubblestrap با موفقیت حذف شد</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox در حال اجرا است؛ ولی قبل از حذف نصب BubbleStrap باید بسته شود. آیا میخواهید Roblox را الان بیندید?</value>
+    <value>Roblox در حال اجرا است؛ ولی قبل از حذف نصب Bubblestrap باید بسته شود. آیا میخواهید Roblox را الان بیندید?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>روبلاکس نیاز به استفاده از اجزای Windows Media Foundation میباشد. همانا شما آنرا ندارید؛ و یا ممکن است شما درحال استفاده از نسخه N در Windows باشید. اول آنرا نصب کرده، و بعد روبلاکس را اجرا کنید.</value>
@@ -287,7 +228,6 @@
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>[ویکی بلاکسترپ]({0}) را بررسی کنید تا ببینید آیا این مشکل قبلاً با یک راه‌حل برطرف شده است یا خیر.
-
 اگر نه، لطفا این مشکل را از [مشکلات گیتهاب]({1}) به همراه کپی فایل از لاگ ساخته شده گزارش نمایید.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
@@ -309,10 +249,10 @@
     <value>بلاکسترپ (شیشه ای)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
-    <value />
+    <value>میراث (۲۰۰۸ - ۲۰۱۱)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2011" xml:space="preserve">
-    <value />
+    <value>میراث (۲۰۱۱ - ۲۰۱۴)</value>
   </data>
   <data name="Enums.BootstrapperStyle.ProgressDialog" xml:space="preserve">
     <value>روبلاکس (~2014)</value>
@@ -529,12 +469,8 @@
     <value>استفاده نادرست از این می‌تواند منجر به ناپایداری یا اتفاقات غیرمنتظره شود.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>در استفاده کردن احتیاط کنید.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>برخی از فلگ هایی که می‌خواهید وارد کنید دارای مقادیر تنظیم شده‌اند. آیا می خواهید مقادیر فعلی آنها را با مقادیر تعریف شده بازنویسی کنید؟
-
 {0} تعاریف فلگ متناقض وجود دارد:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -553,7 +489,6 @@
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>به نظر می رسد JSON که وارد کرده اید درست نیست. لطفاً دوباره آن را بررسی کنید و دوباره امتحان کنید.
-
 اطلاعات بیشتر:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -566,7 +501,6 @@
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>به نظر می‌رسد که شما در حال وارد کردن یک پیکربندی بسیار بزرگ هستید. شما باید فقط پیکربندی‌هایی را وارد کنید که به‌طور کامل آنها را درک کرده‌ اید. از کپی کردن پیکربندی‌های دیگران به‌طور کورکورانه خودداری کنید. اگر ادامه دهید، احتمالاً با مشکلات پایداری روبرو خواهید شد و تغییرات غیرمنتظره‌ای را تجربه خواهید کرد.
-
 آیا مطمئن هستید که می‌خواهید ادامه دهید؟</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -577,20 +511,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>ویرایشگر فست فلگ</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>بازگشت</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>میدونم دارم چیکار می‌کنم</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>آیا میدونی داری چی کار می‌کنی؟</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>فست فلگ ها بسیار قدرتمند هستند، زیرا فقط برای مهندسین روبلاکس در نظر گرفته شده اند. در حالی که آنها می توانند بسیار مفید باشند، پیکربندی دستی آنها می تواند مشکلات جدی با ثبات و عملکرد ایجاد کند. اگر از کاری که انجام می دهید مطمئن نیستید از ویرایشگر استفاده نکنید.
-
-از این برای وارد کردن "فهرست های فلگ‌ ها" بزرگ ساخته شده توسط افراد دیگر که قول بهبود عملکرد یا موارد مشابه را می دهند استفاده نکنید. آنها مشمول موارد ذکر شده هستند و از آنجایی که شما به طور کامل از تغییر آنها آگاه نخواهید شد، برای شما مشکل ایجاد خواهند کرد. اگر قصد انجام این کار را داشتید، به عقب برگردید.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>نحوه پیکربندی پارامترها و ویژگی های موتور روبلاکس را کنترل کنید.</value>
@@ -629,10 +549,8 @@
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
     <value>پوشه ای که برای نصب بلاکسترپ انتخاب کرده اید از قبل وجود دارد و خالی نیست. اکیداً توصیه می شود که بلاکسترپ در پوشه مستقل خود نصب شود.
-
 تغییر به مکان زیر پیشنهاد می شود:
 {0}
-
 آیا می خواهید به مکان پیشنهادی تغییر دهید؟
 با انتخاب "نه" این هشدار نادیده گرفته می شود و نصب ادامه می یابد.</value>
     <comment>{0} is a file path</comment>
@@ -875,9 +793,7 @@
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>بابت دانلود بلاکسترپ ممنونیم.
-
 تنها وبسایت رسمی جهت دانلود بلاکسترپ {0} و {1} هستند، پس مطمئن شوید از منبع رسمی بلاکسترپ را دریافت کرده اید.
-
 طریقه نصب کردن سریع و آسان است، و شما میتونید بعد از نصب تنظیمات بلاکسترپ را تغییر دهید.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -907,11 +823,8 @@
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
     <value>بلاکسترپ با موفقیت نصب شده است.
-
 روبلاکس هنوز نصب نشده است و این اتفاق زمانی خواهد افتاد که برای اولین بار آن را با بلاکسترپ اجرا کنید. با این حال، قبل از انجام این کار، ممکن است بخواهید تنظیمات بلاکسترپ را ابتدا پیکربندی کنید.
-
 همچنین، از استفاده از میانبر "Roblox Player" برای اجرای روبلاکس خودداری کنید، زیرا بلاکسترپ با روبلاکس اجرا نخواهد شد. اگر بلاکسترپ را هنگام اجرای روبلاکس از وب‌سایت نمی‌بینید، کافی است یک بار روبلاکس را از دسکتاپ با بلاکسترپ اجرا کنید تا این مشکل برطرف شود.
-
 چه کاری می‌خواهید انجام دهید؟</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
@@ -931,11 +844,8 @@
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
     <value>حذف کردن، برنامه بلاکسترپ را از سیستم شما حذف میکند، و اگر هنوز نصب شده است به طور خودکار تنظیمات را به تنظیمات اصلی لانچر روبلاکس برمیگرداند.
-
 اگر شما درحال حذف کردن و یا نصب مجدد هستید به دلیل اینکه مشکلاتی با روبلاکس دارید، اول [این صفحه راهنما]({0}) را بخوانید.
-
 فرآیند حذف نصب ممکن است نتواند به‌طور کامل خودش را پاکسازی کند، بنابراین ممکن است نیاز باشد که فایل‌های باقی‌مانده در محل نصب بلاکسترپ را به‌صورت دستی پاک کنید.
-
 بلاکسترپ در "{1}" نصب شده بود.</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
@@ -967,7 +877,6 @@
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>ابتدا [ویکی بلاکسترپ]({0}) را بررسی کنید تا ببینید آیا این مشکل قبلاً با یک راه‌حل برطرف شده است یا خیر.
-
 اگر نه، لطفاً این استثنا را به مدیرهای این فورک گزارش دهید. این مشکلات را در گیتهاب بلاکسترپ گزارش نکنید، زیرا این یک نسخه غیر رسمی است.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
@@ -1027,7 +936,6 @@
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>برای اطلاعات در مورد اینکه چرا ممکن است این اتفاق بیفتد و چگونه می توان آن را حل کرد، لطفاً [این مقاله راهنما] ({0}) را بخوانید.
-
 بررسی کنید آیا روبلاکس با [لانچر اصلی] ({1}) کار می‌کند یا خیر. اگر اینطور نیست، پس این یک مشکل بلاکسترپ نیست. اگر چنین بود، به مقاله راهنما مراجعه کنید.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
@@ -1035,13 +943,6 @@
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>در حال بارگذاری؛ لطفا صبر کنید...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>حامیان</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>این ها افرادی هستند که بلاکسترپ را از طریق Ko-fi حمایت کرده اند. یک تشکر گسترده از همه کسانی که در اینجا هستند!
-هر فردی در اینجا بر اساس تعهد کلی خود رتبه بندی می شود.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>تنظیمات شما بارگیری نشد. آنها به تنظیمات پیش فرض بازنشانی شده اند.</value>
@@ -1075,8 +976,7 @@
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
     <value>بلاکسترپ قبلا در این مسیر نصب شده و هنوز در این مسیر وجود دارد، اما نصب کننده نمیتواند فایل اجرایی قدیمی را بازنویسی کند.
-
-لطفا به طور دستی "BubbleStrap.exe" را از مسیر نصب کننده پاک کنید و یا سیستم خود را خاموش و روشن کنید، و بعد از آن دوباره نصب کننده را اجرا کنید.</value>
+لطفا به طور دستی "Bubblestrap.exe" را از مسیر نصب کننده پاک کنید و یا سیستم خود را خاموش و روشن کنید، و بعد از آن دوباره نصب کننده را اجرا کنید.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>در دسترس نیست</value>
@@ -1098,7 +998,6 @@
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>ایکون بوت استرپر انتخابی بارگیری نشد.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1110,15 +1009,6 @@
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
     <value>بلاکسترپ قادر به نوشتن در رجیستری ویندوز نیست. یک آنتی ویروس به احتمال زیاد درحال ایجاد تداخل است و درحال ایجاد مشکلات است. لطفاً بررسی کنید تا مطمئن شوید چیزی وجود ندارد که عملکرد بلاکسترپ را محدود کند.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>ماهیانه</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>یکبار</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>تجزیه و تحلیل ها</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>همه چیز را به حالت پیش فرض برگردانید</value>
@@ -1132,9 +1022,7 @@
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>حالت آزمایشی مکرر نحوه تأثیرگزاری تنظیمات شما را بر روی روبلاکس آسان‌تر می‌کند.
-
 در حالی که فعال است، پس از بستن تنظیمات، روبلاکس به صورت خودکار راه‌اندازی می شود و پس از بستن روبلاکس، در یک چرخه تا زمانی که آنرا غیرفعال نکنید، تنظیمات را دوباره باز می کند.
-
 آیا می خواهید حالت آزمایشی را فعال کنید؟</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
@@ -1159,7 +1047,6 @@
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
     <value>بلاکسترپ تلاش کرد که روبلاکس را بروزرسانی بکند اما نتوانست زیرا که فایل های روبلاکس در حال حاضر درحال استفاده شدن هستند.
-
 لطفاً برنامه‌هایی را که ممکن است از فایل‌های روبلاکس استفاده کنند را ببندید و دوباره اجرا کنید.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1169,36 +1056,13 @@
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>صدور</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>روبلاکس دیگر بر روی ویندوز 7 و یا 8.1 پشتیبانی نمیشود. جهت ادامه دادن به بازی در روبلاکس، لطفا به ویندوز 10 یا جدیدتر بروزرسانی کنید.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
     <value>در حال گرفتن آخرین بلاکسترپ...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>پیکربندی تنظیماتی به رفتار خود بلاکسترپ ربط دارد.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>فعال سازی ارسال تجزیه و تحلیل</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>این کار ناشناس است و هیچ چیز بدی نیست، قول میدهیم. برای اطلاعات بیشتر در مورد آنچه که جمع‌آوری می کنیم و چرا، به [خط مشی رازداری] ({0}) ما مراجعه کنید.</value>
-  </data>
-  <data name="Menu.BubbleStrap.ExportData.Title" xml:space="preserve">
-    <value>صدور داده های تشخیصی</value>
-  </data>
-  <data name="Menu.BubbleStrap.ExportData.Description" xml:space="preserve">
-    <value>برای مشکلی که دارید، اطلاعات عیب یابی را جمع‌آوری کنید که به صورت آنلاین آپلود شود.</value>
-  </data>
-  <data name="Menu.BubbleStrap.ExportData.ExportConfig" xml:space="preserve">
-    <value>پیکربندی بلاکسترپ</value>
-    <comment>Label that appears next to a checkbox</comment>
-  </data>
-  <data name="Menu.BubbleStrap.ExportData.ExportLogs" xml:space="preserve">
-    <value>تمامی لاگ های بلاکسترپ</value>
-    <comment>Label that appears next to a checkbox</comment>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>خالی</value>
@@ -1426,58 +1290,447 @@
   <data name="About.Title" xml:space="preserve">
     <value>درباره بلاکسترپ</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>نسخه منوی ترجیحی</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>زمان بهره‌برداری</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>برای استفاده از آنلاک‌کننده‌ی فریم‌ریت روبلاکس، مقدار را روی ۰ تنظیم کنید تا به تنظیمات پیش‌فرض بازگردد.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>مکان: {0}
+زمان کار: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>اطلاعات نسخه و تولید را هنگام راه‌اندازی پنهان می‌کند.</value>
+  </data>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>پنهان کردن جزئیات نسخه و تولید</value>
+  </data>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>به طور خودکار هنگام راه‌اندازی، RobloxCrashHandler.exe را می‌بندد تا مصرف حافظه را کاهش دهد.</value>
+  </data>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>غیرفعال کردن پردازشگر از کار افتادن روبلاکس</value>
+  </data>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>این گزینه را فعال کنید تا هنگام باز بودن برنامه، یک RPC سفارشی Bubblestrap در پروفایل شما نمایش داده شود.</value>
+  </data>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>بابل‌استرپ RPC</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>صدا را انتخاب کنید...</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>صدای مرگ سفارشی را حذف کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>صدای مرگ سفارشی</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>صدای مرگ را به هر صدای صوتی دلخواه خود تغییر دهید.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>آسمان خاکستری</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>بازی‌هایی که آسمان‌های سفارشی دارند ممکن است کار نکنند.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>به سرور دیسکورد ما بپیوندید</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>اوپن‌جی‌ال</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>آتشفشان</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>ویرایشگر پرچم سریع</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>بارگذاری</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>لغو ارتقای روبلاکس.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>کانال</value>
+  </data>
+  <data name="Menu.Channel.Description" xml:space="preserve">
+    <value>تنظیمات استقرار و نصب را برای Roblox و Bubblestrap تغییر دهید.</value>
+  </data>
+  <data name="Common.Channel" xml:space="preserve">
+    <value>کانال</value>
+  </data>
+  <data name="Menu.ChannelChanger.Description" xml:space="preserve">
+    <value>کانال استقرار را انتخاب کنید. مگر اینکه بدانید چه می‌کنید، آن را تغییر ندهید.</value>
+  </data>
+  <data name="Common.Version" xml:space="preserve">
+    <value>نسخه</value>
+  </data>
+  <data name="Common.VersionGuid" xml:space="preserve">
+    <value>راهنمای نسخه</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>فهرست ایستا</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>از نسخه-xxx به دایرکتوری‌های نصب مبتنی بر BinaryType تغییر دهید.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>دانلود</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>وضعیت دانلود بوت‌استرپر</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>متن دانلود را تغییر دهید. {0} نام بسته، {1} اندازه بسته‌های دانلودشده و {2} اندازه کل بسته‌ها است.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>راه‌اندازی چندنسخه‌ای</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>امکان باز کردن همزمان بیش از یک نمونه کلاینت بازی Roblox را فراهم می‌کند. ممکن است با اپلیکیشن دسکتاپ مشکل ایجاد کند.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>پاک کردن پرچم‌های FF</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>عیب‌یابی</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>منوی روبلاکس</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>منوی Debloat Roblox با FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>استقرار</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>استودیو</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>استودیو رابلاکس</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>نشان می‌دهد که بازیکنان در حال ترک یا پیوستن به سروری هستند که شما در آن حضور دارید.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>نوع</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>هَش نسخه</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>اجبار کنید Bubblestrap نسخه را از هَش مشخص دانلود کند. لطفاً اگر نمی‌دانید این کار چه می‌کند، آن را تغییر ندهید.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>ذخیره و اجرا</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>به‌روزرسانی‌ها با کلاینت غایب غیرفعال شدند.
+برای جلوگیری از مشکلات، به‌روزرسانی ادامه خواهد یافت.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>گزارش‌های بازیکن</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>پیام</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>پروفایل‌ها</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>این کانال قدیمی است و احتمالاً دیگر به‌روزرسانی نمی‌شود. لطفاً از کانال دیگری استفاده کنید.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>کانالی که در حال حاضر روی آن هستید ({0}) منقضی شده و به نظر می‌رسد دیگر به‌روزرسانی دریافت نمی‌کند.
+آیا مایلید به کانال پیش‌فرض ({1}) تغییر کنید؟</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>عمل تغییر خودکار کانال</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox یا Bubblestrap ممکن است سعی کنند کانال دلخواه شما را تغییر دهند.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>خودکار تغییر دهید</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>همیشه به‌موقع</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>هرگز تغییر نکن</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox در تلاش است تا کانال شما را روی {0} تنظیم کند، اما کانال ترجیحی فعلی شما {1} است.
+آیا مایلید کانال ترجیحی خود را به {0} تغییر دهید؟</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>آیا می‌خواهید پرزت‌های FFlags را نیز اضافه کنید؟</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>کانالی که در حال حاضر روی آن هستید ({0}) اکنون برای استفاده عمومی محدود شده است. اکنون روی کانال پیش‌فرض ({1}) خواهید بود.</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>در حال دریافت اطلاعات آخرین استقرار، لطفاً منتظر بمانید...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>کانال مشخص‌شده یا وجود ندارد یا خصوصی است.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>وارد کردن تنظیمات Bloxstrap ناموفق بود.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>وارد کردن تنظیمات از Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>نصب Bloxstrap یافت نشد.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>گزینه‌های مربوط به رفتار خود Bubblestrap را پیکربندی کنید.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>اطلاعاتی را جمع‌آوری کنید که بتوان آن را به‌صورت آنلاین بارگذاری کرد تا مشکلی را که با آن مواجه هستید عیب‌یابی کنید.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>پیکربندی Bubblestrap</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>تمام لاگ‌های Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>پاک‌کننده‌تر</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap برای صرفه‌جویی در فضا، داده‌های قدیمی را حذف خواهد کرد.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>هرگز</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>یک روز بعد</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>یک هفته بعد</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>بعد از یک ماه</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>بعد از ۲ ماه</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>فایل‌ها چه زمانی باید حذف شوند؟</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>فایل‌هایی که از مقدار تعیین‌شده قدیمی‌تر باشند، حذف خواهند شد.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>پیش‌خوان</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>دانلودهای قدیمی حذف خواهند شد.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>گزارش‌ها</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>فایل‌های لاگ قدیمی حذف خواهند شد.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>گزارش‌های Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>لاگ‌های Bubblestrap حذف خواهند شد.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>گزینه‌های مربوط به رفتار خود Bubblestrap را پیکربندی کنید.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>پرچم‌های سریع موقتاً غیرفعال شده‌اند</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>برای اطلاعات بیشتر به سرور دیسکورد Bubblestrap بپیوندید.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>انتظار برای داده‌ها</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>هندسه</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>کنترل کنید که روبلاکس هندسه سه‌بعدی را چگونه رندر می‌کند.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>جزئیات توری</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>کنترل کنید که مش‌های با جزئیات بالا در بازی چگونه نمایش داده شوند.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>کیفیت‌های پایین‌تر ممکن است باعث ناپدید شدن مش‌ها شوند.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>پایین‌ترین کیفیت</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>با بالاترین کیفیت</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>وضعیت نامشخص</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>نامشخص</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
     <value>محدودیت نرخ فریم</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>با [میانبر های کیبورد]({0}) تغییر وضعیت میتوان داد. فقط در صورتی کار می کند که در [گروه بلاکسترپ]({1}) حضور داشته باشید.</value>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>محدودیت نرخ فریم را برای Roblox بردارید. افزایش نرخ فریم فراتر از ۲۴۰ FPS توصیه نمی‌شود.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>فعال سازی قابلیت پنهان کردن رابط کاربر گرافیکی</value>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>تنظیمات جهانی</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>گزینه‌ی انتخاب شده در تمامی بازی‌ها به‌طور اجباری فعال خواهد شد. [توجه کنید، ممکن است مشکلاتی در نورپردازی ایجاد کند!]({0})</value>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>تنظیمات بازی را از منوی Bubblestrap تنظیم کنید.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>تکنولوژی نورپردازی ترجیهی</value>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>شفافیت</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>غیرفعال کردن اثرات های پس از پردازش</value>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>شفافیت سفارشی برای عناصر رابط کاربری.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>غیرفعال کردن نوار عنوان تمام صفحه</value>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>حرکت کاهش‌یافته</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>غیرفعال کردن سایه های بازیکن</value>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>انیمیشن منوی خروج را حذف می‌کند.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
-    <value>اندازه فونت</value>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
+    <value>اندازه قلم</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>مقدار پیش فرض ۱ است. تنظیم کنید در صورت استفاده از فونت سفارشی.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>انتخاب کنید که فونت چقدر بزرگ نمایش داده شود.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>غیرفعال کردن بافت های زمین</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>کیفیت گرافیک</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>مجوز Apache 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>حساسیت ماوس</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>سرعت حرکت دوربین در بازی را تغییر دهید.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>فعال‌سازی واقعیت مجازی</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>کیفیت گرافیک بازی خود را تنظیم کنید</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>به‌عنوان فقط خواندنی تنظیم کنید</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>از رابلاکس جلوگیری کنید که تنظیمات جهانی را نادیده بگیرد.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>اولویت کیفیت FRM</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>کیفیت FRM را که Roblox باید استفاده کند، انتخاب کنید.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>اجازه دهید Bubblestrap به حساب کاربری Roblox شما دسترسی داشته باشد.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>با استفاده از کوکی احراز هویت خود، دسترسی به APIهای Roblox را فراهم کنید. [Bubblestrap به چه چیزهایی دسترسی خواهد داشت؟]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>تریمر حافظه</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>به طور دوره ای استفاده از حافظه Roblox را برای کاهش مصرف RAM پاک می کند.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>فاصله برش حافظه</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>هر چند وقت یکبار (در چند ثانیه) حافظه را کوتاه کنید. مقادیر پایین تر از CPU بیشتری استفاده می کنند و می توانند منجر به گیم پلی ناپایدار شوند.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>واقعیت مجازی</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>رابط کاربری Roblox Studio را برگردانید</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>از رابط کاربری قدیمی Roblox Studio به جای جدید استفاده می کند.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>غیرفعال کردن زمین چمن</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>برای بهبود عملکرد، چمن تزئینی را در زمین نشان دهید یا پنهان کنید.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>از آستانه حافظه استفاده کنید</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>فقط در صورتی که Roblox از مقدار خاصی از RAM استفاده می کند، آن را اصلاح کنید.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>محدودیت در مگابایت</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>تمام صفحه</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>اندازه صفحه شروع</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>عرض و ارتفاع پیش فرض پنجره بازی را هنگام راه اندازی تنظیم کنید.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>عرض (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>قد (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>صوتی</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>حجم مهمانی</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>میزان صدای چت را در مهمانی خود تنظیم کنید.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>جلد اصلی</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>میزان صدای اصلی را برای همه صداهای درون بازی تنظیم کنید.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>ترجمه خودکار چت</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>به طور خودکار پیام‌ها را در چت به زبان دلخواه خود ترجمه کنید.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>بازخورد لمسی</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>لرزش های کنترل کننده را برای ارائه بازخورد لمسی فعال می کند.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>ورودی و کنترل</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR Vignette</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>تصویر VR را اعمال می کند که لبه های صفحه را تیره می کند تا بیماری حرکت را کاهش دهد.</value>
   </data>
 </root>

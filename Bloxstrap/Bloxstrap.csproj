@@ -2,8 +2,7 @@
 	
 	<Target Name="StripWinSDK" AfterTargets="ComputeResolvedFilesToPublishList">
 		<ItemGroup>
-			<ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
-								   Condition="'%(Filename)' == 'Microsoft.Windows.SDK.NET'" />
+			<ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="'%(Filename)' == 'Microsoft.Windows.SDK.NET'" />
 		</ItemGroup>
 	</Target>
 
@@ -13,18 +12,19 @@
 	<Nullable>enable</Nullable>
 	<UseWPF>true</UseWPF>
 	<UseWindowsForms>False</UseWindowsForms>
-	<ApplicationIcon>Resources\IconBubblestrap.ico</ApplicationIcon>
-	<Version>1.1.0</Version>
-	<FileVersion>1.1.0</FileVersion>
+	<ApplicationIcon>Bubblestrap.ico</ApplicationIcon>
+	<Version>1.2.0</Version>
+	<FileVersion>1.2.0</FileVersion>
+	<AssemblyVersion>1.2.0</AssemblyVersion>
+	<InformationalVersion>1.2.0</InformationalVersion>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
-	<AssemblyName>BubbleStrap</AssemblyName>
+	<AssemblyName>Bubblestrap</AssemblyName>
 	<Product>$(AssemblyName)</Product>
 	<RootNamespace>Bloxstrap</RootNamespace>
 	<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
 	<CsWin32EmitAsInternal>false</CsWin32EmitAsInternal>
-
 	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 	<PublishSingleFile>true</PublishSingleFile>
 	<SelfContained>false</SelfContained>
@@ -57,6 +57,7 @@
     <EmbeddedResource Include="Resources\Icon2017.ico" />
     <EmbeddedResource Include="Resources\Icon2019.ico" />
     <EmbeddedResource Include="Resources\Icon2022.ico" />
+	<EmbeddedResource Include="Resources\Icon2026.ico" />
     <EmbeddedResource Include="Resources\IconEarly2015.ico" />
     <EmbeddedResource Include="Resources\IconLate2015.ico" />
     <EmbeddedResource Include="Resources\Mods\Cursor\From2006\ArrowCursor.png" />
@@ -119,10 +120,6 @@
   </Target>
 
   <ItemGroup>
-    <Content Include="Resources\IconBubblestrap.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -160,12 +157,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\BootstrapperStyles\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AdditionalFiles Update="NativeMethods.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </AdditionalFiles>
   </ItemGroup>
 
 </Project>

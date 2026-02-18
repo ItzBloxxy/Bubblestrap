@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -288,7 +229,6 @@ Klikněte pro více informací</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Nejprve zkontrolujte [Bloxstrap Wiki]({0}), zda byl tento problém již vyřešen opravou.
-
 Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) spolu s kopií log souboru, který byl vytvořen.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
@@ -530,12 +470,8 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
     <value>Zneužití toho se může vést k nestabilitě nebo něčemu neočekávanému.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Použijte s pozorností.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Některé vlajky, které se pokoušíte importovat už mají danou hodnotu. Chcete je přepsat těmi definovanými v importu?
-
 Jsou tu {0} konfliktních vlajkových definicí:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Jsou tu {0} konfliktních vlajkových definicí:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Ten JSON, který jste vložili není platný. Zkontrolujte ho a zkuste to znovu.
-
 Více informací:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ Více informací:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Vypadá, že se pokoušíte importovat velmi velkou konfiguraci. Měli by jste jen importovat konfigurace, kterým plně rozumíte. Slepě nevkládejte konfigurace udělané ostatními. Pokud budete pokračovat, velmi pravděpodobně skončíte s problémy stability a setkáte se s nečekanými změnami.
-
 Jste si jisti, že chcete pokračovat?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@ Jste si jisti, že chcete pokračovat?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Rychlý editor příznaků</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Jít zpět</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Já vím co dělám</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Víš co děláš?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flags je extrémně silné, protože by měly být používány pouze Roblox enginéry. I když můžou být užitečné, manuálně nastavit je může udělat seriózní chyby se stabilitou a funkcí. NEPOUŽÍVEJTE editor pokud nevíte co děláte.
-
-NEPOUŽÍVEJTE tohle aby jste importovali velké "Fast flags" listy udělané ostatnímy lidmy které mají vylepšit rychlost nebo jiné. Oni udělají chyby napsané výše, a udělají ti problémy pro tebe protože nevíš co dělají. Pokud jsi to chtěl udělat BEŽ ZPĚT.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Kontrolujte, jak jsou nakonfigurovány konkrétní parametry a funkce motoru Roblox.</value>
@@ -630,10 +550,8 @@ NEPOUŽÍVEJTE tohle aby jste importovali velké "Fast flags" listy udělané os
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
     <value>Složka do které jste se rozhodli nainstalovat Bubblestrap již existuje a NENÍ prázdná. Je důrazně doporučeno aby byl Bubblestrap nainstalován do své vlastní nezávislé složky.
-
 Je navrhováno změnit umístění do následujícího umístění:
 {0}
-
 Chcete změnit umístění do navrhovaného umístění?
 Při výběru 'Ne' bude toto varování ignorováno a bude pokračovat v instalaci.</value>
     <comment>{0} is a file path</comment>
@@ -876,9 +794,7 @@ Při výběru 'Ne' bude toto varování ignorováno a bude pokračovat v instala
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>Děkujeme za stažení Bubblestrap. 
-
 Jediné oficiální stránky pro stažení Bubblestrap jsou {0} a {1}, takže prosím ověřte, zda jste jej stáhli z oficiálního zdroje.
-
 Instalační proces bude rychlý a jednoduchý a po instalaci budete moci nakonfigurovat jakékoliv nastavení Bubblestrap.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -908,11 +824,8 @@ Instalační proces bude rychlý a jednoduchý a po instalaci budete moci nakonf
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
     <value>Bubblestrap byl úspěšně nainstalován.
-
 Roblox ještě nebyl nainstalován, k čemuž dojde při prvním spuštění Bubblestrap. Než to uděláte, možná budete chtít nejdříve nakonfigurovat Bubblestrap.
-
 Nepoužívejte také zkratku "Roblox Player" pro spuštění Robloxu, protože Bubblestrap nebude spuštěn s Robloxem. Pokud se nespustí Bubblestrap při spuštění z webové stránky, jednoduše spusťte Bubblestrap jednou z plochy, abyste to opravili.
-
 Co chcete udělat?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
@@ -932,11 +845,8 @@ Co chcete udělat?</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
     <value>Odinstalace odstraní Bloxstrap z vašeho systému a automaticky znovu nastaví výchozího spouštěčtě Robloxu, pokud je stále nainstalován.
-
 Pokud odinstalujete nebo přeinstalujete, protože máte problémy s Robloxem, přečtěte si nejprve [tuto stránku pomoci]({0}).
-
 Odinstalace možná nebude moct odstranit všechny data sama, takže možná budete muset ručně vyčistit zbylé soubory po Bubblestrap.
-
 Bubblestrap byl nainstalován na "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
@@ -968,7 +878,6 @@ Bubblestrap byl nainstalován na "{1}".</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Nejprve zkontrolujte [Bubblestrapovou Wiki]({0}), jestli náhodou váš problém nebyl již vyřešen.
-
 Pokud ne, pak prosím nahlaste tento error správcům této forky. NENAHLAŠUJTE tuto chybu do GitHub repozitáře Bubblestrap, protože toto je neoficiální build.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
@@ -1028,7 +937,6 @@ Opravdu chcete pokračovat?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Pro informace o tom, proč k tomu může docházet a jak to lze vyřešit, si přečtěte [tento článek s nápovědou]({0}).
-
 Zkontrolujte, zda Roblox funguje [s původním spouštěčem]({1}). Pokud nefunguje, problém není způsoben Bubblestrapem. Pokud ano, podívejte se na článek s nápovědou.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
@@ -1036,13 +944,6 @@ Zkontrolujte, zda Roblox funguje [s původním spouštěčem]({1}). Pokud nefung
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Načítání, počkejte prosím...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Podporovatelé</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Tohle jsou lidé, kteří podpořili Bubblestrap skrz Ko-fi. Velký dík všem zde!
-Každá osoba je zařazena podle celkového závazku.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Nezdařilo se načíst vaše nastavení. Byly obnoveny na výchozí konfiguraci.</value>
@@ -1076,7 +977,6 @@ Každá osoba je zařazena podle celkového závazku.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
     <value>Bubblestrap byl nainstalován na toto místo a je stále přítomen, ale instalátor nemůže přepsat starý.exe soubor. 
-
 Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste restartovat systém a poté zkuste instalaci znovu.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
@@ -1099,7 +999,6 @@ Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste r
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Zvolenou ikonu bootstrapperu nelze načíst.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1111,15 +1010,6 @@ Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste r
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
     <value>Bubblestrap není schopen zapisovat do registru Windows. Antivirus pravděpodobně zasahuje a způsobuje problémy. Prosím zkontrolujte, zda nemáte nic, co by omezilo funkci Bubblestrapu.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Měsíčně</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Jednorázově</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analytika</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Obnovit vše na výchozí</value>
@@ -1133,9 +1023,7 @@ Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste r
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Testovací režim usnadňuje opakované testování vlivu vašich nastavení na Roblox. 
-
 Pokud je zapnut, po zavření nastavení automaticky spustí Roblox a po zavření Robloxu znovu otevře nastavení v cyklu, dokud jej nevypnete.
-
 Chcete zapnout testovací režim?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
@@ -1160,7 +1048,6 @@ Chcete zapnout testovací režim?</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
     <value>Bubblestrap se pokusil aktualizovat Roblox, ale nemůže, protože soubory Robloxu jsou stále používány.
-
 Zavřete všechny aplikace, které mohou používat soubory Robloxu, a znovu spusťte.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1404,69 +1291,447 @@ Používám motiv {1}.</value>
   <data name="About.Title" xml:space="preserve">
     <value>O Bubblestrapu</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Vybraná verze escape nabídky</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Provozuschopnost</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Nastavte na 0 pro výchozí, pokud chcete používat nativní Fps unlocker v Robloxu.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Umístění: {0}
+Doba provozu: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Omezení snímků</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Skrývá informace o verzi a výrobě během spuštění.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Přepíná se pomocí [klávesových zkratek]({0}). Funguje pouze, pokud jste ve [skupině Bubblestrap na Robloxu]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Skrýt verzi a podrobnosti o výrobě</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Povolit možnost skrýt GUI</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Při spuštění automaticky zavře RobloxCrashHandler.exe, aby se snížila spotřeba paměti.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Vybraná volba bude povinně aktivována ve všech hrách. [Pozor, může způsobit problémy s osvětlením!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Zakázat Roblox Crash Handler</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Preferovaná technologie osvětlení</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Povolte tuto funkci, aby se při otevření aplikace ve vašem profilu zobrazoval vlastní Bubblestrap Discord RPC.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Vypnout efekty následného zpracování</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Vypnout titulní lištu na celé obrazovce</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Vyberte zvuk...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Vypnout stíny hráčů</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Odebrat vlastní zvuk smrti</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Vlastní zvuk smrti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Změňte zvuk smrti na libovolný zvuk podle svého výběru.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Šedá obloha</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Hry s vlastními oblohou nemusí fungovat.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Připojte se k našemu serveru Discord</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Sopka</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Rychlý editor vlajek</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Zatížení</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Zrušení aktualizace Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanál</value>
+  </data>
+  <data name="Menu.Channel.Description" xml:space="preserve">
+    <value>Změňte nastavení nasazení a instalace pro Roblox &amp; Bubblestrap.</value>
+  </data>
+  <data name="Common.Channel" xml:space="preserve">
+    <value>Kanál</value>
+  </data>
+  <data name="Menu.ChannelChanger.Description" xml:space="preserve">
+    <value>Vyberte kanál nasazení. Neměňte jej, pokud nevíte, co děláte.</value>
+  </data>
+  <data name="Common.Version" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+  <data name="Common.VersionGuid" xml:space="preserve">
+    <value>VerzeGuid</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statický adresář</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Přepněte z adresářů instalace založených na verzi xxx na adresáře založené na typu BinaryType.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Stahování</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Stav stahování Bootstrapperu</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Změňte řetězec stahování. {0} je název balíčku, {1} je velikost stažených balíčků a {2} je celková velikost balíčků.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Spouštění více instancí</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Umožňuje mít otevřeno více než jednu instanci herního klienta Roblox současně. Může způsobit problémy s desktopovou aplikací.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Vymazat FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Ladění</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Nabídka Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Odlehčete menu Roblox pomocí FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Nasazení</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Studio</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Zobrazuje hráče, kteří opouštějí/připojují se k serveru, na kterém se nacházíte.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Hash verze</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Vynutit stažení verze z konkrétního hash. Pokud nevíte, k čemu to slouží, neměňte to.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Uložit a spustit</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Aktualizace byly deaktivovány z důvodu chybějícího klienta.
+Aby se předešlo problémům, aktualizace budou pokračovat.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Protokoly hráčů</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Zpráva</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profily</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Tento kanál je zastaralý a pravděpodobně již není aktualizován. Použijte prosím jiný kanál.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Kanál, na kterém se právě nacházíte ({0}), je zastaralý a zdá se, že již nepřijímá aktualizace.
+Chcete přepnout na výchozí kanál ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automatické přepínání kanálů</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox nebo Bubblestrap se mohou pokusit změnit váš preferovaný kanál.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Změnit automaticky</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Vždy včas</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Nikdy se neměň</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox se pokouší nastavit váš kanál na {0}, ale váš aktuální preferovaný kanál je {1}.
+Chcete změnit preferovaný kanál na {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Chcete zahrnout přednastavené FFlags?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Kanál, na kterém se právě nacházíte ({0}), byl nyní omezen pro veřejné použití. Nyní budete na výchozím kanálu ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Načítání nejnovějších informací o nasazení, prosím vyčkejte...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Zadaný kanál buď neexistuje, nebo je soukromý.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Import nastavení Bloxstrap se nezdařil.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Importovat nastavení z Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Instalace Bloxstrap nebyla nalezena.</value>
+  </data>
+  <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
+    <value>Získání nejnovějšího Bubblestrapu...</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Nakonfigurujte možnosti související s chováním samotného Bubblestrapu.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Shromážděte informace, které lze nahrát online, abyste vyřešili problém, se kterým se potýkáte.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Konfigurace Bubblestrap</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Všechny protokoly Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Čistič</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap odstraní stará data, aby ušetřil místo.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Nikdy</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Po 1 dni</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Po 1 týdnu</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Po 1 měsíci</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Po 2 měsících</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Kdy by měly být soubory smazány?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Soubory starší než nastavená doba budou smazány.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Staré soubory ke stažení budou smazány.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Kmeny</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Staré soubory protokolu budou smazány.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Protokoly Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Protokoly Bubblestrap budou smazány.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Nakonfigurujte možnosti související s chováním samotného Bubblestrapu.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags byly dočasně deaktivovány</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Pro více informací se připojte k serveru Bubblestrap Discord.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Čekání na data</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometrie</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Ovládejte, jak Roblox vykresluje 3D geometrii.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Detail sítě</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Ovládejte, jak podrobně se sítě zobrazují ve hře.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Nižší kvalita může způsobit zmizení sítí.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Nejnižší kvalita</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Nejvyšší kvalita</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Neznámý stav</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Neznámý</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Omezení snímkové frekvence</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Odemkněte omezení snímkové frekvence pro Roblox. Překročení 240 FPS se nedoporučuje.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Globální nastavení</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Nastavte herní nastavení v nabídce Bubblestrap.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Transparentnost</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Vlastní průhlednost pro prvky uživatelského rozhraní.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Omezený pohyb</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Odstraní animaci v nabídce úniku.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Velikost písma</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Výchozí hodnota je 1. Upravte, pokud používáte vlastní písmo.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Vyberte, jak velká má být písma.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Vypnout terénové textury</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Kvalita grafiky</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Licence Apache 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Citlivost myši</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Změňte rychlost pohybu kamery ve hře.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>Podpora VR</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Nastavte grafickou kvalitu vaší hry</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
-    <value>Shromažďujte informace, které lze nahrát online, abyste vyřešili problém, který máte.</value>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Nastavit jako pouze pro čtení</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
-    <value>Konfigurace Bloxstrap</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Zabraňte Robloxovi v přepsání globálních nastavení.</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
-    <value>Všechny bloxstrap logy</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>Přepsání kvality FRM</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Vyberte kvalitu FRM, kterou má Roblox používat.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Povolit Bubblestrap přístup k vašemu účtu Roblox</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Poskytněte přístup k API Roblox pomocí svého ověřovacího souboru cookie. [K čemu bude mít Bubblestrap přístup?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Ořezávač paměti</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Pravidelně vymazává paměť Robloxu, aby se snížila spotřeba RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Pravidelně vymazává paměť Robloxu, aby se snížila spotřeba RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Interval trimování paměti</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtuální realita</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Vrátit uživatelské rozhraní Roblox Studio</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Používá staré uživatelské rozhraní Roblox Studio namísto nového.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Zakázat trávu v terénu</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Vyberte, zda chcete zobrazit nebo skrýt dekorativní trávu na terénu, aby se zlepšil výkon.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Použít prahovou hodnotu paměti</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Omezte pouze v případě, že Roblox překročí určitou hodnotu využití paměti RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Limit v MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Celá obrazovka</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Velikost úvodní obrazovky</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Nastavte výchozí šířku a výšku okna hry při spuštění.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Šířka (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Výška (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Hlasitost večírku</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Upravte hlasitost hlasového chatu ve vaší skupině.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Hlavní hlasitost</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Nastavte hlavní hlasitost pro veškerý zvuk ve hře.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automatický překlad chatu</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Automaticky překládejte zprávy v chatu do svého preferovaného jazyka.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Haptická zpětná vazba</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Umožňuje vibrace ovladače, které poskytují hmatovou zpětnou vazbu.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Vstupy a ovládací prvky</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR viněta</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Použije VR vinětu, která ztmaví okraje obrazovky, aby se snížila nevolnost z pohybu.</value>
   </data>
 </root>

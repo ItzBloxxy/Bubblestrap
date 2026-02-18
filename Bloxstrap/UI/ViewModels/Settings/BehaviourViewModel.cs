@@ -23,7 +23,6 @@
             }
         }
 
-        // guh
         private bool _cookieLoadingFailed;
         public bool CookieLoadingFailed
         {
@@ -84,6 +83,32 @@
                     App.Settings.Prop.MemoryTrimInterval = result;
                 }
                 OnPropertyChanged(nameof(MemoryTrimInterval));
+            }
+        }
+
+        public bool EnableMemoryThreshold
+        {
+            get => App.Settings.Prop.EnableMemoryThreshold;
+            set
+            {
+                if (App.Settings.Prop.EnableMemoryThreshold != value)
+                {
+                    App.Settings.Prop.EnableMemoryThreshold = value;
+                    OnPropertyChanged(nameof(EnableMemoryThreshold));
+                }
+            }
+        }
+        public string MemoryTrimThreshold
+        {
+            get => App.Settings.Prop.MemoryTrimThreshold == 0 ? "" : App.Settings.Prop.MemoryTrimThreshold.ToString();
+            set
+            {
+                if (int.TryParse(value, out int result))
+                    App.Settings.Prop.MemoryTrimThreshold = result;
+                else
+                    App.Settings.Prop.MemoryTrimThreshold = 0;
+
+                OnPropertyChanged(nameof(MemoryTrimThreshold));
             }
         }
 

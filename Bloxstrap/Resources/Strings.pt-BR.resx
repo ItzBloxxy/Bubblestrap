@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>O BubbleStrap não pôde atualizar automaticamente para a versão {0}. Por favor, atualize-o manualmente, baixando e executando-o a partir do site.</value>
+    <value>O Bubblestrap não pôde atualizar automaticamente para a versão {0}. Por favor, atualize-o manualmente, baixando e executando-o a partir do site.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>O Roblox já está em execução, tentar executar outra instância resultará em seu encerramento. Tem certeza de que deseja continuar?</value>
@@ -127,13 +68,13 @@
     <value>O Roblox pode estar offline agora. Veja {0} para mais informações.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Uma conexão não pôde ser feita, o que provavelmente indica uma má conexão com a internet ou um bloqueio do firewall. Se a sua conexão estiver boa, verifique se o seu antivírus não está bloqueando o BubbleStrap.</value>
+    <value>Uma conexão não pôde ser feita, o que provavelmente indica uma má conexão com a internet ou um bloqueio do firewall. Se a sua conexão estiver boa, verifique se o seu antivírus não está bloqueando o Bubblestrap.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Instalação do BubbleStrap não encontrada, instale-o antes de desinstalá-lo.</value>
+    <value>Instalação do Bubblestrap não encontrada, instale-o antes de desinstalá-lo.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>O BubbleStrap não encontrou espaço suficiente no disco para baixar e instalar o Roblox. Por favor, libere espaço no disco e tente novamente.</value>
+    <value>O Bubblestrap não encontrou espaço suficiente no disco para baixar e instalar o Roblox. Por favor, libere espaço no disco e tente novamente.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Aplicando modificações ao Roblox...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap foi desinstalado com sucesso</value>
+    <value>Bubblestrap foi desinstalado com sucesso</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>O Roblox está em execução no momento, mas precisa ser fechado antes de desinstalar o BubbleStrap. Você gostaria de fechar o Roblox agora?</value>
+    <value>O Roblox está em execução no momento, mas precisa ser fechado antes de desinstalar o Bubblestrap. Você gostaria de fechar o Roblox agora?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>O cliente do Roblox precisa dos componentes do Windows Media Foundation. Você não aparenta tê-los instalados, possivelmente por estar usando uma edição N do Windows. Por favor, instale-os primeiro, e então abra o Roblox.</value>
@@ -276,22 +217,21 @@ Clique para mais informações</value>
     <value>Erro de Conexão</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap não consegue se conectar com {0}</value>
+    <value>Bubblestrap não consegue se conectar com {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Copiar conteúdo do registro</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Um erro ocorreu enquanto BubbleStrap estava sendo executado</value>
+    <value>Um erro ocorreu enquanto Bubblestrap estava sendo executado</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
-    <value>Primeiro, consulte a [Wiki do BubbleStrap]({0}) para ver se o problema já foi resolvido.
-
+    <value>Primeiro, consulte a [Wiki do Bubblestrap]({0}) para ver se o problema já foi resolvido.
 Caso contrário, por favor reporte este erro através de uma [issue no GitHub]({1}), seguido de uma cópia do arquivo de registro criado.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Exceção do BubbleStrap</value>
+    <value>Exceção do Bubblestrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Personalizado</value>
@@ -303,10 +243,10 @@ Caso contrário, por favor reporte este erro através de uma [issue no GitHub]({
     <value>Final de 2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Clássico)</value>
+    <value>Bubblestrap (Clássico)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Transparente)</value>
+    <value>Bubblestrap (Transparente)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Antigo (2008-2011)</value>
@@ -384,10 +324,10 @@ Caso contrário, por favor reporte este erro através de uma [issue no GitHub]({
     <value>Claro</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>O BubbleStrap atualizou para a versão {0}</value>
+    <value>O Bubblestrap atualizou para a versão {0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>A versão do BubbleStrap que você abriu difere da versão que você tem instalada.
+    <value>A versão do Bubblestrap que você abriu difere da versão que você tem instalada.
 Você quer atualizar para a versão instalada?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -397,7 +337,7 @@ Você quer atualizar para a versão instalada?</value>
     <value>Código</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Estas pessoas tiveram uma contribuição notável para o BubbleStrap, ajudando-o a ser o que é.</value>
+    <value>Estas pessoas tiveram uma contribuição notável para o Bubblestrap, ajudando-o a ser o que é.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Ideias de Funcionalidades</value>
@@ -443,7 +383,7 @@ Você quer atualizar para a versão instalada?</value>
     <value>Por favor, tenha em mente que nem todas as suas modificações vão ser aplicadas de imediato até você fechar todas as janelas do Roblox.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>O BubbleStrap já está aberto</value>
+    <value>O Bubblestrap já está aberto</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Você pode o deixar diferente, retrô, ou da mesma aparência do Roblox.</value>
@@ -470,7 +410,7 @@ Você quer atualizar para a versão instalada?</value>
     <value>Título</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Alterar a aparência do BubbleStrap.</value>
+    <value>Alterar a aparência do Bubblestrap.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Tema Global</value>
@@ -494,10 +434,10 @@ Você quer atualizar para a versão instalada?</value>
     <value>Aparência</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>O BubbleStrap vai automaticamente verificar e se atualizar quando abrir o Roblox.</value>
+    <value>O Bubblestrap vai automaticamente verificar e se atualizar quando abrir o Roblox.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Atualizar o BubbleStrap automaticamente</value>
+    <value>Atualizar o Bubblestrap automaticamente</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Evite que o encerramento do seu jogo existente inicie acidentalmente outro.</value>
@@ -506,10 +446,10 @@ Você quer atualizar para a versão instalada?</value>
     <value>Pedir confirmação ao abrir outra janela do Roblox</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Configure o que o BubbleStrap deve fazer quando abrir o Roblox.</value>
+    <value>Configure o que o Bubblestrap deve fazer quando abrir o Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
-    <value>Quando o BubbleStrap for aberto, o Roblox será instalado novamente.</value>
+    <value>Quando o Bubblestrap for aberto, o Roblox será instalado novamente.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Title" xml:space="preserve">
     <value>Forçar reinstalação do Roblox</value>
@@ -530,12 +470,8 @@ Você quer atualizar para a versão instalada?</value>
     <value>O uso incorreto dessas opções pode causar instabilidade ou coisas inesperadas.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Use com cuidado.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Algumas das flags que você está tentando importar já possuem valor. Gostaria de substituir seus valores atuais com os que estão sendo importados?
-
 Existem {0} conflitos entre essas flags:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Existem {0} conflitos entre essas flags:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>O arquivo JSON que você tentou usar não parece válido. Por favor, verifique e tente novamente.
-
 Mais informações:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ Mais informações:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Você está importando uma configuração muito grande. Apenas importe configurações em que tenha certeza do que fazem. NÃO cole configurações feitas por outras pessoas sem antes verificar. Se continuar, muito provavelmente irá encontrar problemas de estabilidade e mudanças inesperadas.
-
 Você tem certeza de que quer continuar?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@ Você tem certeza de que quer continuar?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Editor de Fast Flag</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Voltar</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Eu sei o que estou fazendo</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Você sabe o que está fazendo?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flags são extremamente poderosas, sendo que elas são destinadas apenas para serem usadas por engenheiros do Roblox. Embora elas possam ser muito úteis, configurá-las manualmente pode causar sérios problemas de estabilidade e funcionalidade. NÃO USE o editor caso não tenha certeza do que está fazendo.
-
-NÃO USE o editor para importar grandes "flag lists" feitas por outras pessoas que prometem melhorar o desempenho ou algo do tipo. Essas listas estão sujeitas aos problemas mencionados acima e causarão problemas para si, uma vez que não saberá exatamente o que estão alterando. Se estava prestes a fazer isso, PARE.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Controlar como os parâmetros e recursos específicos do motor do Roblox são configurados.</value>
@@ -626,14 +546,12 @@ NÃO USE o editor para importar grandes "flag lists" feitas por outras pessoas q
     <value>Aquivos de ícone</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>O BubbleStrap não pode ser instalado aqui. Por favor, escolha um local diferente para a instalação, ou use o local padrão clicando no botão de reinicialização.</value>
+    <value>O Bubblestrap não pode ser instalado aqui. Por favor, escolha um local diferente para a instalação, ou use o local padrão clicando no botão de reinicialização.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>A pasta que você escolheu para instalar o BubbleStrap já existe e NÃO está vazia. É altamente recomendado que o BubbleStrap seja instalado na sua própria pasta independente.
-
+    <value>A pasta que você escolheu para instalar o Bubblestrap já existe e NÃO está vazia. É altamente recomendado que o Bubblestrap seja instalado na sua própria pasta independente.
 Mudar para o seguinte local é recomendado:
 {0}
-
 Gostaria de mudar para o local sugerido?
 Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value>
     <comment>{0} is a file path</comment>
@@ -642,7 +560,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>Você deve escolher um local de instalação</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>O BubbleStrap não tem permissão de criar arquivos no local de instalação escolhido. Por favor, escolha outro local.</value>
+    <value>O Bubblestrap não tem permissão de criar arquivos no local de instalação escolhido. Por favor, escolha outro local.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Rastreamento de atividades</value>
@@ -693,7 +611,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>Não sair para o aplicativo do Roblox</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Permitir que o BubbleStrap detecte qual jogo do Roblox você está jogando. Alguns recursos podem precisar disto.</value>
+    <value>Permitir que o Bubblestrap detecte qual jogo do Roblox você está jogando. Alguns recursos podem precisar disto.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Ativar rastreamento de atividades</value>
@@ -784,7 +702,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>Configurações salvas!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Configurações do BubbleStrap</value>
+    <value>Configurações do Bubblestrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Escolher idioma preferido</value>
@@ -808,7 +726,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>Layout da Interface de Usuário</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Permitir que BubbleStrap gerencie as Fast Flags</value>
+    <value>Permitir que Bubblestrap gerencie as Fast Flags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Desabilitar isso irá prevenir que qualquer coisa configurada aqui seja aplicada ao Roblox.</value>
@@ -820,7 +738,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>A impede que seja exibida sempre que mover o mouse para o topo da tela.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap não consegue baixar o Roblox</value>
+    <value>Bubblestrap não consegue baixar o Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox não pode ser baixado agora. Por favor, leia a página de ajuda para mais informações: {0}</value>
@@ -841,7 +759,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>A entrada para '{0}' não é válida, pois o valor deve ser um número</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Nenhum arquivo de registro será salvo para essa execução porque o BubbleStrap não consegue gravar na pasta em '{0}'</value>
+    <value>Nenhum arquivo de registro será salvo para essa execução porque o Bubblestrap não consegue gravar na pasta em '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Padrão</value>
@@ -856,7 +774,7 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>A entrada para '{0}' não é válida pois o place filter não foi formatado corretamente.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>Instalador do BubbleStrap</value>
+    <value>Instalador do Bubblestrap</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Bem-vindo</value>
@@ -875,10 +793,8 @@ Selecionar 'Não' vai ignorar este aviso e prosseguir com a instalação.</value
     <value>Próximo</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Obrigado por baixar BubbleStrap.
-
-Os únicos websites oficiais para baixar o BubbleStrap são {0} e {1}, então por favor, tenha certeza de que baixou de uma fonte oficial.
-
+    <value>Obrigado por baixar Bubblestrap.
+Os únicos websites oficiais para baixar o Bubblestrap são {0} e {1}, então por favor, tenha certeza de que baixou de uma fonte oficial.
 Esse processo de instalação será rápido e fácil, e você poderá editar qualquer uma das configurações após a instalação.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -886,10 +802,10 @@ Esse processo de instalação será rápido e fácil, e você poderá editar qua
     <value>Por favor clique em 'Próximo' para continuar.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Você está tentando baixar a versão {0} do BubbleStrap, mas a última versão disponível é {1}. Você gostaria de baixá-la?</value>
+    <value>Você está tentando baixar a versão {0} do Bubblestrap, mas a última versão disponível é {1}. Você gostaria de baixá-la?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
-    <value>Escolha aonde o BubbleStrap deve ser instalado</value>
+    <value>Escolha aonde o Bubblestrap deve ser instalado</value>
   </data>
   <data name="Installer.Install.Location.Text" xml:space="preserve">
     <value>O Roblox também será instalado neste caminho. Mude isso se você prefere instalar todos os seus jogos em uma unidade separada. Caso contrário, é recomendável que você mantenha como está.</value>
@@ -907,16 +823,13 @@ Esse processo de instalação será rápido e fácil, e você poderá editar qua
     <value>Ícone do Menu Iniciar</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>O BubbleStrap foi instalado com sucesso. 
-
-Roblox ainda não foi instalado, isso acontecerá quando você o executar com o BubbleStrap pela primeira vez. No entanto, antes de fazer isso, você pode querer configurar as configurações do BubbleStrap primeiro.
-
-Além disso, evite usar o atalho "Roblox Player" para iniciar o Roblox, já que o BubbleStrap não iniciará com o Roblox. Se você não ver o BubbleStrap ser exibido quando for lançado a partir do site, basta abrir o Roblox com o BubbleStrap pelo computador uma vez para corrigi-lo.
-
+    <value>O Bubblestrap foi instalado com sucesso. 
+Roblox ainda não foi instalado, isso acontecerá quando você o executar com o Bubblestrap pela primeira vez. No entanto, antes de fazer isso, você pode querer configurar as configurações do Bubblestrap primeiro.
+Além disso, evite usar o atalho "Roblox Player" para iniciar o Roblox, já que o Bubblestrap não iniciará com o Roblox. Se você não ver o Bubblestrap ser exibido quando for lançado a partir do site, basta abrir o Roblox com o Bubblestrap pelo computador uma vez para corrigi-lo.
 O que você gostaria de fazer?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Configurar o BubbleStrap</value>
+    <value>Configurar o Bubblestrap</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Ajuste com todos os recursos que temos a oferecer</value>
@@ -928,22 +841,19 @@ O que você gostaria de fazer?</value>
     <value>Você será direcionado ao aplicativo da área de trabalho quando tudo estiver pronto</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Desinstalar BubbleStrap</value>
+    <value>Desinstalar Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>A desinstalação removerá o BubbleStrap do seu sistema e reconfigurará automaticamente o inicializador padrão do Roblox, caso ele ainda esteja instalado.
-
+    <value>A desinstalação removerá o Bubblestrap do seu sistema e reconfigurará automaticamente o inicializador padrão do Roblox, caso ele ainda esteja instalado.
 Se você estiver desinstalando ou reinstalando porque está tendo problemas com o Roblox, leia [esta página de ajuda]({0}) primeiro.
-
-O processo de desinstalação pode não ser capaz de se limpar completamente, então talvez seja necessário limpar manualmente os arquivos restantes onde o BubbleStrap foi instalado.
-
-O BubbleStrap foi instalado em "{1}".</value>
+O processo de desinstalação pode não ser capaz de se limpar completamente, então talvez seja necessário limpar manualmente os arquivos restantes onde o Bubblestrap foi instalado.
+O Bubblestrap foi instalado em "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Manter minhas configurações e mods</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Eles serão mantidos onde BubbleStrap foi instalado, e serão automaticamente restaurados em uma reinstalação.</value>
+    <value>Eles serão mantidos onde Bubblestrap foi instalado, e serão automaticamente restaurados em uma reinstalação.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Desinstalar</value>
@@ -964,20 +874,18 @@ O BubbleStrap foi instalado em "{1}".</value>
     <value>No momento, você não tem o runtime WebView2 instalado. Alguns recursos do Roblox não funcionarão corretamente sem ele, como o aplicativo para desktop. Gostaria de baixá-lo agora?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>O BubbleStrap não conseguiu criar atalhos para a área de trabalho e o menu Iniciar. Tente criá-los mais tarde através das configurações.</value>
+    <value>O Bubblestrap não conseguiu criar atalhos para a área de trabalho e o menu Iniciar. Tente criá-los mais tarde através das configurações.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
-    <value>Verifique primeiro a [Wiki do BubbleStrap]({0}) para ver se esse problema já foi resolvido com uma correção.
-
-
-Se não, então por favor reporte essa exceção aos mantenedores desse fork. NÃO reporte isso nos issues/problemas do GitHub do BubbleStrap, pois essa é uma compilação não oficial.</value>
+    <value>Verifique primeiro a [Wiki do Bubblestrap]({0}) para ver se esse problema já foi resolvido com uma correção.
+Se não, então por favor reporte essa exceção aos mantenedores desse fork. NÃO reporte isso nos issues/problemas do GitHub do Bubblestrap, pois essa é uma compilação não oficial.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Esses são atalhos gerais que abrem um menu de inicialização de múltipla escolha. Atalhos para funções específicas podem ser criados mais tarde nas configurações.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Configure como o BubbleStrap pode ser iniciado facilmente.</value>
+    <value>Configure como o Bubblestrap pode ser iniciado facilmente.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Geral</value>
@@ -1017,7 +925,7 @@ Se não, então por favor reporte essa exceção aos mantenedores desse fork. N�
     <value>Você tem alterações não salvas. Tem certeza que deseja fechar sem salvar?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>A versão do BubbleStrap que você executou é mais antiga do que a versão que você tem instalada atualmente.
+    <value>A versão do Bubblestrap que você executou é mais antiga do que a versão que você tem instalada atualmente.
 Problemas podem ocorrer e suas configurações podem ser alteradas. Uma reinstalação é recomendada.
 Tem certeza que deseja continuar?</value>
   </data>
@@ -1029,21 +937,13 @@ Tem certeza que deseja continuar?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Para mais informações sobre o porquê disso estar acontecendo e como resolver, leia [este artigo de ajuda]({0}).
-
-Verifique se o Roblox funciona com [o inicializador original]({1}). Se não funcionar, significa que isso não é um problema do BubbleStrap. Se funcionar, consulte o artigo de ajuda.</value>
+Verifique se o Roblox funciona com [o inicializador original]({1}). Se não funcionar, significa que isso não é um problema do Bubblestrap. Se funcionar, consulte o artigo de ajuda.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Não foi possível carregar os dados devido a um erro de rede.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Carregando, por favor aguarde...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Apoiadores</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Estas são as pessoas que apoiaram o BubbleStrap pelo Ko-fi. Um enorme obrigado a todos aqui!
-Toda pessoa aqui está classificada pelo seu compromisso geral.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Suas configurações não puderam ser carregadas. Elas foram redefinidas para a configuração padrão.</value>
@@ -1073,12 +973,11 @@ Toda pessoa aqui está classificada pelo seu compromisso geral.</value>
     <value>Nesta execução, o Roblox não será verificado para atualizações, e as alterações nos mods não serão aplicadas.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>O Roblox precisa ser instalado ou atualizado, BubbleStrap não consegue continuar.</value>
+    <value>O Roblox precisa ser instalado ou atualizado, Bubblestrap não consegue continuar.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>O BubbleStrap já foi instalado neste local antes e ainda está presente, mas o instalador não consegue substituir o executável antigo. 
-
-Por favor, exclua manualmente o arquivo BubbleStrap.exe do local de instalação ou tente reiniciar o sistema, e depois tente instalar novamente.</value>
+    <value>O Bubblestrap já foi instalado neste local antes e ainda está presente, mas o instalador não consegue substituir o executável antigo. 
+Por favor, exclua manualmente o arquivo Bubblestrap.exe do local de instalação ou tente reiniciar o sistema, e depois tente instalar novamente.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Não disponível</value>
@@ -1090,7 +989,7 @@ Por favor, exclua manualmente o arquivo BubbleStrap.exe do local de instalação
     <value>Configure os parâmetros do aplicativo, como o comportamento de escala de DPI e as [otimizações de tela cheia]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>O Roblox ainda não foi instalado. Por favor, inicie o Roblox usando o BubbleStrap pelo menos uma vez antes de tentar usar esta opção.</value>
+    <value>O Roblox ainda não foi instalado. Por favor, inicie o Roblox usando o Bubblestrap pelo menos uma vez antes de tentar usar esta opção.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Tem certeza que deseja cancelar a instalação?</value>
@@ -1100,7 +999,6 @@ Por favor, exclua manualmente o arquivo BubbleStrap.exe do local de instalação
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>O ícone do inicializador escolhido não pôde ser carregado.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1108,19 +1006,10 @@ Por favor, exclua manualmente o arquivo BubbleStrap.exe do local de instalação
     <value>Extrair ícones do Roblox para a pasta</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Permite que você use a variação de ícones Roblox do BubbleStrap para seus atalhos. [Veja como.]({0})</value>
+    <value>Permite que você use a variação de ícones Roblox do Bubblestrap para seus atalhos. [Veja como.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap não conseguiu escrever no registro do Windows. Um antivírus provavelmente está interferindo e causando problemas. Por favor, verifique se não há nada que restrinja a operação do BubbleStrap.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Mensalmente</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Uma vez</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Análises</value>
+    <value>Bubblestrap não conseguiu escrever no registro do Windows. Um antivírus provavelmente está interferindo e causando problemas. Por favor, verifique se não há nada que restrinja a operação do Bubblestrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Redefinir tudo para os padrões</value>
@@ -1134,13 +1023,11 @@ Por favor, exclua manualmente o arquivo BubbleStrap.exe do local de instalação
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>O modo de teste facilita testar de forma iterativa como suas configurações afetam o Roblox.
-
 Enquanto ativo, ele iniciará o Roblox automaticamente após fechar as Configurações e reabrirá as Configurações após fechar o Roblox, em um ciclo até que você o desative.
-
 Gostaria de habilitar o modo de teste?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>Todas as traduções do BubbleStrap são colaborativas através do [Crowdin]({0}). Todos listados aqui são pessoas que gentilmente usaram seu tempo e esforço para ajudar a localizar o BubbleStrap. Um enorme agradecimento a todos!</value>
+    <value>Todas as traduções do Bubblestrap são colaborativas através do [Crowdin]({0}). Todos listados aqui são pessoas que gentilmente usaram seu tempo e esforço para ajudar a localizar o Bubblestrap. Um enorme agradecimento a todos!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Instalar</value>
@@ -1160,8 +1047,7 @@ Gostaria de habilitar o modo de teste?</value>
     <value>Personalizado</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>O BubbleStrap tentou atualizar o Roblox, mas não pode porque os arquivos do Roblox ainda estão em uso.
-
+    <value>O Bubblestrap tentou atualizar o Roblox, mas não pode porque os arquivos do Roblox ainda estão em uso.
 Feche quaisquer aplicativos que possam estar usando os arquivos do Roblox e reinicie.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1171,47 +1057,35 @@ Feche quaisquer aplicativos que possam estar usando os arquivos do Roblox e rein
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Exportar</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Algo parece estar impedindo o BubbleStrap de se conectar à internet.</value>
+    <value>Algo parece estar impedindo o Bubblestrap de se conectar à internet.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>A conexão expirou, o que pode indicar uma conexão de internet ruim ou um bloqueio de firewall.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Altere as configurações de implantação e instalação do Roblox e do Bubblestrap.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Canal</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Escolha o canal de implantação. Não altere a menos que saiba o que está fazendo.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Versão</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Guia de Versão</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>O Roblox não é mais compatível com o Windows 7 ou 8.1. Para continuar jogando, atualize para o Windows 10 ou uma versão mais recente.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Obtendo a versão mais recente do BubbleStrap...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>Configure opções relacionadas ao comportamento do BubbleStrap.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Habilitar o envio de análises</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>É anônimo e nada mau, eu prometo. Para saber o que coletamos e o porquê, veja nossa [política de privacidade]({0}).</value>
+    <value>Obtendo a versão mais recente do Bubblestrap...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Vazio</value>
@@ -1437,60 +1311,434 @@ Revertendo para {1}.</value>
     <value>Editar</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Sobre o BubbleStrap</value>
+    <value>Sobre o Bubblestrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Versão escolhida do menu Esc</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Tempo de atividade</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Defina como 0 para padrão se você quiser usar o desbloqueador de taxa de quadros nativo do Roblox.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Localização: {0}
+Tempo de atividade: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Limite de taxa de quadros (FPS)</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Oculta a versão e as informações de produção durante o lançamento.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Ligado com [atalhos de teclado]({0}). Só funciona se você estiver no [grupo BubbleStrap]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Ocultar versão e detalhes de produção</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Habilitar a função de ocultar GUIs</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Fecha automaticamente o RobloxCrashHandler.exe ao iniciar para reduzir o uso de memória.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>O escolhido será ativado em todos os jogos. [Cuidado, isso pode causar problemas de iluminação!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Desativar o Roblox Crash Handler</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Tecnologia de iluminação preferida</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Habilite esta opção para exibir um Bubblestrap Discord RPC personalizado em seu perfil enquanto o aplicativo estiver aberto.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Desativar efeitos pós-processamento</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Desativar barra de título em tela cheia</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Escolha o som...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Desativar sombras dos jogadores</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Remover som personalizado de morte</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Som personalizado de morte</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Altere o som da morte para qualquer áudio de sua escolha.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Céu cinzento</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Os jogos com céus personalizados podem não funcionar.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Junte-se ao nosso servidor Discord</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulcão</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Editor rápido de bandeiras</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Carregar</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Cancelando a atualização do Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Diretório estático</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Mude da versão xxx para diretórios de instalação baseados em BinaryType.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Baixando</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Status de download do Bootstrapper</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Alterar string de download. {0} é o nome do pacote, {1} é o tamanho dos pacotes baixados e {2} é o tamanho total dos pacotes.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Lançamento de múltiplas instâncias</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Permite ter mais de uma instância do cliente do jogo Roblox aberta simultaneamente. Pode causar problemas com o aplicativo para desktop.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Limpar FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Depurar</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Menu Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Desbloqueie o menu do Roblox com FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Implantação</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Estúdio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Studio</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Mostra os jogadores que estão saindo/entrando no servidor em que você está.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Hash da versão</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Forçar o Bubblestrap a baixar a versão a partir de um hash específico. Não altere se não souber o que isso faz.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Salvar e iniciar</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>As atualizações foram desativadas devido à falta do cliente.
+Para evitar problemas, a atualização continuará.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Registros do jogador</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Perfis</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Este canal está desatualizado e provavelmente não está mais sendo atualizado. Use outro canal.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>O canal em que você está atualmente ({0}) está desatualizado e parece não estar mais recebendo atualizações.
+Deseja mudar para o canal padrão ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Ação de mudança automática de canal</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox ou Bubblestrap podem tentar alterar seu canal preferido.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Alterar automaticamente</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Sempre rápido</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Nunca mude</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>O Roblox está tentando definir seu canal como {0}, mas seu canal preferido atual é {1}.
+Deseja alterar seu canal preferido para {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Deseja incluir FFlags predefinidos?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>O canal em que você está atualmente ({0}) agora foi restrito ao uso público. Você agora estará no canal padrão ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Buscando as informações mais recentes sobre a implantação, aguarde...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>O canal especificado não existe ou é privado.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Falha ao importar as configurações do Bloxstrap.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Importar configurações do Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>A instalação do Bloxstrap não foi encontrada.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Configure as opções relacionadas ao comportamento do Bubblestrap.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Reúna informações que possam ser enviadas online para solucionar um problema que você esteja enfrentando.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Configuração da Bubblestrap</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Todos os registros do Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Limpador</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>O Bubblestrap removerá dados antigos para economizar espaço.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Nunca</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Após 1 dia</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Após 1 semana</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Após 1 mês</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Após 2 meses</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Quando os arquivos devem ser excluídos?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Os arquivos mais antigos do que o período definido serão excluídos.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Os downloads antigos serão excluídos.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Registros</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Os arquivos de log antigos serão excluídos.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Registros do Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Os registros do Bubblestrap serão excluídos.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Configure as opções relacionadas ao comportamento do Bubblestrap.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>Os FastFlags foram temporariamente desativados</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Para mais informações, junte-se ao servidor Bubblestrap Discord.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Aguardando dados</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometria</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Controle como o Roblox renderiza a geometria 3D.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Detalhe da malha</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Controle o nível de detalhe das malhas no jogo.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Qualidades inferiores podem fazer com que as malhas desapareçam.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Qualidade mais baixa</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Mais alta qualidade</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Status desconhecido</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Desconhecido</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Limite de taxa de quadros</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Desbloqueie o limite de taxa de quadros para Roblox. Não é recomendável ultrapassar 240 FPS.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Configurações globais</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Defina as configurações do jogo no menu Bubblestrap.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Transparência</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Transparência personalizada para elementos da interface do usuário.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Movimento reduzido</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Remove a animação do menu de saída.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Tamanho da fonte</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>O valor padrão é 1. Ajuste se estiver usando uma fonte personalizada.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Escolha o tamanho da fonte.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Desativar texturas de terreno</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Qualidade gráfica</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Licença Apache 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Sensibilidade do mouse</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Altere a velocidade com que a câmera se move no jogo.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>Compatível com RV</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Defina a qualidade gráfica do seu jogo</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Definir como somente leitura</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Impedir que o Roblox substitua as configurações globais.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>Substituição da qualidade FRM</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Escolha a qualidade FRM que o Roblox deve usar.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Permita que o Bubblestrap acesse sua conta Roblox</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Forneça acesso às APIs do Roblox usando seu cookie de autenticação. [O que o Bubblestrap acessará?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Com que frequência (em segundos) aparar a memória. Valores mais baixos utilizam mais CPU e podem levar a uma jogabilidade instável.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Aparador de Memória</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Limpa periodicamente o uso de memória do Roblox para reduzir o consumo de RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Com que frequência (em segundos) aparar a memória. Valores mais baixos utilizam mais CPU e podem levar a uma jogabilidade instável.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Realidade Virtual</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Reverter a interface do usuário do Roblox Studio</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Utiliza a interface antiga do Roblox Studio em vez da nova.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Desativar grama do terreno</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Escolha se deseja mostrar ou ocultar a grama decorativa no terreno para melhorar o desempenho.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Usar limite de memória</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Reduza apenas se o Roblox exceder uma quantidade específica de uso de RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Limite em MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Tela inteira</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Tamanho da tela inicial</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Defina a largura e altura padrão da janela do jogo ao iniciar.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Largura (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Altura (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Áudio</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Volume da festa</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Ajuste o volume do chat de voz no seu grupo.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Volume principal</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Ajuste o volume principal para todo o áudio do jogo.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Tradução automática de bate-papo</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Traduza automaticamente as mensagens do chat para o seu idioma preferido.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Feedback tátil</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Feedback tátil</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Entrada e controles</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>Vinheta de RV</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Aplica uma vinheta VR que escurece as bordas da tela para reduzir a sensação de enjoo.</value>
   </data>
 </root>

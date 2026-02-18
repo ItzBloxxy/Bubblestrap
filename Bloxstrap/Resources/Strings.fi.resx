@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>BubbleStrap ei pystynyt automaattisesti päivittämään versioon {0}. Ole hyvä ja päivitä se manuaalisesti lataamalla ja suorittamalla sen verkkosivulta.</value>
+    <value>Bubblestrap ei pystynyt automaattisesti päivittämään versioon {0}. Ole hyvä ja päivitä se manuaalisesti lataamalla ja suorittamalla sen verkkosivulta.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox on tällä hetkellä käynnissä, ja toisen instanssin käynnistäminen tulee sulkemaan aiemman. Oletko varma, että haluat jatkaa?</value>
@@ -127,13 +68,13 @@
     <value>Roblox saattaa olla tällä hetkellä alhaalla. Katso {0} saadaksesi lisätietoja.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Yhteyttä ei voitu luoda, mikä todennäköisesti merkitsee huonoa internetyhteyttä tai palomuurin estoon. Jos yhteytesi on kunnossa, varmista, ettei virustentorjuntasi estä BubbleStrapia.</value>
+    <value>Yhteyttä ei voitu luoda, mikä todennäköisesti merkitsee huonoa internetyhteyttä tai palomuurin estoon. Jos yhteytesi on kunnossa, varmista, ettei virustentorjuntasi estä Bubblestrapia.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Sinun pitää asentaa BubbleStrap ennen poistamista.</value>
+    <value>Sinun pitää asentaa Bubblestrap ennen poistamista.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrapilla ei ole tarpeeksi levytilaa ladatakseen ja asentaakseen Robloxin. Vapauta levytilaa ja yritä uudelleen.</value>
+    <value>Bubblestrapilla ei ole tarpeeksi levytilaa ladatakseen ja asentaakseen Robloxin. Vapauta levytilaa ja yritä uudelleen.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Asetetaan Roblox-muunnoksia...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap poistettiin onnistuneesti</value>
+    <value>Bubblestrap poistettiin onnistuneesti</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox on tällä hetkellä käynnissä, mutta se pitää sulkea ennen BubbleStrapin poistamista. Haluatko sulkea Robloxin nyt?</value>
+    <value>Roblox on tällä hetkellä käynnissä, mutta se pitää sulkea ennen Bubblestrapin poistamista. Haluatko sulkea Robloxin nyt?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox vaatii Windows Media Foundation -komponentit. Sinulla ei näytä olevan niitä, todennäköisesti koska käytät N-versiota Windowsista. Asenna ne ensin, ja sitten käynnistä Roblox.</value>
@@ -276,22 +217,21 @@ Klikkaa saadaksesi lisätietoja</value>
     <value>Yhteysvirhe</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap ei voi yhdistää kohteeseen {0}</value>
+    <value>Bubblestrap ei voi yhdistää kohteeseen {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopioi lokin sisältö</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Ilmestyi poikkeus BubbleStrapin suorittaessa</value>
+    <value>Ilmestyi poikkeus Bubblestrapin suorittaessa</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
-    <value>Tarkista ensin [BubbleStrapin Wiki]({0}) nähdäksesi, onko tämä ongelma jo korjattu.
-
+    <value>Tarkista ensin [Bubblestrapin Wiki]({0}) nähdäksesi, onko tämä ongelma jo korjattu.
 Jos se ei ole korjattu, ole hyvä ja raportoi tämä poikkeus [GitHub-issuen]({1}) kautta ja liitä mukana kopio luodusta lokitiedostosta.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>BubbleStrap-poikkeus</value>
+    <value>Bubblestrap-poikkeus</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Mukautettu</value>
@@ -303,10 +243,10 @@ Jos se ei ole korjattu, ole hyvä ja raportoi tämä poikkeus [GitHub-issuen]({1
     <value>Myöhäis-2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Klassinen)</value>
+    <value>Bubblestrap (Klassinen)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Lasi)</value>
+    <value>Bubblestrap (Lasi)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Vanha (2008 - 2011)</value>
@@ -384,10 +324,10 @@ Jos se ei ole korjattu, ole hyvä ja raportoi tämä poikkeus [GitHub-issuen]({1
     <value>Vaalea</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>BubbleStrap on päivitetty versioon v{0}</value>
+    <value>Bubblestrap on päivitetty versioon v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>BubbleStrapin versio, jonka käynnistit, eroaa asennetusta versiosta.
+    <value>Bubblestrapin versio, jonka käynnistit, eroaa asennetusta versiosta.
 Haluatko päivittää tällä hetkellä asennetun version?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -397,7 +337,7 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Koodi</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Nämä ovat henkilöitä, jotka ovat tehneet huomattavia avustuksia BubbleStrapiin ja auttaneet tekemään siitä sen mikä se on.</value>
+    <value>Nämä ovat henkilöitä, jotka ovat tehneet huomattavia avustuksia Bubblestrapiin ja auttaneet tekemään siitä sen mikä se on.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Ominaisuusideoita</value>
@@ -443,7 +383,7 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Huomioi, etteivät kaikki muutoksesi astu voimaan, kunnes suljet kaikki käynnissä olevat Roblox-instanssit.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>BubbleStrap on jo käynnissä</value>
+    <value>Bubblestrap on jo käynnissä</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Voit saada sen näyttämään erilaiselta, retrolta, tai jopa juuri kuin Robloxilta.</value>
@@ -470,7 +410,7 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Otsikko</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Määritä, miltä BubbleStrapin pitäisi näyttää.</value>
+    <value>Määritä, miltä Bubblestrapin pitäisi näyttää.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Yleinen teema</value>
@@ -494,10 +434,10 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Ulkonäkö</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>BubbleStrap automaattisesti tarkistaa ja päivittää itsensä, kun Roblox avataan.</value>
+    <value>Bubblestrap automaattisesti tarkistaa ja päivittää itsensä, kun Roblox avataan.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Päivitä BubbleStrap automaattisesti</value>
+    <value>Päivitä Bubblestrap automaattisesti</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Estä valmiiksi käynnissä olevan pelin sulkemisen sen takia, että vahingossa käynnistit toisen.</value>
@@ -506,7 +446,7 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Kysy varmistusta ennen kuin käynnistät toisen Roblox-instanssin</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Määritä, mitä BubbleStrapin pitäisi tehdä käynnistäessään Robloxin.</value>
+    <value>Määritä, mitä Bubblestrapin pitäisi tehdä käynnistäessään Robloxin.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox asennetaan uudelleen seuraavan käynnistyksen yhteydessä.</value>
@@ -530,12 +470,8 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
     <value>Tämän väärinkäyttö saattaa johtaa epävakauteen tai odottamattomien asioiden tapahtumiseen.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Käytä varovaisuudella.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Joillain tuomillasi flageilla on jo asetettu arvo. Haluaisitko korvata niiden tämänhetkiset arvot niillä, jotka on määritetty tuonnissa?
-
 Löytyi {0} ristiriitaista flag-määritystä:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Löytyi {0} ristiriitaista flag-määritystä:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Syöttämäsi JSON ei näytä kelpaavan. Tarkista se uudestaan ja yritä uudelleen.
-
 Lisätietoa:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ Lisätietoa:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Näyttäisit olevasi tuomassa hyvin suuren konfiguraation. Kannattaisi tuoda vain konfiguraatioita, jotka ymmärrät täysin. ÄLÄ sokeasti liitä toisten luomia konfiguraatioita. Jos jatkat, kohtaat luultavasti epävakautta ja odottamattomia muutoksia.
-
 Haluatko varmasti jatkaa?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@ Haluatko varmasti jatkaa?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Fast Flag-editori</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Takaisin</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Tiedän mitä teen</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Tiedätkö mitä teet?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flagit ovat hyvin voimakkaita, sillä niitä on tarkoitettu käytettäväksi vain Robloxin tekijöillä. Vaikka ne voivat olla erittäin hyödyllisiä, niiden määrittäminen voi aiheuttaa vakavia ongelmia vakaudelle ja toiminnallisuudelle. ÄLÄ käytä editoria, ellet ole varma mitä teet.
-
-ÄLÄ käytä tätä suurten "flag listien" tuomiseen, jotka on tehty muilta ihmisiltä ja jotka lupaavat parantaa suorituskykyä tai vastaavaa. Ne ovat riskialtistuneita edellä mainituille ongelmille ja aiheuttavat sinulle ongelmia. Jos olit aikeissa tehdä niin, PERUUTA.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Ohjaa miten Roblox-pelimoottorin parametrit ja ominaisuudet ovat määritelty.</value>
@@ -626,14 +546,12 @@ Haluatko varmasti jatkaa?</value>
     <value>Kuvaketiedostot</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>BubbleStrapia ei voi asentaa tänne. Valitse toinen kansio, tai käytä oletuskansiota painamalla 'nollaa' nappia.</value>
+    <value>Bubblestrapia ei voi asentaa tänne. Valitse toinen kansio, tai käytä oletuskansiota painamalla 'nollaa' nappia.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>Kansio jonka valitsit asentaaksesi BubbleStrapin on jo olemassa ja EI ole tyhjä. On hyvin suositeltua BubbleStrapin olla asennettuna omaan kansioonsa
-
+    <value>Kansio jonka valitsit asentaaksesi Bubblestrapin on jo olemassa ja EI ole tyhjä. On hyvin suositeltua Bubblestrapin olla asennettuna omaan kansioonsa
 Vaihtaminen tähän kansioon on suositeltua:
 {0}
-
 Haluatko vaihtaa suositeltuun kansioon?
 Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <comment>{0} is a file path</comment>
@@ -642,7 +560,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Sinun täytyy asettaa asennussijainti</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>BubbleStrapilla ei ole kirjoituslupaa valitsemaasi asennussijaintiin. Ole hyvä ja valitse toinen kansio.</value>
+    <value>Bubblestrapilla ei ole kirjoituslupaa valitsemaasi asennussijaintiin. Ole hyvä ja valitse toinen kansio.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Aktiivisuusseuranta</value>
@@ -693,7 +611,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Älä poistu työpöytäsovellukseen</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Antaa BubbleStrapin tunnistaa, missä Roblox pelissä olet. Tietyt ominaisuudet voivat vaatia tämän.</value>
+    <value>Antaa Bubblestrapin tunnistaa, missä Roblox pelissä olet. Tietyt ominaisuudet voivat vaatia tämän.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Ota käyttöön toiminnan seuranta</value>
@@ -784,7 +702,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Asetukset tallennettu!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>BubbleStrapin asetukset</value>
+    <value>Bubblestrapin asetukset</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Valitse tahdottu kieli</value>
@@ -808,7 +726,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Käyttöliittymä ja asettelu</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Salli BubbleStrapin hallita Fast Flageja</value>
+    <value>Salli Bubblestrapin hallita Fast Flageja</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Tämän käytöstä poistaminen estää minkään täällä konfiguroidun vaikuttamasta Robloxiin.</value>
@@ -820,7 +738,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Estää tämän näkymästä, kun liikuttaa hiiren näytön yläreunaan.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap ei voi ladata Robloxia</value>
+    <value>Bubblestrap ei voi ladata Robloxia</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Robloxia ei voi ladata tällä hetkellä. Ole hyvä ja lue seuraava ohjesivu saadaksesi lisätietoja: {0}</value>
@@ -841,7 +759,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Merkintä flagille '{0}' ei kelpaa, koska arvon pitää olla numero</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Lokitiedostoa ei tulla kirjoittamaan tälle käynnistykselle, koska BubbleStrap ei voi kirjoittaa kansioon '{0}'</value>
+    <value>Lokitiedostoa ei tulla kirjoittamaan tälle käynnistykselle, koska Bubblestrap ei voi kirjoittaa kansioon '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Oletus</value>
@@ -856,7 +774,7 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Merkintä flagille '{0}' ei ole kelvollinen, koska pelisuodatin ei ole muotoiltu oikein.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>BubbleStrapin asennusohjelma</value>
+    <value>Bubblestrapin asennusohjelma</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Tervetuloa</value>
@@ -875,18 +793,16 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
     <value>Seuraava</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Kiitos, että latasit BubbleStrapin.
-
-Ainoat viralliset sivustot, joista BubbleStrapin voi ladata, ovat {0} ja {1}, joten tarkista, että latasit sen virallisesta lähteestä.
-
-Tämä asennusprosessi tulee olemaan nopea ja yksinkertainen, ja voit konfiguroida kaikkia BubbleStrapin asetuksia asennuksen jälkeen.</value>
+    <value>Kiitos, että latasit Bubblestrapin.
+Ainoat viralliset sivustot, joista Bubblestrapin voi ladata, ovat {0} ja {1}, joten tarkista, että latasit sen virallisesta lähteestä.
+Tämä asennusprosessi tulee olemaan nopea ja yksinkertainen, ja voit konfiguroida kaikkia Bubblestrapin asetuksia asennuksen jälkeen.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Klikkaa 'Seuraava' jatkaaksesi.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Yrität asentaa BubbleStrapin versiota {0}, mutta viimeisin versio on {1}. Haluaisitko ladata sen?</value>
+    <value>Yrität asentaa Bubblestrapin versiota {0}, mutta viimeisin versio on {1}. Haluaisitko ladata sen?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Valitse, mihin asennetaan</value>
@@ -907,16 +823,13 @@ Tämä asennusprosessi tulee olemaan nopea ja yksinkertainen, ja voit konfiguroi
     <value>Käynnistysvalikon kuvake</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>BubbleStrap asennettiin onnistuneesti.
-
-Roblox ei ole vielä asennettu, se tapahtuu vasta, kun käynnistät sen BubbleStrapin avulla ensimmäisen kerran. Kuitenkin ennen kuin teet näin, saattaisit tahtoa määrittää BubbleStrapin asetukset ensin.
-
-Muuten, vältä käyttämästä "Roblox Player" -pikakuvaketta käynnistääksesi Robloxin, koska BubbleStrap ei silloin käynnisty Robloxin mukana. Jos et näe BubbleStrapin ilmestyvän käynnistäessä pelin verkkosivustolta, käynnistä Roblox BubbleStrapin avulla työpöydältä kerran korjataksesi sen.
-
+    <value>Bubblestrap asennettiin onnistuneesti.
+Roblox ei ole vielä asennettu, se tapahtuu vasta, kun käynnistät sen Bubblestrapin avulla ensimmäisen kerran. Kuitenkin ennen kuin teet näin, saattaisit tahtoa määrittää Bubblestrapin asetukset ensin.
+Muuten, vältä käyttämästä "Roblox Player" -pikakuvaketta käynnistääksesi Robloxin, koska Bubblestrap ei silloin käynnisty Robloxin mukana. Jos et näe Bubblestrapin ilmestyvän käynnistäessä pelin verkkosivustolta, käynnistä Roblox Bubblestrapin avulla työpöydältä kerran korjataksesi sen.
 Mitä tahtoisit tehdä?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Määritä BubbleStrapin asetukset</value>
+    <value>Määritä Bubblestrapin asetukset</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Säädä sen tarjoamia ominaisuuksia</value>
@@ -928,22 +841,19 @@ Mitä tahtoisit tehdä?</value>
     <value>Pudottaa sinut työpöytäsovellukseen, kun kaikki on valmista</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Poista BubbleStrapin asennus</value>
+    <value>Poista Bubblestrapin asennus</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Asennuksen poistaminen poistaa BubbleStrapin järjestelmästäsi ja automaattisesti uudelleenmäärittää Robloxin vakiokäynnistysohjelman, jos se on vielä asennettuna.
-
+    <value>Asennuksen poistaminen poistaa Bubblestrapin järjestelmästäsi ja automaattisesti uudelleenmäärittää Robloxin vakiokäynnistysohjelman, jos se on vielä asennettuna.
 Jos poistat asennuksen tai asennat uudelleen, koska koet ongelmia Robloxin kanssa, lue [tämä tukisivu]({0}) ensin.
-
-Poistoprosessi ei saata pystyä siivoamaan itsensä täysin, joten sinun täytyy mahdollisesti siivota jäljelle jääneet tiedostot BubbleStrapin asennussijainnista.
-
-BubbleStrap asennettiin polkuun "{1}".</value>
+Poistoprosessi ei saata pystyä siivoamaan itsensä täysin, joten sinun täytyy mahdollisesti siivota jäljelle jääneet tiedostot Bubblestrapin asennussijainnista.
+Bubblestrap asennettiin polkuun "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Säilytä asetukseni ja modini</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Ne pidetään siellä, missä BubbleStrap asennettiin ja palautetaan uudelleenasennuksen yhteydessä.</value>
+    <value>Ne pidetään siellä, missä Bubblestrap asennettiin ja palautetaan uudelleenasennuksen yhteydessä.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Poista asennus</value>
@@ -964,19 +874,18 @@ BubbleStrap asennettiin polkuun "{1}".</value>
     <value>Sinulla ei tällä hetkellä ole WebView2-ajoympäristöä asennettuna. Jotkin Robloxin ominaisuudet, kuten työpöytäohjelma, eivät toimi ilman sitä. Haluaisitko ladata sen nyt?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>BubbleStrap ei pystynyt luomaan pikakuvakkeita työpöydälle ja aloitusvalikkoon. Yritä luoda ne myöhemmin asetuksista.</value>
+    <value>Bubblestrap ei pystynyt luomaan pikakuvakkeita työpöydälle ja aloitusvalikkoon. Yritä luoda ne myöhemmin asetuksista.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
-    <value>Tarkista [BubbleStrapin wiki]({0}) ensin nähdäksesi, onko tämä ongelma jo ratkaistu korjauksella.
-
-Jos ei, ole hyvä ja raportoi tämä poikkeus tämän forkin ylläpitäjille. ÄLÄ raportoi tätä BubbleStrapin GitHub-issueihin, koska tämä on epävirallinen koontiversio.</value>
+    <value>Tarkista [Bubblestrapin wiki]({0}) ensin nähdäksesi, onko tämä ongelma jo ratkaistu korjauksella.
+Jos ei, ole hyvä ja raportoi tämä poikkeus tämän forkin ylläpitäjille. ÄLÄ raportoi tätä Bubblestrapin GitHub-issueihin, koska tämä on epävirallinen koontiversio.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Nämä ovat yleisiä pikakuvakkeita, jotka tuovat esiin monivalintaisen käynnistysvalikon. Pikakuvakkeet tietyille toiminnoille voidaan luoda myöhemmin asetuksista.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Määritä, miten BubbleStrap voidaan käynnistää helposti.</value>
+    <value>Määritä, miten Bubblestrap voidaan käynnistää helposti.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Yleinen</value>
@@ -1016,7 +925,7 @@ Jos ei, ole hyvä ja raportoi tämä poikkeus tämän forkin ylläpitäjille. Ä
     <value>Sinulla on tallentamattomia muutoksia. Oletko varma, että tahdot sulkea tallentamatta?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Käynnistämäsi BubbleStrap-versio on vanhempi kuin versio, joka sinulla on tällä hetkenä asennettuna.
+    <value>Käynnistämäsi Bubblestrap-versio on vanhempi kuin versio, joka sinulla on tällä hetkenä asennettuna.
 Ongelmia voi esiintyä ja asetuksesi saattavat muuttua. Uudelleenasennus on suositeltavaa.
 Oletko varma, että tahdot jatkaa?</value>
   </data>
@@ -1028,21 +937,13 @@ Oletko varma, että tahdot jatkaa?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Saadaksesi tietoa siitä, miksi tämä saattaisi tapahtua ja kuinka sen voi ratkaista, lue [tämä ohjeartikkeli}({0}).
-
-Tarkista, toimiiko Roblox [alkuperäisellä käynnistysohjelmalla]({1}). Jos ei, tämä ei ole vika BubbleStrapissa. Jos toimii, viittaa ohjeartikkeliin.</value>
+Tarkista, toimiiko Roblox [alkuperäisellä käynnistysohjelmalla]({1}). Jos ei, tämä ei ole vika Bubblestrapissa. Jos toimii, viittaa ohjeartikkeliin.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Dataa ei voitu ladata verkkovirheen vuoksi.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Ladataan, odota hetki...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Tukijat</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Nämä henkilöt ovat tukeneet BubbleStrapia Ko-fin kautta. Suuret kiitokset kaikille, ketkä olevat tässä!
-Jokainen henkilö tässä on sijoitettu kokonaislahjoituksensa mukaisesti.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Asetuksiasi ei voitu ladata. Ne on palatutettu oletuksiin.</value>
@@ -1072,12 +973,11 @@ Jokainen henkilö tässä on sijoitettu kokonaislahjoituksensa mukaisesti.</valu
     <value>Tänä käynnistyksenä Robloxin päivityksiä ei tarkisteta, eivätkä muutokset modeihin astu voimaan.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Koska Roblox on asennettava tai päivitettävä, BubbleStrap ei voi jatkaa.</value>
+    <value>Koska Roblox on asennettava tai päivitettävä, Bubblestrap ei voi jatkaa.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>BubbleStrap on asennettu tähän sijaintiin ennen ja on edelleen läsnä, mutta asennusohjelma ei voi korvata vanhaa ohjelmaa.
-
-Ole hyvä ja poista BubbleStrap.exe manuaalisesti asennussijainnista tai käynnistä järjestelmäsi uudelleen ja yritä sitten asentaa uudelleen.</value>
+    <value>Bubblestrap on asennettu tähän sijaintiin ennen ja on edelleen läsnä, mutta asennusohjelma ei voi korvata vanhaa ohjelmaa.
+Ole hyvä ja poista Bubblestrap.exe manuaalisesti asennussijainnista tai käynnistä järjestelmäsi uudelleen ja yritä sitten asentaa uudelleen.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Ei saatavilla</value>
@@ -1089,7 +989,7 @@ Ole hyvä ja poista BubbleStrap.exe manuaalisesti asennussijainnista tai käynni
     <value>Määritä sovellusparametreja, kuten DPI-skaalauksen käyttäytymistä ja [koko näytön tilan optimointeja]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Robloxia ei ole vielä asennettu. Käynnistä Roblox BubbleStrapilla ainakin kerran ennen kuin yrität käyttää tätä asetusta.</value>
+    <value>Robloxia ei ole vielä asennettu. Käynnistä Roblox Bubblestrapilla ainakin kerran ennen kuin yrität käyttää tätä asetusta.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Oletko varma, että haluat peruuttaa asennuksen?</value>
@@ -1099,7 +999,6 @@ Ole hyvä ja poista BubbleStrap.exe manuaalisesti asennussijainnista tai käynni
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Valittua käynnistysohjelman kuvaketta ei voitu ladata.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1107,19 +1006,10 @@ Ole hyvä ja poista BubbleStrap.exe manuaalisesti asennussijainnista tai käynni
     <value>Vie Roblox-kuvakkeet kansioon</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Antaa sinun käyttää BubbleStrapin Roblox-ikonien valikoimaa pikakuvakkeissasi. [Katso, miten.]({0})</value>
+    <value>Antaa sinun käyttää Bubblestrapin Roblox-ikonien valikoimaa pikakuvakkeissasi. [Katso, miten.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap ei pysty kirjoittamaan Windowsin rekisteriin. Antivirusohjelma todennäköisesti häiritsee ja aiheuttaa ongelmia. Ole hyvä ja tarkista, ettei ole mitään, joka rajoittaisi BubbleStrapin toimintaa.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Kuukausittainen</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Kertamaksu</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analytiikka</value>
+    <value>Bubblestrap ei pysty kirjoittamaan Windowsin rekisteriin. Antivirusohjelma todennäköisesti häiritsee ja aiheuttaa ongelmia. Ole hyvä ja tarkista, ettei ole mitään, joka rajoittaisi Bubblestrapin toimintaa.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Palauta kaikki oletuksiin</value>
@@ -1133,13 +1023,11 @@ Ole hyvä ja poista BubbleStrap.exe manuaalisesti asennussijainnista tai käynni
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Testaustila tekee helpommaksi testata, miten asetuksesi vaikuttavat Robloxiin.
-
 Kun se on päällä, se käynnistää Robloxin automaattisesti, kun suljet asetukset ja avaa asetukset kun suljet Robloxin, jatkuvassa kierteessä kunnes otat sen pois käytöstä.
-
 Haluaisitko ottaa testaustilan käyttöön?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>Kaikki BubbleStrapin käännökset joukkoistetaan [Crowdinin]({0}) kautta. Täällä listatut henkilöt ovat anteliaasti ja vapaaehtoisesti tarjonneet aikaansa ja vaivaansa auttaakseen BubbleStrapin lokalisoinnissa. Suuret kiitokset kaikille täällä oleville!</value>
+    <value>Kaikki Bubblestrapin käännökset joukkoistetaan [Crowdinin]({0}) kautta. Täällä listatut henkilöt ovat anteliaasti ja vapaaehtoisesti tarjonneet aikaansa ja vaivaansa auttaakseen Bubblestrapin lokalisoinnissa. Suuret kiitokset kaikille täällä oleville!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Asentaa</value>
@@ -1159,9 +1047,8 @@ Haluaisitko ottaa testaustilan käyttöön?</value>
     <value>Mukautettu</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>BubbleStrap yritti päivittää Robloxin, mutta ei voi, koska Robloxin tiedostot ovat vielä käytössä.
-
-Sulje kaikki sovellukset, jotka saattavat käyttää Robloxin tiedostoja, ja käynnistä BubbleStrap sitten uudelleen.</value>
+    <value>Bubblestrap yritti päivittää Robloxin, mutta ei voi, koska Robloxin tiedostot ovat vielä käytössä.
+Sulje kaikki sovellukset, jotka saattavat käyttää Robloxin tiedostoja, ja käynnistä Bubblestrap sitten uudelleen.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
   <data name="FileTypes.ZipArchive" xml:space="preserve">
@@ -1170,47 +1057,35 @@ Sulje kaikki sovellukset, jotka saattavat käyttää Robloxin tiedostoja, ja kä
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Vie</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Jokin todennäköisesti estää BubbleStrapia yhdistämästä internetiin.</value>
+    <value>Jokin todennäköisesti estää Bubblestrapia yhdistämästä internetiin.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Yhteys aikakatkaistiin, mikä voisi merkitä huonoa internetyhteyttä tai palomuurin estoa.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Muuta Roblox &amp; Bubblestrapin käyttöönotto- ja asennusasetuksia.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Kanava</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Valitse käyttöönottokanava. Älä muuta asetusta, ellet ole varma siitä, mitä olet tekemässä.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Versio</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Versio-tunniste</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox ei enää tue Windows 7 tai 8.1, jatkaaksesi Robloxin pelaamista, ole hyvä ja päivitä Windows 10 tai uudempaan.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Haetaan uusinta BubbleStrap-versiota...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>Määritä BubbleStrapin käyttäytymiseen liittyviä asetuksia.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Ota analytiikan lähetys käyttöön</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Se on anonyymiä eikä mitään pahaa, lupaamme. Lisätietoja siitä, mitä me keräämme ja miksi löytyy [yksityisyyskäytännöstämme]({0}).</value>
+    <value>Haetaan uusinta Bubblestrap-versiota...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Tyhjä</value>
@@ -1436,60 +1311,434 @@ Palataan oletukseen {1}.</value>
     <value>Muokkaa</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Tietoja BubbleStrapista</value>
+    <value>Tietoja Bubblestrapista</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Suosittu escape-valikon versio</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Käyttöaika</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Aseta nollaksi oletuksille, jos tahdot käyttää Robloxin natiivia kuvataajuusvapauttajaa.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Sijainti: {0}
+Käyttöaika: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Kuvataajuuden rajoitus</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Piilottaa version ja tuotantotiedot käynnistyksen aikana.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Vaihda käyttämällä [näppäinyhdistelmiä]({0}). Toimii vain, jos olet [BubbleStrap Roblox-ryhmässä]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Piilota versio- ja tuotantotiedot</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Antaa sinun piilottaa pelin GUI:t</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Sulkee RobloxCrashHandler.exe-tiedoston automaattisesti käynnistyksen yhteydessä muistin käytön vähentämiseksi.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Valinta pakotetaan päälle kaikissa peleissä. [Varo, tämä saattaa aiheuttaa valaistusongelmia!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Poista Roblox Crash Handler käytöstä</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Suosittu valaistusteknologia</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Ota tämä käyttöön, jos haluat näyttää mukautetun Bubblestrap Discord RPC:n profiilissasi sovelluksen ollessa auki.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Poista jälkikäsittelyefektit käytöstä</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Poista koko näytön otsikkopalkki käytöstä</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Valitse ääni...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Poista pelaajien varjot käytöstä</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Poista mukautettu kuoleman ääni</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Mukautettu kuolemanääni</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Vaihda kuoleman ääni mihin tahansa haluamaasi ääneen.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Harmaa taivas</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Pelit, joissa on mukautetut taivaat, eivät välttämättä toimi.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Liity Discord-palvelimellemme</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Tulivuori</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Nopea lippueditori</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Kuorma</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Roblox-päivityksen peruuttaminen.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanava</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Staattinen hakemisto</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Vaihda versiosta xxx BinaryType-pohjaisiin asennushakemistoihin.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Lataaminen</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Bootstrapperin lataustila</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Muuta latausmerkkijonoa. {0} on paketin nimi, {1} on ladattujen pakettien koko ja {2} on pakettien kokonaiskoko.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Usean instanssin käynnistäminen</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Mahdollistaa useamman kuin yhden Roblox-peliohjelman avaamisen samanaikaisesti. Voi aiheuttaa ongelmia työpöytäsovelluksessa.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Tyhjennä FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Virheenkorjaus</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox-valikko</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Keventää Roblox-valikkoa FFlags-tunnisteilla</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Käyttöönotto</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Studio</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Näyttää pelaajat, jotka poistuvat/liittyvät palvelimelle, jolla olet.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Tyyppi</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Versiohash</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Pakota Bubblestrap lataamaan versio tietystä hashista. Älä muuta tätä, jos et tiedä, mitä se tekee.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Tallenna ja käynnistä</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Päivitykset on poistettu käytöstä, koska asiakasohjelma puuttuu.
+  Ongelmien välttämiseksi päivitys jatkuu.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Pelaajan lokit</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Viesti</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profiilit</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Tämä kanava on vanhentunut, eikä sitä todennäköisesti enää päivitetä. Käytä toista kanavaa.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Kanava, jolla olet tällä hetkellä ({0}), on vanhentunut, eikä se näytä enää vastaanottavan päivityksiä.
+Haluatko siirtyä oletuskanavalle ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automaattinen kanavanvaihto</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox tai Bubblestrap saattaa yrittää muuttaa valitsemaasi kanavaa.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Muuta automaattisesti</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Aina nopeasti</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Älä koskaan muutu</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox yrittää asettaa kanavasi asetukseksi {0}, mutta nykyinen ensisijainen kanavasi on {1}.
+Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Haluatko lisätä valmiiksi asetetut FFlags-liput?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Kanava, jolla olet tällä hetkellä ({0}), on nyt rajoitettu julkiseen käyttöön. Siirryt nyt oletuskanavalle ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Haetaan uusimmat asennustiedot, odota...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Määritettyä kanavaa ei ole olemassa tai se on yksityinen.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Bloxstrap-asetusten tuonti epäonnistui.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Tuo asetukset Bloxstrapista</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Bloxstrap-asennusta ei löytynyt.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Määritä Bubblestrapin toimintaan liittyvät asetukset.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Kerää tietoja, jotka voidaan ladata verkkoon ongelman ratkaisemiseksi.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bubblestrap-kokoonpano</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Kaikki Bubblestrap-lokit</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Puhdistaja</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap poistaa vanhat tiedot tilan säästämiseksi.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Ei koskaan</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>1 päivän kuluttua</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>1 viikon kuluttua</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>1 kuukauden kuluttua</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>2 kuukauden kuluttua</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Milloin tiedostot tulisi poistaa?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Asetettua ikää vanhemmat tiedostot poistetaan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Välimuisti</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Vanhat lataukset poistetaan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Lokit</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Vanhat lokitiedostot poistetaan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Bubblestrap-lokit</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap-lokit poistetaan.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Määritä Bubblestrapin toimintaan liittyvät asetukset.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags on väliaikaisesti poistettu käytöstä</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Lisätietoja saat liittymällä Bubblestrap Discord -palvelimeen.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Odotetaan tietoja</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometria</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Hallitse, miten Roblox renderöi 3D-geometrian.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Verkko-osa</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Hallitse, kuinka yksityiskohtaiset verkot näkyvät pelissä.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Huonompi laatu voi aiheuttaa verkkojen katoamisen.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Heikoin laatu</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Korkeinta laatua</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Tuntematon tila</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Kehysnopeuden rajoitus</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Poista Robloxin kuvanopeuden rajoitus. Yli 240 FPS:n nopeuden käyttöä ei suositella.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Yleiset asetukset</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Määritä pelin asetukset Bubblestrap-valikosta.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Läpinäkyvyys</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>UI-elementtien mukautettu läpinäkyvyys.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Vähentynyt liike</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Poistaa animaation pakenemisvalikosta.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Fonttikoko</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Oletusarvo on 1. Säädä, jos käytät kustomoitua fonttia.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Valitse fontin koko.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Poista maaston tekstuurit käytöstä</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Grafiikan laatu</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache License 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Hiiren herkkyys</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Muuta kameran liikkeen nopeutta pelin aikana.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR-yhteensopiva</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Aseta pelin grafiikan laatu</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Aseta vain luku -tilaan</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Estä Roblox-ohjelmaa ohittamasta yleisiä asetuksia.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM-laadun ohitus</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Valitse Robloxin käyttämä FRM-laatu.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Salli Bubblestrapin käyttää Roblox-tiliäsi</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Anna pääsy Roblox-sovellusliittymiin käyttämällä todennuskeksiäsi. [Mihin Bubblestrap pääsee käsiksi?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Kuinka usein (sekunteina) muistia leikataan. Pienemmät arvot käyttävät enemmän CPU:ta ja voivat johtaa epävakaaseen pelattavuuteen.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Tyhjentää säännöllisesti Robloxin muistin käytön RAM-muistin kulutuksen vähentämiseksi.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Tyhjentää säännöllisesti Robloxin muistin käytön RAM-muistin kulutuksen vähentämiseksi.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Muistin puhdistusväli</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtuaalitodellisuus</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Palauta Roblox Studio -käyttöliittymä</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Käyttää vanhaa Roblox Studio -käyttöliittymää uuden sijaan.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Poista maaston ruoho käytöstä</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Valitse, haluatko näyttää vai piilottaa maaston koristekasvit suorituskyvyn parantamiseksi.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Käytä muistirajaa</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Leikkaa vain, jos Roblox ylittää tietyn määrän RAM-muistin käyttöä.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Raja megatavuina</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Koko näyttö</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Aloitusnäytön koko</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Aseta pelin ikkunan oletusleveys ja -korkeus käynnistyksen yhteydessä.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Leveys (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Korkeus (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Ääni</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Juhlan äänenvoimakkuus</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Säädä äänikeskustelun äänenvoimakkuutta ryhmässäsi.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Päävolyymi</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Säädä pelin äänenvoimakkuutta.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automaattinen chat-käännös</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Käännä chat-viestit automaattisesti haluamallesi kielelle.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Haptinen palaute</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Mahdollistaa ohjaimen tärinän antaman tuntoaistin palautteen.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Syöttö ja hallintalaitteet</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR-vignetti</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Käyttää VR-vignettia, joka tummentaa näytön reunoja liikepahoinvoinnin vähentämiseksi.</value>
   </data>
 </root>

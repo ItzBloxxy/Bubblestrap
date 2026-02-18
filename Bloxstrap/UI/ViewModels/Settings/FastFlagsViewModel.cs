@@ -1,5 +1,6 @@
 ﻿using Bloxstrap.Enums.FlagPresets;
 using CommunityToolkit.Mvvm.Input;
+using System.Diagnostics.CodeAnalysis;
 using System.Windows.Input;
 
 namespace Bloxstrap.UI.ViewModels.Settings
@@ -146,12 +147,35 @@ namespace Bloxstrap.UI.ViewModels.Settings
             }
         }
 
-        public bool SkyGrayCommand
+        public bool SkyGray
         {
             get => App.FastFlags.GetPreset("Rendering.SkyGray") == "True";
             set
             {
                 App.FastFlags.SetPreset("Rendering.SkyGray", value ? "True" : null);
+                OnPropertyChanged(nameof(SkyGray));
+            }
+        }
+        public bool DisableGrass
+        {
+            get => App.FastFlags.GetPreset("Rendering.Grass.Max") == "0";
+            set
+            {
+                object? grassValue = value ? 0 : null;
+
+                App.FastFlags.SetPreset("Rendering.Grass", grassValue);
+
+                OnPropertyChanged(nameof(DisableGrass));
+            }
+        }
+
+        public bool OldRSUI
+        {
+            get => App.FastFlags.GetPreset("RobloxStudio.FFlagEnableRibbonPlugin3") == "False";
+            set
+            {
+                App.FastFlags.SetPreset("RobloxStudio.FFlagEnableRibbonPlugin3", value ? "False" : null);
+                OnPropertyChanged(nameof(OldRSUI));
             }
         }
     }

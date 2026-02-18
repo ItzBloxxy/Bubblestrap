@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -287,7 +228,6 @@ Klik for mere information</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Tjek [Bloxstrap Wiki]({0}) først for at se, om dette problem allerede er blevet løst med en rettelse.
-
 Hvis ikke, bedes du rapportere denne undtagelse gennem et [GitHub problem]({1}) sammen med en kopi af den logfil, der blev oprettet.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
@@ -530,12 +470,8 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Misbrug af dette kan føre til ustabilitet eller uventede ting sker.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Brug med forsigtighed.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Nogle af de flag, du forsøger at importere, har allerede fastsat værdier. Vil du overskrive deres nuværende værdier med dem, der er defineret i importen?
-
 Der er {0} modstridende flagdefinitioner:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Der er {0} modstridende flagdefinitioner:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Den JSON, du har indtastet, ser ikke ud til at være gyldig. Dobbelttjek den og prøv igen.
-
 Flere oplysninger:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ Flere oplysninger:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Du synes at importere en meget stor konfiguration. Du bør kun importere konfigurationer, som du fuldt ud forstår. Indsæt IKKE blindt konfigurationer lavet af andre mennesker. Hvis du fortsætter, vil du sandsynligvis ende med stabilitetsproblemer og støde på uventede ændringer.
-
 Er du sikker på, at du vil fortsætte?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@ Er du sikker på, at du vil fortsætte?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Fast Flag redigering</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Gå tilbage</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Jeg ved, hvad jeg laver</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Ved du, hvad du gør?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast flag er ekstremt kraftfulde, da de er beregnet til kun at blive brugt af Roblox ingeniører. Mens de kan være meget nyttige, manuelt at konfigurere dem kan forårsage alvorlige problemer med stabilitet og funktionalitet. Brug IKKE editoren, hvis du er usikker på, hvad du laver.
-
-Brug IKKE dette til at importere store "flag lister" lavet af andre mennesker, der lover at forbedre ydeevnen eller sådanne. De er omfattet af førnævnte spørgsmål og de vil give problemer for dig, da du ikke vil være fuldt ud klar over, hvad de ændrer sig. Hvis du skulle til at gøre det, GÅ TILBAGE.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Kontroller, hvordan specifikke Roblox engine parametre og funktioner er konfigureret.</value>
@@ -630,10 +550,8 @@ Brug IKKE dette til at importere store "flag lister" lavet af andre mennesker, d
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
     <value>Mappen som du har valgt at installere Bloxstrap eksistere alleredde og er ikke tom. Det anbefales kraftigt, at Bloxstrap installeres i en selvstændig mappe.
-
 Ændring til følgende placering er foreslået: 
 {0}
-
 Vil du ændre den til foreslåede placering?
 Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen fortsætter.</value>
     <comment>{0} is a file path</comment>
@@ -876,9 +794,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>Tak fordi du har downloadet Bloxstrap.
-
 De eneste officielle websteder, hvor du kan downloade Bloxstrap fra, er {0} og {1}, så sørg for at verificere, at du har hentet det fra en officiel kilde.
-
 Denne installationsproces vil være hurtig og enkel, og du vil kunne konfigurere alle Bloxstrap's indstillinger efter installationen.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -908,11 +824,8 @@ Denne installationsproces vil være hurtig og enkel, og du vil kunne konfigurere
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
     <value>Bloxstrap er blevet installeret med succes.
-
 Roblox er endnu ikke blevet installeret, det vil ske, når du starter det første gang med Bloxstrap. Før du gør det, kan det dog være en god idé at konfigurere Bloxstrap's indstillinger først.
-
 Undgå også at bruge "Roblox Player"-genvejen til at starte Roblox, da Bloxstrap ikke vil starte sammen med Roblox. Hvis du ikke ser Bloxstrap, når du starter fra websiden, så start blot Roblox med Bloxstrap én gang fra skrivebordet for at løse problemet.
-
 Hvad vil du gerne gøre?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
@@ -932,11 +845,8 @@ Hvad vil du gerne gøre?</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
     <value>Afinstallering vil fjerne Bloxstrap fra dit system, og automatisk omkonfigurere standard Roblox launcher hvis det stadig er installeret.
-
 Hvis du afinstallerer eller geninstallerer fordi du har problemer med Roblox, så læs [denne hjælpeside] ({0}) første.
-
 Afinstallationsprocessen kan muligvis ikke rydde op i sig selv, så du kan have brug for manuelt rydde op resterende filer, hvor Bloxstrap blev installeret.
-
 Bloxstrap blev installeret ved "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
@@ -968,7 +878,6 @@ Bloxstrap blev installeret ved "{1}".</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Tjek [Bloxstrap Wiki]({0}) først for at se, om dette problem allerede er blevet løst med en rettelse.
-
 Hvis ikke, bedes du at rapportere denne undtagelse til vedligeholderne af denne Fork. Rapporter IKKE dette til Bloxstrap's GitHub problemer, da dette er en uofficiel opbygning.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
@@ -1028,7 +937,6 @@ Er du sikker på, at du vil fortsætte?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>For information om, hvorfor dette kan ske, og hvordan dette kan løses, læs venligst [denne hjælpeartikel]({0}).
-
 Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør det, så er dette ikke et Bloxstrap problem. Hvis det gør, så henvises til hjælpeartiklen.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
@@ -1036,13 +944,6 @@ Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør de
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Indlæser, vent venligst...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Støttere</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Det er de mennesker, der har støttet Bloxstrap gennem Ko-fi. En massiv tak til alle her!
-Hver person her er rangeret efter deres samlede løfte.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Dine indstillinger kunne ikke indlæses. De er blevet nulstillet til standardindstillingen.</value>
@@ -1076,7 +977,6 @@ Hver person her er rangeret efter deres samlede løfte.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
     <value>Bloxstrap er blevet installeret på denne placering før og er stadig til stede, men installationsprogrammet kan ikke overskrive den gamle eksekverbare. 
-
 Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at genstarte dit system, og prøv derefter at genstarte installationen bagefter.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
@@ -1099,7 +999,6 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Det valgte bootstrapper ikon kunne ikke indlæses.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1111,15 +1010,6 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
     <value>Bloxstrap er ude af stand til at skrive til registreringsdatabasen i Windows. En antivirus vil sandsynligvis forstyrre og forårsage problemer. Tjek venligst for at sikre, at der ikke er noget, der vil begrænse Bloxstrap's operation.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Månedligt</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Enkeltstående</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analyse</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Nulstil alt til standardindstillinger</value>
@@ -1133,9 +1023,7 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Testtilstand gør det nemmere at teste, hvordan dine indstillinger påvirker Roblox iterativt.
-
 Når den er aktiveret, vil den automatisk starte Roblox efter lukning af Indstillinger og åbne Indstillinger igen efter lukning af Roblox, i en cyklus, indtil du deaktiverer den.
-
 Vil du aktivere testtilstand?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
@@ -1160,7 +1048,6 @@ Vil du aktivere testtilstand?</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
     <value>Bloxstrap forsøgte at opgradere Roblox, men kan ikke fordi Roblox' filer stadig er i brug.
-
 Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1406,78 +1293,444 @@ Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
   <data name="About.Title" xml:space="preserve">
     <value>Om Bloxstrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Foretrukken escape menu version</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Driftstid</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Sæt til 0 for standardindstillinger, hvis du vil bruge Roblox' oprindelige framerate oplåsning.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Placering: {0}
+Oppetid: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Framerate grænse</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Skjuler version og produktionsoplysninger under opstart.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Slået til med [tastaturgenveje]({0}). Virker kun, hvis du er i [Bloxstrap gruppen]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Skjul version og produktionsoplysninger</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Aktiver evne til at skjule GUI'er</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Lukker automatisk RobloxCrashHandler.exe ved opstart for at reducere hukommelsesforbruget.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Valgt en vil blive aktiveret i alle spil. [Pas på, kan forårsage belysningsproblemer!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Deaktiver Roblox Crash Handler</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Foretrukne belysningsteknologi</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Aktivér dette for at vise en brugerdefineret Bubblestrap Discord RPC på din profil, mens appen er åben.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Deaktiver efterbehandlingseffekter</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Deaktivér fuldskærm titelbar</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Vælg lyd...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Deaktivér spiller-skygger</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Fjern brugerdefineret dødssound</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Brugerdefineret dødssound</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Skift dødssoundet til en lydfil efter eget valg.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Grå himmel</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Spil med brugerdefinerede himmel kan muligvis ikke fungere.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Deltag i vores Discord-server</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkan</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Hurtig flagredaktør</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Belastning</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Annullering af Roblox-opgradering.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanal</value>
+  </data>
+  <data name="Menu.Channel.Description" xml:space="preserve">
+    <value>Skift installations- og implementeringsindstillinger for Roblox &amp; Bubblestrap.</value>
+  </data>
+  <data name="Common.Channel" xml:space="preserve">
+    <value>Kanal</value>
+  </data>
+  <data name="Menu.ChannelChanger.Description" xml:space="preserve">
+    <value>Vælg implementeringskanal. Undlad at ændre, medmindre du ved, hvad du gør.</value>
+  </data>
+  <data name="Common.Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Common.VersionGuid" xml:space="preserve">
+    <value>VersionGuid</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statisk mappe</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Skift fra version-xxx til BinaryType-baserede installationsmapper.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Bootstrapper-downloadstatus</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Ændr download-streng. {0} er pakkenavn, {1} er størrelsen på de downloadede pakker, og {2} er den samlede størrelse af pakkerne.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Start af flere instanser</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Gør det muligt at have mere end én Roblox-spilklient åben samtidigt. Kan forårsage problemer med desktop-appen.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Ryd FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Fejlfinding</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox-menu</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Fjern overflødige elementer fra Roblox-menuen med FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Implementering</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Studio</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Viser spillere, der forlader/tilslutter sig den server, du er på.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Versionshash</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Tving Bubblestrap til at downloade versionen fra en bestemt hash. Undlad at ændre dette, hvis du ikke ved, hvad det betyder.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Gem og start</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Opgraderinger blev deaktiveret på grund af manglende klient.
+For at undgå problemer fortsætter opgraderingen.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Spillerlogfiler</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Besked</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profiler</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Denne kanal er forældet og bliver sandsynligvis ikke længere opdateret. Brug venligst en anden kanal.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Den kanal, du er på i øjeblikket ({0}), er forældet og modtager tilsyneladende ikke længere opdateringer.
+Vil du skifte til standardkanalen ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automatisk kanalskift</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox eller Bubblestrap kan forsøge at ændre din foretrukne kanal.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Skift automatisk</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Altid hurtig</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Aldrig ændre</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox forsøger at indstille din kanal til {0}, men din nuværende foretrukne kanal er {1}.
+Vil du skifte din foretrukne kanal til {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Vil du inkludere forudindstillede FFlags?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Den kanal, du befinder dig på i øjeblikket ({0}), er nu begrænset til offentlig brug. Du vil nu blive flyttet til standardkanalen ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Henter seneste implementeringsoplysninger, vent venligst...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Den angivne kanal findes ikke eller er privat.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Det lykkedes ikke at importere Bloxstrap-indstillinger.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Importer indstillinger fra Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Bloxstrap-installationen blev ikke fundet.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Konfigurer indstillinger relateret til Bubblestrap's adfærd.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Indsaml oplysninger, der kan uploades online, for at løse et problem, du har.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bubblestrap-konfiguration</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Alle Bubblestrap-logfiler</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Rengøringsmiddel</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap fjerner gamle data for at spare plads</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Aldrig</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Efter 1 dag</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Efter 1 uge</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Efter 1 måned</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Efter 2 måneder</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Hvornår skal filerne slettes?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Filer, der er ældre end det angivne antal, slettes.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Gamle downloads vil blive slettet.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Gamle logfiler vil blive slettet.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Bubblestrap-logfiler</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap-logfiler vil blive slettet.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags er midlertidigt deaktiveret</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>For mere information, tilmeld dig Bubblestrap Discord-serveren.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Venter på data</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometri</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Kontroller, hvordan Roblox gengiver 3D-geometri.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Mesh-detalje</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Kontroller, hvor detaljerede meshes vises i spillet.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Lavere kvaliteter kan medføre, at masker forsvinder.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Laveste kvalitet</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Højeste kvalitet</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Ukendt status</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Ukendt</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Billedhastighedsbegrænsning</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Lås framerate-begrænsningen op for Roblox. Det anbefales ikke at gå over 240 FPS.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Globale indstillinger</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Indstil indstillingerne i spillet fra Bubblestrap-menuen.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Gennemsigtighed</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Brugerdefineret gennemsigtighed for UI-elementer.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Reduceret bevægelse</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Fjerner animationen på escape-menuen.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Skriftstørrelse</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Standardværdi er 1. Justér hvis du bruger en brugerdefineret skrifttype.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Vælg, hvor stor skrifttypen skal være.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Deaktivér terræn teksturer</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Grafik kvalitet</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache Licens 2,0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Musens følsomhed</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Ændr, hvor hurtigt kameraet bevæger sig i spillet.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR-kompatibel</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Indstil grafikken i dit spil</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Title" xml:space="preserve">
-    <value>Aktiver afsendelse af analyser</value>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Indstil som skrivebeskyttet</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Description" xml:space="preserve">
-    <value>Det er anonymt, og der er intet ondt, vi lover. For indsigt i, hvad vi indsamler og hvorfor, se vores [privatlivspolitik]({0}).</value>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Forhindrer Roblox i at tilsidesætte globale indstillinger.</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
-    <value>Eksport diagnostiske data</value>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM-kvalitetsoverstyring</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
-    <value>Saml oplysninger, der kan uploades online for at fejlfinde et problem, du har.</value>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Vælg den FRM-kvalitet, som Roblox skal bruge.</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
-    <value>Bloxstrap konfiguration</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Tillad Bubblestrap adgang til din Roblox-konto</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
-    <value>Alle Bloxstrap logs</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Giv adgang til Roblox API'er ved hjælp af din godkendelsescookie. [Hvad får Bubblestrap adgang til?]({0})</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Hvor ofte (i sekunder) hukommelsen skal trimmes. Lavere værdier bruger mere CPU og kan føre til ustabil gameplay.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Rydder regelmæssigt Roblox' hukommelsesforbrug for at reducere RAM-forbruget.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Rydder regelmæssigt Roblox' hukommelsesforbrug for at reducere RAM-forbruget.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Hukommelsesbeskæringsinterval</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtuel virkelighed</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Gendan Roblox Studio UI</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Bruger den gamle Roblox Studio-brugergrænseflade i stedet for den nye.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Deaktiver terrængræs</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Vælg, om dekorativt græs skal vises eller skjules på terrænet for at forbedre ydeevnen.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Brug hukommelsestærskel</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Beskær kun, hvis Roblox overskrider en bestemt mængde RAM-brug.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Begrænsning i MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Fuld skærm</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Startskærmens størrelse</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Indstil standardbredden og -højden for spilvinduet ved opstart.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Bredde (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Højde (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Lyd</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Festvolumen</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Juster lydstyrken på stemmechatten i din gruppe.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Hovedvolumen</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Juster hovedlydstyrken for al lyd i spillet.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automatisk chatoversættelse</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Oversæt automatisk beskeder i chatten til dit foretrukne sprog.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Haptisk feedback</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Aktiverer controller-vibrationer for at give taktil feedback.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Indtastning og kontrol</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR-vignette</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Anvender en VR-vignette, der mørkner skærmkanterne for at reducere bevægelsessyge.</value>
   </data>
 </root>

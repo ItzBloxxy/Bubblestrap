@@ -16,6 +16,15 @@ namespace Bloxstrap
             { "User.MouseSensitivity", "{UserSettings}/float[@name='MouseSensitivity']"},
             { "User.VREnabled", "{UserSettings}/bool[@name='VREnabled']"},
 
+            { "Audio.MasterVolume", "{UserSettings}/float[@name='MasterVolume']" },
+            { "Audio.PartyVoiceVolume", "{UserSettings}/float[@name='PartyVoiceVolume']" },
+            { "User.ChatTranslationEnabled", "{UserSettings}/bool[@name='ChatTranslationEnabled']" },
+            { "User.HapticStrength", "{UserSettings}/float[@name='HapticStrength']" },
+            { "User.StartScreenSize.X", "{UserSettings}/Vector2[@name='StartScreenSize']/X" },
+            { "User.StartScreenSize.Y", "{UserSettings}/Vector2[@name='StartScreenSize']/Y" },
+            { "User.Fullscreen", "{UserSettings}/bool[@name='Fullscreen']" },
+            { "User.VignetteEnabled", "{UserSettings}/bool[@name='VignetteEnabled']" },
+
             // mostly accessibility
             { "UI.Transparency", "{UserSettings}/float[@name='PreferredTransparency']" },
             { "UI.ReducedMotion", "{UserSettings}/bool[@name='ReducedMotion']" },

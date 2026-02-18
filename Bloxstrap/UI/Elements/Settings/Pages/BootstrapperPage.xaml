@@ -19,7 +19,7 @@
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Title}"
-            Description="{Binding Source={x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/fishstrap/Fishstrap/wiki/Account-Access#what-will-fishstrap-access-with-your-account'}">
+            Description="{Binding Source={x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/ItzBloxxy/Bubblestrap/wiki/What-will-Bubblestrap-access-with-your-account%3F'}">
             <StackPanel Orientation="Horizontal">
                 <ui:SymbolIcon Symbol="Warning20" Margin="0,2,8,0" Foreground="Orange">
                     <ui:SymbolIcon.Style>
@@ -62,21 +62,44 @@
             <ui:ToggleSwitch IsChecked="{Binding BackgroundUpdates, Mode=TwoWay}" />
         </controls:OptionControl>
 
-        <controls:OptionControl 
-    Header="Enable Memory Trimmer"
-    Description="Periodically clears Roblox's memory usage to reduce RAM consumption.">
-            <ui:ToggleSwitch IsChecked="{Binding EnableMemoryTrimmer, Mode=TwoWay}" />
-        </controls:OptionControl>
+        <ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="True">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock FontSize="14" Text="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimmer_Title}" />
+                        <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimmer_Description}" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+                    </StackPanel>
+                    <ui:ToggleSwitch Grid.Column="1" IsChecked="{Binding EnableMemoryTrimmer, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,25,0" />
+                </Grid>
+            </ui:CardExpander.Header>
 
-        <controls:OptionControl 
-            Header="Memory Trim Interval" 
-            Description="How often (in seconds) to trim memory. Lower values use more CPU.">
-            <ui:TextBox Margin="5,0,0,0" 
-                Padding="10,5,10,5" 
-                Width="200" 
-                Text="{Binding MemoryTrimInterval, Mode=TwoWay}" 
-                PreviewTextInput="ValidateNumber" />
-        </controls:OptionControl>
+            <StackPanel>
+                <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimInterval_Title}" 
+            Description="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimInterval_Description}">
+                    <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" 
+                        Text="{Binding MemoryTrimInterval, Mode=TwoWay}" 
+                        PreviewTextInput="ValidateNumber" />
+                </controls:OptionControl>
+
+                <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Title}" 
+            Description="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Description}">
+                    <StackPanel Orientation="Horizontal">
+                        <ui:ToggleSwitch IsChecked="{Binding EnableMemoryThreshold, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <ui:TextBox Padding="10,5,10,5" Width="120" 
+                            PlaceholderText="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Placeholder}"
+                            IsEnabled="{Binding EnableMemoryThreshold}"
+                            Text="{Binding MemoryTrimThreshold, Mode=TwoWay}"
+                            PreviewTextInput="ValidateNumber" />
+                    </StackPanel>
+                </controls:OptionControl>
+            </StackPanel>
+        </ui:CardExpander>
 
         <ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="True">
             <ui:CardExpander.Header>

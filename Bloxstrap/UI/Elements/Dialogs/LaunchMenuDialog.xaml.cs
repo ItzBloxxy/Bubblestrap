@@ -21,10 +21,11 @@ namespace Bloxstrap.UI.Elements.Dialogs
             DataContext = viewModel;
 
             InitializeComponent();
-            Random Chance = new();
-            if (Chance.Next(0, 10000) == 1)
+
+            DateTime today = DateTime.Now;
+            if (today.Month == 4 && today.Day == 1)
             {
-                LaunchTitle.Text = "BubbleStrap";
+                LaunchTitle.Text = "Bubble trap";
             }
         }
     }

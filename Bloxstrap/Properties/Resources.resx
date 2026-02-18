@@ -145,8 +145,11 @@
   <data name="Icon2022" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon2022.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon2026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+	<value>..\Resources\Icon2026.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IconBubblestrap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconBubblestrap.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value> ..\Bubblestrap.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconEarly2015" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconEarly2015.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

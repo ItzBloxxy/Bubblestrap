@@ -2,7 +2,7 @@
 {
     static class CustomThemeTemplateEx
     {
-        const string EXAMPLES_URL = "https://github.com/BubbleStrap/custom-bootstrapper-examples";
+        const string EXAMPLES_URL = "https://github.com/fishstrap/custom-bootstrapper-examples";
 
         public static string GetFileName(this CustomThemeTemplate template)
         {

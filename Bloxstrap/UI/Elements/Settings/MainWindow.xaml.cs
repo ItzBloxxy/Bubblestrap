@@ -40,9 +40,9 @@ namespace Bloxstrap.UI.Elements.Settings
             string? lastPageName = App.State.Prop.LastPage;
             Type? lastPage = lastPageName is null ? null : Type.GetType(lastPageName);
 
-            App.RemoteData.Subscribe((object? sender, EventArgs e) =>
+            App.LocalData.Subscribe((object? sender, EventArgs e) =>
             {
-                RemoteDataBase Data = App.RemoteData.Prop;
+                LocalDataBase Data = App.LocalData.Prop;
 
                 AlertBar.Visibility = Data.AlertEnabled ? Visibility.Visible : Visibility.Collapsed;
                 AlertBar.Message = Data.AlertContent;
@@ -144,6 +144,9 @@ namespace Bloxstrap.UI.Elements.Settings
                 LaunchHandler.LaunchRoblox(LaunchMode.Player);
             else
                 App.SoftTerminate();
+        }
+        private void NavigationItem_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

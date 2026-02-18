@@ -18,6 +18,8 @@
         Icon2019,
         [EnumName(StaticName = "2022")]
         Icon2022,
+        [EnumName(StaticName = "2026")]
+        Icon2026,
         [EnumName(FromTranslation = "Common.Custom")]
         IconCustom,
         [EnumName(StaticName = "Bloxstrap (Classic)")]

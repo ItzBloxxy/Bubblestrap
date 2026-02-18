@@ -41,16 +41,14 @@ namespace Bloxstrap.UI.Elements.Dialogs
                 issueUrl = $"{repoUrl}/issues/new?template=bug_report.yaml&title={title}";
 
                 if (issueUrl.Length > MAX_GITHUB_URL_LENGTH)
-                    issueUrl = $"{repoUrl}/issues/new?template=bug_report.yaml"; // bruh
+                    issueUrl = $"{repoUrl}/issues/new?template=bug_report.yaml";
             }
 
             string helpMessage = String.Format(Strings.Dialog_Exception_Info_2, wikiUrl, issueUrl);
 
-            if (!App.IsActionBuild && !App.BuildMetadata.Machine.Contains("pizzaboxer", StringComparison.Ordinal))
-                helpMessage = String.Format(Strings.Dialog_Exception_Info_2_Alt, wikiUrl);
-
             HelpMessageMDTextBlock.MarkdownText = helpMessage;
-            VersionText.Text = String.Format(Strings.Dialog_Exception_Version, App.Version);
+            var v = System.Reflection.Assembly.GetEntryAssembly()?.GetName().Version;
+            VersionText.Text = $"Version {v?.Major}.{v?.Minor}.{v?.Build}";
 
             ReportExceptionButton.Click += (_, _) => Utilities.ShellExecute(issueUrl);
 

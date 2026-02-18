@@ -138,7 +138,21 @@
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_FastFlags_GraySky_Title}"
             Description="{x:Static resources:Strings.Menu_FastFlags_Presets_GraySky_Description}">
-            <ui:ToggleSwitch IsChecked="{Binding SkyGrayCommand, Mode=TwoWay}" />
+            <ui:ToggleSwitch IsChecked="{Binding SkyGray, Mode=TwoWay}" />
         </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_FastFlags_Grass_Title}"
+            Description="{x:Static resources:Strings.Menu_FastFlags_Presets_Grass_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding DisableGrass, Mode=TwoWay}" />
+        </controls:OptionControl>
+        
+        <TextBlock Text="Roblox Studio" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_FastFlags_Presets_OldRSUI_Title}" 
+            Description="{x:Static resources:Strings.Menu_FastFlags_Presets_OldRSUI_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding OldRSUI, Mode=TwoWay}" />
+        </controls:OptionControl>
+
     </StackPanel>
 </ui:UiPage>

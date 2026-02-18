@@ -4,7 +4,6 @@ namespace Bloxstrap.Models.Persistable
 {
     public class Settings
     {
-        // uh
         public bool AllowCookieAccess { get; set; } = false;
 
         // bloxstrap configuration
@@ -20,13 +19,14 @@ namespace Bloxstrap.Models.Persistable
         public bool AutoCloseCrashHandler { get; set; } = true;
         public bool HideBootstrapperInfo { get; set; } = false;
         public bool EnableMemoryTrimmer { get; set; } = false;
-        public int MemoryTrimInterval { get; set; } = 5;
+        public int MemoryTrimInterval { get; set; } = 10;
+        public bool EnableMemoryThreshold { get; set; } = false;
+        public int MemoryTrimThreshold { get; set; } = 0;
         public bool MultiInstanceLaunching { get; set; } = false;
         public bool ConfirmLaunches { get; set; } = true;
         public string Locale { get; set; } = "nil";
         public bool UseFastFlagManager { get; set; } = true;
         public bool WPFSoftwareRender { get; set; } = false;
-        public bool EnableAnalytics { get; set; } = false;
         public bool UpdateRoblox { get; set; } = true;
         public bool StaticDirectory { get; set; } = false;
         public string Channel { get; set; } = RobloxInterfaces.Deployment.DefaultChannel;

@@ -419,16 +419,34 @@ namespace Bloxstrap.Integrations
             {
                 if (App.Settings.Prop.EnableMemoryTrimmer)
                 {
+                    if (App.Settings.Prop.EnableMemoryThreshold &&
+                        App.Settings.Prop.MemoryTrimThreshold > 0 &&
+                        App.Settings.Prop.MemoryTrimThreshold < 100)
+                    {
+                        App.Settings.Prop.MemoryTrimThreshold = 100;
+                    }
+
+                    long thresholdMb = App.Settings.Prop.MemoryTrimThreshold;
+
                     var processes = Process.GetProcessesByName("RobloxPlayerBeta");
                     foreach (var process in processes)
                     {
                         try
                         {
-                            EmptyWorkingSet(process.Handle);
+                            long currentUsageMb = process.WorkingSet64 / 1024 / 1024;
+
+                            if (!App.Settings.Prop.EnableMemoryThreshold || currentUsageMb >= thresholdMb)
+                            {
+                                EmptyWorkingSet(process.Handle);
+                            }
                         }
                         catch (Exception ex)
                         {
-                            App.Logger.WriteLine(LOG_IDENT, $"Trim failed: {ex.Message}");
+                            App.Logger.WriteLine(LOG_IDENT, $"Trim failed for PID {process.Id}: {ex.Message}");
+                        }
+                        finally
+                        {
+                            process.Dispose();
                         }
                     }
                 }

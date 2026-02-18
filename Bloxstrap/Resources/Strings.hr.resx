@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>BubbleStrap se nije uspio automatski ažurirati na verziju {0}. Molimo ažurirajte ju ručno tako da je preuzmete i pokrenete sa web-stranice.</value>
+    <value>Bubblestrap se nije uspio automatski ažurirati na verziju {0}. Molimo ažurirajte ju ručno tako da je preuzmete i pokrenete sa web-stranice.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox je trenutno pokrenut, pokretanje nove instance ćete ga ugasiti. Jeste li sigurni da želite nastaviti sa pokretanjem?</value>
@@ -127,13 +68,13 @@
     <value>Roblox trenutno možda ne radi. Pogledajte {0} za više informacija.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Veza se nije mogla uspostaviti, što vjerojatno ukazuje na nestabilnu internetsku vezu ili blokadu vatrozida. Ako je Vaša veza u redu, molimo provjerite blokira li Vaš antivirus BubbleStrap.</value>
+    <value>Veza se nije mogla uspostaviti, što vjerojatno ukazuje na nestabilnu internetsku vezu ili blokadu vatrozida. Ako je Vaša veza u redu, molimo provjerite blokira li Vaš antivirus Bubblestrap.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Vi morate prvo instalirati BubbleStrap pre deinstaliranja.</value>
+    <value>Vi morate prvo instalirati Bubblestrap pre deinstaliranja.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrap nema dovoljno prostora na disku kako bi preuzeo i instalirao Roblox. Molimo, oslobodite nešto prostora pa zatim pokušajte ponovno.</value>
+    <value>Bubblestrap nema dovoljno prostora na disku kako bi preuzeo i instalirao Roblox. Molimo, oslobodite nešto prostora pa zatim pokušajte ponovno.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Primjenjuju se modifikacije za Roblox...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap je uspješno deinstaliran</value>
+    <value>Bubblestrap je uspješno deinstaliran</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox se trenutno pokreće, ali mora biti zatvoren prije nego što se BubbleStrap deinstalira. Želite li ugasiti Roblox sada?</value>
+    <value>Roblox se trenutno pokreće, ali mora biti zatvoren prije nego što se Bubblestrap deinstalira. Želite li ugasiti Roblox sada?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox zahtijeva upotrebu Windows Media Foundation komponenta. Izgleda da Vam nedostaju, vjerojatno zato što koristite N izadnje Windows-a. Molimo, prvo ih instalirajte, a zatim pokrenite Roblox.</value>
@@ -276,22 +217,21 @@ Kliknite za više informacija</value>
     <value>Greška sa povezivanjem</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap se ne može povezati na {0}</value>
+    <value>Bubblestrap se ne može povezati na {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopiraj sadržaj log datoteke</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Došlo je do izuzetka tokom pokretanja BubbleStrap-a</value>
+    <value>Došlo je do izuzetka tokom pokretanja Bubblestrap-a</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Prvo provjerite [Bloxstrap Wiki]({0}) kako biste vidjeli je li ovaj problem već riješen.
-
 Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopijom log datoteke koja je bila stvorena.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>BubbleStrap Izuzetak</value>
+    <value>Bubblestrap Izuzetak</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Prilagođeno</value>
@@ -303,10 +243,10 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Kasna 2015-ta</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Klasično)</value>
+    <value>Bubblestrap (Klasično)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Stakleno)</value>
+    <value>Bubblestrap (Stakleno)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Nasledje (2008-2011)</value>
@@ -384,10 +324,10 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Svjetlo</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>BubbleStrap je nadograđen na v{0}</value>
+    <value>Bubblestrap je nadograđen na v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Verzija BubbleStrapa koju ste pokrenuli je drukčija od verzije koju imate instaliranu. Želite li nadograditi svoju trenutno instaliranu verziju?</value>
+    <value>Verzija Bubblestrapa koju ste pokrenuli je drukčija od verzije koju imate instaliranu. Želite li nadograditi svoju trenutno instaliranu verziju?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
     <value>Doprinositelji</value>
@@ -396,7 +336,7 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Kod</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Ovo su ljudi koji su dali značajan doprinos BubbleStrapu, Pomagajući da se učiniti onakvim kakav jest.</value>
+    <value>Ovo su ljudi koji su dali značajan doprinos Bubblestrapu, Pomagajući da se učiniti onakvim kakav jest.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Značajne Ideje</value>
@@ -442,7 +382,7 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Imajte na umu da se sve vaše promjene neće odmah primijeniti dok ne zatvorite sve trenutno otvorene instance Robloxa.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>BubbleStrap je već pokrenut</value>
+    <value>Bubblestrap je već pokrenut</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Možete ga prilagoditi da izgleda drugačije, retro ili čak samo kao Roblox.</value>
@@ -469,7 +409,7 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Naslov</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Konfigurirajte kako da BubbleStrap izgleda.</value>
+    <value>Konfigurirajte kako da Bubblestrap izgleda.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Globalna tema</value>
@@ -493,10 +433,10 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Izgled</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>BubbleStrap će se automatski provjeriti i ažurirati kada se Roblox pokrene.</value>
+    <value>Bubblestrap će se automatski provjeriti i ažurirati kada se Roblox pokrene.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Automatsko Ažuriranje BubbleStrap-a</value>
+    <value>Automatsko Ažuriranje Bubblestrap-a</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Spriječite zatvaranje postojeće igre zbog slučajnog pokretanja druge.</value>
@@ -505,7 +445,7 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Zatraži potvrdu prilikom pokretanja druge Roblox instance</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Konfigurirajte što da BubbleStrap napravi kada pokreće Roblox.</value>
+    <value>Konfigurirajte što da Bubblestrap napravi kada pokreće Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox će biti svježe instaliran pri sljedećem pokretanju.</value>
@@ -529,14 +469,9 @@ Ako nije, molimo prijavite ovu iznimku preko [GitHub issue]({1}) zajedno sa kopi
     <value>Nepravilna upotreba ovoga može dovesti do nestabilnosti ili neočekivanih problema.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Koristite s oprezom.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Neke od zastava koje pokušavate uvesti već imaju postavljene vrijednosti. Želite li prepisati njihove trenutne vrijednosti sa onima definiranim u unosu?
-
 Postoji {0} konfliktnih definicija zastava:
-
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
   </data>
@@ -554,7 +489,6 @@ Postoji {0} konfliktnih definicija zastava:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Uneseni JSON ne izgleda ispravno. Molimo provjerite ga i pokušajte ponovno.
-
 Više informacija:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +501,6 @@ Više informacija:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Izgleda da pokušavate ubaciti veliku konfiguraciju. Velike konfiguracije se ubacuju samo ako znate što radite. NE POKUŠAVAJTE naslijepo naljepljivati konfiguracije napravljene od drugih ljudi. Ako nastavite, završit će se sigurno sa nestabilnostima aplikacije.
-
 Jeste li sigurni da želite nastaviti?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +511,6 @@ Jeste li sigurni da želite nastaviti?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Uređivač Fast Flagova</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Idi nazad</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Znam što radim</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Znaš li što radiš?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>FastFlagovi su izuzetno moćni, budući da su namijenjeni isključivo za upotrebu od strane inženjera Robloxa. Iako mogu biti vrlo korisni, ručno podešavanje može prouzrokovati ozbiljne probleme sa stabilnošću i funkcionalnošću. NE koristite editor ako niste sigurni što radite.
-
-NE koristite ovo da biste uvozili velike "flag liste" od drugi ljudi koje obećavaju poboljšanje performansi ili slično. One mogu uzrokovati gore spomenute probleme te će prouzrokovati probleme za vas jer nećete biti svjesni što točno mijenjaju. Ako ste to namjeravali napraviti, VRATITE SE.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Kontrolirajte kako su specifični Roblox engine parametri i značajke konfigurirani.</value>
@@ -626,13 +545,11 @@ NE koristite ovo da biste uvozili velike "flag liste" od drugi ljudi koje obeća
     <value>Datoteke ikona</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>BubbleStrap ne može biti instaliran ovdje. Molimo, odaberite drugu lokaciju, ili koristite zadanu lokaciju tako da kliknete gumb za resetiranje.</value>
+    <value>Bubblestrap ne može biti instaliran ovdje. Molimo, odaberite drugu lokaciju, ili koristite zadanu lokaciju tako da kliknete gumb za resetiranje.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>Mapa koju ste odabrali za instalaciju BubbleStrapa već postoji i NIJE prazna. Toplo se preporučuje da se BubbleStrap instalira u nezavisnoj mapi.
-
+    <value>Mapa koju ste odabrali za instalaciju Bubblestrapa već postoji i NIJE prazna. Toplo se preporučuje da se Bubblestrap instalira u nezavisnoj mapi.
 Promjena na iduću lokaciju je preporučena: {0}
-
 Želite li promjeniti na preporučenu lokaciju? Odabirom "Ne" ćete ignorirati ovo upozorenje i nastaviti instalaciju.</value>
     <comment>{0} is a file path</comment>
   </data>
@@ -640,7 +557,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Morate postaviti lokaciju instalacije</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>BubbleStrap nema write pristup lokaciji koju ste odabrali. Molimo odaberite drugu lokaciju.</value>
+    <value>Bubblestrap nema write pristup lokaciji koju ste odabrali. Molimo odaberite drugu lokaciju.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Praćenje aktivnosti</value>
@@ -691,7 +608,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Ne izlazite iz Desktop aplikacije</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Dopušta BubbleStrapu da detektira koju Roblox igru igrate. Neki dodatci možda zahtjevaju ovo.</value>
+    <value>Dopušta Bubblestrapu da detektira koju Roblox igru igrate. Neki dodatci možda zahtjevaju ovo.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Odobrite praćenje aktivnosti</value>
@@ -782,7 +699,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Postavke spremljenje!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>BubbleStrap postavke</value>
+    <value>Bubblestrap postavke</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Odaberi preferirani jezik</value>
@@ -806,7 +723,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Korisničko sučelje i Raspored</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Dozvoli BubbleStrap-u da upravlja s Fast Flags</value>
+    <value>Dozvoli Bubblestrap-u da upravlja s Fast Flags</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Onemogućavanje će spriječiti da se bilo što ovdje konfigurirano primjeni na Roblox.</value>
@@ -818,7 +735,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Spriječava ju od pojavljivanja kad god pomaknete miš na vrh ekrana.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap ne može preuzeti Roblox</value>
+    <value>Bubblestrap ne može preuzeti Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox se trenutno ne može preuzeti. Molimo pročitajte sljedeću stranicu za pomoć za više informacija: {0}</value>
@@ -839,7 +756,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Unos za '{0}' ne važi jer vrijednost mora biti broj</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Log datoteka neće biti napisana za ovaj pokret jer BubbleStrap ne može pisati u folderu na '{0}'</value>
+    <value>Log datoteka neće biti napisana za ovaj pokret jer Bubblestrap ne može pisati u folderu na '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Zadano</value>
@@ -854,7 +771,7 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Unos za '{0}' nije valjan jer filter mjesta nije formatiran pravilno.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>Instalator BubbleStrapa</value>
+    <value>Instalator Bubblestrapa</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Dobrodošli</value>
@@ -873,18 +790,16 @@ Promjena na iduću lokaciju je preporučena: {0}
     <value>Dalje</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Hvala što ste preuzeli BubbleStrap.
-
-Jedine službene web-stranice za preuzimanje BubbleStrapa su {0} i {1}, molimo Vas da provjerite jeste li ga preuzeli sa službenog izvora.
-
-Proces instalacije će biti brz i jednostavan, i moći ćete konfigurirati bilo koje BubbleStrap postavke nakon instalacije.</value>
+    <value>Hvala što ste preuzeli Bubblestrap.
+Jedine službene web-stranice za preuzimanje Bubblestrapa su {0} i {1}, molimo Vas da provjerite jeste li ga preuzeli sa službenog izvora.
+Proces instalacije će biti brz i jednostavan, i moći ćete konfigurirati bilo koje Bubblestrap postavke nakon instalacije.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Molimo kliknite 'Dalje' da biste nastavili.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Pokušavate instalirati verziju {0} BubbleStrapa, ali najnovija dostupna verzija je {1}. Želite li ju preuzeti?</value>
+    <value>Pokušavate instalirati verziju {0} Bubblestrapa, ali najnovija dostupna verzija je {1}. Želite li ju preuzeti?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Odaberite gdje želite instalirati</value>
@@ -905,16 +820,13 @@ Proces instalacije će biti brz i jednostavan, i moći ćete konfigurirati bilo 
     <value>Start Meni ikona</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>BubbleStrap se je uspješno instalirao.
-
-Roblox još nije bio instaliran, to će se dogoditi kada ga pokrenete s BubbleStrapom prvi put. Ali, prije nego li to napravite, možda biste htjeli prvo konfigurirati BubbleStrap postavke.
-
-Isto tako, izbjegnite koristiti "Roblox Player" prečac za pokretanje Roblox-a, jer se BubbleStrap neće pokrenuti s Roblox-om. Ako ne vidite BubbleStrap kako se pojavljuje kada pokrećete s web-stranice, samo pokrenite Roblox sa BubbleStrapom jedan put s desktopa da biste to popravili.
-
+    <value>Bubblestrap se je uspješno instalirao.
+Roblox još nije bio instaliran, to će se dogoditi kada ga pokrenete s Bubblestrapom prvi put. Ali, prije nego li to napravite, možda biste htjeli prvo konfigurirati Bubblestrap postavke.
+Isto tako, izbjegnite koristiti "Roblox Player" prečac za pokretanje Roblox-a, jer se Bubblestrap neće pokrenuti s Roblox-om. Ako ne vidite Bubblestrap kako se pojavljuje kada pokrećete s web-stranice, samo pokrenite Roblox sa Bubblestrapom jedan put s desktopa da biste to popravili.
 Što biste htjeli napraviti?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Konfigurirajte BubbleStrap postavke</value>
+    <value>Konfigurirajte Bubblestrap postavke</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Igrajte se sa svim značajkama koje Vam nudi</value>
@@ -926,22 +838,19 @@ Isto tako, izbjegnite koristiti "Roblox Player" prečac za pokretanje Roblox-a, 
     <value>Prebacit će Vas u desktop aplikaciju kad je sve gotovo</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Deinstaliraj BubbleStrap</value>
+    <value>Deinstaliraj Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Deinstaliranje će maknuti BubbleStrap s Vašeg sustava, i automatski rekonfigurirati zadani Roblox pokretač ako je još dalje instaliran.
-
+    <value>Deinstaliranje će maknuti Bubblestrap s Vašeg sustava, i automatski rekonfigurirati zadani Roblox pokretač ako je još dalje instaliran.
 Ako deinstalirate ili reinstalirate zato što imate poteškoće s Roblox-om, prvo pročitajte [ovu stranicu za pomoć]({0}).
-
-Proces deinstalacije se možda neće moći počistiti do kraja sam sa sobom, pa ćete možda trebati ručno počistiti bilo koje preostale datoteke gdje je BubbleStrap bio instaliran.
-
-BubbleStrap je bio instaliran na "{1}".</value>
+Proces deinstalacije se možda neće moći počistiti do kraja sam sa sobom, pa ćete možda trebati ručno počistiti bilo koje preostale datoteke gdje je Bubblestrap bio instaliran.
+Bubblestrap je bio instaliran na "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Zadrži moje postavke i modifikacije</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Biti će zadržani na mjestu gdje je BubbleStrap bio instaliran, i bit će automatski vraćeni na reinstalaciji.</value>
+    <value>Biti će zadržani na mjestu gdje je Bubblestrap bio instaliran, i bit će automatski vraćeni na reinstalaciji.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Deinstaliraj</value>
@@ -962,19 +871,18 @@ BubbleStrap je bio instaliran na "{1}".</value>
     <value>Trenutno nemate WebView2 runtime instaliran. Neke Roblox-ove značajke neće raditi ispravno bez toga, poput desktop aplikacije. Želite li to sada preuzeti?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>BubbleStrap nije mogao kreirati prečace za Desktop i Start Meni. Pokušajte ih kreirati kasnije preko postavki.</value>
+    <value>Bubblestrap nije mogao kreirati prečace za Desktop i Start Meni. Pokušajte ih kreirati kasnije preko postavki.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Prvo pogledajte [Bloxstrap Wiki]({0}) kako biste vidjeli je li ovaj problem već bio adresiran s popravkom.
-
-Ako nije, onda molimo prijavite ovu iznimku održavateljima ovog fork-a. NEMOJTE ovo prijaviti na BubbleStrapove GitHub probleme, jer ovo nije službena inačica.</value>
+Ako nije, onda molimo prijavite ovu iznimku održavateljima ovog fork-a. NEMOJTE ovo prijaviti na Bubblestrapove GitHub probleme, jer ovo nije službena inačica.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Ovo su opći prečaci koji pokažu izbornik za pokretanje s više izbora. Prečaci za specifične funkcije mogu biti kreirane kasnije u postavkama.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Konfigurirajte kako BubbleStrap može biti spremno pokrenut.</value>
+    <value>Konfigurirajte kako Bubblestrap može biti spremno pokrenut.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Općenito</value>
@@ -1014,7 +922,7 @@ Ako nije, onda molimo prijavite ovu iznimku održavateljima ovog fork-a. NEMOJTE
     <value>Imate promjene koje niste spremili. Jeste li sigurni da želite zatvoriti bez spremanja?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Verzija BubbleStrapa koju ste pokrenuli je starija od verzije koju trenutno imate instaliranu.
+    <value>Verzija Bubblestrapa koju ste pokrenuli je starija od verzije koju trenutno imate instaliranu.
 Problemi se mogu pojaviti i postavke će se možda promijeniti. Reinstalacija je preporučena.
 Jeste li sigurni da želite nastaviti?</value>
   </data>
@@ -1026,21 +934,13 @@ Jeste li sigurni da želite nastaviti?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Za informacije o tome zašto bi se ovo moglo događati i kako se može riješiti, molimo pročitajte [ovaj članak za pomoć]({0}).
-
-Provjerite radi li Robloxov [originalni pokretač]({1}). Ako ne radi, onda ovo nije poteškoća kod BubbleStrapa. Ako radi, onda pogledajte članak za pomoć.</value>
+Provjerite radi li Robloxov [originalni pokretač]({1}). Ako ne radi, onda ovo nije poteškoća kod Bubblestrapa. Ako radi, onda pogledajte članak za pomoć.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Nije moguće učitati podatke zbog greške s mrežom.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Učitavanje, molimo pričekajte...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Podržavatelji</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Ovo su ljudi koji podržavaju BubbleStrap preko Ko-fi. Veliko hvala svima ovdje!
-Svaka osoba ovdje je rangirana svojim sveukupnim zalogom.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Vaše postavke se nisu mogle učitati. Resetirale su se na zadanu konfiguraciju.</value>
@@ -1070,12 +970,11 @@ Svaka osoba ovdje je rangirana svojim sveukupnim zalogom.</value>
     <value>Za ovaj pokret, Roblox se neće provjeriti za nadogradnje i promjene modifikacijama se neće primijeniti.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>BubbleStrap ne može nastaviti zato što Roblox treba biti instaliran ili nadograđen.</value>
+    <value>Bubblestrap ne može nastaviti zato što Roblox treba biti instaliran ili nadograđen.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>BubbleStrap se je prije instalirao na ovu lokaciju i još dalje je prisutan, ali instalator ne može prebrisati staru izvršnu datoteku.
-
-Molimo ručno izbrišite BubbleStrap.exe iz lokacije instalacije ili pokušajte ponovno pokrenuti Vaš sustav, i onda ponovno probajte instalirati nakon.</value>
+    <value>Bubblestrap se je prije instalirao na ovu lokaciju i još dalje je prisutan, ali instalator ne može prebrisati staru izvršnu datoteku.
+Molimo ručno izbrišite Bubblestrap.exe iz lokacije instalacije ili pokušajte ponovno pokrenuti Vaš sustav, i onda ponovno probajte instalirati nakon.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Nije dostupno</value>
@@ -1087,7 +986,7 @@ Molimo ručno izbrišite BubbleStrap.exe iz lokacije instalacije ili pokušajte 
     <value>Konfigurirajte parametre aplikacije kao što je ponašanje DPI skaliranja i [optimizacije cijelog zaslona]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox još nije bio instaliran. Molimo pokrenite Roblox koristeći BubbleStrap barem jednom prije pokušavanja korištenja ove opcije.</value>
+    <value>Roblox još nije bio instaliran. Molimo pokrenite Roblox koristeći Bubblestrap barem jednom prije pokušavanja korištenja ove opcije.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Jeste li sigurni da želite prekinuti instalaciju?</value>
@@ -1097,7 +996,6 @@ Molimo ručno izbrišite BubbleStrap.exe iz lokacije instalacije ili pokušajte 
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Odabrana ikona pokretača se ne može učitati.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1105,19 +1003,10 @@ Molimo ručno izbrišite BubbleStrap.exe iz lokacije instalacije ili pokušajte 
     <value>Izdvojite Roblox ikone u mapu</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Dopušta Vam da koristite BubbleStrapov raspon Roblox ikona za Vaše prečace. [Pogledajte kako.]({0})</value>
+    <value>Dopušta Vam da koristite Bubblestrapov raspon Roblox ikona za Vaše prečace. [Pogledajte kako.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap ne može pisati u Windows Registar. Antivirus se vjerojatno miješa i proizvodi poteškoće. Molimo provjerite postoji li išta što bi moglo ograničiti BubbleStrapove operacije.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Mjesečno</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Jednokratno</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analitika</value>
+    <value>Bubblestrap ne može pisati u Windows Registar. Antivirus se vjerojatno miješa i proizvodi poteškoće. Molimo provjerite postoji li išta što bi moglo ograničiti Bubblestrapove operacije.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Resetira sve na zadane postavke</value>
@@ -1131,13 +1020,11 @@ Molimo ručno izbrišite BubbleStrap.exe iz lokacije instalacije ili pokušajte 
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Testni mod olakšava iterativno testiranje kako Vaše postavke utječu na Roblox.
-
 Kada uključen, automatski će pokrenuti Roblox nakon zatvaranja postavki, i ponovno otvoriti postavke nakon zatvaranja Roblox-a, u krugu sve dok ga ne isključite.
-
 Želite li uključiti testni mod?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>Svi BubbleStrapovi prijevodi su crowdsourcani preko [Crowdin-a]({0}). Svi navedeni ovdje su ljudi koji su velikodušno volontirali svoje vrijeme i trud kako bi pomogli lokalizirati BubbleStrap. Veliko hvala svima ovdje!</value>
+    <value>Svi Bubblestrapovi prijevodi su crowdsourcani preko [Crowdin-a]({0}). Svi navedeni ovdje su ljudi koji su velikodušno volontirali svoje vrijeme i trud kako bi pomogli lokalizirati Bubblestrap. Veliko hvala svima ovdje!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Instaliraj</value>
@@ -1157,8 +1044,7 @@ Kada uključen, automatski će pokrenuti Roblox nakon zatvaranja postavki, i pon
     <value>Prilagođeno</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>BubbleStrap je pokušao ažurirati Roblox, ali ne može jer se Robloxove datoteke još dalje koriste.
-
+    <value>Bubblestrap je pokušao ažurirati Roblox, ali ne može jer se Robloxove datoteke još dalje koriste.
 Molimo zatvorite bilo koju aplikaciju koja bi mogla koristiti Robloxove datoteke, i ponovno pokrenite.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1168,47 +1054,35 @@ Molimo zatvorite bilo koju aplikaciju koja bi mogla koristiti Robloxove datoteke
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Izvezi</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Nešto vjerojatno prekida BubbleStrap od spajanja na internet.</value>
+    <value>Nešto vjerojatno prekida Bubblestrap od spajanja na internet.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Veza je istekla, što može naznačiti lošu internetsku vezu ili blokadu vatrozida.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Promijenite postavke raspoređivanja i instalacije za Roblox i Bubblestrap.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Kanal</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Odaberite kanal implementacije. Nemojte mijenjati osim ako znate što radite.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Verzija</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Vodič za verziju</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox više ne podržava Windows 7 i 8.1. Da biste nastavili igrati Roblox, nadogradite na Windows 10 ili novije.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Dobivanje najnovije verzije BubbleStrapa...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>Konfigurirajte postavke vezane za samo BubbleStrapovo ponašanje.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Uključi slanje analitike</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Anonimno je i nije ništa zlo, obećajemo. Za uvid u ono što pokupljamo i zašto, pogledajte našu [politiku privatnosti]({0}).</value>
+    <value>Dobivanje najnovije verzije Bubblestrapa...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Prazno</value>
@@ -1434,60 +1308,433 @@ Prebacivanje na zadani {1}.</value>
     <value>Uredi</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>O BubbleStrapu</value>
+    <value>O Bubblestrapu</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Preferirana verzija escape menija</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Vrijeme neprekidnog rada</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Stavite na 0 za zadane postavke ako želite koristiti Roblox-ov domaći framerate unlocker.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Lokacija: {0}
+Dostupnost: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Framerate granica</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Prikriva verziju i informacije o produkciji tijekom pokretanja.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Prebacuje se sa [keyboard shortcuts]({0}). Radi samo ako ste u [BubbleStrap group]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Skrijte detalje o verziji i produkciji</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Uključi mogućnost za skrivanje GUIa</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Automatski zatvara RobloxCrashHandler.exe pri pokretanju kako bi se smanjila upotreba memorije.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Odabrani će biti prisilno uključeni u svim igrama. [Pazite, može uzrokovati poteškoće sa svjetlom!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Onemogućite Roblox Crash Handler</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Preferirana tehnologija svjetla</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Omogućite ovo kako biste na svom profilu prikazali prilagođeni Bubblestrap Discord RPC dok je aplikacija otvorena.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Onemogući post-processing efekte</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Onemogući naslovnu traku u prikazu cijelog zaslona</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Odaberite zvuk...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Onemogući sjene igrača</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Ukloni prilagođeni zvuk smrti</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Prilagođeni zvuk smrti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Promijenite zvuk smrti u bilo koju audio datoteku po vašem izboru.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Sivi nebo</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Igre s prilagođenim nebom možda neće raditi.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Pridružite se našem Discord serveru</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkan</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Brzi uređivač zastava</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Učitaj</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Otkazivanje nadogradnje Robloxa.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanal</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statični direktorij</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Prelazak s verzija-xxx na instalacijske direktorije temeljene na BinaryType.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Preuzimanje</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Status preuzimanja pokretača</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Promijenite niz za preuzimanje. {0} je naziv paketa, {1} je veličina preuzetih paketa, a {2} je ukupna veličina paketa.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Pokretanje više instanci</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Omogućuje istovremeno otvaranje više instanci Roblox klijenta. Može uzrokovati probleme s desktop aplikacijom.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Očisti FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Otkloni pogrešku</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox izbornik</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Debloat Roblox izbornik s FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Uvođenje</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox Studio</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Prikazuje igračima odlazak/pridruživanje serveru na kojem se nalazite.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>vrsta</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Hash verzije</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Prisilite Bubblestrap da preuzme verziju iz određenog haša. Molimo vas da ovo ne mijenjate ako nemate pojma što to radi.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Spremi i pokreni</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Nadogradnje su onemogućene zbog nedostajućeg klijenta.
+	Kako bi se spriječili problemi, nadogradnja će se nastaviti.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Zapisnici igrača</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Poruka</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profili</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Ovaj kanal je zastario i vjerojatno se više ne ažurira. Molimo koristite drugi kanal.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Kanalu na kojem se trenutno nalazite ({0}) istekao je rok i čini se da više ne prima ažuriranja.
+Želite li prijeći na zadani kanal ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automatska akcija promjene kanala</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox ili Bubblestrap mogu pokušati promijeniti vaš omiljeni kanal.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Promijeni automatski</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Uvijek pravovremen</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Nikad se ne mijenjaj</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox pokušava postaviti vaš kanal na {0}, no vaš trenutno odabrani kanal je {1}.
+Želite li promijeniti svoj odabrani kanal na {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Želite li uključiti unaprijed postavljene FFlags?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Kanal na kojem se trenutno nalazite ({0}) sada je ograničen za javnu upotrebu. Sada ćete biti na zadanoj kanal ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Preuzimanje najnovijih informacija o deployu, molimo pričekajte...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Navedeni kanal ili ne postoji ili je privatni.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Neuspjelo učitavanje Bloxstrap postavki.</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Uvozi postavke iz Bloxstrapa</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Nije pronađena instalacija Bloxstrapa.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Konfigurirajte opcije vezane uz samo ponašanje Bubblestrapa.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Prikupite informacije koje se mogu prenijeti na internet kako biste riješili problem s kojim se suočavate.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Konfiguracija Bubblestrapa</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Svi Bubblestrap dnevnici</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Čistač</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap će ukloniti stare podatke kako bi uštedio prostor.</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Nikada</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Nakon 1 dana</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Nakon 1 tjedna</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Nakon mjesec dana</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Nakon 2 mjeseca</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Kada bi datoteke trebale biti izbrisane</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Datoteke starije od zadanog razdoblja bit će izbrisane.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Predmemorija</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Stari preuzimanja bit će izbrisani.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Zapisnici</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Stari dnevnički zapisi bit će izbrisani.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Zapisi Bubblestrapa</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Zapisi Bubblestrap bit će izbrisani.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Konfigurirajte opcije vezane uz samo ponašanje Bubblestrapa.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags su privremeno onemogućeni</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Za više informacija pridružite se Bubblestrap Discord serveru.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Čekanje na podatke</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometrija</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Kontrolirajte kako Roblox prikazuje 3D geometriju.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Detalj mreže</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Kontrolirajte koliko detaljno se mreže prikazuju u igri.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Niži kvaliteti mogu uzrokovati nestanak mreža.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Najniža kvaliteta</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Najviša kvaliteta</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Nepoznat status</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Neznano</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Ograničenje brzine sličica</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Otključajte ograničenje broja sličica u sekundi za Roblox. Preporučuje se ne prelaziti 240 FPS.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Globalna postavljanja</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Postavite postavke igre iz izbornika Bubblestrap.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Transparentnost</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Prilagođena prozirnost za UI elemente.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Smanjeni pokreti</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Uklanja animaciju s izbornika za izlazak.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
     <value>Veličina fonta</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Zadana vrijednost je 1. Prilagodite ako koristite prilagođeni font.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Odaberite koliko velik treba biti font.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Onemogući teksture terena</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Kvaliteta grafike</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache Licenca 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Osjetljivost miša</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Promijenite brzinu pomicanja kamere u igri.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>Omogućen VR</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Postavite kvalitetu grafike svoje igre</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Postavi kao samo za čitanje</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Spriječi Roblox da prepiše globalne postavke.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM nadjačavanje kvalitete</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Odaberite kvalitetu FRM-a koju bi Roblox trebao koristiti.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Dopustite Bubblestrapu pristup vašem Roblox računu</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Omogućite pristup Roblox API-jima koristeći svoj kolačić za autentifikaciju. [Što će Bubblestrap moći pristupiti?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Trimer memorije</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Povremeno briše Robloxovu upotrebu memorije kako bi se smanjila potrošnja RAM-a.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Interval skraćivanja memorije</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Koliko često (u sekundama) skraćivati ​​memoriju. Niže vrijednosti koriste više procesora i mogu dovesti do nestabilnog igranja.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtualna stvarnost</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Vratite Roblox Studio UI</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Koristi stari Roblox Studio UI umjesto novog.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Onemogući terensku travu</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Odaberite želite li prikazati ili sakriti ukrasnu travu na terenu kako biste poboljšali izvedbu.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Koristite Memory Threshold</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Skratite samo ako Roblox premašuje određenu količinu RAM-a.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Ograničenje u MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Cijeli zaslon</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Veličina početnog zaslona</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Postavite zadanu širinu i visinu prozora igre pri pokretanju.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Širina (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Visina (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Glasnoća zabave</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Prilagodite glasnoću glasovnog chata u svojoj zabavi.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Glavni volumen</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Podesite glavnu glasnoću za sav zvuk u igri.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automatski prijevod razgovora</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Automatski prevedite poruke u chatu na željeni jezik.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Taktilna povratna informacija</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Omogućuje vibracije upravljača za davanje taktilne povratne informacije.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Ulaz i kontrole</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR vinjeta</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Primjenjuje VR vinjetu koja potamnjuje rubove zaslona kako bi se smanjila mučnina zbog kretanja.</value>
   </data>
 </root>

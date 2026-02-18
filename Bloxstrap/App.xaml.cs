@@ -23,7 +23,6 @@ namespace Bloxstrap
         public const string ProjectDownloadLink = "https://github.com/ItzBloxxy/Bubblestrap/releases";
         public const string ProjectHelpLink = "https://github.com/bloxstraplabs/bloxstrap/wiki";
         public const string ProjectSupportLink = "https://github.com/ItzBloxxy/Bubblestrap/issues/new";
-        public const string ProjectRemoteDataLink = "https://config..app/v1/Data.json";
 
         public const string RobloxPlayerAppName = "RobloxPlayerBeta.exe";
         public const string RobloxStudioAppName = "RobloxStudioBeta.exe";
@@ -35,7 +34,7 @@ namespace Bloxstrap
 
         public static BuildMetadataAttribute BuildMetadata = Assembly.GetExecutingAssembly().GetCustomAttribute<BuildMetadataAttribute>()!;
 
-        public static string Version = Assembly.GetExecutingAssembly().GetName().Version!.ToString();
+        public static string Version = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion;
 
         public static Bootstrapper? Bootstrapper { get; set; } = null!;
 
@@ -59,7 +58,7 @@ namespace Bloxstrap
 
         public static readonly JsonManager<RobloxState> RobloxState = new();
 
-        public static readonly RemoteDataManager RemoteData = new();
+        public static readonly LocalDataManager LocalData = new();
 
         public static readonly FastFlagManager FastFlags = new();
 
@@ -317,7 +316,7 @@ namespace Bloxstrap
                 if (!LaunchSettings.BypassUpdateCheck)
                     Installer.HandleUpgrade();
 
-                Task.Run(App.RemoteData.LoadData);
+                Task.Run(App.LocalData.LoadData);
 
                 WindowsRegistry.RegisterApis();
 

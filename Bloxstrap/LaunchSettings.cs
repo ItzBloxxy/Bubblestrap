@@ -32,8 +32,6 @@
 
         public LaunchFlag ForceFlag { get; } = new("force");
 
-        public LaunchFlag BloxshadeFlag { get; } = new("bloxshade");
-
 #if DEBUG
         public bool BypassUpdateCheck => true;
 #else

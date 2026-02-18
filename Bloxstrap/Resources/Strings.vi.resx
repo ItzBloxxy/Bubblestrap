@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>BubbleStrap không thể tự động cập nhật lên phiên bản {0}. Xin hãy tải về chương trình cài đặt và cập nhật thủ công.</value>
+    <value>Bubblestrap không thể tự động cập nhật lên phiên bản {0}. Xin hãy tải về chương trình cài đặt và cập nhật thủ công.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Tiến trình Roblox hiện tại đang chạy, và việc khởi động tiến trình Roblox khác sẽ đóng nó. Bạn có chắc chắn muốn tiếp tục khởi động không?</value>
@@ -127,13 +68,13 @@
     <value>Roblox có thể đang có vấn đề. Xem {0} để có thêm thông tin.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Không thể kết nối, có thể là do kết nối internet kém hoặc bị chặn bởi tường lửa. Nếu kết nối của bạn bình thường, vui lòng kiểm tra lại xem phần mềm diệt virus có chặn BubbleStrap không.</value>
+    <value>Không thể kết nối, có thể là do kết nối internet kém hoặc bị chặn bởi tường lửa. Nếu kết nối của bạn bình thường, vui lòng kiểm tra lại xem phần mềm diệt virus có chặn Bubblestrap không.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Bạn phải cài đặt BubbleStrap trước khi gỡ cài đặt nó.</value>
+    <value>Bạn phải cài đặt Bubblestrap trước khi gỡ cài đặt nó.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrap không có đủ dung lượng ổ cứng để tải và cài đặt Roblox. Hãy giải phóng dung lượng và thử lại.</value>
+    <value>Bubblestrap không có đủ dung lượng ổ cứng để tải và cài đặt Roblox. Hãy giải phóng dung lượng và thử lại.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Đang áp dụng những chỉnh sửa cho Roblox...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap đã được gỡ cài đặt thành công</value>
+    <value>Bubblestrap đã được gỡ cài đặt thành công</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Bạn phải tắt Roblox trước khi gỡ cài đặt BubbleStrap. Bạn có muốn đóng Roblox ngay bây giờ không?</value>
+    <value>Bạn phải tắt Roblox trước khi gỡ cài đặt Bubblestrap. Bạn có muốn đóng Roblox ngay bây giờ không?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox yêu cầu sử dụng các thành phần của Windows Media Foundation. Có vẻ như bạn đang thiếu chúng, có thể là do bạn đang sử dụng phiên bản N của Windows. Vui lòng cài đặt chúng trước, sau đó khởi chạy Roblox.</value>
@@ -276,22 +217,21 @@ Bấm để biết thêm thông tin</value>
     <value>Lỗi kết nối</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap không thể kết nối tới {0}</value>
+    <value>Bubblestrap không thể kết nối tới {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Sao chép dữ liệu log</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Một trường hợp ngoại lệ đã xảy ra khi đang chạy BubbleStrap</value>
+    <value>Một trường hợp ngoại lệ đã xảy ra khi đang chạy Bubblestrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Hãy xem qua [Bloxstrap Wiki]({0}) trước để xem nếu vấn đề này đã được khắc phục chưa
-
 Nếu chưa, xin hay báo cáo lỗi này qua [GitHub issue]({1}) với bản copy của tệp log vừa được tạo.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Lỗi ngoại lệ BubbleStrap</value>
+    <value>Lỗi ngoại lệ Bubblestrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Tuỳ chỉnh</value>
@@ -303,10 +243,10 @@ Nếu chưa, xin hay báo cáo lỗi này qua [GitHub issue]({1}) với bản co
     <value>Cuối năm 2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Cổ điển)</value>
+    <value>Bubblestrap (Cổ điển)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Xuyên thấu)</value>
+    <value>Bubblestrap (Xuyên thấu)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Legacy (2008-2011)</value>
@@ -384,10 +324,10 @@ Nếu chưa, xin hay báo cáo lỗi này qua [GitHub issue]({1}) với bản co
     <value>Sáng</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>BubbleStrap đã được cập nhật lên phiên bản v{0}</value>
+    <value>Bubblestrap đã được cập nhật lên phiên bản v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Phiên bản BubbleStrap bạn đã mở khác với phiên bản đã cài đặt hiện tại.
+    <value>Phiên bản Bubblestrap bạn đã mở khác với phiên bản đã cài đặt hiện tại.
 Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -397,7 +337,7 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Lập trình</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Đây là những người có đóng góp nổi bật cho BubbleStrap, giúp nó được như bây giờ.</value>
+    <value>Đây là những người có đóng góp nổi bật cho Bubblestrap, giúp nó được như bây giờ.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Quyên góp ý tưởng</value>
@@ -443,7 +383,7 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Hãy nhớ rằng tất cả những sửa đổi của bạn sẽ không lập tức được áp dụng cho đến khi bạn đóng tất cả các tiến trình Roblox đang chạy hiện tại.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>BubbleStrap đang hoạt động</value>
+    <value>Bubblestrap đang hoạt động</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Bạn có thể làm nó khác biệt, có thể theo phong cách cổ điển, hoặc có thể làm nó nhìn y hệt như Roblox.</value>
@@ -470,7 +410,7 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Tiêu đề</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Chỉnh sửa giao diện của BubbleStrap.</value>
+    <value>Chỉnh sửa giao diện của Bubblestrap.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Giao diện chung</value>
@@ -494,10 +434,10 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Giao diện</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>BubbleStrap sẽ tự động kiểm tra và cập nhật khi chạy Roblox.</value>
+    <value>Bubblestrap sẽ tự động kiểm tra và cập nhật khi chạy Roblox.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Tự động cập nhật BubbleStrap</value>
+    <value>Tự động cập nhật Bubblestrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Ngăn chặn việc tắt trò chơi hiện tại khi bạn vô tình khởi động trò chơi khác.</value>
@@ -506,7 +446,7 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Hiển thị thông báo xác nhận khi mở một tiến trình Roblox khác</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Tùy chỉnh BubbleStrap sẽ làm gì khi khởi động Roblox.</value>
+    <value>Tùy chỉnh Bubblestrap sẽ làm gì khi khởi động Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox sẽ cài đặt lại vào lần khởi động tiếp theo.</value>
@@ -530,12 +470,8 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
     <value>Sử dụng sai cách có thể dẫn đến mất ổn định hay những điều không mong muốn.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Sử dụng một cách cẩn thận.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Một số Flag bạn đang nhập vào đã có những giá trị được định sẵn. Bạn có muốn ghi đè giá trị hiện tại của chúng với những giá trị sau đây được đề ra trong bản nhập vào?
-
 Có {0} Flag đang xung đột:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Có {0} Flag đang xung đột:
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>JSON mà bạn đã nhập có vẻ không hợp lệ. Vui lòng kiểm tra lần nữa và thử lại.
-
 Thông tin thêm:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,7 +502,6 @@ Thông tin thêm:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Có vẻ như bạn đang nhập một cấu hình rất lớn. Bạn chỉ nên nhập những cấu hình mà bạn chắc chắn hiểu. KHÔNG dán một cách bừa bãi các cấu hình do người khác tạo. Nếu tiếp tục, rất có thể bạn sẽ gặp phải vấn đề về độ ổn định và gặp phải những thay đổi không mong muốn.
-
 Bạn có chắc chắn muốn tiếp tục không?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -578,20 +512,6 @@ Bạn có chắc chắn muốn tiếp tục không?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Trình chỉnh sửa Fast Flag</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Quay lại</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Tôi biết tôi đang làm gì</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Bạn có biết bạn đang làm gì không?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Fast Flag vô cùng mạnh mẽ vì chúng được thiết kế chỉ dành cho các kỹ sư Roblox sử dụng. Mặc dù có thể rất hữu ích, việc tự mình cài đặt cấu hình và chỉnh sửa có thể gây ra các vấn đề nghiêm trọng về tính ổn định và chức năng. ĐỪNG sử dụng trình chỉnh sửa nếu bạn không biết mình đang làm gì. 
-
-ĐỪNG sử dùng chức năng này để nhập những "danh sách flag" lớn được tạo nên bởi người khác với lời hứa cải thiện hiệu năng, chạy mượt hơn hoặc tương tự. Chúng có thể gặp những vấn đề được nêu ở trên và sẽ gây ra vấn đề nếu bạn thực sự không biết chúng đang thay đổi gì. Nếu bạn đang định làm điều đó, HÃY QUAY TRỞ LẠI.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Kiểm soát cụ thể các cấu hình, các thông số và tính năng của Roblox.</value>
@@ -626,14 +546,12 @@ Bạn có chắc chắn muốn tiếp tục không?</value>
     <value>Các tệp biểu tượng</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>BubbleStrap không thể được cài đặt ở đây. Vui lòng chọn một vị trí khác, hoặc sử dụng vị trí mặc định bằng cách nhấp vào nút đặt lại.</value>
+    <value>Bubblestrap không thể được cài đặt ở đây. Vui lòng chọn một vị trí khác, hoặc sử dụng vị trí mặc định bằng cách nhấp vào nút đặt lại.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>Thư mục bạn chọn cài đặt BubbleStrap đã tồn tại và KHÔNG trống rỗng. Chúng tôi đặc biệt khuyến khích cài đặt BubbleStrap vào thư mục độc lập của riêng nó.
-
+    <value>Thư mục bạn chọn cài đặt Bubblestrap đã tồn tại và KHÔNG trống rỗng. Chúng tôi đặc biệt khuyến khích cài đặt Bubblestrap vào thư mục độc lập của riêng nó.
 Đề xuất thay đổi sang vị trí như này:
 {0}
-
 Bạn có muốn thay đổi đến vị trí được đề xuất không?
 Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</value>
     <comment>{0} is a file path</comment>
@@ -642,7 +560,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Bạn phải chọn địa điểm cài đặt</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>BubbleStrap không có quyền ghi vào vị trí cài đặt mà bạn đã chọn. Vui lòng chọn địa điểm khác.</value>
+    <value>Bubblestrap không có quyền ghi vào vị trí cài đặt mà bạn đã chọn. Vui lòng chọn địa điểm khác.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Theo dõi hoạt động</value>
@@ -693,7 +611,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Không thoát ra màn hình chính của Roblox</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Cho phép BubbleStrap phát hiện bạn đang chơi trò Roblox gì. Một vài chức năng yêu cầu tính năng này.</value>
+    <value>Cho phép Bubblestrap phát hiện bạn đang chơi trò Roblox gì. Một vài chức năng yêu cầu tính năng này.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Bật theo dõi hoạt động</value>
@@ -785,7 +703,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Các chỉnh sửa đã được lưu!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Cài Đặt BubbleStrap</value>
+    <value>Cài Đặt Bubblestrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Chọn ngôn ngữ ưa thích</value>
@@ -809,7 +727,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Giao diện người dùng và bố cục</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Cho phép BubbleStrap quản lý Fast Flag</value>
+    <value>Cho phép Bubblestrap quản lý Fast Flag</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Tắt tính năng này sẽ ngăn bất kỳ cài đặt nào ở đây được áp dụng vào Roblox.</value>
@@ -821,7 +739,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Ngăn không cho thanh tiêu đề hiển thị mỗi khi bạn di chuyển chuột lên đầu màn hình.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap không thể tải xuống Roblox</value>
+    <value>Bubblestrap không thể tải xuống Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Không thể tải xuống Roblox ngay bây giờ. Xin hãy đọc trang trợ giúp để biết thêm thông tin: {0}</value>
@@ -842,7 +760,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Giá trị '{0}' không hợp lệ vì giá trị phải là một chữ số</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Tệp log mới sẽ không được tạo cho lần khởi chạy này vì BubbleStrap không thể ghi vào thư mục tại '{0}'</value>
+    <value>Tệp log mới sẽ không được tạo cho lần khởi chạy này vì Bubblestrap không thể ghi vào thư mục tại '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Mặc định</value>
@@ -857,7 +775,7 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Giá trị '{0}' không hợp lệ vì bộ lọc trải nghiệm không được định dạng đúng.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>Trình cài đặt BubbleStrap</value>
+    <value>Trình cài đặt Bubblestrap</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Chào mừng</value>
@@ -876,18 +794,16 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
     <value>Tiếp theo</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Cảm ơn bạn đã tải xuống BubbleStrap.
-
-Các trang web chính thức duy nhất để tải BubbleStrap là {0} và {1}, vì vậy hãy đảm bảo rằng bạn đã tải từ nguồn chính thức.
-
-Quá trình cài đặt này sẽ nhanh chóng và đơn giản, và sau khi cài đặt, bạn sẽ có thể cấu hình bất kỳ cài đặt nào của BubbleStrap.</value>
+    <value>Cảm ơn bạn đã tải xuống Bubblestrap.
+Các trang web chính thức duy nhất để tải Bubblestrap là {0} và {1}, vì vậy hãy đảm bảo rằng bạn đã tải từ nguồn chính thức.
+Quá trình cài đặt này sẽ nhanh chóng và đơn giản, và sau khi cài đặt, bạn sẽ có thể cấu hình bất kỳ cài đặt nào của Bubblestrap.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Bấm 'Tiếp' để tiếp tục.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Bạn đang cố cài đặt phiên bản {0} của BubbleStrap, nhưng phiên bản mới nhất hiện tại là {1}. Bạn có muốn tải về không?</value>
+    <value>Bạn đang cố cài đặt phiên bản {0} của Bubblestrap, nhưng phiên bản mới nhất hiện tại là {1}. Bạn có muốn tải về không?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Chọn nơi để cài đặt</value>
@@ -908,17 +824,14 @@ Quá trình cài đặt này sẽ nhanh chóng và đơn giản, và sau khi cà
     <value>Biểu tượng Start Menu</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>BubbleStrap đã được cài đặt thành công.
-
-Roblox vẫn chưa được cài đặt, điều đó sẽ xảy ra khi bạn khởi chạy nó bằng BubbleStrap lần đầu tiên. Tuy nhiên, trước khi thực hiện, có thể 
-bạn sẽ muốn định cấu hình cài đặt của BubbleStrap trước.
-
-Ngoài ra, tránh sử dụng phím tắt "Roblox Player" để khởi chạy Roblox, vì BubbleStrap sẽ không khởi chạy cùng Roblox. Nếu bạn không thấy BubbleStrap hiển thị khi khởi chạy từ trang web, chỉ cần khởi chạy Roblox bằng BubbleStrap một lần từ màn hình chính để khắc phục sự cố.
-
+    <value>Bubblestrap đã được cài đặt thành công.
+Roblox vẫn chưa được cài đặt, điều đó sẽ xảy ra khi bạn khởi chạy nó bằng Bubblestrap lần đầu tiên. Tuy nhiên, trước khi thực hiện, có thể 
+bạn sẽ muốn định cấu hình cài đặt của Bubblestrap trước.
+Ngoài ra, tránh sử dụng phím tắt "Roblox Player" để khởi chạy Roblox, vì Bubblestrap sẽ không khởi chạy cùng Roblox. Nếu bạn không thấy Bubblestrap hiển thị khi khởi chạy từ trang web, chỉ cần khởi chạy Roblox bằng Bubblestrap một lần từ màn hình chính để khắc phục sự cố.
 Bạn muốn làm gì?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Cấu hình cài đặt BubbleStrap</value>
+    <value>Cấu hình cài đặt Bubblestrap</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Chỉnh sửa tất cả những tính năng được cung cấp</value>
@@ -930,22 +843,19 @@ Bạn muốn làm gì?</value>
     <value>Sẽ đưa bạn đến ứng dụng màn hình nền một khi tất cả đã xong</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Gỡ cài đặt BubbleStrap</value>
+    <value>Gỡ cài đặt Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Gỡ cài đặt BubbleStrap sẽ xóa nó khỏi hệ thống của bạn, và tự động cấu hình lại trình khởi chạy mặc định của Roblox nếu nó vẫn được cài đặt.
-
+    <value>Gỡ cài đặt Bubblestrap sẽ xóa nó khỏi hệ thống của bạn, và tự động cấu hình lại trình khởi chạy mặc định của Roblox nếu nó vẫn được cài đặt.
 Nếu bạn đang gỡ cài đặt hoặc cài đặt lại vì gặp sự cố với Roblox, hãy đọc [trang trợ giúp này]({0}) trước.
-
-Quá trình gỡ cài đặt có thể không tự dọn dẹp hoàn toàn, vì vậy có thể bạn sẽ cần phải dọn dẹp thủ công các tệp còn sót lại nơi BubbleStrap đã được cài đặt.
-
-BubbleStrap đã được cài đặt tại "{1}".</value>
+Quá trình gỡ cài đặt có thể không tự dọn dẹp hoàn toàn, vì vậy có thể bạn sẽ cần phải dọn dẹp thủ công các tệp còn sót lại nơi Bubblestrap đã được cài đặt.
+Bubblestrap đã được cài đặt tại "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Giữ lại các cài đặt và mod của tôi</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Chúng sẽ được giữ lại nơi BubbleStrap đã được cài đặt, và sẽ tự động khôi phục sau khi cài đặt lại.</value>
+    <value>Chúng sẽ được giữ lại nơi Bubblestrap đã được cài đặt, và sẽ tự động khôi phục sau khi cài đặt lại.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Gỡ cài đặt</value>
@@ -966,19 +876,18 @@ BubbleStrap đã được cài đặt tại "{1}".</value>
     <value>Hiện tại bạn chưa cài đặt WebView2 runtime. Một số tính năng của Roblox sẽ không hoạt động bình thường nếu không có nó, chẳng hạn như ứng dụng trên màn hình chính. Bạn có muốn tải nó ngay bây giờ không?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>BubbleStrap không thể tạo phím tắt cho màn hình chính và Start Menu. Hãy thử tạo chúng thông qua cài đặt.</value>
+    <value>Bubblestrap không thể tạo phím tắt cho màn hình chính và Start Menu. Hãy thử tạo chúng thông qua cài đặt.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Tìm xem [Bloxstrap Wiki]({0}) trước để xem nếu vấn đề này đã có phương pháp giải quyết.
-
-Nếu không, thì hãy báo cáo vấn đề này đến người quản lí của bản sao này. ĐỪNG báo cáo vấn đề này đến GitHub của BubbleStrap, bởi vì đây là một bản sao không chính thức.</value>
+Nếu không, thì hãy báo cáo vấn đề này đến người quản lí của bản sao này. ĐỪNG báo cáo vấn đề này đến GitHub của Bubblestrap, bởi vì đây là một bản sao không chính thức.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Đây là các phím tắt chung giúp mở menu khởi chạy với nhiều lựa chọn. Các phím tắt cho các chức năng cụ thể có thể được tạo sau trong phần cài đặt.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Cấu hình cách BubbleStrap có thể được khởi chạy.</value>
+    <value>Cấu hình cách Bubblestrap có thể được khởi chạy.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Chung</value>
@@ -1018,7 +927,7 @@ Nếu không, thì hãy báo cáo vấn đề này đến người quản lí c�
     <value>Bạn có những thay đổi chưa được lưu. Bạn có chắc chắn muốn đóng mà không lưu không?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Phiên bản BubbleStrap mà bạn khởi chạy cũ hơn so với phiên bản bạn đã cài đặt.
+    <value>Phiên bản Bubblestrap mà bạn khởi chạy cũ hơn so với phiên bản bạn đã cài đặt.
 Có thể xảy ra sự cố và các tùy chỉnh của bạn có thể bị thay đổi. Khuyến khích nên cài đặt lại.
 Bạn có muốn tiếp tục không?</value>
   </data>
@@ -1030,21 +939,13 @@ Bạn có muốn tiếp tục không?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Để biết thông tin về lý do tại sao lại phát sinh lỗi này và cách giải quyết nó, vui lòng đọc [trợ giúp]({0}).
-
-Kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]({1}) không. Nếu không, thì đây không phải là lỗi của BubbleStrap. Nếu có, hãy tham khảo bài viết trợ giúp.</value>
+Kiểm tra xem Roblox có hoạt động với [trình khởi chạy gốc]({1}) không. Nếu không, thì đây không phải là lỗi của Bubblestrap. Nếu có, hãy tham khảo bài viết trợ giúp.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Không thể tải dữ liệu vì lỗi mạng.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Đang tải, xin vui lòng chờ...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Những người hỗ trợ</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Đây là những người đã hỗ trợ BubbleStrap qua Ko-fi. Một lời cảm ơn tới tất cả mọi người ở đây!
-Thứ hạng của mỗi người ở đây dựa vào mức đóng góp của họ.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Không thể tải những Cài Đặt của bạn. Chúng đã được đặt lại về cấu hình mặc định.</value>
@@ -1074,12 +975,11 @@ Thứ hạng của mỗi người ở đây dựa vào mức đóng góp của h
     <value>Trong lần chạy này, Roblox sẽ không được kiểm tra để cập nhật, và những thay đổi đối với các mod sẽ không áp dụng.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Vì Roblox cần được cài đặt hoặc cập nhật, BubbleStrap không thể tiếp tục.</value>
+    <value>Vì Roblox cần được cài đặt hoặc cập nhật, Bubblestrap không thể tiếp tục.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>BubbleStrap đã được cài đặt vào vị trí này trước đây và vẫn còn ở đó, tuy nhiên trình cài đặt không thể ghi đè lên tệp cài đặt cũ. 
-
-Vui lòng xóa thủ công BubbleStrap.exe khỏi vị trí cài đặt hoặc thử khởi động lại hệ thống của bạn, sau đó thử cài đặt lại sau đó.</value>
+    <value>Bubblestrap đã được cài đặt vào vị trí này trước đây và vẫn còn ở đó, tuy nhiên trình cài đặt không thể ghi đè lên tệp cài đặt cũ. 
+Vui lòng xóa thủ công Bubblestrap.exe khỏi vị trí cài đặt hoặc thử khởi động lại hệ thống của bạn, sau đó thử cài đặt lại sau đó.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Không có sẵn</value>
@@ -1091,7 +991,7 @@ Vui lòng xóa thủ công BubbleStrap.exe khỏi vị trí cài đặt hoặc t
     <value>Cấu hình các thông số ứng dụng như hành vi thay đổi tỷ lệ DPI và [tối ưu hóa toàn màn hình]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox chưa được cài đặt. Vui lòng khởi chạy Roblox bằng BubbleStrap ít nhất một lần trước khi thử sử dụng tùy chọn này.</value>
+    <value>Roblox chưa được cài đặt. Vui lòng khởi chạy Roblox bằng Bubblestrap ít nhất một lần trước khi thử sử dụng tùy chọn này.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Bạn có chắc chắn muốn hủy cài đặt không?</value>
@@ -1101,7 +1001,6 @@ Vui lòng xóa thủ công BubbleStrap.exe khỏi vị trí cài đặt hoặc t
   </data>
   <data name="Dialog.IconLoadFailed" xml:space="preserve">
     <value>Không thể tải biểu tượng trình khởi động đã chọn.
-
 {0}</value>
     <comment>{0} is an exception message</comment>
   </data>
@@ -1109,19 +1008,10 @@ Vui lòng xóa thủ công BubbleStrap.exe khỏi vị trí cài đặt hoặc t
     <value>Trích xuất biểu tượng Roblox vào thư mục</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Cho phép bạn sử dụng các biểu tượng Roblox có sẵn trong BubbleStrap cho các phím tắt của bạn. [Xem cách.]({0})</value>
+    <value>Cho phép bạn sử dụng các biểu tượng Roblox có sẵn trong Bubblestrap cho các phím tắt của bạn. [Xem cách.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap không thể ghi vào Registry của Windows. Có thể một phần mềm diệt virus đang can thiệp và gây ra vấn đề. Vui lòng kiểm tra để đảm bảo không có gì làm ảnh hưởng BubbleStrap.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Hàng tháng</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Một lần</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Phân tích</value>
+    <value>Bubblestrap không thể ghi vào Registry của Windows. Có thể một phần mềm diệt virus đang can thiệp và gây ra vấn đề. Vui lòng kiểm tra để đảm bảo không có gì làm ảnh hưởng Bubblestrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Đặt tất cả cài đặt về mặc định</value>
@@ -1135,13 +1025,11 @@ Vui lòng xóa thủ công BubbleStrap.exe khỏi vị trí cài đặt hoặc t
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Chế độ thử nghiệm giúp bạn dễ dàng kiểm tra các cài đặt ảnh hưởng đến Roblox như thế nào.
-
 Khi được bật, nó sẽ tự động khởi chạy Roblox sau khi đóng Cài Đặt, và mở lại Cài Đặt sau khi đóng Roblox, lặp lại theo chu kỳ cho đến khi bạn tắt chế độ này.
-
 Bạn có muốn bật chế độ thử nghiệm không?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>Tất cả các bản dịch của BubbleStrap đều được đóng góp từ cộng đồng thông qua [Crowdin]({0}). Tất cả những người được liệt kê ở đây đều đã tự nguyện dành thời gian và công sức để giúp dịch BubbleStrap. Xin gửi lời cảm ơn chân thành đến tất cả mọi người!</value>
+    <value>Tất cả các bản dịch của Bubblestrap đều được đóng góp từ cộng đồng thông qua [Crowdin]({0}). Tất cả những người được liệt kê ở đây đều đã tự nguyện dành thời gian và công sức để giúp dịch Bubblestrap. Xin gửi lời cảm ơn chân thành đến tất cả mọi người!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Cài đặt</value>
@@ -1161,8 +1049,7 @@ Bạn có muốn bật chế độ thử nghiệm không?</value>
     <value>Tuỳ chọn</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>BubbleStrap không thể cập nhật Roblox vì các tập tin của Roblox đang được sử dụng
-
+    <value>Bubblestrap không thể cập nhật Roblox vì các tập tin của Roblox đang được sử dụng
 Xin hãy đóng các ứng dụng đang sử dụng các tập tin của Roblox, và khởi động động lại.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1172,47 +1059,35 @@ Xin hãy đóng các ứng dụng đang sử dụng các tập tin của Roblox,
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Xuất ra</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Có gì đó đang ngăn chặn BubbleStrap kết nối đến Internet.</value>
+    <value>Có gì đó đang ngăn chặn Bubblestrap kết nối đến Internet.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Kết nối đã bị gián đoạn, có thể là bởi kết nối mạng không ổn định hoặc là đã bị chặn bởi tường lửa.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Thay đổi cài đặt triển khai và cài đặt cho Roblox &amp; Bubblestrap.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Kênh</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Chọn kênh triển khai. Đừng thay đổi trừ khi bạn biết mình đang làm gì.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Phiên bản</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Hướng dẫn phiên bản</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox không còn hỗ trợ Windows 7 hoặc 8.1 nữa. Xin hãy nâng cấp lên Windows 10 hoặc mới hơn.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Đang tải xuống phiên bản mới nhất của BubbleStrap...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>Tùy chỉnh những lựa chọn liên quan tới cách hoạt động của BubbleStrap.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Bật gửi dữ liệu phân tích</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Mọi thứ đều ẩn danh và không có gì xấu xa cả, thật đấy. Để biết chúng tôi thu thập những gì và lý do, hãy xem [chính sách quyền riêng tư]({0}) của chúng tôi.</value>
+    <value>Đang tải xuống phiên bản mới nhất của Bubblestrap...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Trống</value>
@@ -1438,60 +1313,434 @@ Mặc định về {1}.</value>
     <value>Chỉnh sửa</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Về BubbleStrap</value>
+    <value>Về Bubblestrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Phiên bản menu thoát ưa thích</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Thời gian hoạt động</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Đặt thành 0 nếu muốn sử dụng bộ mở khóa khung hình mặc định của Roblox.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Vị trí: {0}
+Thời gian hoạt động: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Ẩn thông tin phiên bản và sản xuất trong khi khởi chạy.</value>
+  </data>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Ẩn chi tiết phiên bản và sản xuất</value>
+  </data>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Tự động đóng RobloxCrashHandler.exe khi khởi chạy để giảm mức sử dụng bộ nhớ.</value>
+  </data>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Vô hiệu hóa Trình xử lý sự cố Roblox</value>
+  </data>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Bật tính năng này để hiển thị RPC Bubblestrap Discord tùy chỉnh trên hồ sơ của bạn khi ứng dụng đang mở.</value>
+  </data>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>RPC bong bóng</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Chọn âm thanh...</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Xóa âm thanh chết chóc tùy chỉnh</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Âm thanh cái chết tùy chỉnh</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Thay đổi âm thanh cái chết thành bất kỳ âm thanh nào bạn chọn.</value>
+  </data>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Bầu trời xám</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Các trò chơi có bầu trời tùy chỉnh có thể không hoạt động.</value>
+  </data>
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Tham gia máy chủ Discord của chúng tôi</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
+  </data>
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkan</value>
+  </data>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Trình chỉnh sửa cờ nhanh</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Trọng tải</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Hủy nâng cấp Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kênh</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Thư mục tĩnh</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Chuyển từ thư mục cài đặt dựa trên phiên bản-xxx sang BinaryType.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Đang tải xuống</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Trạng thái tải xuống Bootstrapper</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Thay đổi chuỗi tải xuống. {0} là tên gói, {1} là kích thước gói đã tải xuống và {2} là tổng kích thước của gói.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Khởi chạy nhiều phiên bản</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Cho phép mở đồng thời nhiều phiên bản máy khách trò chơi Roblox. Có thể gây ra sự cố với ứng dụng dành cho máy tính để bàn.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Xóa cờ FF</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Gỡ lỗi</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Menu Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Gỡ lỗi menu Roblox với FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Triển khai</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Phòng thu</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Studio Roblox</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Hiển thị người chơi rời/gia nhập máy chủ mà bạn đang tham gia.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Kiểu</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Băm phiên bản</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Buộc Bubblestrap tải xuống phiên bản từ hàm băm cụ thể. Vui lòng không thay đổi nếu bạn không biết điều này có tác dụng gì.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Lưu và khởi chạy</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Việc nâng cấp đã bị vô hiệu hóa do thiếu ứng dụng khách.
+	Để ngăn chặn vấn đề nâng cấp sẽ tiếp tục.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Nhật ký người chơi</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Tin nhắn</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Kênh này đã lỗi thời và có thể không còn được cập nhật nữa. Vui lòng sử dụng kênh khác.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Kênh bạn đang truy cập ({0}) đã lỗi thời và dường như không còn nhận được cập nhật nữa.
+Bạn có muốn chuyển sang kênh mặc định ({1}) không?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Hành động thay đổi kênh tự động</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox hoặc Bubblestrap có thể cố gắng thay đổi kênh ưa thích của bạn.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Tự động thay đổi</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Luôn nhắc nhở</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Không bao giờ thay đổi</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox đang cố gắng đặt kênh của bạn thành {0}, tuy nhiên kênh ưa thích hiện tại của bạn là {1}.
+Bạn có muốn chuyển kênh ưa thích của mình sang {0} không?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Bạn có muốn bao gồm FFflags cài sẵn không?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Kênh bạn hiện đang truy cập ({0}) hiện đã bị hạn chế sử dụng công khai. Bây giờ bạn sẽ ở kênh mặc định ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Đang tìm nạp thông tin triển khai mới nhất, vui lòng đợi...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Kênh được chỉ định không tồn tại hoặc ở chế độ riêng tư</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Không thể nhập cài đặt Bloxstrap.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Nhập cài đặt từ Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Không tìm thấy cài đặt Bloxstrap.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Định cấu hình các tùy chọn liên quan đến chính hành vi của Bubblestrap.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Thu thập thông tin có thể tải lên trực tuyến để khắc phục sự cố bạn đang gặp phải.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Cấu hình bong bóng</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Tất cả nhật ký Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Sạch hơn</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap sẽ xóa dữ liệu cũ để tiết kiệm dung lượng</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Không bao giờ</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Sau 1 ngày</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Sau 1 tuần</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Sau 1 tháng</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Sau 2 tháng</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Khi nào các tập tin sẽ bị xóa</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Các tập tin cũ hơn số lượng đã đặt sẽ bị xóa.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Bộ nhớ đệm</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Các bản tải xuống cũ sẽ bị xóa.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Nhật ký</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Các tập tin nhật ký cũ sẽ bị xóa.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Nhật ký bong bóng</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Nhật ký bong bóng sẽ bị xóa.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Định cấu hình các tùy chọn liên quan đến chính hành vi của Bubblestrap.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags đã tạm thời bị vô hiệu hóa</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Để biết thêm thông tin, hãy tham gia máy chủ Bubblestrap Discord</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Đang chờ dữ liệu</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Hình học</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Kiểm soát cách Roblox hiển thị hình học 3D.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Chi tiết lưới</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Kiểm soát cách các mắt lưới chi tiết xuất hiện trong trò chơi.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Chất lượng thấp hơn có thể khiến mắt lưới biến mất.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Chất lượng thấp nhất</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Chất lượng cao nhất</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Trạng thái không xác định</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Không xác định</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
     <value>Giới hạn tốc độ khung hình</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Bật/Tắt bằng [tổ hợp phím]({0}). Chỉ hoạt động nếu đang ở trong [Nhóm BubbleStrap]({1}).</value>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Mở khóa giới hạn tốc độ khung hình cho Roblox. Không nên vượt quá 240 FPS.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Bật tính năng ẩn giao diện người dùng</value>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Cài đặt chung</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Chọn một cái sẽ bắc buộc bật trong tất cả các trò chơi. [Hãy cẩn thận, có thể gây ra các lỗi ánh sáng!]({0})</value>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Đặt cài đặt trong trò chơi từ menu Bubblestrap.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Công nghệ ánh sáng ưa thích</value>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Minh bạch</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Vô hiệu hóa các hiệu ứng xử lý hậu kỳ</value>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Độ trong suốt tùy chỉnh cho các thành phần UI.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Tắt thanh tiêu đề toàn màn hình</value>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Giảm chuyển động</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Vô hiệu hóa bóng của người chơi</value>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Loại bỏ hình ảnh động trên menu thoát.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
-    <value>Kích cỡ phông chữ</value>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
+    <value>Cỡ chữ</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Giá trị mặc định là 1. Điều chỉnh nó nếu bạn dùng phông chữ tùy chình.</value>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Chọn mức độ lớn của phông chữ sẽ xuất hiện.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Vô hiệu hóa cấu tạo bề mặt địa hình</value>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Chất lượng đồ họa</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Giấy phép Apache 2.0</value>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Độ nhạy của chuột</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Thay đổi tốc độ di chuyển của camera trong trò chơi.</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>Đã bật VR</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Đặt chất lượng đồ họa của trò chơi của bạn</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Đặt ở chế độ Chỉ đọc</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Ngăn Roblox ghi đè cài đặt chung.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>Ghi đè chất lượng FRM</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Chọn chất lượng FRM mà Roblox nên sử dụng.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Cho phép Bubblestrap truy cập tài khoản Roblox của bạn</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Cung cấp quyền truy cập vào API Roblox bằng cookie xác thực của bạn. [Bubblestrap sẽ truy cập những gì?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Bộ nhớ bộ nhớ</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Định kỳ xóa mức sử dụng bộ nhớ của Roblox để giảm mức tiêu thụ RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Khoảng thời gian cắt bộ nhớ</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Tần suất (tính bằng giây) để cắt bớt bộ nhớ. Giá trị thấp hơn sẽ sử dụng nhiều CPU hơn và có thể dẫn đến lối chơi không ổn định.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Thực tế ảo</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Hoàn nguyên giao diện người dùng Roblox Studio</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Sử dụng giao diện người dùng Roblox Studio cũ thay vì giao diện người dùng mới.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Tắt cỏ địa hình</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Chọn hiển thị hoặc ẩn cỏ trang trí trên địa hình để cải thiện hiệu suất.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Sử dụng ngưỡng bộ nhớ</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Chỉ cắt bớt nếu Roblox vượt quá mức sử dụng RAM cụ thể.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Giới hạn MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Toàn màn hình</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Kích thước màn hình bắt đầu</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Đặt chiều rộng và chiều cao mặc định của cửa sổ trò chơi khi khởi động.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Chiều rộng (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Chiều cao (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Âm thanh</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Số lượng bữa tiệc</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Điều chỉnh âm lượng trò chuyện thoại trong bữa tiệc của bạn.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Khối lượng chính</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Điều chỉnh âm lượng chính cho tất cả âm thanh trong trò chơi.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Dịch trò chuyện tự động</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Tự động dịch tin nhắn trong cuộc trò chuyện sang ngôn ngữ ưa thích của bạn.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Phản hồi xúc giác</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Cho phép rung bộ điều khiển để cung cấp phản hồi xúc giác.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Đầu vào và điều khiển</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>Họa tiết VR</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Áp dụng họa tiết VR làm tối các cạnh màn hình để giảm chứng say tàu xe.</value>
   </data>
 </root>

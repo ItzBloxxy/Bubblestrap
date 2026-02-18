@@ -2,7 +2,7 @@
 {
 
     // those are the default directories
-    // these should still be updated since remote data could fail to load
+    // these are defaults in case the data file is missing or corrupted
     public class PackageMaps
     {
         [JsonPropertyName("common")]

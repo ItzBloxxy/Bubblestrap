@@ -16,10 +16,11 @@
              Height="580"
              Background="{ui:ThemeResource ApplicationBackgroundBrush}"
              ExtendsContentIntoTitleBar="True"
-             WindowBackdropType="Mica"
+             WindowBackdropType="Mica"   
              WindowStartupLocation="CenterScreen"
              Closing="WpfUiWindow_Closing"
              Closed="WpfUiWindow_Closed">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -53,19 +54,19 @@
 
             <ui:NavigationFluent x:Name="RootNavigation" Grid.Row="1" Grid.Column="0" Margin="0,0,12,0" Frame="{Binding ElementName=RootFrame}" SelectedPageIndex="0">
                 <ui:NavigationFluent.Items>
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Integrations_Title}" PageType="{x:Type pages:IntegrationsPage}" Icon="Add28" Tag="integrations" />
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Behaviour_Title}" PageType="{x:Type pages:BehaviourPage}" Icon="PlaySettings20" Tag="bootstrapper" />
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Common_Deployment}" PageType="{x:Type pages:ChannelPage}" Icon="CloudArchive20" Tag="channel" />
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Mods_Title}" PageType="{x:Type pages:ModsPage}" Icon="WrenchScrewdriver20" Tag="mods" />
-                    <ui:NavigationItem x:Name="fastflags" Content="{x:Static resources:Strings.Menu_FastFlags_Title}" PageType="{x:Type pages:FastFlagsPage}" Icon="Flag24" Tag="fastflags" />
-                    <ui:NavigationItem x:Name="gbs" Content="{x:Static resources:Strings.Common_GlobalSettings}" PageType="{x:Type pages:GlobalSettingsPage}" Icon="Settings20" Tag="gbseditor"/>
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Appearance_Title}" PageType="{x:Type pages:AppearancePage}" Icon="PaintBrush24" Tag="appearance" />
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Common_Shortcuts}" PageType="{x:Type pages:ShortcutsPage}" Icon="Apps28" Tag="shortcuts" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Integrations_Title}" FontWeight="Medium" PageType="{x:Type pages:IntegrationsPage}" Icon="Add28" Tag="integrations" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Behaviour_Title}" FontWeight="Medium" PageType="{x:Type pages:BehaviourPage}" Icon="PlaySettings20" Tag="bootstrapper" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Common_Deployment}" FontWeight="Medium" PageType="{x:Type pages:ChannelPage}" Icon="CloudArchive20" Tag="channel" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Mods_Title}" FontWeight="Medium" PageType="{x:Type pages:ModsPage}" Icon="WrenchScrewdriver20" Tag="mods" />
+                    <ui:NavigationItem x:Name="fastflags" Content="{x:Static resources:Strings.Menu_FastFlags_Title}" FontWeight="Medium" PageType="{x:Type pages:FastFlagsPage}" Icon="Flag24" Tag="fastflags" />
+                    <ui:NavigationItem x:Name="gbs" Content="{x:Static resources:Strings.Common_GlobalSettings}" FontWeight="Medium" PageType="{x:Type pages:GlobalSettingsPage}" Icon="Settings20" Tag="gbseditor"/>
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_Appearance_Title}" FontWeight="Medium" PageType="{x:Type pages:AppearancePage}" Icon="PaintBrush24" Tag="appearance" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Common_Shortcuts}" FontWeight="Medium" PageType="{x:Type pages:ShortcutsPage}" Icon="Apps28" Tag="shortcuts" />
 
                     <ui:NavigationItem Content="{x:Static resources:Strings.Menu_FastFlagEditor_Title}" PageType="{x:Type pages:FastFlagEditorPage}" Tag="fastflageditor" Visibility="Collapsed" />
                 </ui:NavigationFluent.Items>
                 <ui:NavigationFluent.Footer>
-                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_About_Title}" Icon="QuestionCircle24" Margin="0,0,0,12" Command="{Binding OpenAboutCommand, Mode=OneTime}" />
+                    <ui:NavigationItem Content="{x:Static resources:Strings.Menu_About_Title}" FontWeight="Medium" Icon="QuestionCircle24" Margin="0,0,0,12" Command="{Binding OpenAboutCommand, Mode=OneTime}" Click="NavigationItem_Click" />
                 </ui:NavigationFluent.Footer>
             </ui:NavigationFluent>
 
@@ -101,17 +102,17 @@
             <StatusBarItem Grid.Column="0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <ui:ToggleSwitch IsChecked="{Binding TestModeEnabled, Mode=TwoWay}" />
-                    <TextBlock Padding="12,0,0,0" Text="{x:Static resources:Strings.Menu_TestMode}" VerticalAlignment="Center" FontSize="14" />
+                    <TextBlock Padding="12,0,0,0" Text="{x:Static resources:Strings.Menu_TestMode}" FontWeight="Medium" VerticalAlignment="Center" FontSize="14" />
                 </StackPanel>
             </StatusBarItem>
             <StatusBarItem Grid.Column="2" Padding="0,0,4,0">
-                <ui:Button Content="{x:Static resources:Strings.Menu_SaveAndLaunch}" Appearance="Primary" Command="{Binding SaveAndLaunchSettingsCommand, Mode=OneWay}" />
+                <ui:Button Content="{x:Static resources:Strings.Menu_SaveAndLaunch}" Appearance="Primary" FontWeight="SemiBold" Command="{Binding SaveAndLaunchSettingsCommand, Mode=OneWay}" />
             </StatusBarItem>
             <StatusBarItem Grid.Column="3" Padding="0,0,4,0">
-                <ui:Button Content="{x:Static resources:Strings.Menu_Save}" Appearance="Primary" Command="{Binding SaveSettingsCommand, Mode=OneWay}" />
+                <ui:Button Content="{x:Static resources:Strings.Menu_Save}" Appearance="Primary" FontWeight="SemiBold" Command="{Binding SaveSettingsCommand, Mode=OneWay}" />
             </StatusBarItem>
             <StatusBarItem Grid.Column="4" Padding="0,0,0,0">
-                <ui:Button Content="{x:Static resources:Strings.Common_Close}" Command="{Binding CloseWindowCommand, Mode=OneWay}" />
+                <ui:Button Content="{x:Static resources:Strings.Common_Close}" FontWeight="SemiBold" Command="{Binding CloseWindowCommand, Mode=OneWay}" />
             </StatusBarItem>
         </StatusBar>
     </Grid>

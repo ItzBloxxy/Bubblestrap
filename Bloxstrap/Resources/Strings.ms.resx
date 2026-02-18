@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -118,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>BubbleStrap tidak dapat mengemas kini secara automatik ke versi {0}. Sila kemas kini secara manual dengan memuat turun dan menjalankannya dari laman web GitHub.</value>
+    <value>Bubblestrap tidak dapat mengemas kini secara automatik ke versi {0}. Sila kemas kini secara manual dengan memuat turun dan menjalankannya dari laman web GitHub.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Aplikasi Roblox sedang berjalan, membukanya sekali lagi akan menutup aplikasi tersebut. Adakah anda pasti ingin meneruskannya?</value>
@@ -127,13 +68,13 @@
     <value>Roblox mungkin mengalami masalah sekarang. Lihat {0} untuk maklumat lanjut. Sila cuba sebentar lagi.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Sambungan tidak dapat dibuat, berkemungkinan disebabkan oleh sambungan internet yang lemah atau sekatan oleh tembok api. Jika sambungan internet anda baik, pastikan perisian antivirus anda tidak menyekat BubbleStrap.</value>
+    <value>Sambungan tidak dapat dibuat, berkemungkinan disebabkan oleh sambungan internet yang lemah atau sekatan oleh tembok api. Jika sambungan internet anda baik, pastikan perisian antivirus anda tidak menyekat Bubblestrap.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Anda seharunys memasang BubbleStrap terlebih dahulu sebelum membuangnya.</value>
+    <value>Anda seharunys memasang Bubblestrap terlebih dahulu sebelum membuangnya.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>BubbleStrap tidak mempunyai ruang cakera yang cukup untuk memuat turun dan melakukan pemasangan Roblox. Sila bersihkan ruang cakera dan cuba lagi.</value>
+    <value>Bubblestrap tidak mempunyai ruang cakera yang cukup untuk memuat turun dan melakukan pemasangan Roblox. Sila bersihkan ruang cakera dan cuba lagi.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Roblox sedang mengaplikasi modifikasi...</value>
@@ -169,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>BubbleStrap telah berjaya dinyahpasang</value>
+    <value>Bubblestrap telah berjaya dinyahpasang</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox sedang berjalan dan perlu ditutup sebelum BubbleStrap dapat dinyahpasang. Adakah anda ingin menutup Roblox sekarang?</value>
+    <value>Roblox sedang berjalan dan perlu ditutup sebelum Bubblestrap dapat dinyahpasang. Adakah anda ingin menutup Roblox sekarang?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Rolox memerlukan komponen Windows Media Foundation. Kelihatan seperti anda tidak memilikinya kerana anda sedang menggunakan Windows versi N. Tolong memuat turun komponen tersebut sebelum membuka aplikasi Roblox.</value>
@@ -276,22 +217,21 @@ Klik untuk maklumat lanjut</value>
     <value>Sambungan ralat</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>BubbleStrap tidak dapat disambungkan ke {0}</value>
+    <value>Bubblestrap tidak dapat disambungkan ke {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Salin kandungan log</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>Suatu ralat telah berlaku semasa menjalankan BubbleStrap</value>
+    <value>Suatu ralat telah berlaku semasa menjalankan Bubblestrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
-    <value>Semak dahulu [Wiki BubbleStrap]({0}) untuk melihat jika masalah ini telah diselesaikan dengan pembaikan.
-
+    <value>Semak dahulu [Wiki Bubblestrap]({0}) untuk melihat jika masalah ini telah diselesaikan dengan pembaikan.
 Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama dengan salinan fail log yang telah dibuat.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Ralat pada BubbleStrap</value>
+    <value>Ralat pada Bubblestrap</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Guna ikon sendiri</value>
@@ -303,10 +243,10 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Lewat 2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>BubbleStrap (Klasik)</value>
+    <value>Bubblestrap (Klasik)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>BubbleStrap (Kaca)</value>
+    <value>Bubblestrap (Kaca)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Legasi (2008 - 2011)</value>
@@ -384,10 +324,10 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Cerah</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>BubbleStrap telah dinaik taraf ke v{0}</value>
+    <value>Bubblestrap telah dinaik taraf ke v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Versi BubbleStrap yang sedang berjalan adalah berbeza daripada versi yang telah dipasang. Adakah anda ingin memperbaharui versi yang telah dipasang?</value>
+    <value>Versi Bubblestrap yang sedang berjalan adalah berbeza daripada versi yang telah dipasang. Adakah anda ingin memperbaharui versi yang telah dipasang?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
     <value>Penyumbang</value>
@@ -396,7 +336,7 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Kod</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Berikut adalah individu yang telah memberi sumbangan besar kepada BubbleStrap, membantu membentuknya menjadi seperti yang ada sekarang.</value>
+    <value>Berikut adalah individu yang telah memberi sumbangan besar kepada Bubblestrap, membantu membentuknya menjadi seperti yang ada sekarang.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Idea dan Fungsi</value>
@@ -442,7 +382,7 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Sila ambil perhatian bahawa bukan semua perubahan konfigurasi anda akan diterapkan serta-merta sehingga anda menutup semua instance Roblox yang sedang berjalan.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>BubbleStrap sedang berjalan</value>
+    <value>Bubblestrap sedang berjalan</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Anda boleh menukar penampilan untuk kelihatan berbeza, sama ada dalam gaya retro atau seperti Roblox yang biasa.</value>
@@ -469,7 +409,7 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Nama</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Tetapkan rupa bentuk BubbleStrap.</value>
+    <value>Tetapkan rupa bentuk Bubblestrap.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Tema Global</value>
@@ -493,10 +433,10 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Penampilan</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>BubbleStrap akan automatik menyemak dan kemas kini secara sendirinya ketika Roblox dilancarkan.</value>
+    <value>Bubblestrap akan automatik menyemak dan kemas kini secara sendirinya ketika Roblox dilancarkan.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Kemas kini BubbleStrap secara automatik</value>
+    <value>Kemas kini Bubblestrap secara automatik</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Mengelakkan permainan yang sedang anda mainkan daripada tertutup apabila anda tidak sengaja membuka permainan baru.</value>
@@ -505,7 +445,7 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Minta pengesahan sebelum melancarkan instance Roblox yang lain</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Tetapkan apa yang perlu dilakukan oleh BubbleStrap ketika Roblox dilancarkan.</value>
+    <value>Tetapkan apa yang perlu dilakukan oleh Bubblestrap ketika Roblox dilancarkan.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox akan dipasang semula dalam keadaan baru pada pelancaran seterusnya.</value>
@@ -529,12 +469,8 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
     <value>Menyalahgunakan ini boleh membawa kepada ketidakstabilan dan benda tidak diingini berlaku.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Gunakan dengan berhati-hati.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Sesetengah "flags" yang anda import sudah mempunyai nilai. Sudikah anda menggantikan nilai sedia ada dengan nilai di dalam import?
-
 Terdapat {0} konflik "flags":
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -553,7 +489,6 @@ Terdapat {0} konflik "flags":
   </data>
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>Fail JSON yang anda masukkan adalah tidak sah. Sila semak semula dan cuba sekali lagi
-
 Maklumat lanjut:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -575,20 +510,6 @@ Maklumat lanjut:
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Editor Fast Flag</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Pergi balik</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Saya tahu apa yang saya lakukan</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Adakah anda tahu apa yang anda sedang lakukan?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>"Fast Flags" adalah sangat berkuasa, dengan itu ia hanya digunakan oleh jurutera di Roblox sahaja. Walaupun ia sangat berguna, akan tetapi mengubahnya akan menyebabkan masalah pada fungsi dan stabiliti. JANGAN menggunakan editor melainkan anda tahu apa yang anda lakukan.
-
-JANGAN mengimport sebarang senarai "Fast Flags" yang dibuat oleh pengguna lain yang menjanjikan sebarang kenaikkan pada pretasi. Ia akan menyebabkan isu dan masalah kepada anda kerana anda tidak menyedari apa yang diubahnya. Jika anda sedang mencuba untuk melakukannya, BERHENTI.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Mengawal parameter spesifik pada enjin Roblox dan juga konfigurasi pada cirinya.</value>
@@ -623,14 +544,12 @@ JANGAN mengimport sebarang senarai "Fast Flags" yang dibuat oleh pengguna lain y
     <value>Fail Ikon</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>BubbleStrap tidak dapat dimuat turun disini. Sila ubah lokasinya atau menggunakan lokasi asal dengan menekan butang tetapan semula.</value>
+    <value>Bubblestrap tidak dapat dimuat turun disini. Sila ubah lokasinya atau menggunakan lokasi asal dengan menekan butang tetapan semula.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>Fail yang anda pilih untuk memasang BubbleStrap sudah wujud dan TIDAK kosong. Sangat disarankan untuk BubbleStrap dipasang ke dalam Fail tersendiri.
-
+    <value>Fail yang anda pilih untuk memasang Bubblestrap sudah wujud dan TIDAK kosong. Sangat disarankan untuk Bubblestrap dipasang ke dalam Fail tersendiri.
 Dicadangkan untuk menukar ke lokasi berikut:
 {0}
-
 Adakah anda ingin menukar ke lokasi yang dicadangkan?
 Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</value>
     <comment>{0} is a file path</comment>
@@ -639,7 +558,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Anda perlu menetapkan lokasi muat turun</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>BubbleStrap tidak mempunyai akses untuk muat turun pada lokasi yang anda pilih. Sila pilih lokasi lain.</value>
+    <value>Bubblestrap tidak mempunyai akses untuk muat turun pada lokasi yang anda pilih. Sila pilih lokasi lain.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Penjejak aktiviti</value>
@@ -690,7 +609,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Jangan kembalikan saya ke aplikasi desktop</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Membolehkan untuk BubbleStrap mengesan permainan yang anda sedang mainkan di Roblox. Beberapa ciri lain juga memerlukan fungsi ini.</value>
+    <value>Membolehkan untuk Bubblestrap mengesan permainan yang anda sedang mainkan di Roblox. Beberapa ciri lain juga memerlukan fungsi ini.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Membenarkan aktiviti penjejak</value>
@@ -781,7 +700,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Tetapan Disimpan!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Tetapan BubbleStrap</value>
+    <value>Tetapan Bubblestrap</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Pilih bahasa pilihan</value>
@@ -805,7 +724,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Antaramuka Pengguna dan Susun Atur</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Benarkan BubbleStrap untuk mengurus "Fast Flags"</value>
+    <value>Benarkan Bubblestrap untuk mengurus "Fast Flags"</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Melumpuhkan opsyen ini akan menghalang sebarang konfigurasi disini daripada diterapkan dalam Roblox.</value>
@@ -817,7 +736,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Menghalang ia daripada muncul ketika anda menggerakkan tetikus ke bahagian atas skrin.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>BubbleStrap tidak dapat memuat turun Roblox</value>
+    <value>Bubblestrap tidak dapat memuat turun Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox tidak dapat dimuat turun buat masa ini. Sila baca halaman bantuan berikut untuk mendapatkan maklumat lebih lanjut: {0}</value>
@@ -838,7 +757,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Entri untuk '{0}' tidak sah kerana nilai mestilah nombor</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Tiada fail log yang akan ditulis untuk pelancaran ini kerana BubbleStrap tidak dapat menulis ke folder '{0}'</value>
+    <value>Tiada fail log yang akan ditulis untuk pelancaran ini kerana Bubblestrap tidak dapat menulis ke folder '{0}'</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Asal</value>
@@ -853,7 +772,7 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Entri untuk '{0}' tidak sah kerana tidak diformatkan dengan betul.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>Pemasangan BubbleStrap</value>
+    <value>Pemasangan Bubblestrap</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Selamat Datang</value>
@@ -872,18 +791,16 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
     <value>Seterusnya</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Terima kasih kerana memuat turun BubbleStrap.
-
-Satu-satunya laman web rasmi untuk memuat turun BubbleStrap adalah {0} dan {1}, jadi sila pastikan anda memuat turunnya dari sumber yang rasmi.
-
-Proses pemasangan ini akan cepat dan mudah, dan anda boleh mengkonfigurasi tetapan BubbleStrap selepas pemasangan ini.</value>
+    <value>Terima kasih kerana memuat turun Bubblestrap.
+Satu-satunya laman web rasmi untuk memuat turun Bubblestrap adalah {0} dan {1}, jadi sila pastikan anda memuat turunnya dari sumber yang rasmi.
+Proses pemasangan ini akan cepat dan mudah, dan anda boleh mengkonfigurasi tetapan Bubblestrap selepas pemasangan ini.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Sila klik 'Seterusnya' untuk meneruskan.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Anda cuba memasang BubbleStrap versi {0}, akan tetapi versi terbaru yang tersedia ialah {1}. Adakah anda ingin memuat turunnya?</value>
+    <value>Anda cuba memasang Bubblestrap versi {0}, akan tetapi versi terbaru yang tersedia ialah {1}. Adakah anda ingin memuat turunnya?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Pilih lokasi pemasangan</value>
@@ -904,16 +821,13 @@ Proses pemasangan ini akan cepat dan mudah, dan anda boleh mengkonfigurasi tetap
     <value>Ikon Start Menu</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>BubbleStrap telah berjaya dipasang.
-
-Roblox masih belum dipasang, dan ia akan dipasang apabila anda melancarkannya dengan BubbleStrap buat kali pertama. Namun, sebelum anda melakukannya, anda mungkin mahu mengkonfigurasi tetapan BubbleStrap terlebih dahulu.
-
-Selain itu, elakkan menggunakan pintasan "Roblox Player" untuk melancarkan Roblox, kerana BubbleStrap tidak akan dilancarkan bersama. Jika anda tidak melihat BubbleStrap muncul semasa melancarkan dari laman web, anda hanya perlu lancarkan Roblox dengan BubbleStrap sekali dari desktop untuk memperbaikinya.
-
+    <value>Bubblestrap telah berjaya dipasang.
+Roblox masih belum dipasang, dan ia akan dipasang apabila anda melancarkannya dengan Bubblestrap buat kali pertama. Namun, sebelum anda melakukannya, anda mungkin mahu mengkonfigurasi tetapan Bubblestrap terlebih dahulu.
+Selain itu, elakkan menggunakan pintasan "Roblox Player" untuk melancarkan Roblox, kerana Bubblestrap tidak akan dilancarkan bersama. Jika anda tidak melihat Bubblestrap muncul semasa melancarkan dari laman web, anda hanya perlu lancarkan Roblox dengan Bubblestrap sekali dari desktop untuk memperbaikinya.
 Apa yang anda ingin lakukan?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Konfigurasi tetapan BubbleStrap's</value>
+    <value>Konfigurasi tetapan Bubblestrap's</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Ubah suai semua ciri yang ditawarkannya</value>
@@ -925,21 +839,19 @@ Apa yang anda ingin lakukan?</value>
     <value>Ia akan membawa anda kembali ke aplikasi desktop setelah semuanya selesai</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Nyahpasang BubbleStrap</value>
+    <value>Nyahpasang Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Menyahpasang BubbleStrap akan membuang BubbleStrap daripada sistem anda, dan juga secara automatik mengkonfigurasi semula Roblox sebagai pelancar asal, jika ia masih dipasang.
+    <value>Menyahpasang Bubblestrap akan membuang Bubblestrap daripada sistem anda, dan juga secara automatik mengkonfigurasi semula Roblox sebagai pelancar asal, jika ia masih dipasang.
 Jika anda sedang menghapus atau memasang semula kerana mengalami masalah dengan Roblox, sila baca [halaman bantuan]({0}) ini terlebih dahulu.
-
-Proses penghapusan pemasangan mungkin tidak dapat membersihkan sepenuhnya, jadi anda mungkin perlu membersihkan secara manual fail yang tertinggal di tempat BubbleStrap dipasang.
-
-BubbleStrap telah dipasang di "{1}".</value>
+Proses penghapusan pemasangan mungkin tidak dapat membersihkan sepenuhnya, jadi anda mungkin perlu membersihkan secara manual fail yang tertinggal di tempat Bubblestrap dipasang.
+Bubblestrap telah dipasang di "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Simpan tetapan dan mod saya</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>Fail-fail anda akan disimpan di tempat BubbleStrap dipasang, dan akan dipulihkan secara automatik semasa pemasangan semula.</value>
+    <value>Fail-fail anda akan disimpan di tempat Bubblestrap dipasang, dan akan dipulihkan secara automatik semasa pemasangan semula.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Nyahpasang</value>
@@ -960,19 +872,18 @@ BubbleStrap telah dipasang di "{1}".</value>
     <value>Anda tidak mempunyai WebView2 runtime yang terpasang. Beberapa ciri Roblox tidak akan berfungsi dengan baik tanpa itu, seperti aplikasi desktop. Adakah anda ingin memuat turunnya sekarang?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>BubbleStrap tidak dapat membuat pintasan untuk desktop dan menu Start. Sila cuba lagi nanti melalui menu tetapan.</value>
+    <value>Bubblestrap tidak dapat membuat pintasan untuk desktop dan menu Start. Sila cuba lagi nanti melalui menu tetapan.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
-    <value>Semak [Wiki BubbleStrap]({0}) terlebih dahulu untuk melihat jika masalah ini telah diatasi dengan penyelesaian.
-
-Jika tidak, sila laporkan isu pengecualian ini kepada penyelenggara fork ini. JANGAN laporkan isu ini kepada GitHub BubbleStrap, kerana ini adalah yang versi tidak rasmi.</value>
+    <value>Semak [Wiki Bubblestrap]({0}) terlebih dahulu untuk melihat jika masalah ini telah diatasi dengan penyelesaian.
+Jika tidak, sila laporkan isu pengecualian ini kepada penyelenggara fork ini. JANGAN laporkan isu ini kepada GitHub Bubblestrap, kerana ini adalah yang versi tidak rasmi.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Ini adalah pintasan umum yang akan memaparkan menu pelancaran pelbagai pilihan. Pintasan untuk fungsi yang tertentu boleh dibuat kemudian dalam tetapan.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Menetapkan cara untuk BubbleStrap dilancarkan.</value>
+    <value>Menetapkan cara untuk Bubblestrap dilancarkan.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Umum</value>
@@ -1012,7 +923,7 @@ Jika tidak, sila laporkan isu pengecualian ini kepada penyelenggara fork ini. JA
     <value>Anda mempunyai perubahan yang tidak disimpan. Adakah anda pasti ingin menutup tanpa menyimpan?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Versi BubbleStrap yang anda lancarkan adalah lebih lama daripada versi yang anda pasang sekarang. Masalah mungkin berlaku dan tetapan anda mungkin diubah. Pemasangan semula disyorkan. Adakah anda pasti ingin meneruskan?</value>
+    <value>Versi Bubblestrap yang anda lancarkan adalah lebih lama daripada versi yang anda pasang sekarang. Masalah mungkin berlaku dan tetapan anda mungkin diubah. Pemasangan semula disyorkan. Adakah anda pasti ingin meneruskan?</value>
   </data>
   <data name="Dialog.PlayerError.FailedLaunch" xml:space="preserve">
     <value>Roblox tidak berjaya untuk dilancarkan.</value>
@@ -1022,20 +933,13 @@ Jika tidak, sila laporkan isu pengecualian ini kepada penyelenggara fork ini. JA
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Untuk mengetahui punca masalah ini berlaku dan cara mengatasinya, sila rujuk [artikel bantuan] ini ({0}).
-Periksa sama ada Roblox berfungsi dengan [pelancar asal] ({1}). Jika tidak, ini bermaksud masalah tersebut tidak berkaitan dengan BubbleStrap. Jika ia berfungsi, sila rujuk semula artikel bantuan tersebut.</value>
+Periksa sama ada Roblox berfungsi dengan [pelancar asal] ({1}). Jika tidak, ini bermaksud masalah tersebut tidak berkaitan dengan Bubblestrap. Jika ia berfungsi, sila rujuk semula artikel bantuan tersebut.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Data tidak dapat dimuat kerana ralat pada rangkaian.</value>
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Memuat, sila tunggu...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Sokongan</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Ini adalah individu yang telah menyokong BubbleStrap melalui Ko-fi. Terima kasih yang tidak terhingga kepada semua di sini!
-Setiap yang disenaraikan disini adalah mengikut jumlah sumbangan keseluruhan mereka.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Terdapat masalah dalam memuat tetapan anda. Ia telah di set semula kepada konfigurasi asal.</value>
@@ -1065,12 +969,11 @@ Setiap yang disenaraikan disini adalah mengikut jumlah sumbangan keseluruhan mer
     <value>Untuk pelancaran ini, Roblox tidak akan diperiksa untuk kemas kini, dan tiada perubahan kepada mod yang akan diterapkan.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>BubbleStrap tidak dapat diteruskan kerana Roblox perlu dipasang atau dikemas kini semula.</value>
+    <value>Bubblestrap tidak dapat diteruskan kerana Roblox perlu dipasang atau dikemas kini semula.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>BubbleStrap telah dipasang di lokasi ini sebelum ini dan masih ada, akan tetapi pemasang tidak dapat menggantikan fail executable lama.
-
-Sila buang fail BubbleStrap.exe secara manual dari lokasi pemasangan atau cuba mulakan semula sistem anda, dan kemudian cuba semula pemasangan selepas itu.</value>
+    <value>Bubblestrap telah dipasang di lokasi ini sebelum ini dan masih ada, akan tetapi pemasang tidak dapat menggantikan fail executable lama.
+Sila buang fail Bubblestrap.exe secara manual dari lokasi pemasangan atau cuba mulakan semula sistem anda, dan kemudian cuba semula pemasangan selepas itu.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Tidak tersedia</value>
@@ -1082,7 +985,7 @@ Sila buang fail BubbleStrap.exe secara manual dari lokasi pemasangan atau cuba m
     <value>Konfigurasi pada parameter aplikasi seperti tingkah laku skala DPI dan [pengoptimumam pada skrin penuh]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox masih belum dipasang. Sila lancarkan Roblox menggunakan BubbleStrap sekurang-kurangnya sekali sebelum mencuba menggunakan opsyen ini.</value>
+    <value>Roblox masih belum dipasang. Sila lancarkan Roblox menggunakan Bubblestrap sekurang-kurangnya sekali sebelum mencuba menggunakan opsyen ini.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Adakah anda pasti ingin membatalkan pemasangan ini?</value>
@@ -1098,19 +1001,10 @@ Sila buang fail BubbleStrap.exe secara manual dari lokasi pemasangan atau cuba m
     <value>Ekstrak ikon Roblox ke fail</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Membenarkan anda menggunakan pelbagai ikon Roblox BubbleStrap untuk pintasan anda. [Lihat bagaimana ia berfungsi.]({0})</value>
+    <value>Membenarkan anda menggunakan pelbagai ikon Roblox Bubblestrap untuk pintasan anda. [Lihat bagaimana ia berfungsi.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>BubbleStrap tidak dapat menulis ke Windows Registry, berkemungkinan antivirus sedang mengganggu dan menyebabkan masalah. Sila semak dan pastikan tiada apa-apa yang menghalang operasi BubbleStrap.</value>
-  </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Bulanan</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Sumbangan sekali</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analitik</value>
+    <value>Bubblestrap tidak dapat menulis ke Windows Registry, berkemungkinan antivirus sedang mengganggu dan menyebabkan masalah. Sila semak dan pastikan tiada apa-apa yang menghalang operasi Bubblestrap.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Set semula semua kepada tetapan asal</value>
@@ -1124,13 +1018,11 @@ Sila buang fail BubbleStrap.exe secara manual dari lokasi pemasangan atau cuba m
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Mod pengujian memudahkan anda menguji atau mencuba secara berulang bagaimana sesuatu tetapan anda tetapkan akan mempengaruhi Roblox.
-
 Semasa mod ini diaktifkan, ia akan melancarkan Roblox secara automatik selepas menutup menu Tetapan, dan membuka semula menu Tetapan selepas menutup Roblox, secara berulang sehingga anda mematikan ciri ini.
-
 Adakah anda ingin mengaktifkan mod pengujian?</value>
   </data>
   <data name="About.Translators.Description" xml:space="preserve">
-    <value>Semua terjemahan BubbleStrap yang diperoleh adalah dengan kerjasama ramai melalui [Crowdin]({0}). Setiap individu yang disenaraikan di sini adalah mereka yang menyumbangkan masa dan juga usaha untuk membantu menjayakan penterjemahan BubbleStrap. Jutaan terima kasih kepada mereka semua di sini!</value>
+    <value>Semua terjemahan Bubblestrap yang diperoleh adalah dengan kerjasama ramai melalui [Crowdin]({0}). Setiap individu yang disenaraikan di sini adalah mereka yang menyumbangkan masa dan juga usaha untuk membantu menjayakan penterjemahan Bubblestrap. Jutaan terima kasih kepada mereka semua di sini!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Pasang</value>
@@ -1150,7 +1042,7 @@ Adakah anda ingin mengaktifkan mod pengujian?</value>
     <value>Tersuai</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>BubbleStrap cuba menaik taraf Roblox tetapi gagal kerana fail Roblox sedang digunakan.
+    <value>Bubblestrap cuba menaik taraf Roblox tetapi gagal kerana fail Roblox sedang digunakan.
 Sila tutup sebarang aplikasi yang mungkin menggunakan fail Roblox, dan cuba lagi.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1160,47 +1052,35 @@ Sila tutup sebarang aplikasi yang mungkin menggunakan fail Roblox, dan cuba lagi
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Eksport</value>
-    <comment>Currently used under the "BubbleStrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="Dialog.Connectivity.Preventing" xml:space="preserve">
-    <value>Kemungkinan ada sesuatu yang menghalang BubbleStrap daripada menyambung ke internet.</value>
+    <value>Kemungkinan ada sesuatu yang menghalang Bubblestrap daripada menyambung ke internet.</value>
   </data>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Sambungan anda telah tamat masa, yang mungkin menunjukkan bahawa sambungan internet anda yang lemah atau terdapat sekatan firewall.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Tukar tetapan penempatan dan pemasangan untuk Roblox &amp; Bubblestrap.</value>
   </data>
   <data name="Common.Channel" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Saluran</value>
   </data>
   <data name="Menu.ChannelChanger.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Pilih saluran penempatan. Jangan berubah melainkan anda tahu apa yang anda lakukan.</value>
   </data>
   <data name="Common.Version" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Versi</value>
   </data>
   <data name="Common.VersionGuid" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Menu.Channel.RobloxUpgrades" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Panduan Versi</value>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox tidak lagi menyokong Windows 7 atau 8.1. Untuk terus bermain Roblox, sila naik taraf ke Windows 10 atau versi yang lebih baharu.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Mencuba mendapatkan aplikasi BubbleStrap terbaharu...</value>
-  </data>
-  <data name="Menu.BubbleStrap.Description" xml:space="preserve">
-    <value>Konfigurasi opsyen yang berkaitan dengan tingkah laku BubbleStrap itu sendiri.</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Title" xml:space="preserve">
-    <value>Benarkan penghantaran analitik</value>
-  </data>
-  <data name="Menu.BubbleStrap.Analytics.Description" xml:space="preserve">
-    <value>Untuk maklumat tentang apa yang kami kumpulkan dan sebabnya, rujuk dasar [privasi kami.]({0}). Ia adalah secara anonim dan tidak berniat jahat, kami janji.</value>
+    <value>Mencuba mendapatkan aplikasi Bubblestrap terbaharu...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Kosong</value>
@@ -1425,60 +1305,434 @@ Sila tutup sebarang aplikasi yang mungkin menggunakan fail Roblox, dan cuba lagi
     <value>Edit</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Perihal BubbleStrap</value>
+    <value>Perihal Bubblestrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Pilih versi menu keluar</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Masa aktif</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Jika anda ingin menggunakan kadar bingkai Roblox yang asal, tetapkan kepada 0.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Lokasi: {0}
+Masa aktif: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Had kadar bingkai</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Menyembunyikan maklumat versi dan pengeluaran semasa pelancaran.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Diaktifkan menggunakan [pintasan papan kekunci]({0}). Fungsi ini hanya akan berfungsi jika anda berada dalam [kumpulan BubbleStrap] sahaja ({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Sembunyikan butiran versi dan pengeluaran</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Aktifkan keupayaan untuk menyembunyikan GUI</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Menutup RobloxCrashHandler.exe secara automatik semasa pelancaran untuk mengurangkan penggunaan memori.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Pilihan yang anda pilih akan dipaksa diaktifkan dalam semua permainan. [Amaran! ia berkemungkinan akan menyebabkan masalah pencahayaan pada permainan]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Lumpuhkan Pengendali Ranap Roblox</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Pilihan teknologi pencahayaan</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Dayakan ini untuk memaparkan RPC Discord Bubblestrap tersuai pada profil anda semasa apl dibuka.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Nyahaktifkan kesan pasca pemprosesan</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>RPC Bubblestrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Nyahaktifkan bar tajuk skrin penuh</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Pilih bunyi...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Nyahaktifkan bayang pada pemain</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Keluarkan Bunyi Kematian Tersuai</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
-    <value>Saiz font</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Bunyi Kematian Tersuai</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Nilai asal adalah 1. Laraskan jika anda menggunakan font sendiri.</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Tukar bunyi kematian kepada mana-mana audio pilihan anda.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Nyahaktifkan tekstur permukaan rupa bumi</value>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Langit Kelabu</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Lesen Apache 2.0</value>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Permainan dengan langit tersuai mungkin tidak berfungsi.</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Sertai pelayan Discord kami</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkan</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Editor Bendera Pantas</value>
+  </data>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Muatkan</value>
+  </data>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Membatalkan peningkatan Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Saluran</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Direktori statik</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Beralih daripada versi-xxx kepada direktori pemasangan berasaskan BinaryType.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Memuat turun</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Status muat turun Bootstrapper</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Tukar rentetan muat turun. {0} ialah nama pakej, {1} ialah saiz pakej yang dimuat turun dan {2} ialah jumlah saiz pakej.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Pelancaran berbilang contoh</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Membenarkan untuk mempunyai lebih daripada satu contoh klien permainan Roblox dibuka serentak. Boleh menyebabkan masalah dengan apl desktop.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Kosongkan FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Nyahpepijat</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Menu Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Debloat menu Roblox dengan FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Kerahan</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studio</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Studio Roblox</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Menunjukkan pemain meninggalkan/menyertai pelayan yang anda sertai.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>taip</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Hash versi</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Paksa Bubblestrap untuk memuat turun versi daripada cincang tertentu. Tolong jangan ubah jika anda tidak tahu apa yang dilakukan oleh ini.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Simpan dan Lancarkan</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Peningkatan telah dilumpuhkan dengan pelanggan yang tiada.
+	Untuk mengelakkan masalah, peningkatan akan diteruskan.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Log pemain</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Mesej</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Saluran ini sudah lapuk dan mungkin tidak lagi dikemas kini. Sila gunakan saluran lain.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Saluran yang sedang anda gunakan ({0}) sudah lapuk dan nampaknya tidak lagi menerima kemas kini.
+Adakah anda mahu bertukar kepada saluran lalai ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Tindakan menukar saluran automatik</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox atau Bubblestrap mungkin cuba menukar saluran pilihan anda.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Tukar secara automatik</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Sentiasa gesa</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Jangan pernah berubah</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox cuba untuk menetapkan saluran anda kepada {0}, namun saluran pilihan semasa anda ialah {1}.
+Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Adakah anda ingin menyertakan FFlag yang dipratetap?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Saluran yang anda sedang gunakan ({0}) kini telah dihadkan daripada penggunaan awam. Anda kini berada pada saluran lalai ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Mengambil maklumat penggunaan terkini, sila tunggu...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Saluran yang ditentukan sama ada tidak wujud atau peribadi</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Gagal mengimport tetapan Bloxstrap.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Import tetapan daripada Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Pemasangan Bloxstrap tidak dijumpai.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Konfigurasikan pilihan yang berkaitan dengan gelagat Bubblestrap itu sendiri.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Kumpulkan maklumat yang boleh dimuat naik dalam talian untuk menyelesaikan masalah yang anda hadapi.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Konfigurasi tali gelembung</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Semua log Bubblestrap</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Lebih bersih</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap akan mengalih keluar data lama untuk menjimatkan ruang</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>tidak pernah</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Selepas 1 hari</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Selepas 1 minggu</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Selepas 1 bulan</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Selepas 2 bulan</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Bilakah fail perlu dipadamkan</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Fail yang lebih lama daripada jumlah yang ditetapkan akan dipadamkan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Muat turun lama akan dipadamkan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Fail log lama akan dipadamkan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Log tali buih</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Log Bubblestrap akan dipadamkan.</value>
+  </data>
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
+    <value>Konfigurasikan pilihan yang berkaitan dengan gelagat Bubblestrap itu sendiri.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags telah dilumpuhkan buat sementara waktu</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Untuk maklumat lanjut sertai pelayan Bubblestrap Discord</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Menunggu data</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Geometri</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Kawal cara Roblox memaparkan geometri 3D.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Perincian jaringan</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Kawal cara jejaring terperinci muncul dalam permainan.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Kualiti yang lebih rendah boleh menyebabkan jerat hilang.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Kualiti terendah</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Kualiti tertinggi</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Status tidak diketahui</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Tidak diketahui</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Had Framerate</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Buka kunci had kadar bingkai untuk Roblox. Melebihi 240 FPS tidak disyorkan.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Tetapan Global</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Tetapkan tetapan dalam permainan daripada menu Bubblestrap.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Ketelusan</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Ketelusan tersuai untuk elemen UI.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Pergerakan Dikurangkan</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Mengalih keluar animasi pada menu melarikan diri.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
+    <value>Saiz Font</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Pilih saiz fon yang sepatutnya muncul.</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Kualiti Grafik</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Sensitiviti tetikus</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Tukar kelajuan kamera akan bergerak dalam permainan.</value>
+  </data>
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR Didayakan</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Tetapkan kualiti grafik permainan anda</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Tetapkan sebagai Baca Sahaja</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Halang Roblox daripada mengatasi tetapan global.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>Penggantian Kualiti FRM</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Pilih kualiti FRM yang Roblox patut gunakan.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Benarkan Bubblestrap mengakses akaun Roblox anda</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Berikan akses kepada API Roblox menggunakan kuki pengesahan anda. [Apakah yang akan diakses oleh Bubblestrap?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Pemangkas Memori</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Membersihkan penggunaan memori Roblox secara berkala untuk mengurangkan penggunaan RAM.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Selang Trim Memori</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Berapa kerap (dalam saat) untuk memangkas ingatan. Nilai yang lebih rendah menggunakan lebih banyak CPU dan boleh menyebabkan permainan tidak stabil.</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Realiti Maya</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Kembalikan UI Studio Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Menggunakan UI Studio Roblox lama dan bukannya yang baharu.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Lumpuhkan Rumput Rupa bumi</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Pilih sama ada untuk menunjukkan atau menyembunyikan rumput hiasan pada rupa bumi untuk meningkatkan prestasi.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Gunakan Ambang Memori</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Potong hanya jika Roblox melebihi jumlah penggunaan RAM tertentu.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Had dalam MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Skrin penuh</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Mulakan Saiz Skrin</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Tetapkan lebar dan ketinggian lalai tetingkap permainan semasa permulaan.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Lebar (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Tinggi (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Kelantangan Parti</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Laraskan kelantangan sembang suara dalam parti anda.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Jilid Induk</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Laraskan kelantangan induk untuk semua audio dalam permainan.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Terjemahan Sembang Automatik</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Terjemah secara automatik mesej dalam sembang ke bahasa pilihan anda.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Maklum Balas Haptic</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Membolehkan getaran pengawal untuk memberi maklum balas sentuhan.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Input dan Kawalan</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>Vignette VR</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Menggunakan vignet VR yang menggelapkan tepi skrin untuk mengurangkan mabuk bergerak.</value>
   </data>
 </root>

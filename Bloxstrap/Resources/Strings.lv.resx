@@ -1,110 +1,51 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
+<?xml version="1.0" ?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -287,7 +228,6 @@ Spiedied šeit priekš vairāk informācijas</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Pārbaudiet [Bloxstrap Vikipēdiju]({0}), lai redzētu vai šai problēmai jau ir atrasts risinājums.
-
 Ja nav, tad lūdzu ziņojiet par šo izņēmumu caur [GitHub issue]({1}) līdzās ar žurnāla faila kopiju, kas tika izveidota.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
@@ -529,12 +469,8 @@ Ja nav, tad lūdzu ziņojiet par šo izņēmumu caur [GitHub issue]({1}) līdzā
     <value>To vieglprātīga izmantošana var izraisīt nestabilitāti vai negaidītas lietas.</value>
     <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
-  <data name="Menu.FastFlagEditor.BannerTitle" xml:space="preserve">
-    <value>Izmantot ar piesardzību.</value>
-  </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Dažiem no karogiem, kurus jūs mēģinat importēt jau ir iestatītas vērtības. Vai jūs vēlaties pārrakstīt to esošās vērtības ar tām, kas ir definētas importā?
-
 Šobrīd ir {0} konfliktējošas karogu definīcijas:
 {1}</value>
     <comment>{0} is a number, {1} is a comma-separated list</comment>
@@ -554,7 +490,6 @@ Ja nav, tad lūdzu ziņojiet par šo izņēmumu caur [GitHub issue]({1}) līdzā
   <data name="Menu.FastFlagEditor.InvalidJSON" xml:space="preserve">
     <value>JSON, ko jūs ierakstījāt, nav derīgs.
 Lūdzu pārbaudiet to un mēģiniet vēlreiz.
-
 Vairāk informācija:
 {0}</value>
     <comment>{0} is an exception message</comment>
@@ -567,8 +502,6 @@ Vairāk informācija:
   </data>
   <data name="Menu.FastFlagEditor.LargeConfig" xml:space="preserve">
     <value>Izskatās, ka jūs importējat ļoti lielu konfigurāciju. Jums vajadzētu importēt tikai tās konfigurācijas, ko jūs pilnīgi saprotat. NEKĀDĀ gadījumā neielīmējat citu cilvēku konfigurācijas. Ja jūs turpināsiet, ir ļoti ticams, ka jums būs stabilitātes problēmas un negaidītas izmaiņas.
-
-
 Vai jūs esat pārliecināts, ka vēlaties turpināt?</value>
   </data>
   <data name="Menu.FastFlagEditor.Search" xml:space="preserve">
@@ -579,20 +512,6 @@ Vai jūs esat pārliecināts, ka vēlaties turpināt?</value>
   </data>
   <data name="Menu.FastFlagEditor.Title" xml:space="preserve">
     <value>Ātro Karogu Redaktors</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Back" xml:space="preserve">
-    <value>Iet atpakaļ</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Continue" xml:space="preserve">
-    <value>Es zinu, ko es daru</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Header" xml:space="preserve">
-    <value>Vai jūs zinat, ko darat?</value>
-  </data>
-  <data name="Menu.FastFlagEditor.Warning.Text" xml:space="preserve">
-    <value>Ātrie Karogi ir ārkārtīgi jaudīgi, jo tos ir paredzēts izmantot tikai Roblox inženieriem. Lai gan tie var būt ļoti noderīgi, to manuāla konfigurēšana var radīt nopietnas problēmas ar stabilitāti un funkcionalitāti. NELIETOJIET redaktoru, ja neesat pārliecināts par to, ko darāt.
-
-NELIETOJIET to, lai importētu lielus citu personu izveidotus “karogu sarakstus”, kas sola uzlabot veiktspēju vai tamlīdzīgi. Tie ir pakļauti iepriekšminētajām problēmām, un tie radīs jums problēmas, jo jūs pilnībā neapzināsieties, ko tie maina. Ja grasāties to darīt, EJAT ATPAKAĻ.</value>
   </data>
   <data name="Menu.FastFlags.Description" xml:space="preserve">
     <value>Pārvaldīt, kā specifski Roblox parametri un funkcijas ir konfigurētas.</value>
@@ -631,10 +550,8 @@ NELIETOJIET to, lai importētu lielus citu personu izveidotus “karogu sarakstu
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
     <value>Mape, kurā jūs esat izvēlējies instalēt Bloxstrap jau kaut kas eksistē un tā NAV tukša. Ir stipri ieteicams Bloxstrap instalēt savā patstāvīgajā mapē.
-
 Mainīt ir ieteicams uz šo vietu:
 {0}
-
 Vai jūs vēlaties mainīt mapi uz šo ieteikto vietu?
 Izvēloties 'Nē' šis brīdinājums tiks ignorēts un instalēšana tiks turpināta.</value>
     <comment>{0} is a file path</comment>
@@ -877,9 +794,7 @@ Izvēloties 'Nē' šis brīdinājums tiks ignorēts un instalēšana tiks turpin
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
     <value>Paldies, ka lejupielādējāt Bloxstrap.
-
 Vienīgās oficiālās vietnes, no kurām lejupielādēt Bloxstrap ir {0} un {1}, tāpēc lūdzu pārbaudiet vai jūs ielādējāt Bloxstrap no oficiāla avota.
-
 Šis instalēšans process būs ātrs un vienkāršs, un jūs varēsiet konfigurēt jebkuru no Bloxstrap iestatījumiem pēc instalācijas.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
@@ -909,9 +824,7 @@ Vienīgās oficiālās vietnes, no kurām lejupielādēt Bloxstrap ir {0} un {1}
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
     <value>Bloxstrap ir ticis veiksmīgi instalēts.
-
 Roblox vēl nav ticis instalēts, tas notiks, kad jūs to palaidīsiet ar Bloxstrap pirmo reizi. Bet, pirms jūs to darat, jūs varētu vēlēties konfigurēt Bloxstrap iestatījumus vispirms.
-
 Neizmantojat "Roblox Player" īsceļu, lai atvērtu Roblox, jo Bloxstrap nepalaidīsies kopā ar Roblox. 
 Ja neredzat Bloxstrap parādāmies, kad palaižat Roblox no mājaslapas, vienkārši vienreiz palaižat Roblox ar Bloxstrap no darbavirsmas, lai šo problēmu salabotu.
 Ko tu vēlies darīt?</value>
@@ -933,9 +846,7 @@ Ko tu vēlies darīt?</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
     <value>Atinstalējot, Bloxstrap tiks izņemts no jūsu sistēmas, un automātiski rekonfigurēs Roblox uz noklusējuma palaidēju, ja tas vēl ir ielādēts.
-
 Ja jūs atinstalējat vai pārinstalējat, jo jums ir problēms are Roblox, izlasiet [šo palīdzības lapu]({0}) vispirms.
-
 Atinstalēšans process varētu nebūt spējīgs pilnībā visu izdzēst, tāpēc jums vajadzēs manuāli dzēst pāri palikušos failus vietā, kur Bloxstrap bija instalēts.
 Bloxstrap tika instalēts "{1}".</value>
   </data>
@@ -968,7 +879,6 @@ Bloxstrap tika instalēts "{1}".</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Pārbaudiet [Bloxstrap Vikipēdija]({0}), lai redzētu vai šai problēmai jau ir risinājums.
-
 Ja nav, tad lūdzu ziņojiet par šo izņēmumu šī fork veidotājiem. NEZIŅOJIET par šo Bloxstrap GitHub issues sadaļā, jo šī ir neoficiāla uzbūve.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
@@ -1028,8 +938,6 @@ Vai jūs esat drošs, ka vēlaties turpināt?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>Priekš informācijas, kāpēc šis varētu notikt un kā to atrisināt, lūdzu lasiet [šo palīdzības rakstu]({0}).
-
-
 Pārbaudiet vai Roblox strādā ar [oriģinālo palaidēju]({1}).
 Ja nē, tad šī nav Bloxstrap problēma. Ja jā, tad skatiet palīdzības rakstu.</value>
   </data>
@@ -1038,13 +946,6 @@ Ja nē, tad šī nav Bloxstrap problēma. Ja jā, tad skatiet palīdzības rakst
   </data>
   <data name="Common.Loading" xml:space="preserve">
     <value>Ielādē, lūdzu uzgaidiet...</value>
-  </data>
-  <data name="About.Supporters.Title" xml:space="preserve">
-    <value>Atbalstītāji</value>
-  </data>
-  <data name="About.Supporters.Description" xml:space="preserve">
-    <value>Šie ir tie cilvēki, kas ir atbalstījuši Bloxstrap caur Ko-fi. Milzīgs paldies visiem šeit!
-Katrs cilvēks ir sarindots pēc viņu atbalsta.</value>
   </data>
   <data name="JsonManager.SettingsLoadFailed" xml:space="preserve">
     <value>Jūsu Iestatījumi nevāreja tikt ielādēti. Tie ir atiestatīti uz noklusējuma konfigurāciju.</value>
@@ -1078,7 +979,6 @@ Katrs cilvēks ir sarindots pēc viņu atbalsta.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
     <value>Bloxstrap jau ir ticis instalēts šajā vietā iepriekš un joprojām te atrodas, bet instalētājs nevar pārrakstīt veco izpildāmo failu.
-
 Lūdzu manuāli dzēsiet Bloxstrap.exe no instalēšanas vietas, vai pamēģiniet restartēt datoru, un tad vēlreiz mēģiniet instalēt.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
@@ -1113,15 +1013,6 @@ Lūdzu manuāli dzēsiet Bloxstrap.exe no instalēšanas vietas, vai pamēģinie
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
     <value>Bloxstrap nespēj rakstīt iekš Windows Registry. Visticamāk, antivīruss iejaucas un rada problēmas. Lūdzu pārbaudiet, vai nav nekas, kas varētu traucēt Bloxstrap darbībām.</value>
   </data>
-  <data name="About.Supporters.Monthly" xml:space="preserve">
-    <value>Ikmēneša</value>
-  </data>
-  <data name="About.Supporters.OneOff" xml:space="preserve">
-    <value>Vienreizēji</value>
-  </data>
-  <data name="Common.Analytics" xml:space="preserve">
-    <value>Analītikas</value>
-  </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Atiestatīt visu uz noklusējumu</value>
   </data>
@@ -1134,7 +1025,6 @@ Lūdzu manuāli dzēsiet Bloxstrap.exe no instalēšanas vietas, vai pamēģinie
   </data>
   <data name="Menu.TestMode.Prompt" xml:space="preserve">
     <value>Testēšanas režīms padara testēšanu daudz vieglāku, redzot, kā tavi iestatījumi maina Roblox.
-
 Kamēr iespējots, tas automātiski atvērs Roblox pēc iestatījumu aizvēršanas, un no jauna atvērs Iestatījumus pēc Roblox aizvēršanas, ciklā, kamēr jūs to atspējosiet.
 Vai jūs vēlaties iespējot testēšanas režīmu?</value>
   </data>
@@ -1160,7 +1050,6 @@ Vai jūs vēlaties iespējot testēšanas režīmu?</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
     <value>Bloxstrap centās jaunināt Roblox, bet nevarēja, jo Roblox faili vēl tiek izmantoti.
-
 Lūdzu aizveriet jebkuras aplikācijas, kas varētu izmantot Roblox failu un vēlreiz atveriet Bloxstrap.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1408,79 +1297,441 @@ Nav ieteicams, ja tev ir lēns internets. Vismaz 3GB ar brīvu vietu ir nepiecie
   <data name="About.Title" xml:space="preserve">
     <value>Par Bloxstrap</value>
   </data>
-  <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
-    <value>Vēlamā escape izvēlnes versija</value>
+  <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
+    <value>Darbības laiks</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
-    <value>Iestatiet 0 uz noklusējumu, ja jūs vēlaties izmantot Roblox iebūvēto kadru sekundē atbloķētāju.</value>
+  <data name="ContextMenu.ServerDetails.Notification.Text" xml:space="preserve">
+    <value>Atrašanās vieta: {0}
+Darbības laiks: {1}</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
-    <value>Kadru sekundē limits</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Description" xml:space="preserve">
+    <value>Slēpj versijas un ražošanas informāciju palaišanas laikā.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
-    <value>Iespējots ar [taustiņu kombinācijām]({0}). Strādā tikai. ja tu esi [Bloxstrap grupā]({1}).</value>
+  <data name="Menu.Behaviour.HideBootstrapperInfo.Title" xml:space="preserve">
+    <value>Paslēpt versijas un ražošanas informāciju</value>
   </data>
-  <data name="Menu.FastFlags.Presets.HideGuis.Title" xml:space="preserve">
-    <value>Iespējot spēju paslēpt GUI</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Description" xml:space="preserve">
+    <value>Automātiski aizver RobloxCrashHandler.exe pēc palaišanas, lai samazinātu atmiņas izmantošanu.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Description" xml:space="preserve">
-    <value>Izvēlētais piespiedu kārtā tiks iespējots katrā spēlē.
-[Uzmanību, var radīt problēmas ar gaismu!]({0})</value>
+  <data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
+    <value>Atspējot Roblox Crash Handler</value>
   </data>
-  <data name="Menu.FastFlags.Presets.LightingTechnology.Title" xml:space="preserve">
-    <value>Vēlamā gaismas tehnoloģija</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Description" xml:space="preserve">
+    <value>Iespējojiet šo funkciju, lai atvērtā lietotnē jūsu profilā tiktu parādīts pielāgots Bubblestrap Discord RPC.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePostFX.Title" xml:space="preserve">
-    <value>Atspējot pēcapstrādes efektus</value>
+  <data name="Menu.Integrations.ShowBubblestrapRPC.Title" xml:space="preserve">
+    <value>Bubblestrap RPC</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Title" xml:space="preserve">
-    <value>Atspējot pilnekrāna virsrakstjoslu</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Choose" xml:space="preserve">
+    <value>Izvēlieties skaņu...</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisablePlayerShadows.Title" xml:space="preserve">
-    <value>Atspējot spēlētāju ēnas</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Remove" xml:space="preserve">
+    <value>Noņemt pielāgotu nāves skaņu</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Title" xml:space="preserve">
-    <value>Fonta izmērs</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Title" xml:space="preserve">
+    <value>Pielāgots nāves skaņas</value>
   </data>
-  <data name="Menu.FastFlags.Presets.FontPadding.Description" xml:space="preserve">
-    <value>Noklusējuma vērtība ir 1. Izmainiet to, ja jūs izmantojat pielāgotu fontu.</value>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Description" xml:space="preserve">
+    <value>Mainiet nāves skaņu uz jebkuru audio failu pēc savas izvēles.</value>
   </data>
-  <data name="Menu.FastFlags.Presets.DisableTerrainTextures.Title" xml:space="preserve">
-    <value>Atspējot reljefa tekstūras</value>
+  <data name="Menu.FastFlags.GraySky.Title" xml:space="preserve">
+    <value>Pelēkā debess</value>
   </data>
-  <data name="Menu.About.Licenses.Apache" xml:space="preserve">
-    <value>Apache Licence 2.0</value>
+  <data name="Menu.FastFlags.Presets.GraySky.Description" xml:space="preserve">
+    <value>Spēles ar pielāgotām debesīm var nedarboties.</value>
   </data>
-  <data name="Menu.GBSEditor.Title" xml:space="preserve">
-    <value />
+  <data name="LaunchMenu.Discord" xml:space="preserve">
+    <value>Pievienojies mūsu Discord serverim</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Title" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
+    <value>OpenGL</value>
   </data>
-  <data name="Menu.GBSEditor.Transparency.Description" xml:space="preserve">
-    <value />
+  <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
+    <value>Vulkāns</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Title" xml:space="preserve">
-    <value>Iespējo analītiku sūtīšanu</value>
+  <data name="Common_FastFlags" xml:space="preserve">
+    <value>Ātrs karogu redaktors</value>
   </data>
-  <data name="Menu.Bloxstrap.Analytics.Description" xml:space="preserve">
-    <value>Tas ir anonīmi un nav ļauni, apsolam. Priekš ieskata, ko mēs vācam un kāpēc, skatiet mūsu [privātuma politiku]({0}).</value>
+  <data name="Menu.Load" xml:space="preserve">
+    <value>Slodze</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Title" xml:space="preserve">
-    <value>Eksportēt diagnostikas datus</value>
+  <data name="Bootstrapper.Status.CancelUpgrade" xml:space="preserve">
+    <value>Roblox atjauninājuma atcelšana.</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
-    <value>Savākt informāciju, kas var tikt augšupielādēta tiešsaistē, lai palīdzētu atrisināt problēmu, kas jums ir.</value>
+  <data name="Menu.Behaviour.Channel.Title" xml:space="preserve">
+    <value>Kanāls</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
-    <value>Bloxstrap konfigurācija</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Menu.Channel.Description" xml:space="preserve">
+    <value>Mainiet Roblox un Bubblestrap izvietošanas un instalēšanas iestatījumus.</value>
   </data>
-  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
-    <value>Visi Bloxstrap žurnāli</value>
-    <comment>Label that appears next to a checkbox</comment>
+  <data name="Common.Channel" xml:space="preserve">
+    <value>Kanāls</value>
   </data>
-  <data name="Menu.GBSEditor.Graphics.Description" xml:space="preserve">
-    <value />
+  <data name="Menu.ChannelChanger.Description" xml:space="preserve">
+    <value>Izvēlieties izvietošanas kanālu. Nemainiet, ja nezināt, ko darāt.</value>
+  </data>
+  <data name="Common.Version" xml:space="preserve">
+    <value>Versija</value>
+  </data>
+  <data name="Common.VersionGuid" xml:space="preserve">
+    <value>Versijas identifikators</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Title" xml:space="preserve">
+    <value>Statiskais katalogs</value>
+  </data>
+  <data name="Menu.Channel.StaticDirectory.Description" xml:space="preserve">
+    <value>Pāriet no versijas xxx uz BinaryType balstītiem instalācijas direktorijiem.</value>
+  </data>
+  <data name="Bootstrapper.Status.Downloading" xml:space="preserve">
+    <value>Lejupielāde</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Title" xml:space="preserve">
+    <value>Bootstrapper lejupielādes statuss</value>
+  </data>
+  <data name="Menu.Appearance.BootstrapperDownloading.Description" xml:space="preserve">
+    <value>Mainiet lejupielādes virkni. {0} ir pakotnes nosaukums, {1} ir lejupielādēto pakotņu izmērs un {2} ir pakotņu kopējais izmērs.</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Title" xml:space="preserve">
+    <value>Vairāku instancu palaišana</value>
+  </data>
+  <data name="Menu.Behaviour.MultiInstances.Description" xml:space="preserve">
+    <value>Ļauj vienlaikus atvērt vairāk nekā vienu Roblox spēļu klienta instanci. Var radīt problēmas ar datora lietotni.</value>
+  </data>
+  <data name="Menu.FlagProfiles.ClearFlags" xml:space="preserve">
+    <value>Dzēst FFlags</value>
+  </data>
+  <data name="Common.Debug" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
+    <value>Roblox izvēlne</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
+    <value>Atbrīvojiet Roblox izvēlni ar FFlags</value>
+  </data>
+  <data name="Common.Deployment" xml:space="preserve">
+    <value>Ieviešana</value>
+  </data>
+  <data name="Common.Studio" xml:space="preserve">
+    <value>Studija</value>
+  </data>
+  <data name="Common.RobloxStudio" xml:space="preserve">
+    <value>Roblox studija</value>
+  </data>
+  <data name="Menu.Context.PlayerLogs.Description" xml:space="preserve">
+    <value>Parāda spēlētājus, kuri pamet/pievienojas serverim, kurā atrodaties.</value>
+  </data>
+  <data name="Common.Type" xml:space="preserve">
+    <value>Tips</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Title" xml:space="preserve">
+    <value>Versijas hash</value>
+  </data>
+  <data name="Menu.Channel.VersionHash.Desription" xml:space="preserve">
+    <value>Piespiediet Bubblestrap lejupielādēt versiju no konkrēta hash. Lūdzu, nemainiet, ja nezināt, ko tas dara.</value>
+  </data>
+  <data name="Menu.SaveAndLaunch" xml:space="preserve">
+    <value>Saglabāt un palaist</value>
+  </data>
+  <data name="Bootstrapper.Dialog.NoUpgradeWithoutClient" xml:space="preserve">
+    <value>Atjauninājumi tika atspējoti, jo trūka klienta.
+Lai novērstu problēmas, atjaunināšana tiks turpināta.</value>
+  </data>
+  <data name="ContextMenu.PlayerLogs.Title" xml:space="preserve">
+    <value>Spēlētāju žurnāli</value>
+  </data>
+  <data name="Common.Message" xml:space="preserve">
+    <value>Ziņojums</value>
+  </data>
+  <data name="Common.Profiles" xml:space="preserve">
+    <value>Profili</value>
+  </data>
+  <data name="Menu.Deployment.Channel.OutOfDate" xml:space="preserve">
+    <value>Šis kanāls ir novecojis un, visticamāk, vairs netiek atjaunināts. Lūdzu, izmantojiet citu kanālu.</value>
+  </data>
+  <data name="Bootstrapper.Dialog.ChannelOutOfDate" xml:space="preserve">
+    <value>Kanāls, kurā jūs pašlaik atrodaties ({0}), ir novecojis un, šķiet, vairs nesaņem atjauninājumus.
+Vai vēlaties pāriet uz noklusējuma kanālu ({1})?</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Title" xml:space="preserve">
+    <value>Automātiska kanālu maiņa</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Description" xml:space="preserve">
+    <value>Roblox vai Bubblestrap var mēģināt mainīt jūsu izvēlēto kanālu.</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Automatic" xml:space="preserve">
+    <value>Mainīt automātiski</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Prompt" xml:space="preserve">
+    <value>Vienmēr ātri</value>
+  </data>
+  <data name="Menu.Channel.ChangeAction.Ignore" xml:space="preserve">
+    <value>Nekad nemainies</value>
+  </data>
+  <data name="Bootstrapper.Bootstrapper.Dialog.PromptChannelChange" xml:space="preserve">
+    <value>Roblox mēģina iestatīt jūsu kanālu uz {0}, taču jūsu pašreizējais vēlamais kanāls ir {1}.
+Vai vēlaties mainīt savu vēlamo kanālu uz {0}?</value>
+  </data>
+  <data name="Menu.FastFlagEditor.ExportJson.IncludePresets" xml:space="preserve">
+    <value>Vai vēlaties iekļaut iepriekš iestatītus FFlags?</value>
+  </data>
+  <data name="Boostrapper.Dialog.UnauthorizedChannel" xml:space="preserve">
+    <value>Kanāls, kurā jūs pašlaik atrodaties ({0}), tagad ir ierobežots publiskai lietošanai. Tagad jūs atradīsieties noklusējuma kanālā ({1}).</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Fetching" xml:space="preserve">
+    <value>Iegūstot jaunāko informāciju par izvietošanu, lūdzu, uzgaidiet...</value>
+  </data>
+  <data name="Menu.Channel.Switcher.Unauthorized" xml:space="preserve">
+    <value>Norādītais kanāls vai nu nepastāv, vai ir privāts.</value>
+  </data>
+  <data name="Installer.FailedToImportSettings" xml:space="preserve">
+    <value>Neizdevās importēt Bloxstrap iestatījumus.
+{0}</value>
+  </data>
+  <data name="Installer.ImportSettings" xml:space="preserve">
+    <value>Importēt iestatījumus no Bloxstrap</value>
+  </data>
+  <data name="Installer.InstallationNotFound" xml:space="preserve">
+    <value>Bloxstrap instalācija netika atrasta.</value>
+  </data>
+  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+    <value>Konfigurējiet opcijas, kas saistītas ar Bubblestrap darbību.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+    <value>Vāc informāciju, ko var augšupielādēt tiešsaistē, lai atrisinātu problēmu, ar kuru saskaries.</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+    <value>Bubblestrap konfigurācija</value>
+  </data>
+  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+    <value>Visi Bubblestrap žurnāli</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
+    <value>Tīrītājs</value>
+  </data>
+  <data name="Menu.Bootstrapper.CleanUp.Description" xml:space="preserve">
+    <value>Bubblestrap izdzēsīs vecos datus, lai ietaupītu vietu</value>
+  </data>
+  <data name="Enums.CleanerOptions.Never" xml:space="preserve">
+    <value>Nekad</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneDay" xml:space="preserve">
+    <value>Pēc 1 dienas</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneWeek" xml:space="preserve">
+    <value>Pēc 1 nedēļas</value>
+  </data>
+  <data name="Enums.CleanerOptions.OneMonth" xml:space="preserve">
+    <value>Pēc 1 mēneša</value>
+  </data>
+  <data name="Enums.CleanerOptions.TwoMonths" xml:space="preserve">
+    <value>Pēc 2 mēnešiem</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Title" xml:space="preserve">
+    <value>Kad faili ir jādzēš?</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Age.Description" xml:space="preserve">
+    <value>Faili, kas ir vecāki par noteiktu laiku, tiks dzēsti.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Title" xml:space="preserve">
+    <value>Cache</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Cache.Description" xml:space="preserve">
+    <value>Vecās lejupielādes tiks dzēstas.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Title" xml:space="preserve">
+    <value>Baļķi</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.Logs.Description" xml:space="preserve">
+    <value>Vecie žurnālu faili tiks dzēsti.</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Title" xml:space="preserve">
+    <value>Bubblestrap žurnāli</value>
+  </data>
+  <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
+    <value>Bubblestrap žurnāli tiks dzēsti.</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
+    <value>FastFlags ir uz laiku atspējots</value>
+  </data>
+  <data name="Menu.FastFlagsDisabled.Description" xml:space="preserve">
+    <value>Lai iegūtu vairāk informācijas, pievienojies Bubblestrap Discord serverim.</value>
+  </data>
+  <data name="Bootstrapper.Status.WaitingForData" xml:space="preserve">
+    <value>Gaidot datus</value>
+  </data>
+  <data name="Common.Geometry" xml:space="preserve">
+    <value>Ģeometrija</value>
+  </data>
+  <data name="Menu.FastFlags.Geometry.Description" xml:space="preserve">
+    <value>Kontrolējiet, kā Roblox attēlo 3D ģeometriju.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Header" xml:space="preserve">
+    <value>Tīkla detaļas</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.Description" xml:space="preserve">
+    <value>Kontrolējiet, cik detalizēti tīkli parādās spēlē.</value>
+  </data>
+  <data name="Menu.FastFlags.MeshDetail.LowQualityWarning" xml:space="preserve">
+    <value>Zemāka kvalitāte var izraisīt tīklu pazudināšanu.</value>
+  </data>
+  <data name="Common.LowestQuality" xml:space="preserve">
+    <value>Vissliktākā kvalitāte</value>
+  </data>
+  <data name="Common.HighestQuality" xml:space="preserve">
+    <value>Augstākā kvalitāte</value>
+  </data>
+  <data name="Common.UnknownStatus" xml:space="preserve">
+    <value>Nezināms statuss</value>
+  </data>
+  <data name="Common.Unknown" xml:space="preserve">
+    <value>Nezināms</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Title" xml:space="preserve">
+    <value>Kadru ātruma ierobežojums</value>
+  </data>
+  <data name="Menu.GPSEditor.FramerateCap.Description" xml:space="preserve">
+    <value>Atbloķējiet Roblox kadru ātruma ierobežojumu. Nav ieteicams pārsniegt 240 FPS.</value>
+  </data>
+  <data name="Common.GlobalSettings" xml:space="preserve">
+    <value>Vispārējie iestatījumi</value>
+  </data>
+  <data name="Menu.GBSEditor.Description" xml:space="preserve">
+    <value>Spēles iestatījumus varat konfigurēt Bubblestrap izvēlnē.</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Title" xml:space="preserve">
+    <value>Pārredzamība</value>
+  </data>
+  <data name="Menu.GBSEditor.UITransparency.Description" xml:space="preserve">
+    <value>Pielāgota caurspīdība UI elementiem.</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Title" xml:space="preserve">
+    <value>Samazināta kustība</value>
+  </data>
+  <data name="Menu.GBSEditor.ReducedMotion.Description" xml:space="preserve">
+    <value>Noņem animāciju iziešanas izvēlnē.</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Title" xml:space="preserve">
+    <value>Fontu izmērs</value>
+  </data>
+  <data name="Menu.GBSEditor.FontSize.Description" xml:space="preserve">
+    <value>Izvēlieties, cik lielam jābūt fontam.</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Title" xml:space="preserve">
+    <value>Grafikas kvalitāte</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Title" xml:space="preserve">
+    <value>Peles jutīgums</value>
+  </data>
+  <data name="Menu.GBSEditor.MouseSensitivity.Description" xml:space="preserve">
+    <value>Mainiet kameras kustības ātrumu spēlē.</value>
+  </data>
+  <data name="Menu.GBSEditor.VREnabled.Title" xml:space="preserve">
+    <value>VR iespējots</value>
+  </data>
+  <data name="Menu.GBSEditor.GraphicsQuality.Description" xml:space="preserve">
+    <value>Iestatiet spēles grafisko kvalitāti</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Title" xml:space="preserve">
+    <value>Iestatīt kā tikai lasāmu</value>
+  </data>
+  <data name="Menu.GBSEditor.ReadOnly.Description" xml:space="preserve">
+    <value>Neļaujiet Roblox pārrakstīt globālos iestatījumus.</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Title" xml:space="preserve">
+    <value>FRM kvalitātes pārrakstīšana</value>
+  </data>
+  <data name="Menu.FastFlags.FRMQualityOverride.Description" xml:space="preserve">
+    <value>Izvēlieties FRM kvalitāti, ko Roblox izmantos.</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Title" xml:space="preserve">
+    <value>Atļaujiet Bubblestrap piekļūt jūsu Roblox kontam</value>
+  </data>
+  <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
+    <value>Nodrošiniet piekļuvi Roblox API, izmantojot savu autentifikācijas sīkfailu. [Kāda būs Bubblestrap piekļuve?]({0})</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Atmiņas apgriezējs</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
+    <value>Periodiski dzēš Roblox atmiņas izmantošanu, lai samazinātu RAM patēriņu.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
+    <value>Periodiski dzēš Roblox atmiņas izmantošanu, lai samazinātu RAM patēriņu.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
+    <value>Atmiņas apgriešanas intervāls</value>
+  </data>
+  <data name="Common.VirutalReality" xml:space="preserve">
+    <value>Virtuālā realitāte</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
+    <value>Atgriezties pie Roblox Studio lietotāja saskarnes</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
+    <value>Izmanto veco Roblox Studio lietotāja interfeisu, nevis jauno.</value>
+  </data>
+  <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
+    <value>Atspējot reljefa zāli</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.Grass.Description" xml:space="preserve">
+    <value>Izvēlieties, vai parādīt vai slēpt dekoratīvo zāli uz reljefa, lai uzlabotu veiktspēju.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Title" xml:space="preserve">
+    <value>Izmantojiet atmiņas slieksni</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
+    <value>Samaziniet tikai tad, ja Roblox pārsniedz noteiktu RAM izmantošanas apjomu.</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
+    <value>Limits MB</value>
+  </data>
+  <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
+    <value>Pilnekrāna režīms</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Title" xml:space="preserve">
+    <value>Sākuma ekrāna izmērs</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Description" xml:space="preserve">
+    <value>Iestatiet spēles loga standarta platumu un augstumu pēc palaišanas.</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.X.Label" xml:space="preserve">
+    <value>Platums (X)</value>
+  </data>
+  <data name="Menu.GBSEditor.StartScreenSize.Y.Label" xml:space="preserve">
+    <value>Augstums (Y)</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Title" xml:space="preserve">
+    <value>Puses apjoms</value>
+  </data>
+  <data name="Menu.GBSEditor.PartyVolume.Description" xml:space="preserve">
+    <value>Pielāgojiet balss čata skaļumu savā grupā.</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Title" xml:space="preserve">
+    <value>Galvenais skaļums</value>
+  </data>
+  <data name="Menu.GBSEditor.MasterVolume.Description" xml:space="preserve">
+    <value>Pielāgojiet galveno skaļumu visam spēles audio.</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Title" xml:space="preserve">
+    <value>Automātiska tērzēšanas tulkošana</value>
+  </data>
+  <data name="Menu.GPSEditor.ChatTranslation.Description" xml:space="preserve">
+    <value>Automātiski tulkojiet tērzēšanas ziņojumus jūsu vēlamajā valodā.</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Title" xml:space="preserve">
+    <value>Haptiskā atgriezeniskā saite</value>
+  </data>
+  <data name="Menu.GPSEditor.HapticFeedback.Description" xml:space="preserve">
+    <value>Ļauj kontrolierim vibrēt, lai sniegtu taustāmu atgriezenisko saiti.</value>
+  </data>
+  <data name="Menu.GPSEditor.InputandControls.Title" xml:space="preserve">
+    <value>Ievade un vadības elementi</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>VR vinjete</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
+    <value>Piemēro VR vinjeti, kas padara ekrāna malas tumšākas, lai mazinātu kustību izraisītu nelabumu.</value>
   </data>
 </root>

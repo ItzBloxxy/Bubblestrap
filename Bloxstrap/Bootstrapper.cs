@@ -104,13 +104,13 @@ namespace Bloxstrap
             Deployment.BinaryType = AppData.BinaryType;
         }
 
-        // we will use this later on since we have to wait for remote data
+        // we will use this to ensure local data is loaded
         private async Task SetupPackageDictionaries()
         {
-            await App.RemoteData.WaitUntilDataFetched(); // does this even work?
+            await App.LocalData.WaitUntilDataFetched(); // does this even work?
 
-            var localData = App.RemoteData.Prop.PackageMaps[IsStudioLaunch ? "studio" : "player"];
-            var commonData = App.RemoteData.Prop.PackageMaps.CommonPackageMap;
+            var localData = App.LocalData.Prop.PackageMaps[IsStudioLaunch ? "studio" : "player"];
+            var commonData = App.LocalData.Prop.PackageMaps.CommonPackageMap;
 
             PackageDirectoryMap = new(commonData);
 
@@ -260,7 +260,7 @@ namespace Bloxstrap
 
             if (!_noConnection)
             {
-                if (App.RemoteData.LoadedState == GenericTriState.Unknown) // we dont want it to flicker
+                if (App.LocalData.LoadedState == GenericTriState.Unknown) // we dont want it to flicker
                     SetStatus(Strings.Bootstrapper_Status_WaitingForData);
 
                 await SetupPackageDictionaries(); // mods also require it
@@ -1142,7 +1142,6 @@ namespace Bloxstrap
 
             List<Process> processes = new List<Process>();
             processes.AddRange(Process.GetProcessesByName("RobloxPlayerBeta"));
-            processes.AddRange(Process.GetProcessesByName("eurotrucks2"));
             processes.AddRange(Process.GetProcessesByName("RobloxCrashHandler")); // roblox studio doesnt depend on crash handler being open, so this should be fine
 
             foreach (Process process in processes)
@@ -1256,7 +1255,7 @@ namespace Bloxstrap
                     return;
 
                 // check if the package should be ignored
-                if (App.RemoteData.Prop.IgnoredPackages.Contains(package.Name))
+                if (App.LocalData.Prop.IgnoredPackages.Contains(package.Name))
                     continue;
 
                 // download all the packages synchronously

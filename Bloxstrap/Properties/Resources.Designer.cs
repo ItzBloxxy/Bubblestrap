@@ -153,6 +153,16 @@ namespace Bloxstrap.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        public static System.Drawing.Icon Icon2026 {
+            get {
+                object obj = ResourceManager.GetObject("Icon2026", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         public static System.Drawing.Icon IconBloxstrapClassic {
             get {
                 object obj = ResourceManager.GetObject("IconBloxstrapClassic", resourceCulture);

@@ -46,10 +46,10 @@
         </Grid>
 
         <WrapPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_GithubRepository}" Icon="Code24" NavigateUri="https://github.com/ItzBloxxy/Bubblestrap" />
-            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_HelpInformation}" Icon="BookQuestionMark24" NavigateUri="https://bloxstraplabs.com/wiki/" />
-            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_ReportIssue}" Icon="BookExclamationMark24" NavigateUri="https://github.com/ItzBloxxy/Bubblestrap/issues" />
-            <ui:Anchor Margin="0,0,0,8" Content="{x:Static resources:Strings.Menu_About_DiscordServer}" Icon="Chat48" NavigateUri="https://discord.gg/VTKQCSwPvU" />
+            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_GithubRepository}" Icon="Code24" FontWeight="Medium" NavigateUri="https://github.com/ItzBloxxy/Bubblestrap" />
+            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_HelpInformation}" Icon="BookQuestionMark24" FontWeight="Medium" NavigateUri="https://bloxstraplabs.com/wiki/" />
+            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_ReportIssue}" Icon="BookExclamationMark24" FontWeight="Medium" NavigateUri="https://github.com/ItzBloxxy/Bubblestrap/issues" />
+            <ui:Anchor Margin="0,0,0,8" Content="{x:Static resources:Strings.Menu_About_DiscordServer}" Icon="Chat48" FontWeight="Medium" NavigateUri="https://discord.gg/VTKQCSwPvU" />
         </WrapPanel>
 
         <StackPanel Visibility="{Binding BuildInformationVisibility, Mode=OneTime}">
@@ -96,6 +96,7 @@
 
             <controls:Expander Grid.Column="0" Margin="0,0,4,0" HeaderIcon="Code24" HeaderText="{x:Static resources:Strings.Menu_About_Contributors_Code}" IsExpanded="True">
                 <StackPanel>
+                    <controls:MarkdownTextBlock MarkdownText="[MaksAK47x](https://github.com/MaksAK47x)" />
                     <controls:MarkdownTextBlock MarkdownText="[ItzBloxxy](https://github.com/ItzBloxxy)" />
                     <controls:MarkdownTextBlock MarkdownText="[return_request](https://github.com/returnrqt)" />
                     <controls:MarkdownTextBlock MarkdownText="[Alexa](https://github.com/GoingCrazyDude/)" />
@@ -108,14 +109,12 @@
                     <controls:MarkdownTextBlock MarkdownText="[sitiom](https://github.com/sitiom)" />
                     <controls:MarkdownTextBlock MarkdownText="[Extravi](https://github.com/Extravi)" />
                     <controls:MarkdownTextBlock MarkdownText="[EpixScripts](https://github.com/EpixScripts)" />
-                    <controls:MarkdownTextBlock MarkdownText="[swatTurret](https://github.com/swatTurret)" />
                     <controls:MarkdownTextBlock MarkdownText="[fxeP1](https://github.com/fxeP1)" />
                     <controls:MarkdownTextBlock MarkdownText="[Redusofficial](https://github.com/Redusofficial)" />
                     <controls:MarkdownTextBlock MarkdownText="[srthMD](https://github.com/srthMD)" />
                     <controls:MarkdownTextBlock MarkdownText="[axellse](https://github.com/axellse)" />
                     <controls:MarkdownTextBlock MarkdownText="[ZFkQSZ3GxWFy6bthZ](https://github.com/ZFkQSZ3GxWFy6bthZ)" />
                     <controls:MarkdownTextBlock MarkdownText="[BlueOutside](https://github.com/BlueOutside)" />
-                    <controls:MarkdownTextBlock MarkdownText="[MikeyUsersREC](https://github.com/MikeyUsersREC)" />
                 </StackPanel>
             </controls:Expander>
 
@@ -127,14 +126,11 @@
                     <controls:MarkdownTextBlock MarkdownText="[cam1494](https://github.com/cam1494)" />
                     <controls:MarkdownTextBlock MarkdownText="[Encythe](https://github.com/Encythe)" />
                     <controls:MarkdownTextBlock MarkdownText="[he3als](https://github.com/he3als)" />
-                    <controls:MarkdownTextBlock MarkdownText="[NikSavchenk0](https://github.com/NikSavchenk0)" />
                     <controls:MarkdownTextBlock MarkdownText="[carter0nline](https://github.com/carter0nline)" />
                     <controls:MarkdownTextBlock MarkdownText="[lolmanurfunny](https://github.com/lolmanurfunny)" />
                     <controls:MarkdownTextBlock MarkdownText="[MehKako](https://github.com/MehKako)" />
                     <controls:MarkdownTextBlock MarkdownText="[EpixScripts](https://github.com/EpixScripts)" />
-                    <controls:MarkdownTextBlock MarkdownText="[knivesofeylis](https://github.com/knivesofeylis)" />
                     <controls:MarkdownTextBlock MarkdownText="[sha4owz](https://github.com/sha4owz)" />
-                    <controls:MarkdownTextBlock MarkdownText="[DaMlgNoodle](https://github.com/DaMlgNoodle)" />
                     <controls:MarkdownTextBlock MarkdownText="[nakoyasha](https://github.com/nakoyasha)" />
                     <controls:MarkdownTextBlock MarkdownText="[exurd](https://github.com/exurd)" />
                     <controls:MarkdownTextBlock MarkdownText="[0xFE0F](https://github.com/0xFE0F)" />
@@ -142,7 +138,6 @@
                     <controls:MarkdownTextBlock MarkdownText="[CfwSky](https://www.roblox.com/users/129425241/profile)" />
                     <controls:MarkdownTextBlock MarkdownText="[ruubloo](https://www.roblox.com/users/158082266/profile)" />
                     <controls:MarkdownTextBlock MarkdownText="[toyoda165](https://www.roblox.com/users/923416649/profile)" />
-                    <controls:MarkdownTextBlock MarkdownText="[ShadowCodeX](https://github.com/ShadowCodeX-debug)" />
                     <controls:MarkdownTextBlock MarkdownText="[cub-has-injected](https://github.com/cub-has-injected)" />
                     <controls:MarkdownTextBlock MarkdownText="[AskaLangly](https://github.com/AskaLangly)" />
                     <controls:MarkdownTextBlock MarkdownText="[Encythe](https://github.com/Encythe)" />
