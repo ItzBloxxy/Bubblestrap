@@ -28,8 +28,7 @@ Found any bugs or issues?
 
 -----
 
-<details>
-<summary>## ✨ Features</summary>
+## ✨ Features
 
 ### Integrations
 - Activity tracking
@@ -64,8 +63,6 @@ Found any bugs or issues?
 - Framerate cap unlocking
 - Custom Bubblestrap game invite links (DEEPLINK)
 - Roblox Studio Support
-
-</details>
   
 [repo-latest]:   https://github.com/ItzBloxxy/Bubblestrap/releases/latest
 
