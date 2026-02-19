@@ -28,7 +28,7 @@ Found any bugs or issues?
 
 -----
 
-## ✨ Features
+# ✨ Features
 
 ### Integrations
 - Activity tracking
@@ -45,7 +45,7 @@ Found any bugs or issues?
 - Disable RobloxCrashHandler (reduces over 20mb+ RAM usage)
 - Background updates - Update roblox in the background instead of waiting
 - Cache, logs and Bubblestrap logs cleaner
-- Disable Roblox System Tray Icon
+- Disable Roblox System Tray
 
 ### Deployment
 - Channel changer
