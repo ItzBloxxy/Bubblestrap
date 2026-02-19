@@ -29,7 +29,7 @@ Found any bugs or issues?
 -----
 
 <details>
-<summary>✨ Features</summary>
+<summary>## ✨ Features</summary>
 
 ### Integrations
 - Activity tracking
