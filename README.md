@@ -46,6 +46,7 @@ Found any bugs or issues?
 - Background updates - Update roblox in the background instead of waiting
 - Cache, logs and Bubblestrap logs cleaner
 - Disable Roblox System Tray
+- Toggle Launch Roblox On startup
 
 ### Deployment
 - Channel changer
