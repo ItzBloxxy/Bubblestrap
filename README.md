@@ -42,8 +42,9 @@ Found any bugs or issues?
 ### Bootstrapper
 - Prompt to confirm when launching another instance
 - Memory trim (Roblox will use 30mb-150mb-ish of RAM instead of 1gb+)
-- Disable RobloxCrashHandler (reduces over 20mb+ RAM usage)
-- Background updates - Update roblox in the background instead of waiting
+- Disable RobloxCrashHandler.exe (reduces over 20mb+ RAM usage)
+- Update roblox in the background instead of waiting
+- Auto-update Bubblestrap
 - Cache, logs and Bubblestrap logs cleaner
 - Disable Roblox System Tray
 - Toggle Launch Roblox On startup
