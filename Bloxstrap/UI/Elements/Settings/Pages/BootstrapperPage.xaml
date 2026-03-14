@@ -1,0 +1,160 @@
+﻿<ui:UiPage x:Class="Bloxstrap.UI.Elements.Settings.Pages.BehaviourPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:local="clr-namespace:Bloxstrap.UI.Elements.Settings.Pages"
+      xmlns:controls="clr-namespace:Bloxstrap.UI.Elements.Controls"
+      xmlns:models="clr-namespace:Bloxstrap.UI.ViewModels.Settings"
+      xmlns:resources="clr-namespace:Bloxstrap.Resources"
+      d:DataContext="{d:DesignInstance Type=models:BehaviourViewModel}"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="BehaviourPage"
+      Scrollable="True">
+
+    <StackPanel Margin="0,0,14,14">
+        <TextBlock Margin="0,0,0,8" Text="{x:Static resources:Strings.Menu_Behaviour_Description}" FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Title}"
+            Description="{Binding Source={x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/ItzBloxxy/Bubblestrap/wiki/What-will-Bubblestrap-access-with-your-account%3F'}">
+            <StackPanel Orientation="Horizontal">
+                <ui:SymbolIcon Symbol="Warning20" Margin="0,2,8,0" Foreground="Orange">
+                    <ui:SymbolIcon.Style>
+                        <Style TargetType="ui:SymbolIcon" BasedOn="{StaticResource {x:Type ui:SymbolIcon}}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding DataContext.CookieLoadingFailed, RelativeSource={RelativeSource AncestorType=ui:UiPage}}" Value="True">
+                                    <Setter Property="ui:SymbolIcon.Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ui:SymbolIcon.Style>
+                </ui:SymbolIcon>
+                <ui:ToggleSwitch IsChecked="{Binding CookieAccess, Mode=TwoWay}" />
+            </StackPanel>
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_ConfirmLaunches_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_ConfirmLaunches_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding ConfirmLaunches, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_HideBootstrapperInfo_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_HideBootstrapperInfo_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding HideBootstrapperInfo, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_CloseCrashHandler_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_CloseCrashHandler_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding CloseCrashHandler, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding DisableRobloxTray, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding LaunchOnStartup, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_BackgroundUpdates_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_BackgroundUpdates_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding BackgroundUpdates, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="True">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock FontSize="14" Text="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimmer_Title}" />
+                        <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimmer_Description}" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+                    </StackPanel>
+                    <ui:ToggleSwitch Grid.Column="1" IsChecked="{Binding EnableMemoryTrimmer, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,25,0" />
+                </Grid>
+            </ui:CardExpander.Header>
+
+            <StackPanel>
+                <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimInterval_Title}" 
+            Description="{x:Static resources:Strings.Menu_Behaviour_MemoryTrimInterval_Description}">
+                    <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" 
+                        Text="{Binding MemoryTrimInterval, Mode=TwoWay}" 
+                        PreviewTextInput="ValidateNumber" />
+                </controls:OptionControl>
+
+                <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Title}" 
+            Description="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Description}">
+                    <StackPanel Orientation="Horizontal">
+                        <ui:ToggleSwitch IsChecked="{Binding EnableMemoryThreshold, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <ui:TextBox Padding="10,5,10,5" Width="120" 
+                            PlaceholderText="{x:Static resources:Strings.Menu_Behaviour_MemoryThreshold_Placeholder}"
+                            IsEnabled="{Binding EnableMemoryThreshold}"
+                            Text="{Binding MemoryTrimThreshold, Mode=TwoWay}"
+                            PreviewTextInput="ValidateNumber" />
+                    </StackPanel>
+                </controls:OptionControl>
+            </StackPanel>
+        </ui:CardExpander>
+
+        <ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="True">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock FontSize="14" Text="{x:Static resources:Strings.Menu_Bootstrapper_CleanUp_Title}" />
+                        <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_Bootstrapper_CleanUp_Description}" Foreground="{DynamicResource TextFillColorTertiaryBrush}"  />
+                    </StackPanel>
+                </Grid>
+            </ui:CardExpander.Header>
+
+            <StackPanel>
+                <controls:OptionControl 
+    Header="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Age_Title}" 
+    Description="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Age_Description}">
+                    <ComboBox Width="200" Padding="10,5,10,5" ItemsSource="{Binding CleanerOptions, Mode=OneTime}" Text="{Binding CleanerOption, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=., Converter={StaticResource EnumNameConverter}}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </controls:OptionControl>
+                <controls:OptionControl 
+    Header="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Cache_Title}" 
+    Description="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Cache_Description}">
+                    <ui:ToggleSwitch IsChecked="{Binding CleanerCache, Mode=TwoWay}" />
+                </controls:OptionControl>
+                <controls:OptionControl 
+    Header="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Logs_Title}" 
+    Description="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_Logs_Description}">
+                    <ui:ToggleSwitch IsChecked="{Binding CleanerLogs, Mode=TwoWay}" />
+                </controls:OptionControl>
+                <controls:OptionControl 
+    Header="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_IncludeBloxstrap_Title}"
+    Description="{x:Static resources:Strings.Menu_Bootstrapper_Cleaner_IncludeBloxstrap_Description}">
+                    <ui:ToggleSwitch IsChecked="{Binding CleanerBubblestrap, Mode=TwoWay}" />
+                </controls:OptionControl>
+            </StackPanel>
+        </ui:CardExpander>
+    </StackPanel>
+</ui:UiPage>
