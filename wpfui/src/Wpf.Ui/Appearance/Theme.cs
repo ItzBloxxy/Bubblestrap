@@ -248,7 +248,7 @@ public static class Theme
         if (!AppearanceData.HasHandle(Application.Current.MainWindow))
             Background.Apply(Application.Current.MainWindow, backgroundEffect, forceBackground);
 
-        // Do we really neeed this?
+        // Do we really need this?
         //if (!Win32.Utilities.IsOSWindows11OrNewer)
         //{
         //    var mainWindow = Application.Current.MainWindow;

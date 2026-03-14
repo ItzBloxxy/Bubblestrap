@@ -21,7 +21,6 @@ using System.Data;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Shell;
-using System.Runtime.InteropServices;
 
 namespace Bloxstrap
 {
@@ -82,7 +81,7 @@ namespace Bloxstrap
             _launchMode = launchMode;
 
             // https://github.com/icsharpcode/SharpZipLib/blob/master/src/ICSharpCode.SharpZipLib/Zip/FastZip.cs/#L669-L680
-            // exceptions don't get thrown if we define events without actually binding to the failure events. probably a bug. ¯\_(ツ)_/¯
+            // exceptions don't get thrown if we define events without actually binding to the s2failure events. probably a bug. ¯\_(ツ)_/¯
             _fastZipEvents.FileFailure += (_, e) =>
             {
                 // only give a pass to font files (no idea whats wrong with them)
@@ -128,23 +127,18 @@ namespace Bloxstrap
 
         private void UpdateProgressBar()
         {
-            if (Dialog is null)
-                return;
+            if (Dialog is null) return;
 
-            // UI progress
-            int progressValue = (int)Math.Floor(_progressIncrement * _totalDownloadedBytes);
+            // calculate the current ratio (0.0 to 1.0)
+            // we divide it by the Max to normalize it
+            double ratio = (_progressIncrement * _totalDownloadedBytes) / ProgressBarMaximum;
+            ratio = Math.Clamp(ratio, 0, 1.0);
 
-            // bugcheck: if we're restoring a file from a package, it'll incorrectly increment the progress beyond 100
-            // too lazy to fix properly so lol
-            progressValue = Math.Clamp(progressValue, 0, ProgressBarMaximum);
+            // Update UI
+            Dialog.ProgressValue = (int)Math.Floor(ratio * ProgressBarMaximum);
 
-            Dialog.ProgressValue = progressValue;
-
-            // taskbar progress
-            double taskbarProgressValue = _taskbarProgressIncrement * _totalDownloadedBytes;
-            taskbarProgressValue = Math.Clamp(taskbarProgressValue, 0, _taskbarProgressMaximum);
-
-            Dialog.TaskbarProgressValue = taskbarProgressValue;
+            // Update Taskbar
+            Dialog.TaskbarProgressValue = ratio * _taskbarProgressMaximum;
         }
 
         private void HandleConnectionError(Exception exception)
@@ -199,7 +193,7 @@ namespace Bloxstrap
             if (connectionResult is not null)
                 HandleConnectionError(connectionResult);
 
-#if (!DEBUG || DEBUG_UPDATER) && !QA_BUILD
+#if (!DEBUG || DEBUG_UPDATER)
             if (App.Settings.Prop.CheckForUpdates && !App.LaunchSettings.UpgradeFlag.Active)
             {
                 bool updatePresent = await CheckForUpdates();
@@ -781,7 +775,32 @@ namespace Bloxstrap
                         }
                     });
                 }
+
+                string appStoragePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Roblox\LocalStorage\appStorage.json");
+
+                if (File.Exists(appStoragePath))
+                {
+                    try
+                    {
+                        string json = File.ReadAllText(appStoragePath);
+
+                        string trayValue = App.Settings.Prop.DisableRobloxTray ? "false" : "true";
+
+                        json = System.Text.RegularExpressions.Regex.Replace(json, "\"SystemTrayModalShown\"\\s*:\\s*\"(true|false)\"", $"\"SystemTrayModalShown\": \"{trayValue}\"");
+                        json = System.Text.RegularExpressions.Regex.Replace(json, "\"MinimizeToTray\"\\s*:\\s*\"(true|false)\"", $"\"MinimizeToTray\": \"{trayValue}\"");
+
+                        string startupValue = App.Settings.Prop.LaunchOnStartup.ToString().ToLower();
+                        json = System.Text.RegularExpressions.Regex.Replace(json, "\"LaunchAtStartup\"\\s*:\\s*\"(true|false)\"", $"\"LaunchAtStartup\": \"{startupValue}\"");
+
+                        File.WriteAllText(appStoragePath, json);
+                    }
+                    catch (Exception ex)
+                    {
+                        App.Logger.WriteLine("Bootstrapper", $"Patch error: {ex.Message}");
+                    }
+                }
             }
+
             catch (Win32Exception ex) when (ex.NativeErrorCode == 1223)
             {
                 // 1223 = ERROR_CANCELLED, gets thrown if a UAC prompt is cancelled
@@ -873,7 +892,6 @@ namespace Bloxstrap
             }
 
             // allow for window to show, since the log is created pretty far beforehand
-            Thread.Sleep(1000);
         }
 
         private bool ShouldRunAsAdmin()
@@ -950,7 +968,7 @@ namespace Bloxstrap
             // i don't like this, but there isn't much better way of doing it /shrug
             if (Process.GetProcessesByName(App.ProjectName).Length > 1)
             {
-                App.Logger.WriteLine(LOG_IDENT, $"More than one Bloxstrap instance running, aborting update check");
+                App.Logger.WriteLine(LOG_IDENT, $"More than one Bubblestrap instance running, aborting update check");
                 return false;
             }
 
@@ -984,7 +1002,7 @@ namespace Bloxstrap
             try
             {
 #if DEBUG_UPDATER
-                string downloadLocation = Path.Combine(Paths.TempUpdates, "Bloxstrap.exe");
+                string downloadLocation = Path.Combine(Paths.TempUpdates, "Bubblestrap.exe");
 
                 Directory.CreateDirectory(Paths.TempUpdates);
 
@@ -1088,33 +1106,48 @@ namespace Bloxstrap
                 return;
             }
 
-            foreach (string dir in Directory.GetDirectories(Paths.Versions))
+            string playerVersion = App.RobloxState.Prop.Player.VersionGuid;
+            string studioVersion = App.RobloxState.Prop.Studio.VersionGuid;
+
+            foreach (string dir in Directory.EnumerateDirectories(Paths.Versions))
             {
                 string dirName = Path.GetFileName(dir);
+                bool shouldDelete;
 
-                if (
-                    !_staticDirectory && (dirName != App.RobloxState.Prop.Player.VersionGuid && dirName != App.RobloxState.Prop.Studio.VersionGuid) ||
-                    _staticDirectory && (dirName != "WindowsPlayer" && dirName != "WindowsStudio64")
-                    )
+                if (!_staticDirectory)
                 {
-                    // TODO: this is too expensive
-                    //Filesystem.AssertReadOnlyDirectory(dir);
-
-                    // check if it's still being used first
-                    // we dont want to accidentally delete the files of a running roblox instance
-                    if (!TryDeleteRobloxInDirectory(dir))
-                        continue;
-
-                    try
-                    {
-                        Directory.Delete(dir, true);
-                    }
-                    catch (Exception ex)
-                    {
-                        App.Logger.WriteLine(LOG_IDENT, $"Failed to delete {dir}");
-                        App.Logger.WriteException(LOG_IDENT, ex);
-                    }
+                    shouldDelete = dirName != playerVersion && dirName != studioVersion;
                 }
+                else
+                {
+                    shouldDelete = dirName != "WindowsPlayer" && dirName != "WindowsStudio64";
+                }
+
+                if (!shouldDelete)
+                    continue;
+
+                // Check if it's still being used first
+                if (!TryDeleteRobloxInDirectory(dir))
+                    continue;
+
+                SafeDeleteDirectory(dir, LOG_IDENT);
+            }
+        }
+
+        /// <summary>
+        /// Deletes a directory safely with logging.
+        /// </summary>
+        private static void SafeDeleteDirectory(string path, string logIdent)
+        {
+            try
+            {
+                Directory.Delete(path, true);
+                App.Logger.WriteLine(logIdent, $"Deleted directory: {path}");
+            }
+            catch (Exception ex)
+            {
+                App.Logger.WriteLine(logIdent, $"Failed to delete {path}");
+                App.Logger.WriteException(logIdent, ex);
             }
         }
 
@@ -1295,7 +1328,7 @@ namespace Bloxstrap
                 if (hklmKey is not null || hkcuKey is not null)
                 {
                     // reset prompt state if the user has it installed
-                    App.State.Prop.PromptWebView2Install = true;
+                    App.State.Prop.PromptWebView2Install = false;
                 }
                 else
                 {
@@ -1429,9 +1462,6 @@ namespace Bloxstrap
             // handle file mods
             App.Logger.WriteLine(LOG_IDENT, "Checking file mods...");
 
-            // manifest has been moved to State.json
-            File.Delete(Path.Combine(Paths.Base, "ModManifest.txt"));
-
             List<string> modFolderFiles = new();
 
             Directory.CreateDirectory(Paths.Modifications);
@@ -1503,13 +1533,6 @@ namespace Bloxstrap
 
                 // get relative directory path
                 string relativeFile = file.Substring(Paths.Modifications.Length + 1);
-
-                // v1.7.0 - README has been moved to the preferences menu now
-                if (relativeFile == "README.txt")
-                {
-                    File.Delete(file);
-                    continue;
-                }
 
                 if (!App.Settings.Prop.UseFastFlagManager && String.Equals(relativeFile, "ClientSettings\\ClientAppSettings.json", StringComparison.OrdinalIgnoreCase))
                     continue;
@@ -1730,7 +1753,7 @@ namespace Bloxstrap
                     {
                         Frontend.ShowConnectivityDialog(
                             Strings.Dialog_Connectivity_UnableToDownload,
-                            String.Format(Strings.Dialog_Connectivity_UnableToDownloadReason, "[https://github.com/bloxstraplabs/bloxstrap/wiki/Bloxstrap-is-unable-to-download-Roblox](https://github.com/bloxstraplabs/bloxstrap/wiki/Bloxstrap-is-unable-to-download-Roblox)"),
+                            String.Format(Strings.Dialog_Connectivity_UnableToDownloadReason, "https://bloxstraplabs.com/wiki/help/bloxstrap-cannot-download-roblox/)"),
                             MessageBoxImage.Error,
                             ex
                         );
@@ -1745,19 +1768,9 @@ namespace Bloxstrap
 
                     _totalDownloadedBytes -= totalBytesRead;
                     UpdateProgressBar();
-
-                    // attempt download over HTTP
-                    // this isn't actually that unsafe - signatures were fetched earlier over HTTPS
-                    // so we've already established that our signatures are legit, and that there's very likely no MITM anyway
-                    if (ex.GetType() == typeof(IOException) && !packageUrl.StartsWith("http://"))
-                    {
-                        App.Logger.WriteLine(LOG_IDENT, "Retrying download over HTTP...");
-                        packageUrl = packageUrl.Replace("https://", "http://");
-                    }
                 }
             }
         }
-
         private void ExtractPackage(Package package, List<string>? files = null)
         {
             const string LOG_IDENT = "Bootstrapper::ExtractPackage";

@@ -13,11 +13,7 @@ namespace Bloxstrap
     /// </summary>
     public partial class App : Application
     {
-#if QA_BUILD
-        public const string ProjectName = "Bubblestrap-QA";
-#else
         public const string ProjectName = "Bubblestrap";
-#endif
         public const string ProjectOwner = "ItzBloxxy";
         public const string ProjectRepository = "ItzBloxxy/Bubblestrap";
         public const string ProjectDownloadLink = "https://github.com/ItzBloxxy/Bubblestrap/releases";
@@ -200,13 +196,8 @@ namespace Bloxstrap
             }
             else
             {
-                Logger.WriteLine(LOG_IDENT, $"Compiled {BuildMetadata.Timestamp.ToFriendlyString()} from {BuildMetadata.Machine}");
-
-#if QA_BUILD
-                userAgent += " (QA)";
-#else
-                userAgent += $" (Build {Convert.ToBase64String(Encoding.UTF8.GetBytes(BuildMetadata.Machine))})";
-#endif
+                Logger.WriteLine(LOG_IDENT, $"Compiled {BuildMetadata.Timestamp.ToFriendlyString()}");
+                userAgent += " (Release)";
             }
 
             Logger.WriteLine(LOG_IDENT, $"OSVersion: {Environment.OSVersion}");
@@ -216,7 +207,7 @@ namespace Bloxstrap
 
             ApplicationConfiguration.Initialize();
 
-            HttpClient.Timeout = TimeSpan.FromSeconds(30);
+            HttpClient.Timeout = TimeSpan.FromSeconds(60);
             HttpClient.DefaultRequestHeaders.Add("User-Agent", userAgent);
 
             LaunchSettings = new LaunchSettings(e.Args);

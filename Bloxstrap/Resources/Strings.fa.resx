@@ -917,9 +917,6 @@
     <value>مجوز ها</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>مترجمان</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>شما تغییرات ذخیره‌نشده دارید. آیا مطمئن هستید که می‌خواهید بدون ذخیره کردن ببندید؟</value>
   </data>
@@ -1024,9 +1021,6 @@
     <value>حالت آزمایشی مکرر نحوه تأثیرگزاری تنظیمات شما را بر روی روبلاکس آسان‌تر می‌کند.
 در حالی که فعال است، پس از بستن تنظیمات، روبلاکس به صورت خودکار راه‌اندازی می شود و پس از بستن روبلاکس، در یک چرخه تا زمانی که آنرا غیرفعال نکنید، تنظیمات را دوباره باز می کند.
 آیا می خواهید حالت آزمایشی را فعال کنید؟</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>همه ترجمه‌های بلاکسترپ از طریق [Crowdin] ({0}) جمع‌آوری می‌شوند. همه افرادی که در اینجا لیست شده اند افرادی هستند که سخاوتمندانه زمان و تلاش خود را برای همگانی سازی بلاکسترپ صرف کرده اند. یک تشکر گسترده از همه افراد در اینجا!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>نصب</value>
@@ -1221,7 +1215,7 @@
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>راه‌اندازی بوت‌ استرپرِ دلخواه انجام نشد: {0}.
 به‌طور پیش‌فرض تنظیم می‌شود برروی {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>هیچ تم دلخواهی انتخاب نشده است.</value>
@@ -1478,25 +1472,22 @@
     <value>کانال مشخص‌شده یا وجود ندارد یا خصوصی است.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>وارد کردن تنظیمات Bloxstrap ناموفق بود.
+    <value>وارد کردن تنظیمات Bubblestrap ناموفق بود.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>وارد کردن تنظیمات از Bloxstrap</value>
+    <value>وارد کردن تنظیمات از Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>نصب Bloxstrap یافت نشد.</value>
+    <value>نصب Bubblestrap یافت نشد.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>گزینه‌های مربوط به رفتار خود Bubblestrap را پیکربندی کنید.</value>
-  </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>اطلاعاتی را جمع‌آوری کنید که بتوان آن را به‌صورت آنلاین بارگذاری کرد تا مشکلی را که با آن مواجه هستید عیب‌یابی کنید.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>پیکربندی Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>تمام لاگ‌های Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1661,12 +1652,6 @@
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>واقعیت مجازی</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>رابط کاربری Roblox Studio را برگردانید</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>از رابط کاربری قدیمی Roblox Studio به جای جدید استفاده می کند.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>غیرفعال کردن زمین چمن</value>
   </data>
@@ -1732,5 +1717,118 @@
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>تصویر VR را اعمال می کند که لبه های صفحه را تیره می کند تا بیماری حرکت را کاهش دهد.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>سینی سیستم Roblox را غیرفعال کنید</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>از به حداقل رساندن Roblox در سینی سیستم جلوگیری می کند.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Roblox را در راه اندازی اجرا کنید</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>هنگامی که وارد رایانه شخصی خود می شوید، Roblox به طور خودکار راه اندازی می شود.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>یک پیش تنظیم مکان نما در حال حاضر فعال است. قبل از افزودن مکان نما سفارشی، ابتدا مکان نما ماوس را روی پیش فرض قرار دهید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>شما فایل های مکان نما سفارشی را نصب کرده اید. پیش تنظیم ممکن است با آنها تضاد داشته باشد.
+اگر به نظر نمی رسد که از پیش تنظیم شده کار کند، نشانگرهای سفارشی خود را بردارید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>یک مکان نما از پیش تنظیم شده فعال است. برای استفاده از نشانگرهای سفارشی، نشانگر ماوس را روی پیش فرض قرار دهید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>{0} اضافه نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>برخی از فایل ها حذف نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>هیچ نشانگر سفارشی برای صادرات وجود ندارد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>مجموعه مکان نما صادر شد به:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>وارد کردن مجموعه مکان نما انجام نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>صادر کردن مجموعه مکان نما ناموفق بود:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>آیا مطمئن هستید که می خواهید همه مکان نماهای سفارشی را حذف کنید؟ این قابل واگرد نیست.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>هیچ مکان‌نمای قفل شیفت سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>هیچ نشانگر فلشی سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>هیچ مکان‌نمای سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>هیچ مکان‌نمای سفارشی IBeam برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>صدای مرگ اضافه نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>هیچ صدای مرگ سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>یک صدای مرگ سفارشی را انتخاب کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>یک مکان نما سفارشی را انتخاب کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>یک نشانگر فلش سفارشی دور انتخاب کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>یک مکان نما IBeam سفارشی را انتخاب کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>یک مکان‌نمای سفارشی Shift Lock را انتخاب کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>حذف همه</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>ویژگی ها باز نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>مجموعه واردات</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>مجموعه صادرات</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>ویژگی های مکان نما سفارشی</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>آیکون های مکان نما را تغییر دهید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>نشانگر پیکان</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>نشانگر ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>مکان نما IBeam</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>مرور کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>حذف کنید</value>
   </data>
 </root>

@@ -28,6 +28,16 @@
             }
         }
 
+        public bool IsFileOwnedByAnyPreset(string relativeKey)
+        {
+            foreach (var dataMap in _fileDataMap.Values)
+            {
+                if (dataMap.TryGetValue(relativeKey, out var data) && data.HashMatches())
+                    return true;
+            }
+            return false;
+        }
+
         public override void Execute()
         {
             if (!NewState.Equals(default(T)))

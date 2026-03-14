@@ -917,9 +917,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
     <value>ใบอนุญาต</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>ผู้แปล</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก คุณแน่ใจหรือไม่ว่าต้องการปิดโดยไม่บันทึก?</value>
   </data>
@@ -1022,9 +1019,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
     <value>โหมดทดสอบทำให้การทดสอบการตั้งค่าที่มีผลต่อ Roblox ง่ายขึ้น
 เมื่อเปิดใช้งาน มันจะเปิด Roblox โดยอัตโนมัติหลังจากปิดการตั้งค่า และจะเปิดการตั้งค่าอีกครั้งหลังจากปิด Roblox ในลูปจนกว่าคุณจะปิดใช้งานมัน
 คุณต้องการเปิดใช้งานโหมดทดสอบหรือไม่?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>การแปลทั้งหมดของ Bubblestrap เป็นการรวบรวมจากผู้ใช้ผ่าน [Crowdin]({0}) ทุกคนที่ระบุอยู่ที่นี่คือผู้ที่อาสาสมัครเวลาและความพยายามของพวกเขาเพื่อช่วยในการแปล Bubblestrap ขอบคุณมาก ๆ สำหรับทุกคนที่นี่!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>ติดตั้ง</value>
@@ -1241,7 +1235,7 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>ไม่สามารถตั้งค่า Bootstrapper แบบกำหนดเองได้: {0}.
 เปลี่ยนกลับไปใช้เป็น {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>ไม่มีธีมกําหนดเองเลือกไว้</value>
@@ -1483,25 +1477,25 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
     <value>ช่องที่ระบุไม่มีอยู่หรือเป็นช่องส่วนตัว</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>ไม่สามารถนำเข้าการตั้งค่า Bloxstrap
+    <value>ไม่สามารถนำเข้าการตั้งค่า Bubblestrap
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>นำเข้าการตั้งค่าจาก Bloxstrap</value>
+    <value>นำเข้าการตั้งค่าจาก Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>ไม่พบการติดตั้ง Bloxstrap</value>
+    <value>ไม่พบการติดตั้ง Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>กำหนดค่าตัวเลือกที่เกี่ยวข้องกับพฤติกรรมของ Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>รวบรวมข้อมูลที่สามารถอัปโหลดออนไลน์เพื่อแก้ไขปัญหาที่คุณพบ</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>การกำหนดค่า Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>บันทึก Bubblestrap ทั้งหมด</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1548,9 +1542,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>บันทึก Bubblestrap จะถูกลบ</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>กำหนดค่าตัวเลือกที่เกี่ยวข้องกับพฤติกรรมของ Bubblestrap</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags ถูกปิดใช้งานชั่วคราว</value>
@@ -1666,12 +1657,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>ความเป็นจริงเสมือน</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>เปลี่ยนกลับ UI ของ Roblox Studio</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>ใช้ Roblox Studio UI เก่าแทนอันใหม่</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>ปิดการใช้งานหญ้าภูมิประเทศ</value>
   </data>
@@ -1737,5 +1722,118 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>ใช้บทความสั้น VR ที่ทำให้ขอบหน้าจอมืดลงเพื่อลดอาการเมารถ</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>ปิดการใช้งานถาดระบบ Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>ป้องกันไม่ให้ Roblox ย่อเล็กสุดในถาดระบบ</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>เรียกใช้ Roblox เมื่อเริ่มต้น</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>เริ่ม Roblox โดยอัตโนมัติเมื่อคุณเข้าสู่ระบบพีซีของคุณ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>ปัจจุบันเคอร์เซอร์ที่ตั้งไว้ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นก่อนที่จะเพิ่มเคอร์เซอร์ที่กำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>คุณได้ติดตั้งไฟล์เคอร์เซอร์แบบกำหนดเองแล้ว ค่าที่ตั้งล่วงหน้าอาจขัดแย้งกับพวกเขา
+ลบเคอร์เซอร์ที่คุณกำหนดเองออกหากค่าที่ตั้งล่วงหน้าไม่ทำงาน</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>การตั้งค่าเคอร์เซอร์ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นเพื่อใช้เคอร์เซอร์แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>ไม่สามารถเพิ่ม {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>ไม่สามารถลบไฟล์บางไฟล์ได้:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>ไม่มีเคอร์เซอร์แบบกำหนดเองที่จะส่งออก</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>ชุดเคอร์เซอร์ส่งออกไปที่:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>ไม่สามารถนำเข้าชุดเคอร์เซอร์:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>ส่งออกชุดเคอร์เซอร์ไม่สำเร็จ:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่ว่าต้องการลบเคอร์เซอร์ที่กำหนดเองทั้งหมด สิ่งนี้ไม่สามารถยกเลิกได้</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ล็อคกะแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ลูกศรแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ลูกศรไกลแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ IBeam แบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>ไม่สามารถเพิ่มเสียงการตายได้:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>ไม่พบเสียงการตายแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>เลือกเสียงความตายแบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>เลือกเคอร์เซอร์แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>เลือกเคอร์เซอร์ลูกศรระยะไกลแบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>เลือกเคอร์เซอร์ IBeam แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>เลือกเคอร์เซอร์ล็อค Shift แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>ลบทั้งหมด</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>ไม่สามารถเปิดคุณสมบัติได้:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>ชุดนำเข้า</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>ชุดส่งออก</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>คุณสมบัติเคอร์เซอร์แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>เปลี่ยนไอคอนเคอร์เซอร์</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>เคอร์เซอร์ลูกศร</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>เคอร์เซอร์ ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>เคอร์เซอร์ IBeam</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>เรียกดู</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>ลบ</value>
   </data>
 </root>

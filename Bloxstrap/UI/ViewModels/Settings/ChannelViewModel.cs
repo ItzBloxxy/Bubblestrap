@@ -53,6 +53,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 App.State.Prop.IgnoreOutdatedChannel = true;
 
                 OnPropertyChanged(nameof(ChannelDeployInfo));
+                OnPropertyChanged(nameof(ChannelHash));
             }
             catch (InvalidChannelException ex)
             {
@@ -71,7 +72,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
         public bool ShowLoadingError { get; set; } = false;
         public bool ShowChannelWarning { get; set; } = false;
-
+        public string ChannelHash => ChannelDeployInfo?.VersionGuid ?? "Loading...";
         public DeployInfo? ChannelDeployInfo { get; private set; } = null;
         public string ChannelInfoLoadingText { get; private set; } = null!;
 

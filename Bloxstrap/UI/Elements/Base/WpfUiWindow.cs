@@ -26,11 +26,6 @@ namespace Bloxstrap.UI.Elements.Base
             // there doesn't seem to be a way to query the name for merged dictionaries
             var dict = new ResourceDictionary { Source = new Uri($"pack://application:,,,/UI/Style/{Enum.GetName(App.Settings.Prop.Theme.GetFinal())}.xaml") };
             Application.Current.Resources.MergedDictionaries[customThemeIndex] = dict;
-
-#if QA_BUILD
-            this.BorderBrush = System.Windows.Media.Brushes.Red;
-            this.BorderThickness = new Thickness(4);
-#endif
         }
 
         protected override void OnSourceInitialized(EventArgs e)

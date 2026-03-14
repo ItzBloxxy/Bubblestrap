@@ -917,9 +917,6 @@ Eğer sorun ele alınmadıysa, lütfen bu istisnayı bu versiyonun geliştiricil
     <value>Lisanslar</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Çevirmenler</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Kaydedilmemiş değişiklikleriniz var. Kaydetmeden kapatmak istediğinizden emin misiniz?</value>
   </data>
@@ -1022,9 +1019,6 @@ Lütfen manuel olarak yükleme yolundan Bubblestrap.exe'yi silin veya sisteminiz
     <value>Test modu yinelemelik olarak ayarlarınızın Roblox'u nasıl etkilediğini test etmeyi kolaylaştırır.
 Etkinken, kapatana kadar bir döngü içerisinde Ayarları kapattıktan sonra otomatik olarak Roblox'u başlatacak, ve Roblox'u kapattıktan sonra Ayarları yeniden açacak.
 Test modu açmak ister misiniz?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Bubblestrap'ın tüm çevirileri [Crowdin]({0}) üzerinden kitle kaynaklıdır. Burada listelenen herkes cömertce Bubblestrap'ı yerelleştirmek için zamanlarını ve çabalarını harcayan kişilerdir. Buradaki herkese çok teşekkürler!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Yükle</value>
@@ -1241,7 +1235,7 @@ Lütfen Roblox'un dosyalarını kullanabiliyor olan uygulamaları kapatın, ve t
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Özel bootstrapper kurulamadı: {0}.
 Otomatiklen {1}'e alınılıyor.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Özel tema seçilmedi.</value>
@@ -1483,25 +1477,25 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
     <value>Belirtilen kanal mevcut değil veya özel bir kanaldır.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Bloxstrap ayarları içe aktarılamadı.
+    <value>Bubblestrap ayarları içe aktarılamadı.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Bloxstrap'tan ayarları içe aktar</value>
+    <value>Bubblestrap'tan ayarları içe aktar</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Bloxstrap kurulumu bulunamadı.</value>
+    <value>Bubblestrap kurulumu bulunamadı.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Bubblestrap'ın davranışıyla ilgili seçenekleri yapılandırın.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Karşılaştığınız sorunu gidermek için çevrimiçi olarak yüklenebilecek bilgileri toplayın.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap yapılandırması</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Tüm Bubblestrap günlükleri</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1548,9 +1542,6 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Bubblestrap günlükleri silinecektir.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Bubblestrap'ın davranışıyla ilgili seçenekleri yapılandırın.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags geçici olarak devre dışı bırakılmıştır.</value>
@@ -1666,12 +1657,6 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Sanal Gerçeklik</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Roblox Studio kullanıcı arayüzünü geri yükle</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Yeni Roblox Studio kullanıcı arayüzü yerine eski Roblox Studio kullanıcı arayüzünü kullanır.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Arazi Çimini Devre Dışı Bırak</value>
   </data>
@@ -1737,5 +1722,118 @@ Tercih ettiğiniz kanalı {0} olarak değiştirmek ister misiniz?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Hareket hastalığını azaltmak için ekran kenarlarını karartan bir VR vinyet uygular.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Roblox Sistem Tepsisini Devre Dışı Bırak</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Roblox'un sistem tepsisinde simge durumuna küçültülmesini engeller.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Başlangıçta Roblox'u çalıştır</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>PC'nize giriş yaptığınızda Roblox'u otomatik olarak başlatır.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Şu anda bir imleç ön ayarı etkin durumda. Özel bir imleç eklemeden önce Fare İmlecini Varsayılana Ayarla seçeneğini seçin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Bilgisayarınızda özel imleç dosyaları yüklü. Bu ön ayar, bu dosyalarla çakışıyor olabilir.
+Ön ayar çalışmıyorsa, özel imleçlerinizi kaldırın.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Bir imleç ön ayarı etkin durumda. Özel imleçleri kullanmak için “Fare İmlecini Varsayılana Ayarla” seçeneğini seçin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>{0} eklenemedi:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Bazı dosyalar silinemedi:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Dışa aktarılacak özel imleç yok.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>İmleç kümesi şu konuma aktarıldı:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>İmleç kümesi içe aktarılamadı:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>İmleç kümesi dışa aktarılamadı:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Tüm özel imleçleri silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Kaldırılacak özel vites kilidi imleci bulunamadı.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Kaldırılacak özel ok imleci bulunamadı.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Kaldırılacak özel IBeam imleci bulunamadı.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Kaldırılacak özel IBeam imleci bulunamadı.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Ölüm sesi eklenemedi:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Kaldırılacak özel ölüm sesi bulunamadı.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Özel bir imleç seçin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Özel bir imleç seçin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Özel Ok Şeklinde Uzak İmleci Seç</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Özel bir IBeam imleci seçin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Özel Vites Kilidi İmlecini Seç</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Tümünü Sil</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Özellikler açılamadı:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>İçe Aktarma Seti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Dışa Aktar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Özel İmleç Özellikleri</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>İmleç simgelerini değiştirin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Ok İmleci</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>ArrowFar İmleci</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>IBeam İmleci</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Göz at</value>
   </data>
 </root>

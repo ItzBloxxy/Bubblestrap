@@ -15,9 +15,6 @@ namespace Bloxstrap.UI.Elements.About
             App.BubbleRPC?.SetDialog("About");
 
             App.Logger.WriteLine("MainWindow", "Initializing about window");
-
-            if (Locale.CurrentCulture.Name.StartsWith("tr"))
-                TranslatorsText.FontSize = 9;
         }
 
         #region INavigationWindow methods
@@ -34,6 +31,6 @@ namespace Bloxstrap.UI.Elements.About
 
         public void CloseWindow() => Close();
 
-        #endregion INavigationWindow methods
+            #endregion INavigationWindow methods
     }
 }

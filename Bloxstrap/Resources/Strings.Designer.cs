@@ -79,24 +79,6 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All of Bubblestrap&apos;s translations are crowdsourced through [Crowdin]({0}). Everyone listed here are people who generously volunteered their time and effort to help localise Bubblestrap. A massive thank you to everyone here!.
-        /// </summary>
-        public static string About_Translators_Description {
-            get {
-                return ResourceManager.GetString("About.Translators.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Translators.
-        /// </summary>
-        public static string About_Translators_Title {
-            get {
-                return ResourceManager.GetString("About.Translators.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The server location could not be queried. You may be joining games too quickly..
         /// </summary>
         public static string ActivityWatcher_LocationQueryFailed {
@@ -469,6 +451,15 @@ namespace Bloxstrap.Resources {
         public static string Common_Close {
             get {
                 return ResourceManager.GetString("Common.Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not open properties:.
+        /// </summary>
+        public static string Common_CompatSettings_OpenFailed {
+            get {
+                return ResourceManager.GetString("Common.CompatSettings.OpenFailed", resourceCulture);
             }
         }
         
@@ -2552,7 +2543,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A Bloxstrap Fork..
+        ///   Looks up a localized string similar to A Fishstrap/Bloxstrap Fork..
         /// </summary>
         public static string Menu_About_Description {
             get {
@@ -2966,6 +2957,24 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Prevents Roblox from staying minimized in the system tray..
+        /// </summary>
+        public static string Menu_Behaviour_DisableRobloxTray_Description {
+            get {
+                return ResourceManager.GetString("Menu.Behaviour.DisableRobloxTray.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable Roblox System Tray.
+        /// </summary>
+        public static string Menu_Behaviour_DisableRobloxTray_Title {
+            get {
+                return ResourceManager.GetString("Menu.Behaviour.DisableRobloxTray.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Roblox will be installed fresh on next launch..
         /// </summary>
         public static string Menu_Behaviour_ForceRobloxReinstall_Description {
@@ -2998,6 +3007,24 @@ namespace Bloxstrap.Resources {
         public static string Menu_Behaviour_HideBootstrapperInfo_Title {
             get {
                 return ResourceManager.GetString("Menu.Behaviour.HideBootstrapperInfo.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatically starts Roblox when you log into your PC..
+        /// </summary>
+        public static string Menu_Behaviour_LaunchOnStartup_Description {
+            get {
+                return ResourceManager.GetString("Menu.Behaviour.LaunchOnStartup.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Run Roblox on startup.
+        /// </summary>
+        public static string Menu_Behaviour_LaunchOnStartup_Title {
+            get {
+                return ResourceManager.GetString("Menu.Behaviour.LaunchOnStartup.Title", resourceCulture);
             }
         }
         
@@ -3097,6 +3124,33 @@ namespace Bloxstrap.Resources {
         public static string Menu_Bloxstrap_Description {
             get {
                 return ResourceManager.GetString("Menu.Bloxstrap.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gather information that can be uploaded online to troubleshoot a problem you&apos;re having..
+        /// </summary>
+        public static string Menu_Bloxstrap_ExportData_Description {
+            get {
+                return ResourceManager.GetString("Menu.Bloxstrap.ExportData.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bubblestrap configuration.
+        /// </summary>
+        public static string Menu_Bloxstrap_ExportData_ExportConfig {
+            get {
+                return ResourceManager.GetString("Menu.Bloxstrap.ExportData.ExportConfig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Bubblestrap logs.
+        /// </summary>
+        public static string Menu_Bloxstrap_ExportData_ExportLogs {
+            get {
+                return ResourceManager.GetString("Menu.Bloxstrap.ExportData.ExportLogs", resourceCulture);
             }
         }
         
@@ -3205,42 +3259,6 @@ namespace Bloxstrap.Resources {
         public static string Menu_Bootstrapper_CleanUp_Title {
             get {
                 return ResourceManager.GetString("Menu.Bootstrapper.CleanUp.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Configure options related to Bubblestrap&apos;s behaviour itself..
-        /// </summary>
-        public static string Menu_Bubblestrap_Description {
-            get {
-                return ResourceManager.GetString("Menu.Bubblestrap.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Gather information that can be uploaded online to troubleshoot a problem you&apos;re having..
-        /// </summary>
-        public static string Menu_Bubblestrap_ExportData_Description {
-            get {
-                return ResourceManager.GetString("Menu.Bubblestrap.ExportData.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Bubblestrap configuration.
-        /// </summary>
-        public static string Menu_Bubblestrap_ExportData_ExportConfig {
-            get {
-                return ResourceManager.GetString("Menu.Bubblestrap.ExportData.ExportConfig", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to All Bubblestrap logs.
-        /// </summary>
-        public static string Menu_Bubblestrap_ExportData_ExportLogs {
-            get {
-                return ResourceManager.GetString("Menu.Bubblestrap.ExportData.ExportLogs", resourceCulture);
             }
         }
         
@@ -3780,24 +3798,6 @@ namespace Bloxstrap.Resources {
         public static string Menu_FastFlags_Presets_MSAA_Title {
             get {
                 return ResourceManager.GetString("Menu.FastFlags.Presets.MSAA.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Uses the old Roblox Studio UI instead of the new one..
-        /// </summary>
-        public static string Menu_FastFlags_Presets_OldRSUI_Description {
-            get {
-                return ResourceManager.GetString("Menu.FastFlags.Presets.OldRSUI.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Revert Roblox Studio UI.
-        /// </summary>
-        public static string Menu_FastFlags_Presets_OldRSUI_Title {
-            get {
-                return ResourceManager.GetString("Menu.FastFlags.Presets.OldRSUI.Title", resourceCulture);
             }
         }
         
@@ -4510,6 +4510,279 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to add {0}:.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_AddFailed {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.AddFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to export cursor set: {0}.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_ExportFailed {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.ExportFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cursor set exported to:
+        ///{0}.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_ExportSuccess {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.ExportSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to import cursor set: {0}.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_ImportFailed {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.ImportFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No custom cursors to export..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_NoneToExport {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.NoneToExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No custom arrow cursor found to remove..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_NotFound_Arrow {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.NotFound.Arrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No custom arrow far cursor found to remove..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_NotFound_ArrowFar {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No custom IBeam cursor found to remove..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_NotFound_IBeam {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.NotFound.IBeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No custom shift lock cursor found to remove..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_NotFound_Shiftlock {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A cursor preset is active. Set Mouse Cursor to Default to use custom cursors..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_PresetActiveLabel {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.PresetActiveLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A cursor preset is currently active. Set Mouse Cursor to Default first before adding a custom cursor..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_PresetActiveWarning {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.PresetActiveWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have custom cursor files installed. The preset may conflict with them.
+        ///  
+        ///Remove your custom cursors if the preset does not appear to work..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_PresetConflictWarning {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.PresetConflictWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to remove all custom cursors? This cannot be undone..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_RemoveAllConfirm {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.RemoveAllConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to remove some files:.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursor_RemoveFailed {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursor.RemoveFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arrow Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Arrow {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Arrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ArrowFar Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_ArrowFar {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.ArrowFar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Browse {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Browse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change the cursor icons..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Description {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Set.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Export {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Export", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IBeam Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_IBeam {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.IBeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Set.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Import {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Import", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Remove {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove All.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_RemoveAll {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.RemoveAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Custom Arrow Far Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_SelectArrowFar {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Custom Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_SelectCursor {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.SelectCursor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Custom IBeam Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_SelectIBeam {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Custom Shift Lock Cursor.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_SelectShiftlock {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShiftLock.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_ShiftLock {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.ShiftLock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Cursor Features.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomCursorFeatures_Title {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomCursorFeatures.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to add death sound:.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomDeathSound_AddFailed {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomDeathSound.AddFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose sound....
         /// </summary>
         public static string Menu_Mods_Misc_CustomDeathSound_Choose {
@@ -4528,11 +4801,29 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No custom death sound found to remove..
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomDeathSound_NotFound {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomDeathSound.NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Custom Death Sound.
         /// </summary>
         public static string Menu_Mods_Misc_CustomDeathSound_Remove {
             get {
                 return ResourceManager.GetString("Menu.Mods.Misc.CustomDeathSound.Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Custom Death Sound.
+        /// </summary>
+        public static string Menu_Mods_Misc_CustomDeathSound_Select {
+            get {
+                return ResourceManager.GetString("Menu.Mods.Misc.CustomDeathSound.Select", resourceCulture);
             }
         }
         

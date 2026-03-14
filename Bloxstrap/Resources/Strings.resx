@@ -416,7 +416,7 @@ Would you like to upgrade your currently installed version?</value>
     <value>Special Thanks</value>
   </data>
 	<data name="Menu.About.Description" xml:space="preserve">
-    <value>A Bloxstrap Fork.</value>
+    <value>A Fishstrap/Bloxstrap Fork.</value>
   </data>
 	<data name="Menu.About.DiscordServer" xml:space="preserve">
     <value>Discord server</value>
@@ -490,6 +490,18 @@ Would you like to upgrade your currently installed version?</value>
   </data>
 	<data name="Menu.Behaviour.CloseCrashHandler.Title" xml:space="preserve">
     <value>Disable Roblox Crash Handler</value>
+  </data>
+	<data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+	<value>Disable Roblox System Tray</value>
+  </data>
+	<data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Prevents Roblox from staying minimized in the system tray.</value>
+  </data>
+	<data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+	<value>Run Roblox on startup</value>
+  </data>
+	<data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Automatically starts Roblox when you log into your PC.</value>
   </data>
 	<data name="Menu.Appearance.Description" xml:space="preserve">
     <value>Configure how Bubblestrap should look.</value>
@@ -746,21 +758,123 @@ Selecting 'No' will ignore this warning and continue installation.</value>
 	<data name="Menu.Mods.Help.Description" xml:space="preserve">
     <value>See info about managing and creating mods.</value>
     <comment>Title is Common.Help</comment>
-  </data>
+   </data>
 	<data name="Menu.Mods.Misc.CustomFont.Choose" xml:space="preserve">
     <value>Choose font...</value>
-  </data>
+   </data>
 	<data name="Menu.Mods.Misc.CustomFont.Description" xml:space="preserve">
     <value>Font size can be adjusted in the Engine Settings tab.</value>
-  </data>
+   </data>
 	<data name="Menu.Mods.Misc.CustomFont.Invalid" xml:space="preserve">
     <value>The file you have chosen does not appear to be a valid font file.</value>
-  </data>
+   </data>
 	<data name="Menu.Mods.Misc.CustomFont.Remove" xml:space="preserve">
     <value>Remove applied font</value>
-  </data>
+   </data>
 	<data name="Menu.Mods.Misc.CustomFont.Title" xml:space="preserve">
     <value>Custom Game Font</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+  <value>A cursor preset is currently active. Set Mouse Cursor to Default first before adding a custom cursor.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+  <value>You have custom cursor files installed. The preset may conflict with them.
+  
+Remove your custom cursors if the preset does not appear to work.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>A cursor preset is active. Set Mouse Cursor to Default to use custom cursors.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Failed to add {0}:</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Failed to remove some files:</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>No custom cursors to export.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Cursor set exported to:
+{0}</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Failed to import cursor set: {0}</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Failed to export cursor set: {0}</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Are you sure you want to remove all custom cursors? This cannot be undone.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>No custom shift lock cursor found to remove.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>No custom arrow cursor found to remove.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>No custom arrow far cursor found to remove.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>No custom IBeam cursor found to remove.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Failed to add death sound:</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>No custom death sound found to remove.</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Select a Custom Death Sound</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Select a Custom Cursor</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Select a Custom Arrow Far Cursor</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Select a Custom IBeam Cursor</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Select a Custom Shift Lock Cursor</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Remove All</value>
+   </data>
+	<data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Could not open properties:</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Import Set</value>
+   </data>
+	<data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Export Set</value>
+   </data>
+    <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Custom Cursor Features</value>
+   </data>
+    <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Change the cursor icons.</value>
+   </data>
+    <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>ShiftLock</value> 
+   </data>
+   <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+   <value>Arrow Cursor</value>
+   </data>
+    <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+   <value>ArrowFar Cursor</value>
+  </data>
+   <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+   <value>IBeam Cursor</value>
+  </data>
+   <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+   <value>Browse</value>
+  </data>
+   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+   <value>Remove</value>
   </data>
 	<data name="Menu.Mods.OpenModsFolder.Description" xml:space="preserve">
     <value>Manage custom Roblox mods here.</value>
@@ -844,12 +958,6 @@ Some text might not be translated to preferred language.</value>
 	<data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
     <value>Stops it from showing whenever you move your mouse to the top of the screen.</value>
   </data>
-	<data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-	<value>Revert Roblox Studio UI</value>
-   </data>
-	<data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-	<value>Uses the old Roblox Studio UI instead of the new one.</value>
-   </data>
 	<data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap is unable to download Roblox</value>
   </data>
@@ -1040,9 +1148,6 @@ If not, then please report this exception to the maintainers of this fork. Do NO
     <value>Licenses</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-	<data name="About.Translators.Title" xml:space="preserve">
-    <value>Translators</value>
-  </data>
 	<data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>You have unsaved changes. Are you sure you want to close without saving?</value>
   </data>
@@ -1164,9 +1269,6 @@ Please manually delete Bubblestrap.exe from the install location or try restarti
 While enabled, it will automatically launch Roblox after closing Settings, and reopen Settings after closing Roblox, in a cycle until you disable it.
 
 Would you like to enable test mode?</value>
-  </data>
-	<data name="About.Translators.Description" xml:space="preserve">
-    <value>All of Bubblestrap's translations are crowdsourced through [Crowdin]({0}). Everyone listed here are people who generously volunteered their time and effort to help localise Bubblestrap. A massive thank you to everyone here!</value>
   </data>
 	<data name="Common.Navigation.Install" xml:space="preserve">
     <value>Install</value>
@@ -1387,17 +1489,14 @@ Would you like to switch your preferred channel to {0}?</value>
 	<data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
     <value>Getting the latest Bubblestrap...</value>
   </data>
-	<data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>Configure options related to Bubblestrap's behaviour itself.</value>
-  </data>
-	<data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+	<data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Gather information that can be uploaded online to troubleshoot a problem you're having.</value>
   </data>
-	<data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+	<data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap configuration</value>
     <comment>Label that appears next to a checkbox</comment>
   </data>
-	<data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+	<data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>All Bubblestrap logs</value>
     <comment>Label that appears next to a checkbox</comment>
   </data>
@@ -1603,7 +1702,7 @@ Would you like to switch your preferred channel to {0}?</value>
 	<data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Failed to setup custom bootstrapper: {0}.
 Defaulting to {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
 	<data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>No custom theme selected.</value>

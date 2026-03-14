@@ -918,9 +918,6 @@ Jos ei, ole hyvä ja raportoi tämä poikkeus tämän forkin ylläpitäjille. Ä
     <value>Lisenssit</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Kääntäjät</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Sinulla on tallentamattomia muutoksia. Oletko varma, että tahdot sulkea tallentamatta?</value>
   </data>
@@ -1025,9 +1022,6 @@ Ole hyvä ja poista Bubblestrap.exe manuaalisesti asennussijainnista tai käynni
     <value>Testaustila tekee helpommaksi testata, miten asetuksesi vaikuttavat Robloxiin.
 Kun se on päällä, se käynnistää Robloxin automaattisesti, kun suljet asetukset ja avaa asetukset kun suljet Robloxin, jatkuvassa kierteessä kunnes otat sen pois käytöstä.
 Haluaisitko ottaa testaustilan käyttöön?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Kaikki Bubblestrapin käännökset joukkoistetaan [Crowdinin]({0}) kautta. Täällä listatut henkilöt ovat anteliaasti ja vapaaehtoisesti tarjonneet aikaansa ja vaivaansa auttaakseen Bubblestrapin lokalisoinnissa. Suuret kiitokset kaikille täällä oleville!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Asentaa</value>
@@ -1244,7 +1238,7 @@ Sulje kaikki sovellukset, jotka saattavat käyttää Robloxin tiedostoja, ja kä
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Mukautetun käynnistysohjelman asettaminen epäonnistui: {0}.
 Palataan oletukseen {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Mukautettua teemaa ei ole valittu.</value>
@@ -1486,25 +1480,25 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
     <value>Määritettyä kanavaa ei ole olemassa tai se on yksityinen.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Bloxstrap-asetusten tuonti epäonnistui.
+    <value>Bubblestrap-asetusten tuonti epäonnistui.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Tuo asetukset Bloxstrapista</value>
+    <value>Tuo asetukset Bubblestrapista</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Bloxstrap-asennusta ei löytynyt.</value>
+    <value>Bubblestrap-asennusta ei löytynyt.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Määritä Bubblestrapin toimintaan liittyvät asetukset.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Kerää tietoja, jotka voidaan ladata verkkoon ongelman ratkaisemiseksi.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap-kokoonpano</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Kaikki Bubblestrap-lokit</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1551,9 +1545,6 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Bubblestrap-lokit poistetaan.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Määritä Bubblestrapin toimintaan liittyvät asetukset.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags on väliaikaisesti poistettu käytöstä</value>
@@ -1669,12 +1660,6 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuaalitodellisuus</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Palauta Roblox Studio -käyttöliittymä</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Käyttää vanhaa Roblox Studio -käyttöliittymää uuden sijaan.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Poista maaston ruoho käytöstä</value>
   </data>
@@ -1740,5 +1725,118 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Käyttää VR-vignettia, joka tummentaa näytön reunoja liikepahoinvoinnin vähentämiseksi.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Poista Roblox-järjestelmäpalkki käytöstä</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Estää Robloxin pysymisen pienennettynä järjestelmälokerossa.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Käynnistä Roblox käynnistyksen yhteydessä</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Käynnistää Robloxin automaattisesti, kun kirjaudut tietokoneellesi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Tällä hetkellä on käytössä valmiiksi määritetty hiiren osoitin. Aseta hiiren osoitin ensin oletusasetuksiin ennen kuin lisäät mukautetun osoittimen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Koneellesi on asennettu mukautettuja kursoritiedostoja. Esiasetus saattaa olla ristiriidassa niiden kanssa.
+Poista mukautetut kursorit, jos esiasetus ei näytä toimivan.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Kohdistimen esiasetus on käytössä. Aseta hiiren kohdistin oletusasetukseksi, jos haluat käyttää mukautettuja kohdistimia.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>{0}:n lisääminen epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Joidenkin tiedostojen poistaminen epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Vientiä varten ei ole mukautettuja osoittimia.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Kohdistimen asetukset on viety kohteeseen:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Kohdistimen asetusten tuonti epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Kohdistimen asetusten vienti epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Haluatko varmasti poistaa kaikki mukautetut osoittimet? Tätä ei voi peruuttaa.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Mukautettua vaihdelukon osoitinta ei löytynyt poistettavaksi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Poistettavaa mukautettua nuolipainiketta ei löytynyt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Poistettavaa mukautettua nuolipainiketta ei löytynyt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Mukautettua IBeam-kohdistinta ei löytynyt poistettavaksi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Kuoleman äänen lisääminen epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Poistettavia mukautettuja kuolemanääniä ei löytynyt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Valitse mukautettu kuolemanääni</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Valitse mukautettu osoitin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Valitse mukautettu nuolipääkursori</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Valitse mukautettu I-palkkikohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Valitse mukautettu I-palkkikohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Ominaisuuksia ei voitu avata:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Tuontijoukko</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Vientiasetukset</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Mukautettujen osoittimien ominaisuudet</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Vaihda kohdistimen kuvakkeet.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Nuolipainike</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>ArrowFar-kohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>IBeam-kohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Selaa</value>
   </data>
 </root>

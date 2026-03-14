@@ -917,9 +917,6 @@ Si ce n'est pas le cas, veuillez signaler cette exception aux responsables de ce
     <value>Licences</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Traducteurs</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Vous avez des modifications non enregistrées. Êtes-vous sûr de vouloir fermer sans enregistrer ?</value>
   </data>
@@ -1024,9 +1021,6 @@ Veuillez supprimer manuellement Bubblestrap.exe de l'emplacement d'installation 
     <value>Le mode Test permet de tester de manière itérative comment vos paramètres affectent Roblox. 
 Lorsque cette option est activée, Roblox se lancera automatiquement après la fermeture des paramètres, et rouvrira les paramètres après la fermeture de Roblox, dans un cycle jusqu'à ce que vous le désactiviez.
 Voulez-vous activer le mode test ?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Toutes les traductions de Bubblestrap sont crowdsourcés via [Crowdin]({0}). Toutes les personnes listées ici sont des personnes qui ont généreusement donnés de leur temps et de leurs efforts pour aider à rendre Bubblestrap accessible à tous. Un grand merci à eux !</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Installer</value>
@@ -1243,7 +1237,7 @@ Veuillez fermer toutes les applications qui pourraient utiliser les fichiers de 
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Échec de la configuration du bootstrapper personnalisé : {0}.
 Retour à la valeur par défaut {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Aucun thème personnalisé sélectionné.</value>
@@ -1485,25 +1479,25 @@ Souhaitez-vous changer votre chaîne préférée pour {0} ?</value>
     <value>Le canal spécifié n'existe pas ou est privé.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Échec de l'importation des paramètres Bloxstrap.
+    <value>Échec de l'importation des paramètres Bubblestrap.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Importer les paramètres depuis Bloxstrap</value>
+    <value>Importer les paramètres depuis Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>L'installation de Bloxstrap n'a pas été trouvée.</value>
+    <value>L'installation de Bubblestrap n'a pas été trouvée.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Configurez les options liées au comportement de Bubblestrap lui-même.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Rassemblez les informations pouvant être téléchargées en ligne afin de résoudre le problème que vous rencontrez.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Configuration Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Tous les journaux Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1550,9 +1544,6 @@ Souhaitez-vous changer votre chaîne préférée pour {0} ?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Les journaux Bubblestrap seront supprimés.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Configurez les options liées au comportement de Bubblestrap lui-même.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>Les FastFlags ont été temporairement désactivés.</value>
@@ -1668,12 +1659,6 @@ Souhaitez-vous changer votre chaîne préférée pour {0} ?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Réalité virtuelle</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Réalité virtuelle</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Revenir à l'interface utilisateur Roblox Studio</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Utilise l'ancienne interface utilisateur Roblox Studio au lieu de la nouvelle.</value>
   </data>
@@ -1736,5 +1721,119 @@ Souhaitez-vous changer votre chaîne préférée pour {0} ?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Applique un vignettage VR qui assombrit les bords de l'écran afin de réduire le mal des transports.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Désactiver la barre d'état système Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Empêche Roblox de rester minimisé dans la barre d'état système.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Exécuter Roblox au démarrage</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Démarre automatiquement Roblox lorsque vous vous connectez à votre PC.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Vous avez installé des fichiers de curseurs personnalisés. Le préréglage risque d'entrer en conflit avec ceux-ci.
+Supprimez vos curseurs personnalisés si le préréglage ne semble pas fonctionner.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Un préréglage de curseur est actif. Sélectionnez « Curseur de souris par défaut » pour utiliser des curseurs personnalisés.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Échec de l'ajout de {0} :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Échec de l'ajout de {0} :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Impossible de supprimer certains fichiers :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Ensemble de curseurs exporté vers :
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Ensemble de curseurs exporté vers :
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Échec de l'importation du jeu de curseurs :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Échec de l'exportation du jeu de curseurs :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer tous les curseurs personnalisés ? Cette action ne peut pas être annulée.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Aucun curseur de verrouillage de changement de vitesse personnalisé n'a été trouvé à supprimer.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Aucun curseur en forme de flèche personnalisé n'a été trouvé à supprimer.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Aucun curseur en forme de flèche personnalisée n'a été détecté pour être supprimé.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Aucun curseur IBeam personnalisé à supprimer n'a été trouvé.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Impossible d'ajouter le son de mort :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Aucun son de mort personnalisé à supprimer n'a été trouvé.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Choisissez un son de mort personnalisé</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Sélectionner un curseur personnalisé</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Sélectionner un curseur en forme de flèche personnalisée</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Sélectionner un curseur IBeam personnalisé</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Sélectionner un curseur de verrouillage de Maj personnalisé</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Impossible d'ouvrir les propriétés :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Impossible d'ouvrir les propriétés :</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Ensemble d'importation</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Ensemble d'exportation</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Fonctionnalités du curseur personnalisé</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Modifier les icônes du curseur.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Curseur en forme de flèche</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>Curseur ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Parcourir</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Parcourir</value>
   </data>
 </root>

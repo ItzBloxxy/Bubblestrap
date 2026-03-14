@@ -39,8 +39,6 @@ namespace Bloxstrap
             { "Geometry.MeshLOD.L23", "DFIntCSGLevelOfDetailSwitchingDistanceL23" },
             { "Geometry.MeshLOD.L34", "DFIntCSGLevelOfDetailSwitchingDistanceL34" },
 
-            // Roblox studio
-            { "RobloxStudio.FFlagEnableRibbonPlugin3", "FFlagEnableRibbonPlugin3" }
         };
 
         public static IReadOnlyDictionary<RenderingMode, string> RenderingModes => new Dictionary<RenderingMode, string>

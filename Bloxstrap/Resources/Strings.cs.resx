@@ -113,7 +113,7 @@
     <value>Bubblestrap byl úspěšně odinstalován</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox právě běží, ale musí být zavřen, před tím, než odinstalujete Bloxstrap.
+    <value>Roblox právě běží, ale musí být zavřen, před tím, než odinstalujete Bubblestrap.
 Chtěli nyní zavřít Roblox?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
@@ -337,7 +337,7 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
     <value>Kód</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Tohle jsou ti lidé, kteří významně přispěli a pomohli z Bloxstrap udělat to, čím je teď.</value>
+    <value>Tohle jsou ti lidé, kteří významně přispěli a pomohli z Bubblestrap udělat to, čím je teď.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Nápady funkcí</value>
@@ -370,7 +370,7 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
     <value>Nahlásit chybu</value>
   </data>
   <data name="Menu.About.Title" xml:space="preserve">
-    <value>O Bloxstrapu</value>
+    <value>O Bubblestrapu</value>
   </data>
   <data name="Menu.About.Version" xml:space="preserve">
     <value>Verze {0}</value>
@@ -434,7 +434,7 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
     <value>Vzhled</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Bloxstrap automaticky kontroluje a aktualizuje se když se spouští Roblox.</value>
+    <value>Bubblestrap automaticky kontroluje a aktualizuje se když se spouští Roblox.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
     <value>Automaticky aktualizovat Bubblestrap</value>
@@ -844,7 +844,7 @@ Co chcete udělat?</value>
     <value>Odinstalovat Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Odinstalace odstraní Bloxstrap z vašeho systému a automaticky znovu nastaví výchozího spouštěčtě Robloxu, pokud je stále nainstalován.
+    <value>Odinstalace odstraní Bubblestrap z vašeho systému a automaticky znovu nastaví výchozího spouštěčtě Robloxu, pokud je stále nainstalován.
 Pokud odinstalujete nebo přeinstalujete, protože máte problémy s Robloxem, přečtěte si nejprve [tuto stránku pomoci]({0}).
 Odinstalace možná nebude moct odstranit všechny data sama, takže možná budete muset ručně vyčistit zbylé soubory po Bubblestrap.
 Bubblestrap byl nainstalován na "{1}".</value>
@@ -918,9 +918,6 @@ Pokud ne, pak prosím nahlaste tento error správcům této forky. NENAHLAŠUJTE
     <value>Licence</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Překladatelé</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Máte neuložené změny. Opravdu chcete ukončit bez uložení?</value>
   </data>
@@ -989,7 +986,7 @@ Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste r
     <value>Konfigurace parametrů aplikace, jako je škálování DPI a [optimalizace pro rozlišení celé obrazovky]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox již nebyl nainstalován. Před použitím této možnosti spusťte Bloxstrap alespoň jednou.</value>
+    <value>Roblox již nebyl nainstalován. Před použitím této možnosti spusťte Bubblestrap alespoň jednou.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Opravdu chcete zrušit instalaci?</value>
@@ -1025,9 +1022,6 @@ Prosím manuálně smažte Bubblestrap.exe z instalačního místa nebo zkuste r
     <value>Testovací režim usnadňuje opakované testování vlivu vašich nastavení na Roblox. 
 Pokud je zapnut, po zavření nastavení automaticky spustí Roblox a po zavření Robloxu znovu otevře nastavení v cyklu, dokud jej nevypnete.
 Chcete zapnout testovací režim?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Všechny překlady Bubblestrapu jsou crowdsourcovány skrz [Crowdin]({0}). Všichni uvedení zde jsou lidé, kteří velkoryse dobrovolili svůj čas a snahu přeložit Bubblestrap. Obrovský dík všem!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Instalovat</value>
@@ -1222,7 +1216,7 @@ Zavřete všechny aplikace, které mohou používat soubory Robloxu, a znovu spu
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Nepodařilo se zprovoznit vlastní bootstrapper: {0}.
 Používám motiv {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Není vybrán žádný vlastní motiv.</value>
@@ -1479,28 +1473,28 @@ Chcete změnit preferovaný kanál na {0}?</value>
     <value>Zadaný kanál buď neexistuje, nebo je soukromý.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Import nastavení Bloxstrap se nezdařil.
+    <value>Import nastavení Bubblestrap se nezdařil.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Importovat nastavení z Bloxstrap</value>
+    <value>Importovat nastavení z Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Instalace Bloxstrap nebyla nalezena.</value>
+    <value>Instalace Bubblestrap nebyla nalezena.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
     <value>Získání nejnovějšího Bubblestrapu...</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Nakonfigurujte možnosti související s chováním samotného Bubblestrapu.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Shromážděte informace, které lze nahrát online, abyste vyřešili problém, se kterým se potýkáte.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Konfigurace Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Všechny protokoly Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1547,9 +1541,6 @@ Chcete změnit preferovaný kanál na {0}?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Protokoly Bubblestrap budou smazány.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Nakonfigurujte možnosti související s chováním samotného Bubblestrapu.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags byly dočasně deaktivovány</value>
@@ -1665,12 +1656,6 @@ Chcete změnit preferovaný kanál na {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuální realita</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Vrátit uživatelské rozhraní Roblox Studio</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Používá staré uživatelské rozhraní Roblox Studio namísto nového.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Zakázat trávu v terénu</value>
   </data>
@@ -1733,5 +1718,118 @@ Chcete změnit preferovaný kanál na {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Použije VR vinětu, která ztmaví okraje obrazovky, aby se snížila nevolnost z pohybu.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Zakázat systémovou lištu Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Zabraňuje minimalizaci Roblox v systémové liště.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Spustit Roblox při startu</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Automaticky spustí Roblox, když se přihlásíte do svého počítače.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Odebrat</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>V současné době je aktivní přednastavený kurzor. Než přidáte vlastní kurzor, nastavte kurzor myši nejprve na výchozí hodnotu.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Máte nainstalované soubory s vlastními kurzory. Předvolba s nimi může být v konfliktu.
+Pokud se zdá, že předvolba nefunguje, odstraňte své vlastní kurzory.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Je aktivní předvolba kurzoru. Chcete-li používat vlastní kurzory, nastavte možnost „Kurzor myši“ na „Výchozí“.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nepodařilo se přidat {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Nepodařilo se odstranit některé soubory:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Nejsou k exportu žádné vlastní kurzory.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Sada kurzorů exportována do:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Import sady kurzorů se nezdařil:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Nepodařilo se exportovat sadu kurzorů:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nebylo nalezeno žádné vlastní kurzorové znaménko pro uzamčení řazení, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nebylo nalezeno žádné vlastní kurzorové znaménko pro uzamčení řazení, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní kurzory ve tvaru šipky, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní šipky kurzoru, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Nepodařilo se přidat zvuk smrti:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Nepodařilo se přidat zvuk smrti:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Vyberte vlastní zvuk smrti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Vyberte vlastní zvuk smrti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Vyberte vlastní kurzor ve tvaru šipky</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Vyberte vlastní kurzor ve tvaru šipky</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Vyberte vlastní kurzor ve tvaru I-nosníku</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Vyberte vlastní kurzor pro uzamčení posunu</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Odstranit vše</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Nelze otevřít vlastnosti:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Sada pro export</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Funkce vlastního kurzoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Změňte ikony kurzoru.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Šipka kurzoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Kurzor ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>Kurzor ve tvaru I-nosníku</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Procházet</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Odebrat</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Zvuk</value>
   </data>
 </root>

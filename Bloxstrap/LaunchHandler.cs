@@ -2,7 +2,6 @@
 using Bloxstrap.UI.Elements.Dialogs;
 using System.Windows;
 using Windows.Win32;
-using Windows.Win32.Foundation;
 
 namespace Bloxstrap
 {
@@ -118,10 +117,6 @@ namespace Bloxstrap
             }
             else
             {
-#if QA_BUILD
-                Frontend.ShowMessageBox("You are about to install a QA build of Bloxstrap. The red window border indicates that this is a QA build.\n\nQA builds are handled completely separately of your standard installation, like a virtual environment.", MessageBoxImage.Information);
-#endif
-
                 new LanguageSelectorDialog().ShowDialog();
 
                 var installer = new UI.Elements.Installer.MainWindow();

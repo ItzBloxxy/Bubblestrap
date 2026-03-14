@@ -1,6 +1,5 @@
 ﻿using Bloxstrap.Enums.FlagPresets;
 using CommunityToolkit.Mvvm.Input;
-using System.Diagnostics.CodeAnalysis;
 using System.Windows.Input;
 
 namespace Bloxstrap.UI.ViewModels.Settings
@@ -166,16 +165,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 App.FastFlags.SetPreset("Rendering.Grass", grassValue);
 
                 OnPropertyChanged(nameof(DisableGrass));
-            }
-        }
-
-        public bool OldRSUI
-        {
-            get => App.FastFlags.GetPreset("RobloxStudio.FFlagEnableRibbonPlugin3") == "False";
-            set
-            {
-                App.FastFlags.SetPreset("RobloxStudio.FFlagEnableRibbonPlugin3", value ? "False" : null);
-                OnPropertyChanged(nameof(OldRSUI));
             }
         }
     }

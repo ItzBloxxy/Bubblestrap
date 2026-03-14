@@ -57,6 +57,18 @@
         </controls:OptionControl>
 
         <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding DisableRobloxTray, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding LaunchOnStartup, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Behaviour_BackgroundUpdates_Title}"
             Description="{x:Static resources:Strings.Menu_Behaviour_BackgroundUpdates_Description}">
             <ui:ToggleSwitch IsChecked="{Binding BackgroundUpdates, Mode=TwoWay}" />

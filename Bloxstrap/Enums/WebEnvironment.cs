@@ -14,12 +14,6 @@ namespace Bloxstrap.Enums
         [Description("dev")]
         Dev,
 
-        [Description("pizza")]
-        DevPizza,
-
-        [Description("matt")]
-        DevMatt,
-
         [Description("local")]
         Local
     }

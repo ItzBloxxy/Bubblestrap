@@ -58,6 +58,26 @@
             set => App.Settings.Prop.AutoCloseCrashHandler = value;
         }
 
+        public bool DisableRobloxTray
+        {
+            get => App.Settings.Prop.DisableRobloxTray;
+            set
+            {
+                App.Settings.Prop.DisableRobloxTray = value;
+                OnPropertyChanged(nameof(DisableRobloxTray));
+            }
+        }
+
+        public bool LaunchOnStartup
+        {
+            get => App.Settings.Prop.LaunchOnStartup;
+            set
+            {
+                App.Settings.Prop.LaunchOnStartup = value;
+                OnPropertyChanged(nameof(LaunchOnStartup));
+            }
+        }
+
         public bool BackgroundUpdates
         {
             get => App.Settings.Prop.BackgroundUpdatesEnabled;

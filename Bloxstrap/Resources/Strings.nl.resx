@@ -918,9 +918,6 @@ Als dit niet het geval is, rapporteer dit probleem dan aan de beheerders van dez
     <value>Licenties</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Vertalers</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>U hebt wijzigingen dat niet opgeslagen zijn. Bent u zeker dat u wilt afsluiten zonder op te slaan?</value>
   </data>
@@ -1024,9 +1021,6 @@ Verwijder handmatig Bubblestrap.EXE van de installatielocatie of probeer je syst
     <value>Test modus maakt het gemakkelijker om iteratief te testen hoe uw instellingen Roblox beïnvloeden. 
 Wanneer ingeschakeld, zal Roblox automatisch starten na het sluiten van de instellingen, en de Instellingen heropenen na het sluiten van Roblox, in een cyclus totdat u het uitschakelt.
 Wilt u de testmodus inschakelen?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Alle vertalingen van Bubblestrap zijn gecrowdsourcet via [Crowdin]({0}). Iedereen die hier op de lijst staat, zijn mensen die zich ruimhartig hebben ingezet voor het lokaliseren van Bubblestrap. Een grote dank aan iedereen hier!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Installeer</value>
@@ -1221,7 +1215,7 @@ Sluit alstublieft alle applicaties die mogelijk de bestanden van Roblox gebruike
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Het instellen van aangepaste bootstrapper: {0}.
 Word ingesteld op de standaard {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Geen aangepaste thema geselecteerd.</value>
@@ -1478,25 +1472,22 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
     <value>Het opgegeven kanaal bestaat niet of is privé.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Het importeren van Bloxstrap-instellingen is mislukt.
+    <value>Het importeren van Bubblestrap-instellingen is mislukt.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Instellingen importeren vanuit Bloxstrap</value>
+    <value>Instellingen importeren vanuit Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Bloxstrap-installatie niet gevonden.</value>
+    <value>Bubblestrap-installatie niet gevonden.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>Configureer opties met betrekking tot het gedrag van Bubblestrap zelf.</value>
-  </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Verzamel informatie die online kan worden geüpload om een probleem dat u ondervindt op te lossen.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap-configuratie</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Alle Bubblestrap-logboeken</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1661,12 +1652,6 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuele realiteit</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Roblox Studio UI terugzetten</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Gebruikt de oude Roblox Studio-gebruikersinterface in plaats van de nieuwe.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Terrein gras uitschakelen</value>
   </data>
@@ -1729,5 +1714,121 @@ Wil je je voorkeurskanaal wijzigen naar {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Past een VR-vignette toe die de randen van het scherm donkerder maakt om bewegingsziekte te verminderen.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Roblox-systeemvak uitschakelen</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Voorkomt dat Roblox geminimaliseerd blijft in het systeemvak.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Roblox bij opstarten uitvoeren</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Start Roblox automatisch wanneer u inlogt op uw pc.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Er is momenteel een vooraf ingestelde cursor actief. Stel de muiscursor eerst in op de standaardinstelling voordat u een aangepaste cursor toevoegt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Er is momenteel een vooraf ingestelde cursor actief. Stel de muiscursor eerst in op de standaardinstelling voordat u een aangepaste cursor toevoegt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Er zijn aangepaste cursorbestanden geïnstalleerd. De preset kan hiermee conflicteren.
+Verwijder je aangepaste cursors als de preset niet lijkt te werken.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Er is een cursorsjabloon actief. Stel ‘Muiscursor’ in op ‘Standaard’ om aangepaste cursors te gebruiken.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Het is niet gelukt om {0} toe te voegen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Het is niet gelukt om enkele bestanden te verwijderen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Er zijn geen aangepaste cursors om te exporteren.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Cursorset geëxporteerd naar:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Het importeren van de cursorset is mislukt:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Het exporteren van de cursorset is mislukt:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Weet u zeker dat u alle aangepaste cursors wilt verwijderen? Dit kan niet ongedaan worden gemaakt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Er is geen aangepaste cursor voor de versnellingsvergrendeling gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Er is geen aangepaste pijlcursor gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Er is geen aangepaste pijlcursor gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Er is geen aangepaste IBeam-cursor gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Er is geen aangepast sterfgeluid gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Er is geen aangepast sterfgeluid gevonden om te verwijderen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Kies een aangepast overlijdensgeluid</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Kies een aangepaste cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Kies een aangepaste pijlcursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Kies een aangepaste cursor voor de Shift-vergrendeling</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Kies een aangepaste cursor voor de Shift-vergrendeling</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Alles verwijderen</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>De eigenschappen konden niet worden geopend:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Importset</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Exportset</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Aangepaste cursorfuncties</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Wijzig de cursorpictogrammen.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Pijlcursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>ArrowFar-cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>I-balkcursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Bladeren</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Verwijderen</value>
   </data>
 </root>

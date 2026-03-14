@@ -1,135 +1,88 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Concurrent;
+using System.ComponentModel;
+using System.Net.Http.Json;
 
 namespace Bloxstrap.RobloxInterfaces
 {
-    // i am 100% sure there is a much, MUCH better way to handle this
-    // matt wrote this so this is effectively a black box to me right now
-    // i'll likely refactor this at some point
     public class ApplicationSettings
     {
-        private string _applicationName;
-        private string _channelName;
-
-        private bool _initialised = false;
+        private readonly string _applicationName;
+        private readonly string _channelName;
+        private readonly SemaphoreSlim _fetchLock = new(1, 1);
         private Dictionary<string, string>? _flags;
+        private bool _initialised;
 
-        private SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
+        private static readonly ConcurrentDictionary<(string, string), ApplicationSettings> _cache = new();
 
         private ApplicationSettings(string applicationName, string channelName)
         {
             _applicationName = applicationName;
-            _channelName = channelName;
+            _channelName = channelName.ToLowerInvariant();
         }
 
-        private async Task Fetch()
+        private async Task EnsureFetched()
         {
-            if (_initialised)
-                return;
+            if (_initialised) return;
 
-            await semaphoreSlim.WaitAsync();
+            await _fetchLock.WaitAsync();
             try
             {
-                if (_initialised)
-                    return;
-
-                string logIndent = $"ApplicationSettings::Fetch.{_applicationName}.{_channelName}";
-                App.Logger.WriteLine(logIndent, "Fetching fast flags");
+                if (_initialised) return;
 
                 string path = $"/v2/settings/application/{_applicationName}";
                 if (_channelName != Deployment.DefaultChannel.ToLowerInvariant())
                     path += $"/bucket/{_channelName}";
 
-                HttpResponseMessage response;
-
-                try
-                {
-                    response = await App.HttpClient.GetAsync("https://clientsettingscdn.roblox.com" + path);
-                }
-                catch (Exception ex)
-                {
-                    App.Logger.WriteLine(logIndent, "Failed to contact clientsettingscdn! Falling back to clientsettings...");
-                    App.Logger.WriteException(logIndent, ex);
-
-                    response = await App.HttpClient.GetAsync("https://clientsettings.roblox.com" + path);
-                }
-
-                string rawResponse = await response.Content.ReadAsStringAsync();
-
-                response.EnsureSuccessStatusCode();
-
-                var clientSettings = JsonSerializer.Deserialize<ClientFlagSettings>(rawResponse);
-
-                if (clientSettings == null)
-                    throw new Exception("Deserialised client settings is null!");
-
-                if (clientSettings.ApplicationSettings == null)
-                    throw new Exception("Deserialised application settings is null!");
-
-                _flags = clientSettings.ApplicationSettings;
+                _flags = await FetchInternal(path);
                 _initialised = true;
             }
             finally
             {
-                semaphoreSlim.Release();
+                _fetchLock.Release();
             }
+        }
+
+        private async Task<Dictionary<string, string>> FetchInternal(string path)
+        {
+            string[] hosts = { "https://clientsettingscdn.roblox.com", "https://clientsettings.roblox.com" };
+
+            foreach (var host in hosts)
+            {
+                try
+                {
+                    var response = await App.HttpClient.GetAsync(host + path);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var data = await response.Content.ReadFromJsonAsync<ClientFlagSettings>();
+                        if (data?.ApplicationSettings != null) return data.ApplicationSettings;
+                    }
+                }
+                catch { continue; }
+            }
+            throw new Exception("Failed to fetch settings from all endpoints.");
         }
 
         public async Task<T?> GetAsync<T>(string name)
         {
-            await Fetch();
-
-            if (!_flags!.ContainsKey(name))
-                return default;
-
-            string value = _flags[name];
+            await EnsureFetched();
+            if (_flags == null || !_flags.TryGetValue(name, out var value)) return default;
 
             try
             {
-                var converter = TypeDescriptor.GetConverter(typeof(T));
-                if (converter == null)
-                    return default;
-
-                return (T?)converter.ConvertFromString(value);
+                return (T?)TypeDescriptor.GetConverter(typeof(T)).ConvertFromString(value);
             }
-            catch (NotSupportedException) // boohoo
-            {
-                return default;
-            }
+            catch { return default; }
         }
 
-        public T? Get<T>(string name)
-        {
-            return GetAsync<T>(name).Result;
-        }
-
-        // _cache[applicationName][channelName]
-        private static Dictionary<string, Dictionary<string, ApplicationSettings>> _cache = new();
+        public T? Get<T>(string name) => GetAsync<T>(name).GetAwaiter().GetResult();
 
         public static ApplicationSettings PCDesktopClient => GetSettings("PCDesktopClient");
-
         public static ApplicationSettings PCClientBootstrapper => GetSettings("PCClientBootstrapper");
 
-        public static ApplicationSettings GetSettings(string applicationName, string channelName = Deployment.DefaultChannel, bool shouldCache = true)
+        public static ApplicationSettings GetSettings(string applicationName, string channelName = Deployment.DefaultChannel)
         {
-            channelName = channelName.ToLowerInvariant();
-
-            lock (_cache)
-            {
-                if (_cache.ContainsKey(applicationName) && _cache[applicationName].ContainsKey(channelName))
-                    return _cache[applicationName][channelName];
-
-                var flags = new ApplicationSettings(applicationName, channelName);
-
-                if (shouldCache)
-                {
-                    if (!_cache.ContainsKey(applicationName))
-                        _cache[applicationName] = new();
-
-                    _cache[applicationName][channelName] = flags;
-                }
-
-                return flags;
-            }
+            var key = (applicationName, channelName.ToLowerInvariant());
+            return _cache.GetOrAdd(key, k => new ApplicationSettings(k.Item1, k.Item2));
         }
     }
 }

@@ -917,9 +917,6 @@
     <value>التراخيص</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>المترجمين</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>لديك تغييرات غير محفوظة. هل أنت متأكد من أنك تريد الإغلاق دون الحفظ؟</value>
   </data>
@@ -1025,9 +1022,6 @@
 خلال تمكينه، سيتم تشغيل Roblox تلقائيًا بعد إغلاق الإعدادات، وإعادة فتح الإعدادات بعد إغلاق Roblox، في دورة حتى تعطيله.
 هل ترغب في تمكين وضع الاختبار؟</value>
   </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>جميع ترجمات Bubblestrap مزدحمة من خلال [Crowdin]({0}). كل الأشخاص المذكورين هنا هم المتطوعين الذين تطوعوا بذلوا جهدهم ووقتهم للمساعدة في توطين Bubblestrap. شكراً جزيلاً للجميع هنا!</value>
-  </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>تثبيت</value>
     <comment>The word "Install" is being used as a verb in this instance, like the other navigation button texts of "Next" and "Back"</comment>
@@ -1085,9 +1079,6 @@
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
     <value>يتم اخذ اخر نسخه من Bubblestrap...</value>
-  </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>تكوين الخيارات المتعلقة بسلوك Bubblestrap.</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>فارغ</value>
@@ -1245,7 +1236,7 @@
   </data>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>لم يتم تحديد موضوع مخصص.</value>
@@ -1487,22 +1478,22 @@
     <value>القناة المحددة إما غير موجودة أو خاصة</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>فشل استيراد إعدادات Bloxstrap.
+    <value>فشل استيراد إعدادات Bubblestrap.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>استيراد الإعدادات من Bloxstrap</value>
+    <value>استيراد الإعدادات من Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>لم يتم العثور على تثبيت Bloxstrap.</value>
+    <value>لم يتم العثور على تثبيت Bubblestrap.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>اجمع المعلومات التي يمكن تحميلها عبر الإنترنت لحل المشكلة التي تواجهها.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>تكوين Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>جميع سجلات Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1667,12 +1658,6 @@
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>الواقع الافتراضي</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>العودة إلى واجهة مستخدم Roblox Studio</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>يستخدم واجهة المستخدم القديمة لـ Roblox Studio بدلاً من الواجهة الجديدة.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>تعطيل عشب التضاريس</value>
   </data>
@@ -1735,5 +1720,119 @@
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>يطبق تأثير VR vignette الذي يغمق حواف الشاشة لتقليل دوار الحركة.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>يمنع Roblox من البقاء مصغرًا في علبة النظام.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>تشغيل Roblox عند بدء التشغيل</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>يبدأ تشغيل Roblox تلقائيًا عند تسجيل الدخول إلى جهاز الكمبيوتر الخاص بك.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>تعطيل علبة نظام Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>هناك إعداد مسبق لمؤشر الفأرة نشط حاليًا. قم أولاً بتعيين مؤشر الفأرة على الإعداد الافتراضي قبل إضافة مؤشر مخصص.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>لديك ملفات مؤشرات مخصصة مثبتة. قد يتعارض الإعداد المسبق معها.
+قم بإزالة مؤشراتك المخصصة إذا لم يعمل الإعداد المسبق.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>لديك ملفات مؤشرات مخصصة مثبتة. قد يتعارض الإعداد المسبق معها.
+قم بإزالة مؤشراتك المخصصة إذا لم يعمل الإعداد المسبق.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>إعداد مؤشر الماوس مفعّل. اضبط ”مؤشر الماوس“ على ”الافتراضي“ لاستخدام مؤشرات مخصصة.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>فشل إضافة {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>فشل إزالة بعض الملفات:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>لا توجد مؤشرات مخصصة للتصدير.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>تم تصدير مجموعة المؤشرات إلى:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>فشل تصدير مجموعة المؤشرات:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>فشل تصدير مجموعة المؤشرات:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>هل أنت متأكد من رغبتك في إزالة جميع المؤشرات المخصصة؟ لا يمكن التراجع عن هذه العملية.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>لم يتم العثور على مؤشر قفل التبديل المخصص المطلوب إزالته.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>لم يتم العثور على مؤشر سهم مخصص بعيد يمكن إزالته.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>لم يتم العثور على مؤشر سهم مخصص بعيد يمكن إزالته.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>فشل إضافة صوت الموت:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>فشل إضافة صوت الموت:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>اختر صوت وفاة مخصص</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>اختر صوت وفاة مخصص</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>اختر مؤشرًا مخصصًا على شكل سهم طويل</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>اختر مؤشرًا مخصصًا على شكل سهم طويل</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>اختر مؤشر قفل التبديل المخصص</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>إزالة الكل</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>تعذر فتح الخصائص:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>مجموعة الاستيراد</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>مجموعة التصدير</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>ميزات المؤشر المخصص</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>تغيير رموز المؤشر.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>مؤشر السهم</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>مؤشر ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>مؤشر IBeam</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>تصفح</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>إزالة</value>
+  </data>
+  <data name="Menu.GBSEditor.VRVignette.Title" xml:space="preserve">
+    <value>مشهد قصير بتقنية الواقع الافتراضي</value>
   </data>
 </root>

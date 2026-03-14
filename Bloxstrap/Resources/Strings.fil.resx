@@ -916,9 +916,6 @@ Kung hindi, I-report mo itong eksepsyon sa maintainers ng fork nito. HUWAG mong 
     <value>Mga lisensya</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Tagapagsalin</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Meron kang nabago at hindi pa naka-save. Sigurado ka bang gusto mo isara nang hindi naka-save?</value>
   </data>
@@ -1019,9 +1016,6 @@ Pakialisin mismo ang Bubblestrap.exe sa install location o subukan mong i-restar
     <value>Pinapadali ang "Test Mode" para paulit-ulit na masubok kung paano ina-apekto ang settings mo sa Roblox.
 Habang naka-enable, kusang bubukas ang Roblox pagkatapos isara ang mga settings, at bubuksan ulit ang mga settings pagkatapos isara ang Roblox, sa isang cycle hanggang sa i-disable mo ito.
 Gusto mo bang i-enable ang "Test Mode"?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Lahat ng translations para sa Bubblestrap ay crowdsourced galing sa [Crowdin]({0}). Lahat nakalista dito ang mga tao na nakapagboluntaryo para sa oras at pagsisikap para tulungan i-localize at Bubblestrap. Malaking pasasalamat sa iyong lahat!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>I-install</value>
@@ -1215,7 +1209,7 @@ Isarado muna ang kahit anong application na maaaring gamitin ang mga file ng Rob
   </data>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Nabigo I-setup ang custom bootstrapper: {0}. Defaulting sa {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Walang custom theme napili.</value>
@@ -1475,25 +1469,22 @@ Gusto mo bang ilipat ang iyong ginustong channel sa {0}?</value>
     <value>Ang tinukoy na channel ay maaaring wala o pribado</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Nabigong i-import ang mga setting ng Bloxstrap.
+    <value>Nabigong i-import ang mga setting ng Bubblestrap.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Mag-import ng mga setting mula sa Bloxstrap</value>
+    <value>Mag-import ng mga setting mula sa Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Hindi nakita ang pag-install ng Bloxstrap.</value>
+    <value>Hindi nakita ang pag-install ng Bubblestrap.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>I-configure ang mga opsyon na nauugnay sa gawi mismo ng Bubblestrap.</value>
-  </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Magtipon ng impormasyon na maaaring i-upload online upang i-troubleshoot ang isang problemang nararanasan mo.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>configuration ng bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Lahat ng mga log ng Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1658,12 +1649,6 @@ Gusto mo bang ilipat ang iyong ginustong channel sa {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtual Reality</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>I-revert ang Roblox Studio UI</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Ginagamit ang lumang Roblox Studio UI sa halip na ang bago.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Huwag paganahin ang Terrain Grass</value>
   </data>
@@ -1729,5 +1714,118 @@ Gusto mo bang ilipat ang iyong ginustong channel sa {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Naglalapat ng VR vignette na nagpapadilim sa mga gilid ng screen upang mabawasan ang pagkahilo.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Huwag paganahin ang Roblox System Tray</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Pinipigilan ang Roblox na manatiling minimize sa system tray.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Patakbuhin ang Roblox sa startup</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Awtomatikong sinisimulan ang Roblox kapag nag-log in ka sa iyong PC.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Kasalukuyang aktibo ang isang preset ng cursor. Itakda muna ang Mouse Cursor sa Default bago magdagdag ng custom na cursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Mayroon kang naka-install na custom na cursor file. Maaaring sumalungat sa kanila ang preset.
+Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Aktibo ang isang preset ng cursor. Itakda ang Mouse Cursor sa Default upang gumamit ng mga custom na cursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Nabigong idagdag ang {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nabigong alisin ang ilang file:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Walang mga custom na cursor na ie-export.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Na-export ang set ng cursor sa:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Nabigong i-import ang set ng cursor:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Nabigong i-export ang set ng cursor:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Sigurado ka bang gusto mong alisin ang lahat ng custom na cursor? Hindi na ito maaaring bawiin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Walang nahanap na custom na shift lock cursor na aalisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Walang nakitang custom na arrow cursor upang alisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Walang nahanap na custom na arrow malayong cursor upang alisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Walang nakitang custom na cursor ng IBeam na aalisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Nabigong magdagdag ng death sound:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Walang nakitang custom na death sound para alisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Pumili ng Custom na Death Sound</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Pumili ng Custom na Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Pumili ng Custom na Arrow Far Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Pumili ng Custom na IBeam Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Pumili ng Custom Shift Lock Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Alisin Lahat</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Hindi mabuksan ang mga katangian:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Import Set</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>I-export ang Set</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Mga Custom na Tampok ng Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Baguhin ang mga icon ng cursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Arrow Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam Cursor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Mag-browse</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Alisin</value>
   </data>
 </root>

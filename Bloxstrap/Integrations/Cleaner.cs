@@ -100,13 +100,23 @@
             if (File.GetCreationTime(file) > Threshold)
                 return false;
 
-            // TODO add more safety checks?
-            if (!file.Contains("Roblox") && !file.Contains(App.ProjectName) && !file.Contains(Paths.Base))
-                throw new Exception($"{file} was in disallowed directory");
+            // normalize the path here so "..\Windows" can't bypass your check
+            string checkedPath = Path.GetFullPath(file);
 
-            if (file.Contains("Windows"))
+            // TODO add more safety checks? probably done? - bloxxy
+            if (!checkedPath.Contains("Roblox", StringComparison.OrdinalIgnoreCase) &&
+                !checkedPath.Contains(App.ProjectName, StringComparison.OrdinalIgnoreCase) &&
+                !checkedPath.Contains(Paths.Base, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new Exception($"{file} was in disallowed directory");
+            }
+
+            if (checkedPath.Contains("Windows", StringComparison.OrdinalIgnoreCase))
+            {
                 throw new Exception($"{file} was in Windows directory"); // we dont want any contact with windows directory
                                                                          // this will cancel the cleaner process
+            }
+
             return true;
         }
 

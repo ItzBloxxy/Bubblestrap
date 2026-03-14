@@ -15,35 +15,19 @@ namespace Bloxstrap
             { "nil", Strings.Common_SystemDefault },
             { "en", "English" },
             { "en-US", "English (United States)" },
-#if QA_BUILD
-            { "sq", "Albanian" }, // Albanian (TODO: translate string)
-#endif
             { "ar", "العربية" }, // Arabic
             { "bg", "Български" }, // Bulgarian
-#if QA_BUILD
-            { "bn", "বাংলা" }, // Bengali
-#endif
             { "bs", "Bosanski" }, // Bosnian
             { "cs", "Čeština" }, // Czech
             { "de", "Deutsch" }, // German
             { "da", "Dansk" }, // Danish
             { "es-ES", "Español" }, // Spanish
-#if QA_BUILD
-            { "el", "Ελληνικά" }, // Greek
-#endif
             { "fa", "فارسی" }, // Persian
             { "fi", "Suomi" }, // Finnish
             { "fil", "Filipino" }, // Filipino
             { "fr", "Français" }, // French
-#if QA_BUILD
-            { "he", "עברית‎" }, // Hebrew
-            { "hi", "Hindi (Latin)" }, // Hindi
-#endif
             { "hr", "Hrvatski" }, // Croatian
             { "hu", "Magyar" }, // Hungarian
-#if QA_BUILD
-            { "is", "Íslenska" }, // Icelandic
-#endif
             { "id", "Bahasa Indonesia" }, // Indonesian
             { "it", "Italiano" }, // Italian
             { "ja", "日本語" }, // Japanese
@@ -52,20 +36,10 @@ namespace Bloxstrap
             { "lt", "Lietuvių" }, // Lithuanian
             { "ms", "Malay" }, // Malay
             { "nl", "Nederlands" }, // Dutch
-#if QA_BUILD
-            { "et", "Eesti Keel" }, // Estonian
-            { "no", "Bokmål" }, // Norwegian
-#endif
             { "pl", "Polski" }, // Polish
-#if QA_BUILD
-            { "pt-PT", "Portugese (European)" }, // Portuguese (TODO: translate)
-#endif
             { "pt-BR", "Português (Brasil)" }, // Portuguese, Brazilian
             { "ro", "Română" }, // Romanian
             { "ru", "Русский" }, // Russian
-#if QA_BUILD
-            { "sr-CS", "Serbian (Latin)" }, // Serbian (TODO: translate)
-#endif
             { "sv-SE", "Svenska" }, // Swedish
             { "th", "ภาษาไทย" }, // Thai
             { "tr", "Türkçe" }, // Turkish
@@ -129,11 +103,6 @@ namespace Bloxstrap
                 {
                     window.FontFamily = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Resources/Fonts/"), "./#Noto Sans Thai");
                 }
-
-#if QA_BUILD
-                window.BorderBrush = System.Windows.Media.Brushes.Red;
-                window.BorderThickness = new Thickness(4);
-#endif
             }));
         }
     }

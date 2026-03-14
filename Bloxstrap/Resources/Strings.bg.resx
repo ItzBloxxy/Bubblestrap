@@ -917,9 +917,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
     <value>Лицензи</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Преводачи</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Имате незапазени промени. Сигурни ли сте, че искате да затворите без запазване?</value>
   </data>
@@ -1025,9 +1022,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
 Докато е активиран, Roblox автоматично ще се стартира след затваряне на настройките, които ще се отворят отново след затваряне на Roblox в цикъл, докато не го деактивирате.
 Искате ли да активирате тестовия режим?</value>
   </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Всички преводи на Bubblestrap са събрани от общността чрез [Crowdin]({0}). Всички, изброени тук, са хора, които щедро са отделили времето и усилията си, за да помогнат за локализирането на Bubblestrap. Огромно благодаря на всички тук!</value>
-  </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Инсталирай</value>
     <comment>The word "Install" is being used as a verb in this instance, like the other navigation button texts of "Next" and "Back"</comment>
@@ -1086,7 +1080,7 @@ Bubblestrap е инсталиран на „{1}“.</value>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
     <value>Вземане на най-новата версия на Bubblestrap...</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Конфигурирайте опции, свързани с поведението на Bubblestrap.</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
@@ -1245,7 +1239,7 @@ Bubblestrap е инсталиран на „{1}“.</value>
   </data>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Неуспешно настройване на тема: {0}. Преминаване към {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Няма избрана тема.</value>
@@ -1487,22 +1481,22 @@ Bubblestrap е инсталиран на „{1}“.</value>
     <value>Посоченият канал или не съществува, или е частен.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Неуспешен импорт на настройките на Bloxstrap.
+    <value>Неуспешен импорт на настройките на Bubblestrap.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Импортиране на настройки от Bloxstrap</value>
+    <value>Импортиране на настройки от Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Инсталацията на Bloxstrap не беше намерена.</value>
+    <value>Инсталацията на Bubblestrap не беше намерена.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Съберете информация, която може да бъде качена онлайн, за да разрешите проблема, с който се сблъсквате.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Конфигурация на Bubblestrap</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Всички Bubblestrap логове</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1549,9 +1543,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Логите на Bubblestrap ще бъдат изтрити.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Конфигурирайте опциите, свързани с поведението на Bubblestrap.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags са временно деактивирани</value>
@@ -1667,12 +1658,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Виртуална реалност</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Върни Roblox Studio UI</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Използва стария интерфейс на Roblox Studio вместо новия.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Деактивиране на тревата на терена</value>
   </data>
@@ -1738,5 +1723,118 @@ Bubblestrap е инсталиран на „{1}“.</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Прилага VR винетка, която затъмнява краищата на екрана, за да намали гаденето при движение.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Деактивиране на системната лента на Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Деактивиране на системната лента на Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Стартирай Roblox при стартиране</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Автоматично стартира Roblox, когато влезете в компютъра си.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>В момента е активна предварително зададена настройка на курсора. Преди да добавите персонализиран курсор, първо възстановете стандартната настройка на курсора на мишката.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Имате инсталирани файлове с персонализирани курсори. Настройката може да влезе в конфликт с тях.
+Премахнете персонализираните курсори, ако настройката не работи.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Активна е предварително зададена настройка на курсора. За да използвате персонализирани курсори, задайте „Курсор на мишката“ на „По подразбиране“.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Не успях да добавя {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Не успях да изтрия някои файлове:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Няма персонализирани курсори за експортиране.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Наборът от курсори е експортиран в:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Не успях да импортирам набор от курсори:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Не успях да експортирам набора от курсори:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Сигурен ли сте, че искате да премахнете всички персонализирани курсори? Това действие не може да бъде отменено.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Не беше открит курсор за заключване на превключване, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Не беше открит персонализиран курсор под формата на стрелка, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Не беше открит курсор с персонализирана стрелка, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Не беше открит персонализиран курсор IBeam, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Не успях да добавя звук за смърт:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Не беше открит потребителски звук при смърт, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Изберете персонализиран звук при смърт</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Изберете персонализиран курсор</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Изберете персонализиран курсор във формата на стрелка</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Изберете персонализиран курсор във формата на I-греда</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Изберете персонализиран курсор за заключване на клавишите за превключване</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Изтрий всичко</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Изтрий всичко</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Набор за импортиране</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Набор за износ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Набор за износ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Функции за персонализиран курсор</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Променете иконите на курсора.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Стрелка</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>Курсор ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Разглеждане</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Разглеждане</value>
   </data>
 </root>

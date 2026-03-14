@@ -918,9 +918,6 @@ Ha nem, akkor kérjük, jelentse ezt a kivételt a fork karbantartóinak. NE jel
     <value>Licencek</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Fordítók</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>El nem mentett módosításai vannak. Biztos, hogy mentés nélkül akarja bezárni?</value>
   </data>
@@ -1025,9 +1022,6 @@ Kérjük, manuálisan törölje a Bubblestrap.exe fájlt a telepítési helyről
     <value>A tesztmód megkönnyíti a beállítások Robloxra gyakorolt hatásának iteratív tesztelését. 
 Amíg engedélyezve van, a beállítások bezárása után automatikusan elindítja a Robloxot, és a Roblox bezárása után újra megnyitja a beállításokat, egy ciklusban, amíg le nem tiltod.
 Szeretné engedélyezni a teszt üzemmódot?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>A Bubblestrap összes fordítása a [Crowdin]({0}) segítségével készül. Mindenki, aki itt szerepel, olyan ember, aki nagylelkűen önkéntes munkát végzett, hogy segítsen a Bubblestrap lokalizálásában. Hatalmas köszönet mindenkinek!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Telepítés</value>
@@ -1244,7 +1238,7 @@ Kérjük, zárjon be minden olyan alkalmazást, amely a Roblox fájljait haszná
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Sikertelen az egyéni bootstrapper beállítása: {0}.
 Alapértelmezés szerint {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Nincs egyéni téma kiválasztva.</value>
@@ -1486,25 +1480,25 @@ Szeretnéd {0} csatornára váltani a preferált csatornádat?</value>
     <value>A megadott csatorna vagy nem létezik, vagy privát.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>A Bloxstrap beállítások importálása sikertelen.
+    <value>A Bubblestrap beállítások importálása sikertelen.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Beállítások importálása a Bloxstrapból</value>
+    <value>Beállítások importálása a Bubblestrapból</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>A Bloxstrap telepítő nem található.</value>
+    <value>A Bubblestrap telepítő nem található.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>A Bubblestrap viselkedésével kapcsolatos beállítások konfigurálása.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Gyűjtsön össze olyan információkat, amelyeket online feltölthet a problémája megoldása érdekében.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap konfiguráció</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Minden Bubblestrap napló</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1551,9 +1545,6 @@ Szeretnéd {0} csatornára váltani a preferált csatornádat?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>A Bubblestrap naplófájlok törlésre kerülnek.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>A Bubblestrap viselkedésével kapcsolatos beállítások konfigurálása.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>A FastFlags funkció ideiglenesen letiltásra került.</value>
@@ -1669,12 +1660,6 @@ Szeretnéd {0} csatornára váltani a preferált csatornádat?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuális valóság</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Roblox Studio felhasználói felület visszaállítása</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>A régi Roblox Studio felhasználói felületet használja az új helyett.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Területi fű letiltása</value>
   </data>
@@ -1737,5 +1722,121 @@ Szeretnéd {0} csatornára váltani a preferált csatornádat?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>VR-vignettát alkalmaz, amely elsötétíti a képernyő széleit, hogy csökkentse a mozgásbetegséget.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Roblox rendszer tálca letiltása</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Megakadályozza, hogy a Roblox minimalizált állapotban maradjon a tálcán.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Roblox futtatása indításkor</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>A Roblox automatikusan elindul, amikor bejelentkezik a számítógépére.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Hang</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Jelenleg egy előre beállított kurzor van aktív. Mielőtt egyéni kurzort adna hozzá, először állítsa vissza az egérkurzort az alapértelmezett értékre.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Egyéni kurzorfájlok vannak telepítve. Előfordulhat, hogy az előre beállított kurzor összeütközésbe kerül velük.
+Ha az előre beállított kurzor nem működik, távolítsa el az egyéni kurzorokat.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Egy kurzorbeállítás van aktív. Az egyéni kurzorok használatához állítsa az Egérkurzort alapértelmezettre.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>A {0} hozzáadása nem sikerült:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Néhány fájl eltávolítása nem sikerült:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Nincs exportálandó egyéni kurzor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>A kurzorkészlet exportálva:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>A kurzorkészlet importálása sikertelen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>A kurzorkészlet exportálása sikertelen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyéni váltózár-kurzort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyéni váltózár-kurzort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyedi nyíl alakú kurzort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyedi nyíl alakú kurzort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyéni IBeam kurzort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>A halálhang hozzáadása nem sikerült:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Nem találtam eltávolítandó egyéni halálhangot.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Egyéni halálhang kiválasztása</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Egyéni nyíl alakú kurzor kiválasztása</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Egyéni nyíl alakú kurzor kiválasztása</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Egyéni I-gerenda kurzor kiválasztása</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Válasszon egy egyéni váltózár-kurzort</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>A tulajdonságok megnyitása nem sikerült:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>A tulajdonságok megnyitása nem sikerült:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Exportálási beállítások</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Exportálási beállítások</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Változtassa meg a kurzor ikonjait.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Változtassa meg a kurzor ikonjait.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Nyíl kurzor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar kurzor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>ArrowFar kurzor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>IBeam kurzor</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Böngészés</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Eltávolítás</value>
   </data>
 </root>

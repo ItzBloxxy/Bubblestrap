@@ -46,7 +46,7 @@
             Versions = Path.Combine(Base, "Versions");
             Modifications = Path.Combine(Base, "Modifications");
             CustomThemes = Path.Combine(Base, "CustomThemes");
-            Roblox = Path.Combine(LocalAppData, "Roblox"); // that was base before?
+            Roblox = Path.Combine(LocalAppData, "Roblox");
 
             RobloxLogs = Path.Combine(Roblox, "logs");
             RobloxCache = Path.Combine(Path.GetTempPath(), "Roblox");

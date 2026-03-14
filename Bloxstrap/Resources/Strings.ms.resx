@@ -916,9 +916,6 @@ Jika tidak, sila laporkan isu pengecualian ini kepada penyelenggara fork ini. JA
     <value>Lisensi</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Penterjemah</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Anda mempunyai perubahan yang tidak disimpan. Adakah anda pasti ingin menutup tanpa menyimpan?</value>
   </data>
@@ -1020,9 +1017,6 @@ Sila buang fail Bubblestrap.exe secara manual dari lokasi pemasangan atau cuba m
     <value>Mod pengujian memudahkan anda menguji atau mencuba secara berulang bagaimana sesuatu tetapan anda tetapkan akan mempengaruhi Roblox.
 Semasa mod ini diaktifkan, ia akan melancarkan Roblox secara automatik selepas menutup menu Tetapan, dan membuka semula menu Tetapan selepas menutup Roblox, secara berulang sehingga anda mematikan ciri ini.
 Adakah anda ingin mengaktifkan mod pengujian?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Semua terjemahan Bubblestrap yang diperoleh adalah dengan kerjasama ramai melalui [Crowdin]({0}). Setiap individu yang disenaraikan di sini adalah mereka yang menyumbangkan masa dan juga usaha untuk membantu menjayakan penterjemahan Bubblestrap. Jutaan terima kasih kepada mereka semua di sini!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Pasang</value>
@@ -1238,7 +1232,7 @@ Sila tutup sebarang aplikasi yang mungkin menggunakan fail Roblox, dan cuba lagi
   </data>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Gagal menyediakan bootstrapper tersuai: {0}. Menggunakan tetapan lalai balik kepada {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Tiada tema suai dipilih.</value>
@@ -1480,25 +1474,25 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
     <value>Saluran yang ditentukan sama ada tidak wujud atau peribadi</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Gagal mengimport tetapan Bloxstrap.
+    <value>Gagal mengimport tetapan Bubblestrap.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Import tetapan daripada Bloxstrap</value>
+    <value>Import tetapan daripada Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Pemasangan Bloxstrap tidak dijumpai.</value>
+    <value>Pemasangan Bubblestrap tidak dijumpai.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Konfigurasikan pilihan yang berkaitan dengan gelagat Bubblestrap itu sendiri.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Kumpulkan maklumat yang boleh dimuat naik dalam talian untuk menyelesaikan masalah yang anda hadapi.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Konfigurasi tali gelembung</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Semua log Bubblestrap</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1545,9 +1539,6 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Log Bubblestrap akan dipadamkan.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Konfigurasikan pilihan yang berkaitan dengan gelagat Bubblestrap itu sendiri.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags telah dilumpuhkan buat sementara waktu</value>
@@ -1663,12 +1654,6 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Realiti Maya</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Kembalikan UI Studio Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Menggunakan UI Studio Roblox lama dan bukannya yang baharu.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Lumpuhkan Rumput Rupa bumi</value>
   </data>
@@ -1734,5 +1719,118 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Menggunakan vignet VR yang menggelapkan tepi skrin untuk mengurangkan mabuk bergerak.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Lumpuhkan Dulang Sistem Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Menghalang Roblox daripada kekal diminimumkan dalam dulang sistem.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Jalankan Roblox pada permulaan</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Memulakan Roblox secara automatik apabila anda log masuk ke PC anda.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Pratetap kursor sedang aktif. Tetapkan Kursor Tetikus kepada Lalai dahulu sebelum menambah kursor tersuai.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Anda telah memasang fail kursor tersuai. Pratetap mungkin bercanggah dengannya.
+Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Pratetap kursor aktif. Tetapkan Kursor Tetikus kepada Lalai untuk menggunakan kursor tersuai.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Gagal menambah {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Gagal mengalih keluar beberapa fail:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Tiada kursor tersuai untuk dieksport.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Set kursor dieksport ke:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Gagal mengimport set kursor:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Gagal mengeksport set kursor:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Adakah anda pasti mahu mengalih keluar semua kursor tersuai? Ini tidak boleh dibuat asal.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Tiada kursor kunci syif tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Tiada kursor anak panah tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Tiada kursor jauh anak panah tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Tiada kursor IBeam tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Gagal menambah bunyi kematian:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Tiada bunyi kematian tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Pilih Bunyi Kematian Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Pilih Kursor Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Pilih Kursor Jauh Anak Panah Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Pilih Kursor IBeam Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Pilih Kursor Kunci Shift Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Keluarkan Semua</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Tidak dapat membuka sifat:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Set Import</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Set Eksport</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Ciri Kursor Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Tukar ikon kursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Kursor anak panah</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Kursor ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>Kursor IBeam</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Semak imbas</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Alih keluar</value>
   </data>
 </root>

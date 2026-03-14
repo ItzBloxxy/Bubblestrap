@@ -918,9 +918,6 @@ Annars så rapportera detta felmeddelande till de ansvariga för denna fork. Rap
     <value>Licenser</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Översättare</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Du har osparade ändringar. Är du säker på att du vill stänga utan att spara?</value>
   </data>
@@ -1025,9 +1022,6 @@ Ta manuellt bort Bubblestrap.exe från installationsplatsen eller försök start
     <value>Testläget gör det enklare att snabbt testa hur dina inställningar påverkar Roblox. 
 När testläge är aktiverat kommer Bubblestrap automatiskt att starta Roblox efter att du stänger inställningsmenyn, och kommer sedan öppna inställningsmenyn igen varje gång du stänger Roblox, tills du inaktiverar testläget.
 Vill du aktivera testläge?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Alla Bubblestraps översättningar är insamlade med crowdsourcing via [Crowdin]({0}). Alla listade här är människor som frivilligt lagt ner sin tid och ansträngning för att hjälpa till at lokalisera Bubblestrap. Ett stort tack till alla här!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Installera</value>
@@ -1244,7 +1238,7 @@ Var vänlig och stäng applikationer som kan använda Roblox filer, och starta s
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Misslyckades med att konfigurera egen startprogram: {0}.
 Använder {1} istället.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Inget eget tema valt.</value>
@@ -1486,25 +1480,25 @@ Vill du byta favoritkanal till {0}?</value>
     <value>Den angivna kanalen finns inte eller är privat.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Det gick inte att importera Bloxstrap-inställningarna.
+    <value>Det gick inte att importera Bubblestrap-inställningarna.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Importera inställningar från Bloxstrap</value>
+    <value>Importera inställningar från Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Bloxstrap-installationen hittades inte.</value>
+    <value>Bubblestrap-installationen hittades inte.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Konfigurera alternativ relaterade till Bubblestrap-programmets beteende.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Samla information som kan laddas upp online för att felsöka ett problem du har.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap-konfiguration</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Alla Bubblestrap-loggar</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1551,9 +1545,6 @@ Vill du byta favoritkanal till {0}?</value>
   </data>
   <data name="Menu.Bootstrapper.Cleaner.IncludeBloxstrap.Description" xml:space="preserve">
     <value>Bubblestrap-loggar kommer att raderas.</value>
-  </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Konfigurera alternativ relaterade till Bubblestrap-programmets beteende.</value>
   </data>
   <data name="Menu.FastFlagsDisabled.Header" xml:space="preserve">
     <value>FastFlags har tillfälligt inaktiverats</value>
@@ -1669,12 +1660,6 @@ Vill du byta favoritkanal till {0}?</value>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuell verklighet</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Återställ Roblox Studio UI</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Använder det gamla Roblox Studio-gränssnittet istället för det nya.</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Inaktivera terränggräs</value>
   </data>
@@ -1740,5 +1725,118 @@ Vill du byta favoritkanal till {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Tillämpar en VR-vinjett som mörknar skärmens kanter för att minska åksjuka.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Inaktivera Roblox-systemfältet</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Förhindrar att Roblox förblir minimerat i systemfältet.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Kör Roblox vid start</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Startar Roblox automatiskt när du loggar in på din dator.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>En förinställd markör är för närvarande aktiv. Ställ först in musmarkören på standardinställningen innan du lägger till en anpassad markör.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Du har anpassade markörfiler installerade. Förinställningen kan komma i konflikt med dem.
+Ta bort dina anpassade markörer om förinställningen inte verkar fungera.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>En förinställd markör är aktiv. Ställ in ”Musmarkör” på ”Standard” för att använda egna markörer.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Det gick inte att lägga till {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Det gick inte att ta bort vissa filer:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Det finns inga anpassade markörer att exportera.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Markörposition exporterad till:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Det gick inte att importera marköruppsättningen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Det gick inte att exportera marköruppsättningen:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort alla anpassade markörer? Detta går inte att ångra.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Ingen anpassad markör för växellåsning hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Ingen anpassad IBeam-markör hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Det gick inte att lägga till dödsljudet:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Inget anpassat dödsljud hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Välj ett eget dödsljud</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Välj en anpassad markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Välj en anpassad pil som markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Välj en anpassad I-balk-markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Välj en anpassad markör för skiftlås</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Ta bort alla</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Det gick inte att öppna egenskaperna:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Importera uppsättning</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Exportinställningar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Anpassade markörfunktioner</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+    <value>Ändra markörsymbolerna.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>ShiftLock</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Pilmarkör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>ArrowFar-markören</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>IBeam-markören</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Ta bort</value>
   </data>
 </root>

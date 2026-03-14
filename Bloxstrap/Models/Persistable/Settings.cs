@@ -6,7 +6,7 @@ namespace Bloxstrap.Models.Persistable
     {
         public bool AllowCookieAccess { get; set; } = false;
 
-        // bloxstrap configuration
+        // configuration
         public BootstrapperStyle BootstrapperStyle { get; set; } = BootstrapperStyle.FluentAeroDialog;
         public BootstrapperIcon BootstrapperIcon { get; set; } = BootstrapperIcon.IconBubblestrap;
         public string BootstrapperTitle { get; set; } = App.ProjectName;
@@ -35,6 +35,8 @@ namespace Bloxstrap.Models.Persistable
         public string DownloadingStringFormat { get; set; } = Strings.Bootstrapper_Status_Downloading + " {0} - {1}MB / {2}MB";
         public string? SelectedCustomTheme { get; set; } = null;
         public bool BackgroundUpdatesEnabled { get; set; } = false;
+        public bool DisableRobloxTray { get; set; } = true;
+        public bool LaunchOnStartup { get; set; } = false;
         public bool DebugDisableVersionPackageCleanup { get; set; } = false;
         public WebEnvironment WebEnvironment { get; set; } = WebEnvironment.Production;
 

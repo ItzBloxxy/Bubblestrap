@@ -930,9 +930,6 @@ Bubblestrap 的安装路径是：
     <value>许可证</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>翻译贡献者</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>您有未保存的更改；您确定要在不保存的情况下关闭吗？</value>
   </data>
@@ -1042,9 +1039,6 @@ Bubblestrap 的安装路径是：
 启用后，它将会在每次关闭设置后自动启动 Roblox；而关闭 Roblox 则会重新打开设置。
 如此循环，直到您禁用为止。
 您想启用 “测试模式” 吗？</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Bubblestrap 的所有翻译都是由 [Crowdin]({0}) 来众包；在此处列出的每一个人都是慷慨地自愿贡献自己的时间和精力来帮助 本地化 Bubblestrap 的人。因此向每一个人的贡献表示衷心的感谢！</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>安装</value>
@@ -1261,7 +1255,7 @@ Bubblestrap 的安装路径是：
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>无法设置自定义启动器：{0}.
 正在回退至 {1}。</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>未选择自定义主题。</value>
@@ -1497,25 +1491,22 @@ Bubblestrap 的安装路径是：
     <value>指定的频道不存在或为私人频道</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>导入Bloxstrap设置失败。
+    <value>导入Bubblestrap设置失败。
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>从Bloxstrap导入设置</value>
+    <value>从Bubblestrap导入设置</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>未找到 Bloxstrap 安装程序。</value>
+    <value>未找到 Bubblestrap 安装程序。</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
-    <value>配置与Bubblestrap自身行为相关的选项。</value>
-  </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>收集可在线上传的信息，以便排查您遇到的问题。</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>泡泡带配置</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>所有泡泡陷阱日志</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1680,12 +1671,6 @@ Bubblestrap 的安装路径是：
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>虚拟现实</value>
   </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>恢复Roblox Studio界面</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>使用旧版Roblox Studio界面而非新版界面。</value>
-  </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>禁用地形草地</value>
   </data>
@@ -1751,5 +1736,115 @@ Bubblestrap 的安装路径是：
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>应用VR晕影效果，使屏幕边缘变暗以减轻晕动症。</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>禁用Roblox系统托盘</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>防止Roblox在系统托盘中保持最小化状态。</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>启动时运行Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>登录电脑时自动启动Roblox。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>当前已启用一个光标预设。在添加自定义光标之前，请先将“鼠标光标”设置为“默认”。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>您已安装自定义光标文件。该预设可能与它们发生冲突。
+如果该预设似乎无法正常工作，请删除您的自定义光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>当前启用了光标预设。请将“鼠标光标”设置为“默认”以使用自定义光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>添加 {0} 失败：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>无法删除某些文件：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>没有自定义光标可导出。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>光标集已导出至：
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>导入光标集失败：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>导出光标集失败：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>您确定要删除所有自定义光标吗？此操作无法撤销。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>未找到要删除的自定义换挡锁定光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>未找到要删除的自定义箭头光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>未找到要删除的自定义箭头光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>未找到要删除的自定义 IBeam 光标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>添加死亡音效失败：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>未找到要删除的自定义死亡音效。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>选择自定义死亡音效</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>选择自定义光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>选择自定义箭头光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>选择自定义工字梁光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>选择自定义 Shift 锁定光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>清除全部</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>无法打开属性：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>导入集</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>导出集</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>自定义光标功能</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>更改光标图标。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>箭头光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar 光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam 光标</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>删除</value>
   </data>
 </root>

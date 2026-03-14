@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bootstrapper.AutoUpdateFailed" xml:space="preserve">
-    <value>Bloxstrap kunne ikke automatisk opdatere til version {0}. Opdater det manuelt ved at downloade og køre det fra hjemmesiden.</value>
+    <value>Bubblestrap kunne ikke automatisk opdatere til version {0}. Opdater det manuelt ved at downloade og køre det fra hjemmesiden.</value>
   </data>
   <data name="Bootstrapper.ConfirmLaunch" xml:space="preserve">
     <value>Roblox kører i øjeblikket, og opstart af en anden instans vil lukke den. Er du sikker på, at du vil fortsætte med at starte?</value>
@@ -68,13 +68,13 @@
     <value>Roblox kan være nede lige nu. Se {0} for mere information.</value>
   </data>
   <data name="Dialog.Connectivity.BadConnection" xml:space="preserve">
-    <value>Der kunne ikke oprettes en forbindelse, hvilket sandsynligvis indikerer en dårlig internetforbindelse eller en firewall-blok. Hvis din forbindelse er fin, skal du sikre dig, at din antivirus ikke blokerer Bloxstrap.</value>
+    <value>Der kunne ikke oprettes en forbindelse, hvilket sandsynligvis indikerer en dårlig internetforbindelse eller en firewall-blok. Hvis din forbindelse er fin, skal du sikre dig, at din antivirus ikke blokerer Bubblestrap.</value>
   </data>
   <data name="Bootstrapper.FirstRunUninstall" xml:space="preserve">
-    <value>Du skal først installere Bloxstrap før du afinstallere.</value>
+    <value>Du skal først installere Bubblestrap før du afinstallere.</value>
   </data>
   <data name="Bootstrapper.NotEnoughSpace" xml:space="preserve">
-    <value>Bloxstrap har ikke nok disk rum for at downloade og installere Roblox. Vær venlig at fri op noget plads på din disk og prøv igen.</value>
+    <value>Bubblestrap har ikke nok disk rum for at downloade og installere Roblox. Vær venlig at fri op noget plads på din disk og prøv igen.</value>
   </data>
   <data name="Bootstrapper.Status.ApplyingModifications" xml:space="preserve">
     <value>Tilføjer Roblox modifikationer...</value>
@@ -110,10 +110,10 @@
     <comment>Text for style previews that use text button that says "Cancel"</comment>
   </data>
   <data name="Bootstrapper.SuccessfullyUninstalled" xml:space="preserve">
-    <value>Bloxstrap har succesfuldt afinstalleret</value>
+    <value>Bubblestrap har succesfuldt afinstalleret</value>
   </data>
   <data name="Bootstrapper.Uninstall.RobloxRunning" xml:space="preserve">
-    <value>Roblox er i gang med at køre, men er nød til at være lukket før afinstalleringen af Bloxstrap. Vil du gerne lukke Roblox nu?</value>
+    <value>Roblox er i gang med at køre, men er nød til at være lukket før afinstalleringen af Bubblestrap. Vil du gerne lukke Roblox nu?</value>
   </data>
   <data name="Bootstrapper.WMFNotFound" xml:space="preserve">
     <value>Roblox kræver brugen af Windows Media Foundation komponenter. Du ser ud til at mangle dem, sandsynligvis fordi du bruger en N-udgave af Windows. Installér dem først, og start derefter Roblox.</value>
@@ -217,21 +217,21 @@ Klik for mere information</value>
     <value>Forbindelsesfejl</value>
   </data>
   <data name="Dialog.Connectivity.UnableToConnect" xml:space="preserve">
-    <value>Bloxstrap kan ikke oprette forbindelse til {0}</value>
+    <value>Bubblestrap kan ikke oprette forbindelse til {0}</value>
     <comment>{0} is the name of a service (i.e. Roblox, GitHub)</comment>
   </data>
   <data name="Dialog.Exception.CopyLogContents" xml:space="preserve">
     <value>Kopiér logindhold</value>
   </data>
   <data name="Dialog.Exception.Info.1" xml:space="preserve">
-    <value>En undtagelse opstod under kørsel af Bloxstrap</value>
+    <value>En undtagelse opstod under kørsel af Bubblestrap</value>
   </data>
   <data name="Dialog.Exception.Info.2" xml:space="preserve">
     <value>Tjek [Bloxstrap Wiki]({0}) først for at se, om dette problem allerede er blevet løst med en rettelse.
 Hvis ikke, bedes du rapportere denne undtagelse gennem et [GitHub problem]({1}) sammen med en kopi af den logfil, der blev oprettet.</value>
   </data>
   <data name="Dialog.Exception.Title" xml:space="preserve">
-    <value>Bloxstrap Undtagelse</value>
+    <value>Bubblestrap Undtagelse</value>
   </data>
   <data name="Common.Custom" xml:space="preserve">
     <value>Tilpasset</value>
@@ -243,10 +243,10 @@ Hvis ikke, bedes du rapportere denne undtagelse gennem et [GitHub problem]({1}) 
     <value>Sent 2015</value>
   </data>
   <data name="Enums.BootstrapperStyle.ClassicFluentDialog" xml:space="preserve">
-    <value>Bloxstrap (Klassisk)</value>
+    <value>Bubblestrap (Klassisk)</value>
   </data>
   <data name="Enums.BootstrapperStyle.FluentAeroDialog" xml:space="preserve">
-    <value>Bloxstrap (Glas)</value>
+    <value>Bubblestrap (Glas)</value>
   </data>
   <data name="Enums.BootstrapperStyle.LegacyDialog2008" xml:space="preserve">
     <value>Arv (2008 - 2011)</value>
@@ -324,10 +324,10 @@ Hvis ikke, bedes du rapportere denne undtagelse gennem et [GitHub problem]({1}) 
     <value>Lyst</value>
   </data>
   <data name="InstallChecker.Updated" xml:space="preserve">
-    <value>Bloxstrap er blevet opgraderet til v{0}</value>
+    <value>Bubblestrap er blevet opgraderet til v{0}</value>
   </data>
   <data name="InstallChecker.VersionDifferentThanInstalled" xml:space="preserve">
-    <value>Den version af Bloxstrap, du har startet, er forskellig fra den version, du har installeret i øjeblikket.
+    <value>Den version af Bubblestrap, du har startet, er forskellig fra den version, du har installeret i øjeblikket.
 Vil du gerne opgradere din nuværende installerede version?</value>
   </data>
   <data name="Menu.About.Contributors" xml:space="preserve">
@@ -337,7 +337,7 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Kode</value>
   </data>
   <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Dette er de mennesker, der har ydet bemærkelsesværdige bidrag til Bloxstrap og hjulpet med at gøre det til det, det er.</value>
+    <value>Dette er de mennesker, der har ydet bemærkelsesværdige bidrag til Bubblestrap og hjulpet med at gøre det til det, det er.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Funktion idéer</value>
@@ -383,7 +383,7 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Bemærk, at ikke alle dine ændringer vil gælde med det samme, før du lukker alle åbne Roblox-instanser.</value>
   </data>
   <data name="Menu.AlreadyRunning.Title" xml:space="preserve">
-    <value>Bloxstrap kører allerede</value>
+    <value>Bubblestrap kører allerede</value>
   </data>
   <data name="Menu.Appearance.Bootstrapper.Description" xml:space="preserve">
     <value>Du kan få det til at se anderledes ud, retro eller bare som Roblox.</value>
@@ -410,7 +410,7 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Titel</value>
   </data>
   <data name="Menu.Appearance.Description" xml:space="preserve">
-    <value>Konfigurer, hvordan Bloxstrap skal se ud.</value>
+    <value>Konfigurer, hvordan Bubblestrap skal se ud.</value>
   </data>
   <data name="Menu.Appearance.Global.Theme.Title" xml:space="preserve">
     <value>Globalt tema</value>
@@ -434,10 +434,10 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Udseende</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Description" xml:space="preserve">
-    <value>Bloxstrap vil automatisk tjekke og opdatere sig selv, når Roblox startes.</value>
+    <value>Bubblestrap vil automatisk tjekke og opdatere sig selv, når Roblox startes.</value>
   </data>
   <data name="Menu.Behaviour.AutoUpdate.Title" xml:space="preserve">
-    <value>Opdater automatisk Bloxstrap</value>
+    <value>Opdater automatisk Bubblestrap</value>
   </data>
   <data name="Menu.Behaviour.ConfirmLaunches.Description" xml:space="preserve">
     <value>Undgå, at lukninger af dit eksisterende spil ved et uheld starter et andet.</value>
@@ -446,7 +446,7 @@ Vil du gerne opgradere din nuværende installerede version?</value>
     <value>Bed om at bekræfte, når du starter en anden Roblox instans</value>
   </data>
   <data name="Menu.Behaviour.Description" xml:space="preserve">
-    <value>Indstil hvad Bloxstrap skal gøre, når du starter Roblox.</value>
+    <value>Indstil hvad Bubblestrap skal gøre, når du starter Roblox.</value>
   </data>
   <data name="Menu.Behaviour.ForceRobloxReinstall.Description" xml:space="preserve">
     <value>Roblox vil blive installeret frisk ved næste start.</value>
@@ -546,10 +546,10 @@ Er du sikker på, at du vil fortsætte?</value>
     <value>Ikon filer</value>
   </data>
   <data name="Menu.InstallLocation.CantInstall" xml:space="preserve">
-    <value>Bloxstrap kan ikke blive installeret her. Vælg venlight en anden placering eller brug standard placeringen ved at klikke nulstil knappen.</value>
+    <value>Bubblestrap kan ikke blive installeret her. Vælg venlight en anden placering eller brug standard placeringen ved at klikke nulstil knappen.</value>
   </data>
   <data name="Menu.InstallLocation.NotEmpty" xml:space="preserve">
-    <value>Mappen som du har valgt at installere Bloxstrap eksistere alleredde og er ikke tom. Det anbefales kraftigt, at Bloxstrap installeres i en selvstændig mappe.
+    <value>Mappen som du har valgt at installere Bubblestrap eksistere alleredde og er ikke tom. Det anbefales kraftigt, at Bubblestrap installeres i en selvstændig mappe.
 Ændring til følgende placering er foreslået: 
 {0}
 Vil du ændre den til foreslåede placering?
@@ -560,7 +560,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Du skal angive en installering placering</value>
   </data>
   <data name="Menu.InstallLocation.NoWritePerms" xml:space="preserve">
-    <value>Bloxstrap har ikke skriveadgang til den valgte installationsplacering. Vælg venligst en anden placering.</value>
+    <value>Bubblestrap har ikke skriveadgang til den valgte installationsplacering. Vælg venligst en anden placering.</value>
   </data>
   <data name="Menu.Integrations.ActivityTracking" xml:space="preserve">
     <value>Aktivitetssporing</value>
@@ -611,7 +611,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Afslut ikke til desktop app</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Description" xml:space="preserve">
-    <value>Giver mulighed for Bloxstrap at opdage hvad Roblox spil du spiller. Visse funktioner kan kræve dette.</value>
+    <value>Giver mulighed for Bubblestrap at opdage hvad Roblox spil du spiller. Visse funktioner kan kræve dette.</value>
   </data>
   <data name="Menu.Integrations.EnableActivityTracking.Title" xml:space="preserve">
     <value>Aktiver aktivitetssporing</value>
@@ -702,7 +702,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Indstillinger gemt!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Bloxstrap Indstillinger</value>
+    <value>Bubblestrap Indstillinger</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Vælg foretrukket sprog</value>
@@ -726,7 +726,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Brugerinterface og Layout</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Title" xml:space="preserve">
-    <value>Tillad Bloxstrap at administrere Hurtig Flag</value>
+    <value>Tillad Bubblestrap at administrere Hurtig Flag</value>
   </data>
   <data name="Menu.FastFlags.ManagerEnabled.Description" xml:space="preserve">
     <value>Deaktivering af dette vil forhindre alt konfigureret her i at blive anvendt på Roblox.</value>
@@ -738,7 +738,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Stopper det fra at vise, når du flytter musen til toppen af skærmen.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
-    <value>Bloxstrap kunne ikke downloade Roblox</value>
+    <value>Bubblestrap kunne ikke downloade Roblox</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownloadReason" xml:space="preserve">
     <value>Roblox kan ikke downloades på nuværende tidspunkt. Læs venligst følgende hjælpeside for mere information: {0}</value>
@@ -759,7 +759,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Indtastningen for '{0}' er ikke gyldig, da værdien skal være et tal.</value>
   </data>
   <data name="Logger.NoWriteMode" xml:space="preserve">
-    <value>Der vil ikke blive skrevet en logfil for denne opstart, da Bloxstrap ikke kan skrive til mappen på '{0}'.</value>
+    <value>Der vil ikke blive skrevet en logfil for denne opstart, da Bubblestrap ikke kan skrive til mappen på '{0}'.</value>
   </data>
   <data name="Common.Default" xml:space="preserve">
     <value>Standard</value>
@@ -774,7 +774,7 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Indtastningen for '{0}' er ikke gyldig, da stedfilteret ikke er formateret korrekt.</value>
   </data>
   <data name="Installer.Title" xml:space="preserve">
-    <value>Bloxstrap Installer</value>
+    <value>Bubblestrap Installer</value>
   </data>
   <data name="Installer.Welcome.Title" xml:space="preserve">
     <value>Velkommen</value>
@@ -793,16 +793,16 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
     <value>Næste</value>
   </data>
   <data name="Installer.Welcome.MainText" xml:space="preserve">
-    <value>Tak fordi du har downloadet Bloxstrap.
-De eneste officielle websteder, hvor du kan downloade Bloxstrap fra, er {0} og {1}, så sørg for at verificere, at du har hentet det fra en officiel kilde.
-Denne installationsproces vil være hurtig og enkel, og du vil kunne konfigurere alle Bloxstrap's indstillinger efter installationen.</value>
+    <value>Tak fordi du har downloadet Bubblestrap.
+De eneste officielle websteder, hvor du kan downloade Bubblestrap fra, er {0} og {1}, så sørg for at verificere, at du har hentet det fra en officiel kilde.
+Denne installationsproces vil være hurtig og enkel, og du vil kunne konfigurere alle Bubblestrap's indstillinger efter installationen.</value>
     <comment>{0} and {1} are URLs</comment>
   </data>
   <data name="Installer.Welcome.NextToContinue" xml:space="preserve">
     <value>Klik 'Næste' for at fortsætte.</value>
   </data>
   <data name="Installer.Welcome.UpdateNotice" xml:space="preserve">
-    <value>Du forsøger at installere version {0} af Bloxstrap, men den nyeste tilgængelige version er {1}. Vil du downloade den?</value>
+    <value>Du forsøger at installere version {0} af Bubblestrap, men den nyeste tilgængelige version er {1}. Vil du downloade den?</value>
   </data>
   <data name="Installer.Install.Location.Title" xml:space="preserve">
     <value>Vælg hvor der skal installeres</value>
@@ -823,13 +823,13 @@ Denne installationsproces vil være hurtig og enkel, og du vil kunne konfigurere
     <value>Start Menu ikon</value>
   </data>
   <data name="Installer.Completion.Text" xml:space="preserve">
-    <value>Bloxstrap er blevet installeret med succes.
-Roblox er endnu ikke blevet installeret, det vil ske, når du starter det første gang med Bloxstrap. Før du gør det, kan det dog være en god idé at konfigurere Bloxstrap's indstillinger først.
-Undgå også at bruge "Roblox Player"-genvejen til at starte Roblox, da Bloxstrap ikke vil starte sammen med Roblox. Hvis du ikke ser Bloxstrap, når du starter fra websiden, så start blot Roblox med Bloxstrap én gang fra skrivebordet for at løse problemet.
+    <value>Bubblestrap er blevet installeret med succes.
+Roblox er endnu ikke blevet installeret, det vil ske, når du starter det første gang med Bubblestrap. Før du gør det, kan det dog være en god idé at konfigurere Bubblestrap's indstillinger først.
+Undgå også at bruge "Roblox Player"-genvejen til at starte Roblox, da Bubblestrap ikke vil starte sammen med Roblox. Hvis du ikke ser Bubblestrap, når du starter fra websiden, så start blot Roblox med Bubblestrap én gang fra skrivebordet for at løse problemet.
 Hvad vil du gerne gøre?</value>
   </data>
   <data name="Installer.Completion.Settings.Title" xml:space="preserve">
-    <value>Konfigurer Bloxstrap's indstillinger</value>
+    <value>Konfigurer Bubblestrap's indstillinger</value>
   </data>
   <data name="Installer.Completion.Settings.Description" xml:space="preserve">
     <value>Justér alle de funktioner, det har at tilbyde</value>
@@ -841,19 +841,19 @@ Hvad vil du gerne gøre?</value>
     <value>Vil sende dig videre til desktop-appen, når alt er færdigt.</value>
   </data>
   <data name="Uninstaller.Title" xml:space="preserve">
-    <value>Afinstallere Bloxstrap</value>
+    <value>Afinstallere Bubblestrap</value>
   </data>
   <data name="Uninstaller.Text" xml:space="preserve">
-    <value>Afinstallering vil fjerne Bloxstrap fra dit system, og automatisk omkonfigurere standard Roblox launcher hvis det stadig er installeret.
+    <value>Afinstallering vil fjerne Bubblestrap fra dit system, og automatisk omkonfigurere standard Roblox launcher hvis det stadig er installeret.
 Hvis du afinstallerer eller geninstallerer fordi du har problemer med Roblox, så læs [denne hjælpeside] ({0}) første.
-Afinstallationsprocessen kan muligvis ikke rydde op i sig selv, så du kan have brug for manuelt rydde op resterende filer, hvor Bloxstrap blev installeret.
-Bloxstrap blev installeret ved "{1}".</value>
+Afinstallationsprocessen kan muligvis ikke rydde op i sig selv, så du kan have brug for manuelt rydde op resterende filer, hvor Bubblestrap blev installeret.
+Bubblestrap blev installeret ved "{1}".</value>
   </data>
   <data name="Uninstaller.KeepData.Label" xml:space="preserve">
     <value>Behold mine indstillinger og mods</value>
   </data>
   <data name="Uninstaller.KeepData.Description" xml:space="preserve">
-    <value>De vil blive bevaret, hvor Bloxstrap blev installeret, og vil automatisk blive gendannet på en geninstallation.</value>
+    <value>De vil blive bevaret, hvor Bubblestrap blev installeret, og vil automatisk blive gendannet på en geninstallation.</value>
   </data>
   <data name="Uninstaller.Uninstall" xml:space="preserve">
     <value>Afinstaller</value>
@@ -874,18 +874,18 @@ Bloxstrap blev installeret ved "{1}".</value>
     <value>Du har i øjeblikket ikke WebView2 runtime installeret. Nogle Roblox funktioner vil ikke fungere korrekt uden det, såsom desktop app. Vil du downloade det nu?</value>
   </data>
   <data name="Dialog.CannotCreateShortcuts" xml:space="preserve">
-    <value>Bloxstrap kunne ikke oprette genveje til Desktop og Start menuen. Prøv at oprette dem senere gennem indstillingerne.</value>
+    <value>Bubblestrap kunne ikke oprette genveje til Desktop og Start menuen. Prøv at oprette dem senere gennem indstillingerne.</value>
   </data>
   <data name="Dialog.Exception.Info.2.Alt" xml:space="preserve">
     <value>Tjek [Bloxstrap Wiki]({0}) først for at se, om dette problem allerede er blevet løst med en rettelse.
-Hvis ikke, bedes du at rapportere denne undtagelse til vedligeholderne af denne Fork. Rapporter IKKE dette til Bloxstrap's GitHub problemer, da dette er en uofficiel opbygning.</value>
+Hvis ikke, bedes du at rapportere denne undtagelse til vedligeholderne af denne Fork. Rapporter IKKE dette til Bubblestrap's GitHub problemer, da dette er en uofficiel opbygning.</value>
     <comment>"fork" in general means "a variation of" or "a different version of". You can alternatively write the first sentence as "...to the maintainers of this version."</comment>
   </data>
   <data name="Installer.Install.Shortcuts.Description" xml:space="preserve">
     <value>Disse er generelle genveje, der viser en multi-valgs startmenu. Genveje for specifikke funktioner kan oprettes senere i indstillingerne.</value>
   </data>
   <data name="Menu.Shortcuts.Description" xml:space="preserve">
-    <value>Konfigurer hvordan Bloxstrap let kan startes.</value>
+    <value>Konfigurer hvordan Bubblestrap let kan startes.</value>
   </data>
   <data name="Menu.Shortcuts.General.Title" xml:space="preserve">
     <value>Generelt</value>
@@ -918,14 +918,11 @@ Hvis ikke, bedes du at rapportere denne undtagelse til vedligeholderne af denne 
     <value>Licenser</value>
     <comment>Referring to code licenses; see https://opensource.org/licenses for example</comment>
   </data>
-  <data name="About.Translators.Title" xml:space="preserve">
-    <value>Oversættere</value>
-  </data>
   <data name="Menu.UnsavedChanges" xml:space="preserve">
     <value>Du har ugemte ændringer. Er du sikker på, at du vil lukke uden at gemme?</value>
   </data>
   <data name="InstallChecker.VersionLessThanInstalled" xml:space="preserve">
-    <value>Den version af Bloxstrap, du har kørt, er ældre end den version, du i øjeblikket har installeret.
+    <value>Den version af Bubblestrap, du har kørt, er ældre end den version, du i øjeblikket har installeret.
 Problemer kan forekomme og dine indstillinger kan blive ændret. En geninstallation anbefales.
 Er du sikker på, at du vil fortsætte?</value>
   </data>
@@ -937,7 +934,7 @@ Er du sikker på, at du vil fortsætte?</value>
   </data>
   <data name="Dialog.PlayerError.HelpInformation" xml:space="preserve">
     <value>For information om, hvorfor dette kan ske, og hvordan dette kan løses, læs venligst [denne hjælpeartikel]({0}).
-Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør det, så er dette ikke et Bloxstrap problem. Hvis det gør, så henvises til hjælpeartiklen.</value>
+Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør det, så er dette ikke et Bubblestrap problem. Hvis det gør, så henvises til hjælpeartiklen.</value>
   </data>
   <data name="Common.NetworkError" xml:space="preserve">
     <value>Kunne ikke indlæse data på grund af en netværksfejl.</value>
@@ -973,11 +970,11 @@ Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør de
     <value>Ved denne opstart vil Roblox ikke blive tjekket for opdateringer, og ændringer til mods vil ikke blive anvendt.</value>
   </data>
   <data name="Dialog.Connectivity.RobloxUpgradeNeeded" xml:space="preserve">
-    <value>Da Roblox skal installeres eller opgraderes, kan Bloxstrap ikke fortsætte.</value>
+    <value>Da Roblox skal installeres eller opgraderes, kan Bubblestrap ikke fortsætte.</value>
   </data>
   <data name="Installer.Install.CannotOverwrite" xml:space="preserve">
-    <value>Bloxstrap er blevet installeret på denne placering før og er stadig til stede, men installationsprogrammet kan ikke overskrive den gamle eksekverbare. 
-Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at genstarte dit system, og prøv derefter at genstarte installationen bagefter.</value>
+    <value>Bubblestrap er blevet installeret på denne placering før og er stadig til stede, men installationsprogrammet kan ikke overskrive den gamle eksekverbare. 
+Slet venligst Bubblestrap.exe manuelt fra installationsplaceringen eller prøv at genstarte dit system, og prøv derefter at genstarte installationen bagefter.</value>
   </data>
   <data name="Common.NotAvailable" xml:space="preserve">
     <value>Ikke tilgængelig</value>
@@ -989,7 +986,7 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
     <value>Konfigurere applikationsparametre såsom DPI skalering adfærd og [fuldskærm optimeringer]({0}).</value>
   </data>
   <data name="Common.RobloxNotInstalled" xml:space="preserve">
-    <value>Roblox er endnu ikke installeret. Start Roblox ved hjælp af Bloxstrap mindst én gang før du forsøger at bruge denne indstilling.</value>
+    <value>Roblox er endnu ikke installeret. Start Roblox ved hjælp af Bubblestrap mindst én gang før du forsøger at bruge denne indstilling.</value>
   </data>
   <data name="Installer.ShouldCancel" xml:space="preserve">
     <value>Er du sikker på, at du vil annullere installationen?</value>
@@ -1006,10 +1003,10 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
     <value>Udpak Roblox ikoner til mappe</value>
   </data>
   <data name="Menu.Shortcuts.ExtractIcons.Description" xml:space="preserve">
-    <value>Tillader dig at bruge Bloxstraps sortiment af Roblox-ikoner til dine genveje. [Se hvordan.]({0})</value>
+    <value>Tillader dig at bruge Bubblestraps sortiment af Roblox-ikoner til dine genveje. [Se hvordan.]({0})</value>
   </data>
   <data name="Dialog.RegistryWriteError" xml:space="preserve">
-    <value>Bloxstrap er ude af stand til at skrive til registreringsdatabasen i Windows. En antivirus vil sandsynligvis forstyrre og forårsage problemer. Tjek venligst for at sikre, at der ikke er noget, der vil begrænse Bloxstrap's operation.</value>
+    <value>Bubblestrap er ude af stand til at skrive til registreringsdatabasen i Windows. En antivirus vil sandsynligvis forstyrre og forårsage problemer. Tjek venligst for at sikre, at der ikke er noget, der vil begrænse Bubblestrap's operation.</value>
   </data>
   <data name="Menu.FastFlags.Reset.Title" xml:space="preserve">
     <value>Nulstil alt til standardindstillinger</value>
@@ -1025,9 +1022,6 @@ Slet venligst Bloxstrap.exe manuelt fra installationsplaceringen eller prøv at 
     <value>Testtilstand gør det nemmere at teste, hvordan dine indstillinger påvirker Roblox iterativt.
 Når den er aktiveret, vil den automatisk starte Roblox efter lukning af Indstillinger og åbne Indstillinger igen efter lukning af Roblox, i en cyklus, indtil du deaktiverer den.
 Vil du aktivere testtilstand?</value>
-  </data>
-  <data name="About.Translators.Description" xml:space="preserve">
-    <value>Alle Bloxstraps oversættelser er crowdsourced via [Crowdin]({0}). Alle, der er nævnt her, er personer, der generøst har brugt deres tid og kræfter på at hjælpe med at lokalisere Bloxstrap. En kæmpe tak til alle her!</value>
   </data>
   <data name="Common.Navigation.Install" xml:space="preserve">
     <value>Installér</value>
@@ -1047,7 +1041,7 @@ Vil du aktivere testtilstand?</value>
     <value>Tilpasset</value>
   </data>
   <data name="Bootstrapper.FilesInUse" xml:space="preserve">
-    <value>Bloxstrap forsøgte at opgradere Roblox, men kan ikke fordi Roblox' filer stadig er i brug.
+    <value>Bubblestrap forsøgte at opgradere Roblox, men kan ikke fordi Roblox' filer stadig er i brug.
 Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
     <comment>This is *not* for when Roblox is still running when trying to upgrade. This applies to files being open (i.e. image assets)</comment>
   </data>
@@ -1057,13 +1051,13 @@ Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
   </data>
   <data name="Common.Export" xml:space="preserve">
     <value>Eksport</value>
-    <comment>Currently used under the "Bloxstrap" settings tab for the button to export diagnostic data</comment>
+    <comment>Currently used under the "Bubblestrap" settings tab for the button to export diagnostic data</comment>
   </data>
   <data name="App.OSDeprecation.Win7_81" xml:space="preserve">
     <value>Roblox understøtter ikke længere Windows 7 eller 8.1. For at fortsætte med at spille Roblox, bedes du opgradere til Windows 10 eller nyere.</value>
   </data>
   <data name="Bootstrapper.Status.UpgradingBloxstrap" xml:space="preserve">
-    <value>Finder den nyeste Bloxstrap...</value>
+    <value>Finder den nyeste Bubblestrap...</value>
   </data>
   <data name="Enums.CustomThemeTemplate.Blank" xml:space="preserve">
     <value>Blank</value>
@@ -1221,7 +1215,7 @@ Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
   </data>
   <data name="CustomTheme.Errors.SetupFailed" xml:space="preserve">
     <value>Kunne ikke opsætte tilpasset bootstrapper: {0}. Standardindstilles til {1}.</value>
-    <comment>{0} is the error reason, {1} is the theme name (e.g. Bloxstrap (Classic))</comment>
+    <comment>{0} is the error reason, {1} is the theme name (e.g. Bubblestrap (Classic))</comment>
   </data>
   <data name="Menu.Appearance.CustomThemes.NoneSelected" xml:space="preserve">
     <value>Intet tilpasset tema valgt.</value>
@@ -1275,9 +1269,6 @@ Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
   <data name="Common.CreateNew" xml:space="preserve">
     <value>Opret ny</value>
   </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
-    <value>Konfigurer indstillinger relateret til Bloxstraps opførsel.</value>
-  </data>
   <data name="Menu.Behaviour.BackgroundUpdates.Title" xml:space="preserve">
     <value>Baggrundsopdateringer</value>
   </data>
@@ -1291,7 +1282,7 @@ Luk alle programmer, der kan bruge Roblox's filer, og relancering.</value>
     <value>Rediger</value>
   </data>
   <data name="About.Title" xml:space="preserve">
-    <value>Om Bloxstrap</value>
+    <value>Om Bubblestrap</value>
   </data>
   <data name="ContextMenu.ServerInformation.Uptime" xml:space="preserve">
     <value>Driftstid</value>
@@ -1481,25 +1472,25 @@ Vil du skifte din foretrukne kanal til {0}?</value>
     <value>Den angivne kanal findes ikke eller er privat.</value>
   </data>
   <data name="Installer.FailedToImportSettings" xml:space="preserve">
-    <value>Det lykkedes ikke at importere Bloxstrap-indstillinger.
+    <value>Det lykkedes ikke at importere Bubblestrap-indstillinger.
 {0}</value>
   </data>
   <data name="Installer.ImportSettings" xml:space="preserve">
-    <value>Importer indstillinger fra Bloxstrap</value>
+    <value>Importer indstillinger fra Bubblestrap</value>
   </data>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
-    <value>Bloxstrap-installationen blev ikke fundet.</value>
+    <value>Bubblestrap-installationen blev ikke fundet.</value>
   </data>
-  <data name="Menu.Bubblestrap.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Konfigurer indstillinger relateret til Bubblestrap's adfærd.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.Description" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
     <value>Indsaml oplysninger, der kan uploades online, for at løse et problem, du har.</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportConfig" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportConfig" xml:space="preserve">
     <value>Bubblestrap-konfiguration</value>
   </data>
-  <data name="Menu.Bubblestrap.ExportData.ExportLogs" xml:space="preserve">
+  <data name="Menu.Bloxstrap.ExportData.ExportLogs" xml:space="preserve">
     <value>Alle Bubblestrap-logfiler</value>
   </data>
   <data name="Menu.Bootstrapper.CleanUp.Title" xml:space="preserve">
@@ -1647,25 +1638,19 @@ Vil du skifte din foretrukne kanal til {0}?</value>
     <value>Giv adgang til Roblox API'er ved hjælp af din godkendelsescookie. [Hvad får Bubblestrap adgang til?]({0})</value>
   </data>
   <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
-    <value>Hvor ofte (i sekunder) hukommelsen skal trimmes. Lavere værdier bruger mere CPU og kan føre til ustabil gameplay.</value>
+    <value>Hukommelsestrimmer</value>
   </data>
   <data name="Menu.Behaviour.MemoryTrimmer.Description" xml:space="preserve">
     <value>Rydder regelmæssigt Roblox' hukommelsesforbrug for at reducere RAM-forbruget.</value>
   </data>
   <data name="Menu.Behaviour.MemoryTrimInterval.Title" xml:space="preserve">
-    <value>Rydder regelmæssigt Roblox' hukommelsesforbrug for at reducere RAM-forbruget.</value>
+    <value>Interval for hukommelsestrimning</value>
   </data>
   <data name="Menu.Behaviour.MemoryTrimInterval.Description" xml:space="preserve">
-    <value>Hukommelsesbeskæringsinterval</value>
+    <value>Hvor ofte (i sekunder) hukommelsen skal trimmes. Lavere værdier bruger mere CPU og kan føre til ustabilt gameplay.</value>
   </data>
   <data name="Common.VirutalReality" xml:space="preserve">
     <value>Virtuel virkelighed</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Title" xml:space="preserve">
-    <value>Gendan Roblox Studio UI</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.OldRSUI.Description" xml:space="preserve">
-    <value>Bruger den gamle Roblox Studio-brugergrænseflade i stedet for den nye.</value>
   </data>
   <data name="Menu.FastFlags.Grass.Title" xml:space="preserve">
     <value>Deaktiver terrængræs</value>
@@ -1677,10 +1662,10 @@ Vil du skifte din foretrukne kanal til {0}?</value>
     <value>Brug hukommelsestærskel</value>
   </data>
   <data name="Menu.Behaviour.MemoryThreshold.Description" xml:space="preserve">
-    <value>Beskær kun, hvis Roblox overskrider en bestemt mængde RAM-brug.</value>
+    <value>Trim kun hvis Roblox overstiger en specifik mængde RAM-forbrug.</value>
   </data>
   <data name="Menu.Behaviour.MemoryThreshold.Placeholder" xml:space="preserve">
-    <value>Begrænsning i MB</value>
+    <value>Grænse i MB</value>
   </data>
   <data name="Menu.GBSEditor.Fullscreen.Title" xml:space="preserve">
     <value>Fuld skærm</value>
@@ -1732,5 +1717,115 @@ Vil du skifte din foretrukne kanal til {0}?</value>
   </data>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Anvender en VR-vignette, der mørkner skærmkanterne for at reducere bevægelsessyge.</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
+    <value>Deaktiver Roblox-systemfeltet</value>
+  </data>
+  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
+    <value>Forhindrer, at Roblox forbliver minimeret i proceslinjen.</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
+    <value>Kør Roblox ved opstart</value>
+  </data>
+  <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
+    <value>Roblox starter automatisk, når du logger ind på din pc.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Der er i øjeblikket valgt en forudindstillet markør. Indstil først musemarkøren til standardindstillingen, før du tilføjer en brugerdefineret markør.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Du har installeret brugerdefinerede markørfiler. Forudindstillingen kan være i konflikt med dem.
+Slet dine brugerdefinerede markører, hvis forudindstillingen ikke ser ud til at fungere.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Der er valgt en forudindstillet markør. Vælg »Standardmarkør« for at bruge brugerdefinerede markører.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at tilføje {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at slette nogle filer:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Der er ingen brugerdefinerede markører, der skal eksporteres.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Markørsæt eksporteret til:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at importere markørsættet: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at eksportere markørsættet: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne alle brugerdefinerede markører? Dette kan ikke fortrydes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret markør til skift-lås, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret pilemarkør, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret pil-markør, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret IBeam-markør, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at tilføje dødslyden:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret dødslyd, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Vælg en brugerdefineret dødslyd</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Vælg en brugerdefineret markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Vælg en brugerdefineret pil-markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Vælg en brugerdefineret I-bjælke-markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Vælg en brugerdefineret markør til skift-lås</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Fjern alt</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Det var ikke muligt at åbne egenskaberne:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Importindstilling</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Eksportindstilling</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Funktioner til brugerdefinerede markører</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Skift markørikoner.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Pilemarkør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar-markøren</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam-markøren</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Gennemse</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Fjern</value>
   </data>
 </root>
