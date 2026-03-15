@@ -58,6 +58,8 @@ Found any bugs or issues?
 - Use custom death sound
 - Old character sounds from 2014
 - Use old avatar editor background
+- Customize cursors (ShiftLock, Arrow, ArrowFar, IBeam)
+- Cursor sets (import & export)
 
 ### Other
 - FFlag editor
