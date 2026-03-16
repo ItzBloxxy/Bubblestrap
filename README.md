@@ -6,13 +6,13 @@
   />
   <br/><br/>
 
-</div>
-
 [![Version][badge-repo-latest]][repo-latest] 
-  [![Stars][badge-repo-stars]][repo-stargazer] 
-  [![License][badge-repo-license]][repo-license] 
-  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
-  [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
+[![Stars][badge-repo-stars]][repo-stargazer] 
+[![License][badge-repo-license]][repo-license] 
+[![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
+[![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
+
+</div>
 
 > [!CAUTION]
 > The only official places to download Bubblestrap are this GitHub repository and our new website https://itzbloxxy.github.io/Bubblestrap-website/
