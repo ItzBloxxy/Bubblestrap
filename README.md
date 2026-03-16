@@ -8,6 +8,12 @@
 
 </div>
 
+[![Version][badge-repo-latest]][repo-latest] 
+  [![Stars][badge-repo-stars]][repo-stargazer] 
+  [![License][badge-repo-license]][repo-license] 
+  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
+  [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
+
 > [!CAUTION]
 > The only official places to download Bubblestrap are this GitHub repository and our new website https://itzbloxxy.github.io/Bubblestrap-website/
 
@@ -15,12 +21,6 @@
 > **Bubblestrap only supports Windows 10 and 11**. And we do not have any plans to port it to any other operating systems.
 
 Bubblestrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
-
-  [![Version][badge-repo-latest]][repo-latest] 
-  [![Stars][badge-repo-stars]][repo-stargazer] 
-  [![License][badge-repo-license]][repo-license] 
-  [![Downloads (Latest)][badge-repo-downloads-latest]][repo-releases] 
-  [![Downloads (Total)][badge-repo-downloads-total]][repo-releases]  
 
 Download the latest release [here][repo-latest]
 
