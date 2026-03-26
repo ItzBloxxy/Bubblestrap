@@ -43,7 +43,7 @@ Found any bugs or issues?
 ### Bootstrapper
 - Prompt to confirm when launching another instance
 - Memory trimmer with threshold and interval
-- Disable RobloxCrashHandler.exe (reduces over 20mb+ RAM usage)
+- Disable RobloxCrashHandler.exe which helps free up some system resources and improve performance
 - Update roblox in the background instead of waiting
 - Auto-update Bubblestrap
 - Cache, logs and Bubblestrap logs cleaner
