@@ -68,7 +68,7 @@ Found any bugs or issues?
 - Framerate cap unlocking
 - Custom Bubblestrap game invite links (DEEPLINK)
 - Roblox Studio Support
-- Full translations
+- Full translations unlike other bootstrappers
 
 ## Star History
 
