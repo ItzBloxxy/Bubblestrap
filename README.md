@@ -6,9 +6,6 @@
   />
   <br/><br/>
 
-<img width="1320" height="534" alt="bubblestrap_v1" src="https://github.com/user-attachments/assets/b0765f2f-4dcd-416a-87a7-e0326a5ff996" />
-
-
 [![Version][badge-repo-latest]][repo-latest] 
 [![Stars][badge-repo-stars]][repo-stargazer] 
 [![License][badge-repo-license]][repo-license] 
