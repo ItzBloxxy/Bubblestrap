@@ -69,6 +69,7 @@ Found any bugs or issues?
 - Custom Bubblestrap game invite links (DEEPLINK)
 - Roblox Studio Support
 - Full translations unlike other bootstrappers
+- No analytics
 
 ## Star History
 
