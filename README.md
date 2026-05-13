@@ -78,7 +78,7 @@ Minimize to Tray
 - Custom Bubblestrap game invite links (DEEPLINK)
 - Roblox Studio Support
 - Full translations unlike other bootstrappers
-- No analytics
+- No analytics at all
 
 ## Star History
 
