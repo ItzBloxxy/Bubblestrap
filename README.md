@@ -47,12 +47,17 @@ Found any bugs or issues?
 - Update roblox in the background instead of waiting
 - Auto-update Bubblestrap
 - Cache, logs and Bubblestrap logs cleaner
-- Disable Roblox System Tray
-- Toggle Launch Roblox On startup
+- Roblox tray options:
+System Tray Modal
+Minimize to Tray
+- Roblox App theme selector
+- Hide version and production details
+- Toggle launch Roblox on startup
 
 ### Deployment
 - Channel changer
 - Skip Roblox Updates
+- Static directory
 - Install previous roblox version
 - Force Roblox reinstallation
 
@@ -67,7 +72,7 @@ Found any bugs or issues?
 - Cursor sets (import & export)
 
 ### Other
-- FFlag editor
+- FFlag settings and editor
 - Global Settings page
 - Framerate cap unlocking
 - Custom Bubblestrap game invite links (DEEPLINK)
