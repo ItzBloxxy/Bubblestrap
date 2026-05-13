@@ -52,6 +52,8 @@ Found any bugs or issues?
 
 ### Deployment
 - Channel changer
+- Skip Roblox Updates
+- Install previous roblox version
 - Force Roblox reinstallation
 
 ### Mods
