@@ -57,6 +57,8 @@ Found any bugs or issues?
 ### Mods
 - Use custom font
 - Use custom death sound
+- Custom Roblox Icon
+- Custom Roblox Studio icon
 - Old character sounds from 2014
 - Use old avatar editor background
 - Customize cursors (ShiftLock, Arrow, ArrowFar, IBeam)
