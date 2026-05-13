@@ -6,3 +6,6 @@ SHObjectProperties
 HWND
 WINDOW_LONG_PTR_INDEX
 SHOP_TYPE
+GetWindowRect
+LoadImage
+DestroyIcon

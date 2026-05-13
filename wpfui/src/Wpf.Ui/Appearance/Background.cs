@@ -339,14 +339,6 @@ public static class Background
                 if (!UnsafeNativeMethods.IsWindowHasLegacyMica(singleHandle))
                     UnsafeNativeMethods.ApplyWindowLegacyMicaEffect(singleHandle);
             }
-
-            // TODO: Legacy acrylic effect and aero too
-
-            //if (backdropType == BackgroundType.Acrylic)
-            //{
-            //    if (!UnsafeNativeMethods.IsWindowHasLegacyAcrylic(singleHandle))
-            //        UnsafeNativeMethods.ApplyWindowLegacyAcrylicEffect(singleHandle);
-            //}
         }
     }
 }

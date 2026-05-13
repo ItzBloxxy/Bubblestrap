@@ -38,6 +38,27 @@
             return false;
         }
 
+        /// <summary>
+        /// Returns the embedded resource name for the given file under the currently active preset.
+        /// Returns null if no preset is active or the file is not part of the active preset.
+        /// </summary>
+        public string? GetResourceNameForFile(string relativeKey)
+        {
+            if (string.IsNullOrEmpty(relativeKey))
+                return null;
+
+            if (NewState.Equals(default(T)))
+                return null;
+
+            if (_fileDataMap.TryGetValue(NewState, out var dataMap) &&
+                dataMap.TryGetValue(relativeKey, out var data))
+            {
+                return data?.ResourceIdentifier;
+            }
+
+            return null;
+        }
+
         public override void Execute()
         {
             if (!NewState.Equals(default(T)))

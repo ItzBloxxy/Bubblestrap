@@ -281,30 +281,6 @@ Ja nav, tad lūdzu ziņojiet par šo izņēmumu caur [GitHub issue]({1}) līdzā
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Izvēlēts pēc spēles</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Nākotne (3. Fāze)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Ēnu Karte (2. Fāze)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Vokselis (1. Fāze)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@ Ja nav, tad lūdzu ziņojiet par šo izņēmumu caur [GitHub issue]({1}) līdzā
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Atpakaļ</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>To vieglprātīga izmantošana var izraisīt nestabilitāti vai negaidītas lietas.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Dažiem no karogiem, kurus jūs mēģinat importēt jau ir iestatītas vērtības. Vai jūs vēlaties pārrakstīt to esošās vērtības ar tām, kas ir definētas importā?
@@ -716,9 +688,6 @@ Izvēloties 'Nē' šis brīdinājums tiks ignorēts un instalēšana tiks turpin
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Atkārtota palaišana ir nepieciešama, lai izmaiņas stātos spēkā.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Jauns UI)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Renderēšana un Grafika</value>
   </data>
@@ -733,9 +702,6 @@ Izvēloties 'Nē' šis brīdinājums tiks ignorēts un instalēšana tiks turpin
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Anti-aliasing kvalitāte (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Aptur to no parādīšanās, kad jūs novietojiet savu peli ekrāna augšdaļā.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap nespēj lejupielādēt Roblox</value>
@@ -1394,12 +1360,6 @@ Darbības laiks: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Debug</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox izvēlne</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Atbrīvojiet Roblox izvēlni ar FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Ieviešana</value>
   </data>
@@ -1719,17 +1679,149 @@ Vai vēlaties mainīt savu vēlamo kanālu uz {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Piemēro VR vinjeti, kas padara ekrāna malas tumšākas, lai mazinātu kustību izraisītu nelabumu.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Atspējot Roblox sistēmas paplāti</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Nekļūst Roblox palikt minimizēts sistēmas panelī.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Palaist Roblox pēc sistēmas uzsākšanas</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Automātiski palaista Roblox, kad piesakāties savā datorā.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Neizdevās pievienot nāves skaņu:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Nav atrasts neviens pielāgots nāves skaņas efekts, ko varētu dzēst.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Izvēlieties pielāgotu nāves skaņu</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Dzēst visu</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Noņemt</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>diena</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>dienas</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>stunda</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>stundas</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>un</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Zīmītes redzamība</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Ieslēgt vai izslēgt lietotāju emblēmu redzamību.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Spēlētāju vārdi</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Ieslēgt vai izslēgt spēlētāju vārdu redzamību.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>protokols</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minūte</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Pauzēt Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Atvieno iepriekš aprēķinātās ēnas, lai uzlabotu veiktspēju, taču dažās spēlēs tas var izraisīt apgaismojuma problēmas.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Samazināt uz sistēmtrauku</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Kad programma ir samazināta, Roblox turpinās darboties sistēmas panelī.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Sistēmas paneli modālais logs</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Noklikšķinot uz ikonas sistēmas panelī, parādīt funkcionālo izvēlni.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>„Roblox“ lietotnes tēma</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Izvēlies, kuru tēmu Roblox vajadzētu izmantot.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Pārtraukt „Roblox“ atjauninājumus</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Neļaujiet atjaunināt Roblox. Roblox paliks pašreizējā versijā.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Instalēt iepriekšējo versiju</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Lejupielādējiet un instalējiet to Roblox versiju, kas bija pieejama pirms pašreizējās.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Pielāgota Roblox ikona</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Izvēlieties savu .ico failu, lai aizstātu Roblox spēlētāja ikonu.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>No versiju vēstures neizdevās iegūt iepriekšējo Roblox versiju. Tā vietā tiek palaista jaunākā versija.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Iepriekšējā Roblox versija ({0}) ir vecāka par 7 dienām un to vairs nevar izmantot.\nTiek instalēta jaunākā versija.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Izvēlieties pielāgotu kursoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Izvēlieties pielāgotu bultiņas kursoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Izvēlieties pielāgotu IBeam kursoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Izvēlieties pielāgotu maiņas bloķēšanas kursoru</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Dzēst visu</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Importa kopums</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Eksporta komplekts</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Pielāgotā kursora funkcijas</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Mainiet kursora ikonas.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Bultiņas kursors</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar kursors</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam kursors</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Pārlūkot</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Noņemt</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
     <value>Pašlaik ir aktīva kursora iestatījuma priekšizvēle. Pirms pievienot pielāgotu kursoru, vispirms iestatiet peles kursoru uz noklusējuma vērtībām.</value>
@@ -1739,13 +1831,13 @@ Vai vēlaties mainīt savu vēlamo kanālu uz {0}?</value>
 Ja iestatījums nedarbojas, izdzēsiet savus pielāgotos kursorus.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Ir aktivizēts kursora iestatījums. Lai izmantotu pielāgotos kursorus, iestatiet „Peles kursors” uz „Noklusējums”.</value>
+    <value>Ir aktivizēts kursora iestatījums. Lai izmantotu pielāgotos kursorus, iestatiet opciju „Peles kursors pēc noklusējuma“.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
     <value>Neizdevās pievienot {0}:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Neizdevās izdzēst dažus failus:</value>
+    <value>Daži faili netika izdzēsti:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
     <value>Nav eksportējamo pielāgoto kursoru.</value>
@@ -1755,10 +1847,10 @@ Ja iestatījums nedarbojas, izdzēsiet savus pielāgotos kursorus.</value>
 {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Neizdevās importēt kursoru kopu:</value>
+    <value>Neizdevās importēt kursoru kopu: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Neizdevās eksportēt kursoru kopu:</value>
+    <value>Neizdevās eksportēt kursoru kopu: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
     <value>Vai tiešām vēlaties dzēst visus pielāgotos kursorus? Šo darbību nevar atcelt.</value>
@@ -1773,63 +1865,6 @@ Ja iestatījums nedarbojas, izdzēsiet savus pielāgotos kursorus.</value>
     <value>Nav atrasts neviens pielāgots bultiņas kursors, ko varētu noņemt.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Netika atrasts neviens pielāgots IBeam kursors, ko varētu noņemt.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
-    <value>Neizdevās pievienot nāves skaņu:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
-    <value>Nav atrasts neviens pielāgots nāves skaņas efekts, ko varētu dzēst.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
-    <value>Izvēlieties pielāgotu nāves skaņu</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Izvēlieties pielāgotu kursoru</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Izvēlieties pielāgotu bultiņas kursoru</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Izvēlieties pielāgotu IBeam kursoru</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Izvēlieties pielāgotu kursoru ar maiņas bloķēšanu</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Dzēst visu</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Dzēst visu</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Importa kopa</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
-    <value>Importa kopa</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
-    <value>Eksporta komplekts</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
-    <value>Pielāgotā kursora funkcijas</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
-    <value>Bultiņas kursors</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
-    <value>ArrowFar kursors</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
-    <value>IBeam kursors</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
-    <value>Pārlūkot</value>
-  </data>
-  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
-    <value>Noņemt</value>
+    <value>Nav atrasts neviens pielāgots IBeam kursors, ko varētu noņemt.</value>
   </data>
 </root>

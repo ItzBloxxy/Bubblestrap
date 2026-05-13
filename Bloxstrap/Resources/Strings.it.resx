@@ -281,30 +281,6 @@ Se no, per favore segnala questa eccezione attraverso una [GitHub issue]({1}) co
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Scelto dal gioco</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Fase 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Fase 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Fase 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Vorresti aggiornare la versione attualmente installata?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Indietro</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>L'uso improprio di questo può causare instabilità o comportamenti imprevisti.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Alcuni dei flag che stai cercando di importare hanno già valori impostati. Vorresti sovrascrivere i valori attuali con quelli definiti nell'importazione?
@@ -716,9 +688,6 @@ Selezionando 'No' si ignorerà questo avvertimento procedendo con l'installazion
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>È necessario un riavvio per rendere effettive le modifiche.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Nuova UI)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Rendering e Grafica</value>
   </data>
@@ -733,9 +702,6 @@ Selezionando 'No' si ignorerà questo avvertimento procedendo con l'installazion
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Qualità Anti-aliasing (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Impedisce la visualizzazione ogni volta che sposti il ​​mouse nella parte superiore dello schermo.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap non può scaricare Roblox</value>
@@ -1399,12 +1365,6 @@ Tempo di attività: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Debug</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Menu Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Snellisci il menu Roblox con FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Implementazione</value>
   </data>
@@ -1721,61 +1681,11 @@ Desideri cambiare il tuo canale preferito in {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>VR Vignetta</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Disattiva la barra delle applicazioni di Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Impedisce a Roblox di rimanere minimizzato nella barra delle applicazioni.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Esegui Roblox all'avvio</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Avvia automaticamente Roblox quando accedi al tuo PC.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>È attualmente attivo un cursore predefinito. Imposta prima il cursore del mouse su “Predefinito” prima di aggiungere un cursore personalizzato.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Hai installato dei file di cursori personalizzati. Il preset potrebbe entrare in conflitto con essi.
-Rimuovi i cursori personalizzati se il preset non sembra funzionare.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>È attivo un preset del cursore. Imposta “Cursore del mouse su predefinito” per utilizzare cursori personalizzati.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Impossibile aggiungere {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Impossibile rimuovere alcuni file:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Non ci sono cursori personalizzati da esportare.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Set di cursori esportato in:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Impossibile importare il set di cursori:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Impossibile esportare il set di cursori:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Sei sicuro di voler rimuovere tutti i cursori personalizzati? Questa operazione non può essere annullata.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Non è stato trovato alcun cursore personalizzato di blocco del cambio da rimuovere.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Non è stato trovato alcun cursore a freccia personalizzato da rimuovere.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Non è stato trovato alcun cursore a freccia personalizzato da rimuovere.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Non è stato trovato alcun cursore IBeam personalizzato da rimuovere.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Impossibile aggiungere l'effetto sonoro della morte:</value>
@@ -1786,26 +1696,113 @@ Rimuovi i cursori personalizzati se il preset non sembra funzionare.</value>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Scegli un suono di morte personalizzato</value>
   </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Impossibile aprire le proprietà:</value>
+  </data>
+  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
+    <value>Regolatore di memoria</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>giorno</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>giorni</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>ora</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>ore</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Visibilità dei badge</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Attiva o disattiva la visualizzazione dei badge degli utenti.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Nomi dei giocatori</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Attiva o disattiva la visualizzazione dei nomi dei giocatori.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>verbali</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minuto</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Metti in pausa Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Disattiva le ombre precalcolate per migliorare le prestazioni, ma potrebbe causare problemi di illuminazione in alcuni giochi.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Riduci a icona</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Mantieni Roblox in esecuzione nella barra delle applicazioni quando è ridotto a icona.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Finestra modale nella barra delle applicazioni</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Visualizza un menu funzionale quando si fa clic sull'icona nella barra delle applicazioni.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Tema dell'app Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Scegli quale tema deve utilizzare Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Blocca gli aggiornamenti di Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Impedisci l'aggiornamento di Roblox. Roblox rimarrà alla versione attualmente installata.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Installa la versione precedente</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Scarica e installa la versione di Roblox che era disponibile prima di quella attuale.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Icona personalizzata per Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Scegli un file .ico personalizzato per sostituire l'icona del giocatore di Roblox.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Impossibile recuperare la versione precedente di Roblox dalla cronologia delle versioni. Si avvierà invece l'ultima versione.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>La versione precedente di Roblox ({0}) risale a più di 7 giorni fa e non può essere utilizzata.\nSi sta installando l'ultima versione.</value>
+  </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Seleziona un cursore personalizzato</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Seleziona un cursore a freccia personalizzato</value>
+    <value>Seleziona una freccia personalizzata per il cursore</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
     <value>Seleziona un cursore personalizzato a forma di trave a I</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Seleziona un cursore personalizzato per il blocco dei tasti</value>
+    <value>Seleziona un cursore personalizzato per il blocco dei turni</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Elimina tutto</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Impossibile aprire le proprietà:</value>
+    <value>Rimuovi tutto</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Importa set</value>
+    <value>Set di importazione</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Set di esportazione</value>
@@ -1831,13 +1828,48 @@ Rimuovi i cursori personalizzati se il preset non sembra funzionare.</value>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Rimuovi</value>
   </data>
-  <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
-    <value>Regolatore di memoria</value>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>È attualmente attivo un cursore predefinito. Imposta prima il cursore del mouse su “Predefinito” prima di aggiungere un cursore personalizzato.</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
-    <value>ShiftLock</value>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Hai installato dei file di cursori personalizzati. Il preset potrebbe entrare in conflitto con essi.
+Rimuovi i cursori personalizzati se il preset non sembra funzionare.</value>
   </data>
-  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
-    <value>Audio</value>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>È attivo un preset del cursore. Imposta “Cursore del mouse su predefinito” per utilizzare cursori personalizzati.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Impossibile aggiungere {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Impossibile rimuovere alcuni file:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Non ci sono cursori personalizzati da esportare.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Set di cursori esportato in:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Impossibile importare il set di cursori: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Impossibile esportare il set di cursori: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Sei sicuro di voler rimuovere tutti i cursori personalizzati? Questa operazione non può essere annullata.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Non è stato trovato alcun cursore personalizzato di blocco del cambio da rimuovere.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Non è stato trovato alcun cursore a freccia personalizzato da rimuovere.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Non è stato trovato alcun cursore a freccia personalizzato da rimuovere.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Non è stato trovato alcun cursore IBeam personalizzato da rimuovere.</value>
   </data>
 </root>

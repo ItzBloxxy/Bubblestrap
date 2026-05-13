@@ -368,7 +368,7 @@ public static class UnsafeNativeMethods
 
         var accentStructSize = Marshal.SizeOf(accentPolicy);
         var accentPtr = Marshal.AllocHGlobal(accentStructSize);
-        
+
         Marshal.StructureToPtr(accentPolicy, accentPtr, false);
 
         var data = new User32.WINCOMPATTRDATA

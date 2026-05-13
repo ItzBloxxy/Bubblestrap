@@ -8,15 +8,15 @@
 
 <PropertyGroup>
 	<OutputType>WinExe</OutputType>
-	<TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
+	<TargetFramework>net9.0-windows10.0.17763</TargetFramework> 
 	<Nullable>enable</Nullable>
 	<UseWPF>true</UseWPF>
 	<UseWindowsForms>False</UseWindowsForms>
 	<ApplicationIcon>Bubblestrap.ico</ApplicationIcon>
-	<Version>1.3.0</Version>
-	<FileVersion>1.3.0</FileVersion>
-	<AssemblyVersion>1.3.0</AssemblyVersion>
-	<InformationalVersion>1.3.0</InformationalVersion>
+	<Version>1.4.0</Version>
+	<FileVersion>1.4.0</FileVersion>
+	<AssemblyVersion>1.4.0</AssemblyVersion>
+	<InformationalVersion>1.4.0</InformationalVersion>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
@@ -36,6 +36,10 @@
     
   <ItemGroup>
     <Resource Include="Bubblestrap.ico" />
+	<Resource Include="Resources\BootstrapperStyles\TwentyFiveDialog\PlayerLogo.png" />
+	<Resource Include="Resources\BootstrapperStyles\TwentyFiveDialog\Roblox.png" />
+	<Resource Include="Resources\BootstrapperStyles\TwentyFiveDialog\Studio.png" />
+	<Resource Include="Resources\BootstrapperStyles\TwentyFiveDialog\StudioLogo.png" />
     <Resource Include="Resources\LightEditor.xshd" />
     <Resource Include="Resources\Fonts\NotoSansThai-VariableFont_wdth,wght.ttf" />
     <Resource Include="Resources\Fonts\Rubik-VariableFont_wght.ttf" />
@@ -57,7 +61,8 @@
     <EmbeddedResource Include="Resources\Icon2017.ico" />
     <EmbeddedResource Include="Resources\Icon2019.ico" />
     <EmbeddedResource Include="Resources\Icon2022.ico" />
-	<EmbeddedResource Include="Resources\Icon2026.ico" />
+	  <EmbeddedResource Include="Resources\Icon2025.ico" />
+    <EmbeddedResource Include="Resources\Icon2025NoBg.ico" />
     <EmbeddedResource Include="Resources\IconEarly2015.ico" />
     <EmbeddedResource Include="Resources\IconLate2015.ico" />
     <EmbeddedResource Include="Resources\Mods\Cursor\From2006\ArrowCursor.png" />
@@ -153,10 +158,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\BootstrapperStyles\" />
   </ItemGroup>
 
 </Project>

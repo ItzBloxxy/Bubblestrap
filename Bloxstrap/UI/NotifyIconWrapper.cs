@@ -74,10 +74,7 @@ namespace Bloxstrap.UI
             {
                 TimeSpan _serverUptime = DateTime.UtcNow - serverTime.Value;
 
-                if (_serverUptime.TotalMinutes == 0)
-                    serverUptime = "0 minutes"; // :sob:
-                else
-                    serverUptime = Time.FormatTimeSpan(_serverUptime);
+                serverUptime = Time.FormatTimeSpan(_serverUptime);
             }
             else
                 serverUptime = Strings.Common_Unknown; // this should never happen

@@ -146,6 +146,11 @@
             Description="{x:Static resources:Strings.Menu_FastFlags_Presets_Grass_Description}">
             <ui:ToggleSwitch IsChecked="{Binding DisableGrass, Mode=TwoWay}" />
         </controls:OptionControl>
-        
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_FastFlags_Voxelizer_Title}"
+            Description="{x:Static resources:Strings.Menu_FastFlags_Voxelizer_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding PauseVoxelizer, Mode=TwoWay}" />
+        </controls:OptionControl>
     </StackPanel>
 </ui:UiPage>

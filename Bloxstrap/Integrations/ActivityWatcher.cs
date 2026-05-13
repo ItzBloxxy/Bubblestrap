@@ -52,10 +52,6 @@ namespace Bloxstrap.Integrations
         public bool InGame = false;
 
         public ActivityData Data { get; private set; } = new();
-
-        /// <summary>
-        /// Ordered by newest to oldest
-        /// </summary>
         public List<ActivityData> History = new();
 
         public bool IsDisposed = false;
@@ -168,8 +164,6 @@ namespace Bloxstrap.Integrations
 
             if (!InGame && Data.PlaceId == 0)
             {
-                // We are not in a game, nor are in the process of joining one
-
                 if (entry.Contains(GameJoiningPrivateServerEntry))
                 {
                     // we only expect to be joining a private server if we're not already in a game
@@ -224,7 +218,7 @@ namespace Bloxstrap.Integrations
             }
             else if (!InGame && Data.PlaceId != 0)
             {
-                // We are not confirmed to be in a game, but we are in the process of joining one
+                // we are not confirmed to be in a game, but we are in the process of joining one
 
                 if (entry.Contains(GameJoiningUniverseEntry))
                 {
@@ -284,8 +278,6 @@ namespace Bloxstrap.Integrations
             }
             else if (InGame && Data.PlaceId != 0)
             {
-                // We are confirmed to be in a game
-
                 if (entry.Contains(GameDisconnectedEntry))
                 {
                     App.Logger.WriteLine(LOG_IDENT, $"Disconnected from Game ({Data})");

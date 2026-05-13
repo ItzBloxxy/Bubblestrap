@@ -92,6 +92,7 @@ namespace Bloxstrap.UI
                 BootstrapperStyle.LegacyDialog2011 => new LegacyDialog2011(),
                 BootstrapperStyle.ProgressDialog => new ProgressDialog(),
                 BootstrapperStyle.ClassicFluentDialog => new ClassicFluentDialog(),
+                BootstrapperStyle.TwentyFiveDialog => new TwentyFiveDialog(),
                 BootstrapperStyle.FluentDialog => new FluentDialog(false),
                 BootstrapperStyle.FluentAeroDialog => new FluentDialog(true),
                 BootstrapperStyle.CustomDialog => GetCustomBootstrapper(),

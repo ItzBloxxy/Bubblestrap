@@ -9,9 +9,6 @@ using Wpf.Ui.Mvvm.Contracts;
 
 namespace Bloxstrap.UI.Elements.Settings
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : INavigationWindow
     {
         private Models.Persistable.WindowState _state => App.State.Prop.SettingsWindow;
@@ -19,11 +16,10 @@ namespace Bloxstrap.UI.Elements.Settings
         public MainWindow(bool showAlreadyRunningWarning)
         {
             var viewModel = new MainWindowViewModel();
+            DataContext = viewModel;
 
             viewModel.RequestSaveNoticeEvent += (_, _) => SettingsSavedSnackbar.Show();
             viewModel.RequestCloseWindowEvent += (_, _) => Close();
-
-            DataContext = viewModel;
 
             InitializeComponent();
 
@@ -33,7 +29,7 @@ namespace Bloxstrap.UI.Elements.Settings
                 ShowAlreadyRunningSnackbar();
 
             gbs.Opacity = viewModel.GBSEnabled ? 1 : 0.5;
-            gbs.IsEnabled = viewModel.GBSEnabled; // binding doesnt work as expected so we are setting it in here instead
+            gbs.IsEnabled = viewModel.GBSEnabled;
 
             LoadState();
 
@@ -43,7 +39,6 @@ namespace Bloxstrap.UI.Elements.Settings
             App.LocalData.Subscribe((object? sender, EventArgs e) =>
             {
                 LocalDataBase Data = App.LocalData.Prop;
-
                 AlertBar.Visibility = Data.AlertEnabled ? Visibility.Visible : Visibility.Collapsed;
                 AlertBar.Message = Data.AlertContent;
                 AlertBar.Severity = Data.AlertSeverity;
@@ -60,24 +55,18 @@ namespace Bloxstrap.UI.Elements.Settings
             void OnNavigation(object? sender, RoutedNavigationEventArgs e)
             {
                 INavigationItem? currentPage = RootNavigation.Current;
-
-                App.State.Prop.LastPage = currentPage?.PageType.FullName!;
+                if (currentPage?.PageType != null)
+                    App.State.Prop.LastPage = currentPage.PageType.FullName;
             }
         }
 
         public void LoadState()
         {
-            if (_state.Left > SystemParameters.VirtualScreenWidth)
-                _state.Left = 0;
+            if (_state.Left > SystemParameters.VirtualScreenWidth) _state.Left = 0;
+            if (_state.Top > SystemParameters.VirtualScreenHeight) _state.Top = 0;
 
-            if (_state.Top > SystemParameters.VirtualScreenHeight)
-                _state.Top = 0;
-
-            if (_state.Width > 0)
-                this.Width = _state.Width;
-
-            if (_state.Height > 0)
-                this.Height = _state.Height;
+            if (_state.Width > 0) this.Width = _state.Width;
+            if (_state.Height > 0) this.Height = _state.Height;
 
             if (_state.Left > 0 && _state.Top > 0)
             {
@@ -89,52 +78,39 @@ namespace Bloxstrap.UI.Elements.Settings
 
         private async void SafeNavigate(Type page)
         {
-            await Task.Delay(500); // same as below
-
+            await Task.Delay(500);
             if (page == typeof(GlobalSettingsPage) && !App.GlobalSettings.Loaded)
-                return; // prevent from navigating onto disabled page
+                return;
 
             Navigate(page);
         }
 
         private async void ShowAlreadyRunningSnackbar()
         {
-            await Task.Delay(500); // wait for everything to finish loading
+            await Task.Delay(500);
             AlreadyRunningSnackbar.Show();
         }
 
-        #region INavigationWindow methods
-
         public Frame GetFrame() => RootFrame;
-
         public INavigation GetNavigation() => RootNavigation;
-
         public bool Navigate(Type pageType) => RootNavigation.Navigate(pageType);
-
         public void SetPageService(IPageService pageService) => RootNavigation.PageService = pageService;
-
         public void ShowWindow() => Show();
-
         public void CloseWindow() => Close();
-
-        #endregion INavigationWindow methods
 
         private void WpfUiWindow_Closing(object sender, CancelEventArgs e)
         {
             if (App.FastFlags.Changed || App.PendingSettingTasks.Any())
             {
                 var result = Frontend.ShowMessageBox(Strings.Menu_UnsavedChanges, MessageBoxImage.Warning, MessageBoxButton.YesNo);
-
                 if (result != MessageBoxResult.Yes)
                     e.Cancel = true;
             }
 
             _state.Width = this.Width;
             _state.Height = this.Height;
-
             _state.Top = this.Top;
             _state.Left = this.Left;
-
             App.State.Save();
         }
 
@@ -145,8 +121,7 @@ namespace Bloxstrap.UI.Elements.Settings
             else
                 App.SoftTerminate();
         }
-        private void NavigationItem_Click(object sender, RoutedEventArgs e)
-        {
-        }
+
+        private void NavigationItem_Click(object sender, RoutedEventArgs e) { }
     }
 }

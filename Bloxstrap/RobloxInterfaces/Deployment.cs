@@ -6,7 +6,6 @@
 
         private const string VersionStudioHash = "version-012732894899482c";
 
-
         public static EventHandler<string>? ChannelChanged;
         private static string _channel = App.Settings.Prop.Channel;
         public static string Channel

@@ -281,30 +281,6 @@ Hvis ikke, bedes du rapportere denne undtagelse gennem et [GitHub problem]({1}) 
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Valgt af spil</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Fase 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Fase 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Fase 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Vil du gerne opgradere din nuværende installerede version?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Tilbage</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Misbrug af dette kan føre til ustabilitet eller uventede ting sker.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Nogle af de flag, du forsøger at importere, har allerede fastsat værdier. Vil du overskrive deres nuværende værdier med dem, der er defineret i importen?
@@ -716,9 +688,6 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>En genstart er nødvendig for at ændringerne træder i kraft.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Nyt Layout)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Rendering og grafik</value>
   </data>
@@ -733,9 +702,6 @@ Hvis du vælger 'Nej', vil denne advarsel blive ignoreret, og installationen for
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Antialiasing quality (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Stopper det fra at vise, når du flytter musen til toppen af skærmen.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap kunne ikke downloade Roblox</value>
@@ -1390,12 +1356,6 @@ Oppetid: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Fejlfinding</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox-menu</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Fjern overflødige elementer fra Roblox-menuen med FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Implementering</value>
   </data>
@@ -1718,17 +1678,146 @@ Vil du skifte din foretrukne kanal til {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Anvender en VR-vignette, der mørkner skærmkanterne for at reducere bevægelsessyge.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Deaktiver Roblox-systemfeltet</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Forhindrer, at Roblox forbliver minimeret i proceslinjen.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Kør Roblox ved opstart</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Roblox starter automatisk, når du logger ind på din pc.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Det lykkedes ikke at tilføje dødslyden:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Der blev ikke fundet nogen brugerdefineret dødslyd, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Vælg en brugerdefineret dødslyd</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Det var ikke muligt at åbne egenskaberne:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>dag</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>dage</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>og</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Synlighed af badges</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Skift mellem at vise og skjule brugerbadges.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Spillernavne</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Vis eller skjul spillernes navne.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minutter</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minutter</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Sæt Voxelizer på pause</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Deaktiverer indbagte skygger for at forbedre ydeevnen, men det kan medføre problemer med belysningen i visse spil.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Minimer til proceslinjen</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Hold Roblox kørende i proceslinjen, når det er minimeret.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Modal i systembakken</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Vis en funktionsmenu, når der klikkes på ikonet i proceslinjen.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Roblox-app-tema</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Vælg, hvilket tema Roblox skal bruge.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Stop opdateringerne til Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Forhindr Roblox i at blive opdateret. Roblox forbliver på den nuværende version.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Installer den forrige version</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Download og installer den version af Roblox, der var tilgængelig før den nuværende.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Brugerdefineret Roblox-ikon</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Vælg en brugerdefineret .ico-fil til at erstatte Roblox-afspillerikonet.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Det var ikke muligt at hente den forrige Roblox-version fra versionshistorikken. Spillet startes i stedet med den nyeste version.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Den tidligere version af Roblox ({0}) er mere end 7 dage gammel og kan ikke bruges.\nDen nyeste version installeres i stedet.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Vælg en brugerdefineret markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Vælg en brugerdefineret pil-markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Vælg en brugerdefineret IBeam-markør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Vælg en brugerdefineret markør til skift-lås</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Fjern alt</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Importer sæt</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Eksportindstilling</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Funktionaliteter til brugerdefinerede markører</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Skift markørikoner.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Pilemarkør</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar-markøren</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam-markøren</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Gennemse</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Fjern</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
     <value>Der er i øjeblikket valgt en forudindstillet markør. Indstil først musemarkøren til standardindstillingen, før du tilføjer en brugerdefineret markør.</value>
@@ -1760,10 +1849,10 @@ Slet dine brugerdefinerede markører, hvis forudindstillingen ikke ser ud til at
     <value>Det lykkedes ikke at eksportere markørsættet: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Er du sikker på, at du vil fjerne alle brugerdefinerede markører? Dette kan ikke fortrydes.</value>
+    <value>Er du sikker på, at du vil slette alle brugerdefinerede markører? Dette kan ikke fortrydes.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Der blev ikke fundet nogen brugerdefineret markør til skift-lås, der kan fjernes.</value>
+    <value>Der blev ikke fundet nogen brugerdefineret markør for gearlås, der kan fjernes.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
     <value>Der blev ikke fundet nogen brugerdefineret pilemarkør, der kan fjernes.</value>
@@ -1773,59 +1862,5 @@ Slet dine brugerdefinerede markører, hvis forudindstillingen ikke ser ud til at
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>Der blev ikke fundet nogen brugerdefineret IBeam-markør, der kan fjernes.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
-    <value>Det lykkedes ikke at tilføje dødslyden:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
-    <value>Der blev ikke fundet nogen brugerdefineret dødslyd, der kan fjernes.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
-    <value>Vælg en brugerdefineret dødslyd</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Vælg en brugerdefineret markør</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Vælg en brugerdefineret pil-markør</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Vælg en brugerdefineret I-bjælke-markør</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Vælg en brugerdefineret markør til skift-lås</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Fjern alt</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Det var ikke muligt at åbne egenskaberne:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Importindstilling</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
-    <value>Eksportindstilling</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
-    <value>Funktioner til brugerdefinerede markører</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
-    <value>Skift markørikoner.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>Pilemarkør</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
-    <value>ArrowFar-markøren</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
-    <value>IBeam-markøren</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
-    <value>Gennemse</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
-    <value>Fjern</value>
   </data>
 </root>

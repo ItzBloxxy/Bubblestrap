@@ -282,30 +282,6 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Vybráno hrou</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Budoucnost (Fáze 3.)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Stínová mapa (Fáze 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Fáze 1.)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Pokud ne, prosím nahlaste tuto výjimku prostřednictvím [GitHub issue]({1}) s
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Zpět</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Zneužití toho se může vést k nestabilitě nebo něčemu neočekávanému.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Některé vlajky, které se pokoušíte importovat už mají danou hodnotu. Chcete je přepsat těmi definovanými v importu?
@@ -716,9 +688,6 @@ Při výběru 'Ne' bude toto varování ignorováno a bude pokračovat v instala
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Je potřeba znovu spustit aplikaci aby se projevily změny.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (Verze 4 + Nové Uživatelské rozhrání)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Vykreslování a Grafika</value>
   </data>
@@ -733,9 +702,6 @@ Při výběru 'Ne' bude toto varování ignorováno a bude pokračovat v instala
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Vyhlazovací kvalita (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Zastaví zobrazování titulní lišty, když se myš přesune na horní část obrazovky.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap nemůže stáhnout Roblox</value>
@@ -1391,12 +1357,6 @@ Doba provozu: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Ladění</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Nabídka Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Odlehčete menu Roblox pomocí FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Nasazení</value>
   </data>
@@ -1719,61 +1679,11 @@ Chcete změnit preferovaný kanál na {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Použije VR vinětu, která ztmaví okraje obrazovky, aby se snížila nevolnost z pohybu.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Zakázat systémovou lištu Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Zabraňuje minimalizaci Roblox v systémové liště.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Spustit Roblox při startu</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Automaticky spustí Roblox, když se přihlásíte do svého počítače.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Odebrat</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>V současné době je aktivní přednastavený kurzor. Než přidáte vlastní kurzor, nastavte kurzor myši nejprve na výchozí hodnotu.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Máte nainstalované soubory s vlastními kurzory. Předvolba s nimi může být v konfliktu.
-Pokud se zdá, že předvolba nefunguje, odstraňte své vlastní kurzory.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Je aktivní předvolba kurzoru. Chcete-li používat vlastní kurzory, nastavte možnost „Kurzor myši“ na „Výchozí“.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Nepodařilo se přidat {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Nepodařilo se odstranit některé soubory:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Nejsou k exportu žádné vlastní kurzory.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Sada kurzorů exportována do:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Import sady kurzorů se nezdařil:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Nepodařilo se exportovat sadu kurzorů:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Nebylo nalezeno žádné vlastní kurzorové znaménko pro uzamčení řazení, které by bylo možné odstranit.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Nebylo nalezeno žádné vlastní kurzorové znaménko pro uzamčení řazení, které by bylo možné odstranit.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Nebyly nalezeny žádné vlastní kurzory ve tvaru šipky, které by bylo možné odstranit.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Nebyly nalezeny žádné vlastní šipky kurzoru, které by bylo možné odstranit.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Nepodařilo se přidat zvuk smrti:</value>
@@ -1784,26 +1694,110 @@ Pokud se zdá, že předvolba nefunguje, odstraňte své vlastní kurzory.</valu
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Vyberte vlastní zvuk smrti</value>
   </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Odstranit vše</value>
+  </data>
+  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
+    <value>Zvuk</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>den</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>dny</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>hodina</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>hodiny</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Zobrazení odznaku</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Zapnout/vypnout zobrazení uživatelských odznaků.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Jména hráčů</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Zobrazit/skrýt jména hráčů.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minuty</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minuty</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Pozastavit Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Vypne předrenderované stíny, čímž se zvýší výkon, v některých hrách to však může způsobit problémy s osvětlením.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Skrýt do oznamovací oblasti</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Nechat Roblox běžet v systémové liště i po minimalizaci.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Modální okno v systémové liště</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Po kliknutí na ikonu v oznamovací oblasti se zobrazí funkční nabídka.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Téma aplikace Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Vyberte, jaký motiv má Roblox použít.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Zastavit aktualizace Robloxu</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Zabraňte aktualizaci aplikace Roblox. Aplikace Roblox zůstane v aktuálně nainstalované verzi.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Nainstalovat předchozí verzi</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Stáhněte si a nainstalujte verzi Robloxu, která byla v provozu před tou aktuální.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Vlastní ikona pro Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Vyberte vlastní soubor .ico, kterým nahradíte ikonu přehrávače Roblox.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Z historie verzí se nepodařilo načíst předchozí verzi Robloxu. Místo toho se spustí nejnovější verze.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Předchozí verze Robloxu ({0}) je starší než 7 dní a nelze ji použít.\nMísto toho se nainstaluje nejnovější verze.</value>
+  </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Vyberte vlastní zvuk smrti</value>
+    <value>Vyberte vlastní kurzor</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
     <value>Vyberte vlastní kurzor ve tvaru šipky</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Vyberte vlastní kurzor ve tvaru šipky</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
     <value>Vyberte vlastní kurzor ve tvaru I-nosníku</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
     <value>Vyberte vlastní kurzor pro uzamčení posunu</value>
   </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Odstranit vše</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Nelze otevřít vlastnosti:</value>
+    <value>Importovat sadu</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Sada pro export</value>
@@ -1829,7 +1823,48 @@ Pokud se zdá, že předvolba nefunguje, odstraňte své vlastní kurzory.</valu
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Odebrat</value>
   </data>
-  <data name="Menu.GBSEditor.Audio.Title" xml:space="preserve">
-    <value>Zvuk</value>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>V současné době je aktivní přednastavený kurzor. Než přidáte vlastní kurzor, nastavte kurzor myši nejprve na výchozí hodnotu.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Máte nainstalované vlastní soubory kurzorů. Předvolba s nimi může být v konfliktu.
+Pokud se zdá, že předvolba nefunguje, odstraňte své vlastní kurzory.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Je aktivní předvolba kurzoru. Chcete-li používat vlastní kurzory, nastavte možnost „Kurzor myši“ na „Výchozí“.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Nepodařilo se přidat {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nepodařilo se odstranit některé soubory:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Nejsou k exportu žádné vlastní kurzory.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Sada kurzorů exportována do:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Nepodařilo se načíst sadu kurzorů: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Nepodařilo se exportovat sadu kurzorů: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Opravdu chcete odstranit všechny vlastní kurzory? Tento úkon nelze vrátit zpět.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní kurzory s aretací řazení, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní kurzory ve tvaru šipky, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní šipky kurzoru, které by bylo možné odstranit.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nebyly nalezeny žádné vlastní kurzory typu IBeam, které by bylo možné odstranit.</value>
   </data>
 </root>

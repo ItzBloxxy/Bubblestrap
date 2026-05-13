@@ -6,11 +6,11 @@ namespace Bloxstrap.Utility
     {
         private static GenericTriState _loadStatus = GenericTriState.Unknown;
 
-        public static void Create(string exePath, string exeArgs, string lnkPath)
+        public static void Create(string exePath, string exeArgs, string lnkPath, bool overwrite = false)
         {
             const string LOG_IDENT = "Shortcut::Create";
 
-            if (File.Exists(lnkPath))
+            if (!overwrite && File.Exists(lnkPath))
                 return;
 
             try

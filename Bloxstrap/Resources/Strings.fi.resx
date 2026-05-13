@@ -281,30 +281,6 @@ Jos se ei ole korjattu, ole hyvä ja raportoi tämä poikkeus [GitHub-issuen]({1
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Pelin valitsema</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Vaihe 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Vaihe 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Vaihe 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Takaisin</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Tämän väärinkäyttö saattaa johtaa epävakauteen tai odottamattomien asioiden tapahtumiseen.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Joillain tuomillasi flageilla on jo asetettu arvo. Haluaisitko korvata niiden tämänhetkiset arvot niillä, jotka on määritetty tuonnissa?
@@ -716,9 +688,6 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Uudelleenkäynnistys vaaditaan, jotta muutokset tulevat voimaan.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + uusi käyttöliittymä)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Renderönti ja grafiikat</value>
   </data>
@@ -733,9 +702,6 @@ Vastaus 'Ei' ohittaa tämän varoituksen ja jatkaa asentamista.</value>
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Reunanpehmennyksen laatu (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Estää tämän näkymästä, kun liikuttaa hiiren näytön yläreunaan.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap ei voi ladata Robloxia</value>
@@ -1398,12 +1364,6 @@ Käyttöaika: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Virheenkorjaus</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox-valikko</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Keventää Roblox-valikkoa FFlags-tunnisteilla</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Käyttöönotto</value>
   </data>
@@ -1726,27 +1686,156 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Käyttää VR-vignettia, joka tummentaa näytön reunoja liikepahoinvoinnin vähentämiseksi.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Poista Roblox-järjestelmäpalkki käytöstä</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Estää Robloxin pysymisen pienennettynä järjestelmälokerossa.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Käynnistä Roblox käynnistyksen yhteydessä</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Käynnistää Robloxin automaattisesti, kun kirjaudut tietokoneellesi.</value>
   </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Kuoleman äänen lisääminen epäonnistui:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Poistettavia mukautettuja kuolemanääniä ei löytynyt.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Valitse mukautettu kuolemanääni</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>päivä</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>päivää</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>tunti</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>tuntia</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Tunnuksen näkyvyys</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Kytke käyttäjien tunnusten näkyvyys päälle tai pois päältä.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Pelaajien nimet</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Kytke pelaajien nimien näkyvyys päälle tai pois päältä.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>Poistaa varjot käytöstä suorituskyvyn parantamiseksi, mutta tämä voi aiheuttaa valaistusongelmia joissakin peleissä.</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minuutti</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Keskeytä Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Poistaa varjot käytöstä suorituskyvyn parantamiseksi, mutta voi aiheuttaa valaistusongelmia joissakin peleissä.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Pienennä tehtäväpalkkiin</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Pidä Roblox käynnissä tehtäväpalkissa, kun se on pienennettynä.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Käynnissä olevat sovellukset -palkki</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Näytä toimintavalikko, kun järjestelmäpalkin kuvaketta napsautetaan.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Roblox-sovelluksen teema</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Valitse, mitä teemaa Roblox käyttää.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Lopeta Roblox-päivitykset</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Estä Robloxin päivittyminen. Roblox pysyy nykyisessä asennetussa versiossa.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Asenna edellinen versio</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Lataa ja asenna se Roblox-versio, joka oli käytössä ennen nykyistä versiota.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Mukautettu Roblox-kuvake</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Valitse mukautettu .ico-tiedosto Roblox-pelaajan kuvakkeen korvaamiseksi.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Edellinen Roblox-versio ({0}) on yli 7 päivää vanha, eikä sitä voi käyttää.\nAsennan sen sijaan uusimman version.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Edellinen Roblox-versio ({0}) on yli 7 päivää vanha, eikä sitä voi käyttää.\nAsennan sen sijaan uusimman version.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Valitse mukautettu osoitin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Valitse mukautettu nuolipainike</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Valitse mukautettu I-palkkikohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Valitse mukautettu vuorolukituskursori</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Tuontijoukko</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Vientiasetukset</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Mukautettujen osoittimien ominaisuudet</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Vaihda kohdistimen kuvakkeet.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Nuolipainike</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>ArrowFar-kohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>IBeam-kohdistin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Selaa</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Poista</value>
+  </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Tällä hetkellä on käytössä valmiiksi määritetty hiiren osoitin. Aseta hiiren osoitin ensin oletusasetuksiin ennen kuin lisäät mukautetun osoittimen.</value>
+    <value>Tällä hetkellä on käytössä valmiiksi määritetty osoitin. Aseta hiiren osoitin ensin oletusasetuksiin ennen kuin lisäät mukautetun osoittimen.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
     <value>Koneellesi on asennettu mukautettuja kursoritiedostoja. Esiasetus saattaa olla ristiriidassa niiden kanssa.
 Poista mukautetut kursorit, jos esiasetus ei näytä toimivan.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Kohdistimen esiasetus on käytössä. Aseta hiiren kohdistin oletusasetukseksi, jos haluat käyttää mukautettuja kohdistimia.</value>
+    <value>Kohdistimen esiasetus on käytössä. Aseta Hiiren kohdistin oletusasetukseksi, jos haluat käyttää mukautettuja kohdistimia.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
     <value>{0}:n lisääminen epäonnistui:</value>
@@ -1762,10 +1851,10 @@ Poista mukautetut kursorit, jos esiasetus ei näytä toimivan.</value>
 {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Kohdistimen asetusten tuonti epäonnistui:</value>
+    <value>Kohdistimen asetusten tuonti epäonnistui: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Kohdistimen asetusten vienti epäonnistui:</value>
+    <value>Kohdistimen asetusten vienti epäonnistui: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
     <value>Haluatko varmasti poistaa kaikki mukautetut osoittimet? Tätä ei voi peruuttaa.</value>
@@ -1780,63 +1869,6 @@ Poista mukautetut kursorit, jos esiasetus ei näytä toimivan.</value>
     <value>Poistettavaa mukautettua nuolipainiketta ei löytynyt.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Mukautettua IBeam-kohdistinta ei löytynyt poistettavaksi.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
-    <value>Kuoleman äänen lisääminen epäonnistui:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
-    <value>Poistettavia mukautettuja kuolemanääniä ei löytynyt.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
-    <value>Valitse mukautettu kuolemanääni</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Valitse mukautettu osoitin</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Valitse mukautettu nuolipääkursori</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Valitse mukautettu I-palkkikohdistin</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Valitse mukautettu I-palkkikohdistin</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Poista kaikki</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Poista kaikki</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Ominaisuuksia ei voitu avata:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
-    <value>Tuontijoukko</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
-    <value>Vientiasetukset</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
-    <value>Mukautettujen osoittimien ominaisuudet</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
-    <value>Vaihda kohdistimen kuvakkeet.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
-    <value>Nuolipainike</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
-    <value>ArrowFar-kohdistin</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
-    <value>IBeam-kohdistin</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
-    <value>Selaa</value>
+    <value>Poistettavaa mukautettua IBeam-kohdistinta ei löytynyt.</value>
   </data>
 </root>

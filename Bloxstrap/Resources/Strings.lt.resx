@@ -281,30 +281,6 @@ Jei ne, praneškite apie šią išimtį per [„GitHub“ problemą]({1}) kartu 
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>„Windows 8“</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 m. (1 ver.)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2022 m. (2 ver.)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 m. (4 ver.)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Pasirinkta pagal žaidimą</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>„Future“ (3 fazė)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>„Shadow Map“ (2 fazė)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>„Voxel“ (1 fazė)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>„Direct3D 10“</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>„Direct3D 11“</value>
   </data>
@@ -465,10 +441,6 @@ Ar norėtumėte atnaujinti šiuo metu įdiegtą versiją?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Atgal</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Netinkamai naudojant šią funkciją, gali atsirasti nestabilumas arba įvykti netikėtų dalykų.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Kai kurių gairelių, kurias bandote importuoti, reikšmės jau turi nustatytos. Ar norėtumėte dabartines jų reikšmes perrašyti importuojant nustatytomis reikšmėmis?
@@ -716,9 +688,6 @@ Pasirinkus Ne, šis įspėjimas bus ignoruojamas ir diegimas bus tęsiamas.</val
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Kad pakeitimai veiktų, reikia paleisti iš naujo.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 m. (4 ver. + nauja naudotojo sąsaja)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Atvaizdavimas ir grafika</value>
   </data>
@@ -733,9 +702,6 @@ Pasirinkus Ne, šis įspėjimas bus ignoruojamas ir diegimas bus tęsiamas.</val
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Glodinimo kokybė (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Sustabdo jį rodyti, kai pelę perkeliate į ekrano viršų.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>„Bubblestrap“ nepavyksta atsisiųsti „Roblox“</value>
@@ -1398,12 +1364,6 @@ Veikimo laikas: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Debug</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox meniu</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Išvalykite „Roblox“ meniu su FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Diegimas</value>
   </data>
@@ -1726,61 +1686,11 @@ Ar norite pakeisti pageidaujamą kanalą į {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Taiko VR vinjetę, kuri patamsina ekrano kraštus, kad sumažintų judėjimo ligą.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Automatiškai paleidžia „Roblox“, kai prisijungiate prie savo kompiuterio.</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Neleidžia „Roblox“ likti sumažintam sisteminiame dėkle.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Paleisti Roblox paleidžiant kompiuterį</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Automatiškai paleidžia „Roblox“, kai prisijungiate prie savo kompiuterio.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Šiuo metu veikia iš anksto nustatytas žymeklis. Prieš pridedant pasirinktinį žymeklį, pirmiausia nustatykite pelės žymeklį į numatytąjį.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Jūsų kompiuteryje įdiegti pasirinktiniai žymeklio failai. Šis nustatymas gali su jais nesuderinamas.
-Jei nustatymas neveikia, pašalinkite pasirinktinius žymeklius.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Veikia žymeklio nustatymas. Norėdami naudoti pasirinktinius žymeklius, nustatykite „Pele žymeklį“ į „Numatytąjį“.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Nepavyko pridėti {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Nepavyko pašalinti kai kurių failų:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Nėra eksportuotinų pasirinktinių žymeklių.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Kursoriaus nustatymas eksportuotas į:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Nepavyko importuoti žymeklio nustatymų:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Nepavyko eksportuoti žymeklio nustatymų:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Ar tikrai norite pašalinti visus pasirinktinius žymeklius? Šio veiksmo negalima atšaukti.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Nerasta jokio pasirinktinio perjungimo fiksavimo žymeklio, kurį būtų galima pašalinti.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Nerasta jokio pasirinktinio rodyklės žymeklio, kurį būtų galima pašalinti.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Nerasta jokio pasirinktinio rodyklės formos žymeklio, kurį būtų galima pašalinti.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Nerasta jokio pasirinktinio „IBeam“ žymeklio, kurį būtų galima pašalinti.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Nepavyko pridėti mirties garso:</value>
@@ -1790,6 +1700,90 @@ Jei nustatymas neveikia, pašalinkite pasirinktinius žymeklius.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Pasirinkite pasirinktinį mirties garsą</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Nepavyko atidaryti savybių:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>diena</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>dienos</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>valanda</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>valandos</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>ir</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Ženklo matomumas</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Įjunkite arba išjunkite vartotojų ženkliukų rodymą.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Žaidėjų vardai</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Įjungti arba išjungti žaidėjų vardų rodymą.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>Išjungia iš anksto apskaičiuotus šešėlius, kad padidintų našumą, tačiau kai kuriuose žaidimuose tai gali sukelti apšvietimo problemų.</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minutė</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Sustabdyti „Voxelizer“</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Išjungia iš anksto apskaičiuotus šešėlius, kad padidintų našumą, tačiau kai kuriuose žaidimuose tai gali sukelti apšvietimo problemų.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Sumažinti į užduočių juostą</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Kai langas sumažintas, „Roblox“ turi veikti sistemos dėkle.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Sistemos dėklo modalinis langas</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Spustelėjus sistemos dėklo piktogramą, rodyti funkcinį meniu.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>„Roblox“ programėlės tema</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Pasirinkite, kokią temą turėtų naudoti „Roblox“.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Sustabdyti „Roblox“ atnaujinimus</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Neleiskite „Roblox“ atsinaujinti. „Roblox“ liks dabartinėje versijoje.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Įdiegti ankstesnę versiją</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Atsisiųskite ir įdiekite „Roblox“ versiją, kuri buvo naudojama prieš dabartinę.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Individualizuota „Roblox“ piktograma</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Pasirinkite savo .ico failą, kuriuo norite pakeisti „Roblox“ žaidėjo piktogramą.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Nepavyko gauti ankstesnės „Roblox“ versijos iš versijų istorijos. Vietoj to paleidžiama naujausia versija.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Ankstesnė „Roblox“ versija ({0}) yra senesnė nei 7 dienos ir jos naudoti negalima.\nVietoj to diegiama naujausia versija.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Pasirinkite pasirinktinį žymeklį</value>
@@ -1806,11 +1800,8 @@ Jei nustatymas neveikia, pašalinkite pasirinktinius žymeklius.</value>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Pašalinti viską</value>
   </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Nepavyko atidaryti savybių:</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Importuoti rinkinį</value>
+    <value>Importavimo rinkinys</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Eksporto rinkinys</value>
@@ -1835,5 +1826,49 @@ Jei nustatymas neveikia, pašalinkite pasirinktinius žymeklius.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Pašalinti</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Šiuo metu veikia iš anksto nustatytas žymeklis. Prieš pridedant pasirinktinį žymeklį, pirmiausia nustatykite pelės žymeklį į numatytąjį.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Jūsų kompiuteryje įdiegti pasirinktiniai žymeklio failai. Šis nustatymas gali su jais nesuderinamas.
+Jei nustatymas neveikia, pašalinkite pasirinktinius žymeklius.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Įjungtas pelės žymeklio nustatymas. Norėdami naudoti pasirinktinius pelės žymeklius, nustatykite „Peles žymeklį“ į „Numatytąjį“.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Nepavyko pridėti {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nepavyko pašalinti kai kurių failų:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Nėra eksportuotinų pasirinktinių žymeklių.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Kursoriaus nustatymas eksportuotas į:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Nepavyko importuoti žymeklio rinkinio: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Nepavyko eksportuoti žymeklio nustatymų: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Ar tikrai norite pašalinti visus pasirinktinius žymeklius? Šio veiksmo atšaukti nebus galima.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nerasta jokio pasirinktinio perjungimo fiksavimo žymeklio, kurį būtų galima pašalinti.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nerasta jokio pasirinktinio rodyklės žymeklio, kurį būtų galima pašalinti.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nerasta jokio pasirinktinio rodyklės formos žymeklio, kurį būtų galima pašalinti.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nerasta jokio pašalintino pasirinktinio „IBeam“ žymeklio.</value>
   </data>
 </root>

@@ -7,7 +7,8 @@ namespace Bloxstrap.Extensions
         public static IReadOnlyCollection<BootstrapperIcon> Selections => new BootstrapperIcon[]
         {
             BootstrapperIcon.IconBubblestrap,
-            BootstrapperIcon.Icon2026,
+            BootstrapperIcon.Icon2025,
+            BootstrapperIcon.Icon2025NoBg,
             BootstrapperIcon.Icon2022,
             BootstrapperIcon.Icon2019,
             BootstrapperIcon.Icon2017,
@@ -63,7 +64,8 @@ namespace Bloxstrap.Extensions
                 BootstrapperIcon.Icon2017 => Properties.Resources.Icon2017,
                 BootstrapperIcon.Icon2019 => Properties.Resources.Icon2019,
                 BootstrapperIcon.Icon2022 => Properties.Resources.Icon2022,
-                BootstrapperIcon.Icon2026 => Properties.Resources.Icon2026,
+                BootstrapperIcon.Icon2025 => Properties.Resources.Icon2025,
+                BootstrapperIcon.Icon2025NoBg => Properties.Resources.Icon2025NoBg,
                 BootstrapperIcon.IconBloxstrapClassic => Properties.Resources.IconBloxstrapClassic,
                 _ => Properties.Resources.IconBubblestrap
             };

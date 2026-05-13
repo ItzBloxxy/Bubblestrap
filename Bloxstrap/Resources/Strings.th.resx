@@ -281,30 +281,6 @@
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>เกมเป็นผู้เลือก</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Phase 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Phase 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Phase 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>กลับ</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>การใช้สิ่งนี้ในทางที่ผิดอาจทำให้มีสิ่งที่ไม่คาดคิดเกิดขึ้น</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Flag ที่คุณกำลังจะพยายามเพิ่มเข้านั้นมันมีค่าที่ตั้งไว้อยู่แล้ว คุณต้องการที่จะเขียนทับค่าเดิมที่ตั้งเอาไว้ไหม?
@@ -716,9 +688,6 @@
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>จำเป็นต้องเปิดเกมใหม่เพื่อทำให้การเปลี่ยนแปลงมีผล</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + UI ใหม่)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>การเรนเดอร์และกราฟฟิก</value>
   </data>
@@ -733,9 +702,6 @@
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Anti-aliasing quality (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>หยุดมันจากการแสดงผลเมื่อคุณขยับเมาส์ของคุณไปที่บนสุดของหน้าจอ</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap ไม่สามารถดาวน์โหลด Roblox ได้</value>
@@ -1395,12 +1361,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>ดีบัก</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>เมนูโรบ็อกซ์</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Debloat เมนู Roblox ด้วย FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>การปรับใช้</value>
   </data>
@@ -1723,61 +1683,11 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>ใช้บทความสั้น VR ที่ทำให้ขอบหน้าจอมืดลงเพื่อลดอาการเมารถ</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>ปิดการใช้งานถาดระบบ Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>ป้องกันไม่ให้ Roblox ย่อเล็กสุดในถาดระบบ</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>เรียกใช้ Roblox เมื่อเริ่มต้น</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>เริ่ม Roblox โดยอัตโนมัติเมื่อคุณเข้าสู่ระบบพีซีของคุณ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>ปัจจุบันเคอร์เซอร์ที่ตั้งไว้ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นก่อนที่จะเพิ่มเคอร์เซอร์ที่กำหนดเอง</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>คุณได้ติดตั้งไฟล์เคอร์เซอร์แบบกำหนดเองแล้ว ค่าที่ตั้งล่วงหน้าอาจขัดแย้งกับพวกเขา
-ลบเคอร์เซอร์ที่คุณกำหนดเองออกหากค่าที่ตั้งล่วงหน้าไม่ทำงาน</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>การตั้งค่าเคอร์เซอร์ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นเพื่อใช้เคอร์เซอร์แบบกำหนดเอง</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>ไม่สามารถเพิ่ม {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>ไม่สามารถลบไฟล์บางไฟล์ได้:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>ไม่มีเคอร์เซอร์แบบกำหนดเองที่จะส่งออก</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>ชุดเคอร์เซอร์ส่งออกไปที่:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>ไม่สามารถนำเข้าชุดเคอร์เซอร์:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>ส่งออกชุดเคอร์เซอร์ไม่สำเร็จ:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>คุณแน่ใจหรือไม่ว่าต้องการลบเคอร์เซอร์ที่กำหนดเองทั้งหมด สิ่งนี้ไม่สามารถยกเลิกได้</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>ไม่พบเคอร์เซอร์ล็อคกะแบบกำหนดเองที่จะลบ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>ไม่พบเคอร์เซอร์ลูกศรแบบกำหนดเองที่จะลบ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>ไม่พบเคอร์เซอร์ลูกศรไกลแบบกำหนดเองที่จะลบ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>ไม่พบเคอร์เซอร์ IBeam แบบกำหนดเองที่จะลบ</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>ไม่สามารถเพิ่มเสียงการตายได้:</value>
@@ -1787,6 +1697,90 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>เลือกเสียงความตายแบบกำหนดเอง</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>ไม่สามารถเปิดคุณสมบัติได้:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>วัน</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>วัน</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>ชั่วโมง</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>ชั่วโมง</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>และ</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>การมองเห็นป้าย</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>สลับการมองเห็นป้ายผู้ใช้</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>ชื่อผู้เล่น</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>สลับการมองเห็นชื่อผู้เล่น</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>นาที</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>นาที</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>ย่อเล็กสุดไปที่ถาด</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>ให้ Roblox ทำงานอยู่ในถาดระบบเมื่อย่อเล็กสุด</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Modal ถาดระบบ</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>แสดงเมนูการทำงานเมื่อคลิกที่ไอคอนถาดระบบ</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>ธีมแอป Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>เลือกธีมที่ Roblox ควรใช้</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>หยุดการอัปเดต Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>ป้องกันไม่ให้ Roblox อัปเดต Roblox จะยังคงอยู่ในเวอร์ชันที่ติดตั้งอยู่ในปัจจุบัน</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>ติดตั้งเวอร์ชันก่อนหน้า</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>ดาวน์โหลดและติดตั้งเวอร์ชัน Roblox ที่เคยเผยแพร่ก่อนเวอร์ชันปัจจุบัน</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>ไอคอน Roblox แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>เลือกไฟล์ .ico ที่กำหนดเองเพื่อแทนที่ไอคอนเครื่องเล่น Roblox</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>หยุด voxelizer ชั่วคราว</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>ปิดการใช้งานเงาเพื่อปรับปรุงประสิทธิภาพ แต่อาจทำให้เกิดปัญหาแสงในบางเกม</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>ไม่สามารถดึง Roblox เวอร์ชันก่อนหน้าจากประวัติเวอร์ชันได้ เปิดตัวด้วยเวอร์ชันล่าสุดแทน</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Roblox เวอร์ชันก่อนหน้า ({0}) มีอายุมากกว่า 7 วันและไม่สามารถใช้งานได้\nกำลังติดตั้งเวอร์ชันล่าสุดแทน</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>เลือกเคอร์เซอร์แบบกำหนดเอง</value>
@@ -1802,9 +1796,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>ลบทั้งหมด</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>ไม่สามารถเปิดคุณสมบัติได้:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>ชุดนำเข้า</value>
@@ -1835,5 +1826,49 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>ลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>ปัจจุบันเคอร์เซอร์ที่ตั้งไว้ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นก่อนที่จะเพิ่มเคอร์เซอร์ที่กำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>คุณได้ติดตั้งไฟล์เคอร์เซอร์แบบกำหนดเองแล้ว ค่าที่ตั้งล่วงหน้าอาจขัดแย้งกับพวกเขา
+ลบเคอร์เซอร์ที่คุณกำหนดเองออกหากค่าที่ตั้งล่วงหน้าไม่ทำงาน</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>การตั้งค่าเคอร์เซอร์ล่วงหน้าทำงานอยู่ ตั้งค่าเคอร์เซอร์ของเมาส์เป็นค่าเริ่มต้นเพื่อใช้เคอร์เซอร์แบบกำหนดเอง</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>ไม่สามารถเพิ่ม {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>ไม่สามารถลบไฟล์บางไฟล์ได้:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>ไม่มีเคอร์เซอร์แบบกำหนดเองที่จะส่งออก</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>ชุดเคอร์เซอร์ส่งออกไปที่:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>ไม่สามารถนำเข้าชุดเคอร์เซอร์: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>ไม่สามารถส่งออกชุดเคอร์เซอร์: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่ว่าต้องการลบเคอร์เซอร์ที่กำหนดเองทั้งหมด สิ่งนี้ไม่สามารถยกเลิกได้</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ล็อคกะแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ลูกศรแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ลูกศรไกลแบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>ไม่พบเคอร์เซอร์ IBeam แบบกำหนดเองที่จะลบ</value>
   </data>
 </root>

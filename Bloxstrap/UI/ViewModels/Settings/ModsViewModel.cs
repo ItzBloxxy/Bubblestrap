@@ -1,7 +1,9 @@
 ﻿using Bloxstrap.AppData;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Win32;
+using System.Collections.ObjectModel;
 using System.IO.Compression;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
@@ -15,7 +17,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
 {
     public class ModsViewModel : NotifyPropertyChangedViewModel
     {
-
         private const int CursorSize = 64;
         private const int ShiftlockCursorSize = 32;
 
@@ -32,34 +33,51 @@ namespace Bloxstrap.UI.ViewModels.Settings
         private static readonly string[] ShiftlockCursorFiles = ["MouseLockedCursor.png"];
         private static readonly string[] DeathSoundFiles = ["oof.ogg"];
 
+        private static readonly Dictionary<IntPtr, (IntPtr Small, IntPtr Big)> _activeIconHandles = new();
+
         private readonly Dictionary<string, BitmapImage?> _presetPreviewCache = new();
 
         private readonly Dictionary<string, byte[]> _fontHeaders = new()
         {
-            { "ttf", new byte[4] { 0x00, 0x01, 0x00, 0x00 } },
-            { "otf", new byte[4] { 0x4F, 0x54, 0x54, 0x4F } },
-            { "ttc", new byte[4] { 0x74, 0x74, 0x63, 0x66 } }
-        };
-
-        private static readonly Dictionary<Enums.CursorType, Dictionary<string, string>> PresetResourceNames = new()
-        {
-            {
-                Enums.CursorType.From2006, new()
-                {
-                    { "ArrowCursor.png",    "Cursor.From2006.ArrowCursor.png"    },
-                    { "ArrowFarCursor.png", "Cursor.From2006.ArrowFarCursor.png" }
-                }
-            },
-            {
-                Enums.CursorType.From2013, new()
-                {
-                    { "ArrowCursor.png",    "Cursor.From2013.ArrowCursor.png"    },
-                    { "ArrowFarCursor.png", "Cursor.From2013.ArrowFarCursor.png" }
-                }
-            }
+            { "ttf", new byte[] { 0x00, 0x01, 0x00, 0x00 } },
+            { "otf", new byte[] { 0x4F, 0x54, 0x54, 0x4F } },
+            { "ttc", new byte[] { 0x74, 0x74, 0x63, 0x66 } }
         };
 
         private string? _selectedCursorSlot;
+
+        public ObservableCollection<RobloxIconEntry> RobloxIcons { get; set; } = new();
+
+        public RobloxIcon SelectedRobloxIcon
+        {
+            get => App.Settings.Prop.CustomRobloxIcon;
+            set
+            {
+                App.Settings.Prop.CustomRobloxIcon = value;
+                OnPropertyChanged(nameof(SelectedRobloxIcon));
+                OnPropertyChanged(nameof(CustomRobloxIconLocationVisible));
+            }
+        }
+
+        public bool CustomRobloxIconLocationVisible => SelectedRobloxIcon == RobloxIcon.Custom;
+
+        public string CustomRobloxIconLocation
+        {
+            get => App.Settings.Prop.CustomRobloxIconLocation;
+            set
+            {
+                App.Settings.Prop.CustomRobloxIconLocation = value;
+                OnPropertyChanged(nameof(CustomRobloxIconLocation));
+
+                var entry = RobloxIcons.FirstOrDefault(e => e.IconType == RobloxIcon.Custom);
+                if (entry is not null)
+                {
+                    entry.RefreshPreview();
+                    OnPropertyChanged(nameof(RobloxIcons));
+                }
+            }
+        }
+
         public ModPresetTask OldAvatarBackgroundTask { get; } =
             new("OldAvatarBackground", @"ExtraContent\places\Mobile.rbxl", "OldAvatarBackground.rbxl");
 
@@ -95,6 +113,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
         });
 
         public FontModPresetTask TextFontTask { get; } = new();
+
         public ICommand OpenModsFolderCommand { get; } = new RelayCommand(() => Process.Start(new ProcessStartInfo(Paths.Modifications) { UseShellExecute = true }));
         public ICommand ManageCustomFontCommand { get; }
         public ICommand OpenCompatSettingsCommand { get; }
@@ -109,11 +128,12 @@ namespace Bloxstrap.UI.ViewModels.Settings
         public ICommand RemoveAllCursorsCommand { get; }
         public ICommand ImportCursorSetCommand { get; }
         public ICommand ExportCursorSetCommand { get; }
-
         public ICommand SelectShiftlockSlotCommand { get; }
         public ICommand SelectArrowSlotCommand { get; }
         public ICommand SelectArrowFarSlotCommand { get; }
         public ICommand SelectIBeamSlotCommand { get; }
+        public ICommand BrowseCustomRobloxIconCommand { get; }
+
         public ModsViewModel()
         {
             ManageCustomFontCommand = new RelayCommand(ManageCustomFont);
@@ -129,12 +149,17 @@ namespace Bloxstrap.UI.ViewModels.Settings
             RemoveAllCursorsCommand = new AsyncRelayCommand(RemoveAllCursors);
             ImportCursorSetCommand = new AsyncRelayCommand(ImportCursorSet);
             ExportCursorSetCommand = new AsyncRelayCommand(ExportCursorSet);
+            BrowseCustomRobloxIconCommand = new RelayCommand(BrowseCustomRobloxIcon);
 
             SelectShiftlockSlotCommand = new RelayCommand(() => SelectedCursorSlot = SelectedCursorSlot == "Shiftlock" ? null : "Shiftlock");
             SelectArrowSlotCommand = new RelayCommand(() => SelectedCursorSlot = SelectedCursorSlot == "Arrow" ? null : "Arrow");
             SelectArrowFarSlotCommand = new RelayCommand(() => SelectedCursorSlot = SelectedCursorSlot == "ArrowFar" ? null : "ArrowFar");
             SelectIBeamSlotCommand = new RelayCommand(() => SelectedCursorSlot = SelectedCursorSlot == "IBeam" ? null : "IBeam");
+
+            foreach (RobloxIcon icon in RobloxIconEx.Selections)
+                RobloxIcons.Add(new RobloxIconEntry(icon));
         }
+
         public string? SelectedCursorSlot
         {
             get => _selectedCursorSlot;
@@ -155,6 +180,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
         public bool IsArrowFarSelected => SelectedCursorSlot == "ArrowFar";
         public bool IsIBeamSelected => SelectedCursorSlot == "IBeam";
         public bool CanRemoveSelected => SelectedCursorSlot is not null;
+
         public Enums.CursorType CursorTypeSelection
         {
             get => CursorTypeTask.NewState;
@@ -167,24 +193,20 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 _presetPreviewCache.Clear();
                 RefreshAllCursorPreviews();
 
-                if (IsCursorPresetActive)
-                {
-                    bool hasCustom = ArrowCursorFiles
-                        .Any(f => File.Exists(Path.Combine(CursorDir, f)));
-
-                    if (hasCustom)
-                        Frontend.ShowMessageBox(Strings.Menu_Mods_Misc_CustomCursor_PresetConflictWarning, MessageBoxImage.Warning);
-                }
+                if (IsCursorPresetActive && ArrowCursorFiles.Any(f => File.Exists(Path.Combine(CursorDir, f))))
+                    Frontend.ShowMessageBox(Strings.Menu_Mods_Misc_CustomCursor_PresetConflictWarning, MessageBoxImage.Warning);
             }
         }
 
         public bool IsCursorPresetActive => !CursorTypeTask.NewState.Equals(default(Enums.CursorType));
         public bool CursorBrowseIsEnabled => !IsCursorPresetActive;
+
         public Visibility ChooseCustomFontVisibility =>
             string.IsNullOrEmpty(TextFontTask.NewState) ? Visibility.Visible : Visibility.Collapsed;
 
         public Visibility DeleteCustomFontVisibility =>
             string.IsNullOrEmpty(TextFontTask.NewState) ? Visibility.Collapsed : Visibility.Visible;
+
         public Visibility ChooseCustomDeathSoundVisibility => GetFileVisibility(SoundsDir, DeathSoundFiles, checkExist: false);
         public Visibility DeleteCustomDeathSoundVisibility => GetFileVisibility(SoundsDir, DeathSoundFiles, checkExist: true);
         public Visibility ChooseCustomCursorVisibility => GetFileVisibility(CursorDir, ArrowCursorFiles, checkExist: false);
@@ -200,6 +222,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
         public object? IBeamCursorPreview => GetCustomCursorPreviewPath("IBeamCursor.png");
         public object? ShiftlockCursorPreview => GetShiftlockCursorPreviewPath();
+
         private static Visibility GetFileVisibility(string directory, string[] filenames, bool checkExist)
         {
             bool anyExist = filenames.Any(name => File.Exists(Path.Combine(directory, name)));
@@ -209,9 +232,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
         private string? GetCustomCursorPreviewPath(string filename)
         {
             string path = Path.Combine(CursorDir, filename);
-            if (!File.Exists(path))
-                return null;
-
+            if (!File.Exists(path)) return null;
             string relativeKey = @"content\textures\Cursors\KeyboardMouse\" + filename;
             return CursorTypeTask.IsFileOwnedByAnyPreset(relativeKey) ? null : path;
         }
@@ -224,13 +245,13 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
         private BitmapImage? GetPresetPreviewForSlot(string filename)
         {
-            if (!IsCursorPresetActive)
+            if (!IsCursorPresetActive || string.IsNullOrEmpty(filename))
                 return null;
 
-            if (!PresetResourceNames.TryGetValue(CursorTypeTask.NewState, out var resourceMap))
-                return null;
+            string relativeKey = @"content\textures\Cursors\KeyboardMouse\" + filename;
 
-            if (!resourceMap.TryGetValue(filename, out string? resourceName))
+            string? resourceName = CursorTypeTask.GetResourceNameForFile(relativeKey);
+            if (resourceName is null)
                 return null;
 
             if (_presetPreviewCache.TryGetValue(resourceName, out var cached))
@@ -240,6 +261,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
             {
                 var assembly = System.Reflection.Assembly.GetExecutingAssembly();
                 using var stream = assembly.GetManifestResourceStream($"Bloxstrap.Assets.{resourceName}");
+
                 if (stream is null)
                 {
                     _presetPreviewCache[resourceName] = null;
@@ -311,17 +333,10 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 return;
             }
 
-            var dialog = new OpenFileDialog
-            {
-                Filter = "PNG Image (*.png)|*.png",
-                Title = dialogTitle
-            };
-
-            if (dialog.ShowDialog() != true)
-                return;
+            var dialog = new OpenFileDialog { Filter = "PNG Image (*.png)|*.png", Title = dialogTitle };
+            if (dialog.ShowDialog() != true) return;
 
             string sourcePath = dialog.FileName;
-
             try
             {
                 await Task.Run(() =>
@@ -353,17 +368,9 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 foreach (var name in targetFiles)
                 {
                     string filePath = Path.Combine(targetDir, name);
-                    if (!File.Exists(filePath))
-                        continue;
-                    try
-                    {
-                        File.Delete(filePath);
-                        anyDeleted = true;
-                    }
-                    catch (Exception ex)
-                    {
-                        errors.Add($"{name}: {ex.Message}");
-                    }
+                    if (!File.Exists(filePath)) continue;
+                    try { File.Delete(filePath); anyDeleted = true; }
+                    catch (Exception ex) { errors.Add($"{name}: {ex.Message}"); }
                 }
             });
 
@@ -376,6 +383,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
             postAction?.Invoke();
         }
+
         private void ManageCustomFont()
         {
             if (!string.IsNullOrEmpty(TextFontTask.NewState))
@@ -384,26 +392,13 @@ namespace Bloxstrap.UI.ViewModels.Settings
             }
             else
             {
-                var dialog = new OpenFileDialog
-                {
-                    Filter = $"{Strings.Menu_FontFiles}|*.ttf;*.otf;*.ttc"
-                };
-
-                if (dialog.ShowDialog() != true)
-                    return;
+                var dialog = new OpenFileDialog { Filter = $"{Strings.Menu_FontFiles}|*.ttf;*.otf;*.ttc" };
+                if (dialog.ShowDialog() != true) return;
 
                 string extension = Path.GetExtension(dialog.FileName).TrimStart('.').ToLowerInvariant();
                 byte[] buffer = new byte[4];
-
-                try
-                {
-                    using var fs = File.OpenRead(dialog.FileName);
-                    fs.ReadExactly(buffer, 0, 4);
-                }
-                catch (Exception)
-                {
-                    Array.Clear(buffer, 0, 4);
-                }
+                try { using var fs = File.OpenRead(dialog.FileName); fs.ReadExactly(buffer, 0, 4); }
+                catch { Array.Clear(buffer, 0, 4); }
 
                 if (!_fontHeaders.TryGetValue(extension, out var expectedHeader) || !expectedHeader.SequenceEqual(buffer))
                 {
@@ -423,7 +418,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
             try
             {
                 string path = new RobloxPlayerData().ExecutablePath;
-
                 if (!string.IsNullOrEmpty(path) && File.Exists(path))
                     PInvoke.SHObjectProperties(HWND.Null, SHOP_TYPE.SHOP_FILEPATH, path, "Compatibility");
                 else
@@ -442,9 +436,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 Filter = "OGG Audio (*.ogg)|*.ogg",
                 Title = Strings.Menu_Mods_Misc_CustomDeathSound_Select
             };
-
-            if (dialog.ShowDialog() != true)
-                return;
+            if (dialog.ShowDialog() != true) return;
 
             try
             {
@@ -465,10 +457,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
         }
 
         public async Task RemoveCustomDeathSound() =>
-            await RemoveCustomFileAsync(
-                DeathSoundFiles, SoundsDir,
-                Strings.Menu_Mods_Misc_CustomDeathSound_NotFound,
-                silent: false,
+            await RemoveCustomFileAsync(DeathSoundFiles, SoundsDir,
+                Strings.Menu_Mods_Misc_CustomDeathSound_NotFound, silent: false,
                 () =>
                 {
                     OnPropertyChanged(nameof(ChooseCustomDeathSoundVisibility));
@@ -476,10 +466,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 });
 
         public async Task AddCustomCursor() =>
-            await AddCustomImageAsync(
-                ["ArrowCursor.png"], CursorDir,
-                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectCursor,
-                "cursor", CursorSize,
+            await AddCustomImageAsync(["ArrowCursor.png"], CursorDir,
+                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectCursor, "cursor", CursorSize,
                 () =>
                 {
                     OnPropertyChanged(nameof(ArrowCursorPreview));
@@ -488,10 +476,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 });
 
         public async Task AddCustomArrowFarCursor() =>
-            await AddCustomImageAsync(
-                ["ArrowFarCursor.png"], CursorDir,
-                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectArrowFar,
-                "arrow far cursor", CursorSize,
+            await AddCustomImageAsync(["ArrowFarCursor.png"], CursorDir,
+                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectArrowFar, "arrow far cursor", CursorSize,
                 () =>
                 {
                     OnPropertyChanged(nameof(ArrowFarCursorPreview));
@@ -500,10 +486,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 });
 
         public async Task AddCustomIBeamCursor() =>
-            await AddCustomImageAsync(
-                ["IBeamCursor.png"], CursorDir,
-                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectIBeam,
-                "IBeam cursor", CursorSize,
+            await AddCustomImageAsync(["IBeamCursor.png"], CursorDir,
+                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectIBeam, "IBeam cursor", CursorSize,
                 () =>
                 {
                     OnPropertyChanged(nameof(IBeamCursorPreview));
@@ -512,10 +496,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 });
 
         public async Task AddCustomShiftlockCursor() =>
-            await AddCustomImageAsync(
-                ShiftlockCursorFiles, TextureDir,
-                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectShiftlock,
-                "Shiftlock cursor", ShiftlockCursorSize,
+            await AddCustomImageAsync(ShiftlockCursorFiles, TextureDir,
+                Strings.Menu_Mods_Misc_CustomCursorFeatures_SelectShiftlock, "Shiftlock cursor", ShiftlockCursorSize,
                 () =>
                 {
                     OnPropertyChanged(nameof(ShiftlockCursorPreview));
@@ -524,10 +506,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 });
 
         public async Task RemoveCustomShiftlockCursor() =>
-            await RemoveCustomFileAsync(
-                ShiftlockCursorFiles, TextureDir,
-                Strings.Menu_Mods_Misc_CustomCursor_NotFound_Shiftlock,
-                silent: false,
+            await RemoveCustomFileAsync(ShiftlockCursorFiles, TextureDir,
+                Strings.Menu_Mods_Misc_CustomCursor_NotFound_Shiftlock, silent: false,
                 () =>
                 {
                     OnPropertyChanged(nameof(ShiftlockCursorPreview));
@@ -576,16 +556,13 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 Filter = "ZIP Archive (*.zip)|*.zip",
                 Title = Strings.Menu_Mods_Misc_CustomCursorFeatures_Import
             };
-
-            if (dialog.ShowDialog() != true)
-                return;
+            if (dialog.ShowDialog() != true) return;
 
             try
             {
                 await Task.Run(() =>
                 {
                     using var archive = ZipFile.OpenRead(dialog.FileName);
-
                     Directory.CreateDirectory(CursorDir);
                     Directory.CreateDirectory(TextureDir);
 
@@ -639,12 +616,9 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 Title = Strings.Menu_Mods_Misc_CustomCursorFeatures_Export,
                 FileName = "CursorSet.zip"
             };
-
-            if (dialog.ShowDialog() != true)
-                return;
+            if (dialog.ShowDialog() != true) return;
 
             string zipPath = dialog.FileName;
-
             try
             {
                 await Task.Run(() =>
@@ -665,15 +639,320 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 string.Format(Strings.Menu_Mods_Misc_CustomCursor_ExportSuccess, zipPath),
                 MessageBoxImage.Information);
         }
+
+        private void BrowseCustomRobloxIcon()
+        {
+            var dialog = new OpenFileDialog
+            {
+                Filter = $"{Strings.Menu_IconFiles}|*.ico",
+                Title = "Select a custom Roblox icon"
+            };
+            if (dialog.ShowDialog() != true) return;
+            CustomRobloxIconLocation = dialog.FileName;
+        }
+
+        public static string? ResolveRobloxIconPath()
+        {
+            var setting = App.Settings.Prop.CustomRobloxIcon;
+
+            if (setting == RobloxIcon.Default) return null;
+
+            if (setting == RobloxIcon.Custom)
+            {
+                string loc = App.Settings.Prop.CustomRobloxIconLocation;
+                return File.Exists(loc) ? loc : null;
+            }
+
+            BootstrapperIcon? mapped = MapRobloxIconToBootstrapper(setting);
+            if (mapped is null) return null;
+
+            try
+            {
+                string tempPath = Path.Combine(Path.GetTempPath(), $"BubblestrapRobloxIcon_{setting}.ico");
+                if (!File.Exists(tempPath))
+                {
+                    using var icon = mapped.Value.GetIcon();
+                    using var fs = File.OpenWrite(tempPath);
+                    icon.Save(fs);
+                }
+                return tempPath;
+            }
+            catch { return null; }
+        }
+
+        internal static BootstrapperIcon? MapRobloxIconToBootstrapper(RobloxIcon setting) => setting switch
+        {
+            RobloxIcon.Icon2008 => BootstrapperIcon.Icon2008,
+            RobloxIcon.Icon2011 => BootstrapperIcon.Icon2011,
+            RobloxIcon.IconEarly2015 => BootstrapperIcon.IconEarly2015,
+            RobloxIcon.IconLate2015 => BootstrapperIcon.IconLate2015,
+            RobloxIcon.Icon2017 => BootstrapperIcon.Icon2017,
+            RobloxIcon.Icon2019 => BootstrapperIcon.Icon2019,
+            RobloxIcon.Icon2022 => BootstrapperIcon.Icon2022,
+            RobloxIcon.Icon2025 => BootstrapperIcon.Icon2025,
+            RobloxIcon.Icon2025NoBg => BootstrapperIcon.Icon2025NoBg,
+            _ => null
+        };
+
+        public static void ApplyRobloxIcon()
+        {
+            string? iconPath = ResolveRobloxIconPath();
+
+            string robloxExe = string.Empty;
+            if (iconPath is null)
+            {
+                try { robloxExe = new RobloxPlayerData().ExecutablePath; }
+                catch { }
+            }
+
+            string[] candidates =
+            [
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop),                "Roblox Player.lnk"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonDesktopDirectory), "Roblox Player.lnk"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu),    "Programs", "Roblox", "Roblox Player.lnk"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonStartMenu), "Programs", "Roblox", "Roblox Player.lnk"),
+            ];
+
+            bool anyChanged = false;
+            foreach (string lnk in candidates)
+            {
+                if (!File.Exists(lnk)) continue;
+                try { SetShortcutIcon(lnk, iconPath ?? robloxExe); anyChanged = true; }
+                catch { }
+            }
+
+            if (anyChanged)
+                SHChangeNotify(NativeMethods.SHCNE_ASSOCCHANGED, NativeMethods.SHCNF_IDLIST, IntPtr.Zero, IntPtr.Zero);
+        }
+
+        public static void ApplyRobloxWindowIcon(IntPtr robloxHwnd)
+        {
+            if (App.Settings.Prop.CustomRobloxIcon == RobloxIcon.Default) return;
+
+            string? iconPath = ResolveRobloxIconPath();
+            if (iconPath is null || !File.Exists(iconPath)) return;
+
+            try
+            {
+                int smallSize = NativeMethods.GetSystemMetrics(NativeMethods.SM_CXSMICON);
+                int bigSize = NativeMethods.GetSystemMetrics(NativeMethods.SM_CXICON);
+
+                IntPtr hIconSmall = NativeMethods.LoadImage(
+                    IntPtr.Zero, iconPath, NativeMethods.IMAGE_ICON, smallSize, smallSize, NativeMethods.LR_LOADFROMFILE);
+
+                IntPtr hIconBig = NativeMethods.LoadImage(
+                    IntPtr.Zero, iconPath, NativeMethods.IMAGE_ICON, bigSize, bigSize, NativeMethods.LR_LOADFROMFILE);
+
+                if (hIconSmall == IntPtr.Zero && hIconBig == IntPtr.Zero) return;
+
+                _activeIconHandles.TryGetValue(robloxHwnd, out var oldHandles);
+
+                if (hIconSmall != IntPtr.Zero)
+                {
+                    NativeMethods.SendMessage(robloxHwnd, NativeMethods.WM_SETICON, (IntPtr)NativeMethods.ICON_SMALL, hIconSmall);
+                    NativeMethods.SetClassLongPtr(robloxHwnd, NativeMethods.GCLP_HICONSM, hIconSmall);
+                }
+
+                if (hIconBig != IntPtr.Zero)
+                {
+                    NativeMethods.SendMessage(robloxHwnd, NativeMethods.WM_SETICON, (IntPtr)NativeMethods.ICON_BIG, hIconBig);
+                    NativeMethods.SetClassLongPtr(robloxHwnd, NativeMethods.GCLP_HICON, hIconBig);
+                }
+
+                _activeIconHandles[robloxHwnd] = (hIconSmall, hIconBig);
+
+                if (oldHandles.Small != IntPtr.Zero) NativeMethods.DestroyIcon(oldHandles.Small);
+                if (oldHandles.Big != IntPtr.Zero) NativeMethods.DestroyIcon(oldHandles.Big);
+            }
+            catch { }
+        }
+
+        [DllImport("shell32.dll")]
+        private static extern void SHChangeNotify(int wEventId, int uFlags, IntPtr dwItem1, IntPtr dwItem2);
+
+        [ComImport, Guid("00021401-0000-0000-C000-000000000046")]
+        private class ShellLink { }
+
+        [ComImport, Guid("000214F9-0000-0000-C000-000000000046"),
+         InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        private interface IShellLinkW
+        {
+            void GetPath([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder pszFile, int cch, IntPtr pfd, uint fFlags);
+            void GetIDList(out IntPtr ppidl);
+            void SetIDList(IntPtr pidl);
+            void GetDescription([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder pszName, int cch);
+            void SetDescription([MarshalAs(UnmanagedType.LPWStr)] string pszName);
+            void GetWorkingDirectory([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder pszDir, int cch);
+            void SetWorkingDirectory([MarshalAs(UnmanagedType.LPWStr)] string pszDir);
+            void GetArguments([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder pszArgs, int cch);
+            void SetArguments([MarshalAs(UnmanagedType.LPWStr)] string pszArgs);
+            void GetHotkey(out ushort pwHotkey);
+            void SetHotkey(ushort wHotkey);
+            void GetShowCmd(out int piShowCmd);
+            void SetShowCmd(int iShowCmd);
+            void GetIconLocation([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder pszIconPath, int cch, out int piIcon);
+            void SetIconLocation([MarshalAs(UnmanagedType.LPWStr)] string pszIconPath, int iIcon);
+            void SetRelativePath([MarshalAs(UnmanagedType.LPWStr)] string pszPathRel, uint dwReserved);
+            void Resolve(IntPtr hwnd, uint fFlags);
+            void SetPath([MarshalAs(UnmanagedType.LPWStr)] string pszFile);
+        }
+
+        [ComImport, Guid("0000010B-0000-0000-C000-000000000046"),
+         InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        private interface IPersistFile
+        {
+            void GetClassID(out Guid pClassID);
+            [PreserveSig] int IsDirty();
+            void Load([MarshalAs(UnmanagedType.LPWStr)] string pszFileName, uint dwMode);
+            void Save([MarshalAs(UnmanagedType.LPWStr)] string pszFileName, [MarshalAs(UnmanagedType.Bool)] bool fRemember);
+            void SaveCompleted([MarshalAs(UnmanagedType.LPWStr)] string pszFileName);
+            void GetCurFile([Out, MarshalAs(UnmanagedType.LPWStr)] System.Text.StringBuilder ppszFileName);
+        }
+
+        private static void SetShortcutIcon(string lnkPath, string iconPath)
+        {
+            var link = (IShellLinkW)new ShellLink();
+            var file = (IPersistFile)link;
+            file.Load(lnkPath, 0);
+            link.SetIconLocation(iconPath, 0);
+            file.Save(lnkPath, true);
+        }
+    }
+
+    internal static class NativeMethods
+    {
+        public const int SM_CXSMICON = 49;
+        public const int SM_CXICON = 11;
+        public const int GCLP_HICON = -14;
+        public const int GCLP_HICONSM = -34;
+        public const uint IMAGE_ICON = 1;
+        public const uint LR_LOADFROMFILE = 0x10;
+        public const int WM_SETICON = 0x0080;
+        public const int ICON_SMALL = 0;
+        public const int ICON_BIG = 1;
+        public const int SHCNE_ASSOCCHANGED = 0x08000000;
+        public const int SHCNF_IDLIST = 0x0000;
+
+        [DllImport("user32.dll", EntryPoint = "SetClassLongPtrW")]
+        public static extern IntPtr SetClassLongPtr(IntPtr hWnd, int nIndex, IntPtr dwNewLong);
+
+        public delegate bool EnumWindowsProc(IntPtr hWnd, IntPtr lParam);
+
+        [DllImport("user32.dll")]
+        public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
+
+        [DllImport("user32.dll")]
+        public static extern uint GetWindowThreadProcessId(IntPtr hWnd, out uint lpdwProcessId);
+
+        [DllImport("user32.dll")]
+        public static extern bool IsWindowVisible(IntPtr hWnd);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        public static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+        public static extern IntPtr LoadImage(IntPtr hInst, string lpszName, uint uType, int cxDesired, int cyDesired, uint fuLoad);
+
+        [DllImport("user32.dll")]
+        public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+
+        [DllImport("user32.dll")]
+        public static extern int GetSystemMetrics(int nIndex);
+
+        [DllImport("user32.dll")]
+        public static extern bool DestroyIcon(IntPtr hIcon);
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct RECT { public int Left, Top, Right, Bottom; }
+    }
+
+    public class RobloxIconEntry : NotifyPropertyChangedViewModel
+    {
+        private ImageSource? _previewImage;
+        private bool _previewLoaded;
+
+        public RobloxIcon IconType { get; }
+
+        public RobloxIconEntry(RobloxIcon iconType)
+        {
+            IconType = iconType;
+        }
+
+        public ImageSource? PreviewImage
+        {
+            get
+            {
+                if (_previewLoaded) return _previewImage;
+                var result = LoadPreview();
+                if (result is not null) { _previewLoaded = true; _previewImage = result; }
+                return result;
+            }
+        }
+
+        public void RefreshPreview()
+        {
+            _previewLoaded = false;
+            _previewImage = null;
+            OnPropertyChanged(nameof(PreviewImage));
+        }
+
+        private ImageSource? LoadPreview()
+        {
+            try
+            {
+                if (IconType == RobloxIcon.Default) return LoadDefaultRobloxIcon();
+                if (IconType == RobloxIcon.Custom) return LoadCustomIcon(App.Settings.Prop.CustomRobloxIconLocation);
+
+                var mapped = ModsViewModel.MapRobloxIconToBootstrapper(IconType);
+                return mapped is null ? null : IconToBitmapSource16(mapped.Value.GetIcon());
+            }
+            catch { return null; }
+        }
+
+        private static ImageSource? LoadDefaultRobloxIcon()
+        {
+            try
+            {
+                string exePath = new RobloxPlayerData().ExecutablePath;
+                if (string.IsNullOrEmpty(exePath) || !File.Exists(exePath)) return null;
+                using var icon = System.Drawing.Icon.ExtractAssociatedIcon(exePath);
+                return icon is null ? null : IconToBitmapSource16(icon);
+            }
+            catch { return null; }
+        }
+
+        private static ImageSource? LoadCustomIcon(string path)
+        {
+            if (string.IsNullOrEmpty(path) || !File.Exists(path)) return null;
+            try
+            {
+                using var fs = File.OpenRead(path);
+                using var icon = new System.Drawing.Icon(fs, 16, 16);
+                return IconToBitmapSource16(icon);
+            }
+            catch { return null; }
+        }
+
+        private static BitmapSource IconToBitmapSource16(System.Drawing.Icon icon)
+        {
+            using var ms = new System.IO.MemoryStream();
+            icon.Save(ms);
+            ms.Position = 0;
+            using var icon16 = new System.Drawing.Icon(ms, 16, 16);
+            var bmp = System.Windows.Interop.Imaging.CreateBitmapSourceFromHIcon(
+                icon16.Handle,
+                Int32Rect.Empty,
+                BitmapSizeOptions.FromWidthAndHeight(16, 16));
+            bmp.Freeze();
+            return bmp;
+        }
     }
 
     public class FilePathToImageConverter : IValueConverter
     {
         public object? Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is BitmapImage bmp)
-                return bmp;
-
+            if (value is BitmapImage bmp) return bmp;
             if (value is not string path || string.IsNullOrEmpty(path) || !File.Exists(path))
                 return null;
 
@@ -688,10 +967,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 bitmap.Freeze();
                 return bitmap;
             }
-            catch
-            {
-                return null;
-            }
+            catch { return null; }
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

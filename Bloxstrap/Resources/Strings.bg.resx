@@ -281,30 +281,6 @@
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Избрано от играта</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Фаза 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Фаза 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Фаза 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Назад</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Злоупотребата с това може да доведе до нестабилност или неочаквани грешки.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Някои от флаговете, които се опитвате да импортирате, вече имат зададени стойности. Искате ли да презапишете техните текущи стойности с тези, дефинирани в импорта?
@@ -715,9 +687,6 @@
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>За да влязат в сила промените, е необходимо да рестартирате приложението.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Нов интерфейс)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Рендъринг и Графики</value>
   </data>
@@ -732,9 +701,6 @@
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Качество на Anti-aliasing (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Спира показването на заглавната лента, когато преместите мишката си в горната част на екрана.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap не може да изтегли Roblox</value>
@@ -1399,12 +1365,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Отстраняване на грешки</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Меню Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Опростяване на менюто на Roblox с FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Разполагане</value>
   </data>
@@ -1724,17 +1684,146 @@ Bubblestrap е инсталиран на „{1}“.</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Прилага VR винетка, която затъмнява краищата на екрана, за да намали гаденето при движение.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Деактивиране на системната лента на Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Деактивиране на системната лента на Roblox</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Стартирай Roblox при стартиране</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Автоматично стартира Roblox, когато влезете в компютъра си.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
+    <value>Не успях да добавя звук за смърт:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
+    <value>Не беше открит потребителски звук при смърт, който да бъде премахнат.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
+    <value>Изберете персонализиран звук при смърт</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Изтрий всичко</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>ден</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>дни</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>час</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>часа</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Видимост на значката</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Включване и изключване на видимостта на значките на потребителите.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Имена на играчите</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Включване/изключване на показването на имената на играчите.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>протоколи</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>минута</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Спиране на Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Деактивира предварително изчислените сенки, за да подобри производителността, но това може да доведе до проблеми с осветлението в някои игри.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Скриване в системната лента</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Roblox да продължава да работи в системната лента, когато е сгънат.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Модален прозорец в системната лента</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>При кликване върху иконата в системната лента да се показва функционално меню.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Тема за приложението Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Изберете коя тема да използва Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Спрете актуализациите на Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Попречете на Roblox да се актуализира. Roblox ще остане в настоящата инсталирана версия.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Инсталиране на предишна версия</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Изтеглете и инсталирайте версията на Roblox, която беше активна преди настоящата.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Персонализирана икона за Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Изберете собствен .ico файл, с който да замените иконата на играча в Roblox.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Не можа да се изтегли предишната версия на Roblox от историята на версиите. Вместо това се стартира най-новата версия.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Предишната версия на Roblox ({0}) е на повече от 7 дни и не може да се използва.\nВместо това се инсталира най-новата версия.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Изберете персонализиран курсор</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Изберете персонализиран курсор с стрелка</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Изберете персонализиран курсор във формата на I-греда</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Изберете персонализиран курсор за заключване на клавишите</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Изтрий всичко</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
+    <value>Набор за импортиране</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+    <value>Набор за износ</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Функции за персонализиран курсор</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Променете иконите на курсора.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
+    <value>Стрелка</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
+    <value>Курсор ArrowFar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+    <value>Курсор „IBeam“</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Разглеждане</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Премахни</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
     <value>В момента е активна предварително зададена настройка на курсора. Преди да добавите персонализиран курсор, първо възстановете стандартната настройка на курсора на мишката.</value>
@@ -1760,16 +1849,16 @@ Bubblestrap е инсталиран на „{1}“.</value>
 {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Не успях да импортирам набор от курсори:</value>
+    <value>Не успях да импортирам набор от курсори: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Не успях да експортирам набора от курсори:</value>
+    <value>Не успях да експортирам набора от курсори: {0}</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
     <value>Сигурен ли сте, че искате да премахнете всички персонализирани курсори? Това действие не може да бъде отменено.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Не беше открит курсор за заключване на превключване, който да бъде премахнат.</value>
+    <value>Не беше открит курсор за заключване на превключването, който да бъде премахнат.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
     <value>Не беше открит персонализиран курсор под формата на стрелка, който да бъде премахнат.</value>
@@ -1778,63 +1867,6 @@ Bubblestrap е инсталиран на „{1}“.</value>
     <value>Не беше открит курсор с персонализирана стрелка, който да бъде премахнат.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Не беше открит персонализиран курсор IBeam, който да бъде премахнат.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
-    <value>Не успях да добавя звук за смърт:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.NotFound" xml:space="preserve">
-    <value>Не беше открит потребителски звук при смърт, който да бъде премахнат.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
-    <value>Изберете персонализиран звук при смърт</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Изберете персонализиран курсор</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Изберете персонализиран курсор във формата на стрелка</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Изберете персонализиран курсор във формата на I-греда</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Изберете персонализиран курсор за заключване на клавишите за превключване</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Изтрий всичко</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Изтрий всичко</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Набор за импортиране</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
-    <value>Набор за износ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
-    <value>Набор за износ</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
-    <value>Функции за персонализиран курсор</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
-    <value>Променете иконите на курсора.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
-    <value>Стрелка</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
-    <value>Курсор ArrowFar</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
-    <value>Разглеждане</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
-    <value>Разглеждане</value>
+    <value>Не беше открит курсор IBeam, който да бъде премахнат.</value>
   </data>
 </root>

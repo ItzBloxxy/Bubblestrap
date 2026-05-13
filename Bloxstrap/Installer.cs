@@ -14,9 +14,19 @@ namespace Bloxstrap
         private static string DesktopShortcut => Path.Combine(Paths.Desktop, $"{App.ProjectName}.lnk");
 
         private static string StartMenuShortcut => Path.Combine(Paths.WindowsStartMenu, $"{App.ProjectName}.lnk");
+        public string FishstrapInstallDirectory
+        {
+            get
+            {
+                using var key = Registry.CurrentUser.OpenSubKey(
+                    @"Software\Microsoft\Windows\CurrentVersion\Uninstall\Fishstrap");
+                if (key?.GetValue("InstallLocation") is string path && Directory.Exists(path))
+                    return path;
 
-        public string BloxstrapInstallDirectory = Path.Combine(Paths.LocalAppData, "Bloxstrap"); // default directory for bloxstrap
-                                                                                                 // TODO dynamically fetch from uninstall/player registry keys
+                return Path.Combine(Paths.LocalAppData, "Fishstrap");
+            }
+        }
+
         public string InstallLocation = Path.Combine(Paths.LocalAppData, App.ProjectName);
 
         public bool ExistingDataPresent => File.Exists(Path.Combine(InstallLocation, "Settings.json"));
@@ -25,8 +35,8 @@ namespace Bloxstrap
 
         public bool CreateStartMenuShortcuts = true;
 
-        public bool ImportSettings = Directory.Exists(Path.Combine(Paths.LocalAppData, "Bloxstrap")); // if bloxstrap isnt detected this will be set to false
-                                                                                                      // another scenerio is user simply toggling it off
+        public bool ImportSettings = Directory.Exists(Path.Combine(Paths.LocalAppData, "Fishstrap")); // if fishstrap isnt detected then this will be set to false
+                                                                                                      // another scenario is user simply toggling it off
 
         public bool IsImplicitInstall = false;
 
@@ -98,18 +108,18 @@ namespace Bloxstrap
             WindowsRegistry.RegisterPlayer();
 
             if (CreateDesktopShortcuts)
-                Shortcut.Create(Paths.Application, "", DesktopShortcut);
+                Shortcut.Create(Paths.Application, "", DesktopShortcut, overwrite: true);
 
             if (CreateStartMenuShortcuts)
-                Shortcut.Create(Paths.Application, "", StartMenuShortcut);
+                Shortcut.Create(Paths.Application, "", StartMenuShortcut, overwrite: true);
 
             if (ImportSettings)
             {
                 // we dont have to worry about directories messing up
-                // if something doenst exist Bubblestrap will recreate the file/directory
+                // if something doesnt exist Bubblestrap will recreate the file/directory
                 try
                 {
-                    ImportSettingsFromBloxstrap();
+                    ImportSettingsFromFishstrap();
                 }
                 catch (Exception ex)
                 {
@@ -162,7 +172,7 @@ namespace Bloxstrap
                 return false;
 
             // prevent issues with settings importing
-            if (InstallLocation.Contains("Local\\Bloxstrap"))
+            if (InstallLocation.Contains("Local\\Fishstrap"))
                 return false;
 
             return true;
@@ -423,39 +433,39 @@ namespace Bloxstrap
                     App.Logger.WriteLine(LOG_IDENT, "Failed to update! (Could not obtain singleton mutex)");
                     return;
                 }
-            }
 
-            for (int i = 1; i <= 10; i++)
-            {
-                try
+                for (int i = 1; i <= 10; i++)
                 {
-                    File.Copy(Paths.Process, Paths.Application, true);
-                    break;
+                    try
+                    {
+                        File.Copy(Paths.Process, Paths.Application, true);
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        if (i == 1)
+                        {
+                            App.Logger.WriteLine(LOG_IDENT, "Waiting for write permissions to update version");
+                        }
+                        else if (i == 10)
+                        {
+                            App.Logger.WriteLine(LOG_IDENT, "Failed to update! (Could not get write permissions after 10 tries/5 seconds)");
+                            App.Logger.WriteException(LOG_IDENT, ex);
+                            return;
+                        }
+
+                        Thread.Sleep(500);
+                    }
                 }
-                catch (Exception ex)
+
+                using (var uninstallKey = Registry.CurrentUser.CreateSubKey(App.UninstallKey))
                 {
-                    if (i == 1)
-                    {
-                        App.Logger.WriteLine(LOG_IDENT, "Waiting for write permissions to update version");
-                    }
-                    else if (i == 10)
-                    {
-                        App.Logger.WriteLine(LOG_IDENT, "Failed to update! (Could not get write permissions after 10 tries/5 seconds)");
-                        App.Logger.WriteException(LOG_IDENT, ex);
-                        return;
-                    }
-
-                    Thread.Sleep(500);
+                    uninstallKey.SetValueSafe("DisplayVersion", App.Version);
+                    uninstallKey.SetValueSafe("Publisher", App.ProjectOwner);
+                    uninstallKey.SetValueSafe("HelpLink", App.ProjectHelpLink);
+                    uninstallKey.SetValueSafe("URLInfoAbout", App.ProjectSupportLink);
+                    uninstallKey.SetValueSafe("URLUpdateInfo", App.ProjectDownloadLink);
                 }
-            }
-
-            using (var uninstallKey = Registry.CurrentUser.CreateSubKey(App.UninstallKey))
-            {
-                uninstallKey.SetValueSafe("DisplayVersion", App.Version);
-                uninstallKey.SetValueSafe("Publisher", App.ProjectOwner);
-                uninstallKey.SetValueSafe("HelpLink", App.ProjectHelpLink);
-                uninstallKey.SetValueSafe("URLInfoAbout", App.ProjectSupportLink);
-                uninstallKey.SetValueSafe("URLUpdateInfo", App.ProjectDownloadLink);
             }
 
             // Save settings and state
@@ -484,19 +494,19 @@ namespace Bloxstrap
             }
         }
 
-        public void ImportSettingsFromBloxstrap()
+        public void ImportSettingsFromFishstrap()
         {
             const string LOG_IDENT = "Installer::ImportSettings";
 
-            if (!Directory.Exists(BloxstrapInstallDirectory))
+            if (!Directory.Exists(FishstrapInstallDirectory))
             {
                 Frontend.ShowMessageBox(Strings.Installer_InstallationNotFound, MessageBoxImage.Exclamation);
                 return;
-            } // bloxstrap default directory is not present
+            } // Fishstrap default directory is not present
 
             foreach (string FileName in FilesForImporting)
             {
-                string Source = Path.Combine(BloxstrapInstallDirectory, FileName);
+                string Source = Path.Combine(FishstrapInstallDirectory, FileName);
                 if (!Directory.Exists(Source) && !File.Exists(Source))
                     continue; // customthemes
 
@@ -507,7 +517,7 @@ namespace Bloxstrap
 
                 if (IsDirectory)
                 {
-                    // delete existing file from Bubblestrap folder
+                    // delete existing file from the folder
                     string ExistingFile = Path.Combine(InstallLocation, FileName);
                     if (Directory.Exists(ExistingFile))
                     {
@@ -516,19 +526,19 @@ namespace Bloxstrap
                     }
 
                     // https://stackoverflow.com/questions/58744/copy-the-entire-contents-of-a-directory-in-c-sharp
-                    // we could use Directory.Move but that deletes the directory from bloxstrap folder
+                    // we could use Directory.Move but that deletes the directory from fishstrap folder
                     // instead we will use this
 
                     // create the directory
                     Directory.CreateDirectory(ExistingFile);
 
-                    // Now Create all of the directories
+                    // now Create all of the directories
                     foreach (string dirPath in Directory.GetDirectories(Source, "*", SearchOption.AllDirectories))
                     {
                         Directory.CreateDirectory(dirPath.Replace(Source, ExistingFile));
                     }
 
-                    // Copy all the files & Replaces any files with the same name
+                    // copy all the files & Replaces any files with the same name
                     foreach (string newPath in Directory.GetFiles(Source, "*.*", SearchOption.AllDirectories))
                     {
                         File.Copy(newPath, newPath.Replace(Source, ExistingFile), true);
@@ -539,11 +549,11 @@ namespace Bloxstrap
                     string FileLocation = Path.Combine(InstallLocation, FileName);
                     // we dont have to delete the file here, we can simply override it
                     File.Copy(Source, FileLocation, true);
-                    App.Logger.WriteLine(LOG_IDENT, $"Overridding {FileName} in InstallLocation");
+                    App.Logger.WriteLine(LOG_IDENT, $"Overriding {FileName} in InstallLocation");
                 }
             }
 
-            App.Logger.WriteLine(LOG_IDENT, $"Importing succeded");
+            App.Logger.WriteLine(LOG_IDENT, $"Importing succeeded");
 
             // these happen later on in installation process
             // App.Settings.Load(false);

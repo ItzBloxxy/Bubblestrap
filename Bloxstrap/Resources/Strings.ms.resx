@@ -281,30 +281,6 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Ditetapkan oleh permainan</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Masa hadapan (Fasa 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Fasa 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Fasa 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Kembali</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Menyalahgunakan ini boleh membawa kepada ketidakstabilan dan benda tidak diingini berlaku.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Sesetengah "flags" yang anda import sudah mempunyai nilai. Sudikah anda menggantikan nilai sedia ada dengan nilai di dalam import?
@@ -714,9 +686,6 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Pelancaran semula diperlukan untuk memastikan perubahan mengambil tempat.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Antaramuka Baru)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>"Rendering" dan Grafik</value>
   </data>
@@ -731,9 +700,6 @@ Memilih 'Tidak' akan mengabaikan amaran ini dan pemasangan akan diteruskan.</val
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Kualiti anti-aliasing (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Menghalang ia daripada muncul ketika anda menggerakkan tetikus ke bahagian atas skrin.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap tidak dapat memuat turun Roblox</value>
@@ -1392,12 +1358,6 @@ Masa aktif: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Nyahpepijat</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Menu Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Debloat menu Roblox dengan FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Kerahan</value>
   </data>
@@ -1720,61 +1680,11 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Menggunakan vignet VR yang menggelapkan tepi skrin untuk mengurangkan mabuk bergerak.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Lumpuhkan Dulang Sistem Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Menghalang Roblox daripada kekal diminimumkan dalam dulang sistem.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Jalankan Roblox pada permulaan</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Memulakan Roblox secara automatik apabila anda log masuk ke PC anda.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Pratetap kursor sedang aktif. Tetapkan Kursor Tetikus kepada Lalai dahulu sebelum menambah kursor tersuai.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Anda telah memasang fail kursor tersuai. Pratetap mungkin bercanggah dengannya.
-Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Pratetap kursor aktif. Tetapkan Kursor Tetikus kepada Lalai untuk menggunakan kursor tersuai.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Gagal menambah {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Gagal mengalih keluar beberapa fail:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Tiada kursor tersuai untuk dieksport.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Set kursor dieksport ke:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Gagal mengimport set kursor:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Gagal mengeksport set kursor:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Adakah anda pasti mahu mengalih keluar semua kursor tersuai? Ini tidak boleh dibuat asal.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Tiada kursor kunci syif tersuai ditemui untuk dialih keluar.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Tiada kursor anak panah tersuai ditemui untuk dialih keluar.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Tiada kursor jauh anak panah tersuai ditemui untuk dialih keluar.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Tiada kursor IBeam tersuai ditemui untuk dialih keluar.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Gagal menambah bunyi kematian:</value>
@@ -1784,6 +1694,90 @@ Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Pilih Bunyi Kematian Tersuai</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Tidak dapat membuka sifat:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>hari</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>hari</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>jam</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>jam</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>dan</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Keterlihatan Lencana</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Togol keterlihatan lencana pengguna.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Nama Pemain</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Togol keterlihatan nama pemain.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minit</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minit</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Jeda voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Melumpuhkan bayang yang dibakar untuk meningkatkan prestasi, tetapi boleh menyebabkan masalah pencahayaan dalam sesetengah permainan.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Minimumkan kepada Dulang</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Pastikan Roblox berjalan dalam dulang sistem apabila diminimumkan.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Modal Dulang Sistem</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Tunjukkan menu berfungsi apabila mengklik ikon dulang sistem.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Tema Apl Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Pilih tema yang patut digunakan oleh Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Hentikan kemas kini Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Elakkan Roblox daripada dikemas kini. Roblox akan kekal pada versi yang sedang dipasang.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Pasang versi sebelumnya</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Muat turun dan pasang versi Roblox yang telah disiarkan sebelum versi semasa.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Ikon Roblox Tersuai</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Pilih fail .ico tersuai untuk menggantikan ikon pemain Roblox.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Tidak dapat mengambil versi Roblox sebelumnya daripada sejarah versi. Sebaliknya, pelancaran dengan versi terkini.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Versi Roblox sebelumnya ({0}) berusia lebih daripada 7 hari dan tidak boleh digunakan.\nMemasang versi terkini sebaliknya.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Pilih Kursor Tersuai</value>
@@ -1799,9 +1793,6 @@ Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Keluarkan Semua</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Tidak dapat membuka sifat:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Set Import</value>
@@ -1832,5 +1823,49 @@ Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Alih keluar</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Pratetap kursor sedang aktif. Tetapkan Kursor Tetikus kepada Lalai dahulu sebelum menambah kursor tersuai.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Anda telah memasang fail kursor tersuai. Pratetap mungkin bercanggah dengannya.
+Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Pratetap kursor aktif. Tetapkan Kursor Tetikus kepada Lalai untuk menggunakan kursor tersuai.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Gagal menambah {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Gagal mengalih keluar beberapa fail:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Tiada kursor tersuai untuk dieksport.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Set kursor dieksport ke:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Gagal mengimport set kursor: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Gagal mengeksport set kursor: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Adakah anda pasti mahu mengalih keluar semua kursor tersuai? Ini tidak boleh dibuat asal.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Tiada kursor kunci anjakan tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Tiada kursor anak panah tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Tiada kursor jauh anak panah tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Tiada kursor IBeam tersuai ditemui untuk dialih keluar.</value>
   </data>
 </root>

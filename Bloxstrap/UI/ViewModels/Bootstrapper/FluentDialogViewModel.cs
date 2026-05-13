@@ -6,10 +6,18 @@ namespace Bloxstrap.UI.ViewModels.Bootstrapper
 {
     public class FluentDialogViewModel : BootstrapperDialogViewModel
     {
-        //TODO: FIX THE VERSION TEXT!
         public BackgroundType WindowBackdropType { get; set; } = BackgroundType.Mica;
         public SolidColorBrush BackgroundColourBrush { get; set; } = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
-        public string VersionText { get; set; }
+        public string VersionText
+        {
+            get => _versionText;
+            set
+            {
+                _versionText = value;
+                OnPropertyChanged(nameof(VersionText));
+            }
+        }
+        private string _versionText = string.Empty;
         public string ChannelText
         {
             get => _channelText;

@@ -281,30 +281,6 @@ Nếu chưa, xin hay báo cáo lỗi này qua [GitHub issue]({1}) với bản co
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (Phiên bản 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (Phiên bản 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (Phiên bản 4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Được chọn bởi trò chơi</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Giai Đoạn 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Giai Đoạn 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Giai đoạn 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Bạn có muốn nâng cấp phiên bản đã cài đặt không?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Quay lại</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Sử dụng sai cách có thể dẫn đến mất ổn định hay những điều không mong muốn.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Một số Flag bạn đang nhập vào đã có những giá trị được định sẵn. Bạn có muốn ghi đè giá trị hiện tại của chúng với những giá trị sau đây được đề ra trong bản nhập vào?
@@ -717,9 +689,6 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Cần khởi động lại để áp dụng các thay đổi.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (Phiên bản 4 + Giao diện người dùng mới)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Kết xuất và chất lượng</value>
   </data>
@@ -734,9 +703,6 @@ Chọn 'Không' sẽ bỏ qua cảnh báo này và tiếp tục cài đặt.</va
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Chất lượng khử răng cưa (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Ngăn không cho thanh tiêu đề hiển thị mỗi khi bạn di chuyển chuột lên đầu màn hình.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap không thể tải xuống Roblox</value>
@@ -1400,12 +1366,6 @@ Thời gian hoạt động: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Gỡ lỗi</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Menu Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Gỡ lỗi menu Roblox với FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Triển khai</value>
   </data>
@@ -1728,61 +1688,11 @@ Bạn có muốn chuyển kênh ưa thích của mình sang {0} không?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Áp dụng họa tiết VR làm tối các cạnh màn hình để giảm chứng say tàu xe.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Vô hiệu hóa khay hệ thống Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Ngăn Roblox luôn ở mức thu nhỏ trong khay hệ thống.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Chạy Roblox khi khởi động</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Tự động khởi động Roblox khi bạn đăng nhập vào PC.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Một giá trị đặt trước con trỏ hiện đang hoạt động. Đặt Con trỏ chuột thành Mặc định trước khi thêm con trỏ tùy chỉnh.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Bạn đã cài đặt tập tin con trỏ tùy chỉnh. Cài đặt trước có thể xung đột với chúng.
-Xóa con trỏ tùy chỉnh của bạn nếu cài đặt trước không hoạt động.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Một cài đặt trước con trỏ đang hoạt động. Đặt Con trỏ chuột thành Mặc định để sử dụng con trỏ tùy chỉnh.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Không thêm được {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Không xóa được một số tệp:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Không có con trỏ tùy chỉnh để xuất.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Bộ con trỏ được xuất sang:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Không thể nhập bộ con trỏ:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Không xuất được bộ con trỏ:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Bạn có chắc chắn muốn xóa tất cả con trỏ tùy chỉnh không? Điều này không thể hoàn tác được.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Không tìm thấy con trỏ khóa shift tùy chỉnh để xóa.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Không tìm thấy con trỏ mũi tên tùy chỉnh nào để xóa.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Không tìm thấy con trỏ xa mũi tên tùy chỉnh nào để xóa.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Không tìm thấy con trỏ IBeam tùy chỉnh nào để xóa.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Không thể thêm âm thanh chết chóc:</value>
@@ -1792,6 +1702,90 @@ Xóa con trỏ tùy chỉnh của bạn nếu cài đặt trước không hoạt
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Chọn âm thanh cái chết tùy chỉnh</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Không thể mở thuộc tính:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>ngày</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>ngày</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>giờ</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>giờ</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>Và</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Hiển thị huy hiệu</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Chuyển đổi chế độ hiển thị của huy hiệu người dùng.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Tên người chơi</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Chuyển đổi chế độ hiển thị tên người chơi.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>phút</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>phút</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Thu nhỏ vào khay</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Giữ Roblox chạy trong khay hệ thống khi được thu nhỏ.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Phương thức khay hệ thống</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Hiển thị menu chức năng khi nhấp vào biểu tượng khay hệ thống.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Chủ đề ứng dụng Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Chọn chủ đề Roblox nên sử dụng.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Dừng cập nhật Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Ngăn chặn Roblox được cập nhật. Roblox sẽ ở phiên bản hiện được cài đặt.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Cài đặt phiên bản trước</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Tải xuống và cài đặt phiên bản Roblox đã có trước phiên bản hiện tại.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Biểu tượng Roblox tùy chỉnh</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Chọn tệp .ico tùy chỉnh để thay thế biểu tượng trình phát Roblox.</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Tạm dừng voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Vô hiệu hóa bóng mờ để cải thiện hiệu suất nhưng có thể gây ra vấn đề về ánh sáng trong một số trò chơi.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Không thể tìm nạp phiên bản Roblox trước đó từ lịch sử phiên bản. Thay vào đó, hãy khởi chạy với phiên bản mới nhất.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Phiên bản Roblox trước ({0}) đã cũ hơn 7 ngày và không thể sử dụng được.\nThay vào đó, hãy cài đặt phiên bản mới nhất.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Chọn một con trỏ tùy chỉnh</value>
@@ -1807,9 +1801,6 @@ Xóa con trỏ tùy chỉnh của bạn nếu cài đặt trước không hoạt
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Xóa tất cả</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Không thể mở thuộc tính:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Bộ nhập khẩu</value>
@@ -1840,5 +1831,49 @@ Xóa con trỏ tùy chỉnh của bạn nếu cài đặt trước không hoạt
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Di dời</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Một giá trị đặt trước con trỏ hiện đang hoạt động. Đặt Con trỏ chuột thành Mặc định trước khi thêm con trỏ tùy chỉnh.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Bạn đã cài đặt tập tin con trỏ tùy chỉnh. Cài đặt trước có thể xung đột với chúng.
+Xóa con trỏ tùy chỉnh của bạn nếu cài đặt trước không hoạt động.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Một cài đặt trước con trỏ đang hoạt động. Đặt Con trỏ chuột thành Mặc định để sử dụng con trỏ tùy chỉnh.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Không thêm được {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Không xóa được một số tệp:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Không có con trỏ tùy chỉnh để xuất.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Bộ con trỏ được xuất sang:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Không nhập được bộ con trỏ: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Không xuất được bộ con trỏ: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa tất cả con trỏ tùy chỉnh không? Điều này không thể hoàn tác được.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Không tìm thấy con trỏ khóa shift tùy chỉnh để xóa.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Không tìm thấy con trỏ mũi tên tùy chỉnh nào để xóa.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Không tìm thấy con trỏ xa mũi tên tùy chỉnh nào để xóa.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Không tìm thấy con trỏ IBeam tùy chỉnh nào để xóa.</value>
   </data>
 </root>

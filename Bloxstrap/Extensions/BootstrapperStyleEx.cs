@@ -9,6 +9,7 @@
             BootstrapperStyle.FluentDialog,
             BootstrapperStyle.FluentAeroDialog,
             BootstrapperStyle.ClassicFluentDialog,
+            BootstrapperStyle.TwentyFiveDialog,
             BootstrapperStyle.ProgressDialog,
             BootstrapperStyle.LegacyDialog2011,
             BootstrapperStyle.LegacyDialog2008,

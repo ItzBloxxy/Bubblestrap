@@ -282,30 +282,6 @@
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (Версія 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (Версія 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (Версія 4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Обрано за грою</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Фаза 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Фаза 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Фаза 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -466,10 +442,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Назад</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Зловживання цим може призвести до нестабільності або несподіванок.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Деякі з FastFlags, які ви намагаєтеся імпортувати, вже мають встановлені значення. Хочете замінити їхні поточні значення новими значеннями, визначеними під час імпорту?
@@ -715,9 +687,6 @@
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Потрібен перезапуск, щоб побачити зміни.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Новий Iнтерфейс)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Графіка та рендеринг</value>
   </data>
@@ -732,9 +701,6 @@
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Якість згладжування (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Зупиняє це показуватись, коли ви в самому верху рухаєте мишу.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap не може завантажити Roblox</value>
@@ -1397,12 +1363,6 @@ Bubblestrap встановлено на "{1}".</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Налагодження</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Меню Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Скоротіть меню Roblox за допомогою FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Розгортання</value>
   </data>
@@ -1725,61 +1685,11 @@ Bubblestrap встановлено на "{1}".</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Застосовує VR-віньєтку, яка затемнює краї екрана, щоб зменшити нудоту від руху.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Вимкнути системний лоток Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Запобігає мінімізації Roblox у системному треї.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Запускати Roblox при запуску системи</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Автоматично запускає Roblox при вході в систему на вашому ПК.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Видалити</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Зараз активна попередньо встановлена конфігурація курсора. Перед додаванням власного курсора спочатку встановіть стандартну конфігурацію курсора миші.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>У вас встановлено власні файли курсорів. Цей набір може конфліктувати з ними.
-Видаліть власні курсори, якщо набір не працює.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Активна попередньо встановлена конфігурація курсора. Щоб використовувати власні курсори, виберіть «Встановити курсор миші за замовчуванням».</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Не вдалося додати {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Не вдалося видалити деякі файли:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Немає користувацьких курсорів для експорту.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Набір курсорів експортовано до:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Не вдалося імпортувати набір курсорів:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Не вдалося експортувати набір курсорів:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Ви впевнені, що хочете видалити всі власні курсори? Цю дію неможливо скасувати.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Не знайдено жодного користувацького курсора блокування перемикання, який можна видалити.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Не знайдено жодного користувацького курсора у вигляді стрілки, який можна видалити.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Не знайдено жодного настроюваного курсора у вигляді стрілки, який можна видалити.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Не знайдено жодного користувацького курсора IBeam для видалення.</value>
@@ -1790,52 +1700,174 @@ Bubblestrap встановлено на "{1}".</value>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Не знайдено жодного користувацького звуку смерті, який можна видалити.</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Вибрати власний звук смерті</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Вибрати власний курсор</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Вибрати спеціальний курсор у вигляді стрілки</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Вибрати власний курсор у формі двотаврової балки</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Вибрати спеціальний курсор із фіксацією позиції</value>
-  </data>
   <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
     <value>Видалити все</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Не вдалося відкрити властивості:</value>
+  <data name="Common.Day" xml:space="preserve">
+    <value>день</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+  <data name="Common.Days" xml:space="preserve">
+    <value>днів</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>година</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>години</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>та</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Видимість значка</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Увімкнути або вимкнути відображення значків користувачів.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Імена гравців</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Увімкнути або вимкнути відображення імен гравців.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>Вимкне запікання тіней для підвищення продуктивності, але це може спричинити проблеми з освітленням у деяких іграх.</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>хвилина</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Згорнути в трей</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Зберігати Roblox у системному треї, коли вікно згорнуто.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Модальне вікно в системному треї</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Відображати функціональне меню при натисканні на піктограму в системному лотку.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Тема додатка Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Виберіть, яку тему слід використовувати в Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Припинити оновлення Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Заблокуйте оновлення Roblox. Roblox залишиться у поточній версії.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Встановити попередню версію</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Завантажте та встановіть версію Roblox, яка була доступна до виходу поточної версії.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Іконка Roblox на замовлення</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Виберіть власний файл .ico, щоб замінити іконку гравця Roblox.</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Призупинити Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Вимкне запікання тіней для підвищення продуктивності, але це може спричинити проблеми з освітленням у деяких іграх.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Не вдалося отримати попередню версію Roblox з історії версій. Замість цього запускається найновіша версія.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Попередня версія Roblox ({0}) випущена більше 7 днів тому і не може використовуватися.\nЗамість неї встановлюється найновіша версія.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Вибрати власний курсор</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Вибрати спеціальний курсор у вигляді стрілки</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Вибрати власний курсор у формі двотаврової балки</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Вибрати спеціальний курсор для блокування клавіші Shift</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Видалити все</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Набір імпорту</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Набір для експорту</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
-    <value>Функції настроюваного курсора</value>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+    <value>Функції настроювання курсора</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
     <value>Змінити значки курсору.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
     <value>Стрілка-курсор</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
     <value>Курсор ArrowFar</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
     <value>Курсор у вигляді двотаврової балки</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
     <value>Переглянути</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Зараз активна попередньо встановлена конфігурація курсора. Перш ніж додавати власний курсор, слід спочатку встановити стандартну конфігурацію курсора миші.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>У вас встановлено власні файли курсорів. Цей набір може конфліктувати з ними.
+Видаліть власні курсори, якщо набір не працює.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Активна попередньо встановлена конфігурація курсора. Щоб використовувати власні курсори, виберіть опцію «Встановити курсор миші за замовчуванням».</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Не вдалося додати {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Не вдалося видалити деякі файли:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Немає користувацьких курсорів для експорту.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Набір курсорів експортовано до:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Не вдалося імпортувати набір курсорів: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Не вдалося експортувати набір курсорів: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Ви впевнені, що хочете видалити всі власні курсори? Цю дію неможливо скасувати.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Не знайдено курсора блокування перемикання, який можна видалити.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Не знайдено жодного користувацького курсора у вигляді стрілки, який можна видалити.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Не знайдено жодного настроюваного курсора у вигляді стрілки, який можна видалити.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Не знайдено жодного користувацького курсора IBeam для видалення.</value>
   </data>
 </root>

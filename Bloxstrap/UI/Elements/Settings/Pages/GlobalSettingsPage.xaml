@@ -75,10 +75,20 @@
             Description="{x:Static resources:Strings.Menu_GBSEditor_MouseSensitivity_Description}">
             <ui:TextBox Margin="5,0,0,0" Padding="10,5,10,5" Width="200" Text="{Binding MouseSensitivity, Mode=TwoWay}" PreviewTextInput="ValidateFloat" />
         </controls:OptionControl>
-        <controls:OptionControl 
-            Header="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Title}" 
-            Description="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Description}">
-            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding HapticFeedback}" />
+
+        <controls:OptionControl Header="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Title}" Description="{x:Static resources:Strings.Menu_GPSEditor_HapticFeedback_Description}">
+            <Grid Width="256">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Slider Grid.Column="0" Margin="0,0,8,0" Minimum="0" Maximum="1" TickFrequency="0.05" IsSnapToTickEnabled="True" Value="{Binding HapticFeedback, Mode=TwoWay}" />
+
+                <Border Grid.Column="1" Width="35" Background="{ui:ThemeResource SolidBackgroundFillColorSecondaryBrush}" CornerRadius="4">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding HapticFeedback, StringFormat={}{0:0.##}}" />
+                </Border>
+            </Grid>
         </controls:OptionControl>
 
         <TextBlock Text="{x:Static resources:Strings.Menu_FastFlags_Presets_Categories_UserInterface}" FontSize="16" FontWeight="Medium" Margin="0,16,0,0" />
@@ -105,6 +115,18 @@
             Header="{x:Static resources:Strings.Menu_GPSEditor_ChatTranslation_Title}"
             Description="{x:Static resources:Strings.Menu_GPSEditor_ChatTranslation_Description}">
             <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding ChatTranslationEnabled}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GBSEditor_BadgeVisibility_Title}"
+            Description="{x:Static resources:Strings.Menu_GBSEditor_BadgeVisibility_Description}">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding BadgeVisible}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_GBSEditor_PlayerNames_Title}"
+            Description="{x:Static resources:Strings.Menu_GBSEditor_PlayerNames_Description}">
+            <ui:ToggleSwitch Margin="5,0,0,0" Padding="10,5,10,5" IsChecked="{Binding PlayerNamesEnabled}" />
         </controls:OptionControl>
 
         <controls:OptionControl 

@@ -6,9 +6,6 @@ using System.Windows;
 
 namespace Bloxstrap.UI.Elements.Dialogs
 {
-    /// <summary>
-    /// Interaction logic for AddCustomThemeDialog.xaml
-    /// </summary>
     public partial class AddCustomThemeDialog : WpfUiWindow
     {
         private const int CreateNewTabId = 0;
@@ -36,14 +33,16 @@ namespace Bloxstrap.UI.Elements.Dialogs
 
         private static string GenerateRandomName()
         {
-            int count = Directory.GetDirectories(Paths.CustomThemes).Count();
+            int i = 1;
+            string name;
 
-            int i = count + 1;
-            string name = string.Format(Strings.CustomTheme_DefaultName, i);
-
-            // TODO: this sucks
-            if (File.Exists(GetThemePath(name)))
-                name = string.Format(Strings.CustomTheme_DefaultName, $"{i}-{Random.Shared.Next(1, 100000)}"); // easy
+            // keep incrementing i until we find a filename that doesn't exist
+            do
+            {
+                name = string.Format(Strings.CustomTheme_DefaultName, i);
+                i++;
+            }
+            while (File.Exists(GetThemePath(name)) || Directory.Exists(GetThemePath(name)));
 
             return name;
         }

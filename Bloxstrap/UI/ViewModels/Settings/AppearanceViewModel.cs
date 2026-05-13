@@ -88,8 +88,19 @@ namespace Bloxstrap.UI.ViewModels.Settings
             get => App.Settings.Prop.BootstrapperStyle;
             set
             {
+                if (App.Settings.Prop.BootstrapperStyle == value)
+                    return;
+                bool wasCustom = App.Settings.Prop.BootstrapperStyle == BootstrapperStyle.CustomDialog;
+                bool isCustom = value == BootstrapperStyle.CustomDialog;
+
                 App.Settings.Prop.BootstrapperStyle = value;
-                OnPropertyChanged(nameof(CustomThemesExpanded)); // TODO: only fire when needed
+
+                OnPropertyChanged(nameof(Dialog));
+
+                if (wasCustom != isCustom)
+                {
+                    OnPropertyChanged(nameof(CustomThemesExpanded));
+                }
             }
         }
 

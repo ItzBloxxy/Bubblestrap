@@ -24,6 +24,8 @@ namespace Bloxstrap
             { "User.StartScreenSize.Y", "{UserSettings}/Vector2[@name='StartScreenSize']/Y" },
             { "User.Fullscreen", "{UserSettings}/bool[@name='Fullscreen']" },
             { "User.VignetteEnabled", "{UserSettings}/bool[@name='VignetteEnabled']" },
+            { "User.BadgeVisible", "{UserSettings}/bool[@name='BadgeVisible']" },
+            { "User.PlayerNamesEnabled", "{UserSettings}/bool[@name='PlayerNamesEnabled']" },
 
             // mostly accessibility
             { "UI.Transparency", "{UserSettings}/float[@name='PreferredTransparency']" },

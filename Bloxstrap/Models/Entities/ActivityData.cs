@@ -11,11 +11,6 @@ namespace Bloxstrap.Models.Entities
     {
 
         private long _universeId = 0;
-
-        /// <summary>
-        /// If the current activity stems from an in-universe teleport, then this will be
-        /// set to the activity that corresponds to the initial game join
-        /// </summary>
         public ActivityData? RootActivity;
 
         public long UniverseId
@@ -33,10 +28,6 @@ namespace Bloxstrap.Models.Entities
         public string JobId { get; set; } = string.Empty;
 
         public DateTime? StartTime { get; set; }
-
-        /// <summary>
-        /// This will be empty unless the server joined is a private server
-        /// </summary>
         public string AccessCode { get; set; } = string.Empty;
 
         public long UserId { get; set; } = 0;
@@ -55,9 +46,6 @@ namespace Bloxstrap.Models.Entities
 
         // everything below here is optional strictly for bloxstraprpc, discord rich presence, or game history
 
-        /// <summary>
-        /// This is intended only for other people to use, i.e. context menu invite link, rich presence joining
-        /// </summary>
         public string RPCLaunchData { get; set; } = string.Empty;
 
         public UniverseDetails? UniverseDetails { get; set; }

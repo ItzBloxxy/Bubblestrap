@@ -57,15 +57,27 @@
         </controls:OptionControl>
 
         <controls:OptionControl 
-            Header="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Title}"
-            Description="{x:Static resources:Strings.Menu_Behaviour_DisableRobloxTray_Description}">
-            <ui:ToggleSwitch IsChecked="{Binding DisableRobloxTray, Mode=TwoWay}" />
+            Header="{x:Static resources:Strings.Menu_Behaviour_MinimizeToTray_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_MinimizeToTray_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding MinimizeToTray, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_SystemTrayModal_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_SystemTrayModal_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding EnableTrayModal, Mode=TwoWay}" />
         </controls:OptionControl>
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Title}"
             Description="{x:Static resources:Strings.Menu_Behaviour_LaunchOnStartup_Description}">
             <ui:ToggleSwitch IsChecked="{Binding LaunchOnStartup, Mode=TwoWay}" />
+        </controls:OptionControl>
+        
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Behaviour_RobloxAppTheme_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_RobloxAppTheme_Description}">
+            <ComboBox Width="200" Padding="10,5,10,5" ItemsSource="{Binding AppThemeOptions, Mode=OneTime}" SelectedItem="{Binding SelectedAppTheme, Mode=TwoWay}" />
         </controls:OptionControl>
 
         <controls:OptionControl 

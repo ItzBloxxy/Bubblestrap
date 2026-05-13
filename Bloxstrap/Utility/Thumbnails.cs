@@ -2,10 +2,6 @@
 {
     internal static class Thumbnails
     {
-        // TODO: remove requests from list once they're finished or failed
-        /// <remarks>
-        /// Returned array may contain null values
-        /// </remarks>
         public static async Task<string?[]> GetThumbnailUrlsAsync(List<ThumbnailRequest> requests, CancellationToken token)
         {
             const string LOG_IDENT = "Thumbnails::GetThumbnailUrlsAsync";
@@ -43,11 +39,18 @@
             foreach (var item in response)
             {
                 if (item.State == "Pending")
+                {
                     App.Logger.WriteLine(LOG_IDENT, $"{item.TargetId} is still pending");
-                else if (item.State == "Error")
-                    App.Logger.WriteLine(LOG_IDENT, $"{item.TargetId} got error code {item.ErrorCode} ({item.ErrorMessage})");
-                else if (item.State != "Completed")
-                    App.Logger.WriteLine(LOG_IDENT, $"{item.TargetId} got \"{item.State}\"");
+                }
+                else
+                {
+                    requests.RemoveAll(x => x.RequestId == item.RequestId);
+
+                    if (item.State == "Error")
+                        App.Logger.WriteLine(LOG_IDENT, $"{item.TargetId} got error code {item.ErrorCode} ({item.ErrorMessage})");
+                    else if (item.State != "Completed")
+                        App.Logger.WriteLine(LOG_IDENT, $"{item.TargetId} got \"{item.State}\"");
+                }
 
                 urls[int.Parse(item.RequestId)] = item.ImageUrl;
             }

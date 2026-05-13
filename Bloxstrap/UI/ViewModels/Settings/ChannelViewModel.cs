@@ -117,7 +117,45 @@ namespace Bloxstrap.UI.ViewModels.Settings
         public bool ForceRobloxReinstallation
         {
             get => App.State.Prop.ForceReinstall || IsRobloxInstallationMissing;
-            set => App.State.Prop.ForceReinstall = value;
+            set
+            {
+                App.State.Prop.ForceReinstall = value;
+                if (value)
+                {
+                    App.Settings.Prop.UsePreviousVersion = false;
+                    OnPropertyChanged(nameof(UsePreviousVersion));
+                }
+                OnPropertyChanged(nameof(ForceRobloxReinstallation));
+                OnPropertyChanged(nameof(IsUsePreviousVersionEnabled));
+            }
         }
+
+        public bool StopRobloxUpdates
+        {
+            get => App.Settings.Prop.StopRobloxUpdates;
+            set
+            {
+                App.Settings.Prop.StopRobloxUpdates = value;
+                OnPropertyChanged(nameof(StopRobloxUpdates));
+            }
+        }
+
+        public bool UsePreviousVersion
+        {
+            get => App.Settings.Prop.UsePreviousVersion;
+            set
+            {
+                App.Settings.Prop.UsePreviousVersion = value;
+                if (value)
+                {
+                    App.State.Prop.ForceReinstall = false;
+                    OnPropertyChanged(nameof(ForceRobloxReinstallation));
+                }
+                OnPropertyChanged(nameof(UsePreviousVersion));
+                OnPropertyChanged(nameof(IsUsePreviousVersionEnabled));
+            }
+        }
+
+        public bool IsUsePreviousVersionEnabled => !App.State.Prop.ForceReinstall;
     }
 }

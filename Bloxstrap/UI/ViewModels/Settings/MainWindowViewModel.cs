@@ -55,6 +55,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
             const string LOG_IDENT = "MainWindowViewModel::SaveSettings";
 
             App.Settings.Save();
+            ModsViewModel.ApplyRobloxIcon();
             App.State.Save();
             App.FastFlags.Save();
             App.GlobalSettings.Save();
@@ -79,7 +80,14 @@ namespace Bloxstrap.UI.ViewModels.Settings
             SaveSettings();
 
             if (!App.LaunchSettings.TestModeFlag.Active) // test mode already launches an instance
-                Process.Start(Paths.Application, "-player");
+            {
+                // When running under the VS debugger the installed copy (Paths.Application) is a
+                // debug build that will crash silently outside VS.  Use the current process instead.
+                string exePath = System.Diagnostics.Debugger.IsAttached
+                    ? Paths.Process
+                    : Paths.Application;
+                Process.Start(exePath, "-player");
+            }
             else
                 CloseWindow();
         }

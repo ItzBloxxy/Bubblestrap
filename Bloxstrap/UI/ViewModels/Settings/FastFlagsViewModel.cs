@@ -40,7 +40,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 RenderingMode[] DisableD3D11 = new RenderingMode[]
                 {
                     RenderingMode.Vulkan,
-                    RenderingMode.OpenGL
                 };
 
                 App.FastFlags.SetPresetEnum("Rendering.Mode", value.ToString(), "True");
@@ -113,7 +112,7 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
                 for (int i = 0; i < LODLevels.Length; i++)
                 {
-                    int lodValue = Math.Clamp(clamped - i, 0, 3);
+                    int lodValue = (Math.Clamp(clamped - i, 0, 3) + 1) * 250;
                     string lodLevel = LODLevels[i];
 
                     App.FastFlags.SetPreset($"Geometry.MeshLOD.{lodLevel}", lodValue);
@@ -165,6 +164,15 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 App.FastFlags.SetPreset("Rendering.Grass", grassValue);
 
                 OnPropertyChanged(nameof(DisableGrass));
+            }
+        }
+        public bool PauseVoxelizer
+        {
+            get => App.FastFlags.GetPreset("Rendering.PauseVoxelizer") == "True";
+            set
+            {
+                App.FastFlags.SetPreset("Rendering.PauseVoxelizer", value ? "True" : null);
+                OnPropertyChanged(nameof(PauseVoxelizer));
             }
         }
     }

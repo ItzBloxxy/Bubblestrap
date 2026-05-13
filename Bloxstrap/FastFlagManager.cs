@@ -28,9 +28,9 @@ namespace Bloxstrap
             { "Rendering.Mode.DisableD3D11", "FFlagDebugGraphicsDisableDirect3D11" },
             { "Rendering.Mode.D3D11", "FFlagDebugGraphicsPreferD3D11" },
             { "Rendering.Mode.Vulkan", "FFlagDebugGraphicsPreferVulkan" },
-            { "Rendering.Mode.OpenGL", "FFlagDebugGraphicsPreferOpenGL" },
             { "Rendering.Grass.Max", "FIntFRMMaxGrassDistance" },
             { "Rendering.Grass.Min", "FIntFRMMinGrassDistance" },
+            { "Rendering.PauseVoxelizer", "DFFlagDebugPauseVoxelizer" },
 
             // Geometry
             { "Geometry.MeshLOD.Static", "DFIntCSGLevelOfDetailSwitchingDistanceStatic" }, // this isnt actually a flag, we use it to determine current value, not the best way of doing that
@@ -45,13 +45,13 @@ namespace Bloxstrap
         {
             { RenderingMode.Default, "None" },
             { RenderingMode.Vulkan, "Vulkan" },
-            { RenderingMode.OpenGL, "OpenGL" },
             { RenderingMode.D3D11, "D3D11" },
         };
 
         public static IReadOnlyDictionary<MSAAMode, string?> MSAAModes => new Dictionary<MSAAMode, string?>
         {
             { MSAAMode.Default, null },
+            { MSAAMode.x0, "0" },
             { MSAAMode.x1, "1" },
             { MSAAMode.x2, "2" },
             { MSAAMode.x4, "4" }

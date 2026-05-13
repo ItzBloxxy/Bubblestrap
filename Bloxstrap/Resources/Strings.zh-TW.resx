@@ -281,30 +281,6 @@
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>以遊戲預設為主</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (第三階段)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>ShadowMap (第二階段)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (第一階段)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>返回</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>錯誤地使用此功能會導致不穩定/意料之外的事情發生。</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>有些你嘗試去導入的flags已經設置了值。請問你要不要用你導入的值來覆蓋目前的值？
@@ -713,9 +685,6 @@
   <data name="Menu.Appearance.Language.Title" xml:space="preserve">
     <value>語言</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023（V4 + 最新UI）</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>渲染和畫質</value>
   </data>
@@ -730,9 +699,6 @@
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>反鋸齒等級（MSAA）</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>阻止在滑鼠移上頂部的時候出現標題列。</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap無法下載Roblox</value>
@@ -1397,12 +1363,6 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>除錯</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox 選單</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>使用FFlags精簡Roblox選單</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>部署</value>
   </data>
@@ -1725,61 +1685,11 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>套用虛擬實境暗角效果，使螢幕邊緣變暗以減輕暈動症。</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>停用 Roblox 系統托盤</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>防止 Roblox 持續最小化於系統托盤中。</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>在啟動時執行 Roblox</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>當您登入電腦時，自動啟動 Roblox。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>目前已啟用一個游標預設值。在新增自訂游標之前，請先將「滑鼠游標」設為預設值。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>您已安裝自訂游標檔案。此預設檔可能會與它們產生衝突。
-若預設檔似乎無法正常運作，請移除您的自訂游標。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>目前已啟用游標預設。若要使用自訂游標，請將「滑鼠游標」設為「預設」。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>無法新增 {0}：</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>無法移除部分檔案：</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>沒有自訂游標可供匯出。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>游標集已匯出至：
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>無法匯入游標集：</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>無法匯出游標集：</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>您確定要移除所有自訂游標嗎？此操作無法撤銷。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>未找到可移除的自訂換檔鎖定游標。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>未找到要移除的自訂箭頭游標。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>未找到可移除的自訂箭頭形游標。</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>未找到要移除的自訂 IBeam 游標。</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>未找到要移除的自訂 IBeam 游標。</value>
@@ -1790,23 +1700,104 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>選擇自訂死亡音效</value>
   </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>無法開啟屬性：</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>以及</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>徽章可見性</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>切換使用者徽章的顯示狀態。</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>球員姓名</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>切換玩家名稱的顯示狀態。</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>收起至系統匣</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>將 Roblox 最小化後，使其持續在系統托盤中運行。</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>系統托盤模態視窗</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>點擊系統匣圖示時，顯示功能選單。</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Roblox 應用程式主題</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>請選擇 Roblox 應使用的主題。</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>停止 Roblox 更新</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>阻止 Roblox 進行更新。Roblox 將維持在目前已安裝的版本。</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>安裝舊版本</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>請下載並安裝比當前版本更早的 Roblox 版本。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>自訂 Roblox 圖示</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>選擇一個自訂的 .ico 檔案來取代 Roblox 玩家圖示。</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>暫停 Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>停用烘焙陰影以提升效能，但可能會在某些遊戲中導致光照問題。</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>無法從版本歷史記錄中取得之前的 Roblox 版本。因此將改以最新版本啟動。</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>先前安裝的 Roblox 版本（{0}）已超過 7 天，無法繼續使用。\n將改為安裝最新版本。</value>
+  </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>選擇自訂游標</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>選擇自訂箭頭形遠端游標</value>
+    <value>選擇自訂箭頭遠端游標</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>選擇自訂 I 型光標</value>
+    <value>選擇自訂 IBeam 游標</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>選擇自訂 Shift 鎖定游標</value>
+    <value>選擇自訂換檔鎖定游標</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>全部移除</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>無法開啟屬性：</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>匯入集</value>
@@ -1834,5 +1825,49 @@ Bubblestrap 安裝在 "{1}"。</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>移除</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>目前已啟用一個游標預設值。請先將「滑鼠游標」設為預設值，再新增自訂游標。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>您已安裝自訂游標檔案。此預設組可能與它們產生衝突。
+若預設組似乎無法正常運作，請移除您的自訂游標。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>目前已啟用游標預設。若要使用自訂游標，請將「滑鼠游標」設為「預設」。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>無法新增 {0}：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>無法移除部分檔案：</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>沒有自訂游標可供匯出。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>游標集已匯出至：
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>無法匯入游標集：{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>無法匯出游標集：{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>您確定要移除所有自訂游標嗎？此操作無法撤銷。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>未找到可移除的自訂換檔鎖定游標。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>未找到要移除的自訂箭頭游標。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>未找到可移除的自訂箭頭形游標。</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>未找到要移除的自訂 IBeam 游標。</value>
   </data>
 </root>

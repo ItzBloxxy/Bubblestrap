@@ -29,16 +29,29 @@
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Behaviour_ForceRobloxReinstall_Title}"
             Description="{x:Static resources:Strings.Menu_Behaviour_ForceRobloxReinstall_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding ForceRobloxReinstallation, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl
+            Header="{x:Static resources:Strings.Menu_Behaviour_StopRobloxUpdates_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_StopRobloxUpdates_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding StopRobloxUpdates, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl
+            Header="{x:Static resources:Strings.Menu_Behaviour_InstallPreviousVersion_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_InstallPreviousVersion_Description}">
             <controls:OptionControl.Style>
                 <Style TargetType="controls:OptionControl">
                     <Style.Triggers>
-                        <DataTrigger Binding="{Binding ForceRobloxReinstallation, Mode=OneTime}" Value="True">
+                        <!-- Greyed out when ForceReinstall is explicitly ON — they conflict -->
+                        <DataTrigger Binding="{Binding IsUsePreviousVersionEnabled, Mode=OneWay}" Value="False">
                             <Setter Property="IsEnabled" Value="False" />
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </controls:OptionControl.Style>
-            <ui:ToggleSwitch IsChecked="{Binding ForceRobloxReinstallation, Mode=TwoWay}" />
+            <ui:ToggleSwitch IsChecked="{Binding UsePreviousVersion, Mode=TwoWay}" />
         </controls:OptionControl>
 
         <controls:OptionControl 

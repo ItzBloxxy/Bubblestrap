@@ -54,10 +54,14 @@ namespace Bloxstrap.UI.ViewModels.Settings
             get => App.GlobalSettings.GetPreset("User.ChatTranslationEnabled")?.ToLower() == "true";
             set => App.GlobalSettings.SetPreset("User.ChatTranslationEnabled", value.ToString().ToLower());
         }
-        public bool HapticFeedback
+        public double HapticFeedback
         {
-            get => App.GlobalSettings.GetPreset("User.HapticStrength") != "0";
-            set => App.GlobalSettings.SetPreset("User.HapticStrength", value ? "1" : "0");
+            get => double.TryParse(App.GlobalSettings.GetPreset("User.HapticStrength"), System.Globalization.CultureInfo.InvariantCulture, out var v) ? v : 0.0;
+            set
+            {
+                App.GlobalSettings.SetPreset("User.HapticStrength", value.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture));
+                OnPropertyChanged(nameof(HapticFeedback));
+            }
         }
 
         public string StartScreenSizeX
@@ -97,6 +101,26 @@ namespace Bloxstrap.UI.ViewModels.Settings
         {
             get => App.GlobalSettings.GetPreset("User.VREnabled")!;
             set => App.GlobalSettings.SetPreset("User.VREnabled", value);
+        }
+
+        public bool BadgeVisible
+        {
+            get => App.GlobalSettings.GetPreset("User.BadgeVisible")?.ToLower() == "true";
+            set
+            {
+                App.GlobalSettings.SetPreset("User.BadgeVisible", value.ToString().ToLower());
+                OnPropertyChanged(nameof(BadgeVisible));
+            }
+        }
+
+        public bool PlayerNamesEnabled
+        {
+            get => App.GlobalSettings.GetPreset("User.PlayerNamesEnabled")?.ToLower() == "true";
+            set
+            {
+                App.GlobalSettings.SetPreset("User.PlayerNamesEnabled", value.ToString().ToLower());
+                OnPropertyChanged(nameof(PlayerNamesEnabled));
+            }
         }
 
         public double MasterVolume

@@ -281,30 +281,6 @@ Om det inte har det, rapportera gärna detta undantag med ett [GitHub-ärende]({
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Valt av spelet</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Fas 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Fas 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Fas 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Vill du uppdatera din nuvarande installerade version?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Tillbaka</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Missbruk av detta kan leda till instabilitet eller att oväntade saker händer.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Vissa av flaggorna du försöker importera har redan inställda värden. Vill du skriva över deras nuvarande värden med de du importerar?
@@ -716,9 +688,6 @@ Om du väljer "Nej" ignoreras denna varning och installationen fortsätter.</val
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>En omstart krävs för att dina ändringar ska träda i kraft.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Ny UI)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Rendering och Grafik</value>
   </data>
@@ -733,9 +702,6 @@ Om du väljer "Nej" ignoreras denna varning och installationen fortsätter.</val
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Anti-aliasing-kvalitet (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Stoppar den från att visas när du rör din mus till toppen av skärmen.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap kan inte ladda ner Roblox</value>
@@ -1398,12 +1364,6 @@ Driftstid: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Felsökning</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox-menyn</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Rensa Roblox-menyn med FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Utplacering</value>
   </data>
@@ -1726,61 +1686,11 @@ Vill du byta favoritkanal till {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Tillämpar en VR-vinjett som mörknar skärmens kanter för att minska åksjuka.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Inaktivera Roblox-systemfältet</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Förhindrar att Roblox förblir minimerat i systemfältet.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Kör Roblox vid start</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Startar Roblox automatiskt när du loggar in på din dator.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Ta bort</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>En förinställd markör är för närvarande aktiv. Ställ först in musmarkören på standardinställningen innan du lägger till en anpassad markör.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Du har anpassade markörfiler installerade. Förinställningen kan komma i konflikt med dem.
-Ta bort dina anpassade markörer om förinställningen inte verkar fungera.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>En förinställd markör är aktiv. Ställ in ”Musmarkör” på ”Standard” för att använda egna markörer.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Det gick inte att lägga till {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Det gick inte att ta bort vissa filer:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Det finns inga anpassade markörer att exportera.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Markörposition exporterad till:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Det gick inte att importera marköruppsättningen:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Det gick inte att exportera marköruppsättningen:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Är du säker på att du vill ta bort alla anpassade markörer? Detta går inte att ångra.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Ingen anpassad markör för växellåsning hittades som kan tas bort.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Ingen anpassad IBeam-markör hittades som kan tas bort.</value>
@@ -1791,52 +1701,174 @@ Ta bort dina anpassade markörer om förinställningen inte verkar fungera.</val
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Inget anpassat dödsljud hittades som kan tas bort.</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Välj ett eget dödsljud</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Välj en anpassad markör</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Välj en anpassad pil som markör</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Välj en anpassad I-balk-markör</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Välj en anpassad markör för skiftlås</value>
-  </data>
   <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
     <value>Ta bort alla</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Det gick inte att öppna egenskaperna:</value>
+  <data name="Common.Day" xml:space="preserve">
+    <value>dag</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+  <data name="Common.Days" xml:space="preserve">
+    <value>dagar</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>timme</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>timmar</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>och</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Märkets synlighet</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Visa eller dölj användarbrickor.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Spelarnamn</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Visa eller dölj spelarnas namn.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minuter</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minut</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Minimera till aktivitetsfältet</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Låt Roblox köras i systemfältet när det är minimerat.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Modalfönster i systemfältet</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Visa en funktionsmeny när man klickar på ikonen i systemfältet.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Roblox-appens tema</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Välj vilket tema Roblox ska använda.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Stoppa uppdateringar av Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Förhindra att Roblox uppdateras. Roblox kommer att behålla den version som redan är installerad.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Installera tidigare version</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Ladda ner och installera den version av Roblox som fanns innan den nuvarande.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Anpassad Roblox-ikon</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Välj en egen .ico-fil för att ersätta Roblox-spelarens ikon.</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Pausa Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Inaktiverar förberäknade skuggor för att förbättra prestandan, men kan orsaka belysningsproblem i vissa spel.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Den tidigare versionen av Roblox ({0}) är äldre än 7 dagar och kan inte användas.\nDen senaste versionen installeras istället.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Den tidigare versionen av Roblox ({0}) är äldre än 7 dagar och kan inte användas.\nDen senaste versionen installeras istället.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Välj en anpassad markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Välj en anpassad pil som markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Välj en anpassad I-balk-markör</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Välj en anpassad markör för skiftlås</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Ta bort alla</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Importera uppsättning</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Exportinställningar</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
     <value>Anpassade markörfunktioner</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
     <value>Ändra markörsymbolerna.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
     <value>Pilmarkör</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
     <value>ArrowFar-markören</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
     <value>IBeam-markören</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+    <value>Bläddra</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Ta bort</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Du har anpassade markörfiler installerade. Förinställningen kan komma i konflikt med dem.
+Ta bort dina anpassade markörer om förinställningen inte verkar fungera.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>En förinställd markör är aktiv. Ställ in ”Musmarkör” på ”Standard” för att använda anpassade markörer.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Det gick inte att lägga till {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Det gick inte att ta bort vissa filer:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Det finns inga anpassade markörer att exportera.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Markörinställningar exporterade till:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Det gick inte att importera marköruppsättningen: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Det gick inte att exportera marköruppsättningen: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Det gick inte att exportera marköruppsättningen: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Ingen anpassad markör för växellåsning hittades att ta bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Ingen anpassad pilmarkör hittades som kan tas bort.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Ingen anpassad IBeam-markör hittades som kan tas bort.</value>
   </data>
 </root>

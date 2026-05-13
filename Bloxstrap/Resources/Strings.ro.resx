@@ -281,30 +281,6 @@ Dacă nu, atunci vă rugăm să raportați această eroare printr-o [problemă G
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Ales de joc</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Faza 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Faza 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Faza 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -465,10 +441,6 @@ Doriți să actualizați versiunea instalată în prezent?</value>
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Înapoi</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Utilizarea greșită poate duce la instabilitate sau la evenimente neașteptate.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Unele Flag-uri pe care încercați să le importați au deja valori stabilite. Doriți să le înlocuiți valorile actuale cu cele definite în cadrul importului?
@@ -716,9 +688,6 @@ Selectarea „Nu” va ignora acest avertisment și va continua instalarea.</val
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>O relansare este necesară pentru schimbările să aibă efect.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + UI Nou)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Randare și grafică</value>
   </data>
@@ -733,9 +702,6 @@ Selectarea „Nu” va ignora acest avertisment și va continua instalarea.</val
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Calitatea anti-aliasing (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Oprește afișarea acestuia ori de câte ori mutați mouse-ul în partea de sus a ecranului.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap nu poate să descarce Roblox</value>
@@ -1398,12 +1364,6 @@ Timp de funcționare: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Debugare</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Meniul Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Debloat meniul Roblox cu FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Implementare</value>
   </data>
@@ -1723,61 +1683,11 @@ Doriți să schimbați canalul preferat la {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Aplică o vignetă VR care întunecă marginile ecranului pentru a reduce senzația de rău de mișcare.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Dezactivează bara de sistem Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Împiedică Roblox să rămână minimizat în bara de sistem.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Rulați Roblox la pornire</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Pornește automat Roblox când te conectezi la PC.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Eliminare</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>În prezent este activă o presetare a cursorului. Setați mai întâi cursorul mouse-ului la valorile implicite înainte de a adăuga un cursor personalizat.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Aveți instalate fișiere de cursori personalizate. Este posibil ca presetarea să intre în conflict cu acestea.
-Ștergeți cursorii personalizați dacă presetarea nu pare să funcționeze.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Este activă o presetare a cursorului. Setați opțiunea „Cursor mouse” la „Implicit” pentru a utiliza cursori personalizați.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Nu s-a putut adăuga {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Nu s-au putut șterge unele fișiere:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Nu există cursoare personalizate de exportat.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Setul de cursori a fost exportat în:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Nu s-a reușit importarea setului de cursori:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Ești sigur că vrei să ștergi toate cursorele personalizate? Această acțiune nu poate fi anulată.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Nu s-a găsit niciun cursor personalizat de blocare a schimbării de viteză care să poată fi eliminat.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Nu s-a găsit niciun cursor personalizat în formă de săgeată care să poată fi eliminat.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Nu s-a găsit niciun cursor personalizat în formă de săgeată care să poată fi eliminat.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Nu s-a găsit niciun cursor personalizat sub formă de săgeată care să poată fi eliminat.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Nu s-a găsit niciun cursor IBeam personalizat care să poată fi eliminat.</value>
@@ -1788,52 +1698,174 @@ Doriți să schimbați canalul preferat la {0}?</value>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Nu s-a găsit niciun sunet de moarte personalizat care să poată fi eliminat.</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
-    <value>Alege un sunet personalizat pentru moarte</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
-    <value>Selectează un cursor personalizat</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
-    <value>Selectează un cursor în formă de săgeată personalizat</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Selectează un cursor personalizat în formă de I</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
-    <value>Selectează un cursor personalizat pentru blocarea comutării</value>
-  </data>
   <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
     <value>Șterge tot</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
-    <value>Nu s-au putut deschide proprietățile:</value>
+  <data name="Common.Day" xml:space="preserve">
+    <value>zi</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
+  <data name="Common.Days" xml:space="preserve">
+    <value>zile</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>oră</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>ore</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>și</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Vizibilitatea insignelor</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Comută vizibilitatea insignelor utilizatorilor.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Numele jucătorilor</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Comută vizibilitatea numelor jucătorilor.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minut</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Minimizează în bara de sistem</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Păstrează Roblox deschis în bara de sistem atunci când este minimizat.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>Fereastră modală din bara de sistem</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Afișează un meniu funcțional la clic pe pictograma din bara de sistem.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Tema aplicației Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Alege tema pe care Roblox ar trebui să o folosească.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Oprește actualizările Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Împiedică actualizarea Roblox. Roblox va rămâne la versiunea instalată în prezent.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Instalează versiunea anterioară</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Descărcați și instalați versiunea Roblox care era disponibilă înainte de cea actuală.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Pictogramă personalizată pentru Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Alege un fișier .ico personalizat pentru a înlocui pictograma jucătorului Roblox.</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Pauză Voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Dezactivează umbrele precalculate pentru a îmbunătăți performanța, dar poate provoca probleme de iluminare în unele jocuri.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Versiunea anterioară a Roblox ({0}) are mai mult de 7 zile și nu poate fi utilizată.\nSe instalează în schimb cea mai recentă versiune.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Versiunea anterioară a Roblox ({0}) are mai mult de 7 zile și nu poate fi utilizată.\nSe instalează în schimb cea mai recentă versiune.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
+    <value>Selectează un cursor personalizat</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
+    <value>Selectează un cursor cu săgeată personalizată</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectIBeam" xml:space="preserve">
+    <value>Selectează un cursor personalizat în formă de I-beam</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
+    <value>Selectează un cursor personalizat pentru blocarea comutării</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
+    <value>Șterge tot</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Set de import</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
     <value>Set de export</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
     <value>Funcții personalizate ale cursorului</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.ShiftLock" xml:space="preserve">
-    <value>Modificați pictogramele cursorului.</value>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Description" xml:space="preserve">
+    <value>Schimbă pictogramele cursorului.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Arrow" xml:space="preserve">
-    <value>ShiftLock</value>
+    <value>Cursorul în formă de săgeată</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.ArrowFar" xml:space="preserve">
-    <value>Cursor sub formă de săgeată</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
     <value>Cursorul ArrowFar</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.IBeam" xml:space="preserve">
     <value>Cursorul IBeam</value>
   </data>
-  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Browse" xml:space="preserve">
     <value>Răsfoiește</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
+    <value>Eliminare</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>În prezent este activă o presetare pentru cursor. Setați mai întâi cursorul mouse-ului la valorile implicite înainte de a adăuga un cursor personalizat.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Aveți instalate fișiere de cursori personalizate. Este posibil ca presetarea să intre în conflict cu acestea.
+Ștergeți cursorii personalizați dacă presetarea nu pare să funcționeze.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Este activă o presetare a cursorului. Setați opțiunea „Cursor mouse” la „Implicit” pentru a utiliza cursori personalizați.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Nu s-a putut adăuga {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nu s-au putut șterge unele fișiere:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Nu există cursori personalizate de exportat.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Setul de cursori a fost exportat în:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Nu s-a putut importa setul de cursori: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Nu s-a putut exporta setul de cursori: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Ești sigur că vrei să ștergi toate cursorele personalizate? Această acțiune nu poate fi anulată.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nu s-a găsit niciun cursor personalizat de blocare a schimbării vitezelor care să poată fi eliminat.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nu s-a găsit niciun cursor sub formă de săgeată personalizat care să poată fi eliminat.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nu s-a găsit nicio săgeată personalizată a cursorului de la distanță care să poată fi eliminată.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nu s-a găsit niciun cursor IBeam personalizat care să poată fi eliminat.</value>
   </data>
 </root>

@@ -1,5 +1,6 @@
 ﻿using Bloxstrap.Integrations;
 using Bloxstrap.UI.Elements.Dialogs;
+using Bloxstrap.UI.ViewModels.Settings;
 using System.Windows;
 using Windows.Win32;
 
@@ -265,7 +266,7 @@ namespace Bloxstrap
                 dialog.Bootstrapper = App.Bootstrapper;
             }
 
-            Task.Run(App.Bootstrapper.Run).ContinueWith(t =>
+            Task.Run(App.Bootstrapper.Run).ContinueWith(async t =>
             {
                 App.Logger.WriteLine(LOG_IDENT, "Bootstrapper task has finished");
 
@@ -275,6 +276,36 @@ namespace Bloxstrap
 
                     if (t.Exception is not null)
                         App.FinalizeExceptionHandling(t.Exception);
+                }
+                else if (App.Bootstrapper.IsPlayerLaunch && App.Bootstrapper.AppPid != 0
+                         && App.Settings.Prop.CustomRobloxIcon != Enums.RobloxIcon.Default)
+                {
+                    int pid = App.Bootstrapper.AppPid;
+                    int injected = 0;
+                    for (int attempt = 0; attempt < 10 && injected < 5; attempt++)
+                    {
+                        await Task.Delay(1000);
+                        IntPtr foundHwnd = IntPtr.Zero;
+                        NativeMethods.EnumWindows((hwnd, _) =>
+                        {
+                            NativeMethods.GetWindowThreadProcessId(hwnd, out uint foundPid);
+                            if (foundPid == (uint)pid && NativeMethods.IsWindowVisible(hwnd))
+                            {
+                                if (NativeMethods.GetWindowRect(hwnd, out var rect) && (rect.Right - rect.Left) > 100)
+                                {
+                                    foundHwnd = hwnd;
+                                    return false;
+                                }
+                            }
+                            return true;
+                        }, IntPtr.Zero);
+
+                        if (foundHwnd != IntPtr.Zero)
+                        {
+                            UI.ViewModels.Settings.ModsViewModel.ApplyRobloxWindowIcon(foundHwnd);
+                            injected++;
+                        }
+                    }
                 }
 
                 App.Terminate();

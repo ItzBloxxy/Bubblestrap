@@ -122,6 +122,51 @@
             </StackPanel>
         </controls:OptionControl>
 
+        <controls:OptionControl
+            Header="{x:Static resources:Strings.Menu_Mods_Misc_CustomRobloxIcon_Title}"
+            Description="{x:Static resources:Strings.Menu_Mods_Misc_CustomRobloxIcon_Description}">
+            <StackPanel>
+                <ComboBox Width="200" Padding="10,5,10,5"
+                          ItemsSource="{Binding RobloxIcons, Mode=OneWay}"
+                          SelectedValuePath="IconType"
+                          SelectedValue="{Binding SelectedRobloxIcon, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="16" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Height="16"
+                                       Source="{Binding PreviewImage, Mode=OneWay}"
+                                       RenderOptions.BitmapScalingMode="HighQuality" />
+                                <TextBlock Grid.Column="1" Margin="8,0,0,0"
+                                           Text="{Binding Path=IconType, Converter={StaticResource EnumNameConverter}}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <Grid Margin="0,8,0,0"
+                      Visibility="{Binding CustomRobloxIconLocationVisible,
+                                   Converter={StaticResource BooleanToVisibilityConverter}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <ui:TextBox Grid.Column="0" Margin="0,0,4,0"
+                                IsReadOnly="True"
+                                Text="{Binding CustomRobloxIconLocation, Mode=OneWay}" />
+                    <ui:Button Grid.Column="1" Margin="4,0,0,0" Height="35"
+                               Icon="Folder24"
+                               Content="{x:Static resources:Strings.Common_Browse}"
+                               Command="{Binding BrowseCustomRobloxIconCommand}" />
+                </Grid>
+
+
+            </StackPanel>
+        </controls:OptionControl>
+
         <Expander Margin="0,10,0,0" Padding="16" Background="{DynamicResource ControlFillColorDefaultBrush}" BorderBrush="{DynamicResource ControlStrokeColorDefaultBrush}" BorderThickness="1">
             <Expander.Header>
                 <StackPanel>
@@ -133,9 +178,7 @@
             <StackPanel Margin="0,10,0,0">
                 <TextBlock Margin="0,0,0,12" FontSize="12" TextWrapping="Wrap"
                            Foreground="{DynamicResource SystemFillColorCautionBrush}"
-                           Visibility="{Binding IsCursorPresetActive, Converter={StaticResource BooleanToVisibilityConverter}}">
-
-                </TextBlock>
+                           Visibility="{Binding IsCursorPresetActive, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                 <UniformGrid Columns="4">
                     <StackPanel Margin="4">

@@ -280,30 +280,6 @@ Ako nije, molimo vas prijavite ovaj izuzetak putem [GitHub issue]({1}) zajedno s
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Odabrano od igre</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Budućnost (Faza 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Mapa sjene (Faza 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Faza 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@ Ako nije, molimo vas prijavite ovaj izuzetak putem [GitHub issue]({1}) zajedno s
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Nazad</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Pogrešna upotreba ovoga može dovesti do nestabilnosti ili neočekivanih događaja.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Neke od zastava koje pokušavate ubaciti već imaju postavljene vrijednosti. Da li želite prebrisati njihove trenutne vrijednosti sa onima definiranim u uvozu?
@@ -715,9 +687,6 @@ Odabirom 'Ne' će ignorisati ovo upozorenje i nastaviti instalaciju.</value>
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Potrebno je ponovo pokrenuti da bi promjene bile u efektu.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + Novi UI)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Renderiranje i Grafika</value>
   </data>
@@ -732,9 +701,6 @@ Odabirom 'Ne' će ignorisati ovo upozorenje i nastaviti instalaciju.</value>
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Kvaliteta anti-aliasinga (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Sprječava prikazivanje kada pomakneš miš na vrh ekrana.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Bubblestrap ne može preuzeti Roblox</value>
@@ -1392,12 +1358,6 @@ Radno vrijeme: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>Debugiranje</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Roblox meni</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Debloat Roblox meni s FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Raspoređivanje</value>
   </data>
@@ -1482,7 +1442,7 @@ Radno vrijeme: {1}</value>
   <data name="Installer.InstallationNotFound" xml:space="preserve">
     <value>Instalacija Bubblestrapa nije pronađena.</value>
   </data>
-  <data name="Menu.Bloxstrap.Description" xml:space="preserve"> 
+  <data name="Menu.Bloxstrap.Description" xml:space="preserve">
     <value>Konfigurišite opcije vezane za samo ponašanje Bubblestrapa.</value>
   </data>
   <data name="Menu.Bloxstrap.ExportData.Description" xml:space="preserve">
@@ -1719,61 +1679,11 @@ Radno vrijeme: {1}</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Primjenjuje VR vinjetu koja potamnjuje ivice ekrana kako bi se smanjila bolest kretanja.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Onemogućite Roblox sistemsku traku</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Sprečava da Roblox ostane minimiziran u sistemskoj paleti.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Pokrenite Roblox pri pokretanju</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Automatski pokreće Roblox kada se prijavite na svoj PC.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Trenutno je aktivan kursor. Prvo postavite kursor miša na zadano prije dodavanja prilagođenog kursora.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Imate instalirane prilagođene datoteke kursora. Pretpostavka može biti u sukobu s njima.
-Uklonite svoje prilagođene kursore ako se čini da unaprijed postavljeno ne radi.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Aktivan je unaprijed postavljen kursor. Postavite kursor miša na Default da biste koristili prilagođene kursore.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Dodavanje {0} nije uspjelo:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Uklanjanje nekih fajlova nije uspjelo:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Nema prilagođenih kursora za izvoz.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Skup kursora izvezen u:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Uvoz skupa kursora nije uspio:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Izvoz skupa kursora nije uspio:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Jeste li sigurni da želite ukloniti sve prilagođene kursore? Ovo se ne može poništiti.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Nije pronađen prilagođeni kursor za zaključavanje pomaka za uklanjanje.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Nije pronađen prilagođeni kursor strelice za uklanjanje.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Nije pronađena prilagođena strelica dalekog kursora za uklanjanje.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Nije pronađen prilagođeni IBeam kursor za uklanjanje.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Dodavanje zvuka smrti nije uspjelo:</value>
@@ -1783,6 +1693,90 @@ Uklonite svoje prilagođene kursore ako se čini da unaprijed postavljeno ne rad
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Odaberite prilagođeni zvuk smrti</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Nije moguće otvoriti svojstva:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>dan</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>dana</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>sat</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>sati</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>i</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Vidljivost značke</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>Uključite vidljivost korisničkih znački.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Imena igrača</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>Uključite vidljivost imena igrača.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minuta</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minuta</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>Pauzirajte voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Onemogućuje pečene sjene radi poboljšanja performansi, ali može uzrokovati probleme s osvjetljenjem u nekim igrama.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>Minimizirajte u ležište</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Neka Roblox radi u sistemskoj paleti kada je minimiziran.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>System Tray Modal</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Prikažite funkcionalni meni kada kliknete na ikonu sistemske palete.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Tema aplikacije Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Odaberite koju temu Roblox treba koristiti.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Zaustavite ažuriranja Robloxa</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Spriječite ažuriranje Robloxa. Roblox će ostati na trenutno instaliranoj verziji.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Instalirajte prethodnu verziju</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Preuzmite i instalirajte verziju Robloxa koja je bila živa prije trenutne.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Prilagođena Roblox ikona</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Odaberite prilagođenu .ico datoteku koja će zamijeniti ikonu Roblox playera.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Nije moguće preuzeti prethodnu verziju Robloxa iz historije verzija. Umjesto toga, pokreće se s najnovijom verzijom.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Prethodna verzija Robloxa ({0}) je starija od 7 dana i ne može se koristiti.\nUmjesto toga, instalirajte najnoviju verziju.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Odaberite prilagođeni kursor</value>
@@ -1794,19 +1788,16 @@ Uklonite svoje prilagođene kursore ako se čini da unaprijed postavljeno ne rad
     <value>Odaberite prilagođeni IBeam kursor</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectShiftlock" xml:space="preserve">
-    <value>Odaberite Custom Shift Lock kursor</value>
+    <value>Odaberite prilagođeni kursor za zaključavanje pomaka</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Ukloni sve</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Nije moguće otvoriti svojstva:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Import Set</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Export" xml:space="preserve">
-    <value>Izvoz skup</value>
+    <value>Export Set</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Title" xml:space="preserve">
     <value>Prilagođene karakteristike kursora</value>
@@ -1831,5 +1822,49 @@ Uklonite svoje prilagođene kursore ako se čini da unaprijed postavljeno ne rad
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Ukloni</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Trenutno je aktivan kursor. Prvo postavite kursor miša na Default pre nego što dodate prilagođeni kursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Imate instalirane prilagođene datoteke kursora. Pretpostavka može biti u sukobu s njima.
+Uklonite svoje prilagođene kursore ako se čini da unaprijed postavljeno ne radi.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Aktivan je unaprijed postavljen kursor. Postavite kursor miša na Default da biste koristili prilagođene kursore.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Dodavanje {0} nije uspjelo:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Uklanjanje nekih fajlova nije uspjelo:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Nema prilagođenih kursora za izvoz.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Skup kursora izvezen u:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Uvoz skupa kursora nije uspio: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Izvoz skupa kursora nije uspio: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Jeste li sigurni da želite ukloniti sve prilagođene kursore? Ovo se ne može poništiti.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Nije pronađen prilagođeni kursor za zaključavanje pomaka za uklanjanje.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Nije pronađen prilagođeni kursor strelice za uklanjanje.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Nije pronađena prilagođena strelica dalekog kursora za uklanjanje.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Nije pronađen prilagođeni IBeam kursor za uklanjanje.</value>
   </data>
 </root>

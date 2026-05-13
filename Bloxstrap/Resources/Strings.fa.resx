@@ -281,30 +281,6 @@
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>ویندوز 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (نسخه اول)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (نسخه دوم)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (نسخه چهارم)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>انتخاب توسط بازی</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>آینده (فاز سوم)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>سایه نقشه (فاز دوم)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>وکسل (فاز اول)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>بازگشت</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>استفاده نادرست از این می‌تواند منجر به ناپایداری یا اتفاقات غیرمنتظره شود.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>برخی از فلگ هایی که می‌خواهید وارد کنید دارای مقادیر تنظیم شده‌اند. آیا می خواهید مقادیر فعلی آنها را با مقادیر تعریف شده بازنویسی کنید؟
@@ -715,9 +687,6 @@
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>به یک اجرای مجدد جهت نتیجه گرفتن تغییرات نیاز است.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (ورژن چهار + رابط کاربری جدید)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>رندر ها و گرافیک ها</value>
   </data>
@@ -732,9 +701,6 @@
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>کیفیت Anti-aliasing ‏(‏MSAA‏)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>متوقف کردن منویی که وقتی موستان را به بالا صفحه میبرید نمایان میشود.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>بلاکسترپ نمیتواند روبلاکس را بارگیری کند</value>
@@ -1390,12 +1356,6 @@
   <data name="Common.Debug" xml:space="preserve">
     <value>عیب‌یابی</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>منوی روبلاکس</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>منوی Debloat Roblox با FFlags</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>استقرار</value>
   </data>
@@ -1718,61 +1678,11 @@
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>تصویر VR را اعمال می کند که لبه های صفحه را تیره می کند تا بیماری حرکت را کاهش دهد.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>سینی سیستم Roblox را غیرفعال کنید</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>از به حداقل رساندن Roblox در سینی سیستم جلوگیری می کند.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Roblox را در راه اندازی اجرا کنید</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>هنگامی که وارد رایانه شخصی خود می شوید، Roblox به طور خودکار راه اندازی می شود.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>یک پیش تنظیم مکان نما در حال حاضر فعال است. قبل از افزودن مکان نما سفارشی، ابتدا مکان نما ماوس را روی پیش فرض قرار دهید.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>شما فایل های مکان نما سفارشی را نصب کرده اید. پیش تنظیم ممکن است با آنها تضاد داشته باشد.
-اگر به نظر نمی رسد که از پیش تنظیم شده کار کند، نشانگرهای سفارشی خود را بردارید.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>یک مکان نما از پیش تنظیم شده فعال است. برای استفاده از نشانگرهای سفارشی، نشانگر ماوس را روی پیش فرض قرار دهید.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>{0} اضافه نشد:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>برخی از فایل ها حذف نشد:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>هیچ نشانگر سفارشی برای صادرات وجود ندارد.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>مجموعه مکان نما صادر شد به:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>وارد کردن مجموعه مکان نما انجام نشد:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>صادر کردن مجموعه مکان نما ناموفق بود:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید همه مکان نماهای سفارشی را حذف کنید؟ این قابل واگرد نیست.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>هیچ مکان‌نمای قفل شیفت سفارشی برای حذف یافت نشد.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>هیچ نشانگر فلشی سفارشی برای حذف یافت نشد.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>هیچ مکان‌نمای سفارشی برای حذف یافت نشد.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>هیچ مکان‌نمای سفارشی IBeam برای حذف یافت نشد.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>صدای مرگ اضافه نشد:</value>
@@ -1782,6 +1692,90 @@
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>یک صدای مرگ سفارشی را انتخاب کنید</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>ویژگی ها باز نشد:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>و</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>نمایان بودن نشان</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>قابلیت مشاهده نشان های کاربر را تغییر دهید.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>نام بازیکنان</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>قابلیت مشاهده نام بازیکنان را تغییر دهید.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>دقیقه</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>دقیقه</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>مکث وکسلایزر</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>سایه‌های پخته را برای بهبود عملکرد غیرفعال می‌کند، اما ممکن است باعث مشکلات نوری در برخی بازی‌ها شود.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>کوچک کردن به سینی</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>در صورت به حداقل رساندن، Roblox را در سینی سیستم در حال اجرا نگه دارید.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>سینی سیستم مدال</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>هنگام کلیک کردن روی نماد سینی سیستم، یک منوی کاربردی نشان دهید.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>تم برنامه Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>انتخاب کنید که Roblox از کدام تم استفاده کند.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>به روز رسانی Roblox را متوقف کنید</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>از به روز رسانی Roblox جلوگیری کنید. Roblox در نسخه نصب شده فعلی باقی خواهد ماند.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>نسخه قبلی را نصب کنید</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>نسخه Roblox را که قبل از نسخه فعلی زنده بود، دانلود و نصب کنید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>نماد سفارشی Roblox</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>یک فایل .ico سفارشی را برای جایگزینی نماد پخش کننده Roblox انتخاب کنید.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>نمی‌توان نسخه قبلی Roblox را از تاریخچه نسخه واکشی کرد. در عوض با آخرین نسخه راه اندازی می شود.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>نسخه قبلی Roblox ({0}) بیش از 7 روز است و قابل استفاده نیست.\nدر عوض آخرین نسخه را نصب کنید.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>یک مکان نما سفارشی را انتخاب کنید</value>
@@ -1797,9 +1791,6 @@
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>حذف همه</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>ویژگی ها باز نشد:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>مجموعه واردات</value>
@@ -1830,5 +1821,49 @@
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>حذف کنید</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>یک پیش تنظیم مکان نما در حال حاضر فعال است. قبل از افزودن مکان نما سفارشی، ابتدا مکان نما ماوس را روی پیش فرض قرار دهید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>شما فایل های مکان نما سفارشی را نصب کرده اید. پیش تنظیم ممکن است با آنها تضاد داشته باشد.
+اگر به نظر نمی رسد که از پیش تنظیم شده کار کند، نشانگرهای سفارشی خود را بردارید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>یک مکان نما از پیش تنظیم شده فعال است. برای استفاده از نشانگرهای سفارشی، نشانگر ماوس را روی پیش فرض قرار دهید.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>{0} اضافه نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>برخی از فایل ها حذف نشد:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>هیچ نشانگر سفارشی برای صادرات وجود ندارد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>مجموعه مکان نما صادر شد به:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>وارد کردن مجموعه مکان نما انجام نشد: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>مجموعه مکان نما صادر نشد: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>آیا مطمئن هستید که می خواهید همه مکان نماهای سفارشی را حذف کنید؟ این قابل واگرد نیست.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>هیچ مکان‌نمای قفل شیفت سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>هیچ نشانگر فلشی سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>هیچ مکان‌نمای سفارشی برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>هیچ مکان‌نمای سفارشی IBeam برای حذف یافت نشد.</value>
   </data>
 </root>

@@ -58,13 +58,23 @@
             set => App.Settings.Prop.AutoCloseCrashHandler = value;
         }
 
-        public bool DisableRobloxTray
+        public bool MinimizeToTray
         {
-            get => App.Settings.Prop.DisableRobloxTray;
+            get => App.Settings.Prop.MinimizeToTray;
             set
             {
-                App.Settings.Prop.DisableRobloxTray = value;
-                OnPropertyChanged(nameof(DisableRobloxTray));
+                App.Settings.Prop.MinimizeToTray = value;
+                OnPropertyChanged(nameof(MinimizeToTray));
+            }
+        }
+
+        public bool EnableTrayModal
+        {
+            get => App.Settings.Prop.EnableTrayModal;
+            set
+            {
+                App.Settings.Prop.EnableTrayModal = value;
+                OnPropertyChanged(nameof(EnableTrayModal));
             }
         }
 
@@ -140,6 +150,12 @@
 
         public IEnumerable<CleanerOptions> CleanerOptions { get; } = CleanerOptionsEx.Selections;
 
+        public IEnumerable<string> AppThemeOptions { get; } = new List<string>
+        {
+            "Light",
+            "Dark"
+        };
+
         public CleanerOptions CleanerOption
         {
             get => App.Settings.Prop.CleanerOptions;
@@ -184,6 +200,15 @@
                     CleanerItems.Add("BubblestrapLogs");
                 else
                     CleanerItems.Remove("BubblestrapLogs");
+            }
+        }
+        public string SelectedAppTheme
+        {
+            get => App.Settings.Prop.RobloxTheme;
+            set
+            {
+                App.Settings.Prop.RobloxTheme = value;
+                OnPropertyChanged(nameof(SelectedAppTheme));
             }
         }
     }

@@ -41,7 +41,6 @@ namespace Bloxstrap.RobloxInterfaces
                 _fetchLock.Release();
             }
         }
-
         private async Task<Dictionary<string, string>> FetchInternal(string path)
         {
             string[] hosts = { "https://clientsettingscdn.roblox.com", "https://clientsettings.roblox.com" };

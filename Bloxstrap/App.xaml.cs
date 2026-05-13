@@ -8,9 +8,6 @@ using System.Windows.Threading;
 
 namespace Bloxstrap
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
         public const string ProjectName = "Bubblestrap";
@@ -108,7 +105,6 @@ namespace Bloxstrap
                 return;
 
             _showingExceptionDialog = true;
-            SendLog();
 
             if (Bootstrapper?.Dialog != null)
             {
@@ -154,11 +150,6 @@ namespace Bloxstrap
             }
 
             return null;
-        }
-
-        public static void SendLog()
-        {
-            // Implement logging logic here
         }
 
         public static void AssertWindowsOSVersion()
@@ -278,7 +269,6 @@ namespace Bloxstrap
                 if (Paths.Process != Paths.Application && !File.Exists(Paths.Application))
                     File.Copy(Paths.Process, Paths.Application);
 
-                // Instead of Logger.Initialize(true);
                 Logger.Initialize(Paths.Base, LaunchSettings.UninstallFlag.Active);
 
                 if (!Logger.Initialized && !Logger.NoWriteMode)
@@ -299,6 +289,21 @@ namespace Bloxstrap
                 if (!Locale.SupportedLocales.ContainsKey(Settings.Prop.Locale))
                 {
                     Settings.Prop.Locale = "nil";
+                    Settings.Save();
+                }
+
+                if (Settings.Prop.Theme == Enums.Theme.Default)
+                {
+                    Settings.Prop.Theme = Enums.Theme.Dark;
+                    Settings.Save();
+                }
+
+                if (State.Prop.ForceReinstall && Settings.Prop.UsePreviousVersion)
+                {
+                    Logger.WriteLine(LOG_IDENT, "Conflict detected: ForceReinstall and UsePreviousVersion both true -- disabling both.");
+                    State.Prop.ForceReinstall = false;
+                    Settings.Prop.UsePreviousVersion = false;
+                    State.Save();
                     Settings.Save();
                 }
 

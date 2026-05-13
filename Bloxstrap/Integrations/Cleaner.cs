@@ -103,7 +103,6 @@
             // normalize the path here so "..\Windows" can't bypass your check
             string checkedPath = Path.GetFullPath(file);
 
-            // TODO add more safety checks? probably done? - bloxxy
             if (!checkedPath.Contains("Roblox", StringComparison.OrdinalIgnoreCase) &&
                 !checkedPath.Contains(App.ProjectName, StringComparison.OrdinalIgnoreCase) &&
                 !checkedPath.Contains(Paths.Base, StringComparison.OrdinalIgnoreCase))

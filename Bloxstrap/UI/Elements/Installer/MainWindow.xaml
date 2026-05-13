@@ -53,29 +53,38 @@
                 <Frame x:Name="RootFrame" Grid.Row="1" />
             </Grid>
         </Grid>
+        <Border Grid.Row="2" VerticalAlignment="Bottom" Height="52" Background="{ui:ThemeResource ControlFillColorDefaultBrush}" BorderBrush="{ui:ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="0,1,0,0" CornerRadius="12,12,0,0" Padding="20,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
 
-        <StatusBar x:Name="RootStatusBar" Grid.Row="2" Padding="14,10" Background="{ui:ThemeResource ApplicationBackgroundBrush}" BorderThickness="0,1,0,0">
-            <StatusBar.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </ItemsPanelTemplate>
-            </StatusBar.ItemsPanel>
-            <StatusBarItem Grid.Column="1" Padding="0,0,4,0">
-                <ui:Button Content="{x:Static resources:Strings.Common_Navigation_Back}" Width="{Binding ButtonWidth, Mode=OneTime}" Command="{Binding BackPageCommand, Mode=OneWay}" IsEnabled="{Binding BackButtonEnabled, Mode=OneWay}" FontWeight="Medium" />
-            </StatusBarItem>
-            <StatusBarItem Grid.Column="2" Padding="4,0,4,0">
-                <ui:Button Name="NextButton" Content="{Binding NextButtonText, Mode=OneWay}" Width="{Binding ButtonWidth, Mode=OneTime}" Command="{Binding NextPageCommand, Mode=OneWay}" IsEnabled="True" FontWeight="Medium" />
-            </StatusBarItem>
-            <StatusBarItem Grid.Column="3" Padding="12,0,0,0">
-                <ui:Button Content="{x:Static resources:Strings.Common_Close}" Width="{Binding ButtonWidth, Mode=OneTime}" Command="{Binding CloseWindowCommand, Mode=OneWay}" FontWeight="Medium" />
-            </StatusBarItem>
-        </StatusBar>
+                <ui:Button Grid.Column="1" 
+                   Content="{x:Static resources:Strings.Common_Navigation_Back}" 
+                   Width="{Binding ButtonWidth, Mode=OneTime}" 
+                   Command="{Binding BackPageCommand, Mode=OneWay}" 
+                   IsEnabled="{Binding BackButtonEnabled, Mode=OneWay}" 
+                   Margin="0,0,8,0"
+                   FontWeight="Medium" />
+
+                <ui:Button Grid.Column="2" 
+                   Name="NextButton" 
+                   Appearance="Primary"
+                   Content="{Binding NextButtonText, Mode=OneWay}" 
+                   Width="{Binding ButtonWidth, Mode=OneTime}" 
+                   Command="{Binding NextPageCommand, Mode=OneWay}" 
+                   Margin="0,0,12,0"
+                   FontWeight="Medium" />
+
+                <ui:Button Grid.Column="3" 
+                   Content="{x:Static resources:Strings.Common_Close}" 
+                   Width="{Binding ButtonWidth, Mode=OneTime}" 
+                   Command="{Binding CloseWindowCommand, Mode=OneWay}" 
+                   FontWeight="Medium" />
+            </Grid>
+        </Border>
     </Grid>
 </base:WpfUiWindow>

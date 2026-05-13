@@ -11,7 +11,7 @@ namespace Bloxstrap.Models.Persistable
         public BootstrapperIcon BootstrapperIcon { get; set; } = BootstrapperIcon.IconBubblestrap;
         public string BootstrapperTitle { get; set; } = App.ProjectName;
         public string BootstrapperIconCustomLocation { get; set; } = "";
-        public Theme Theme { get; set; } = Theme.Default;
+        public Theme Theme { get; set; } = Theme.Dark;
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public bool DeveloperMode { get; set; } = false;
         public bool ForceLocalData { get; set; } = false;
@@ -28,6 +28,8 @@ namespace Bloxstrap.Models.Persistable
         public bool UseFastFlagManager { get; set; } = true;
         public bool WPFSoftwareRender { get; set; } = false;
         public bool UpdateRoblox { get; set; } = true;
+        public bool StopRobloxUpdates { get; set; } = false;
+        public bool UsePreviousVersion { get; set; } = false;
         public bool StaticDirectory { get; set; } = false;
         public string Channel { get; set; } = RobloxInterfaces.Deployment.DefaultChannel;
         public ChannelChangeMode ChannelChangeMode { get; set; } = ChannelChangeMode.Automatic;
@@ -35,8 +37,12 @@ namespace Bloxstrap.Models.Persistable
         public string DownloadingStringFormat { get; set; } = Strings.Bootstrapper_Status_Downloading + " {0} - {1}MB / {2}MB";
         public string? SelectedCustomTheme { get; set; } = null;
         public bool BackgroundUpdatesEnabled { get; set; } = false;
-        public bool DisableRobloxTray { get; set; } = true;
+        public bool MinimizeToTray { get; set; } = false;
+        public bool EnableTrayModal { get; set; } = false;
         public bool LaunchOnStartup { get; set; } = false;
+        public string RobloxTheme { get; set; } = "Dark";
+        public RobloxIcon CustomRobloxIcon { get; set; } = RobloxIcon.Default;
+        public string CustomRobloxIconLocation { get; set; } = string.Empty;
         public bool DebugDisableVersionPackageCleanup { get; set; } = false;
         public WebEnvironment WebEnvironment { get; set; } = WebEnvironment.Production;
 

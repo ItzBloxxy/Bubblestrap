@@ -281,30 +281,6 @@ Kung hindi, paki ulat itong pagbubukod, gamit ang [GitHub issue]({1}) kasama ang
   <data name="Enums.EmojiType.Windows8" xml:space="preserve">
     <value>Windows 8</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V1" xml:space="preserve">
-    <value>2015 (V1)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V2" xml:space="preserve">
-    <value>2020 (V2)</value>
-  </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4" xml:space="preserve">
-    <value>2023 (V4)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Pinili ng laro</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
-    <value>Future (Phase 3)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.ShadowMap" xml:space="preserve">
-    <value>Shadow Map (Phase 2)</value>
-  </data>
-  <data name="Enums.FlagPresets.LightingMode.Voxel" xml:space="preserve">
-    <value>Voxel (Phase 1)</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
-    <value>Direct3D 10</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D11" xml:space="preserve">
     <value>Direct3D 11</value>
   </data>
@@ -464,10 +440,6 @@ Kung hindi, paki ulat itong pagbubukod, gamit ang [GitHub issue]({1}) kasama ang
   </data>
   <data name="Menu.FastFlagEditor.Back" xml:space="preserve">
     <value>Balik</value>
-  </data>
-  <data name="Menu.FastFlagEditor.BannerText" xml:space="preserve">
-    <value>Ang maling paggamit nito ay maaring magdulot ng instability o hindi inaasahang bagay.</value>
-    <comment>The element that this string is rendered in *cannot be wrapped* and may be truncated when displayed if too long. If so, try and paraphrase a shortened version.</comment>
   </data>
   <data name="Menu.FastFlagEditor.ConflictingImport" xml:space="preserve">
     <value>Ang ilang mga flag na sinusubukan mong i-import ay mayroon nang mga itinakdang halaga. Gusto mo bang palitan ang kanilang kasalukuyang mga halaga gamit ang mga itinakda sa pag-import?
@@ -714,9 +686,6 @@ Ang pagpili ng 'Hindi' ay hindi papansinin ang babalang ito at itutuloy ang pag-
   <data name="Menu.Appearance.Language.Description" xml:space="preserve">
     <value>Kailan ng relaunch para ang pagbabago ay gumana.</value>
   </data>
-  <data name="Enums.FlagPresets.InGameMenuVersion.V4Chrome" xml:space="preserve">
-    <value>2023 (V4 + New UI)</value>
-  </data>
   <data name="Menu.FastFlags.Presets.Categories.Rendering" xml:space="preserve">
     <value>Rendering at Graphics</value>
   </data>
@@ -731,9 +700,6 @@ Ang pagpili ng 'Hindi' ay hindi papansinin ang babalang ito at itutuloy ang pag-
   </data>
   <data name="Menu.FastFlags.Presets.MSAA.Title" xml:space="preserve">
     <value>Anti-aliasing quality (MSAA)</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.FullscreenTitlebar.Description" xml:space="preserve">
-    <value>Hindi siya ipinapakita pag ginalaw mo ang iyong mouse sa tuktok ng screen.</value>
   </data>
   <data name="Dialog.Connectivity.UnableToDownload" xml:space="preserve">
     <value>Hindi maka-download ng Roblox ang Bubblestrap</value>
@@ -1387,12 +1353,6 @@ Uptime: {1}</value>
   <data name="Common.Debug" xml:space="preserve">
     <value>I-debug</value>
   </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu" xml:space="preserve">
-    <value>Menu ng Roblox</value>
-  </data>
-  <data name="Menu.FastFlags.Presets.Categories.IngameMenu.Description" xml:space="preserve">
-    <value>Debloat Roblox menu na may mga FFlag</value>
-  </data>
   <data name="Common.Deployment" xml:space="preserve">
     <value>Deployment</value>
   </data>
@@ -1715,61 +1675,11 @@ Gusto mo bang ilipat ang iyong ginustong channel sa {0}?</value>
   <data name="Menu.GBSEditor.VRVignette.Description" xml:space="preserve">
     <value>Naglalapat ng VR vignette na nagpapadilim sa mga gilid ng screen upang mabawasan ang pagkahilo.</value>
   </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Title" xml:space="preserve">
-    <value>Huwag paganahin ang Roblox System Tray</value>
-  </data>
-  <data name="Menu.Behaviour.DisableRobloxTray.Description" xml:space="preserve">
-    <value>Pinipigilan ang Roblox na manatiling minimize sa system tray.</value>
-  </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Title" xml:space="preserve">
     <value>Patakbuhin ang Roblox sa startup</value>
   </data>
   <data name="Menu.Behaviour.LaunchOnStartup.Description" xml:space="preserve">
     <value>Awtomatikong sinisimulan ang Roblox kapag nag-log in ka sa iyong PC.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
-    <value>Kasalukuyang aktibo ang isang preset ng cursor. Itakda muna ang Mouse Cursor sa Default bago magdagdag ng custom na cursor.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
-    <value>Mayroon kang naka-install na custom na cursor file. Maaaring sumalungat sa kanila ang preset.
-Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
-    <value>Aktibo ang isang preset ng cursor. Itakda ang Mouse Cursor sa Default upang gumamit ng mga custom na cursor.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
-    <value>Nabigong idagdag ang {0}:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
-    <value>Nabigong alisin ang ilang file:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
-    <value>Walang mga custom na cursor na ie-export.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
-    <value>Na-export ang set ng cursor sa:
-{0}</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
-    <value>Nabigong i-import ang set ng cursor:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
-    <value>Nabigong i-export ang set ng cursor:</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
-    <value>Sigurado ka bang gusto mong alisin ang lahat ng custom na cursor? Hindi na ito maaaring bawiin.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
-    <value>Walang nahanap na custom na shift lock cursor na aalisin.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
-    <value>Walang nakitang custom na arrow cursor upang alisin.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
-    <value>Walang nahanap na custom na arrow malayong cursor upang alisin.</value>
-  </data>
-  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
-    <value>Walang nakitang custom na cursor ng IBeam na aalisin.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.AddFailed" xml:space="preserve">
     <value>Nabigong magdagdag ng death sound:</value>
@@ -1779,6 +1689,90 @@ Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomDeathSound.Select" xml:space="preserve">
     <value>Pumili ng Custom na Death Sound</value>
+  </data>
+  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
+    <value>Hindi mabuksan ang mga katangian:</value>
+  </data>
+  <data name="Common.Day" xml:space="preserve">
+    <value>araw</value>
+  </data>
+  <data name="Common.Days" xml:space="preserve">
+    <value>araw</value>
+  </data>
+  <data name="Common.Hour" xml:space="preserve">
+    <value>oras</value>
+  </data>
+  <data name="Common.Hours" xml:space="preserve">
+    <value>oras</value>
+  </data>
+  <data name="Common.And" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Title" xml:space="preserve">
+    <value>Visibility ng Badge</value>
+  </data>
+  <data name="Menu.GBSEditor.BadgeVisibility.Description" xml:space="preserve">
+    <value>I-toggle ang visibility ng mga badge ng user.</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Title" xml:space="preserve">
+    <value>Mga Pangalan ng Manlalaro</value>
+  </data>
+  <data name="Menu.GBSEditor.PlayerNames.Description" xml:space="preserve">
+    <value>I-toggle ang visibility ng mga pangalan ng player.</value>
+  </data>
+  <data name="Common.Minutes" xml:space="preserve">
+    <value>minuto</value>
+  </data>
+  <data name="Common.Minute" xml:space="preserve">
+    <value>minuto</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Title" xml:space="preserve">
+    <value>I-pause ang voxelizer</value>
+  </data>
+  <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
+    <value>Hindi pinapagana ang mga inihurnong anino upang mapabuti ang pagganap, ngunit maaaring magdulot ng mga isyu sa pag-iilaw sa ilang laro.</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Title" xml:space="preserve">
+    <value>I-minimize sa Tray</value>
+  </data>
+  <data name="Menu.Behaviour.MinimizeToTray.Description" xml:space="preserve">
+    <value>Panatilihing tumatakbo ang Roblox sa system tray kapag na-minimize.</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Title" xml:space="preserve">
+    <value>System Tray Modal</value>
+  </data>
+  <data name="Menu.Behaviour.SystemTrayModal.Description" xml:space="preserve">
+    <value>Magpakita ng functional na menu kapag nag-click sa icon ng system tray.</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Title" xml:space="preserve">
+    <value>Tema ng Roblox App</value>
+  </data>
+  <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
+    <value>Piliin kung aling tema ang dapat gamitin ng Roblox.</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
+    <value>Itigil ang pag-update ng Roblox</value>
+  </data>
+  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <value>Pigilan ang pag-update ng Roblox. Mananatili ang Roblox sa kasalukuyang naka-install na bersyon.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>I-install ang nakaraang bersyon</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>I-download at i-install ang bersyon ng Roblox na live bago ang kasalukuyang bersyon.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
+    <value>Custom na Roblox Icon</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
+    <value>Pumili ng custom na .ico file para palitan ang icon ng Roblox player.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Hindi makuha ang nakaraang bersyon ng Roblox mula sa history ng bersyon. Ang paglulunsad gamit ang pinakabagong bersyon sa halip.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Ang nakaraang bersyon ng Roblox ({0}) ay higit sa 7 araw at hindi magagamit.\nI-install sa halip ang pinakabagong bersyon.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Pumili ng Custom na Cursor</value>
@@ -1794,9 +1788,6 @@ Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.RemoveAll" xml:space="preserve">
     <value>Alisin Lahat</value>
-  </data>
-  <data name="Common.CompatSettings.OpenFailed" xml:space="preserve">
-    <value>Hindi mabuksan ang mga katangian:</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Import" xml:space="preserve">
     <value>Import Set</value>
@@ -1827,5 +1818,49 @@ Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.Remove" xml:space="preserve">
     <value>Alisin</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveWarning" xml:space="preserve">
+    <value>Kasalukuyang aktibo ang isang preset ng cursor. Itakda muna ang Mouse Cursor sa Default bago magdagdag ng custom na cursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetConflictWarning" xml:space="preserve">
+    <value>Mayroon kang naka-install na custom na cursor file. Maaaring sumalungat sa kanila ang preset.
+Alisin ang iyong mga custom na cursor kung hindi gumagana ang preset.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.PresetActiveLabel" xml:space="preserve">
+    <value>Aktibo ang isang preset ng cursor. Itakda ang Mouse Cursor sa Default upang gumamit ng mga custom na cursor.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.AddFailed" xml:space="preserve">
+    <value>Nabigong idagdag ang {0}:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveFailed" xml:space="preserve">
+    <value>Nabigong alisin ang ilang file:</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NoneToExport" xml:space="preserve">
+    <value>Walang mga custom na cursor na ie-export.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportSuccess" xml:space="preserve">
+    <value>Na-export ang set ng cursor sa:
+{0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ImportFailed" xml:space="preserve">
+    <value>Nabigong i-import ang set ng cursor: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.ExportFailed" xml:space="preserve">
+    <value>Nabigong i-export ang set ng cursor: {0}</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.RemoveAllConfirm" xml:space="preserve">
+    <value>Sigurado ka bang gusto mong alisin ang lahat ng custom na cursor? Hindi na ito maaaring bawiin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Shiftlock" xml:space="preserve">
+    <value>Walang nahanap na custom na shift lock cursor na aalisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.Arrow" xml:space="preserve">
+    <value>Walang nakitang custom na arrow cursor upang alisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.ArrowFar" xml:space="preserve">
+    <value>Walang nahanap na custom na arrow malayong cursor upang alisin.</value>
+  </data>
+  <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
+    <value>Walang nakitang custom na cursor ng IBeam na aalisin.</value>
   </data>
 </root>

@@ -2,31 +2,32 @@
 {
     internal static class Time
     {
-        // TODO:
-        // - use Strings for this
-        // - not hardcode 0 minutes in NotifyIconWrapper.cs
         public static string FormatTimeSpan(TimeSpan timeSpan)
         {
-            Func<Tuple<int, string>, string> tupleFormatter = t => $"{t.Item1} {t.Item2}{(t.Item1 == 1 ? string.Empty : "s")}";
-            var components = new List<Tuple<int, string>>
-            {
-                Tuple.Create((int) timeSpan.TotalDays, "day"),
-                Tuple.Create(timeSpan.Hours, "hour"),
-                Tuple.Create(timeSpan.Minutes, "minute")
-            };
+            var components = new List<Tuple<int, string, string>>();
 
-            components.RemoveAll(i => i.Item1 == 0);
+            if ((int)timeSpan.TotalDays > 0)
+                components.Add(Tuple.Create((int)timeSpan.TotalDays, Strings.Common_Day, Strings.Common_Days));
 
-            string extra = "";
+            if (timeSpan.Hours > 0)
+                components.Add(Tuple.Create(timeSpan.Hours, Strings.Common_Hour, Strings.Common_Hours));
 
-            if (components.Count > 1)
-            {
-                var finalComponent = components[components.Count - 1];
-                components.RemoveAt(components.Count - 1);
-                extra = $" and {tupleFormatter(finalComponent)}";
-            }
+            if (timeSpan.Minutes > 0)
+                components.Add(Tuple.Create(timeSpan.Minutes, Strings.Common_Minute, Strings.Common_Minutes));
 
-            return $"{string.Join(", ", components.Select(tupleFormatter))}{extra}";
+            if (components.Count == 0)
+                return $"0 {Strings.Common_Minutes}";
+
+            Func<Tuple<int, string, string>, string> formatter = t =>
+                $"{t.Item1} {(t.Item1 == 1 ? t.Item2 : t.Item3)}";
+
+            if (components.Count == 1)
+                return formatter(components[0]);
+
+            string lastComponent = formatter(components.Last());
+            string otherComponents = string.Join(", ", components.Take(components.Count - 1).Select(formatter));
+
+            return $"{otherComponents} {Strings.Common_And} {lastComponent}";
         }
     }
 }

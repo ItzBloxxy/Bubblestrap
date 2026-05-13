@@ -54,12 +54,12 @@ namespace Bloxstrap.UI.ViewModels.Installer
 
         public bool ImportSettingsEnabled
         {
-            get => Directory.Exists(installer.BloxstrapInstallDirectory);
+            get => Directory.Exists(installer.FishstrapInstallDirectory);
         }
 
         public bool ShowNotFound // im lazy
         {
-            get => !Directory.Exists(installer.BloxstrapInstallDirectory);
+            get => !Directory.Exists(installer.FishstrapInstallDirectory);
         }
 
         public ICommand BrowseInstallLocationCommand => new RelayCommand(BrowseInstallLocation);
