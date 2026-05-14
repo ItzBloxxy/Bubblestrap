@@ -4485,7 +4485,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Only show your avatar icon. Hides your username from your status on hover..
+        ///   Looks up a localized string similar to Show only your avatar icon..
         /// </summary>
         public static string Menu_Integrations_ShowAccountOnProfile_HideUsername_Description {
             get {
@@ -4494,7 +4494,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hide name from status.
+        ///   Looks up a localized string similar to Hide username.
         /// </summary>
         public static string Menu_Integrations_ShowAccountOnProfile_HideUsername_Title {
             get {

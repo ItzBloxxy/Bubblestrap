@@ -1881,9 +1881,9 @@ Bubblestrap 的安装路径是：
     <value>以下是那些为Bubblestrap做出突出贡献、助力其发展至今的人士。</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
-    <value>在状态中隐藏姓名</value>
+    <value>隐藏用户名</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
-    <value>仅显示您的头像。将鼠标悬停在状态上时，隐藏您的用户名。</value>
+    <value>仅显示您的头像。</value>
   </data>
 </root>

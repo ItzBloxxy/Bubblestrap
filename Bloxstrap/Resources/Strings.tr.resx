@@ -1,45 +1,45 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" ?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" />
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string" />
-              <xs:attribute name="type" type="xsd:string" />
-              <xs:attribute name="mimetype" type="xsd:string" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string" />
-              <xs:attribute name="name" type="xsd:string" />
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" />
+              <xs:attribute name="name" type="xsd:string" use="required"/>
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -1016,7 +1016,7 @@ Lütfen Roblox'un dosyalarını kullanabiliyor olan uygulamaları kapatın, ve t
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Bağlantı zaman aşımına uğradı, bu da zayıf bir internet bağlantısının veya bir güvenlik duvarı engelinin işareti olabilir.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>Roblox ve Bubblestrap için dağıtım ve kurulum ayarlarını değiştirin.</value>
   </data>
@@ -1864,9 +1864,9 @@ Bunun yerine en son sürümü yüklüyorum.</value>
     <value>Bunlar, Bubblestrap'e önemli katkılarda bulunarak bugünkü haline gelmesine yardımcı olan kişilerdir.</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
-    <value>Durumdan adı gizle</value>
+    <value>Kullanıcı adını gizle</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
-    <value>Sadece avatar resmini göster. Fareyi üzerine getirdiğinde durum mesajındaki kullanıcı adını gizler.</value>
+    <value>Sadece avatar resmini göster.</value>
   </data>
 </root>

@@ -470,7 +470,6 @@ namespace Bloxstrap
             }
 
             if (!App.LaunchSettings.VersionFlag.Active)
-
             {
                 ClientVersion clientVersion;
 

@@ -1,45 +1,45 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" ?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" />
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string" />
-              <xs:attribute name="type" type="xsd:string" />
-              <xs:attribute name="mimetype" type="xsd:string" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string" />
-              <xs:attribute name="name" type="xsd:string" />
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" />
+              <xs:attribute name="name" type="xsd:string" use="required"/>
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -1862,9 +1862,9 @@
     <value>اینها افرادی هستند که کمک های قابل توجهی به Bubblestrap کرده اند و به تبدیل شدن آن به آنچه هست کمک کرده اند.</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
-    <value>پنهان کردن نام از وضعیت</value>
+    <value>پنهان کردن نام کاربری</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
-    <value>فقط نماد آواتار خود را نشان دهید. نام کاربری شما را در حالت شناور پنهان می کند.</value>
+    <value>فقط نماد آواتار خود را نشان دهید.</value>
   </data>
 </root>

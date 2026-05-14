@@ -1857,9 +1857,9 @@ Bubblestrap 已安裝在 "{1}"。</value>
     <value>以下這些人對 Bubblestrap 做出了顯著貢獻，協助它發展成今日的模樣。</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
-    <value>在狀態中隱藏名稱</value>
+    <value>隱藏使用者名稱</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
-    <value>僅顯示您的頭像圖示。將您的使用者名稱隱藏於懸停時的狀態中。</value>
+    <value>僅顯示您的頭像圖示。</value>
   </data>
 </root>

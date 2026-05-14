@@ -1,45 +1,45 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" ?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" />
+                <xs:element name="value" type="xsd:string" minOccurs="0"/>
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string" />
-              <xs:attribute name="type" type="xsd:string" />
-              <xs:attribute name="mimetype" type="xsd:string" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" use="required" type="xsd:string"/>
+              <xs:attribute name="type" type="xsd:string"/>
+              <xs:attribute name="mimetype" type="xsd:string"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string" />
-              <xs:attribute name="name" type="xsd:string" />
+              <xs:attribute name="alias" type="xsd:string"/>
+              <xs:attribute name="name" type="xsd:string"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
-              <xs:attribute ref="xml:space" />
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
+              <xs:attribute ref="xml:space"/>
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" />
+              <xs:attribute name="name" type="xsd:string" use="required"/>
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -1028,7 +1028,7 @@ Robloxのアプリファイルを使用している可能性のあるアプリ�
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>インターネット接続がタイムアウトしました。インターネット回線が不安定、またはファイアウォールによるブロックの可能性があります。</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>Roblox および Bubblestrap のデプロイおよびインストール設定を変更する。</value>
   </data>
@@ -1879,9 +1879,9 @@ Robloxのアプリファイルを使用している可能性のあるアプリ�
     <value>以下は、Bubblestrapの発展に多大な貢献をし、現在の姿を作り上げてくれた方々です。</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
-    <value>ステータスから名前を非表示にする</value>
+    <value>ユーザー名を非表示にする</value>
   </data>
   <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
-    <value>アバターアイコンのみを表示します。マウスオーバー時にステータスからユーザー名を非表示にします。</value>
+    <value>アバターアイコンのみを表示する。</value>
   </data>
 </root>
