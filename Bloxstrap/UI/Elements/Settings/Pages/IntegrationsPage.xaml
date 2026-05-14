@@ -64,12 +64,31 @@
             <ui:ToggleSwitch IsChecked="{Binding DiscordActivityJoinEnabled, Mode=TwoWay}" />
         </controls:OptionControl>
 
-        <controls:OptionControl 
-            Header="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_Title}" 
-            Description="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_Description}"
-            IsEnabled="{Binding InnerContent.IsChecked, ElementName=DiscordActivityOption, Mode=OneWay}">
-            <ui:ToggleSwitch IsChecked="{Binding DiscordAccountOnProfile, Mode=TwoWay}" />
-        </controls:OptionControl>
+        <ui:CardExpander Margin="0,8,0,0" IsExpanded="False"
+                 IsEnabled="{Binding InnerContent.IsChecked, ElementName=DiscordActivityOption, Mode=OneWay}">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock FontSize="14" Text="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_Title}" />
+                        <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_Description}" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+                    </StackPanel>
+                    <ui:ToggleSwitch Grid.Column="1" IsChecked="{Binding DiscordAccountOnProfile, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,25,0" />
+                </Grid>
+            </ui:CardExpander.Header>
+
+            <StackPanel>
+                <controls:OptionControl
+            Header="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_HideUsername_Title}"
+            Description="{x:Static resources:Strings.Menu_Integrations_ShowAccountOnProfile_HideUsername_Description}"
+            IsEnabled="{Binding DiscordAccountOnProfile, Mode=OneWay}">
+                    <ui:ToggleSwitch IsChecked="{Binding DiscordAccountAvatarOnly, Mode=TwoWay}" />
+                </controls:OptionControl>
+            </StackPanel>
+        </ui:CardExpander>
 
         <TextBlock Text="{x:Static resources:Strings.Common_Miscellaneous}" FontSize="20" FontWeight="Medium" Margin="0,16,0,0" />
 

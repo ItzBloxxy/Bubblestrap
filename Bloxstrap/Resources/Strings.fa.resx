@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -310,9 +310,6 @@
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>کد</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>این افراد کسانی هستند که مشارکت‌های قابل توجهی در بلاکسترپ داشته‌اند و کمک کرده‌اند تا به این چیزی که اکنون هست، تبدیل بشود.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>ایده های قابلیت</value>
@@ -919,9 +916,6 @@
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>دوباره ملحق شوید</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>بازی فعلی شما در وضعیت دیسکورد شما نشان داده نخواهد شد زیرا هنگام بارگیری اطلاعات بازی خطایی رخ داده است.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>تاریخچه بازی فقط برای همین نشست روبلاکس ضبط می‌شود. بازی‌ها در این لیست، زمانی که از آن‌ها خارج می‌شوید یا تلپورت می‌کنید نمایان می‌شوند. همه سرورها قابل وارد شدن مجدد نخواهند بود.</value>
   </data>
@@ -1295,9 +1289,6 @@
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>به سرور دیسکورد ما بپیوندید</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>اوپن‌جی‌ال</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>آتشفشان</value>
@@ -1753,29 +1744,11 @@
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>انتخاب کنید که Roblox از کدام تم استفاده کند.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>به روز رسانی Roblox را متوقف کنید</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>از به روز رسانی Roblox جلوگیری کنید. Roblox در نسخه نصب شده فعلی باقی خواهد ماند.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>نسخه قبلی را نصب کنید</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>نسخه Roblox را که قبل از نسخه فعلی زنده بود، دانلود و نصب کنید.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>نماد سفارشی Roblox</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>یک فایل .ico سفارشی را برای جایگزینی نماد پخش کننده Roblox انتخاب کنید.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>نمی‌توان نسخه قبلی Roblox را از تاریخچه نسخه واکشی کرد. در عوض با آخرین نسخه راه اندازی می شود.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>نسخه قبلی Roblox ({0}) بیش از 7 روز است و قابل استفاده نیست.\nدر عوض آخرین نسخه را نصب کنید.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>یک مکان نما سفارشی را انتخاب کنید</value>
@@ -1865,5 +1838,33 @@
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>هیچ مکان‌نمای سفارشی IBeam برای حذف یافت نشد.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>از ارتقاء Roblox صرف نظر کنید</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>نمی‌توان نسخه قبلی Roblox را از تاریخچه نسخه واکشی کرد. در عوض با آخرین نسخه راه اندازی می شود.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>نسخه قبلی Roblox ({0}) بیش از 14 روز است و قابل استفاده نیست.
+به جای آن آخرین نسخه را نصب کنید.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>از به روز رسانی Roblox جلوگیری کنید. Roblox در نسخه نصب شده فعلی باقی خواهد ماند.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>نسخه قبلی را نصب کنید</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>نسخه Roblox را که قبل از نسخه فعلی زنده بود، دانلود و نصب کنید.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>اینها افرادی هستند که کمک های قابل توجهی به Bubblestrap کرده اند و به تبدیل شدن آن به آنچه هست کمک کرده اند.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>پنهان کردن نام از وضعیت</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>فقط نماد آواتار خود را نشان دهید. نام کاربری شما را در حالت شناور پنهان می کند.</value>
   </data>
 </root>

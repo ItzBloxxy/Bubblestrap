@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -310,9 +310,6 @@ Jika belum, sila laporkan masalah tersebut melalui [isu GitHub]({1}) bersama den
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>Kod</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Berikut adalah individu yang telah memberi sumbangan besar kepada Bubblestrap, membantu membentuknya menjadi seperti yang ada sekarang.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Idea dan Fungsi</value>
@@ -916,9 +913,6 @@ Periksa sama ada Roblox berfungsi dengan [pelancar asal] ({1}). Jika tidak, ini 
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>Sertai semula</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>Permainan semasa anda tidak akan dipaparkan dalam Discord presence anda, hal ini kerana berlakunya ralat semasa memuat maklumat permainan.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>Rekod sejarah permainan anda hanya akan disimpan untuk sesi Roblox yang sedang aktif. Permainan akan dipaparkan di sini apabila anda meninggalkannya atau meretas jarak di dalam permainan. Tidak semua server boleh dimasuki semula.</value>
   </data>
@@ -1020,7 +1014,7 @@ Sila tutup sebarang aplikasi yang mungkin menggunakan fail Roblox, dan cuba lagi
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Sambungan anda telah tamat masa, yang mungkin menunjukkan bahawa sambungan internet anda yang lemah atau terdapat sekatan firewall.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>Tukar tetapan penempatan dan pemasangan untuk Roblox &amp; Bubblestrap.</value>
   </data>
@@ -1312,9 +1306,6 @@ Masa aktif: {1}</value>
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>Sertai pelayan Discord kami</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>Vulkan</value>
@@ -1755,29 +1746,11 @@ Adakah anda ingin menukar saluran pilihan anda kepada {0}?</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>Pilih tema yang patut digunakan oleh Roblox.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>Hentikan kemas kini Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>Elakkan Roblox daripada dikemas kini. Roblox akan kekal pada versi yang sedang dipasang.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>Pasang versi sebelumnya</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>Muat turun dan pasang versi Roblox yang telah disiarkan sebelum versi semasa.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>Ikon Roblox Tersuai</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>Pilih fail .ico tersuai untuk menggantikan ikon pemain Roblox.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>Tidak dapat mengambil versi Roblox sebelumnya daripada sejarah versi. Sebaliknya, pelancaran dengan versi terkini.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>Versi Roblox sebelumnya ({0}) berusia lebih daripada 7 hari dan tidak boleh digunakan.\nMemasang versi terkini sebaliknya.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Pilih Kursor Tersuai</value>
@@ -1867,5 +1840,33 @@ Alih keluar kursor tersuai anda jika pratetap kelihatan tidak berfungsi.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>Tiada kursor IBeam tersuai ditemui untuk dialih keluar.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>Langkau Peningkatan Roblox</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Tidak dapat mengambil versi Roblox sebelumnya daripada sejarah versi. Sebaliknya, pelancaran dengan versi terkini.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Versi Roblox sebelumnya ({0}) berusia lebih daripada 14 hari dan tidak boleh digunakan.
+Memasang versi terkini sebaliknya.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>Elakkan Roblox daripada dikemas kini. Roblox akan kekal pada versi yang sedang dipasang.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Pasang versi sebelumnya</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Muat turun dan pasang versi Roblox yang telah disiarkan sebelum versi semasa.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>Ini adalah orang yang telah membuat sumbangan ketara kepada Bubblestrap, membantu menjadikannya seperti apa adanya.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>Sembunyikan nama daripada status</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>Hanya tunjukkan ikon avatar anda. Menyembunyikan nama pengguna anda daripada status anda pada tuding.</value>
   </data>
 </root>

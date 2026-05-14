@@ -64,7 +64,7 @@ namespace Bloxstrap
         private long _totalDownloadedBytes = 0;
         private bool _packageExtractionSuccess = true;
 
-        private bool _mustUpgrade => !App.Settings.Prop.StopRobloxUpdates && !App.Settings.Prop.UsePreviousVersion && (App.LaunchSettings.ForceFlag.Active || App.State.Prop.ForceReinstall || String.IsNullOrEmpty(AppData.State.VersionGuid) || !File.Exists(AppData.ExecutablePath));
+        private bool _mustUpgrade => !App.Settings.Prop.SkipRobloxUpgrades && !App.Settings.Prop.UsePreviousVersion && (App.LaunchSettings.ForceFlag.Active || App.State.Prop.ForceReinstall || String.IsNullOrEmpty(AppData.State.VersionGuid) || !File.Exists(AppData.ExecutablePath));
         private bool _noConnection = false;
 
         private AsyncMutex? _mutex;
@@ -552,8 +552,8 @@ namespace Bloxstrap
                         Frontend.ShowMessageBox(Strings.Menu_Errors_RobloxVersionFetchFailed_Message, MessageBoxImage.Warning, MessageBoxButton.OK);
                     }
                 }
-                // if StopRobloxUpdates is on (and NOT UsePreviousVersion), keep whatever is already installed.
-                else if (App.Settings.Prop.StopRobloxUpdates && !string.IsNullOrEmpty(AppData.State.VersionGuid))
+                // if SkipRobloxUpgrades is on (and NOT UsePreviousVersion), keep whatever is already installed.
+                else if (App.Settings.Prop.SkipRobloxUpgrades && !string.IsNullOrEmpty(AppData.State.VersionGuid))
                 {
                     App.Logger.WriteLine(LOG_IDENT, $"StopRobloxUpdates: keeping current version {AppData.State.VersionGuid}");
                     _latestVersionGuid = AppData.State.VersionGuid;
@@ -1356,7 +1356,7 @@ namespace Bloxstrap
                         {
                             TimeSpan age = DateTimeOffset.UtcNow - lastModified;
                             App.Logger.WriteLine(LOG_IDENT, $"Previous version '{prevGuid}' age: {age.TotalDays:F1} days");
-                            if (age.TotalDays > 7)
+                            if (age.TotalDays > 14)
                             {
                                 Frontend.ShowMessageBox(string.Format(Strings.Menu_Errors_RobloxVersionTooOld_Message, prevGuid), MessageBoxImage.Warning, MessageBoxButton.OK);
                                 App.Settings.Prop.UsePreviousVersion = false;

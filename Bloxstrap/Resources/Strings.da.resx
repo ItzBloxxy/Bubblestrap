@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -311,9 +311,6 @@ Vil du gerne opgradere din nuværende installerede version?</value>
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>Kode</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Dette er de mennesker, der har ydet bemærkelsesværdige bidrag til Bubblestrap og hjulpet med at gøre det til det, det er.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Funktion idéer</value>
@@ -920,9 +917,6 @@ Tjek om Roblox virker med [den oprindelige launcher]({1}). Hvis det ikke gør de
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>Rejoin</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>Dit nuværende spil vil ikke vises på din Discord-status, fordi der opstod en fejl, da spillets information blev indlæst.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>Spilhistorikken er kun optaget for din nuværende Roblox-session. Spil vil blive vist her, når du forlader dem eller teleporterer i dem. Ikke alle servere vil kunne tilsluttes tilbage til.</value>
   </data>
@@ -1295,9 +1289,6 @@ Oppetid: {1}</value>
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>Deltag i vores Discord-server</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>Vulkan</value>
@@ -1753,29 +1744,11 @@ Vil du skifte din foretrukne kanal til {0}?</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>Vælg, hvilket tema Roblox skal bruge.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>Stop opdateringerne til Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>Forhindr Roblox i at blive opdateret. Roblox forbliver på den nuværende version.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>Installer den forrige version</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>Download og installer den version af Roblox, der var tilgængelig før den nuværende.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>Brugerdefineret Roblox-ikon</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>Vælg en brugerdefineret .ico-fil til at erstatte Roblox-afspillerikonet.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>Det var ikke muligt at hente den forrige Roblox-version fra versionshistorikken. Spillet startes i stedet med den nyeste version.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>Den tidligere version af Roblox ({0}) er mere end 7 dage gammel og kan ikke bruges.\nDen nyeste version installeres i stedet.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Vælg en brugerdefineret markør</value>
@@ -1862,5 +1835,33 @@ Slet dine brugerdefinerede markører, hvis forudindstillingen ikke ser ud til at
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>Der blev ikke fundet nogen brugerdefineret IBeam-markør, der kan fjernes.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>Spring Roblox-opgraderinger over</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Det var ikke muligt at hente den forrige Roblox-version fra versionshistorikken. Spillet startes i stedet med den nyeste version.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Den tidligere version af Roblox ({0}) er mere end 14 dage gammel og kan ikke længere bruges.
+Den nyeste version installeres i stedet.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>Forhindr Roblox i at blive opdateret. Roblox forbliver på den nuværende version.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Installer den forrige version</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Download og installer den version af Roblox, der var tilgængelig før den nuværende.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>Dette er de personer, der har ydet et bemærkelsesværdigt bidrag til Bubblestrap og været med til at gøre det til det, det er i dag.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>Skjul navn i status</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>Vis kun dit avatar-ikon. Skjuler dit brugernavn i din status, når man holder musen over det.</value>
   </data>
 </root>

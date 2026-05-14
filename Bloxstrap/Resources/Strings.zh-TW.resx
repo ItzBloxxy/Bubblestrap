@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -310,9 +310,6 @@
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>代碼</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>以下是對Bubblestrap有顯著貢獻的人，幫助它成為現在的樣子。</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>功能建議</value>
@@ -918,9 +915,6 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>重新加入</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>由於載入遊戲資訊時發生錯誤，您當前的遊戲將不會在您的 Discord 活動狀態上顯示。</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>遊戲歷史僅在您當前的 Roblox 工作階段中記錄下來。當您離開遊戲或在遊戲中傳送時，您所遊玩的遊戲將出現在這裡。並非所有伺服器都可以重新加入。</value>
   </data>
@@ -1024,7 +1018,7 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>連接超時。這可能是因為較差的網路或被防火牆阻止連線。</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>變更 Roblox 與 Bubblestrap 的部署與安裝設定。</value>
   </data>
@@ -1601,9 +1595,6 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Menu.Bootstrapper.AllowCookieAccess.Description" xml:space="preserve">
     <value>使用您的驗證 Cookie 提供 Roblox API 存取權限。[Bubblestrap 將存取哪些內容？]({0})</value>
   </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>Roblox Studio</value>
-  </data>
   <data name="Menu.Behaviour.MemoryTrimmer.Title" xml:space="preserve">
     <value>記憶體修剪器</value>
   </data>
@@ -1754,18 +1745,6 @@ Bubblestrap 安裝在 "{1}"。</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>請選擇 Roblox 應使用的主題。</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>停止 Roblox 更新</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>阻止 Roblox 進行更新。Roblox 將維持在目前已安裝的版本。</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>安裝舊版本</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>請下載並安裝比當前版本更早的 Roblox 版本。</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>自訂 Roblox 圖示</value>
   </data>
@@ -1777,12 +1756,6 @@ Bubblestrap 安裝在 "{1}"。</value>
   </data>
   <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
     <value>停用烘焙陰影以提升效能，但可能會在某些遊戲中導致光照問題。</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>無法從版本歷史記錄中取得之前的 Roblox 版本。因此將改以最新版本啟動。</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>先前安裝的 Roblox 版本（{0}）已超過 7 天，無法繼續使用。\n將改為安裝最新版本。</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>選擇自訂游標</value>
@@ -1869,5 +1842,33 @@ Bubblestrap 安裝在 "{1}"。</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>未找到要移除的自訂 IBeam 游標。</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>跳過 Roblox 升級</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>無法從版本歷史記錄中取得之前的 Roblox 版本。因此將改以最新版本啟動。</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>前一版 Roblox（{0}）已超過 14 天，無法使用。
+將改為安裝最新版本。</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>阻止 Roblox 進行更新。Roblox 將維持在目前已安裝的版本。</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>安裝舊版</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>請下載並安裝比當前版本更早的 Roblox 版本。</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>以下這些人對 Bubblestrap 做出了顯著貢獻，協助它發展成今日的模樣。</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>在狀態中隱藏名稱</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>僅顯示您的頭像圖示。將您的使用者名稱隱藏於懸停時的狀態中。</value>
   </data>
 </root>

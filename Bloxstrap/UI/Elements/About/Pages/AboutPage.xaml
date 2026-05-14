@@ -104,6 +104,7 @@
             <controls:Expander Grid.Column="1" Margin="4,0,4,0" HeaderIcon="AppsAddIn28" HeaderText="{x:Static resources:Strings.Menu_About_Contributors_FeatureIdeas}" IsExpanded="True">
                 <StackPanel>
                     <controls:MarkdownTextBlock MarkdownText="[ItzBloxxy](https://github.com/ItzBloxxy)" />
+                    <controls:MarkdownTextBlock MarkdownText="[MaksAK47x](https://github.com/MaksAK47x)" />
                 </StackPanel>
             </controls:Expander>
 

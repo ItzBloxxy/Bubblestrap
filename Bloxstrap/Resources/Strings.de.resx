@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -312,9 +312,6 @@ Möchtest du deine installierte Version aktualisieren?</value>
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>Code</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Dies sind die Personen, welche bedeutende Beiträge zu Bubblestrap geleistet haben, um es zu dem zu machen was es ist.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Feature-Ideen</value>
@@ -921,9 +918,6 @@ Prüfe, ob Roblox mit [dem ursprünglichen Launcher]({1}) funktioniert. Wenn nic
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>Erneut Verbinden</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>Dein aktuelles Spiel wird in deinem Discord Status nicht angezeigt, da ein Fehler beim Laden der Spielinformationen aufgetreten ist.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>Der Spielverlauf wird nur für deine aktuelle Roblox-Sitzung aufgezeichnet. Spiele werden hier erscheinen, wenn du sie verlässt, oder in sie teleportierst. Nicht alle Server werden erneut Beitretbar sein.</value>
   </data>
@@ -1026,7 +1020,7 @@ Bitte schließe alle Anwendungen, die möglicherweise auf die Dateien von Roblox
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Die Verbindung wurde wegen einer Zeitüberschreitung unterbrochen, was entweder auf eine schlechte Internetverbindung oder einen Firewall-Block hinweist.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>Ändern Sie die Bereitstellungs- und Installationseinstellungen für Roblox &amp; Bubblestrap.</value>
   </data>
@@ -1319,9 +1313,6 @@ Betriebszeit: {1}</value>
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>Treten Sie unserem Discord-Server bei</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>Vulkan</value>
@@ -1762,29 +1753,11 @@ Möchten Sie Ihren bevorzugten Kanal auf {0} umstellen?</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>Wähle aus, welches Design Roblox verwenden soll.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>Roblox-Updates deaktivieren</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>Verhindern Sie, dass Roblox aktualisiert wird. Roblox bleibt auf der aktuell installierten Version.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>Vorherige Version installieren</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>Lade die Roblox-Version herunter, die vor der aktuellen Version verfügbar war, und installiere sie.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>Benutzerdefiniertes Roblox-Symbol</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>Wähle eine benutzerdefinierte ICO-Datei aus, um das Roblox-Spieler-Symbol zu ersetzen.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>Die vorherige Roblox-Version konnte nicht aus dem Versionsverlauf abgerufen werden. Es wird stattdessen die neueste Version gestartet.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>Die vorherige Roblox-Version ({0}) ist älter als 7 Tage und kann nicht mehr verwendet werden.\nStattdessen wird die neueste Version installiert.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Benutzerdefinierten Cursor auswählen</value>
@@ -1871,5 +1844,33 @@ Entfernen Sie Ihre benutzerdefinierten Cursor, falls das Preset nicht zu funktio
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>Es wurde kein benutzerdefinierter IBeam-Cursor zum Entfernen gefunden.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>Roblox-Upgrades überspringen</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Die vorherige Roblox-Version konnte nicht aus dem Versionsverlauf abgerufen werden. Es wird stattdessen die neueste Version gestartet.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Die vorherige Roblox-Version ({0}) ist älter als 14 Tage und kann nicht mehr verwendet werden.
+Stattdessen wird die neueste Version installiert.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>Verhindern Sie, dass Roblox aktualisiert wird. Roblox bleibt auf der aktuell installierten Version.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Vorherige Version installieren</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Lade die Roblox-Version herunter, die vor der aktuellen Version verfügbar war, und installiere sie.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>Dies sind die Menschen, die einen bedeutenden Beitrag zu Bubblestrap geleistet und dazu beigetragen haben, dass es zu dem geworden ist, was es heute ist.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>Namen im Status ausblenden</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>Zeige nur dein Avatar-Symbol an. Blendet deinen Benutzernamen aus, wenn du mit der Maus darüber fährst.</value>
   </data>
 </root>

@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -311,9 +311,6 @@ Haluatko päivittää tällä hetkellä asennetun version?</value>
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>Koodi</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>Nämä ovat henkilöitä, jotka ovat tehneet huomattavia avustuksia Bubblestrapiin ja auttaneet tekemään siitä sen mikä se on.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Ominaisuusideoita</value>
@@ -920,9 +917,6 @@ Tarkista, toimiiko Roblox [alkuperäisellä käynnistysohjelmalla]({1}). Jos ei,
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>Liity uudelleen</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>Tämänhetkinen pelisi ei näy Discord-profiilissasi, koska pelin tietoja ladattaessa tapahtui virhe.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>Pelihistoria tallennetaan ainoastaan nykyiselle Roblox-istunnollesi. Pelit ilmestyvät tänne, kun lähdet niistä tai teleporttaat niiden sisällä. Kaikki palvelimet eivät ole uudelleenliityttäviä.</value>
   </data>
@@ -1025,7 +1019,7 @@ Sulje kaikki sovellukset, jotka saattavat käyttää Robloxin tiedostoja, ja kä
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>Yhteys aikakatkaistiin, mikä voisi merkitä huonoa internetyhteyttä tai palomuurin estoa.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>Muuta Roblox &amp; Bubblestrapin käyttöönotto- ja asennusasetuksia.</value>
   </data>
@@ -1318,9 +1312,6 @@ Käyttöaika: {1}</value>
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>Liity Discord-palvelimellemme</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>Tulivuori</value>
@@ -1761,29 +1752,11 @@ Haluatko vaihtaa ensisijaisen kanavasi asetukseksi {0}?</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>Valitse, mitä teemaa Roblox käyttää.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>Lopeta Roblox-päivitykset</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>Estä Robloxin päivittyminen. Roblox pysyy nykyisessä asennetussa versiossa.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>Asenna edellinen versio</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>Lataa ja asenna se Roblox-versio, joka oli käytössä ennen nykyistä versiota.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>Mukautettu Roblox-kuvake</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>Valitse mukautettu .ico-tiedosto Roblox-pelaajan kuvakkeen korvaamiseksi.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>Edellinen Roblox-versio ({0}) on yli 7 päivää vanha, eikä sitä voi käyttää.\nAsennan sen sijaan uusimman version.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>Edellinen Roblox-versio ({0}) on yli 7 päivää vanha, eikä sitä voi käyttää.\nAsennan sen sijaan uusimman version.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>Valitse mukautettu osoitin</value>
@@ -1870,5 +1843,33 @@ Poista mukautetut kursorit, jos esiasetus ei näytä toimivan.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>Poistettavaa mukautettua IBeam-kohdistinta ei löytynyt.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>Ohita Roblox-päivitykset</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>Edellistä Roblox-versiota ei voitu hakea versiohistoriasta. Käynnistetään sen sijaan uusin versio.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Edellinen Roblox-versio ({0}) on yli 14 päivää vanha, eikä sitä voi käyttää.
+Asennan sen sijaan uusimman version.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>Estä Robloxin päivittyminen. Roblox pysyy nykyisessä asennetussa versiossa.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>Asenna edellinen versio</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>Lataa ja asenna se Roblox-versio, joka oli käytössä ennen nykyistä versiota.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>Nämä ovat ihmisiä, jotka ovat antaneet merkittävän panoksen Bubblestrapin kehittämiseen ja auttaneet tekemään siitä sen, mitä se nyt on.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>Piilota nimi tilapäivityksestä</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>Näytä vain avatar-kuvake. Piilottaa käyttäjänimesi tilapäisviestistä, kun viet hiiren sen päälle.</value>
   </data>
 </root>

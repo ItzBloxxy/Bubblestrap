@@ -100,8 +100,10 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 {
                     DiscordActivityJoinEnabled = value;
                     DiscordAccountOnProfile = value;
+                    DiscordAccountAvatarOnly = value;
                     OnPropertyChanged(nameof(DiscordActivityJoinEnabled));
                     OnPropertyChanged(nameof(DiscordAccountOnProfile));
+                    OnPropertyChanged(nameof(DiscordAccountAvatarOnly));
                 }
             }
         }
@@ -144,7 +146,27 @@ namespace Bloxstrap.UI.ViewModels.Settings
         public bool DiscordAccountOnProfile
         {
             get => App.Settings.Prop.ShowAccountOnRichPresence;
-            set => App.Settings.Prop.ShowAccountOnRichPresence = value;
+            set
+            {
+                App.Settings.Prop.ShowAccountOnRichPresence = value;
+                OnPropertyChanged(nameof(DiscordAccountOnProfile));
+
+                if (!value)
+                {
+                    DiscordAccountAvatarOnly = false;
+                    OnPropertyChanged(nameof(DiscordAccountAvatarOnly));
+                }
+            }
+        }
+
+        public bool DiscordAccountAvatarOnly
+        {
+            get => App.Settings.Prop.ShowAccountAvatarOnly;
+            set
+            {
+                App.Settings.Prop.ShowAccountAvatarOnly = value;
+                OnPropertyChanged(nameof(DiscordAccountAvatarOnly));
+            }
         }
 
         public bool DisableAppPatchEnabled

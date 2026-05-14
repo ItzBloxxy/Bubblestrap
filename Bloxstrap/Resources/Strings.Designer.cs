@@ -88,15 +88,6 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your current game will not show on your Discord presence because an error occurred when loading the game information..
-        /// </summary>
-        public static string ActivityWatcher_RichPresenceLoadFailed {
-            get {
-                return ResourceManager.GetString("ActivityWatcher.RichPresenceLoadFailed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Roblox no longer supports Windows 7 or 8.1. To continue playing Roblox, please upgrade to Windows 10 or newer..
         /// </summary>
         public static string App_OSDeprecation_Win7_81 {
@@ -2087,15 +2078,6 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OpenGL.
-        /// </summary>
-        public static string Enums_FlagPresets_RenderingMode_OpenGL {
-            get {
-                return ResourceManager.GetString("Enums.FlagPresets.RenderingMode.OpenGL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Vulkan.
         /// </summary>
         public static string Enums_FlagPresets_RenderingMode_Vulkan {
@@ -2498,7 +2480,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to These are the people who have made notable contributions to Bubblestrap/Fishstrap/Bloxstrap, helping make it what it is..
+        ///   Looks up a localized string similar to These are the people who have made notable contributions to Bubblestrap, helping make it what it is..
         /// </summary>
         public static string Menu_About_Contributors_Description {
             get {
@@ -3130,18 +3112,18 @@ namespace Bloxstrap.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Prevent Roblox from being updated. Roblox will stay on the currently installed version..
         /// </summary>
-        public static string Menu_Behaviour_StopRobloxUpdates_Description {
+        public static string Menu_Behaviour_SkipRobloxUpgrades_Description {
             get {
-                return ResourceManager.GetString("Menu.Behaviour.StopRobloxUpdates.Description", resourceCulture);
+                return ResourceManager.GetString("Menu.Behaviour.SkipRobloxUpgrades.Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stop Roblox updates.
+        ///   Looks up a localized string similar to Skip Roblox Upgrades.
         /// </summary>
-        public static string Menu_Behaviour_StopRobloxUpdates_Title {
+        public static string Menu_Behaviour_SkipRobloxUpgrades_Title {
             get {
-                return ResourceManager.GetString("Menu.Behaviour.StopRobloxUpdates.Title", resourceCulture);
+                return ResourceManager.GetString("Menu.Behaviour.SkipRobloxUpgrades.Title", resourceCulture);
             }
         }
         
@@ -3461,7 +3443,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The previous Roblox version ({0}) is more than 7 days old and cannot be used.
+        ///   Looks up a localized string similar to The previous Roblox version ({0}) is more than 14 days old and cannot be used.
         ///	
         ///Installing the latest version instead..
         /// </summary>
@@ -4499,6 +4481,24 @@ namespace Bloxstrap.Resources {
         public static string Menu_Integrations_ShowAccountOnProfile_Description {
             get {
                 return ResourceManager.GetString("Menu.Integrations.ShowAccountOnProfile.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Only show your avatar icon. Hides your username from your status on hover..
+        /// </summary>
+        public static string Menu_Integrations_ShowAccountOnProfile_HideUsername_Description {
+            get {
+                return ResourceManager.GetString("Menu.Integrations.ShowAccountOnProfile.HideUsername.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide name from status.
+        /// </summary>
+        public static string Menu_Integrations_ShowAccountOnProfile_HideUsername_Title {
+            get {
+                return ResourceManager.GetString("Menu.Integrations.ShowAccountOnProfile.HideUsername.Title", resourceCulture);
             }
         }
         

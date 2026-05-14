@@ -33,9 +33,9 @@
         </controls:OptionControl>
 
         <controls:OptionControl
-            Header="{x:Static resources:Strings.Menu_Behaviour_StopRobloxUpdates_Title}"
-            Description="{x:Static resources:Strings.Menu_Behaviour_StopRobloxUpdates_Description}">
-            <ui:ToggleSwitch IsChecked="{Binding StopRobloxUpdates, Mode=TwoWay}" />
+            Header="{x:Static resources:Strings.Menu_Behaviour_SkipRobloxUpgrades_Title}"
+            Description="{x:Static resources:Strings.Menu_Behaviour_SkipRobloxUpgrades_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding SkipRobloxUpgrades, Mode=TwoWay}" />
         </controls:OptionControl>
 
         <controls:OptionControl

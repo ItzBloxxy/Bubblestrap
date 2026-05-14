@@ -360,7 +360,6 @@ namespace Bloxstrap.Integrations
                 catch (Exception ex)
                 {
                     App.Logger.WriteException(LOG_IDENT, ex);
-                    Frontend.ShowMessageBox($"{Strings.ActivityWatcher_RichPresenceLoadFailed}\n\n{ex.Message}", MessageBoxImage.Warning);
                     return false;
                 }
 
@@ -374,9 +373,12 @@ namespace Bloxstrap.Integrations
             if (App.Settings.Prop.ShowAccountOnRichPresence)
             {
                 var userDetails = await UserDetails.Fetch(activity.UserId);
-
                 smallImage = userDetails.Thumbnail.ImageUrl!;
-                smallImageText = $"Playing on {userDetails.Data.DisplayName} (@{userDetails.Data.Name})";
+
+                if (App.Settings.Prop.ShowAccountAvatarOnly)
+                    smallImageText = "";
+                else
+                    smallImageText = $"Playing on {userDetails.Data.DisplayName} (@{userDetails.Data.Name})";
             }
 
             if (!_activityWatcher.InGame || placeId != activity.PlaceId)

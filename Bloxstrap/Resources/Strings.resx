@@ -404,7 +404,7 @@ Would you like to upgrade your currently installed version?</value>
     <value>Code</value>
   </data>
     <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>These are the people who have made notable contributions to Bubblestrap/Fishstrap/Bloxstrap, helping make it what it is.</value>
+    <value>These are the people who have made notable contributions to Bubblestrap, helping make it what it is.</value>
   </data>
     <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>Feature Ideas</value>
@@ -557,18 +557,18 @@ Would you like to upgrade your currently installed version?</value>
     <data name="Menu.Behaviour.ForceRobloxReinstall.Title" xml:space="preserve">
     <value>Force Roblox reinstallation</value>
   </data>
-    <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>Stop Roblox updates</value>
+    <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>Skip Roblox Upgrades</value>
   </data>
     <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
     <value>Could not fetch the previous Roblox version from the version history. Launching with the latest version instead.</value>
   </data>
 	<data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>The previous Roblox version ({0}) is more than 7 days old and cannot be used.
+    <value>The previous Roblox version ({0}) is more than 14 days old and cannot be used.
 	
 Installing the latest version instead.</value>
 </data>
-    <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
+    <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
     <value>Prevent Roblox from being updated. Roblox will stay on the currently installed version.</value>
   </data>
     <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
@@ -700,6 +700,12 @@ Selecting 'No' will ignore this warning and continue installation.</value>
   </data>
     <data name="Menu.Integrations.ShowAccountOnProfile.Title" xml:space="preserve">
     <value>Show Roblox account</value>
+  </data>
+    <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>Hide name from status</value>
+  </data>
+    <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>Only show your avatar icon. Hides your username from your status on hover.</value>
   </data>
     <data name="Menu.Integrations.Custom.AppLocation" xml:space="preserve">
     <value>Application Location</value>
@@ -1209,9 +1215,6 @@ Check if Roblox works with [the original launcher]({1}). If it doesn't, then thi
     <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>Rejoin</value>
   </data>
-    <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>Your current game will not show on your Discord presence because an error occurred when loading the game information.</value>
-  </data>
     <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>Game history is only recorded for your current Roblox session. Games will appear here as you leave them or teleport within them. Not all servers will be rejoinable.</value>
   </data>
@@ -1311,9 +1314,6 @@ Would you like to enable test mode?</value>
     <data name="Paths.Icons" xml:space="preserve">
     <value>Icons</value>
     <comment>Name of the folder that gets created according to the "create shortcut icons" option. Ensure that it is a valid folder name.</comment>
-  </data>
-    <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
     <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>Vulkan</value>

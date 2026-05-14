@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -311,9 +311,6 @@
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>Code</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>คนเหล่านี้คือคนที่มีส่วนร่วมใน Bubblestrap และช่วยพัฒนามันให้เป็นอย่างที่เป็น.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>ไอเดียเกี่ยวกับฟีเจอร์</value>
@@ -917,9 +914,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>เข้าร่วมใหม่</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>เกมปัจจุบันของคุณจะไม่แสดงในสถานะของคุณบน Discord เนื่องจากเกิดข้อผิดพลาดในการโหลดข้อมูลเกม</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>ประวัติเกมจะถูกบันทึกเฉพาะสำหรับเซสชัน Roblox ปัจจุบันของคุณ เกมจะปรากฏที่นี่เมื่อคุณออกจากเกมหรือเทเลพอร์ตภายในเกมนั้น ๆ ไม่ใช่ทุกเซิร์ฟเวอร์ที่จะสามารถเข้าร่วมใหม่ได้</value>
   </data>
@@ -1022,7 +1016,7 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>การเชื่อมต่อหมดเวลา, สึ่งอาจเป็นเพราะการเชื่อมต่ออินเทอร์เน็ตที่ไม่ดีหรือการบล็อกไฟร์วอลล์</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>เปลี่ยนการตั้งค่าการใช้งานและการติดตั้งสำหรับ Roblox &amp; Bubblestrap</value>
   </data>
@@ -1315,9 +1309,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>เข้าร่วมเซิร์ฟเวอร์ Discord ของเรา</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>วัลแคน</value>
@@ -1752,18 +1743,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>เลือกธีมที่ Roblox ควรใช้</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>หยุดการอัปเดต Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>ป้องกันไม่ให้ Roblox อัปเดต Roblox จะยังคงอยู่ในเวอร์ชันที่ติดตั้งอยู่ในปัจจุบัน</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>ติดตั้งเวอร์ชันก่อนหน้า</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>ดาวน์โหลดและติดตั้งเวอร์ชัน Roblox ที่เคยเผยแพร่ก่อนเวอร์ชันปัจจุบัน</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>ไอคอน Roblox แบบกำหนดเอง</value>
   </data>
@@ -1775,12 +1754,6 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
     <value>ปิดการใช้งานเงาเพื่อปรับปรุงประสิทธิภาพ แต่อาจทำให้เกิดปัญหาแสงในบางเกม</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>ไม่สามารถดึง Roblox เวอร์ชันก่อนหน้าจากประวัติเวอร์ชันได้ เปิดตัวด้วยเวอร์ชันล่าสุดแทน</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>Roblox เวอร์ชันก่อนหน้า ({0}) มีอายุมากกว่า 7 วันและไม่สามารถใช้งานได้\nกำลังติดตั้งเวอร์ชันล่าสุดแทน</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>เลือกเคอร์เซอร์แบบกำหนดเอง</value>
@@ -1870,5 +1843,33 @@ Bubblestrap จะติดตั้งไว้ที่ "{1}"</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>ไม่พบเคอร์เซอร์ IBeam แบบกำหนดเองที่จะลบ</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>ข้ามการอัพเกรด Roblox</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>ไม่สามารถดึง Roblox เวอร์ชันก่อนหน้าจากประวัติเวอร์ชันได้ เปิดตัวด้วยเวอร์ชันล่าสุดแทน</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>Roblox เวอร์ชันก่อนหน้า ({0}) มีอายุมากกว่า 14 วันและไม่สามารถใช้งานได้
+ติดตั้งเวอร์ชันล่าสุดแทน</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>ป้องกันไม่ให้ Roblox อัปเดต Roblox จะยังคงอยู่ในเวอร์ชันที่ติดตั้งอยู่ในปัจจุบัน</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>ติดตั้งเวอร์ชันก่อนหน้า</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>ดาวน์โหลดและติดตั้งเวอร์ชัน Roblox ที่เคยเผยแพร่ก่อนเวอร์ชันปัจจุบัน</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>คนเหล่านี้คือผู้ที่มีส่วนร่วมอย่างโดดเด่นให้กับ Bubblestrap และช่วยทำให้มันเป็นอย่างที่มันเป็น</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>ซ่อนชื่อจากสถานะ</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>แสดงเฉพาะไอคอนอวตารของคุณ ซ่อนชื่อผู้ใช้ของคุณจากสถานะของคุณเมื่อโฮเวอร์</value>
   </data>
 </root>

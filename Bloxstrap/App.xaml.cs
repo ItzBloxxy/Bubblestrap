@@ -300,7 +300,7 @@ namespace Bloxstrap
 
                 if (State.Prop.ForceReinstall && Settings.Prop.UsePreviousVersion)
                 {
-                    Logger.WriteLine(LOG_IDENT, "Conflict detected: ForceReinstall and UsePreviousVersion both true -- disabling both.");
+                    Logger.WriteLine(LOG_IDENT, "ForceReinstall and UsePreviousVersion are both enabled; disabling both");
                     State.Prop.ForceReinstall = false;
                     Settings.Prop.UsePreviousVersion = false;
                     State.Save();

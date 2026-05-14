@@ -1,45 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xs:element name="root" ns1:IsDataSet="true">
       <xs:complexType>
         <xs:choice maxOccurs="unbounded">
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string"/>
-              <xs:attribute name="type" type="xsd:string"/>
-              <xs:attribute name="mimetype" type="xsd:string"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string"/>
-              <xs:attribute name="name" type="xsd:string"/>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1"/>
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3"/>
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4"/>
-              <xs:attribute ref="xml:space"/>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1"/>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required"/>
+              <xs:attribute name="name" type="xsd:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -311,9 +311,6 @@
   </data>
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>الكود</value>
-  </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>هؤلاء هم الأشخاص الذين قدموا مساهمات ملحوظة في Bubblestrap، مما ساعد في جعلها على ما هي عليه الآن.</value>
   </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>أفكار مستقبلية</value>
@@ -919,9 +916,6 @@
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>إعادة الانضمام</value>
   </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>لن تظهر لعبتك الحالية على وجود Discord الخاص بك لأنه حدث خطأ عند تحميل معلومات اللعبة.</value>
-  </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>سجل الألعاب مسجل فقط لجلسة Roblox الحالية. ستظهر الألعاب هنا عندما تتركها أو تنتقل داخلها. لن تكون جميع السيرفرات قابلة للانضمام مرة أخرى.</value>
   </data>
@@ -1024,7 +1018,7 @@
   <data name="Dialog.Connectivity.TimedOut" xml:space="preserve">
     <value>انتهت مهلة الاتصال، الذي يمكن أن يشير إلى ضعف الاتصال بالإنترنت أو إلى كتلة جدار الحماية.</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Menu.Channel.Description" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value>تغيير إعدادات النشر والتثبيت لـ Roblox &amp; Bubblestrap.</value>
   </data>
@@ -1316,9 +1310,6 @@
   </data>
   <data name="LaunchMenu.Discord" xml:space="preserve">
     <value>انضم إلى خادم Discord الخاص بنا</value>
-  </data>
-  <data name="Enums.FlagPresets.RenderingMode.OpenGL" xml:space="preserve">
-    <value>OpenGL</value>
   </data>
   <data name="Enums.FlagPresets.RenderingMode.Vulkan" xml:space="preserve">
     <value>بركان</value>
@@ -1759,29 +1750,11 @@
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>اختر المظهر الذي تريد أن يستخدمه Roblox.</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>إيقاف تحديثات Roblox</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>منع تحديث Roblox. سيبقى Roblox على الإصدار المثبت حاليًا.</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>تثبيت الإصدار السابق</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>قم بتنزيل وتثبيت إصدار Roblox الذي كان متاحًا قبل الإصدار الحالي.</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>أيقونة Roblox مخصصة</value>
   </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Description" xml:space="preserve">
     <value>اختر ملف .ico مخصصًا لاستبدال رمز مشغل Roblox.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>تعذر الحصول على الإصدار السابق من Roblox من سجل الإصدارات. سيتم التشغيل باستخدام أحدث إصدار بدلاً من ذلك.</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>الإصدار السابق من Roblox ({0}) مضى عليه أكثر من 7 أيام ولا يمكن استخدامه.\nسيتم تثبيت أحدث إصدار بدلاً منه.</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectArrowFar" xml:space="preserve">
     <value>اختر مؤشرًا مخصصًا على شكل سهم طويل</value>
@@ -1868,5 +1841,33 @@
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>اختر مؤشرًا مخصصًا</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>تخطي ترقيات Roblox</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>تعذر الحصول على الإصدار السابق من Roblox من سجل الإصدارات. سيتم التشغيل باستخدام أحدث إصدار بدلاً من ذلك.</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>الإصدار السابق من Roblox ({0}) مضى عليه أكثر من 14 يومًا ولا يمكن استخدامه.
+سيتم تثبيت أحدث إصدار بدلاً من ذلك.</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>منع تحديث Roblox. سيبقى Roblox على الإصدار المثبت حاليًا.</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>تثبيت الإصدار السابق</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>قم بتنزيل وتثبيت إصدار Roblox الذي كان متاحًا قبل الإصدار الحالي.</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>هؤلاء هم الأشخاص الذين قدموا إسهامات بارزة في Bubblestrap، وساعدوا في جعله ما هو عليه اليوم.</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>إخفاء الاسم من الحالة</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>اعرض رمز الصورة الشخصية فقط. يخفي اسم المستخدم الخاص بك عند تمرير المؤشر فوق الحالة.</value>
   </data>
 </root>

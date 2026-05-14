@@ -130,13 +130,13 @@ namespace Bloxstrap.UI.ViewModels.Settings
             }
         }
 
-        public bool StopRobloxUpdates
+        public bool SkipRobloxUpgrades
         {
-            get => App.Settings.Prop.StopRobloxUpdates;
+            get => App.Settings.Prop.SkipRobloxUpgrades;
             set
             {
-                App.Settings.Prop.StopRobloxUpdates = value;
-                OnPropertyChanged(nameof(StopRobloxUpdates));
+                App.Settings.Prop.SkipRobloxUpgrades = value;
+                OnPropertyChanged(nameof(SkipRobloxUpgrades));
             }
         }
 

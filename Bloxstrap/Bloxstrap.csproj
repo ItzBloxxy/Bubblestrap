@@ -13,10 +13,10 @@
 	<UseWPF>true</UseWPF>
 	<UseWindowsForms>False</UseWindowsForms>
 	<ApplicationIcon>Bubblestrap.ico</ApplicationIcon>
-	<Version>1.4.0</Version>
-	<FileVersion>1.4.0</FileVersion>
-	<AssemblyVersion>1.4.0</AssemblyVersion>
-	<InformationalVersion>1.4.0</InformationalVersion>
+	<Version>1.4.1</Version>
+	<FileVersion>1.4.1</FileVersion>
+	<AssemblyVersion>1.4.1</AssemblyVersion>
+	<InformationalVersion>1.4.1</InformationalVersion>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>

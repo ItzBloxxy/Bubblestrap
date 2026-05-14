@@ -28,7 +28,7 @@ namespace Bloxstrap.Models.Persistable
         public bool UseFastFlagManager { get; set; } = true;
         public bool WPFSoftwareRender { get; set; } = false;
         public bool UpdateRoblox { get; set; } = true;
-        public bool StopRobloxUpdates { get; set; } = false;
+        public bool SkipRobloxUpgrades { get; set; } = false;
         public bool UsePreviousVersion { get; set; } = false;
         public bool StaticDirectory { get; set; } = false;
         public string Channel { get; set; } = RobloxInterfaces.Deployment.DefaultChannel;
@@ -55,6 +55,7 @@ namespace Bloxstrap.Models.Persistable
         public bool ShowUsingBubblestrapRPC { get; set; } = true;
         public bool EnableCustomStatusDisplay { get; set; } = true;
         public bool ShowAccountOnRichPresence { get; set; } = false;
+        public bool ShowAccountAvatarOnly { get; set; } = false;
         public bool ShowServerDetails { get; set; } = false;
         public ObservableCollection<CustomIntegration> CustomIntegrations { get; set; } = new();
 

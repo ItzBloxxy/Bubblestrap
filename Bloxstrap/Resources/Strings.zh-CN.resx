@@ -314,9 +314,6 @@
   <data name="Menu.About.Contributors.Code" xml:space="preserve">
     <value>代码贡献者</value>
   </data>
-  <data name="Menu.About.Contributors.Description" xml:space="preserve">
-    <value>这是那些曾经为 Bubblestrap 贡献了许多帮助的贡献者们；没有他们，发展到如今绝无可能。</value>
-  </data>
   <data name="Menu.About.Contributors.FeatureIdeas" xml:space="preserve">
     <value>特色功能贡献者</value>
   </data>
@@ -932,9 +929,6 @@ Bubblestrap 的安装路径是：
   </data>
   <data name="ContextMenu.GameHistory.Rejoin" xml:space="preserve">
     <value>重新加入</value>
-  </data>
-  <data name="ActivityWatcher.RichPresenceLoadFailed" xml:space="preserve">
-    <value>由于加载游戏信息时发生错误；您当前的游戏状态将不会在您的 Discord 活动状态 上显示。</value>
   </data>
   <data name="ContextMenu.GameHistory.Description" xml:space="preserve">
     <value>仅记录您当前 Roblox 会话的游戏历史记录；关于游戏的具体信息将会在您离开游戏或传送至其他游戏时出现在此处。并非所有服务器都可以重新加入。</value>
@@ -1766,18 +1760,6 @@ Bubblestrap 的安装路径是：
   <data name="Menu.Behaviour.RobloxAppTheme.Description" xml:space="preserve">
     <value>选择 Roblox 应使用的主题。</value>
   </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Title" xml:space="preserve">
-    <value>停止 Roblox 更新</value>
-  </data>
-  <data name="Menu.Behaviour.StopRobloxUpdates.Description" xml:space="preserve">
-    <value>阻止 Roblox 更新。Roblox 将保持在当前已安装的版本。</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
-    <value>安装旧版本</value>
-  </data>
-  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
-    <value>下载并安装当前版本发布之前的 Roblox 版本。</value>
-  </data>
   <data name="Menu.Mods.Misc.CustomRobloxIcon.Title" xml:space="preserve">
     <value>自定义 Roblox 图标</value>
   </data>
@@ -1789,12 +1771,6 @@ Bubblestrap 的安装路径是：
   </data>
   <data name="Menu.FastFlags.Voxelizer.Description" xml:space="preserve">
     <value>禁用烘焙阴影以提升性能，但这可能会导致某些游戏中出现光照问题。</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
-    <value>无法从版本历史记录中获取之前的 Roblox 版本。将改用最新版本启动。</value>
-  </data>
-  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
-    <value>之前的 Roblox 版本（{0}）已超过 7 天，无法使用。\n正在安装最新版本。</value>
   </data>
   <data name="Menu.Mods.Misc.CustomCursorFeatures.SelectCursor" xml:space="preserve">
     <value>选择自定义光标</value>
@@ -1881,5 +1857,33 @@ Bubblestrap 的安装路径是：
   </data>
   <data name="Menu.Mods.Misc.CustomCursor.NotFound.IBeam" xml:space="preserve">
     <value>未找到要删除的自定义 IBeam 光标。</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Title" xml:space="preserve">
+    <value>跳过 Roblox 升级</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionFetchFailed.Message" xml:space="preserve">
+    <value>无法从版本历史记录中获取之前的 Roblox 版本。将改用最新版本启动。</value>
+  </data>
+  <data name="Menu.Errors.RobloxVersionTooOld.Message" xml:space="preserve">
+    <value>上一版 Roblox（{0}）已发布超过 14 天，无法使用。
+正在安装最新版本。</value>
+  </data>
+  <data name="Menu.Behaviour.SkipRobloxUpgrades.Description" xml:space="preserve">
+    <value>阻止 Roblox 更新。Roblox 将保持在当前已安装的版本。</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Title" xml:space="preserve">
+    <value>安装旧版本</value>
+  </data>
+  <data name="Menu.Behaviour.InstallPreviousVersion.Description" xml:space="preserve">
+    <value>下载并安装当前版本发布之前的 Roblox 版本。</value>
+  </data>
+  <data name="Menu.About.Contributors.Description" xml:space="preserve">
+    <value>以下是那些为Bubblestrap做出突出贡献、助力其发展至今的人士。</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Title" xml:space="preserve">
+    <value>在状态中隐藏姓名</value>
+  </data>
+  <data name="Menu.Integrations.ShowAccountOnProfile.HideUsername.Description" xml:space="preserve">
+    <value>仅显示您的头像。将鼠标悬停在状态上时，隐藏您的用户名。</value>
   </data>
 </root>
