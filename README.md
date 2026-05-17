@@ -21,7 +21,9 @@
 > **Bubblestrap currently supports Windows 10 and above**. Linux support is planned in the future.
 > In the meantime, please use [Sober](https://sober.vinegarhq.org/) for Linux.
 
-Bubblestrap is a fast and lightweight bootstrapper for Roblox that aims to provide additional features to improve your experience.
+Bubblestrap is a fast, lightweight Roblox bootstrapper. It’s an upgraded version of Fishstrap, featuring code rewrites to fix bad code and make it cleaner, faster, and easier on your system.
+
+It has a better UI, more customization options, more features, and full language translations. More rewrites and improvements are on the way.
 
 Download the latest release [here][repo-latest]
 
