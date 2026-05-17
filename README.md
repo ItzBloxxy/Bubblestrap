@@ -67,10 +67,11 @@ Minimize to Tray
 ### Mods
 - Use custom font
 - Use custom death sound
+- Custom emojis
 - Custom Roblox Icon
 - Custom Roblox Studio icon
 - Old character sounds from 2014
-- Use old avatar editor background
+- Use old avatar editor background used in 2020
 - Customize cursors (ShiftLock, Arrow, ArrowFar, IBeam)
 - Cursor sets (import & export)
 
