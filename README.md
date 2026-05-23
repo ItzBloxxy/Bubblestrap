@@ -58,6 +58,7 @@ Minimize to Tray
 - Toggle launch Roblox on startup
 
 ### Deployment
+- Toggle Bubblestrap logs
 - Channel changer
 - Skip Roblox Updates
 - Static directory
