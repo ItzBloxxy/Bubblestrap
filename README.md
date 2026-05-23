@@ -77,7 +77,7 @@ Minimize to Tray
 - Cursor sets (import & export)
 
 ### Other
-- FFlag settings and editor
+- FFlag settings and improved FFlag editor
 - Global Settings page
 - Framerate cap unlocking
 - Custom Bubblestrap game invite links (DEEPLINK)
