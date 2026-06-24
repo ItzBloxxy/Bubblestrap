@@ -23,7 +23,7 @@
 
 **Bubblestrap** is a fast, lightweight Roblox bootstrapper. It’s an upgraded version of **Fishstrap**, featuring code rewrites to fix bad code and make it cleaner, faster, and easier on your system.
 
-It has a better UI, improved features, more features, more customization options, and full language translations. More rewrites and improvements are on the way.
+It has a better UI, improved features, more features, more customization options, and full language translations.
 
 Download the latest release [here][repo-latest]
 
