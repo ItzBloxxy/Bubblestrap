@@ -18,7 +18,7 @@
 > The only official places to download Bubblestrap are this GitHub repository and our new website https://itzbloxxy.github.io/Bubblestrap-website/
 
 > [!NOTE]
-> **Bubblestrap currently supports Windows 10 and above**. Linux support is planned in the future.
+> **Bubblestrap currently supports Windows 10 and later**. Linux support is planned in the future.
 > In the meantime, please use [Sober](https://sober.vinegarhq.org/) for Linux.
 
 **Bubblestrap** is a fast, lightweight Roblox bootstrapper. It’s an upgraded version of **Fishstrap**, featuring code rewrites to fix bad code and make it cleaner, faster, and easier on your system.
