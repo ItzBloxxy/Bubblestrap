@@ -27,7 +27,7 @@ It has a better UI, improved features, more features, more customization options
 
 Download the latest release [here][repo-latest]
 
-Found any bugs or issues?
+Have you found any bugs or issues?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
 
 -----
