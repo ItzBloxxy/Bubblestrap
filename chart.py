@@ -34,19 +34,19 @@ if response.status_code == 200:
             x_smooth = np.linspace(x_num.min(), x_num.max(), 50)
             spl = make_interp_spline(x_num, df["Total"], k=3)
             y_smooth = spl(x_smooth)
-            
-            ax.plot(
-                mdates.num2date(x_smooth), y_smooth, color="#ff6b6b", linewidth=3,
-                sketch_params=(2.0, 15.0, 1.0)
-            )
+
+            with plt.rc_context({"path.sketch": (2, 15, 1)}):
+                ax.plot(
+                    mdates.num2date(x_smooth), y_smooth, color="#ff6b6b", linewidth=3
+                )
             ax.plot(
                 df["Date"], df["Total"], color="#ff6b6b", marker="o", linestyle="None"
             )
         else:
-            ax.plot(
-                df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o",
-                sketch_params=(2.0, 15.0, 1.0)
-            )
+            with plt.rc_context({"path.sketch": (2, 15, 1)}):
+                ax.plot(
+                    df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o"
+                )
         
         text_color = "#ffffff"
         ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y, %B'))
