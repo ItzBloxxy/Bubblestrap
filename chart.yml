@@ -1,0 +1,34 @@
+name: Download Chart
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch: # allows you to click "Run workflow"
+
+jobs:
+  update-graph:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Libraries
+        run: pip install requests pandas matplotlib
+
+      - name: Run Chart Generator
+        run: python chart.py
+
+      - name: Save Image to Repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add downloads.png
+          git diff-index --quiet HEAD || git commit -m "chore: update download chart [skip ci]"
+          git push
