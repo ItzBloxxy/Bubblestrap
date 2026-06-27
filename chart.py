@@ -31,7 +31,7 @@ if response.status_code == 200:
         
         if len(df) > 3:
             x_num = mdates.date2num(df["Date"])
-            x_smooth = np.linspace(x_num.min(), x_num.max(), 300)
+            x_smooth = np.linspace(x_num.min(), x_num.max(), 50)
             spl = make_interp_spline(x_num, df["Total"], k=3)
             y_smooth = spl(x_smooth)
             
