@@ -37,7 +37,7 @@ if response.status_code == 200:
             
             ax.plot(
                 mdates.num2date(x_smooth), y_smooth, color="#ff6b6b", linewidth=3,
-                sketch_params=(2, 15, 1)
+                sketch_params=(2.0, 15.0, 1.0)
             )
             ax.plot(
                 df["Date"], df["Total"], color="#ff6b6b", marker="o", linestyle="None"
@@ -45,7 +45,7 @@ if response.status_code == 200:
         else:
             ax.plot(
                 df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o",
-                sketch_params=(2, 15, 1)
+                sketch_params=(2.0, 15.0, 1.0)
             )
         
         text_color = "#ffffff"
