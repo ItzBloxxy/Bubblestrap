@@ -1,8 +1,19 @@
 import datetime
+import os
+import urllib.request
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import matplotlib.font_manager as fm
 import pandas as pd
 import requests
+
+font_url = "https://github.com/google/fonts/raw/main/ofl/comicneue/ComicNeue-Regular.ttf"
+font_path = "ComicNeue-Regular.ttf"
+try:
+    urllib.request.urlretrieve(font_url, font_path)
+    fm.fontManager.addfont(font_path)
+except Exception:
+    pass
 
 plt.xkcd()
 
@@ -42,9 +53,12 @@ if response.status_code == 200:
         ax.spines["left"].set_color(text_color)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
-        ax.grid(True, linestyle="--", alpha=0.15, color=text_color)
+        ax.grid(True, alpha=0.15, color=text_color)
         
         plt.xticks(rotation=25)
         plt.tight_layout()
 
         plt.savefig("downloads.png", dpi=300, transparent=True)
+
+if os.path.exists(font_path):
+    os.remove(font_path)
