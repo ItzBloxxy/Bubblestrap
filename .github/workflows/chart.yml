@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Libraries
-        run: pip install requests pandas matplotlib
+        run: pip install requests pandas matplotlib scipy numpy
 
       - name: Run Chart Generator
         run: python chart.py
