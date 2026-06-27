@@ -1,21 +1,10 @@
 import datetime
-import os
-import urllib.request
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-import matplotlib.font_manager as fm
+import numpy as np
 import pandas as pd
 import requests
-
-font_url = "https://github.com/google/fonts/raw/main/ofl/comicneue/ComicNeue-Regular.ttf"
-font_path = "ComicNeue-Regular.ttf"
-try:
-    urllib.request.urlretrieve(font_url, font_path)
-    fm.fontManager.addfont(font_path)
-except Exception:
-    pass
-
-plt.xkcd()
+from scipy.interpolate import make_interp_spline
 
 URL = "https://api.github.com/repos/itzbloxxy/bubblestrap/releases"
 response = requests.get(URL)
@@ -31,6 +20,7 @@ if response.status_code == 200:
 
     df = pd.DataFrame(data)
     if not df.empty:
+        df = df.groupby("Date", as_index=False).sum()
         df = df.sort_values(by="Date").reset_index(drop=True)
         df["Total"] = df["Downloads"].cumsum()
         
@@ -39,26 +29,36 @@ if response.status_code == 200:
         fig.patch.set_facecolor('none')
         ax.set_facecolor('none')
         
-        ax.plot(
-            df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o"
-        )
+        if len(df) > 3:
+            x_num = mdates.date2num(df["Date"])
+            x_smooth = np.linspace(x_num.min(), x_num.max(), 300)
+            spl = make_interp_spline(x_num, df["Total"], k=3)
+            y_smooth = spl(x_smooth)
+            
+            ax.plot(
+                mdates.num2date(x_smooth), y_smooth, color="#ff6b6b", linewidth=3,
+                sketch_params=(2, 15, 1)
+            )
+            ax.plot(
+                df["Date"], df["Total"], color="#ff6b6b", marker="o", linestyle="None"
+            )
+        else:
+            ax.plot(
+                df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o",
+                sketch_params=(2, 15, 1)
+            )
         
         text_color = "#ffffff"
-        
-        ax.set_title("Download History", fontsize=16, fontweight="bold", pad=15, color=text_color)
         ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y, %B'))
-        
         ax.tick_params(colors=text_color, labelsize=11)
-        ax.spines["bottom"].set_color(text_color)
-        ax.spines["left"].set_color(text_color)
+        
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
-        ax.grid(True, alpha=0.15, color=text_color)
+        ax.spines["bottom"].set_color(text_color)
+        ax.spines["left"].set_color(text_color)
+        ax.grid(False)
         
         plt.xticks(rotation=25)
         plt.tight_layout()
 
         plt.savefig("downloads.png", dpi=300, transparent=True)
-
-if os.path.exists(font_path):
-    os.remove(font_path)
