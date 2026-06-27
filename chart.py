@@ -21,6 +21,7 @@ if response.status_code == 200:
         d = datetime.datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
         dl = sum(a.get("download_count", 0) for a in r.get("assets", []))
         data.append({"Date": d, "Downloads": dl})
+
     df = pd.DataFrame(data)
     if not df.empty:
         df = df.groupby("Date", as_index=False).sum()
@@ -56,16 +57,25 @@ if response.status_code == 200:
             line.set_sketch_params(scale=1, length=80, randomness=20)
 
         text_color = "#ffffff"
-        ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y, %B'))
-        ax.tick_params(colors=text_color, labelsize=11, length=0)
+        # Show only month
+        def format_date(x, pos=None):
+            dt = mdates.num2date(x)
+            return dt.strftime('%B')
+
+        ax.xaxis.set_major_locator(mdates.MonthLocator())
+        ax.xaxis.set_major_formatter(plt.FuncFormatter(format_date))
+
+        ax.tick_params(colors=text_color, labelsize=11, length=0, rotation=0)
         for label in ax.get_xticklabels() + ax.get_yticklabels():
             label.set_fontfamily('DejaVu Sans')
             label.set_fontstyle('normal')
-        for spine in ax.spines.values():
-            spine.set_visible(False)
-
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        ax.spines["left"].set_color(text_color)
+        ax.spines["left"].set_linewidth(1.2)
+        ax.spines["bottom"].set_color(text_color)
+        ax.spines["bottom"].set_linewidth(1.2)
         ax.grid(False)
-        plt.xticks(rotation=25)
+        ax.set_title('Downloads', color='#ffffff', fontsize=16, fontfamily='DejaVu Sans', fontstyle='normal', pad=12)
         plt.tight_layout()
         plt.savefig("downloads.png", dpi=300, transparent=True)
-        print("Saved downloads.png")
