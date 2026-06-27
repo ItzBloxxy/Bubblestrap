@@ -16,6 +16,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Install System Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-humor-sans
+          rm -rf ~/.cache/matplotlib
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
