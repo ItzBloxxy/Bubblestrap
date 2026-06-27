@@ -85,7 +85,7 @@ Minimize to Tray
 - Full translations unlike other bootstrappers
 - No analytics at all
 
-## Star History
+-----
 
 <a href="https://www.star-history.com/?repos=ItzBloxxy%2FBubblestrap&type=date&legend=top-left">
  <picture>
