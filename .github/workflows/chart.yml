@@ -33,4 +33,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add downloads.png
           git diff-index --quiet HEAD || git commit -m "chore: update download chart [skip ci]"
+          git pull --rebase origin master
           git push
