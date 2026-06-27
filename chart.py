@@ -1,14 +1,18 @@
 import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import matplotlib.font_manager as fm
 import numpy as np
 import pandas as pd
 import requests
 from scipy.interpolate import make_interp_spline
-from matplotlib import rcParams
 
-rcParams['font.family'] = 'DejaVu Sans'
-rcParams['font.style'] = 'normal'
+font_path = "/usr/share/fonts/truetype/humor-sans/Humor-Sans.ttf"
+fm.fontManager.addfont(font_path)
+comic_prop = fm.FontProperties(fname=font_path)
+
+import matplotlib
+matplotlib.rcParams['font.family'] = comic_prop.get_name()
 
 URL = "https://api.github.com/repos/itzbloxxy/bubblestrap/releases"
 response = requests.get(URL)
@@ -43,39 +47,36 @@ if response.status_code == 200:
                 color="#ff6b6b", linewidth=2.5, zorder=3
             )
             line.set_sketch_params(scale=1, length=80, randomness=20)
-
-            ax.plot(
-                df["Date"], df["Total"],
-                color="#ff6b6b", marker="o", markersize=5,
-                linestyle="None", zorder=4
-            )
         else:
             line, = ax.plot(
                 df["Date"], df["Total"],
-                color="#ff6b6b", linewidth=2.5, marker="o", zorder=3
+                color="#ff6b6b", linewidth=2.5, zorder=3
             )
             line.set_sketch_params(scale=1, length=80, randomness=20)
 
         text_color = "#ffffff"
-        # Show only month
+
         def format_date(x, pos=None):
-            dt = mdates.num2date(x)
-            return dt.strftime('%B')
+            return mdates.num2date(x).strftime('%B')
 
         ax.xaxis.set_major_locator(mdates.MonthLocator())
         ax.xaxis.set_major_formatter(plt.FuncFormatter(format_date))
 
         ax.tick_params(colors=text_color, labelsize=11, length=0, rotation=0)
         for label in ax.get_xticklabels() + ax.get_yticklabels():
-            label.set_fontfamily('DejaVu Sans')
-            label.set_fontstyle('normal')
+            label.set_fontproperties(comic_prop)
+
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         ax.spines["left"].set_color(text_color)
         ax.spines["left"].set_linewidth(1.2)
         ax.spines["bottom"].set_color(text_color)
         ax.spines["bottom"].set_linewidth(1.2)
+
+        ax.set_title('Downloads', color=text_color, fontsize=16,
+                     fontproperties=comic_prop, pad=12)
+
         ax.grid(False)
-        ax.set_title('Downloads', color='#ffffff', fontsize=16, fontfamily='DejaVu Sans', fontstyle='normal', pad=12)
         plt.tight_layout()
         plt.savefig("downloads.png", dpi=300, transparent=True)
+        print("Saved downloads.png")
