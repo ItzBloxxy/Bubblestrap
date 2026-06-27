@@ -94,6 +94,8 @@ Minimize to Tray
    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=ItzBloxxy/Bubblestrap&type=date&legend=top-left" />
  </picture>
 </a>
+
+![Download History](downloads.png)
   
 [repo-latest]:   https://github.com/ItzBloxxy/Bubblestrap/releases/latest
 
