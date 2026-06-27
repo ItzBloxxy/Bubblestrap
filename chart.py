@@ -1,9 +1,11 @@
 import datetime
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import pandas as pd
 import requests
 
-# Fetch data for Bubblestrap
+plt.xkcd()
+
 URL = "https://api.github.com/repos/itzbloxxy/bubblestrap/releases"
 response = requests.get(URL)
 
@@ -20,18 +22,29 @@ if response.status_code == 200:
     if not df.empty:
         df = df.sort_values(by="Date").reset_index(drop=True)
         df["Total"] = df["Downloads"].cumsum()
-        plt.style.use("dark_background")
+        
         fig, ax = plt.subplots(figsize=(10, 5))
+        
+        fig.patch.set_facecolor('none')
+        ax.set_facecolor('none')
+        
         ax.plot(
             df["Date"], df["Total"], color="#ff6b6b", linewidth=3, marker="o"
         )
-        ax.set_title(
-            "Download History", fontsize=14, fontweight="bold", pad=15
-        )
-        ax.grid(True, linestyle="--", alpha=0.15)
+        
+        text_color = "#ffffff"
+        
+        ax.set_title("Download History", fontsize=16, fontweight="bold", pad=15, color=text_color)
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y, %B'))
+        
+        ax.tick_params(colors=text_color, labelsize=11)
+        ax.spines["bottom"].set_color(text_color)
+        ax.spines["left"].set_color(text_color)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
+        ax.grid(True, linestyle="--", alpha=0.15, color=text_color)
+        
         plt.xticks(rotation=25)
         plt.tight_layout()
 
-        plt.savefig("downloads.png", dpi=300)
+        plt.savefig("downloads.png", dpi=300, transparent=True)
