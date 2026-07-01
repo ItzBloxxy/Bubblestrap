@@ -15,7 +15,7 @@
 </div>
 
 > [!CAUTION]
-> The only official places to download Bubblestrap are this GitHub repository and our new website https://itzbloxxy.github.io/Bubblestrap-website/
+> The only official places to download Bubblestrap are this GitHub repository and our website https://itzbloxxy.github.io/Bubblestrap-website/
 
 > [!NOTE]
 > **Bubblestrap currently supports Windows 10 and later**. Linux support is planned in the future.
