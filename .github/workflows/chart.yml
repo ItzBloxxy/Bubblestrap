@@ -19,7 +19,9 @@ jobs:
       - name: Install Font
         run: |
           mkdir -p fonts
-          curl -sL -o fonts/Caveat.ttf "https://github.com/google/fonts/raw/main/ofl/caveat/Caveat%5Bwght%5D.ttf"
+          curl -fL -o fonts/Caveat.ttf "https://github.com/google/fonts/raw/main/ofl/caveat/Caveat%5Bwght%5D.ttf"
+          ls -la fonts/
+          file fonts/Caveat.ttf
       - name: Install Libraries
         run: pip install requests pandas matplotlib scipy numpy
       - name: Run Chart Generator
