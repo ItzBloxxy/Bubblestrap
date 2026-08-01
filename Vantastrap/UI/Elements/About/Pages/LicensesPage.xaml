@@ -88,7 +88,7 @@
                     <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_About_Licenses_MIT}" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
                 </StackPanel>
             </ui:CardAction>
-            <ui:CardAction Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1" Margin="0,8,8,0" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://github.com/ItzBloxxy/Vantastrap/blob/master/LICENSE">
+            <ui:CardAction Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1" Margin="0,8,8,0" Command="models:GlobalViewModel.OpenWebpageCommand" CommandParameter="https://https://github.com/JinanDewan/Vantastrap/Vantastrap/blob/master/LICENSE">
                 <StackPanel>
                     <TextBlock FontSize="13" Text="Vantastrap" />
                     <TextBlock Margin="0,2,0,0" FontSize="12" Text="{x:Static resources:Strings.Menu_About_Licenses_MIT}" Foreground="{DynamicResource TextFillColorTertiaryBrush}" />

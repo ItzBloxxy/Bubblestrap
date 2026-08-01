@@ -19,7 +19,7 @@
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Title}"
-            Description="{Binding Source={x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://github.com/ItzBloxxy/Vantastrap/wiki/What-will-Vantastrap-access-with-your-account%3F'}">
+            Description="{Binding Source={x:Static resources:Strings.Menu_Bootstrapper_AllowCookieAccess_Description}, Converter={StaticResource StringFormatConverter}, ConverterParameter='https://https://github.com/JinanDewan/Vantastrap/Vantastrap/wiki/What-will-Vantastrap-access-with-your-account%3F'}">
             <StackPanel Orientation="Horizontal">
                 <ui:SymbolIcon Symbol="Warning20" Margin="0,2,8,0" Foreground="Orange">
                     <ui:SymbolIcon.Style>
