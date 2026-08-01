@@ -11,7 +11,7 @@ import requests
 from scipy.interpolate import PchipInterpolator
 
 OWNER = "itzbloxxy"
-REPO = "bubblestrap"
+REPO = "Vantastrap"
 RELEASES_URL = f"https://api.github.com/repos/{OWNER}/{REPO}/releases"
 FONT_PATH = "fonts/Caveat.ttf"
 OUTPUT_PATH = "downloads.png"

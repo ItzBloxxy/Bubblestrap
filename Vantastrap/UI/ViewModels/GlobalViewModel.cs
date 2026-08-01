@@ -1,0 +1,18 @@
+﻿using CommunityToolkit.Mvvm.Input;
+using System.Windows.Input;
+
+namespace vantastrap.UI.ViewModels
+{
+    public static class GlobalViewModel
+    {
+        public static ICommand OpenWebpageCommand => new RelayCommand<string>(OpenWebpage);
+
+        private static void OpenWebpage(string? location)
+        {
+            if (location is null)
+                return;
+
+            Utilities.ShellExecute(location);
+        }
+    }
+}

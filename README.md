@@ -33,8 +33,8 @@ Download the latest release [here][repo-latest]
 - Memory trimmer with threshold and interval
 - Disable RobloxCrashHandler.exe which helps free up some system resources and improve performance
 - Update roblox in the background instead of waiting
-- Auto-update Bubblestrap
-- Cache, logs and Bubblestrap logs cleaner
+- Auto-update Vantastrap
+- Cache, logs and Vantastrap logs cleaner
 - Roblox tray options:
 System Tray Modal
 Minimize to Tray
@@ -43,7 +43,7 @@ Minimize to Tray
 - Toggle launch Roblox on startup
 
 ### Deployment
-- Toggle Bubblestrap logs
+- Toggle Vantastrap logs
 - Channel changer
 - Skip Roblox Updates
 - Static directory
@@ -65,18 +65,18 @@ Minimize to Tray
 - FFlag settings and improved FFlag editor
 - Global Settings page
 - Framerate cap unlocking
-- Custom Bubblestrap game invite links (DEEPLINK)
+- Custom Vantastrap game invite links (DEEPLINK)
 - Roblox Studio Support
 - Full translations unlike other bootstrappers
 - No analytics at all
 
 -----
 
-<a href="https://www.star-history.com/?repos=ItzBloxxy%2FBubblestrap&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=ItzBloxxy%2FVantastrap&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=ItzBloxxy/Bubblestrap&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=ItzBloxxy/Bubblestrap&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=ItzBloxxy/Bubblestrap&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=ItzBloxxy/Vantastrap&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=ItzBloxxy/Vantastrap&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=ItzBloxxy/Vantastrap&type=date&legend=top-left" />
  </picture>
 </a>
 
