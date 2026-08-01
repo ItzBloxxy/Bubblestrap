@@ -46,9 +46,9 @@
         </Grid>
 
         <WrapPanel HorizontalAlignment="Center" Orientation="Horizontal">
-            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_GithubRepository}" Icon="Code24" FontWeight="Medium" NavigateUri="https://https://github.com/JinanDewan/Vantastrap/Vantastrap" />
+            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_GithubRepository}" Icon="Code24" FontWeight="Medium" NavigateUri="https://https://github.com/JinanDewan/Vantastrap" />
             <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_HelpInformation}" Icon="BookQuestionMark24" FontWeight="Medium" NavigateUri="https://vantastraplabs.com/wiki/" />
-            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_ReportIssue}" Icon="BookExclamationMark24" FontWeight="Medium" NavigateUri="https://https://github.com/JinanDewan/Vantastrap/Vantastrap/issues" />
+            <ui:Anchor Margin="0,0,8,8" Content="{x:Static resources:Strings.Menu_About_ReportIssue}" Icon="BookExclamationMark24" FontWeight="Medium" NavigateUri="https://https://github.com/JinanDewan/Vantastrap/issues" />
             <ui:Anchor Margin="0,0,0,8" Content="{x:Static resources:Strings.Menu_About_DiscordServer}" Icon="Chat48" FontWeight="Medium" NavigateUri="https://discord.gg/VTKQCSwPvU" />
         </WrapPanel>
 

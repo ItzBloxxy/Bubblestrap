@@ -13,9 +13,9 @@ namespace vantastrap
         public const string ProjectName = "Vantastrap";
         public const string ProjectOwner = "ItzBloxxy";
         public const string ProjectRepository = "ItzBloxxy/Vantastrap";
-        public const string ProjectDownloadLink = "https://https://github.com/JinanDewan/Vantastrap/Vantastrap/releases";
+        public const string ProjectDownloadLink = "https://https://github.com/JinanDewan/Vantastrap/releases";
         public const string ProjectHelpLink = "https://github.com/vantastraplabs/vantastrap/wiki";
-        public const string ProjectSupportLink = "https://https://github.com/JinanDewan/Vantastrap/Vantastrap/issues/new";
+        public const string ProjectSupportLink = "https://https://github.com/JinanDewan/Vantastrap/issues/new";
 
         public const string RobloxPlayerAppName = "RobloxPlayerBeta.exe";
         public const string RobloxStudioAppName = "RobloxStudioBeta.exe";
