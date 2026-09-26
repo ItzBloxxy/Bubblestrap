@@ -35,7 +35,6 @@ Found a bug or issue?
 
 ### Integrations
 - Activity tracking
-- Detailed player logs
 - Detailed server information (Thanks to [RoValra](https://www.rovalra.com/))
 - Don't exit to desktop app
 - Fully customizable Discord Rich Presence
