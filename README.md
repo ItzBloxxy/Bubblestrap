@@ -28,60 +28,6 @@ Download the latest release [here][repo-latest]
 
 Found a bug or issue?
 👉 [Submit an issue](https://github.com/ItzBloxxy/BubbleStrap/issues/new/choose)
-
------
-
-# ✨ Features
-
-### Integrations
-- Activity tracking
-- Detailed server information (Thanks to [RoValra](https://www.rovalra.com/))
-- Don't exit to desktop app
-- Fully customizable Discord Rich Presence
-- Multi-instance support
-- Set custom integrations (you can have other programs launch with Roblox automatically)
-
-### Bootstrapper
-- Prompt to confirm when launching another instance
-- Memory trimmer with threshold and interval
-- Disable RobloxCrashHandler.exe which helps free up some system resources and improve performance
-- Update roblox in the background instead of waiting
-- Auto-update Bubblestrap
-- Cache, logs and Bubblestrap logs cleaner
-- Roblox tray options:
-System Tray Modal
-Minimize to Tray
-- Roblox App theme selector
-- Hide version and production details
-- Toggle launch Roblox on startup
-
-### Deployment
-- Toggle Bubblestrap logs
-- Channel changer
-- Skip Roblox Updates
-- Static directory
-- Install previous roblox version
-- Force Roblox reinstallation
-
-### Mods
-- Use custom font
-- Use custom death sound
-- Custom emojis
-- Custom Roblox Icon
-- Custom Roblox Studio icon
-- Old character sounds from 2014
-- Use old avatar editor background used in 2020
-- Customize cursors (ShiftLock, Arrow, ArrowFar, IBeam)
-- Cursor sets (import & export)
-
-### Other
-- FFlag settings and improved FFlag editor
-- Global Settings page
-- Framerate cap unlocking
-- Custom Bubblestrap game invite links (DEEPLINK)
-- Roblox Studio Support
-- Full translations unlike other bootstrappers
-- No analytics at all
   
 [repo-latest]:   https://github.com/ItzBloxxy/Bubblestrap/releases/latest
 
