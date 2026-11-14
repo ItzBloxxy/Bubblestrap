@@ -20,7 +20,7 @@
 > [!NOTE]
 > **Bubblestrap only supports Windows 10 and later**.
 
-**Bubblestrap** is a modern fork of **Fishstrap**
+**Bubblestrap** is a modern fork of **Fishstrap**. It is a Roblox bootstrapper that adds extra features and makes customizing Roblox easier.
 
 Download the latest release [here][repo-latest]
 
