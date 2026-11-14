@@ -20,9 +20,7 @@
 > [!NOTE]
 > **Bubblestrap only supports Windows 10 and later**.
 
-**Bubblestrap** is a fast, lightweight Roblox bootstrapper. It’s an upgraded version of **Fishstrap**, featuring code rewrites to fix bad code and make it cleaner, faster, and easier on your system.
-
-It has a better UI, improved features, more features, more customization options, and full language translations.
+**Bubblestrap** is a modern fork of **Fishstrap**
 
 Download the latest release [here][repo-latest]
 
